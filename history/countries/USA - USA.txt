@@ -778,9 +778,12 @@ add_ideas = {
 }
 
 # DIPLOMACY
-set_autonomy = {
-	target = PHI
-	autonomous_state =  autonomy_puppet
+if = {
+	limit = { has_start_date > 1900.1.1 }
+	limit = { has_start_date < 1945.1.1 }
+	set_autonomy = {
+		target = PHI
+		autonomous_state =  autonomy_puppet
 }
 
 1939.1.1 = {
