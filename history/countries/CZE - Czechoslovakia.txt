@@ -102,13 +102,13 @@ if = {
 	}
 }
 
-set_research_slots = 3
+set_research_slots = 0
 
 set_politics = {
 	ruling_party = democratic
 	last_election = "1935.5.19"
 	election_frequency = 60
-	elections_allowed = yes
+	elections_allowed = no
 }
 
 set_popularities = {
@@ -136,7 +136,7 @@ set_politics = {
 	ruling_party = democratic
 	last_election = "1993.9.8"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
 	democratic = 79

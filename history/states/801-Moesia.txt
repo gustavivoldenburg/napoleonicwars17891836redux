@@ -5,6 +5,18 @@ state={
 
 	history={
 		owner = OTO
+				buildings = {
+		9612 = {bunker = 2}
+        }
+		buildings = {
+		3796 = {bunker = 2}
+        }
+		buildings = {
+		9771 = {bunker = 2}
+        }
+								buildings = {
+		9783 = {bunker = 2}
+        }
 		1880.1.1 = {
 			owner = BUL
 			controller = BUL
@@ -31,13 +43,16 @@ state={
 		}
 		}
 		victory_points = {
-			9612 3 
+			9612 5 
 		}
 		victory_points = {
-			3796 3 
+			3796 5
+		}
+						victory_points = {
+			3952 1 
 		}
 		victory_points = {
-			9771 1 
+			9771 5
 		}
 		victory_points = {
 			9783 10
@@ -65,9 +80,9 @@ state={
 	}
 
 	provinces={
-		649 793 935 965 3796 3819 3908 3971 9610 9612 9769 9771 9783 13534 13535 13746 13747 13768 13771 13772 13773 13776 13778 13779 13780 13782 13783 13784 13785 13820 
+		649 793 935 965 3796 3819 3908 3952 3971 9610 9612 9769 9771 9783 9919 13535 13746 13747 13762 13767 13768 13769 13770 13771 13772 13773 13776 13778 13779 13780 13782 13783 13784 13785 13820 
 	}
-	manpower=3000000
+	manpower=3228099
 	buildings_max_level_factor=1.000
 	state_category=city
 	local_supplies=3.000

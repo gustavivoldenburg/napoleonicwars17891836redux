@@ -1,4 +1,40 @@
 ﻿capital = 64
+1750.1.1 = {
+recruit_character=PRE_hardenberg
+}
+1824.1.1 = {
+retire_character=PRE_hardenberg
+}
+1789.1.1 = {
+recruit_character=PRE_johann
+}
+1864.1.1 = {
+retire_character=PRE_johann
+}
+1789.1.1 = {
+recruit_character=PRE_michael
+}
+1846.1.1 = {
+retire_character=PRE_michael
+}
+1789.1.1 = {
+recruit_character=PRE_israeljacobson
+}
+1829.1.1 = {
+retire_character=PRE_israeljacobson
+}
+1789.1.1 = {
+recruit_character=PRE_itzig
+}
+1800.1.1 = {
+retire_character=PRE_itzig
+}
+1789.1.1 = {
+recruit_character=PRE_abraham
+}
+1836.1.1 = {
+retire_character=PRE_abraham
+}
 1789.1.1 = {
 recruit_character=PRE_augusgeneral #1789 #1789 #1836
 recruit_character=PRE_gehabgeneral #1789 #1789 #1836
@@ -100,7 +136,16 @@ retire_character=PRE_ernstgeneral #1789 #1789 #1836
 
 
 
-
+1799.1.1 = {
+			if = {
+		limit = { has_start_date < 1801.1.1 }
+BRU={give_military_access = PRE}
+GOS={give_military_access = PRE}
+HLD={give_military_access = PRE}
+PAD={give_military_access = PRE}
+MUN={give_military_access = PRE}
+			}
+}
 
 
 1799.1.1 = {
@@ -173,7 +218,122 @@ unlock_national_focus = prussianrework_1789_1815_first_100_focus_57
 unlock_national_focus = prussianrework_1789_1815_first_100_focus_58
 }
 }
+1808.1.1 = {
+			if = {
+		limit = { has_start_date < 1809.1.1 }
+PRE={set_country_flag=century_of_prussia_flag}
+PRE={set_country_flag=has_implied_abolition_of_serfdom_flag}
+unlock_national_focus = prussianrework_1789_1815_first_100_focus_1
+unlock_national_focus = prussianrework_1789_1815_first_100_focus_2
+unlock_national_focus = prussianrework_1789_1815_first_100_focus_3
+unlock_national_focus = prussianrework_1789_1815_first_100_focus_4
+unlock_national_focus = prussianrework_1789_1815_first_100_focus_5
+unlock_national_focus = prussianrework_1789_1815_first_100_focus_6
+unlock_national_focus = prussianrework_1789_1815_first_100_focus_7
+unlock_national_focus = prussianrework_1789_1815_first_100_focus_8
+unlock_national_focus = prussianrework_1789_1815_first_100_focus_9
+unlock_national_focus = prussianrework_1789_1815_first_100_focus_10
 
+unlock_national_focus = prussianrework_1789_1815_first_100_focus_11
+unlock_national_focus = prussianrework_1789_1815_first_100_focus_12
+unlock_national_focus = prussianrework_1789_1815_first_100_focus_13
+unlock_national_focus = prussianrework_1789_1815_first_100_focus_14
+unlock_national_focus = prussianrework_1789_1815_first_100_focus_15
+unlock_national_focus = prussianrework_1789_1815_first_100_focus_16
+unlock_national_focus = prussianrework_1789_1815_first_100_focus_17
+unlock_national_focus = prussianrework_1789_1815_first_100_focus_18
+unlock_national_focus = prussianrework_1789_1815_first_100_focus_19
+unlock_national_focus = prussianrework_1789_1815_first_100_focus_20
+
+unlock_national_focus = prussianrework_1789_1815_first_100_focus_21
+unlock_national_focus = prussianrework_1789_1815_first_100_focus_22
+unlock_national_focus = prussianrework_1789_1815_first_100_focus_23
+unlock_national_focus = prussianrework_1789_1815_first_100_focus_24
+unlock_national_focus = prussianrework_1789_1815_first_100_focus_25
+unlock_national_focus = prussianrework_1789_1815_first_100_focus_26
+unlock_national_focus = prussianrework_1789_1815_first_100_focus_27
+unlock_national_focus = prussianrework_1789_1815_first_100_focus_28
+unlock_national_focus = prussianrework_1789_1815_first_100_focus_29
+unlock_national_focus = prussianrework_1789_1815_first_100_focus_30
+
+unlock_national_focus = prussianrework_1789_1815_first_100_focus_31
+unlock_national_focus = prussianrework_1789_1815_first_100_focus_32
+unlock_national_focus = prussianrework_1789_1815_first_100_focus_33
+unlock_national_focus = prussianrework_1789_1815_first_100_focus_34
+unlock_national_focus = prussianrework_1789_1815_first_100_focus_35
+unlock_national_focus = prussianrework_1789_1815_first_100_focus_36
+unlock_national_focus = prussianrework_1789_1815_first_100_focus_37
+unlock_national_focus = prussianrework_1789_1815_first_100_focus_38
+unlock_national_focus = prussianrework_1789_1815_first_100_focus_39
+unlock_national_focus = prussianrework_1789_1815_first_100_focus_40
+
+unlock_national_focus = prussianrework_1789_1815_first_100_focus_41
+unlock_national_focus = prussianrework_1789_1815_first_100_focus_42
+unlock_national_focus = prussianrework_1789_1815_first_100_focus_43
+unlock_national_focus = prussianrework_1789_1815_first_100_focus_44
+unlock_national_focus = prussianrework_1789_1815_first_100_focus_45
+unlock_national_focus = prussianrework_1789_1815_first_100_focus_46
+unlock_national_focus = prussianrework_1789_1815_first_100_focus_47
+unlock_national_focus = prussianrework_1789_1815_first_100_focus_48
+unlock_national_focus = prussianrework_1789_1815_first_100_focus_49
+unlock_national_focus = prussianrework_1789_1815_first_100_focus_50
+
+unlock_national_focus = prussianrework_1789_1815_first_100_focus_51
+unlock_national_focus = prussianrework_1789_1815_first_100_focus_52
+unlock_national_focus = prussianrework_1789_1815_first_100_focus_53
+unlock_national_focus = prussianrework_1789_1815_first_100_focus_54
+unlock_national_focus = prussianrework_1789_1815_first_100_focus_55
+unlock_national_focus = prussianrework_1789_1815_first_100_focus_56
+unlock_national_focus = prussianrework_1789_1815_first_100_focus_57
+unlock_national_focus = prussianrework_1789_1815_first_100_focus_58
+unlock_national_focus = prussianrework_1789_1815_first_100_focus_59
+unlock_national_focus = prussianrework_1789_1815_first_100_focus_60
+
+unlock_national_focus = prussianrework_1789_1815_first_100_focus_61
+unlock_national_focus = prussianrework_1789_1815_first_100_focus_62
+unlock_national_focus = prussianrework_1789_1815_first_100_focus_63
+unlock_national_focus = prussianrework_1789_1815_first_100_focus_64
+unlock_national_focus = prussianrework_1789_1815_first_100_focus_65
+unlock_national_focus = prussianrework_1789_1815_first_100_focus_66
+unlock_national_focus = prussianrework_1789_1815_first_100_focus_67
+unlock_national_focus = prussianrework_1789_1815_first_100_focus_68
+unlock_national_focus = prussianrework_1789_1815_first_100_focus_69
+unlock_national_focus = prussianrework_1789_1815_first_100_focus_70
+
+unlock_national_focus = prussianrework_1789_1815_first_100_focus_71
+unlock_national_focus = prussianrework_1789_1815_first_100_focus_72
+unlock_national_focus = prussianrework_1789_1815_first_100_focus_73
+unlock_national_focus = prussianrework_1789_1815_first_100_focus_74
+unlock_national_focus = prussianrework_1789_1815_first_100_focus_75
+unlock_national_focus = prussianrework_1789_1815_first_100_focus_76
+unlock_national_focus = prussianrework_1789_1815_first_100_focus_77
+unlock_national_focus = prussianrework_1789_1815_first_100_focus_78
+unlock_national_focus = prussianrework_1789_1815_first_100_focus_79
+unlock_national_focus = prussianrework_1789_1815_first_100_focus_80
+
+unlock_national_focus = prussianrework_1789_1815_first_100_focus_81
+unlock_national_focus = prussianrework_1789_1815_first_100_focus_82
+unlock_national_focus = prussianrework_1789_1815_first_100_focus_83
+unlock_national_focus = prussianrework_1789_1815_first_100_focus_84
+unlock_national_focus = prussianrework_1789_1815_first_100_focus_85
+unlock_national_focus = prussianrework_1789_1815_first_100_focus_86
+unlock_national_focus = prussianrework_1789_1815_first_100_focus_87
+unlock_national_focus = prussianrework_1789_1815_first_100_focus_88
+unlock_national_focus = prussianrework_1789_1815_first_100_focus_89
+unlock_national_focus = prussianrework_1789_1815_first_100_focus_90
+
+unlock_national_focus = prussianrework_1789_1815_first_100_focus_91
+unlock_national_focus = prussianrework_1789_1815_first_100_focus_92
+unlock_national_focus = prussianrework_1789_1815_first_100_focus_93
+unlock_national_focus = prussianrework_1789_1815_first_100_focus_94
+unlock_national_focus = prussianrework_1789_1815_first_100_focus_95
+unlock_national_focus = prussianrework_1789_1815_first_100_focus_96
+unlock_national_focus = prussianrework_1789_1815_first_100_focus_97
+unlock_national_focus = prussianrework_1789_1815_first_100_focus_98
+unlock_national_focus = prussianrework_1789_1815_first_100_focus_99
+unlock_national_focus = prussianrework_1789_1815_first_100_focus_100
+			}
+}
 1812.1.1 = {
 			if = {
 		limit = { has_start_date < 1813.1.1 }
@@ -566,15 +726,11 @@ recruit_character=PRE_louise
 1812.1.1 = {
 retire_character=PRE_louise
 }
-1836.1.1 = {
-		if = {
-		limit = { has_start_date < 1837.1.1 }
-    set_autonomy = {
-        target = POS
-        autonomous_state = autonomy_dominion
-        freedom_level = 0.35
-	}
+1789.1.1 = {
+recruit_character=PRE_oppenheim
 }
+1836.1.1 = {
+retire_character=PRE_oppenheim
 }
 1789.1.1 = {
 		if = {
@@ -588,7 +744,7 @@ set_oob = "PRE_1789"
 set_oob = "PRE_1800"
 }
 }
-1812.1.1 = {
+1808.1.1 = {
 		if = {
 		limit = { has_start_date < 1813.1.1 }
 set_oob = "PRE_1812"
@@ -616,7 +772,7 @@ set_technology = {
 	infantry_weapons = 1
 	transport = 1
 	early_submarine = 1
-        gw_artillery = 1
+        gw_artillery = 1 basic_train = 1
 }
 1936.1.1 = {
 # Starting tech
@@ -699,7 +855,7 @@ if = {
 }
 
 
-set_research_slots = 3
+set_research_slots = 0
 set_convoys = 50
 set_stability = 0.75
 

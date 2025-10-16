@@ -220,6 +220,9 @@ HRE_frenchrevolution = {
 		54={add_core_of=ROOT}
 		1181={add_core_of=ROOT}
 		1198={add_core_of=ROOT}
+		1288={add_core_of=ROOT}
+		1290={add_core_of=ROOT}
+		1166={add_core_of=ROOT}
 		hidden_effect={set_global_flag = south_german_confederation_formable_flag}
 		}
 	}

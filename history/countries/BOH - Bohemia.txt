@@ -1,10 +1,4 @@
 ﻿capital = 9
-1789.1.1 = {
-		if = {
-		limit = { has_start_date < 1804.1.1 }
-set_oob = "BOH_1789"
-}
-}
 1600.1.1 = {
 set_cosmetic_tag = BOH_AUS #austrian puppet
 }
@@ -30,9 +24,18 @@ retire_character=BOH_francisiiboh
 1849.1.1 = {
 retire_character=BOH_ferdinandiboh
 }
+1789.1.1 = {
+		if = {
+		limit = { has_start_date < 1801.1.1 }
+BOH={add_manpower=-100000}
+}
+}
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
+	transport = 1
+	early_submarine = 1
+        gw_artillery = 1 basic_train = 1
 }
 
 set_convoys = 20

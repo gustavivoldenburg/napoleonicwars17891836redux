@@ -1,4 +1,127 @@
 characters={
+									HAN_georgfriedrichvonmartens={
+		name=HAN_CHARACTER_GEORGFRIEDRICHVONMARTENS
+		portraits={
+                        army={
+				small="GFX_idea_han_georgfriedrichvonmartens_small"
+			}
+			civilian = {
+				large = GFX_portrait_han_georgfriedrichvonmartens_large
+			}
+		}
+		advisor={
+                        can_be_fired = no
+			slot = political_advisor
+			idea_token = HAN_georgfriedrichvonmartens
+			allowed  = {
+				original_tag  = HAN
+			}
+			available  = {
+		        }
+			traits  = {
+				jurist_and_diplomat
+			}
+			on_add  = {
+			}
+			do_effect  = {
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+	}
+
+
+
+									HAN_georg={
+		name=HAN_CHARACTER_GEORG
+		portraits={
+                        army={
+				small="GFX_idea_han_georg_small"
+			}
+			civilian = {
+				large = GFX_portrait_han_georg_large
+			}
+		}
+		advisor={
+                        can_be_fired = no
+			slot = political_advisor
+			idea_token = HAN_georg
+			allowed  = {
+				original_tag  = HAN
+			}
+			available  = {
+		        }
+			traits  = {
+				han_anglophile
+			}
+			on_add  = {
+			}
+			do_effect  = {
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+	}
+							HAN_putter={
+		name=HAN_CHARACTER_PUTTER
+		portraits={
+                        army={
+				small="GFX_idea_han_putter_small"
+			}
+			civilian = {
+				large = GFX_portrait_han_putter_large
+			}
+		}
+		advisor={
+                        can_be_fired = no
+			slot = political_advisor
+			idea_token = HAN_putter
+			allowed  = {
+				original_tag  = HAN
+			}
+			available  = {
+		        }
+			traits  = {
+				professoroflaw
+			}
+			on_add  = {
+			}
+			do_effect  = {
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+	}
+			HAN_schlozer={
+		name=HAN_CHARACTER_SCHLOZER
+		portraits={
+			civilian={
+				large="GFX_portrait_han_schlozer_large"
+			}
+		}
+		country_leader={
+			ideology=socialism
+			desc = HAN_SCHLOZER_DESC
+			expire="1797.1.1"
+		}
+}
+		HAN_hermann={
+		name=HAN_CHARACTER_HERMANN
+		portraits={
+			civilian={
+				large="GFX_portrait_han_hermann_large"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={Hohenzollern}
+			desc = HAN_HERMANN_DESC
+			expire="1797.1.1"
+		}
+}
 		HAN_william={
 		name=HAN_CHARACTER_WILLIAM
 		portraits={

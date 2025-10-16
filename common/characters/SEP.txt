@@ -1,0 +1,15 @@
+characters={
+		SEP_antonioskomoutos={
+		name=SEP_CHARACTER_ANTONIOSKOMOUTOS
+		portraits={
+			civilian={
+				large="GFX_portrait_sep_antonioskomoutos_large"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			desc = SEP_ANTONIOSKOMOUTOS_DESC
+			expire="1797.1.1"
+		}
+}
+}

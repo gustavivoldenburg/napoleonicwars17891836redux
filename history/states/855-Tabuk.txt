@@ -7,6 +7,11 @@ state={
 		}
 		owner = TRT
         add_core_of = TRT
+				1808.1.1 = {
+			owner = BAY
+			add_core_of = BAY
+
+		}
 						1812.1.1 = {
 			owner = ITA
                 add_core_of = ITA
@@ -21,12 +26,18 @@ state={
 		1945.1.1 = {
 		owner = GER
 		}
+				1816.1.1 = {
+			owner = AUS
+			add_core_of = AUS
+			remove_core_of = BAY
+
+		}
 		1946.1.1 = {
 		owner = ITA
 		}
 		1900.1.1 = {
-			owner = AUH
-                add_core_of = AUH
+			owner = AUS
+                add_core_of = AUS
                 remove_core_of = AUS
 		}
 		buildings = {
@@ -36,7 +47,7 @@ state={
 			owner = ITA
 			controller = ITA
             add_core_of = ITA
-            remove_core_of = AUH
+            remove_core_of = AUS
 		}
         }
 

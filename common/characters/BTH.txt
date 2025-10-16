@@ -1,0 +1,16 @@
+characters={
+	BTH_steinfurt={
+		name=BTH_CHARACTER_STEINFURT
+		portraits={
+			civilian={
+				large="GFX_portrait_bth_steinfurt_large"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			desc = BTH_STEINFURT_DESC
+			expire="1797.1.1"
+		}
+}
+}
+

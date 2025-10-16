@@ -7,7 +7,7 @@ set_cosmetic_tag = BSK # Modern
 }
 #oob = "BSK_1936"
 
-set_research_slots = 3
+set_research_slots = 0
 
 # Starting tech
 set_technology = {

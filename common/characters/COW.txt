@@ -1,0 +1,30 @@
+characters={
+	COW_henrybenedict={
+		name=COW_CHARACTER_HENRYBENEDICT
+		portraits={
+			civilian={
+				large="GFX_portrait_cow_henrybenedict_large"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={Stuart}
+			desc = COW_HENRYBENEDICT_DESC
+			expire="1797.1.1"
+		}
+}
+	COW_fitzjames={
+		name=COW_CHARACTER_FITZJAMES
+		portraits={
+			civilian={
+				large="GFX_portrait_cow_fitzjames_large"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={Stuart}
+			desc = COW_FITZJAMES_DESC
+			expire="1797.1.1"
+		}
+}
+}

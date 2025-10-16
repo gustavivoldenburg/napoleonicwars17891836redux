@@ -10,7 +10,7 @@ set_cosmetic_tag = DAG # Netherlands East Indies
 }
 #oob = "DAG_1936"
 
-set_research_slots = 3
+set_research_slots = 0
 
 # Starting tech
 set_technology = {
@@ -93,7 +93,7 @@ set_politics = {
 	ruling_party = democratic
 	last_election = "1936.1.1"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 
 set_popularities = {

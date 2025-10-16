@@ -15,10 +15,9 @@ state={
 		remove_core_of = TRT
 		}
 		1900.1.1 = {
-			owner = AUH
-                add_core_of = AUH
+			owner = AUS
+                add_core_of = AUS
                 add_core_of = SLV
-                remove_core_of = AUS
 		}
 		buildings = {
 			infrastructure = 3
@@ -41,7 +40,7 @@ state={
 			owner = YUG
 			controller = YUG
 			add_core_of = YUG
-			remove_core_of = AUH
+			remove_core_of = AUS
 
 		}
 		1992.1.1 = {
@@ -54,9 +53,9 @@ state={
 	}
 
 	provinces={
-		596 665 3654 9596 
+		596 665 3654 
 	}
-	manpower=600000
+	manpower=500000
 	buildings_max_level_factor=1.000
 	state_category=rural
 	local_supplies=0.000

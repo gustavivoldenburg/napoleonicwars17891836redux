@@ -1,0 +1,37 @@
+state={
+	id=1295
+	name="STATE_1295"
+		history={
+				victory_points = {
+			895 5 
+		}
+				victory_points = {
+			13694 1 
+		}
+		owner = OTO
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = BYZ
+		1800.1.1 = {
+			add_core_of = GRE
+			remove_core_of = BYZ
+
+		}
+		1914.1.1 = {
+			owner = GRE
+			controller = GRE
+			add_core_of = GRE
+
+		}
+
+	}
+	provinces={
+		895 13694 
+	}
+	manpower=100000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

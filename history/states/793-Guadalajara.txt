@@ -5,6 +5,14 @@ state={
 
 	history={
 		owner = SPR
+						1808.1.1 = {
+	    owner=CAT
+		add_core_of=CAT
+		}
+		1814.1.1 = {
+		owner=SPR
+		remove_core_of=CAT
+		}
 		victory_points = {
 			11688 3 
 		}
@@ -14,7 +22,7 @@ state={
 		}
 		add_core_of = SPR
 		1812.1.1 = {
-			controller = FRA
+			
 
 		}
 		1813.1.1 = {

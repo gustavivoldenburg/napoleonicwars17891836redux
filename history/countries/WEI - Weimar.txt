@@ -1,10 +1,29 @@
-﻿capital = 60
-
+﻿capital = 1283
+1789.1.1 = {
+recruit_character=WEI_charlesaugustus
+promote_character=WEI_charlesaugustus
+recruit_character=WEI_charlesfrederick
+}
+1829.1.1 = {
+promote_character=WEI_charlesfrederick
+retire_character=WEI_charlesaugustus
+}
+1854.1.1 = {
+retire_character=WEI_charlesfrederick
+}
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
+	transport = 1
+	early_submarine = 1
+        gw_artillery = 1 basic_train = 1
 }
-
+1809.1.1 = {
+set_cosmetic_tag = WEI_EIS # Netherlands East Indies
+}
+1815.1.1 = {
+set_cosmetic_tag = WEI_EIS_grandduchy # Netherlands East Indies
+}
 set_convoys = 20
 
 

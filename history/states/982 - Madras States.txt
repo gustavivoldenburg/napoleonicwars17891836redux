@@ -7,16 +7,10 @@ state={
 		victory_points = {
 			11818 15 
 		}
-				victory_points = {
-			895 5 
-		}
-				victory_points = {
-			13694 1 
-		}
 		owner = OTO
 		buildings = {
 			industrial_complex = 1
-			infrastructure = 2
+			infrastructure = 3
 			11818 = {
 				naval_base = 3
 
@@ -39,7 +33,7 @@ state={
 	}
 
 	provinces={
-		895 11818 13694 
+		11818
 	}
 	manpower=1000000
 	buildings_max_level_factor=1.000

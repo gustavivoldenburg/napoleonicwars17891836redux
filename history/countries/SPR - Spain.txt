@@ -1,5 +1,11 @@
 ﻿capital = 41
 1789.1.1 = {
+recruit_character=SPR_yriarte
+}
+1796.1.1 = {
+retire_character=SPR_yriarte
+}
+1789.1.1 = {
 			if = {
 		limit = { has_start_date < 1836.1.1 }
 	add_ideas = {
@@ -7,9 +13,9 @@ spainjew
 	}
 }
 }
-1812.1.1 = {
+1808.1.1 = {
 			if = {
-		limit = { has_start_date < 1813.1.1 }
+		limit = { has_start_date < 1814.1.1 }
 	add_ideas = {
 guerrillaspain
 	}
@@ -110,6 +116,31 @@ guerrillaspain
 	}
 		set_autonomy = {
         target = LOU
+        autonomous_state = autonomy_protectorate
+        freedom_level = 0.4
+	}
+}
+}
+1808.1.1 = {
+			if = {
+		limit = { has_start_date < 1809.01.02 }
+	set_autonomy = {
+        target = MEX
+        autonomous_state = autonomy_protectorate
+        freedom_level = 0.4
+	}
+	set_autonomy = {
+        target = PRU
+        autonomous_state = autonomy_protectorate
+        freedom_level = 0.4
+	}
+	set_autonomy = {
+        target = COL
+        autonomous_state = autonomy_protectorate
+        freedom_level = 0.4
+	}
+	set_autonomy = {
+        target = ARG
         autonomous_state = autonomy_protectorate
         freedom_level = 0.4
 	}
@@ -345,7 +376,7 @@ if = {
 			ruling_party = neutrality
 		}
 		set_cosmetic_tag = SPR_nationalist_spain
-		set_research_slots = 3
+		set_research_slots = 0
 	    reserve_dynamic_country = yes
 	}
 	create_dynamic_country = {
@@ -355,7 +386,7 @@ if = {
 			ruling_party = neutrality
 		}
 		set_cosmetic_tag = SPR_carlist_spain
-		set_research_slots = 3
+		set_research_slots = 0
 	    reserve_dynamic_country = yes
 	}
 	create_dynamic_country = {
@@ -365,7 +396,7 @@ if = {
 			ruling_party = neutrality
 		}
 		set_cosmetic_tag = SPR_anarchist_spain
-		set_research_slots = 3
+		set_research_slots = 0
 	    reserve_dynamic_country = yes
 	}
 	SPR = {
@@ -491,12 +522,12 @@ if = {
 	}
 }
 }
-set_research_slots = 3
+set_research_slots = 0
 	set_technology = {
 	infantry_weapons = 1
 	transport = 1
 	early_submarine = 1
-        gw_artillery = 1
+        gw_artillery = 1 basic_train = 1
 }
 1936.1.1 = {
 set_technology = {
@@ -575,7 +606,7 @@ set_politics = {
 	ruling_party = democratic
 	last_election = "1933.2.16"
 	election_frequency = 36
-	elections_allowed = yes
+	elections_allowed = no
 }
 	set_popularities = {
 		democratic = 47
@@ -588,7 +619,7 @@ set_politics = {
 	ruling_party = democratic
 	last_election = "1933.2.16"
 	election_frequency = 36
-	elections_allowed = yes
+	elections_allowed = no
 }
 	set_popularities = {
 		democratic = 80

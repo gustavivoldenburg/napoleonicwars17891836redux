@@ -25,7 +25,7 @@ state={
         owner = LOU
 		add_core_of = LOU
         }
-		1812.1.1 = {
+		1808.1.1 = {
         owner = MRI
 		add_core_of = MRI
 		remove_core_of=LOU

@@ -19,8 +19,7 @@ state={
                 remove_core_of = TRA
 		}
 		1900.1.1 = {
-			owner = AUH
-                        add_core_of = AUH
+			owner = HUN
                         add_core_of = SER
 remove_core_of = AUS
                         remove_core_of = HUN         
@@ -40,7 +39,7 @@ remove_core_of = AUS
 			controller = BNT
                         add_core_of = BNT
 						add_core_of = YUG
-			remove_core_of = AUH
+			remove_core_of = AUS
 
 		}
 		1920.1.1 = {
@@ -48,7 +47,7 @@ remove_core_of = AUS
 			controller = YUG
             remove_core_of = BNT
             add_core_of = YUG
-            remove_core_of = AUH
+            remove_core_of = AUS
 		}
 		2007.1.1 = {
 			owner = SER

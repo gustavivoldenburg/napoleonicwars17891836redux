@@ -1,15 +1,46 @@
 characters={
-		NIR_kingwilliamoforangeisaslutforbigjewishcock={
-		name=NIR_CHARACTER_KINGWILLIAMOFORANGEISASLUTFORBIGJEWISHCOCK
+						NIR_kilwarden={
+		name=NIR_CHARACTER_KILWARDEN
+		portraits={
+                        army={
+				small="GFX_idea_nir_kilwarden_small"
+			}
+			civilian = {
+				large = GFX_portrait_nir_kilwarden_large
+			}
+		}
+		advisor={
+                        can_be_fired = no
+			slot = political_advisor
+			idea_token = NIR_kilwarden
+			allowed  = {
+				original_tag  = NIR
+			}
+			available  = {
+		        }
+			traits  = {
+				LordChiefJusticeofIreland
+			}
+			on_add  = {
+			}
+			do_effect  = {
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+	}
+		NIR_kingwilliamoforange={
+		name=NIR_CHARACTER_KINGWILLIAMOFORANGE
 		portraits={
 			civilian={
-				large="GFX_portrait_nir_kingwilliamoforangeisaslutforbigjewishcock_large"
+				large="GFX_portrait_nir_kingwilliamoforange_large"
 			}
 		}
 		country_leader={
 			ideology=despotism
 			traits={Orange-Nassau}
-			desc = NIR_KINGWILLIAMOFORANGEISASLUTFORBIGJEWISHCOCK_DESC
+			desc = NIR_KINGWILLIAMOFORANGE_DESC
 			expire="1797.1.1"
 		}
 }

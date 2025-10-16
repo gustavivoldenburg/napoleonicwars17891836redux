@@ -22,9 +22,6 @@ state={
 			remove_core_of = EGY
 
 		}
-				1705.1.1 = {
-		remove_core_of = OTO
-		}
 		1832.1.1 = {
 			owner = OTO
 		add_core_of = OTO

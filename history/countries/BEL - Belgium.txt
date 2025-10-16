@@ -19,11 +19,29 @@ set_popularities = {
 	democratic = 50
         neutrality = 50
 }
+set_technology = {
+	infantry_weapons = 1
+	transport = 1
+	early_submarine = 1
+        gw_artillery = 1 basic_train = 1
+}
 1789.1.1 = {
 set_party_name = { ideology = democratic long_name = BEL_VON_democratic_party_long name = BEL_VON_democratic_party }
 }
 1837.1.1 = {
 set_party_name = { ideology = democratic long_name = BEL_democratic_party_long name = BEL_democratic_party }
+}
+1789.1.1 = {
+recruit_character=BEL_frederickoforangenassau
+}
+1800.1.1 = {
+retire_character=BEL_frederickoforangenassau
+}
+1789.1.1 = {
+recruit_character=BEL_koehler
+}
+1801.1.1 = {
+retire_character=BEL_koehler
 }
 1781.1.1 = {
 recruit_character=BEL_casimir
@@ -71,7 +89,7 @@ retire_character=BEL_louis
 		ruling_party = democratic
 		last_election = "2000.1.1"
 		election_frequency = 48
-		elections_allowed = yes
+		elections_allowed = no
 	}
 set_popularities = {
 	democratic = 50
@@ -85,7 +103,7 @@ set_politics = {
 	ruling_party = democratic
 	last_election = "1832.11.27"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 
 set_popularities = {
@@ -99,7 +117,7 @@ set_popularities = {
 		ruling_party = democratic
 		last_election = "1932.11.27"
 		election_frequency = 48
-		elections_allowed = yes
+		elections_allowed = no
 	}
 set_popularities = {
 	democratic = 50
@@ -176,7 +194,7 @@ if = {
 	give_guarantee = ENG
 }
 
-set_research_slots = 3
+set_research_slots = 0
 set_stability = 0.7
 set_war_support = 0.3 #we see what you are doing there Adolf
 
@@ -706,7 +724,7 @@ set_politics = {
 	ruling_party = democratic
 	last_election = "1932.11.27"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 
 set_popularities = {
@@ -720,7 +738,7 @@ set_popularities = {
 		ruling_party = democratic
 		last_election = "1939.4.2"
 		election_frequency = 48
-		elections_allowed = yes
+		elections_allowed = no
 	}
 	set_popularities = {
 		democratic = 87

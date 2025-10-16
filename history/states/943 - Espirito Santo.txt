@@ -14,8 +14,15 @@ state={
 		}
 						1789.1.1 = {
                 owner = ALB
+				remove_core_of=MNT
+				remove_core_of=BUL
+				remove_core_of=SER
+				remove_core_of=BOS
+				add_core_of=ALB
                 }
 				1823.1.1 = {
+				add_core_of=BOS
+				remove_core_of=ALB
                 owner = OTO
                 }
 								victory_points = {
@@ -60,7 +67,7 @@ state={
 	provinces={
 		6913 
 	}
-	manpower=50000
+	manpower=25000
 	buildings_max_level_factor=1.000
 	state_category=pastoral
 	local_supplies=0.000

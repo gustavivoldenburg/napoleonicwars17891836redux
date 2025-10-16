@@ -1,14 +1,14 @@
 ﻿capital = 44
 1789.1.1 = {
 			if = {
-		limit = { has_start_date < 1813.1.1 }
+		limit = { has_start_date < 1822.1.1 }
 		set_capital = {
   state = 185
   remember_old_capital = yes
 }
 }
 }
-1820.1.1 = {
+1823.1.1 = {
 		set_capital = {
   state = 44
   remember_old_capital = no
@@ -28,6 +28,9 @@ promote_character=ALB_king_zog
 1789.1.1 = {
 set_cosmetic_tag = ALB_GRE # Ionia
 }
+1820.1.1 = {
+set_cosmetic_tag = ALB_GRE_free # Ionia
+}
 1836.1.1 = {
 set_cosmetic_tag = ALB # Regular Albania
 }
@@ -36,6 +39,9 @@ OOB = "ALB_1936"
 }
 set_technology = {
 	infantry_weapons = 1
+	transport = 1
+	early_submarine = 1
+        gw_artillery = 1 basic_train = 1
 }
 1936.1.1 = {
 set_technology = {
@@ -98,7 +104,7 @@ set_politics = {
 	ruling_party = democratic
 	last_election = "1993.9.8"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
 	democratic = 79

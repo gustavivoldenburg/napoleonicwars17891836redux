@@ -1,8 +1,27 @@
 ﻿capital = 1088
-
+1780.1.1 = {
+recruit_character=FUR_joseph
+promote_character=FUR_joseph
+recruit_character=FUR_karl
+recruit_character=FUR_charles
+}
+1800.1.1 = {
+promote_character=FUR_karl
+retire_character=FUR_joseph
+}
+1805.1.1 = {
+promote_character=FUR_charles
+retire_character=FUR_karl
+}
+1855.1.1 = {
+retire_character=FUR_charles
+}
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
+	transport = 1
+	early_submarine = 1
+        gw_artillery = 1 basic_train = 1
 }
 
 set_convoys = 20

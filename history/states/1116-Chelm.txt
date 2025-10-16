@@ -11,6 +11,9 @@ state={
 			add_core_of = GLL
 
 		}
+						1808.1.1 = {
+			owner = AUS
+		}
 		1810.1.1 = {
 			owner = POL
 			remove_core_of = GLL
@@ -46,7 +49,7 @@ state={
 	}
 
 	provinces={
-		9494 11466 14709 14720 14721 14723 14724 14726 14727 
+		11466  14329 14330 14709 14720 14721 14723 14725 14726 14727 
 	}
 	manpower=400000
 	buildings_max_level_factor=1.000

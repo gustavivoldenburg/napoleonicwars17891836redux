@@ -17,12 +17,13 @@ recruit_character=EGY_pashageneral
 1850.1.1 = {
 retire_character=EGY_pashageneral
 }
+set_oob = "EGY_1789"
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
 	transport = 1
 	early_submarine = 1
-        gw_artillery = 1
+        gw_artillery = 1 basic_train = 1
 }
 1936.1.1 = {
 if = {

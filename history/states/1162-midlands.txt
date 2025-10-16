@@ -22,7 +22,7 @@ state={
 			remove_core_of = WGR
 
 		}
-		1812.1.1 = {
+		1808.1.1 = {
 			add_core_of = BAD
 			owner = BAD
 			remove_core_of = PFZ
@@ -71,6 +71,6 @@ state={
 	}
 	manpower=700000
 	buildings_max_level_factor=1.000
-	state_category=rural
+	state_category=town
 	local_supplies=0.000
 }

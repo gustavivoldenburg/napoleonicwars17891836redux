@@ -1,4 +1,65 @@
 characters={
+						TTS_rothschildiiii={
+		name=TTS_CHARACTER_ROTHSCHILDIIII
+		portraits={
+                        army={
+				small="GFX_idea_tts_rothschildiiii_small"
+			}
+			civilian = {
+				large = GFX_portrait_tts_rothschildiiii_large
+			}
+		}
+		advisor={
+                        can_be_fired = no
+			slot = political_advisor
+			idea_token = TTS_rothschildiiii
+			allowed  = {
+				original_tag  = TTS
+			}
+			available  = {
+		        }
+			traits  = {
+				rothschild_banker
+			}
+			on_add  = {
+			}
+			do_effect  = {
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+	}
+			TTS_luigidemedici={
+		name=TTS_CHARACTER_LUIGIDEMEDICI
+		portraits={
+                        army={
+				small="GFX_idea_tts_luigidemedici_small"
+			}
+			civilian = {
+				large = GFX_portrait_tts_luigidemedici_large
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = TTS_luigidemedici
+			allowed  = {
+				original_tag  = TTS
+			}
+			available  = {
+		        }
+			traits  = {
+				member_of_the_house_of_medici
+			}
+			on_add  = {
+			}
+			do_effect  = {
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}	
+	}
 	TTS_ferdinandi={
 		name=TTS_CHARACTER_FERDINANDI
 		portraits={

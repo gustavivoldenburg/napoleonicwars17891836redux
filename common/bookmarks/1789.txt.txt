@@ -127,6 +127,16 @@ bookmarks = {
                         sardiniapiedmont_1789_1815_first_100_focus_43
 			}
 		}
+		TTS = {
+                        minor = yes
+			history = OTHER_BLITZKRIEG_DESC
+			ideology = neutrality
+			ideas={
+                        mezzogiornotwo
+			}
+			focuses = {
+			}
+		}
 		BAY = {
                         minor = yes
 			history = OTHER_BLITZKRIEG_DESC
@@ -142,6 +152,15 @@ bookmarks = {
 			ideology = neutrality
 			ideas={
                         wonthegamble
+			}
+			focuses = {
+			}
+		}
+		BEL = {
+                        minor = yes
+			history = OTHER_BLITZKRIEG_DESC
+			ideology = neutrality
+			ideas={
 			}
 			focuses = {
 			}

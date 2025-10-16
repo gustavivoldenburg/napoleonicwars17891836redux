@@ -37,6 +37,9 @@ set_war_support = 0.1
 }
 set_technology = {
 	infantry_weapons = 1
+	transport = 1
+	early_submarine = 1
+        gw_artillery = 1 basic_train = 1
 }
 1936.1.1 = {
 if = {
@@ -188,7 +191,7 @@ set_politics = {
 	ruling_party = democratic
 	last_election = "1933.5.17"
 	election_frequency = 60
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
 	democratic = 75
@@ -200,7 +203,7 @@ set_politics = {
 	ruling_party = democratic
 	last_election = "1933.5.17"
 	election_frequency = 60
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
 	democratic = 75
@@ -236,7 +239,7 @@ recruit_character = SAF_abram_fischer
 		ruling_party = democratic
 		last_election = "1938.5.18"
 		election_frequency = 60
-		elections_allowed = yes
+		elections_allowed = no
 	}
 	set_popularities = {
 		democratic = 100

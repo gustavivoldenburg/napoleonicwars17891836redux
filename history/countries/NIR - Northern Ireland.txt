@@ -1,4 +1,16 @@
 ﻿capital = 119
+1789.1.1 = {
+recruit_character=NIR_kilwarden
+}
+1804.1.1 = {
+retire_character=NIR_kilwarden
+}
+1789.1.1 = {
+		if = {
+		limit = { has_start_date < 1837.1.1 }
+set_oob = "NIR_1789"
+}
+}
 1690.1.1 = {
 			if = {
 		limit = { has_start_date < 1801.1.1 }
@@ -9,11 +21,11 @@
 }
 }
 1689.1.1 = {
-recruit_character=NIR_kingwilliamoforangeisaslutforbigjewishcock
-promote_character=NIR_kingwilliamoforangeisaslutforbigjewishcock
+recruit_character=NIR_kingwilliamoforange
+promote_character=NIR_kingwilliamoforange
 }
 1703.1.1 = {
-retire_character=NIR_kingwilliamoforangeisaslutforbigjewishcock
+retire_character=NIR_kingwilliamoforange
 }
 1762.1.1 = {
 recruit_character=NIR_georgeiiinir
@@ -28,12 +40,12 @@ set_party_name = { ideology = neutrality long_name = SCO_ORA_neutrality_party_lo
 1714.1.1 = {
 set_party_name = { ideology = neutrality long_name = ENG_HAN_neutrality_party_long name = ENG_HAN_neutrality_party }
 }
-set_research_slots = 3
+set_research_slots = 0
 set_technology = {
 	infantry_weapons = 1
 	transport = 1
 	early_submarine = 1
-        gw_artillery = 1
+        gw_artillery = 1 basic_train = 1
 }
 1936.1.1 = {
 set_technology = {
@@ -129,7 +141,7 @@ set_politics = {
 	ruling_party = democratic
 	last_election = "1933.1.24"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
 	democratic = 98

@@ -5764,6 +5764,7 @@ CHL_mapuche_nationalism_decisions = {
 		highlight_states = {
 			highlight_state_targets = {
 				state = 463
+				state = 864
 				state = 472
 				state = 683
 				state = 466
@@ -5788,6 +5789,16 @@ CHL_mapuche_nationalism_decisions = {
 					controls_state = 463 
 				}
 			}
+
+			OR = {
+				controls_state = 864 
+					
+				any_country = {
+					is_subject_of = ROOT
+					controls_state = 864 
+				}
+			}
+
 			OR = {
 				controls_state = 472 
 					
@@ -5868,6 +5879,7 @@ CHL_mapuche_nationalism_decisions = {
 					}
 					OR = {
 						state = 463
+						state = 864
 						state = 472
 						state = 683
 						state = 466
@@ -8320,6 +8332,44 @@ CHL_mapuche_nationalism_decisions = {
 				set_cosmetic_tag = first_nations_canada
 
 				hidden_effect = {
+					CAN_first_nations_council = {
+						add_country_leader_role = {
+							promote_leader = yes
+							country_leader = {
+								ideology = despotism
+								traits = { non_aligned_council_trait }
+								expire = "1980.1.1.1"
+								id = -1
+							}
+						}
+						add_country_leader_role = {
+							promote_leader = yes
+							country_leader = {
+								ideology = conservatism
+								traits = { democratic_council_trait }
+								expire = "1980.1.1.1"
+								id = -1
+							}
+						}
+						add_country_leader_role = {
+							promote_leader = yes
+							country_leader = {
+								ideology = marxism
+								traits = { communist_council_trait }
+								expire = "1980.1.1.1"
+								id = -1
+							}
+						}
+						add_country_leader_role = {
+							promote_leader = yes
+							country_leader = {
+								ideology = falangism
+								traits = { fascist_council_trait }
+								expire = "1980.1.1.1"
+								id = -1
+							}
+						}
+					}
 				}
 
 				add_stability = 0.15
@@ -10133,7 +10183,6 @@ CHL_monarchist_decisions = {
 				add_manpower = 25000
 
 				hidden_effect = {
-					# TODO JA, These should have some kind of new unit icon and 3d models, different from the previous ones
 					division_template = {
 					    name = "New Incan Warriors"
 					    is_locked = no
@@ -10497,7 +10546,6 @@ CHL_monarchist_decisions = {
 				add_manpower = 15000
 
 				hidden_effect = {
-					# TODO JA, These should have some kind of new unit icon and 3d models, different from the previous ones
 					division_template = {
 					    name = "Guianan Warriors"
 					    is_locked = no

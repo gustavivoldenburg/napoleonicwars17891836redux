@@ -15,6 +15,9 @@ state={
 			add_core_of = GLL
 
 		}
+						1808.1.1 = {
+			owner = AUS
+		}
 		1810.1.1 = {
 			owner = POL
 			remove_core_of = GLL
@@ -47,7 +50,7 @@ state={
 		owner = POL
 		}
 		1900.1.1 = {
-			owner = AUH
+			owner = AUS
 
 		}
 		victory_points = {

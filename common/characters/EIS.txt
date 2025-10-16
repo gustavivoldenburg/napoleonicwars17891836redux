@@ -1,0 +1,17 @@
+characters={
+	EIS_charlesaugustus={
+		name=EIS_CHARACTER_CHARLESAUGUSTUS
+		portraits={
+			civilian={
+				large="GFX_portrait_eis_charlesaugustus_large"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={Saxe-Weimar-Eisenach}
+			desc = EIS_CHARLESAUGUSTUS_DESC
+			expire="1797.1.1"
+		}
+}
+}
+

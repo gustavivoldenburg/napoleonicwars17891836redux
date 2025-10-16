@@ -1,0 +1,17 @@
+characters={
+	SCH_george={
+		name=SCH_CHARACTER_GEORGE
+		portraits={
+			civilian={
+				large="GFX_portrait_sch_george_large"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={Lippe}
+			desc = SCH_GEORGE_DESC
+			expire="1797.1.1"
+		}
+}
+}
+

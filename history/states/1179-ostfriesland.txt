@@ -31,7 +31,7 @@ state={
                 owner = PRE
 				remove_core_of = HOL
                 }
-				1812.1.1 = {
+				1808.1.1 = {
                 add_core_of = HOL
                 owner = HOL
 				remove_core_of = PRE

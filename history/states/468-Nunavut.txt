@@ -12,7 +12,7 @@ aluminium=7.000
 		owner = ZZZ
                 1700.1.1 = {
 			owner = FRA
-			controller = FRA
+			
 		}
         1776.1.1 = {
 		owner = CAN

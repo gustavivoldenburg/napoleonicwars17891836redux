@@ -2,19 +2,19 @@
 1738.1.1 = {
 recruit_character=BAD_charlesfrederick
 promote_character=BAD_charlesfrederick
+recruit_character=BAD_charles
+recruit_character=BAD_louisi
+recruit_character=BAD_leopold
 }
 1812.1.1 = {
-recruit_character=BAD_charles
 promote_character=BAD_charles
 retire_character=BAD_charlesfrederick
 }
 1819.1.1 = {
-recruit_character=BAD_louisi
 promote_character=BAD_louisi
 retire_character=BAD_charles
 }
 1830.1.1 = {
-recruit_character=BAD_leopold
 promote_character=BAD_leopold
 retire_character=BAD_louisi
 }
@@ -30,7 +30,7 @@ set_cosmetic_tag = BAD_electorate #
 1806.1.1 = {
 set_cosmetic_tag = BAD_grandduchy # 
 }
-1812.1.1 = {
+1808.1.1 = { 
 		if = {
 		limit = { has_start_date < 1837.1.1 }
 set_oob = "BAD_1789_1815"
@@ -39,6 +39,9 @@ set_oob = "BAD_1789_1815"
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
+	transport = 1
+	early_submarine = 1
+        gw_artillery = 1 basic_train = 1
 }
 1936.1.1 = {
 set_technology = {
@@ -115,7 +118,7 @@ if = {
 
 }
 
-set_research_slots = 3
+set_research_slots = 0
 set_convoys = 50
 set_stability = 0.75
 

@@ -1,10 +1,39 @@
 ﻿capital = 165
-
+1808.1.1 = {
+			if = {
+		limit = { has_start_date < 1814.1.1 }
+FRA={
+	set_autonomy = {
+        target = CAT
+        autonomous_state = autonomy_protectorate
+        freedom_level = 0.4
+	}
+}
+		set_capital = {
+  state = 41
+  remember_old_capital = no
+}
+}
+}
+1765.1.1 = {
+recruit_character=CAT_josephbonaparte
+}
+1844.1.1 = {
+retire_character=CAT_josephbonaparte
+}
 #oob = ""
-
+1808.1.1 = {
+set_cosmetic_tag = CAT_FRA # Netherlands East Indies
+}
+1814.1.1 = {
+set_cosmetic_tag = CAT # Netherlands East Indies
+}
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
+	transport = 1
+	early_submarine = 1
+        gw_artillery = 1 basic_train = 1
 }
 1936.1.1 = {
 set_technology = {
@@ -73,38 +102,10 @@ set_politics = {
 	ruling_party = democratic
 	last_election = "1936.1.1"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
 	democratic = 50
 	fascism = 3
 	communism = 47
-}
-
-create_country_leader = {
-	name = "Andreu Nin i Pérez"
-	picture = GFX_portrait_Andreu_Nin_i_Perez
-	expire = "1965.1.1"
-	ideology = marxism
-}
-
-create_country_leader = {
-	name = "Lluís Companys i Jover"
-	picture = GFX_portrait_Lluis_Companys_i_Jover
-	expire = "1965.1.1"
-	ideology = liberalism
-}
-
-create_country_leader = {
-	name = "Daniel Cardona i Civit"
-	picture = GFX_portrait_Daniel_Cardona_i_Civit
-	expire = "1965.1.1"
-	ideology = fascism_ideology
-}
-
-create_country_leader = {
-	name = "Francesc Cambó i Batlle"
-	picture = GFX_portrait_Francesc_Cambo_i_Batlle
-	expire = "1965.1.1"
-	ideology = centrism
 }

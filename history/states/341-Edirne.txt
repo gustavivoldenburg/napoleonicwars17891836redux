@@ -5,6 +5,9 @@ state={
 
 	history={
 		owner = OTO
+						buildings = {
+		3879 = {bunker = 2}
+        }
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
@@ -48,7 +51,7 @@ state={
 	}
 
 	provinces={
-		849 3879 3893 6895 13522 13523 13527 
+		849 3879 6895 13522 13523 13525 13527 
 	}
 	manpower=163947
 	buildings_max_level_factor=1.000

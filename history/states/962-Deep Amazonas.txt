@@ -22,9 +22,9 @@ state={
 	}
 
 	provinces={
-		878 893 13754 13756 13758 
+		893 13754 13756
 	}
-	manpower=200000
+	manpower=150000
 	buildings_max_level_factor=1.000
 	state_category=pastoral
 	local_supplies=0.000

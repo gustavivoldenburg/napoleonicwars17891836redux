@@ -9,7 +9,7 @@ set_cosmetic_tag = PEI_ENG_britain_newflag
 set_cosmetic_tag = PEI
 }
 
-set_research_slots = 2
+set_research_slots = 0
 set_stability = 0.75
 set_war_support = 0.5
 # Starting tech

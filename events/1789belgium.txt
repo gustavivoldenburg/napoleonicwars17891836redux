@@ -19,6 +19,7 @@ fire_only_once = yes
 	option = { # 
 		name = "Seems even the Flemish are on board"
 		ai_chance = { factor = 100 } 
+BEL={set_cosmetic_tag=BEL_republic}
 hidden_effect={BEL={set_politics = { ruling_party = democratic }}}
 	1243={set_demilitarized_zone = yes}
 	979={set_demilitarized_zone = yes}
@@ -103,5 +104,24 @@ fire_only_once = yes
 		type = puppet_wargoal_focus
 			}
 	}
+	}
+}
+country_event = {
+	id = bel_1789_event.4
+	title = "The Failure of the Brabantian Revolution"
+	desc = bel_1789_event.4.d
+	picture = GFX_idi_amin_india
+	#is_triggered_only = yes
+trigger = {	
+date > 1790.3.12 has_start_date < 1800.1.1 
+original_tag = LUX		
+has_war_with=BEL
+}
+fire_only_once = yes
+	option = { # 
+		name = "Seems we won"
+		ai_chance = { factor = 100 }
+	LUX={annex_country = { target = BEL transfer_troops = no }} 
+	LUX={set_cosmetic_tag=BEL_AUS}
 	}
 }

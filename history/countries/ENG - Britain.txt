@@ -5,6 +5,16 @@ recruit_character=ENG_rothschildiii
 1848.1.1 = {
 retire_character=ENG_rothschildiii
 }
+1789.1.1 = {
+recruit_character=ENG_henrybenedict
+recruit_character=ENG_fitzjames
+}
+1804.1.1 = {
+retire_character=ENG_henrybenedict
+}
+1836.1.1 = {
+retire_character=ENG_fitzjames
+}
 1815.1.1 = {
 			if = {
 		limit = { has_start_date < 1864.1.1 }
@@ -70,7 +80,7 @@ ENG={
 NIR={set_cosmetic_tag = IRE_ENG}
 	set_autonomy = {
         target = NIR
-        autonomous_state = autonomy_dominion
+        autonomous_state = autonomy_protectorate
         freedom_level = 0.4
 	}
 }
@@ -260,12 +270,24 @@ recruit_character=ENG_jamesii
 promote_character=ENG_jamesii
 retire_character=ENG_charlesii
 }
+1789.1.1 = {
+recruit_character=ENG_horationelson
+}
+1806.1.1 = {
+retire_character=ENG_horationelson
+}
+1789.1.1 = {
+recruit_character=ENG_edwardjenner
+}
+1824.1.1 = {
+retire_character=ENG_edwardjenner
+}
 1689.1.1 = {
-recruit_character=ENG_kingwilliamoforangeisaslutforbigjewishcock
-promote_character=ENG_kingwilliamoforangeisaslutforbigjewishcock
+recruit_character=ENG_kingwilliamoforange
+promote_character=ENG_kingwilliamoforange
 }
 1703.1.1 = {
-retire_character=ENG_kingwilliamoforangeisaslutforbigjewishcock
+retire_character=ENG_kingwilliamoforange
 retire_character=ENG_jamesii
 }
 
@@ -293,6 +315,76 @@ promote_character=ENG_stanley_baldwin
 2022.10.25 = {
 recruit_character=ENG_rishi_sunak
 promote_character=ENG_rishi_sunak
+}
+1789.1.1 = {
+		if = {
+		limit = { has_start_date < 1799.1.1 }
+    set_autonomy = {
+        target = SXL
+        autonomous_state = autonomy_personal_union
+        freedom_level = 0.35
+	}
+}
+}
+1800.1.1 = {
+		if = {
+		limit = { has_start_date < 1801.1.1 }
+    set_autonomy = {
+        target = SXL
+        autonomous_state = autonomy_personal_union
+        freedom_level = 0.35
+	}
+}
+}
+1814.1.1 = {
+		if = {
+		limit = { has_start_date < 1815.1.1 }
+    set_autonomy = {
+        target = SXL
+        autonomous_state = autonomy_personal_union
+        freedom_level = 0.35
+	}
+}
+}
+1789.1.1 = {
+		if = {
+		limit = { has_start_date < 1799.1.1 }
+    set_autonomy = {
+        target = HAN
+        autonomous_state = autonomy_personal_union
+        freedom_level = 0.35
+	}
+}
+}
+1800.1.1 = {
+		if = {
+		limit = { has_start_date < 1801.1.1 }
+    set_autonomy = {
+        target = HAN
+        autonomous_state = autonomy_personal_union
+        freedom_level = 0.35
+	}
+}
+}
+1814.1.1 = {
+		if = {
+		limit = { has_start_date < 1815.1.1 }
+    set_autonomy = {
+        target = HAN
+        autonomous_state = autonomy_personal_union
+        freedom_level = 0.35
+	}
+}
+}
+1821.1.1 = {
+		if = {
+		limit = { has_start_date < 1822.1.1 }
+    set_autonomy = {
+        target = HAN
+        autonomous_state = autonomy_personal_union
+        freedom_level = 0.35
+	}
+}
 }
 1836.1.1 = {
 		if = {
@@ -390,7 +482,7 @@ load_oob = "ENG_Motorized"
 }
 
 
-set_research_slots = 4
+set_research_slots = 0
 
 set_stability = 0.6
 set_war_support = 0.1
@@ -401,7 +493,7 @@ set_technology = {
 	infantry_weapons = 1
 	transport = 1
 	early_submarine = 1
-        gw_artillery = 1
+        gw_artillery = 1 basic_train = 1
 }
 1936.1.1 = {
 set_technology = {
@@ -586,7 +678,7 @@ set_convoys = 800
         autonomy_state = autonomy_free
     }
     }
-1795.1.1 = {
+1837.1.1 = {
     set_autonomy = {
         target = SAF
         autonomous_state = autonomy_colony
@@ -876,7 +968,7 @@ set_politics = {
 	ruling_party = democratic
 	last_election = "1832.11.14"
 	election_frequency = 48
-	elections_allowed = yes ##suspended through duration of war, which is handled via event
+	elections_allowed = no ##suspended through duration of war, which is handled via event
 }
 set_popularities = {
 	democratic = 97

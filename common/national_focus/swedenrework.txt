@@ -1,0 +1,4432 @@
+focus_tree = {
+	id = sweden_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 20
+			tag = SWE
+		}
+	}
+	
+	default = no
+
+	continuous_focus_position = { x = 50 y = 2500 }
+	initial_show_position = {
+		x = 37
+		y = 0
+	}
+
+
+	############################
+	#####    Test focuses      #	
+	############################
+focus = {
+		id = sweden_1789_1815_first_100_focus_1
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = -10
+		y = 1
+allow_branch = { has_start_date > 1789.1.1
+    has_start_date < 1800.1.1 }
+		cost = 4.3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		
+		}
+	}
+		focus = {
+		id = sweden_1789_1815_first_100_focus_2
+		icon = GFX_focus_generic_court
+allow_branch = { has_start_date > 1789.1.1
+    has_start_date < 1800.1.1 }
+		x = -8
+		y = 1
+
+		cost = 4.3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		add_stability=0.05
+		hidden_effect={
+		}
+		}
+	}
+		focus = {
+		id = sweden_1789_1815_first_100_focus_3
+		icon = GFX_goal_generic_neutrality_focus
+allow_branch = { has_start_date > 1789.1.1
+    has_start_date < 1800.1.1 }
+		x = -6
+		y = 1
+
+		cost = 4.3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = sweden_1789_1815_first_100_focus_4
+		icon = GFX_goal_generic_neutrality_focus
+allow_branch = { has_start_date > 1789.1.1
+    has_start_date < 1800.1.1 }
+		x = -10
+		y = 2
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_1
+		}
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_2
+		}
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_3
+		}
+		cost = 4.3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = sweden_1789_1815_first_100_focus_5
+		icon = GFX_focus_generic_annex_country_2 
+allow_branch = { has_start_date > 1789.1.1
+    has_start_date < 1800.1.1 }
+		x = -8
+		y = 2
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_1
+		}
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_2
+		}
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_3
+		}
+		cost = 4.3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = sweden_1789_1815_first_100_focus_6
+		icon = GFX_goal_generic_neutrality_focus
+allow_branch = { has_start_date > 1789.1.1
+    has_start_date < 1800.1.1 }
+		x = -6
+		y = 2
+		cost = 4.3
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_1
+		}
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_2
+		}
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_3
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = sweden_1789_1815_first_100_focus_7
+		icon = GFX_focus_prc_infiltration 
+allow_branch = { has_start_date > 1789.1.1
+    has_start_date < 1800.1.1 }
+		x = -10
+		y = 3
+        prerequisite = {
+        focus =    sweden_1789_1815_first_100_focus_4
+        }
+        prerequisite = {
+        focus =    sweden_1789_1815_first_100_focus_5
+        }
+        prerequisite = {
+        focus =    sweden_1789_1815_first_100_focus_6
+        }
+		cost = 4.3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = sweden_1789_1815_first_100_focus_8
+		icon = GFX_goal_generic_neutrality_focus
+allow_branch = { has_start_date > 1789.1.1
+    has_start_date < 1800.1.1 }
+		x = -8
+		y = 3
+        prerequisite = {
+        focus =    sweden_1789_1815_first_100_focus_4
+        }
+        prerequisite = {
+        focus =    sweden_1789_1815_first_100_focus_5
+        }
+        prerequisite = {
+        focus =    sweden_1789_1815_first_100_focus_6
+        }
+		cost = 4.3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = sweden_1789_1815_first_100_focus_9
+		icon = GFX_goal_generic_small_arms
+allow_branch = { has_start_date > 1789.1.1
+    has_start_date < 1800.1.1 }
+		x = -6
+		y = 3
+        prerequisite = {
+        focus =    sweden_1789_1815_first_100_focus_4
+        }
+        prerequisite = {
+        focus =    sweden_1789_1815_first_100_focus_5
+        }
+        prerequisite = {
+        focus =    sweden_1789_1815_first_100_focus_6
+        }
+		cost = 4.3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		
+		completion_reward = {
+		army_experience = 25
+		}
+	}
+		focus = {
+		id = sweden_1789_1815_first_100_focus_10
+		icon = GFX_goal_generic_neutrality_focus
+allow_branch = { has_start_date > 1789.1.1
+    has_start_date < 1800.1.1 }
+	mutually_exclusive = { focus = sweden_althistory_1 focus = sweden_althistory_2 }
+		x = -8
+		y = 4
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_7
+		}
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_8
+		}
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_9
+		}
+		cost = 4.3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		set_country_flag=swe_vasa_dynasty
+		add_political_power=-150
+		SWE={country_event=sweden_1789_1812.9}
+		}
+	}
+		focus = {
+		id = sweden_althistory_1
+		icon = GFX_goal_generic_neutrality_focus
+allow_branch = { has_start_date > 1789.1.1
+    has_start_date < 1800.1.1 }
+		x = -14
+		y = 4
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_7
+		}
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_8
+		}
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_9
+		}
+		mutually_exclusive = { focus = sweden_1789_1815_first_100_focus_10 focus = sweden_althistory_2 }
+		cost = 4.3
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		set_country_flag=swe_oldenburg_vasa_dynasty
+		add_political_power=-150
+		SWE={country_event=sweden_1789_1812.11}
+		}
+	}
+		focus = {
+		id = sweden_althistory_2
+		icon = GFX_goal_generic_neutrality_focus
+allow_branch = { has_start_date > 1789.1.1
+    has_start_date < 1800.1.1 }
+		x = -2
+		y = 4
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_7
+		}
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_8
+		}
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_9
+		}
+		mutually_exclusive = { focus = sweden_1789_1815_first_100_focus_10 focus = sweden_althistory_1 }
+		cost = 4.3
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+	    set_country_flag=swe_oldenburg_dynasty
+		add_political_power=-150
+		SWE={country_event=sweden_1789_1812.10}
+		RUS={country_event=sweden_1789_1812.3}
+		DEN={country_event=sweden_1789_1812.4}
+		SXL={country_event=sweden_1789_1812.5}
+		HLS={country_event=sweden_1789_1812.6}
+		SHL={country_event=sweden_1789_1812.7}
+		OLD={country_event=sweden_1789_1812.8}
+		}
+	}
+		focus = {
+		id = sweden_althistory_3
+		icon = GFX_goal_generic_neutrality_focus
+		x = 0
+		y = 16
+		cost = 4.3
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_73
+		}
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+        or={
+		has_country_flag=swe_oldenburg_vasa_dynasty
+		has_country_flag=swe_oldenburg_dynasty
+		}
+		or={
+		NOR={is_subject_of=SWE}
+		AND={
+		owns_state=110
+		owns_state=142
+		owns_state=143
+		owns_state=144
+		}
+		}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		101 = { add_claim_by = SWE }
+		}
+	}
+		focus = {
+		id = sweden_althistory_4
+		icon = GFX_goal_generic_neutrality_focus
+		x = 2
+		y = 16
+		cost = 4.3
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_73
+		}
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+        or={
+		has_country_flag=swe_oldenburg_vasa_dynasty
+		has_country_flag=swe_oldenburg_dynasty
+		}
+		or={
+		NOR={is_subject_of=SWE}
+		AND={
+		owns_state=110
+		owns_state=142
+		owns_state=143
+		owns_state=144
+		}
+		}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		100 = { add_claim_by = SWE }
+		}
+	}
+		focus = {
+		id = sweden_althistory_5
+		icon = GFX_goal_generic_neutrality_focus
+		x = 4
+		y = 16
+		cost = 4.3
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_73
+		}
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+        or={
+		has_country_flag=swe_oldenburg_vasa_dynasty
+		has_country_flag=swe_oldenburg_dynasty
+		}
+	    or={
+		NOR={is_subject_of=SWE}
+		AND={
+		owns_state=110
+		owns_state=142
+		owns_state=143
+		owns_state=144
+		}
+		}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		337 = { add_claim_by = SWE }
+		}
+	}
+		focus = {
+		id = sweden_althistory_6
+		icon = GFX_goal_generic_neutrality_focus
+		x = 6
+		y = 16
+		cost = 4.3
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_73
+		}
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+        or={
+		has_country_flag=swe_oldenburg_vasa_dynasty
+		has_country_flag=swe_oldenburg_dynasty
+		}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = sweden_althistory_7
+		icon = GFX_goal_generic_neutrality_focus
+		x = 8
+		y = 16
+		cost = 4.3
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_73
+		}
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+        or={
+		has_country_flag=swe_oldenburg_vasa_dynasty
+		has_country_flag=swe_oldenburg_dynasty
+		}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = sweden_althistory_8
+		icon = GFX_goal_generic_neutrality_focus
+		x = 10
+		y = 16
+		cost = 4.3
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_73
+		}
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+        or={
+		has_country_flag=swe_oldenburg_vasa_dynasty
+		has_country_flag=swe_oldenburg_dynasty
+		}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = sweden_althistory_9
+		icon = GFX_goal_generic_neutrality_focus
+		x = 12
+		y = 16
+		cost = 4.3
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_73
+		}
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+        or={
+		has_country_flag=swe_oldenburg_vasa_dynasty
+		has_country_flag=swe_oldenburg_dynasty
+		}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = sweden_althistory_10
+		icon = GFX_goal_generic_neutrality_focus
+		x = 11
+		y = 17
+		cost = 4.3
+		prerequisite = {
+		focus =	sweden_althistory_9
+		}
+		prerequisite = {
+		focus =	sweden_althistory_8
+		}
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+        or={
+		has_country_flag=swe_oldenburg_vasa_dynasty
+		has_country_flag=swe_oldenburg_dynasty
+		}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = sweden_althistory_11
+		icon = GFX_goal_generic_neutrality_focus
+		x = 16
+		y = 16
+		cost = 4.3
+		mutually_exclusive = { focus = sweden_althistory_12 }
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_73
+		}
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+        or={
+		has_country_flag=swe_oldenburg_vasa_dynasty
+		has_country_flag=swe_oldenburg_dynasty
+		}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = sweden_althistory_12
+		icon = GFX_goal_generic_neutrality_focus
+		x = 18
+		y = 16
+		cost = 4.3
+		mutually_exclusive = { focus = sweden_althistory_11 }
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_73
+		}
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+        or={
+		has_country_flag=swe_oldenburg_vasa_dynasty
+		has_country_flag=swe_oldenburg_dynasty
+		}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		SWE={country_event=sweden_1789_1812.14}
+		}
+	}
+		focus = {
+		id = sweden_althistory_13
+		icon = GFX_goal_generic_neutrality_focus
+		x = 20
+		y = 16
+		cost = 4.3
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_73
+		}
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+        or={
+		has_country_flag=swe_oldenburg_vasa_dynasty
+		has_country_flag=swe_oldenburg_dynasty
+		}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = sweden_althistory_14
+		icon = GFX_goal_generic_neutrality_focus
+		x = 22
+		y = 16
+		cost = 4.3
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_73
+		}
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+        or={
+		has_country_flag=swe_oldenburg_vasa_dynasty
+		has_country_flag=swe_oldenburg_dynasty
+		}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = sweden_althistory_15
+		icon = GFX_goal_generic_neutrality_focus
+		x = 24
+		y = 16
+		cost = 4.3
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_73
+		}
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+        or={
+		has_country_flag=swe_oldenburg_vasa_dynasty
+		has_country_flag=swe_oldenburg_dynasty
+		}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = sweden_althistory_16
+		icon = GFX_goal_generic_neutrality_focus
+		x = 26
+		y = 16
+		cost = 4.3
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_73
+		}
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+        or={
+		has_country_flag=swe_oldenburg_vasa_dynasty
+		has_country_flag=swe_oldenburg_dynasty
+		}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = sweden_althistory_17
+		icon = GFX_goal_generic_neutrality_focus
+		x = 28
+		y = 16
+		cost = 4.3
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_73
+		}
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+        or={
+		has_country_flag=swe_oldenburg_vasa_dynasty
+		has_country_flag=swe_oldenburg_dynasty
+		}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = sweden_althistory_18
+		icon = GFX_goal_generic_neutrality_focus
+		x = 30
+		y = 16
+		cost = 4.3
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_73
+		}
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+        or={
+		has_country_flag=swe_oldenburg_vasa_dynasty
+		has_country_flag=swe_oldenburg_dynasty
+		}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = sweden_althistory_19
+		icon = GFX_goal_generic_neutrality_focus
+		x = 32
+		y = 16
+		cost = 4.3
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_73
+		}
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+        or={
+		has_country_flag=swe_oldenburg_vasa_dynasty
+		has_country_flag=swe_oldenburg_dynasty
+		}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = sweden_althistory_20
+		icon = GFX_goal_generic_neutrality_focus
+		x = 34
+		y = 16
+		cost = 4.3
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_73
+		}
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+        or={
+		has_country_flag=swe_oldenburg_vasa_dynasty
+		has_country_flag=swe_oldenburg_dynasty
+		}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = sweden_althistory_21
+		icon = GFX_goal_generic_neutrality_focus
+		x = 36
+		y = 16
+		cost = 4.3
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_73
+		}
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+        or={
+		has_country_flag=swe_oldenburg_vasa_dynasty
+		has_country_flag=swe_oldenburg_dynasty
+		}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+			focus = {
+		id = sweden_althistory_22
+		icon = GFX_goal_generic_neutrality_focus
+		x = 38
+		y = 16
+		cost = 4.3
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_73
+		}
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+        or={
+		has_country_flag=swe_oldenburg_vasa_dynasty
+		has_country_flag=swe_oldenburg_dynasty
+		}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+			focus = {
+		id = sweden_althistory_23
+		icon = GFX_goal_generic_neutrality_focus
+		x = 40
+		y = 16
+		cost = 4.3
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_73
+		}
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+        or={
+		has_country_flag=swe_oldenburg_vasa_dynasty
+		has_country_flag=swe_oldenburg_dynasty
+		}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+			focus = {
+		id = sweden_althistory_24
+		icon = GFX_goal_generic_neutrality_focus
+		x = 42
+		y = 16
+		cost = 4.3
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_73
+		}
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+        or={
+		has_country_flag=swe_oldenburg_vasa_dynasty
+		has_country_flag=swe_oldenburg_dynasty
+		}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+			focus = {
+		id = sweden_althistory_25
+		icon = GFX_goal_generic_neutrality_focus
+		x = 44
+		y = 16
+		cost = 4.3
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_73
+		}
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+        or={
+		has_country_flag=swe_oldenburg_vasa_dynasty
+		has_country_flag=swe_oldenburg_dynasty
+		}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = sweden_althistory_40
+		icon = GFX_goal_baltics
+allow_branch = { has_start_date > 1789.1.1
+    has_start_date < 1800.1.1 }
+		x = -4
+		y = 6
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_11
+		}
+		cost = 4.3
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+        has_country_flag=swe_oldenburg_dynasty
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = sweden_althistory_41
+		icon = GFX_goal_baltics
+allow_branch = { has_start_date > 1789.1.1
+    has_start_date < 1800.1.1 }
+		x = -19
+		y = 14
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_54
+		}
+		cost = 4.3
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+		has_country_flag=swe_has_revoked_the_treaty_of_abo
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		146 = { add_claim_by = SWE }
+		}
+	}
+		focus = {
+		id = sweden_althistory_42
+		icon = GFX_goal_baltics
+allow_branch = { has_start_date > 1789.1.1
+    has_start_date < 1800.1.1 }
+		x = -3
+		y = 16
+		mutually_exclusive = { focus = sweden_1789_1815_first_100_focus_92 }
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_73
+		}
+		cost = 10
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = sweden_1789_1815_first_100_focus_11
+		icon = GFX_goal_baltics
+
+		x = -5
+		y = 5
+
+
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_10 focus = sweden_althistory_1 focus = sweden_althistory_2
+		}
+		cost = 4.3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = sweden_1789_1815_first_100_focus_12
+		icon = GFX_goal_generic_neutrality_focus
+		x = -7
+		y = 5
+
+
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_10 focus = sweden_althistory_1 focus = sweden_althistory_2
+		}
+		cost = 4.3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = sweden_1789_1815_first_100_focus_13
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = -7
+		y = 6
+
+
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_12
+		}
+		cost = 4.3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+        or={
+		has_country_flag=swe_vasa_dynasty
+		has_country_flag=swe_oldenburg_vasa_dynasty
+		has_war_with=RUS
+		has_war_with=DEN
+		}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = sweden_1789_1815_first_100_focus_14
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = -9
+		y = 5
+
+
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_10 focus = sweden_althistory_1 focus = sweden_althistory_2
+		}
+		cost = 4.3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = sweden_1789_1815_first_100_focus_15
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = -10
+		y = 6
+
+
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_14 
+		}
+		cost = 4.3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = sweden_1789_1815_first_100_focus_16
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = -11
+		y = 5
+
+
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_10 focus = sweden_althistory_1 focus = sweden_althistory_2
+		}
+		cost = 4.3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		add_war_support=0.01
+		}
+	}
+		focus = {
+		id = sweden_1789_1815_first_100_focus_17
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = -3
+		y = 5
+
+
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_10 focus = sweden_althistory_1 focus = sweden_althistory_2
+		}
+		cost = 4.3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = sweden_1789_1815_first_100_focus_18
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = -12
+		y = 6
+
+
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_16 
+		}
+		cost = 4.3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		add_war_support=0.01
+		}
+	}
+		focus = {
+		id = sweden_1789_1815_first_100_focus_19
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 0
+		y = 5
+
+
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_10 focus = sweden_althistory_1 focus = sweden_althistory_2
+		}
+		cost = 4.3
+
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = sweden_1789_1815_first_100_focus_20
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 0
+		y = 6
+
+
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_19 
+		}
+		cost = 4.3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = sweden_1789_1815_first_100_focus_21
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = -13
+		y = 7
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_18
+		}
+		cost = 4.3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		add_war_support=0.01
+		}
+	}
+		focus = {
+		id = sweden_1789_1815_first_100_focus_22
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = -16
+		y = 5
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_10 focus = sweden_althistory_1 focus = sweden_althistory_2
+		}
+		cost = 4.3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		
+		completion_reward = {
+	}
+		}
+		focus = {
+		id = sweden_1789_1815_first_100_focus_23
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = -3
+		y = 7
+
+		cost = 4.3
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_17
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = sweden_1789_1815_first_100_focus_24
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = -16
+		y = 6
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_22
+		}
+		cost = 4.3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = sweden_1789_1815_first_100_focus_25
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = -16
+		y = 7
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_24
+		}
+		cost = 4.3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = sweden_1789_1815_first_100_focus_26
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = -8
+		y = 7
+		cost = 4.3
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_13 focus =	sweden_1789_1815_first_100_focus_15 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = sweden_1789_1815_first_100_focus_27
+		icon = GFX_goal_generic_consumer_goods 
+
+		x = -24
+		y = 8
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_26
+		}
+				prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_25
+		}
+		cost = 4.3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		
+		completion_reward = {
+					141 = {	
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+		focus = {
+		id = sweden_1789_1815_first_100_focus_28
+		icon = GFX_goal_generic_consumer_goods 
+
+		x = -22
+		y = 8
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_26
+		}
+				prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_25
+		}
+		cost = 4.3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+						140 = {	
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+		focus = {
+		id = sweden_1789_1815_first_100_focus_29
+		icon = GFX_goal_generic_consumer_goods 
+
+		x = -20
+		y = 8
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_26
+		}
+				prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_25
+		}
+		cost = 4.3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+					138 = {	
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+		focus = {
+		id = sweden_1789_1815_first_100_focus_30
+		icon = GFX_goal_generic_consumer_goods 
+
+		x = -18
+		y = 8
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_26
+		}		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_25
+		}
+		cost = 4.3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+							141 = {	
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+		focus = {
+		id = sweden_1789_1815_first_100_focus_31
+		icon = GFX_goal_generic_consumer_goods 
+
+		x = -24
+		y = 9
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_27 focus =	sweden_1789_1815_first_100_focus_28 focus =	sweden_1789_1815_first_100_focus_29 focus =	sweden_1789_1815_first_100_focus_30
+		}
+		cost = 4.3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		
+		
+		completion_reward = {
+							141 = {	
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+		focus = {
+		id = sweden_1789_1815_first_100_focus_32
+		icon = GFX_goal_generic_consumer_goods 
+
+		x = -22
+		y = 9
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_27 focus =	sweden_1789_1815_first_100_focus_28 focus =	sweden_1789_1815_first_100_focus_29 focus =	sweden_1789_1815_first_100_focus_30
+		}
+		cost = 4.3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+							141 = {	
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+		focus = {
+		id = sweden_1789_1815_first_100_focus_33
+		icon = GFX_goal_generic_consumer_goods 
+
+		x = -20
+		y = 9
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_27 focus =	sweden_1789_1815_first_100_focus_28 focus =	sweden_1789_1815_first_100_focus_29 focus =	sweden_1789_1815_first_100_focus_30
+		}
+		cost = 4.3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		
+		completion_reward = {
+					899 = {	
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+		focus = {
+		id = sweden_1789_1815_first_100_focus_34
+		icon = GFX_goal_generic_consumer_goods 
+
+		x = -18
+		y = 9
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_27 focus =	sweden_1789_1815_first_100_focus_28 focus =	sweden_1789_1815_first_100_focus_29 focus =	sweden_1789_1815_first_100_focus_30
+		}
+		cost = 4.3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+					138 = {	
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+		focus = {
+		id = sweden_1789_1815_first_100_focus_35
+		icon = GFX_goal_generic_consumer_goods 
+
+		x = -24
+		y = 10
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_31 focus =	sweden_1789_1815_first_100_focus_32 focus =	sweden_1789_1815_first_100_focus_33 focus =	sweden_1789_1815_first_100_focus_34
+		}
+		cost = 4.3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+						139 = {	
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+		focus = {
+		id = sweden_1789_1815_first_100_focus_36
+		icon = GFX_goal_generic_consumer_goods 
+
+		x = -22
+		y = 10
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_31 focus =	sweden_1789_1815_first_100_focus_32 focus =	sweden_1789_1815_first_100_focus_33 focus =	sweden_1789_1815_first_100_focus_34
+		}
+		cost = 4.3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+						899 = {	
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+		focus = {
+		id = sweden_1789_1815_first_100_focus_37
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = -8
+		y = 8
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_26
+		}
+
+		cost = 4.3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = sweden_1789_1815_first_100_focus_38
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = -8
+		y = 9
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_37
+		}
+
+		cost = 4.3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = sweden_1789_1815_first_100_focus_39
+		icon = GFX_focus_generic_court
+
+		x = -10
+		y = 8
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_26
+		}
+
+		cost = 4.3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+        has_war_with=ALG
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		SWE={country_event=sweden_1789_1812.15}
+		}
+	}
+		focus = {
+		id = sweden_1789_1815_first_100_focus_40
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = -14
+		y = 8
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_21
+		}
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_26
+		}
+
+		cost = 4.3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		has_country_flag=gustav_iii_has_died
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		add_war_support=0.01
+		}
+	}
+		focus = {
+		id = sweden_1789_1815_first_100_focus_41
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = -15
+		y = 9
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_40
+		}
+		cost = 4.3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		add_stability=0.05
+		}
+	}
+		focus = {
+		id = sweden_1789_1815_first_100_focus_42
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+
+		x = -13
+		y = 9
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_40
+		}
+		cost = 4.3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = sweden_1789_1815_first_100_focus_43
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = -13
+		y = 10
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_42
+		}
+		cost = 4.3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = sweden_1789_1815_first_100_focus_44
+		icon = GFX_focus_generic_court
+
+		x = -15
+		y = 10
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_41
+		}
+		cost = 4.3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = sweden_1789_1815_first_100_focus_45
+		icon = GFX_focus_chi_reach_out_to_france
+
+		x = -11
+		y = 10
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_42
+		}
+		cost = 4.3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {	
+		}
+	}
+		focus = {
+		id = sweden_1789_1815_first_100_focus_46
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = -5
+		y = 8
+
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_26
+		}
+		cost = 4.3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = sweden_1789_1815_first_100_focus_47
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = -2
+		y = 8
+
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_26
+		}
+		cost = 4.3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = sweden_1789_1815_first_100_focus_48
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = -2
+		y = 9
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_47
+		}
+		cost = 4.3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = sweden_1789_1815_first_100_focus_49
+		icon = GFX_focus_generic_court
+
+		x = -16
+		y = 12
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_43 focus =	sweden_1789_1815_first_100_focus_44 focus =	sweden_1789_1815_first_100_focus_45
+		}
+		cost = 4.3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = sweden_1789_1815_first_100_focus_50
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = -2
+		y = 10
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_48
+		}
+		cost = 4.3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+focus = {
+		id = sweden_1789_1815_first_100_focus_51
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = -2
+		y = 11
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_50
+		}
+		cost = 4.3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = sweden_1789_1815_first_100_focus_52
+		icon = GFX_focus_chi_reach_out_to_france
+
+		x = 0
+		y = 8
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_26
+		}
+		cost = 4.3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = sweden_1789_1815_first_100_focus_53
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 0
+		y = 9
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_52
+		}
+		cost = 4.3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = sweden_1789_1815_first_100_focus_54
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+
+		x = -19
+		y = 13
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_49
+		}
+		cost = 4.3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		SWE={country_event=sweden_1789_1812.13}
+		}
+	}
+		focus = {
+		id = sweden_1789_1815_first_100_focus_55
+		icon = GFX_goal_generic_CAS 
+
+		x = -17
+		y = 13
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_49
+		}
+		cost = 4.3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {	
+		}
+	}
+		focus = {
+		id = sweden_1789_1815_first_100_focus_56
+		icon = GFX_goal_generic_CAS 
+
+		x = -15
+		y = 13
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_49
+		}
+		cost = 4.3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = sweden_1789_1815_first_100_focus_57
+		icon = GFX_goal_generic_CAS 
+
+		x = -13
+		y = 13
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_49
+		}
+		cost = 4.3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = sweden_1789_1815_first_100_focus_58
+		icon = GFX_goal_generic_construct_naval_dockyard
+
+		x = -23
+		y = 11
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_35
+		}
+				prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_36
+		}
+		cost = 4.3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		
+		completion_reward = {
+					899 = {	
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+	    					140 = {	
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+							141 = {	
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+focus = {
+		id = sweden_1789_1815_first_100_focus_61
+		icon = GFX_goal_generic_small_arms
+
+		x = -27
+		y = 8
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_26
+		}
+
+		cost = 4.3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		add_manpower=8000
+		SWE={
+						add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 8000
+					producer = SWE
+				}
+		}
+		}
+	}
+		focus = {
+		id = sweden_1789_1815_first_100_focus_62
+		icon = GFX_goal_generic_small_arms
+
+		x = -27
+		y = 9
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_61
+		}
+
+		cost = 4.3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		add_manpower=8000
+				SWE={
+						add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 8000
+					producer = SWE
+				}
+		}
+		}
+	}
+		focus = {
+		id = sweden_1789_1815_first_100_focus_63
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = -13
+		y = 11
+		cost = 4.3
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_43
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = sweden_1789_1815_first_100_focus_64
+		icon = GFX_goal_generic_small_arms
+
+		x = -27
+		y = 10
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_62
+		}
+
+		cost = 4.3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		add_manpower=8000
+						SWE={
+						add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 8000
+					producer = SWE
+				}
+		}
+		}
+	}
+		focus = {
+		id = sweden_1789_1815_first_100_focus_65
+		icon = GFX_focus_generic_destroyer 
+
+		x = -23
+		y = 12
+				prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_58
+		}
+
+		cost = 4.3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		894 = { set_demilitarized_zone = no }	
+		add_political_power=50
+		SWE={set_country_flag=marstrand_free_port_abolished_flag}
+		894 = {
+	remove_dynamic_modifier = { modifier = marstrand_free_port }
+}
+		}
+	}
+		focus = {
+		id = sweden_1789_1815_first_100_focus_66
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = -4
+		y = 12
+
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_51
+		}
+		cost = 4.3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = sweden_1789_1815_first_100_focus_67
+		icon = GFX_focus_prc_infiltration 
+
+		x = -19
+		y = 10
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_33
+		}
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_34
+		}
+		cost = 4.3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		SWE={set_country_flag = coffee_sweden_banned_flag}
+		}
+	}
+		focus = {
+		id = sweden_1789_1815_first_100_focus_68
+		icon = GFX_focus_chi_reach_out_to_france
+
+		x = -7
+		y = 11
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_43 focus =	sweden_1789_1815_first_100_focus_44 focus =	sweden_1789_1815_first_100_focus_45
+		}
+
+		cost = 4.3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = sweden_1789_1815_first_100_focus_69
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = -9
+		y = 11
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_43 focus =	sweden_1789_1815_first_100_focus_44 focus =	sweden_1789_1815_first_100_focus_45
+		}
+
+		cost = 4.3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = sweden_1789_1815_first_100_focus_70
+		icon = GFX_focus_chi_reach_out_to_france
+
+		x = -8
+		y = 12
+
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_68
+		}
+		cost = 4.3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+focus = {
+		id = sweden_1789_1815_first_100_focus_71
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 2
+		y = 8
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_26
+		}
+		cost = 4.3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = sweden_1789_1815_first_100_focus_72
+		icon = GFX_focus_chi_reach_out_to_france
+
+		x = -6
+		y = 12
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_68
+		}
+		cost = 4.3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = sweden_1789_1815_first_100_focus_73
+		icon = GFX_goal_generic_dangerous_deal
+
+		x = -8
+		y = 15
+
+		cost = 10
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_54 
+		}
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_55
+		}
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_56 
+		}
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_57
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = sweden_1789_1815_first_100_focus_74
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = -6
+		y = 10
+
+		cost = 10
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_38
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = sweden_1789_1815_first_100_focus_75
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = -13
+		y = 16
+
+		cost = 10
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_73 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {	
+		}
+	}
+		focus = {
+		id = sweden_1789_1815_first_100_focus_76
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = -8
+		y = 13
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_70 focus =	sweden_1789_1815_first_100_focus_72
+		}
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = sweden_1789_1815_first_100_focus_77
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = -6
+		y = 13
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_70 focus =	sweden_1789_1815_first_100_focus_72
+		}
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = sweden_1789_1815_first_100_focus_78
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = -2
+		y = 12
+
+		cost = 10
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_51
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = sweden_1789_1815_first_100_focus_79
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 0
+		y = 12
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_51
+		}
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = sweden_1789_1815_first_100_focus_80
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+
+		x = -11
+		y = 16
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_73 
+		}
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+focus = {
+		id = sweden_1789_1815_first_100_focus_81
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = -6
+		y = 14
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_77
+		}
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = sweden_1789_1815_first_100_focus_82
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = -16
+		y = 16
+
+
+		cost = 10
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_73 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+        date > 1796.1.1
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = sweden_1789_1815_first_100_focus_83
+		icon = GFX_focus_generic_industry_2
+
+		x = -21
+		y = 16
+
+
+		cost = 10
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_73 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = sweden_1789_1815_first_100_focus_84
+		icon = GFX_focus_generic_industry_2
+
+		x = -19
+		y = 16
+
+
+		cost = 10
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_73 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+							896 = {
+				add_extra_state_shared_building_slots = 1
+				add_resource = {
+					type = steel
+					amount = 5
+				}
+			}
+		}
+	}
+		focus = {
+		id = sweden_1789_1815_first_100_focus_85
+		icon = GFX_focus_generic_industry_2
+
+		x = -21
+		y = 17
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_83 
+		}
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_84
+		}
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {	
+		}
+	}
+		focus = {
+		id = sweden_1789_1815_first_100_focus_86
+		icon = GFX_focus_generic_industry_2
+
+		x = -19
+		y = 17
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_83 
+		}
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_84
+		}
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = sweden_1789_1815_first_100_focus_87
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = -16
+		y = 17
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_82
+		}
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = sweden_1789_1815_first_100_focus_88
+		icon = GFX_focus_generic_industry_2
+
+		x = -20
+		y = 18
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_85
+		}
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_86
+		}
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		
+		completion_reward = {
+					138 = {
+				add_extra_state_shared_building_slots = 2
+				add_resource = {
+					type = steel
+					amount = 10
+				}
+			}
+		}
+	}
+		focus = {
+		id = sweden_1789_1815_first_100_focus_89
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = -24
+		y = 16
+
+
+		cost = 10
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_73 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = sweden_1789_1815_first_100_focus_90
+		icon = GFX_focus_generic_industry_2
+
+		x = -22
+		y = 18
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_85
+		}
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_86
+		}
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+focus = {
+		id = sweden_1789_1815_first_100_focus_91
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+
+		x = -12
+		y = 17
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_80 
+		}
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = sweden_1789_1815_first_100_focus_92
+		icon = GFX_goal_baltics
+
+		x = -5
+		y = 16
+		mutually_exclusive = { focus = sweden_althistory_42 }
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_73
+		}
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = sweden_1789_1815_first_100_focus_93
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = -9
+		y = 16
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_73 
+		}
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = sweden_1789_1815_first_100_focus_94
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = -7
+		y = 16
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_73 
+		}
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = sweden_1789_1815_first_100_focus_95
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = -9
+		y = 17
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_93 focus =	sweden_1789_1815_first_100_focus_94
+		}
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {	
+		}
+	}
+		focus = {
+		id = sweden_1789_1815_first_100_focus_96
+		icon = GFX_goal_generic_neutrality_focus
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_87
+		}
+		x = -16
+		y = 18
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = sweden_1789_1815_first_100_focus_97
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = -7
+		y = 17
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_93 focus =	sweden_1789_1815_first_100_focus_94
+		}
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = sweden_1789_1815_first_100_focus_98
+		icon = GFX_focus_prc_infiltration 
+
+		x = -19
+		y = 19
+		cost = 10
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_88 focus =	sweden_1789_1815_first_100_focus_90
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+        has_country_flag = coffee_sweden_banned_flag
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = sweden_1789_1815_first_100_focus_99
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = -8
+		y = 18
+		prerequisite = {
+		focus =	sweden_1789_1815_first_100_focus_95 focus =	sweden_1789_1815_first_100_focus_97
+		}
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+        date > 1799.9.1
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+}
+
+

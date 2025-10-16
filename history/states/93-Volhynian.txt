@@ -5,7 +5,10 @@ state={
 
 	history={
 		victory_points = {
-			422 3 
+			422 5 
+		}
+		victory_points = {
+			6557 5
 		}
 		owner = LIT
 		add_core_of = LIT
@@ -64,10 +67,10 @@ state={
 	}
 
 	provinces={
-		422 1675 1780 3412 4467 4687 4744 4764 6520 7701 10218 10408 10576 10584 10653 10705 12581 12595 12655 12666 
+		422 572 1675 1780 3412 4467 4687 4743 4744 4764 6435 6520 6546 6557 7701 7805 10187 10218 10408 10561 10576 10584 10631 10653 10705 12581 12595 12655 12666 
 	}
-	manpower=1000000
+	manpower=2000000
 	buildings_max_level_factor=1.000
-	state_category=town
+	state_category=large_town
 	local_supplies=0.000
 }

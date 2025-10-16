@@ -1,5 +1,10 @@
 ﻿capital = 37
-
+1789.1.1 = {
+recruit_character=DEN_michael
+}
+1846.1.1 = {
+retire_character=DEN_michael
+}
 1814.1.1 = {
 			if = {
 		limit = { has_start_date < 1815.1.1 }
@@ -28,7 +33,7 @@
 	HLS={set_cosmetic_tag=HLS_DEN}
 			}
 }
-1806.11.11 = {
+1444.11.11 = {
 			if = {
 		limit = { has_start_date < 1870.1.1 }
 	set_autonomy = {
@@ -61,6 +66,12 @@
 
 
 
+1789.1.1 = {
+recruit_character=DEN_bernstorff
+}
+1800.1.1 = {
+retire_character=DEN_bernstorff
+}
 
 
 
@@ -296,14 +307,14 @@ recruit_character = DEN_ejnar_warum
 recruit_character = DEN_viggo_kampman
 }
 
-set_research_slots = 3
+set_research_slots = 0
 set_stability = 0.9
 set_war_support = 0.1
 set_technology = {
 	infantry_weapons = 1
 	transport = 1
 	early_submarine = 1
-        gw_artillery = 1
+        gw_artillery = 1 basic_train = 1
 }
 1936.1.1 = {
 set_technology = {
@@ -554,7 +565,7 @@ neutrality = 50
 		ruling_party = democratic
 		last_election = "1935.10.22"
 		election_frequency = 48
-		elections_allowed = yes
+		elections_allowed = no
 	}
 }
 1939.1.1 = {
@@ -566,7 +577,7 @@ neutrality = 50
 			ruling_party = democratic
 			last_election = "1939.4.3"
 			election_frequency = 42
-			elections_allowed = yes
+			elections_allowed = no
 		}
 	}
 	if = {
@@ -577,7 +588,7 @@ neutrality = 50
 			ruling_party = democratic
 			last_election = "1939.10.22"
 			election_frequency = 48
-			elections_allowed = yes
+			elections_allowed = no
 		}
 	}
 	

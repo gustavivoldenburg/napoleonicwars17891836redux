@@ -25,9 +25,7 @@ state={
                 add_core_of = AUS
 		}
 		1900.1.1 = {
-			owner = AUH
-			controller = AUH
-			add_core_of = AUH
+			owner = HUN
 			add_core_of = ROM
 			remove_core_of = HUN
 			remove_core_of = AUS
@@ -40,7 +38,7 @@ state={
 		1919.1.1 = {
 			owner = ROM
 			controller = ROM
-			remove_core_of = AUH
+			remove_core_of = AUS
 
 		}
 		1945.1.1 = {

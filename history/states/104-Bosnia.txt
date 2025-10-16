@@ -29,13 +29,6 @@ state={
 			remove_core_of = SER
 
 		}
-		1910.1.1 = {
-			owner = AUH
-			controller = AUH
-			add_core_of = BOS
-			remove_core_of = SER
-
-		}
 		victory_points = {
 			11899 20 
 		}
@@ -75,10 +68,10 @@ state={
 	}
 
 	provinces={
-		3984 3985 6799 6957 11572 11899 13833 13834 13835 13841 
+		3984 3985 6799 6957 9586 9922 11572 11872 11899 13833 13834 13835 13836
 	}
-	manpower=1000000
+	manpower=1225000
 	buildings_max_level_factor=1.000
-	state_category=town
+	state_category=city
 	local_supplies=7.000
 }

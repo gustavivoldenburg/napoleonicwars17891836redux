@@ -5,6 +5,9 @@ oob = "COS_1936"
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
+	transport = 1
+	early_submarine = 1
+        gw_artillery = 1 basic_train = 1
 }
 
 
@@ -36,7 +39,7 @@ recruit_character = COS_julio_acosta_garcia
 recruit_character = COS_chico_orlich_bolmarich
 
 
-set_country_flag = monroe_doctrine
+
 set_war_support = 0.1
 set_convoys = 10
 
@@ -89,7 +92,7 @@ set_politics = {
 	ruling_party = democratic
 	last_election = "1932.2.14"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 
 set_popularities = {
@@ -102,7 +105,7 @@ set_popularities = {
 		ruling_party = democratic
 		last_election = "1936.2.9"
 		election_frequency = 48
-		elections_allowed = yes
+		elections_allowed = no
 	}
 
 	set_popularities = {

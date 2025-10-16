@@ -1,8 +1,16 @@
 ﻿capital = 42
-
+1789.1.1 = {
+recruit_character=LIC_ernest
+}
+1845.1.1 = {
+retire_character=LIC_ernest
+}
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
+	transport = 1
+	early_submarine = 1
+        gw_artillery = 1 basic_train = 1
 }
 
 set_convoys = 20

@@ -21,15 +21,20 @@ state={
 		add_core_of = PRE
 		remove_core_of = CLE
 		}
+														1808.1.1 = {
+                owner = SLM
+								add_core_of = SLM
+				remove_core_of = PRE
+                }
 		1812.1.1 = {
 			owner = FRA
-		add_core_of = BRG
+		add_core_of = SLM
 		remove_core_of = PRE
 		}
 		1814.1.1 = {
 		owner = PRE
 		add_core_of = PRE
-		remove_core_of = BRG
+		remove_core_of = SLM
 		}
 		1871.1.1 = {
                 add_core_of = GER

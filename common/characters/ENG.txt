@@ -1,4 +1,60 @@
 characters={
+			ENG_horationelson = {
+		name = ENG_horationelson
+		portraits = {
+			navy = {
+				large = GFX_portrait_ENG_horationelson
+				small = GFX_portrait_ENG_horationelson_small
+			}
+		}
+		advisor={			
+			slot = high_command
+			idea_token = ENG_horationelson
+			ledger = navy
+			allowed = {
+				original_tag = ENG
+			}
+			#cost = 50
+			ai_will_do = {
+				base = 1.000
+			}
+		}
+		navy_leader = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			maneuvering_skill = 2
+			coordination_skill = 2
+		}
+	}
+	ENG_henrybenedict={
+		name=ENG_CHARACTER_HENRYBENEDICT
+		portraits={
+			civilian={
+				large="GFX_portrait_eng_henrybenedict_large"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={Stuart}
+			desc = ENG_HENRYBENEDICT_DESC
+			expire="1797.1.1"
+		}
+}
+	ENG_fitzjames={
+		name=ENG_CHARACTER_FITZJAMES
+		portraits={
+			civilian={
+				large="GFX_portrait_eng_fitzjames_large"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={Stuart}
+			desc = ENG_FITZJAMES_DESC
+			expire="1797.1.1"
+		}
+}
 					ENG_rothschildiii={
 		name=ENG_CHARACTER_ROTHSCHILDIII
 		portraits={
@@ -20,6 +76,37 @@ characters={
 		        }
 			traits  = {
 				rothschild_banker
+			}
+			on_add  = {
+			}
+			do_effect  = {
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+	}
+						ENG_edwardjenner={
+		name=ENG_CHARACTER_EDWARDJENNER
+		portraits={
+                        army={
+				small="GFX_idea_eng_edwardjenner_small"
+			}
+			civilian = {
+				large = GFX_portrait_eng_edwardjenner_large
+			}
+		}
+		advisor={
+                        can_be_fired = no
+			slot = political_advisor
+			idea_token = ENG_edwardjenner
+			allowed  = {
+				original_tag  = ENG
+			}
+			available  = {
+		        }
+			traits  = {
+				masonic_physician
 			}
 			on_add  = {
 			}
@@ -835,17 +922,17 @@ characters={
 
 
 
-	ENG_kingwilliamoforangeisaslutforbigjewishcock={
-		name=ENG_CHARACTER_KINGWILLIAMOFORANGEISASLUTFORBIGJEWISHCOCK
+	ENG_kingwilliamoforange={
+		name=ENG_CHARACTER_KINGWILLIAMOFORANGE
 		portraits={
 			civilian={
-				large="GFX_portrait_eng_kingwilliamoforangeisaslutforbigjewishcock_large"
+				large="GFX_portrait_eng_kingwilliamoforange_large"
 			}
 		}
 		country_leader={
 			ideology=despotism
 			traits={Orange-Nassau}
-			desc = ENG_KINGWILLIAMOFORANGEISASLUTFORBIGJEWISHCOCK_DESC
+			desc = ENG_KINGWILLIAMOFORANGE_DESC
 			expire="1797.1.1"
 		}
 }

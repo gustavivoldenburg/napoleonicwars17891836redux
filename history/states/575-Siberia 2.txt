@@ -48,9 +48,9 @@ state={
 	}
 
 	provinces={
-		714 6674 6692 9691 11664 
+		714 6674 6692 9649 9691 11664 
 	}
-	manpower=200000
+	manpower=100000
 	buildings_max_level_factor=1.000
 	state_category=pastoral
 	local_supplies=0.000

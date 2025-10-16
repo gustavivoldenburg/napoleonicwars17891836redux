@@ -8,8 +8,22 @@ state={
 
 	history={
 		owner = SPR
+						1808.1.1 = {
+	    owner=CAT
+		add_core_of=CAT
+		}
+						1809.1.1 = {
+			controller = SPR
+		}
+		1814.1.1 = {
+		owner=SPR
+		remove_core_of=CAT
+		}
 		victory_points = {
-			11851 1 
+			11851 2 
+		}
+				victory_points = {
+			13275 1
 		}
 		buildings = {
 			infrastructure = 3

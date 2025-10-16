@@ -17,9 +17,6 @@ state={
 		add_core_of = NAK
 		remove_core_of = SHI
 		}
-				1600.1.1 = {
-		add_core_of = PER
-		}
 		1919.1.1 = {
 		add_core_of = AZR
 		remove_core_of = PER

@@ -72,10 +72,10 @@ state={
 
 	}
 	provinces={
-		11640 14632 
+		6712 11640 13849 14632 
 	}
-	manpower=500000
+	manpower=700000
 	buildings_max_level_factor=1.000
-	state_category=rural
+	state_category=town
 	local_supplies=0.000
 }

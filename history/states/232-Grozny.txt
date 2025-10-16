@@ -24,6 +24,10 @@ state={
 	    victory_points = {
 			7624 1
 		}
+						1919.1.1 = {
+		owner = DAG
+		add_core_of=DAG
+		}
 		1920.1.1 = {
 			owner = SOV
 			controller = SOV
@@ -44,7 +48,7 @@ state={
 	provinces={
 		3668 3682 6701 7624 
 	}
-	manpower=800000
+	manpower=600000
 	buildings_max_level_factor=1.000
 	state_category=town
 	local_supplies=0.000

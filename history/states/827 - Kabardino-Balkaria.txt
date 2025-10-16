@@ -42,16 +42,18 @@ state={
 			remove_core_of = SOV
 
 		}
+		1820.1.1 = {
 		victory_points = {
 			685 1 
+		}
 		}
 
 	}
 
 	provinces={
-		685 9647 9649 
+		685 
 	}
-	manpower=300000
+	manpower=230000
 	buildings_max_level_factor=1.000
 	state_category=pastoral
 	local_supplies=0.000

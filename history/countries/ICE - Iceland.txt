@@ -5,7 +5,7 @@ set_oob = "ICE_1936"
 1936.1.1 = {
 set_variable = { ICE.communism_support_needed = 0.15 }
 }
-set_research_slots = 2
+set_research_slots = 0
 1936.1.1 = {
 IF = {
 	limit = {
@@ -237,7 +237,7 @@ set_politics = {
 	ruling_party = democratic
 	last_election = "1933.10.16"
 	election_frequency = 36
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
 	democratic = 96
@@ -250,7 +250,7 @@ set_popularities = {
 		ruling_party = democratic
 		last_election = "1936.10.19"
 		election_frequency = 36
-		elections_allowed = yes
+		elections_allowed = no
 	}
 	set_popularities = {
 		democratic = 84

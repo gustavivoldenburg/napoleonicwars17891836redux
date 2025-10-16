@@ -1,0 +1,16 @@
+characters={
+	MIG_levanv={
+		name=MIG_CHARACTER_LEVANV
+		portraits={
+			civilian={
+				large="GFX_portrait_mig_levanv_large"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={Dadiani}
+			desc = MIG_LEVANV_DESC
+			expire="1797.1.1"
+		}
+}
+}

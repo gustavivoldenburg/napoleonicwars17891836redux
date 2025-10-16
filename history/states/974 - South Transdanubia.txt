@@ -4,30 +4,28 @@ state={
 	name="STATE_974"
 
 	history={
-		owner = BUL
-		1500.1.1 = {
-			owner = OTO
-			controller = OTO
+		owner = OTO
+						victory_points = {
+			13545 1 
 		}
-		1880.1.1 = {
-			owner = BUL
-			controller = BUL
+		1878.1.1 = {
+			owner = ROM
+			controller = ROM
+                add_core_of = ROM
+                remove_core_of = WAL
 		}
 		buildings = {
 			infrastructure = 1
 
 		}
-				victory_points = {
-			3952 1 
-		}
-		add_core_of = BUL
+		add_core_of = WAL
 
 	}
 
 	provinces={
-		3952 
+		13545 
 	}
-	manpower=78099
+	manpower=50000
 	buildings_max_level_factor=1.000
 	state_category=pastoral
 	local_supplies=0.000

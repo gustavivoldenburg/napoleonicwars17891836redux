@@ -186,11 +186,12 @@ if = {
 	}
 }
 }
-set_research_slots = 3
+set_research_slots = 0
 set_technology = {
 	infantry_weapons = 1
 	transport = 1
 	early_submarine = 1
+        gw_artillery = 1 basic_train = 1
 }
 1936.1.1 = {
 set_technology = {
@@ -236,7 +237,7 @@ if = {
 	add_ideas = POR_unstable_republic
 	set_stability = 0.60
 	set_war_support = 0.15	
-	set_research_slots = 2
+	set_research_slots = 0
 
 	ENG = {
 		add_opinion_modifier = {
@@ -412,7 +413,7 @@ set_popularities = {
 		ruling_party = democratic
 		last_election = "1968.10.30"
 		election_frequency = 48
-		elections_allowed = yes
+		elections_allowed = no
 	}
 	set_popularities = {
 		neutrality = 7

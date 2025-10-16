@@ -1,4 +1,4 @@
-capital = 838
+capital = 454
 1776.1.1 = {
 recruit_character=ISR_rothschild
 promote_character=ISR_rothschild
@@ -114,7 +114,7 @@ set_convoys = 5
 		ruling_party = democratic
 		last_election = "2022.11.1"
 		election_frequency = 47
-		elections_allowed = yes
+		elections_allowed = no
 	}
 	set_popularities = {
 		democratic = 58
@@ -126,45 +126,4 @@ set_convoys = 5
 2022.12.29 = {
 	recruit_character = ISR_benjamin_netanyahu
 	promote_character = ISR_benjamin_netanyahu
-}
-
-
-create_country_leader = {
-	name = "David Ben-Gurion"
-	desc = ""
-	picture = GFX_portrait_David_Ben_Gurion
-	ideology = liberalism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Itzhak Gaster"
-	desc = ""
-	picture = GFX_portrait_Itzhak_Gaster
-	ideology = fascism_ideology
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Rudolf Szabó"
-	desc = ""
-	picture = GFX_portrait_Rudolf_Szabo
-	ideology = despotism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Shmuel Mikunis"
-	desc = ""
-	picture = GFX_portrait_Shmuel_Mikunis
-	ideology = leninism
-	traits = {
-		#
-	}
 }

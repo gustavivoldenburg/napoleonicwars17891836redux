@@ -33,25 +33,12 @@ state={
 			10074 20 
 		}
 		victory_points = {
-			4159 10 
-		}
-		victory_points = {
-			14101 10 
-		}
-		victory_points = {
-			4014 5
-		}
-		victory_points = {
-			14099 3
-		}
-		victory_points = {
 			7059 2 
 		}
 		1936.1.1 = {
 					buildings = {
 			infrastructure = 3
 					air_base = 10
-			industrial_complex = 1
 			dockyard = 1
 			10074 = {
 				naval_base = 2
@@ -59,21 +46,12 @@ state={
 			}
 			7059 = {
 				naval_base = 5
-
-			}
-			4159 = {
-				naval_base = 8
-
-			}
-			4014 = {
-				naval_base = 3
 
 			}
 		}
 		}
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 1
 			dockyard = 1
 			10074 = {
 				naval_base = 2
@@ -83,22 +61,13 @@ state={
 				naval_base = 5
 
 			}
-			4159 = {
-				naval_base = 8
-
-			}
-			4014 = {
-				naval_base = 3
-
-			}
-
 		}
 	}
 
 	provinces={
-		1009 1156 3857 4014 4159 7059 7147 10074 12047 14099 14100 14101 14102 14103 14104 
+		7059 7147 10074 14102 14104
 	}
-	manpower=4000000
+	manpower=2137729
 	buildings_max_level_factor=1.000
 	state_category=city
 	local_supplies=0.000

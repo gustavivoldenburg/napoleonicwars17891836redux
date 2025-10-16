@@ -1,4 +1,99 @@
 characters={
+	FRA_debarthelemy={
+		name=FRA_CHARACTER_DEBARTHELEMY
+		portraits={
+			civilian={
+				large="GFX_portrait_fra_debarthelemy_large"
+			}
+		}
+		country_leader={
+			ideology=liberalism
+			desc = FRA_DEBARTHELEMY_DESC
+			expire="1797.1.1"
+		}
+}
+	FRA_lazarecarnot={
+		name=FRA_CHARACTER_LAZARECARNOT
+		portraits={
+			civilian={
+				large="GFX_portrait_fra_lazarecarnot_large"
+			}
+		}
+		country_leader={
+			ideology=liberalism
+			traits={Bonaparte}
+			desc = FRA_LAZARECARNOT_DESC
+			expire="1797.1.1"
+		}
+}
+	FRA_neufchateau={
+		name=FRA_CHARACTER_NEUFCHATEAU
+		portraits={
+			civilian={
+				large="GFX_portrait_fra_neufchateau_large"
+			}
+		}
+		country_leader={
+			ideology=liberalism
+			traits={Bonaparte}
+			desc = FRA_NEUFCHATEAU_DESC
+			expire="1797.1.1"
+		}
+}
+	FRA_douai={
+		name=FRA_CHARACTER_DOUAI
+		portraits={
+			civilian={
+				large="GFX_portrait_fra_douai_large"
+			}
+		}
+		country_leader={
+			ideology=liberalism
+			traits={Bonaparte}
+			desc = FRA_DOUAI_DESC
+			expire="1797.1.1"
+		}
+}
+
+
+
+
+
+
+
+
+
+					FRA_barthelemy={
+		name=FRA_CHARACTER_BARTHELEMY
+		portraits={
+                        army={
+				small="GFX_idea_fra_barthelemy_small"
+			}
+			civilian = {
+				large = GFX_portrait_fra_barthelemy_large
+			}
+		}
+		advisor={
+                        can_be_fired = no
+			slot = political_advisor
+			idea_token = FRA_barthelemy
+			allowed  = {
+				original_tag  = FRA
+			}
+			available  = {
+		        }
+			traits  = {
+				basel_diplomat
+			}
+			on_add  = {
+			}
+			do_effect  = {
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+	}
 					FRA_rothschildiiiii={
 		name=FRA_CHARACTER_ROTHSCHILDIIIII
 		portraits={
@@ -20,6 +115,69 @@ characters={
 		        }
 			traits  = {
 				rothschild_banker
+			}
+			on_add  = {
+			}
+			do_effect  = {
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+	}
+						FRA_mortier={
+		name=FRA_CHARACTER_MORTIER
+		portraits={
+                        army={
+				small="GFX_idea_fra_mortier_small"
+			}
+			civilian = {
+				large = GFX_portrait_fra_mortier_large
+			}
+		}
+		advisor={
+                        can_be_fired = no
+			slot = political_advisor
+			idea_token = FRA_mortier
+			allowed  = {
+				original_tag  = FRA
+			}
+			available  = {
+		        }
+			traits  = {
+				fra_prime_minister
+			}
+			on_add  = {
+			}
+			do_effect  = {
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+	}
+						FRA_fieschi={
+		name=FRA_CHARACTER_FIESCHI
+		portraits={
+                        army={
+				small="GFX_idea_fra_fieschi_small"
+			}
+			civilian = {
+				large = GFX_portrait_fra_fieschi_large
+			}
+		}
+		advisor={
+                        can_be_fired = no
+			slot = political_advisor
+			idea_token = FRA_fieschi
+			allowed  = {
+				original_tag  = FRA
+			}
+			available  = {
+                        date > 1821.1.1
+		        }
+			traits  = {
+				fra_terrorist
 			}
 			on_add  = {
 			}

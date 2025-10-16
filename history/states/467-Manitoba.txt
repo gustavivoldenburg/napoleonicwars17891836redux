@@ -15,7 +15,7 @@ state={
 		}
                 1700.1.1 = {
 			owner = FRA
-			controller = FRA
+			
 		}
                 1738.1.1 = {
 		victory_points = {

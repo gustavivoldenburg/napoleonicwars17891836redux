@@ -1,16 +1,22 @@
 ﻿capital = 870
+1750.1.1 = {
+recruit_character=HSE_waitzvoneschen
+}
+1809.1.1 = {
+retire_character=HSE_waitzvoneschen
+}
 1569.1.1 = {
 set_cosmetic_tag = HSE_landgraviate # 
 }
 1806.1.1 = {
 set_cosmetic_tag = HSE_grandduchy # Netherlands East Indies
 }
-1785.1.1 = {
+1789.1.1 = {
 recruit_character=HSE_williami
 promote_character=HSE_williami
-}
-1821.1.1 = {
 recruit_character=HSE_williamii
+}
+1822.1.1 = {
 promote_character=HSE_williamii
 retire_character=HSE_williami
 }
@@ -20,6 +26,9 @@ retire_character=HSE_williamii
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
+	transport = 1
+	early_submarine = 1
+        gw_artillery = 1 basic_train = 1
 }
 
 set_convoys = 20

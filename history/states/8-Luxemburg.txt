@@ -30,6 +30,15 @@ state={
 		remove_core_of = UTR
 		remove_core_of = LUX
 		}
+						1789.1.1 = {
+	    add_core_of = LUX
+		owner = LUX
+		remove_core_of = BEL
+		remove_core_of = BRB
+		remove_core_of = FLA
+		remove_core_of = LUX
+		remove_core_of = BEL
+		}
 		1800.1.1 = {
 	    add_core_of = FRA
 		owner = FRA

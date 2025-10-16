@@ -1,25 +1,28 @@
-﻿capital = 880
+﻿capital = 1162
 1777.1.1 = {
 recruit_character=PFZ_charlestheodore
 promote_character=PFZ_charlestheodore
+recruit_character=PFZ_maximilianijoseph
 }
 1800.1.1 = {
-recruit_character=PFZ_maximilianijoseph
 promote_character=PFZ_maximilianijoseph
 retire_character=PFZ_charlestheodore
 }
 1825.1.1 = {
 retire_character=PFZ_maximilianijoseph
 }
-1800.1.1 = {
-		set_capital = {
-  state = 1162
-  remember_old_capital = no
+1789.1.1 = {
+		if = {
+		limit = { has_start_date < 1837.1.1 }
+set_oob = "PFZ_1789"
 }
 }
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
+	transport = 1
+	early_submarine = 1
+        gw_artillery = 1 basic_train = 1
 }
 
 set_convoys = 20

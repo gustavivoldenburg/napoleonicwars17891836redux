@@ -107,7 +107,6 @@ balkan_frenchrevolution = {
 		owns_state=48
 		owns_state=77
 		owns_state=81
-		owns_state=974
 		owns_state=840
 		}
 		}
@@ -180,7 +179,6 @@ balkan_frenchrevolution = {
 		owns_state=48
 		owns_state=77
 		owns_state=81
-		owns_state=974
 		owns_state=840
 		}
 		}
@@ -218,6 +216,8 @@ balkan_frenchrevolution = {
 		}
 		731={add_core_of=ROOT}
 		939={add_core_of=ROOT}
+		974={add_core_of=ROOT}
+                1294={add_core_of=ROOT}
 		hidden_effect={set_global_flag = bulgaria_serbia_formed_first_flag}
 		}
 	}

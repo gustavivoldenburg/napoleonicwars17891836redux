@@ -1,0 +1,42 @@
+﻿###########################
+# News Events
+###########################
+
+add_namespace = per_1789_news
+
+		news_event = {
+	id = per_1789_news.1
+	title = "The extinction of the Afsharid dynasty"
+	desc = per_1789_news.1.d
+	picture = GFX_idi_amin_uganda
+	
+	major = yes
+
+	fire_for_sender = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = "The Qajars are brutal"
+			}
+		option = {
+		name = "Why didn't they flee?"
+			}
+		}
+		news_event = {
+	id = per_1789_news.2
+	title = "The extinction of the Zand dynasty"
+	desc = per_1789_news.2.d
+	picture = GFX_idi_amin_uganda
+	
+	major = yes
+
+	fire_for_sender = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = "The Qajars are brutal"
+			}
+		option = {
+		name = "Why didn't they flee?"
+			}
+		}

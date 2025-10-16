@@ -1,4 +1,35 @@
 characters={
+					HSE_waitzvoneschen={
+		name=HSE_CHARACTER_WAITZVONESCHEN
+		portraits={
+                        army={
+				small="GFX_idea_hse_waitzvoneschen_small"
+			}
+			civilian = {
+				large = GFX_portrait_hse_waitzvoneschen_large
+			}
+		}
+		advisor={
+                        can_be_fired = no
+			slot = political_advisor
+			idea_token = HSE_waitzvoneschen
+			allowed  = {
+				original_tag  = HSE
+			}
+			available  = {
+		        }
+			traits  = {
+				basel_diplomat
+			}
+			on_add  = {
+			}
+			do_effect  = {
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+	}
 	HSE_williami={
 		name=HSE_CHARACTER_WILLIAMI
 		portraits={

@@ -1,5 +1,24 @@
 ﻿
 capital = 266
+1788.1.1 = {
+				add_manpower = 60000
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 60000
+					producer = QAJ
+				}
+			if = {
+		limit = { has_start_date < 1790.1.1 }
+	declare_war_on = {
+		target = PER
+		type = annex_everything
+	}
+	declare_war_on = {
+		target = AFS
+		type = annex_everything
+	}
+	}
+}
 1789.1.1 = {
 		if = {
 		limit = { has_start_date < 1790.1.1 }
@@ -42,10 +61,59 @@ retire_character=QAJ_fathalishahqajar
 1849.1.1 = {
 retire_character=QAJ_mohammadshahqajar
 }
-
 1801.1.1 = {
 			if = {
+		limit = { has_start_date < 1915.1.1 }
+	set_autonomy = {
+        target = KHU
+        autonomous_state = autonomy_protectorate
+        freedom_level = 0.4
+	}
+			}
+}
+1800.1.1 = {
+			if = {
+		limit = { has_start_date < 1830.1.1 }
+BAL={set_cosmetic_tag=BAL_QAJ}
+	set_autonomy = {
+        target = BAL
+        autonomous_state = autonomy_protectorate
+        freedom_level = 0.4
+	}
+			}
+}
+1814.1.1 = {
+			if = {
+		limit = { has_start_date < 1830.1.1 }
+	TAL={set_cosmetic_tag=TAL_QAJ}
+	ERV={set_cosmetic_tag=ERV_QAJ}
+	NAK={set_cosmetic_tag=NAK_QAJ}
+	set_autonomy = {
+        target = NAK
+        autonomous_state = autonomy_protectorate
+        freedom_level = 0.4
+	}
+	set_autonomy = {
+        target = ERV
+        autonomous_state = autonomy_protectorate
+        freedom_level = 0.4
+	}
+	set_autonomy = {
+        target = TAL
+        autonomous_state = autonomy_protectorate
+        freedom_level = 0.4
+	}
+}
+}
+1800.1.1 = {
+			if = {
 		limit = { has_start_date < 1813.1.1 }
+	BAK={set_cosmetic_tag=BAK_QAJ}
+	TAL={set_cosmetic_tag=TAL_QAJ}
+	ERV={set_cosmetic_tag=ERV_QAJ}
+	KRB={set_cosmetic_tag=KRB_QAJ}
+	GAN={set_cosmetic_tag=GAN_QAJ}
+	NAK={set_cosmetic_tag=NAK_QAJ}
 	set_autonomy = {
         target = NAK
         autonomous_state = autonomy_protectorate
@@ -93,7 +161,7 @@ set_technology = {
 	infantry_weapons = 1
 	transport = 1
 	early_submarine = 1
-        gw_artillery = 1
+        gw_artillery = 1 basic_train = 1
 }
 1939.1.1 = {
 

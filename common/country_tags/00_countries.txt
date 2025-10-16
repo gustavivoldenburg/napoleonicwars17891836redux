@@ -45,6 +45,8 @@ VRM = "countries/Vermont.txt" #flagcomplete
 CAF = "countries/Central America.txt" #flagcomplete 
 WIF = "countries/West Indies Federation.txt" #flagcomplete 
 
+AVI = "countries/Avignon.txt" #flagcomplete 
+
 WST = "countries/Western Australia.txt" #flagcomplete #uk17891800flags
 PEI = "countries/Prince Edward Island.txt" #flagcomplete #uk17891800flags
 NBR = "countries/New Brunswick.txt" #flagcomplete #uk17891800flags
@@ -66,12 +68,15 @@ KHU = "countries/Khuzestan.txt" #flagcomplete
 
 
 MAK = "countries/Makhnovshchina.txt" #flagcomplete 
+GNV = "countries/Geneva.txt" #flagcomplete 
 BER = "countries/Berry.txt" #flagcomplete 
 BSL = "countries/Basel.txt" #flagcomplete
 SEP = "countries/Ionian Islands.txt" #flagcomplete
 MAR = "countries/Mark.txt" #flagcomplete
 GUR = "countries/Guria.txt" #flagcomplete
 COW = "countries/Cornwall.txt" #flagcomplete
+SLM = "countries/Salm.txt" #flagcomplete
+STA = "countries/Malmedy.txt" #flagcomplete
 
 KRT = "countries/Kartli.txt" #flagcomplete
 KAK = "countries/Kakheti.txt" #flagcomplete
@@ -202,7 +207,17 @@ URB = "countries/Urbino.txt" #flagcomplete
 LIC = "countries/Lichtenberg.txt" #flagcomplete
 IME = "countries/Imereti.txt" #flagcomplete
 SMT = "countries/Samtskhe.txt" #flagcomplete
+
+
 COB = "countries/Coburg.txt" #flagcomplete
+ERF = "countries/Erfurt.txt" #flagcomplete
+NDH = "countries/Nordhausen.txt" #flagcomplete
+EIS = "countries/Eisenach.txt" #flagcomplete
+GTH = "countries/Gotha.txt" #flagcomplete
+BTG = "countries/Berchtesgaden.txt" #flagcomplete
+
+
+
 PAD = "countries/Paderborn.txt" #flagcomplete
 MSV = "countries/Masovia.txt" #flagcomplete
 SHG = "countries/Schleswig-Holstein-Gottorp.txt" #flagcomplete
@@ -278,7 +293,6 @@ KNI = "countries/Knightstemplar.txt"
 SAV = "countries/Savoy.txt"
 FEA = "countries/Ferrara.txt"
 MTU = "countries/Mantua.txt"
-MIL = "countries/Milan.txt"
 TRT = "countries/Trento.txt"
 GRI = "countries/Grisons.txt"
 FLC = "countries/Florence.txt"
@@ -632,7 +646,6 @@ TOS = "countries/Tuscany.txt"
 SPM = "countries/Sardinia Piedmont.txt"
 TTS = "countries/The Two Sicilies.txt"
 OTO = "countries/Ottomans.txt"
-AUH = "countries/Austria Hungary.txt"
 RUS = "countries/Russian Empire.txt"
 QIN = "countries/Qing China.txt"
 WAD = "countries/Wadai.txt"

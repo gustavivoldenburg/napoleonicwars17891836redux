@@ -3,7 +3,7 @@
 	ruling_party = neutrality
 	last_election = "1912.1.12"
 	election_frequency = 60
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
 	democratic = 8
@@ -402,6 +402,9 @@ RHO={
 
 set_technology = {
 	infantry_weapons = 1
+	transport = 1
+	early_submarine = 1
+        gw_artillery = 1 basic_train = 1
 }
 capital = 64 # Berlin/Brandeburg
 1936.1.1 = {
@@ -810,7 +813,7 @@ set_variable = { GER_industrialist_prevailed = 0 } #For allowing only one Indust
 
 
 # Starting Stats of various kinds
-set_research_slots = 4
+set_research_slots = 0
 set_convoys = 200
 IF = {
 	limit = {
@@ -838,7 +841,7 @@ set_war_support = 0.3
 	add_command_power = 80
 
 	# This represents the completion of the focus Develop Heraeus Research Facilities
-	set_research_slots = 5
+	set_research_slots = 0
 	
 	# Adding Ministers and Ideas
 	add_ideas = {
@@ -1201,9 +1204,13 @@ set_popularities = {
 }
 
 # Wowow nice faction
+1936.1.1 = {
+		if = {
+limit = { has_start_date < 1946.1.1 }
 create_faction = Axis
 add_to_faction = GER
-
+}
+}
 # Setup of National Spirits
 add_ideas = {
 	sour_loser

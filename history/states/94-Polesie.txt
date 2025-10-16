@@ -70,10 +70,10 @@ state={
 	}
 
 	provinces={
-		535 560 3392 3556 6280 6306 6415 6546 6579 11285 11441 11503 11528 11543 
+		560 3392 3556 6280 6306 6415 6579 11285 11441 11528 11543 
 	}
-	manpower=1000000
+	manpower=500000
 	buildings_max_level_factor=1.000
-	state_category=town
+	state_category=rural
 	local_supplies=0.000
 }

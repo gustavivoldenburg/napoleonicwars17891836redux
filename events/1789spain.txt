@@ -1,0 +1,91 @@
+###########################
+# Europe Province Rework Events
+###########################
+
+add_namespace = spr_1789_event
+
+# French Revolution
+country_event = {
+	id = spr_1789_event.1
+	title = "The North of Mexico needs to be seperated"
+	desc = spr_1789_event.1.d
+	picture = GFX_idi_amin_india
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "Perhaps they could be turned into settler colonies like Cuba and Uraguay?"
+		ai_chance = { factor = 100 } 
+	TEX={set_cosmetic_tag=TEX_SPR}
+	UTH={set_cosmetic_tag=UTH_SPR}
+	CAL={set_cosmetic_tag=CAL_SPR}
+		every_state={
+limit={
+or={
+state=1063
+state=378
+state=1021
+state=1022
+state=1023
+}
+}
+add_core_of=CAL
+transfer_state_to=CAL
+}
+		every_state={
+limit={
+or={
+state=375
+state=1026
+state=1027
+state=1031
+state=1033
+state=1034
+}
+}
+add_core_of=TEX
+transfer_state_to=TEX
+} 
+		every_state={
+limit={
+or={
+state=377
+state=379
+state=380
+state=376
+state=1025
+state=1032
+state=1035
+}
+}
+add_core_of=UTH
+transfer_state_to=UTH
+} 
+SPR={
+	    set_autonomy = {
+        target = CAL
+        autonomous_state = autonomy_protectorate
+        freedom_level = 0.2
+	}
+		    set_autonomy = {
+        target = UTH
+        autonomous_state = autonomy_protectorate
+        freedom_level = 0.2
+	}
+		    set_autonomy = {
+        target = TEX
+        autonomous_state = autonomy_protectorate
+        freedom_level = 0.2
+	}
+}
+		every_state={
+limit={
+or={
+is_core_of=TEX
+is_core_of=CAL
+is_core_of=UTH
+}
+}
+remove_core_of=MEX
+} 
+	}
+}

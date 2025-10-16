@@ -2,7 +2,7 @@
 
 oob = "USA_1936"
 
-set_research_slots = 3
+set_research_slots = 0
 set_stability = 0.75
 set_war_support = 0.5
 set_variable = { var = senators_support value = 48 }
@@ -198,7 +198,7 @@ set_politics = {
 	ruling_party = neutrality
 	last_election = "1932.11.8"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
 	neutrality = 99
@@ -218,7 +218,7 @@ add_ideas = {
 		ruling_party = neutrality
 		last_election = "1936.11.3"
 		election_frequency = 48
-		elections_allowed = yes
+		elections_allowed = no
 	}
 }
 

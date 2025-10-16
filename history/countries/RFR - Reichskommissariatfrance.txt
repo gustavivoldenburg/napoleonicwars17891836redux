@@ -1,5 +1,5 @@
 ﻿capital = 16
-set_research_slots = 3
+set_research_slots = 0
 
 set_technology = {
 	tech_support = 1		

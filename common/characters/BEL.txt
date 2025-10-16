@@ -19,6 +19,23 @@ characters={
 			legacy_id=0
 		}
 	}
+			BEL_koehler={
+		name=BEL_CHARACTER_KOEHLER
+		portraits={
+			army={
+				large=GFX_portrait_bel_koehler_large
+				small=GFX_portrait_bel_koehler_small
+			}
+		}
+		field_marshal={
+			skill=1
+			attack_skill=1
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=0
+		}
+	}
 	BEL_jan={
 		name=BEL_CHARACTER_JAN
 		portraits={
@@ -69,6 +86,20 @@ characters={
 			ideology=despotism
 			traits={Wettin}
 			desc = BEL_CASIMIR_DESC
+			expire="1797.1.1"
+		}
+}
+	BEL_frederickoforangenassau={
+		name=BEL_CHARACTER_FREDERICKOFORANGENASSAU
+		portraits={
+			civilian={
+				large="GFX_portrait_bel_frederickoforangenassau_large"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={Orange-Nassau}
+			desc = BEL_FREDERICKOFORANGENASSAU_DESC
 			expire="1797.1.1"
 		}
 }

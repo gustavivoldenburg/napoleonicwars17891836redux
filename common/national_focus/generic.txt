@@ -1664,7 +1664,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_research_slot = 1
+			
 		}
 	}
 	
@@ -1687,7 +1687,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_research_slot = 1
+			
 		}
 	}	
 
@@ -2202,7 +2202,7 @@ focus_tree = {
 			custom_effect_tooltip = why_we_fight_effect
 			hidden_effect = {
 				if = {
-					limit = { NOT = { has_idea = neutrality_idea } }
+					limit = { NOT = { has_idea = neutrality_idea } NOT = { date > 1789.1.1 date < 1836.1.1  } }
 					set_rule = { can_create_factions = yes }
 				}			
 			}
@@ -2298,7 +2298,7 @@ focus_tree = {
 				limit = {
 					original_research_slots < 3
 				}
-				add_research_slot = 1
+				
 			}
 			if = {
 				limit = {

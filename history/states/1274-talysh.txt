@@ -26,9 +26,6 @@ state={
 			remove_core_of = RUS
 			remove_core_of = PER
 		}
-				1600.1.1 = {
-		add_core_of = PER
-		}
 				1836.1.1 = {
 			owner = RUS
 			add_core_of = RUS
@@ -58,7 +55,7 @@ state={
 		}
 	}
 	provinces={
-		4473 12434 14014 14017 14021 14027 
+		4473 12434 14014 14017 14021 14027 14044 
 	}
 	manpower=80000
 	buildings_max_level_factor=1.000

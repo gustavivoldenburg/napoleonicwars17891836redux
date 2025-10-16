@@ -1,0 +1,45 @@
+characters={
+	QIN_daoguang={
+		name=QIN_CHARACTER_DAOGUANG
+		portraits={
+			civilian={
+				large="GFX_portrait_qin_daoguang_large"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={Aisin-Goro}
+			desc = QIN_DAOGUANG_DESC
+			expire="1797.1.1"
+		}
+}
+	QIN_qianlong={
+		name=QIN_CHARACTER_QIANLONG
+		portraits={
+			civilian={
+				large="GFX_portrait_qin_qianlong_large"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={Aisin-Goro}
+			desc = QIN_QIANLONG_DESC
+			expire="1797.1.1"
+		}
+}
+	QIN_jiaqing={
+		name=QIN_CHARACTER_JIAQING
+		portraits={
+			civilian={
+				large="GFX_portrait_qin_jiaqing_large"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={Aisin-Goro}
+			desc = QIN_JIAQING_DESC
+			expire="1797.1.1"
+		}
+}
+}
+

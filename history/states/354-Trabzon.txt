@@ -20,6 +20,7 @@ state={
 		add_core_of = TRE
 				1500.1.1 = {
 		owner = OTO
+		add_core_of = OTO
 		}
 						1800.1.1 = {
 		add_core_of = GRE

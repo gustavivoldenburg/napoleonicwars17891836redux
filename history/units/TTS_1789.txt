@@ -1,0 +1,138 @@
+﻿division_template = {
+	name = "Sicilian-Neapolitan Division"
+
+	division_names_group = TTS_Inf_01
+
+regiments = {
+        infantry = { x = 0 y = 0 }
+        infantry = { x = 1 y = 0 }
+        infantry = { x = 2 y = 0 }
+        infantry = { x = 0 y = 1 }
+        infantry = { x = 1 y = 1 }
+        infantry = { x = 2 y = 1 }
+		infantry = { x = 0 y = 2 }
+        artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }
+    }
+	priority = 2
+}
+units = {
+	#Sicilian-Neapolitan Army
+	division = {
+		name = "Sicilian-Neapolitan Division"
+		location = 11837
+		division_template = "Sicilian-Neapolitan Division"
+		start_experience_factor = 0.3
+	}
+}
+units = {
+	#Sicilian-Neapolitan Army
+	division = {
+		name = "Sicilian-Neapolitan Division"
+		location = 11882
+		division_template = "Sicilian-Neapolitan Division"
+		start_experience_factor = 0.3
+	}
+}
+units = {
+	#Sicilian-Neapolitan Army
+	division = {
+		name = "Sicilian-Neapolitan Division"
+		location = 9990
+		division_template = "Sicilian-Neapolitan Division"
+		start_experience_factor = 0.3
+	}
+}
+units = {
+	#Sicilian-Neapolitan Army
+	division = {
+		name = "Sicilian-Neapolitan Division"
+		location = 13698
+		division_template = "Sicilian-Neapolitan Division"
+		start_experience_factor = 0.3
+	}
+}
+units = {
+	#Sicilian-Neapolitan Army
+	division = {
+		name = "Sicilian-Neapolitan Division"
+		location = 13698
+		division_template = "Sicilian-Neapolitan Division"
+		start_experience_factor = 0.3
+	}
+}
+units = {
+	#Sicilian-Neapolitan Army
+	division = {
+		name = "Sicilian-Neapolitan Division"
+		location = 13698
+		division_template = "Sicilian-Neapolitan Division"
+		start_experience_factor = 0.3
+	}
+}
+units = {
+	#Sicilian-Neapolitan Army
+	division = {
+		name = "Sicilian-Neapolitan Division"
+		location = 13707
+		division_template = "Sicilian-Neapolitan Division"
+		start_experience_factor = 0.3
+	}
+}
+units = {
+	#Sicilian-Neapolitan Army
+	division = {
+		name = "Sicilian-Neapolitan Division"
+		location = 13707
+		division_template = "Sicilian-Neapolitan Division"
+		start_experience_factor = 0.3
+	}
+}
+units = {
+	#Sicilian-Neapolitan Army
+	division = {
+		name = "Sicilian-Neapolitan Division"
+		location = 13707
+		division_template = "Sicilian-Neapolitan Division"
+		start_experience_factor = 0.3
+	}
+}
+units = {
+	#Sicilian-Neapolitan Army
+	division = {
+		name = "Sicilian-Neapolitan Division"
+		location = 3923
+		division_template = "Sicilian-Neapolitan Division"
+		start_experience_factor = 0.3
+	}
+}
+units = {
+	#Sicilian-Neapolitan Army
+	division = {
+		name = "Sicilian-Neapolitan Division"
+		location = 9826
+		division_template = "Sicilian-Neapolitan Division"
+		start_experience_factor = 0.3
+	}
+}
+units = {
+	#Sicilian-Neapolitan Army
+	division = {
+		name = "Sicilian-Neapolitan Division"
+		location = 819
+		division_template = "Sicilian-Neapolitan Division"
+		start_experience_factor = 0.3
+	}
+}
+### Starting Equipment ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "TTS"
+		}
+		requested_factories = 1
+		progress = 0.28
+		efficiency = 100
+	}
+}

@@ -34,7 +34,6 @@ FRA_historical_plan = {
 			option = DEFAULT
 		}
 	}
-
 	ai_national_focuses = {
 france_1789_1815_first_50_focus_1
 france_1789_1815_first_50_focus_2

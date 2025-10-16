@@ -7,6 +7,12 @@ state={
 	}
 
 	history={
+				buildings = {
+		3535 = {bunker = 2}
+        }
+		buildings = {
+		514 = {bunker = 2}
+        }
 		owner = SAX
                 add_core_of = SAX
 						1950.1.1 = {
@@ -60,7 +66,7 @@ state={
 	provinces={
 		514 3535 6559 9441 9471 11481 13361 13364 13369 
 	}
-	manpower=4000000
+	manpower=4650000
 	buildings_max_level_factor=1.000
 	state_category=city
 	local_supplies=0.000

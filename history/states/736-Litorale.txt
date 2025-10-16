@@ -15,12 +15,7 @@ state={
 		remove_core_of = CEL
 		remove_core_of = GRZ
 		}
-				        1804.1.1 = {
-                owner = AUS
-                add_core_of = AUS
-                remove_core_of = VNT
-				remove_core_of = RAG
-        }
+				
 				1945.1.1 = {
 		owner = GER
 		}
@@ -35,12 +30,13 @@ state={
         }
 		1816.1.1 = {
         owner = AUS
+		remove_core_of=VNT
+		remove_core_of=ITA
         add_core_of = AUS
         }
 		1900.1.1 = {
-		owner = AUH
-                add_core_of = AUH
-                remove_core_of = AUS
+		owner = AUS
+                add_core_of = AUS
                 }
 		buildings = {
 			infrastructure = 2
@@ -58,7 +54,7 @@ state={
 			add_core_of = ITA
             remove_core_of = CRO
             remove_core_of = SLV
-			remove_core_of = AUH
+			remove_core_of = AUS
 
 		}
 		1950.1.1 = {

@@ -7,7 +7,7 @@ add_namespace = russianempire_1789_1812
 # Act 1935
 country_event = {
 	id = russianempire_1789_1812.1
-	title = "Annexation of Kartli-Kakheti"
+	title = "The Annexation of Kartli-Kakheti"
 	desc = russianempire_1789_1812.1.d
 	picture = GFX_idi_amin_india
 	is_triggered_only = yes
@@ -16,13 +16,13 @@ fire_only_once = yes
 	option = { # 
 		name = "Accept Russian demands"
 		ai_chance = { factor = 100 } 
-		RUS={
-		GEO = {
-			every_unit_leader = {
-				set_nationality = RUS
-			}
-		}
-		annex_country = { target = GEO transfer_troops = yes }
+	GEO={set_cosmetic_tag=GEO_RUS}
+	RUS={
+	    set_autonomy = {
+        target = GEO
+        autonomous_state = autonomy_integrated_puppet
+        freedom_level = 0.2
+	}
 	}
 	}
     option = { # 
@@ -44,7 +44,7 @@ fire_only_once = yes
 
 	country_event = {
 	id = russianempire_1789_1812.3
-	title = ""
+	title = "Kartli Kakheti"
 	desc = russianempire_1789_1812.3.d
 	picture = GFX_idi_amin_india
 	is_triggered_only = yes
@@ -71,7 +71,7 @@ fire_only_once = yes
 
 		country_event = {
 	id = russianempire_1789_1812.5
-	title = ""
+	title = "Kartli Kahkheti"
 	desc = russianempire_1789_1812.5.d
 	picture = GFX_idi_amin_india
 	is_triggered_only = yes
@@ -96,29 +96,110 @@ fire_only_once = yes
 	}
 			country_event = {
 	id = russianempire_1789_1812.6
-	title = "Treaty of Gulistan"
+	title = "The Treaty of Gulistan"
 	desc = russianempire_1789_1812.6.d
 	picture = GFX_idi_amin_india
 	#is_triggered_only = yes
 trigger = {
-original_tag = PER
-    date > 1812.1.1 date < 1814.1.1 
-	has_war_with = RUS
-	or = {
-	PER = {surrender_progress > 0.1 }
-	RUS={controls_state = 230}
-	}
+tag = RUS
+has_war_with = QAJ
+or={
+and={
+has_start_date > 1808.1.1
+has_start_date < 1809.1.1
+date > 1813.10.24
+date < 1814.1.1
+}
+and={
+has_start_date > 1812.1.1
+has_start_date < 1813.1.1
+date > 1813.10.24
+date < 1814.1.1
+}
+and={
+RUS={has_country_flag=rus_has_first_war_with_iran_gulistan}
+date > 1813.10.24
+date < 1814.1.1
+}
+and={
+has_start_date > 1808.1.1
+has_start_date < 1809.1.1
+or={
+QAJ = {surrender_progress > 0.25 }
+RUS={controls_state = 266}
+}
+}
+and={
+has_start_date > 1812.1.1
+has_start_date < 1813.1.1
+or={
+QAJ = {surrender_progress > 0.25 }
+RUS={controls_state = 266}
+}
+}
+and={
+RUS={has_country_flag=rus_has_first_war_with_iran_gulistan}
+or={
+QAJ = {surrender_progress > 0.25 }
+RUS={controls_state = 266}
+}
+}
+}
 }
 fire_only_once = yes
 	option = { # 
 		name = "Treaty of Gulistan"
 		ai_chance = { factor = 100 } 
-  leave_faction=yes
 every_country = {
   limit = {
-    has_war_with = PER
+    has_war_with = QAJ
   }
-  white_peace = PER
+  white_peace = QAJ
+}
+		RUS={
+		KRB = {
+			every_unit_leader = {
+				set_nationality = RUS
+			}
+		}
+		annex_country = { target = KRB transfer_troops = yes }
+	}
+every_state={
+limit={
+is_core_of=KRB
+is_owned_by=RUS
+}
+add_core_of=RUS
+}
+		RUS={
+		GAN = {
+			every_unit_leader = {
+				set_nationality = RUS
+			}
+		}
+		annex_country = { target = GAN transfer_troops = yes }
+	}
+every_state={
+limit={
+is_core_of=GAN
+is_owned_by=RUS
+}
+add_core_of=RUS
+}
+		RUS={
+		BAK = {
+			every_unit_leader = {
+				set_nationality = RUS
+			}
+		}
+		annex_country = { target = BAK transfer_troops = yes }
+	}
+every_state={
+limit={
+is_core_of=BAK
+is_owned_by=RUS
+}
+add_core_of=RUS
 }
 	}
 	}
@@ -137,7 +218,7 @@ every_country = {
   limit = {
   has_war_with = OTO
 	or = {
-original_tag = AUS
+tag = AUS
 }
   }
   white_peace = OTO
@@ -152,7 +233,7 @@ original_tag = AUS
 	picture = GFX_idi_amin_india
 	#is_triggered_only = yes
 trigger = {
-original_tag = AUS
+tag = AUS
     date > 1789.1.1 date < 1800.1.1
 	has_war_with = OTO
 	or = {
@@ -172,7 +253,7 @@ every_country = {
   limit = {
   has_war_with = OTO
 	or = {
-original_tag = AUS
+tag = AUS
 }
   }
   white_peace = OTO
@@ -187,7 +268,7 @@ original_tag = AUS
 	picture = GFX_idi_amin_india
 	#is_triggered_only = yes
 trigger = {
-original_tag = RUS
+tag = RUS
     date > 1792.1.9 date < 1793.1.1 
 	has_war_with = OTO
 }
@@ -218,8 +299,8 @@ every_country = {
   limit = {
   has_war_with = OTO
 	or = {
-original_tag = RUS
-original_tag = SER
+tag = RUS
+tag = SER
 }
   }
   white_peace = OTO
@@ -234,7 +315,7 @@ original_tag = SER
 	picture = GFX_idi_amin_india
 	#is_triggered_only = yes
 trigger = {
-original_tag = RUS
+tag = RUS
 RUS={has_country_flag=greek_plan_history_flag}
     date > 1789.1.1 date < 1792.1.9
 	has_war_with = OTO
@@ -273,8 +354,8 @@ every_country = {
   limit = {
   has_war_with = OTO
 	or = {
-original_tag = RUS
-original_tag = SER
+tag = RUS
+tag = SER
 }
   }
   white_peace = OTO
@@ -289,7 +370,7 @@ original_tag = SER
 	picture = GFX_idi_amin_india
 	#is_triggered_only = yes
 trigger = {
-original_tag = RUS
+tag = RUS
 RUS={has_country_flag=polish_russian_war_first_flag}
     date > 1792.1.1 date < 1794.1.1 
 	has_war_with = POL
@@ -335,7 +416,7 @@ every_country = {
 	picture = GFX_idi_amin_india
 	#is_triggered_only = yes
 trigger = {
-original_tag = RUS
+tag = RUS
 has_war_with = MSV
 RUS={has_country_flag=MSV_war_POL_war_RUS}
 or={
@@ -384,7 +465,7 @@ every_country = {
 	picture = GFX_idi_amin_india
 	#is_triggered_only = yes
 trigger = {
-original_tag = DEN
+tag = DEN
 
     date > 1789.7.9 date < 1790.1.1 
 	has_war_with = SWE
@@ -400,7 +481,7 @@ DEN={set_country_flag = denswewhitepeace_flag}
 }
 every_country = {
   limit = {
-  original_tag=DEN
+  tag=DEN
   }
   white_peace = SWE
 }
@@ -414,7 +495,7 @@ every_country = {
 	picture = GFX_idi_amin_india
 	#is_triggered_only = yes
 trigger = {
-original_tag = DEN
+tag = DEN
 
     date > 1789.1.1 date < 1789.7.9 
 	has_war_with = SWE
@@ -429,7 +510,7 @@ DEN={set_country_flag = denswewhitepeace_flag}
 }
 every_country = {
   limit = {
-  original_tag=DEN
+  tag=DEN
   }
   white_peace = SWE
 }
@@ -454,8 +535,7 @@ fire_only_once = yes
     remove_state_core = 190
 	remove_state_core = 809
 	}
-	annex_country = { target = COU transfer_troops = yes 
-	}
+	RUS={annex_country = { target = COU transfer_troops = yes }}
 	}
 		option = { # 
 		name = "Don't Accept Russian Annexation of Courland"
@@ -478,7 +558,7 @@ fire_only_once = yes
 	picture = GFX_idi_amin_india
 	#is_triggered_only = yes
 trigger = {
-original_tag = RUS
+tag = RUS
     date > 1790.8.14 date < 1791.1.1 
 	has_war_with = SWE
 }
@@ -491,7 +571,7 @@ RUS={set_country_flag = russwewhitepeace_flag}
 }
 every_country = {
   limit = {
-  original_tag=RUS
+  tag=RUS
   }
   white_peace = SWE
 }
@@ -505,7 +585,7 @@ every_country = {
 	picture = GFX_idi_amin_india
 	#is_triggered_only = yes
 trigger = {
-original_tag = RUS
+tag = RUS
     date > 1789.1.1 date < 1790.8.14
 	has_war_with = SWE
 	or={
@@ -524,7 +604,7 @@ RUS={set_country_flag = russwewhitepeace_flag}
 }
 every_country = {
   limit = {
-  original_tag=RUS
+  tag=RUS
   }
   white_peace = SWE
 }
@@ -538,7 +618,7 @@ every_country = {
 	picture = GFX_idi_amin_india
 	#is_triggered_only = yes
 trigger = {
-original_tag = RUS
+tag = RUS
 country_exists=MOL
 country_exists=WAL
 country_exists=OTO
@@ -570,8 +650,8 @@ fire_only_once = yes
 every_country = {
   limit = {
 or={
-  original_tag=WAL
-  original_tag=MOL
+  tag=WAL
+  tag=MOL
   }
   }
   white_peace = RUS
@@ -587,6 +667,7 @@ or={
 	#is_triggered_only = yes
 trigger = {
     date > 1794.3.24 date < 1795.1.1 
+tag=RUS
 }
 fire_only_once = yes
 	option = { # 
@@ -626,10 +707,20 @@ fire_only_once = yes
 	option = { # 
 		name = "Invade Poland"
 		ai_chance = { factor = 100 } 
-	declare_war_on = {
-		target = MSV
-		type = puppet_wargoal_focus
-	}
+every_country={
+limit={
+and={
+country_exists=MSV
+NOT={has_war_with=MSV}
+}
+}
+PRE={
+declare_war_on = {
+        target = MSV
+        type = puppet_wargoal_focus
+}
+}
+}
 	}
 }
 		country_event = {
@@ -649,10 +740,6 @@ fire_only_once = yes
 MSV={add_manpower = 50000 load_oob = "MSV_1789"}
 		MSV={
 		transfer_state = 88
-			declare_war_on = {
-		target = POL
-		type = puppet_wargoal_focus
-	}
 		}
 				every_state = {
 					limit = {
@@ -674,6 +761,8 @@ fire_only_once = yes
 		name = "Accept being an Ottoman Vassal"
 		ai_chance = { factor = 100 } 
     SER={set_cosmetic_tag = SER_OTO}
+SER={promote_character=SER_skopljak}
+SER={set_party_name = { ideology = neutrality long_name = SER_OSM_neutrality_party_long name = SER_OSM_neutrality_party }}
 OTO={
 	set_autonomy = {
         target = SER
@@ -694,7 +783,7 @@ white_peace = SER
 	#is_triggered_only = yes
 trigger = {
     date > 1796.11.17 date < 1797.1.1 
-original_tag=RUS
+tag=RUS
 }
 fire_only_once = yes
 	option = { # 
@@ -716,7 +805,7 @@ fire_only_once = yes
 	picture = GFX_idi_amin_india
 	#is_triggered_only = yes
 trigger = {
-original_tag=RUS
+tag=RUS
 has_war_with=SWE
 SWE = {surrender_progress > 0.5 }
 SWE={
@@ -766,7 +855,7 @@ fire_only_once = yes
 	picture = GFX_idi_amin_india
 	#is_triggered_only = yes
 trigger = {
-original_tag=RUS
+tag=RUS
 has_war_with=OTO
 date > 1789.1.1 
 date < 1791.1.1 
@@ -1038,7 +1127,7 @@ white_peace = RUS
 	picture = GFX_idi_amin_india
 	#is_triggered_only = yes
 trigger = {
-original_tag = RUS
+tag = RUS
 has_war_with = CIR
 date < 1800.1.1 
     or={
@@ -1069,7 +1158,7 @@ every_country = {
 	picture = GFX_idi_amin_india
 	#is_triggered_only = yes
 trigger = {
-original_tag = RUS
+tag = RUS
 date < 1812.9.18
 date > 1812.9.14
 }
@@ -1077,17 +1166,21 @@ fire_only_once = yes
 	option = { # 
 		name = "Scorched Earth even in Moscow..."
 		ai_chance = { factor = 100 } 
-						219 = {
-						remove_building = {
-							type = industrial_complex
-							level = 5
-						}
+						random_owned_controlled_state = {
+                        limit = { state=219 industrial_complex > 0 }
+                        add_extra_state_shared_building_slots = -1
+                        remove_building = {
+                            type = industrial_complex
+                            level = 1
+                        }
 				}
-										219 = {
-						remove_building = {
-							type = arms_factory
-							level = 5
-						}
+						random_owned_controlled_state = {
+                        limit = { state=219 arms_factory > 0 }
+                        add_extra_state_shared_building_slots = -1
+                        remove_building = {
+                            type = arms_factory
+                            level = 1
+                        }
 				}
 }
 }
@@ -1181,11 +1274,11 @@ fire_only_once = yes
 		ai_chance = { factor = 100 } 
 every_country = {
   limit = {
-    has_war_with = PER
+    has_war_with = QAJ
   }
-  white_peace = PER
+  white_peace = QAJ
 }
-PER={
+QAJ={
 	    set_autonomy = {
         target = GEO
         autonomous_state = autonomy_protectorate
@@ -1257,11 +1350,13 @@ fire_only_once = yes
 		ai_chance = { factor = 100 } 
 		ENG={add_opinion_modifier = { target = RUS modifier = RUS_jacobites }}
 		add_political_power=-25
-													195 = {
-						remove_building = {
-							type = industrial_complex
-							level = 1
-						}
+						random_owned_controlled_state = {
+                        limit = { state=195 industrial_complex > 0 }
+                        add_extra_state_shared_building_slots = -1
+                        remove_building = {
+                            type = industrial_complex
+                            level = 1
+                        }
 				}
 }
 	option = { # 
@@ -1349,10 +1444,12 @@ fire_only_once = yes
 	option = { # 
 		name = "Mobilize the Army"
 		ai_chance = { factor = 100 } 
+MSV={
 declare_war_on = {
-        target = MSV
-        type = puppet_wargoal_focus
+        target = POL
+        type = annex_everything
     }
+}
 }
 }
 
@@ -1363,18 +1460,23 @@ declare_war_on = {
 	picture = GFX_idi_amin_india
 	#is_triggered_only = yes
 trigger = {
-original_tag = ZZZ
-date < 1805.11.3
-date > 1806.1.1
-country_exists=PRE
+tag = PRE
+date < 1806.11.3
+date > 1807.1.1
 NOT={country_exists=POL}
 }
 fire_only_once = yes
 	option = { # 
-		name = "Greater Poland uprising of 1806"
+		name = "Poland did not just do that..."
 		ai_chance = { factor = 100 } 
 POL={transfer_state=86}
 POL={country_event = russianempire_1789_1812.42}
+PRE={
+declare_war_on = {
+        target = POL
+        type = puppet_wargoal_focus
+    }
+}
 }
 }
 			country_event = {
@@ -1387,12 +1489,7 @@ fire_only_once = yes
 	option = { # 
 		name = "Greater Poland uprising of 1806"
 		ai_chance = { factor = 100 } 
-PRE={
-declare_war_on = {
-        target = POL
-        type = puppet_wargoal_focus
-    }
-}
+PRE={set_cosmetic_tag=greater_poland_uprising_has_happened}
 POL={add_manpower = 30000 load_oob = "POL_1805"
 	add_equipment_to_stockpile = {
                     type = infantry_equipment
@@ -1401,8 +1498,20 @@ POL={add_manpower = 30000 load_oob = "POL_1805"
                 }
 			add_timed_idea = {
 				idea = POL_greater_poland_uprising
-				days = 730
+				days = 270
 			}
+}
+PRE={
+set_province_controller = 388
+set_province_controller = 9252
+set_province_controller = 13431
+set_province_controller = 3381
+set_province_controller = 17
+set_province_controller = 13422
+set_province_controller = 13423
+set_province_controller = 13408
+set_province_controller = 9532
+set_province_controller = 11558
 }
 }
 }
@@ -1464,10 +1573,16 @@ fire_only_once = yes
 	option = { # 
 		name = "Support the Russian Merchants"
 		ai_chance = { factor = 100 } 
-			add_timed_idea = {
-				idea = OTO_offensive
-				days = 30
-			}
+RUS={
+add_stability=0.05
+random_owned_controlled_state={
+									add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}	
+}
+}
 }
 }
 
@@ -1810,20 +1925,22 @@ fire_only_once = yes
 		ai_chance = { factor = 100 } 
 		add_stability=0.05
 		add_popularity = { ideology = neutrality popularity = 0.05}
-								random_owned_controlled_state = {
+random_owned_controlled_state = {
+                        limit = { industrial_complex > 0 }
                         add_extra_state_shared_building_slots = -1
-						remove_building = {
-							type = industrial_complex
-							level = 1
-						}
-				}
-												random_owned_controlled_state = {
+                        remove_building = {
+                            type = industrial_complex
+                            level = 1
+                        }
+                }
+				random_owned_controlled_state = {
+                        limit = { industrial_complex > 0 }
                         add_extra_state_shared_building_slots = -1
-						remove_building = {
-							type = industrial_complex
-							level = 1
-						}
-				}
+                        remove_building = {
+                            type = industrial_complex
+                            level = 1
+                        }
+                }
 	}
 
 	}
@@ -2014,6 +2131,7 @@ fire_only_once = yes
 		add_state_core = 924
 		add_state_core = 183
 		add_state_core = 1149
+		add_state_core = 1295
 		}
 		hidden_effect={
 			    GOA={
@@ -2196,6 +2314,7 @@ fire_only_once = yes
 		remove_state_core = 185
 		remove_state_core = 971
 		remove_state_core = 982
+		remove_state_core = 1295
 		remove_state_core = 186
 		remove_state_core = 964
 		remove_state_core = 182
@@ -2205,6 +2324,7 @@ fire_only_once = yes
 		remove_state_core = 924
 		remove_state_core = 183
 		remove_state_core = 1149
+		remove_state_core = 1295
 		}
 					    NAX={
 		remove_state_core = 47
@@ -2247,7 +2367,7 @@ fire_only_once = yes
 	picture = GFX_idi_amin_india
 	#is_triggered_only = yes
 trigger = {
-original_tag = RUS
+tag = RUS
     date > 1801.3.23 date < 1802.1.1 
 }
 fire_only_once = yes
@@ -2335,7 +2455,7 @@ fire_only_once = yes
 	#is_triggered_only = yes
 trigger = {
 GRE={has_country_flag=greek_war_of_independence_flag}
-original_tag = OTO
+tag = OTO
 country_exists=ALB
 	or={
 	ALB = {surrender_progress > 0.1 }
@@ -2362,7 +2482,7 @@ fire_only_once = yes
 trigger = {
 GRE={has_country_flag=greek_war_of_independence_flag}
 NOT={RUS={has_country_flag=russia_joined_greek_war_of_independence_flag}}
-original_tag = GRE
+tag = GRE
 RUS={is_ai = yes}
 or={
 OTO={has_war_with=RUS}
@@ -2384,6 +2504,54 @@ fire_only_once = yes
 	option = { # 
 		name = "Sign the Treaty"
 		ai_chance = { factor = 100 } 
+if = {
+    limit = {
+        OR = {
+            OTO = {
+                casualties_inflicted_by = {
+                    opponent = GRE
+                    thousands > 100
+                }
+            }
+            BUL = {
+                all_core_state = {
+                    is_controlled_by = GRE
+                }
+            }
+        }
+    }
+    GRE = { country_event = russianempire_1789_1812.66 }
+}
+	every_country={
+	limit={
+	has_war_with=OTO
+	}
+	white_peace=OTO
+	}
+	GRE={transfer_state=47}
+	GRE={transfer_state=947}
+	GRE={transfer_state=971}
+    WAL={set_cosmetic_tag=WAL_RUS}
+	MOL={set_cosmetic_tag=MOL_RUS}
+	RUS={
+	    set_autonomy = {
+        target = MOL
+        autonomous_state = autonomy_protectorate
+        freedom_level = 0.2
+	}
+}
+RUS={
+	    set_autonomy = {
+        target = WAL
+        autonomous_state = autonomy_protectorate
+        freedom_level = 0.2
+	}
+}
+}
+	option = { # 
+		name = "We require more!"
+		ai_chance = { factor = 0 } 
+RUS={country_event = russianempire_1789_1812.133}
 if = {
     limit = {
         OR = {
@@ -2472,7 +2640,7 @@ fire_only_once = yes
 	picture = GFX_idi_amin_india
 	#is_triggered_only = yes
 	trigger = {
-original_tag = RUS
+tag = RUS
     date > 1802.5.16 date < 1803.1.1 
 }
 fire_only_once = yes
@@ -2491,7 +2659,7 @@ fire_only_once = yes
 	picture = GFX_idi_amin_india
 	#is_triggered_only = yes
 	trigger = {
-original_tag = RUS
+tag = RUS
     date > 1811.7.9 date < 1812.1.1 
 }
 fire_only_once = yes
@@ -2500,17 +2668,21 @@ fire_only_once = yes
 		ai_chance = { factor = 100 }
 		add_political_power=-25
 		add_stability=-0.025
-								202 = {
-						remove_building = {
-							type = industrial_complex
-							level = 1
-						}
+						random_owned_controlled_state = {
+                        limit = { state=202 industrial_complex > 0 }
+                        add_extra_state_shared_building_slots = -1
+                        remove_building = {
+                            type = industrial_complex
+                            level = 1
+                        }
 				}
-										202 = {
-						remove_building = {
-							type = arms_factory
-							level = 1
-						}
+										random_owned_controlled_state = {
+                        limit = { state=202 arms_factory > 0 }
+                        add_extra_state_shared_building_slots = -1
+                        remove_building = {
+                            type = arms_factory
+                            level = 1
+                        }
 				}
 	}
 	}
@@ -2557,7 +2729,7 @@ fire_only_once = yes
 	picture = GFX_idi_amin_india
 	#is_triggered_only = yes
 	trigger = {
-original_tag = RUS
+tag = RUS
     date > 1817.7.13 date < 1818.1.1 
 }
 fire_only_once = yes
@@ -2748,7 +2920,7 @@ fire_only_once = yes
 	picture = GFX_idi_amin_india
 	#is_triggered_only = yes
 trigger = {
-original_tag = RUS
+tag = RUS
     date > 1789.2.2 date < 1790.1.1 
 }
 fire_only_once = yes
@@ -2823,7 +2995,7 @@ fire_only_once = yes
 	picture = GFX_idi_amin_india
 	#is_triggered_only = yes
 trigger = {
-original_tag = RUS
+tag = RUS
     date > 1790.1.1 date < 1791.1.1 
 }
 fire_only_once = yes
@@ -2937,7 +3109,7 @@ fire_only_once = yes
 trigger = {
 RUS={has_country_flag=greek_plan_althistory_flag}
 RUS={has_war_with=OTO}
-original_tag = ENG
+tag = ENG
 OTO={
 casualties_inflicted_by = {
     opponent = RUS
@@ -3082,7 +3254,7 @@ GRE_greek_war_of_independence
 	picture = GFX_idi_amin_india
 	#is_triggered_only = yes
 trigger = {
-original_tag = KNI
+tag = KNI
     date > 1799.7.6 date < 1800.1.1 
 }
 fire_only_once = yes
@@ -3140,7 +3312,7 @@ fire_only_once = yes
 	picture = GFX_idi_amin_india
 	#is_triggered_only = yes
 trigger = {
-original_tag = KNI
+tag = KNI
     date > 1797.7.17 date < 1798.1.1 
 }
 fire_only_once = yes
@@ -3191,7 +3363,7 @@ fire_only_once = yes
 	picture = GFX_idi_amin_india
 	#is_triggered_only = yes
 trigger = {
-original_tag = RUS
+tag = RUS
     date > 1834.1.1 date < 1835.1.1 
 }
 fire_only_once = yes
@@ -3222,7 +3394,7 @@ fire_only_once = yes
 	picture = GFX_idi_amin_india
 	#is_triggered_only = yes
 trigger = {
-original_tag = RUS
+tag = RUS
     date > 1825.12.1 date < 1826.1.1 
 }
 fire_only_once = yes
@@ -3306,7 +3478,7 @@ fire_only_once = yes
 	picture = GFX_idi_amin_india
 	#is_triggered_only = yes
 trigger = {
-original_tag = RUS
+tag = RUS
 NOT={country_exists=ZAP}
 NOT={country_exists=POD}
 NOT={country_exists=KIE}
@@ -3319,6 +3491,7 @@ fire_only_once = yes
 	option = { # 
 		name = "All of Ukraine is now owned by Russia!"
 		ai_chance = { factor = 100 } 
+add_political_power=25
 	every_state={
 limit={
 is_core_of=ZAP
@@ -3361,15 +3534,12 @@ remove_core_of=KIE
 	title = "Hosting Lotf Ali Zand"
 	desc = russianempire_1789_1812.104.d
 	picture = GFX_idi_amin_india
-	#is_triggered_only = yes
-trigger = {
-original_tag = RUS
-    date > 1793.1.1 date < 1794.1.1 
-}
+	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
 		name = "I dont think its worth hosting him..."
 		ai_chance = { factor = 100 } 
+news_event = per_1789_news.2
 	RUS={add_stability=0.05}
 	QAJ={add_stability=0.05}
 	PER={add_war_support=0.05}
@@ -3377,12 +3547,12 @@ fire_only_once = yes
 	option = { # 
 		name = "He could be used as a pretendor to the Iranian throne"
 		ai_chance = { factor = 0 } 
-	PER={country_event = russianempire_1789_1812.105}
+	RUS={country_event = russianempire_1789_1812.105}
 	}
 	}
 						country_event = {
 	id = russianempire_1789_1812.105
-	title = "Emigrating to Russia"
+	title = "The Zands Emigrating to Russia"
 	desc = russianempire_1789_1812.105.d
 	picture = GFX_idi_amin_india
 	is_triggered_only = yes
@@ -3423,7 +3593,21 @@ fire_only_once = yes
 		ai_chance = { factor = 25 } 
 	}
 	}
-
+					country_event = {
+	id = russianempire_1789_1812.112
+	title = "Supressing the Freemasons"
+	desc = russianempire_1789_1812.112.d
+	picture = GFX_idi_amin_india
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "They are too loyal to Britain and Hanover"
+		ai_chance = { factor = 100 }
+	RUS={add_stability=0.075}
+	RUS={add_war_support=0.075}
+	RUS={add_popularity = { ideology = neutrality popularity = 0.075}}
+	}
+	}
 					country_event = {
 	id = russianempire_1789_1812.115
 	title = "Russian Ambition Regarding Bukovina"
@@ -3470,7 +3654,7 @@ fire_only_once = yes
 	picture = GFX_idi_amin_india
 	#is_triggered_only = yes
 trigger = {
-original_tag = DEN
+tag = DEN
     date > 1814.1.14 date < 1815.1.1
 }
 fire_only_once = yes
@@ -3588,7 +3772,7 @@ add_core_of=SIC
 	picture = GFX_idi_amin_india
 	#is_triggered_only = yes
 trigger = {
-original_tag = RUS
+tag = RUS
 has_war_with=OTO
 RUS={controls_province = 13572}
 OTO={owns_state=1147}
@@ -3638,7 +3822,7 @@ fire_only_once = yes
 	picture = GFX_idi_amin_india
 	#is_triggered_only = yes
 trigger = {
-original_tag=RUS
+tag=RUS
 has_war_with=OTO
 date > 1791.1.1 
 date < 1793.1.1 
@@ -3663,3 +3847,1721 @@ white_peace = RUS
 }	
 }
 		}
+		country_event = {
+	id = russianempire_1789_1812.128
+	title = "Independence of Yanina"
+	desc = russianempire_1789_1812.128.d
+	picture = GFX_idi_amin_india
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "We need to establish a new Kingdom"
+		ai_chance = { factor = 100 } 
+ALB={set_cosmetic_tag=ALB_GRE_kingdom}	
+OTO={
+	    set_autonomy = {
+        target = ALB
+        autonomous_state = autonomy_free
+        freedom_level = 0.2
+	}
+}
+ALB={annex_country = { target = GRE transfer_troops = yes }}
+every_country = {
+  limit = {
+    has_war_with = ALB
+  }
+  white_peace = ALB
+}
+	every_state={
+limit={
+or={
+state=47
+state=947
+}
+}
+transfer_state_to=ALB
+}
+	every_state={
+limit={
+or={
+state=943
+state=944
+state=802
+is_core_of=GRE
+}
+}
+add_core_of=ALB
+}
+}
+		}
+		country_event = {
+	id = russianempire_1789_1812.129
+	title = "The Union of Georgia and Armenia"
+	desc = russianempire_1789_1812.129.d
+	picture = GFX_idi_amin_india
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "We need to establish a new Kingdom"
+		ai_chance = { factor = 100 } 
+GEO={set_cosmetic_tag=GEO_ARM}	
+	every_state={
+limit={
+or={
+is_core_of=ARM
+}
+}
+add_core_of=GEO
+}
+}
+		}
+		country_event = {
+	id = russianempire_1789_1812.130
+	title = "The return of the Serbian Empire"
+	desc = russianempire_1789_1812.130.d
+	picture = GFX_idi_amin_india
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "We need to establish a new Kingdom"
+		ai_chance = { factor = 100 } 
+SER={set_cosmetic_tag=SER_empire}	
+	every_state={
+limit={
+or={
+state=926
+state=262
+state=107
+state=108
+state=952
+
+state=943
+state=944
+state=948
+state=950
+state=105
+
+state=949
+state=802
+state=803
+state=840
+state=44
+
+state=106
+state=938
+state=983
+state=961
+state=731
+
+state=185
+state=805
+state=939
+state=923
+state=1295
+}
+}
+add_core_of=SER
+}
+}
+		}
+		country_event = {
+	id = russianempire_1789_1812.131
+	title = "The Bosnian uprising of 1831"
+	desc = russianempire_1789_1812.131.d
+	picture = GFX_idi_amin_india
+	#is_triggered_only = yes
+trigger = {
+    date > 1831.1.20 date < 1831.3.1 
+tag=OTO
+}
+fire_only_once = yes
+	option = { # 
+		name = "The Bosnian uprising of 1831"
+		ai_chance = { factor = 100 } 
+BOS={country_event = russianempire_1789_1812.132}
+BOS={set_cosmetic_tag=BOS_islam}
+				every_state = {
+					limit = {
+                    is_core_of = BOS
+					is_owned_by=OTO
+					}
+					transfer_state_to=BOS
+				}
+	}
+}
+		country_event = {
+	id = russianempire_1789_1812.132
+	title = "The Bosnian uprising of 1831"
+	desc = russianempire_1789_1812.132.d
+	picture = GFX_idi_amin_india
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "The Bosnian uprising of 1831"
+		ai_chance = { factor = 100 } 
+BOS={set_country_flag=bosnia_uprising_ottoman_war_flag}
+BOS={add_manpower = 30000 load_oob = "BOS_1836"}
+		OTO={
+			declare_war_on = {
+		target = BOS
+		type = puppet_wargoal_focus
+	}
+		}
+	}
+}
+		country_event = {
+	id = russianempire_1789_1812.133
+	title = "The Treaty of San Stefano"
+	desc = russianempire_1789_1812.133.d
+	picture = GFX_idi_amin_india
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "A strong Bulgarian state it is..."
+		ai_chance = { factor = 100 }
+RUS={country_event = russianempire_1789_1812.134}
+every_state={
+limit={
+WAL={owns_state=46}
+state=890
+}
+add_core_of=WAL
+transfer_state_to=WAL
+} 
+every_state={
+limit={
+MOL={owns_state=46}
+state=890
+}
+add_core_of=MOL
+transfer_state_to=MOL
+}
+every_state={
+limit={
+ROM={owns_state=46}
+state=890
+}
+add_core_of=ROM
+transfer_state_to=ROM
+}
+every_state={
+limit={
+RUS={owns_state=46}
+state=890
+}
+add_core_of=RUS
+transfer_state_to=RUS
+}
+every_state={
+limit={
+or={
+state=108
+state=952
+}
+}
+add_core_of=SER
+transfer_state_to=SER
+} 
+every_state={
+limit={
+or={
+state=1146
+state=1147
+}
+}
+add_core_of=RUS
+transfer_state_to=RUS
+} 
+every_state={
+limit={
+or={
+state=943
+state=944
+state=948
+state=105
+}
+}
+add_core_of=MNT
+transfer_state_to=MNT
+}
+every_state={
+limit={
+or={
+state=77
+state=974
+state=801
+state=48
+state=840
+state=803
+state=1294
+state=211
+state=212
+state=731
+state=939
+state=961
+state=106
+state=938
+state=983
+}
+}
+add_core_of=BUL
+transfer_state_to=BUL
+}  
+}
+		option = { # 
+		name = "The Unification of Serbia Montenegro and Bulgaria"
+		ai_chance = { factor = 0 } 
+RUS={country_event = russianempire_1789_1812.135}
+	SER={set_cosmetic_tag=san_stefano_serbia}
+	MNT={set_cosmetic_tag=san_stefano_montenegro}
+	BUL={set_cosmetic_tag=san_stefano_bulgaria}
+every_state={
+limit={
+WAL={owns_state=46}
+state=890
+}
+add_core_of=WAL
+transfer_state_to=WAL
+} 
+every_state={
+limit={
+MOL={owns_state=46}
+state=890
+}
+add_core_of=MOL
+transfer_state_to=MOL
+}
+every_state={
+limit={
+ROM={owns_state=46}
+state=890
+}
+add_core_of=ROM
+transfer_state_to=ROM
+}
+every_state={
+limit={
+RUS={owns_state=46}
+state=890
+}
+add_core_of=RUS
+transfer_state_to=RUS
+}
+every_state={
+limit={
+or={
+state=108
+state=952
+}
+}
+add_core_of=SER
+transfer_state_to=SER
+} 
+every_state={
+limit={
+or={
+state=1146
+state=1147
+}
+}
+add_core_of=RUS
+transfer_state_to=RUS
+} 
+every_state={
+limit={
+or={
+state=943
+state=944
+state=948
+state=105
+}
+}
+add_core_of=MNT
+transfer_state_to=MNT
+}
+every_state={
+limit={
+or={
+state=77
+state=974
+state=801
+state=48
+state=840
+state=803
+state=1294
+state=211
+state=212
+state=731
+state=939
+state=961
+state=106
+state=938
+state=983
+}
+}
+add_core_of=BUL
+transfer_state_to=BUL
+}  
+}
+} 
+		country_event = {
+	id = russianempire_1789_1812.134
+	title = "The Congress of Berlin"
+	desc = russianempire_1789_1812.134.d
+	picture = GFX_idi_amin_india
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "We will obey the balance of power"
+		ai_chance = { factor = 100 }
+every_state={
+limit={
+or={
+state=943
+state=948
+state=949
+state=954
+state=955
+state=957
+state=953
+state=958
+state=104
+state=804
+}
+}
+add_core_of=BOS
+transfer_state_to=BOS
+} 
+BOS={set_cosmetic_tag=BOS_AUS}
+AUS={
+	    set_autonomy = {
+        target = BOS
+        autonomous_state = autonomy_dominion
+        freedom_level = 0.2
+	}
+}
+	every_state={
+limit={
+or={
+state=924
+state=183
+state=1149
+}
+}
+transfer_state_to=ENG
+} 
+	every_state={
+limit={
+or={
+state=944
+state=952
+
+state=211
+state=212
+state=1294
+state=731
+state=961
+state=939
+state=106
+state=938
+state=983
+}
+}
+transfer_state_to=OTO
+} 
+	every_state={
+limit={
+state=803
+}
+add_core_of=SER
+transfer_state_to=SER
+} 
+	every_state={
+limit={
+WAL={owns_state=890}
+state=974
+}
+add_core_of=WAL
+transfer_state_to=WAL
+} 
+every_state={
+limit={
+MOL={owns_state=890}
+state=974
+}
+add_core_of=MOL
+transfer_state_to=MOL
+}
+every_state={
+limit={
+ROM={owns_state=890}
+state=974
+}
+add_core_of=ROM
+transfer_state_to=ROM
+}
+every_state={
+limit={
+RUS={owns_state=890}
+state=974
+}
+add_core_of=RUS
+transfer_state_to=RUS
+}
+	}
+		option = { # 
+		name = "Great Britain has conspired against us too many times"
+		ai_chance = { factor = 0 } 
+		RUS={add_stability=-0.3 add_war_support=-0.3 add_political_power=-30}
+	}
+}
+		country_event = {
+	id = russianempire_1789_1812.135
+	title = "The Congress of Berlin"
+	desc = russianempire_1789_1812.135.d
+	picture = GFX_idi_amin_india
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "We will obey the balance of power"
+		ai_chance = { factor = 0 } 
+	every_state={
+limit={
+or={
+state=943
+state=948
+state=949
+state=954
+state=955
+state=957
+state=953
+state=958
+state=104
+state=804
+}
+}
+add_core_of=BOS
+transfer_state_to=BOS
+} 
+BOS={set_cosmetic_tag=BOS_AUS}
+AUS={
+	    set_autonomy = {
+        target = BOS
+        autonomous_state = autonomy_dominion
+        freedom_level = 0.2
+	}
+}
+	every_state={
+limit={
+or={
+state=924
+state=183
+state=1149
+}
+}
+transfer_state_to=ENG
+} 
+	every_state={
+limit={
+or={
+state=944
+state=952
+
+state=211
+state=212
+state=1294
+state=731
+state=961
+state=939
+state=106
+state=938
+state=983
+}
+}
+transfer_state_to=OTO
+} 
+	every_state={
+limit={
+state=803
+}
+add_core_of=SER
+transfer_state_to=SER
+} 
+	every_state={
+limit={
+WAL={owns_state=890}
+state=974
+}
+add_core_of=WAL
+transfer_state_to=WAL
+} 
+every_state={
+limit={
+MOL={owns_state=890}
+state=974
+}
+add_core_of=MOL
+transfer_state_to=MOL
+}
+every_state={
+limit={
+ROM={owns_state=890}
+state=974
+}
+add_core_of=ROM
+transfer_state_to=ROM
+}
+every_state={
+limit={
+RUS={owns_state=890}
+state=974
+}
+add_core_of=RUS
+transfer_state_to=RUS
+}
+	}
+		option = { # 
+		name = "Great Britain has conspired against us too many times"
+		ai_chance = { factor = 100 }
+		every_state={
+limit={
+or={
+state=949
+}
+}
+add_core_of=SER
+} 
+		RUS={add_stability=-0.3 add_war_support=-0.3 add_political_power=-30}
+		SER={set_cosmetic_tag=san_stefano_yugoslavia} 
+		every_state={
+		limit={
+		or={
+		is_core_of=SER
+		is_core_of=MNT
+		is_core_of=BUL
+		}
+		}
+		add_core_of=SER
+		}
+		SER={
+		annex_country = { target = BUL transfer_troops = yes }
+		annex_country = { target = MNT transfer_troops = yes }
+		}
+	}
+}
+		country_event = {
+	id = russianempire_1789_1812.136
+	title = "Restore Autonomy to the Khanates?"
+	desc = russianempire_1789_1812.136.d
+	picture = GFX_idi_amin_india
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "Autonomy for the Crimeans Kalmyks and Tatars"
+		ai_chance = { factor = 50 }
+RUS={
+add_stability=0.2
+add_war_support=-0.05
+}
+			every_state={
+limit={
+state=968
+}
+add_core_of=CRI
+transfer_state_to=CRI
+}
+			every_state={
+limit={
+state=237
+}
+add_core_of=KAL
+transfer_state_to=KAL
+}
+			every_state={
+limit={
+or={
+state=210
+state=651
+state=582
+state=249
+state=256
+}
+}
+add_core_of=TAT
+transfer_state_to=TAT
+}
+CRI={set_cosmetic_tag=CRI_RUS_autonomy}
+KAL={set_cosmetic_tag=KAL_RUS_autonomy}
+TAT={set_cosmetic_tag=TAT_RUS_autonomy}
+RUS={
+		    set_autonomy = {
+        target = CRI
+        autonomous_state = autonomy_dominion
+        freedom_level = 0.2
+	}
+		    set_autonomy = {
+        target = KAL
+        autonomous_state = autonomy_dominion
+        freedom_level = 0.2
+	}
+	    set_autonomy = {
+        target = TAT
+        autonomous_state = autonomy_dominion
+        freedom_level = 0.2
+	}
+
+}
+	}
+		option = { # 
+		name = "Autonomy for the Crimeans Kalmyks and Bashkirs"
+		ai_chance = { factor = 50 }
+RUS={
+add_stability=0.1
+}
+			every_state={
+limit={
+state=968
+}
+add_core_of=CRI
+transfer_state_to=CRI
+}
+			every_state={
+limit={
+state=237
+}
+add_core_of=KAL
+transfer_state_to=KAL
+}
+			every_state={
+limit={
+or={
+state=210
+state=651
+state=582
+}
+}
+add_core_of=BSK
+transfer_state_to=BSK
+}
+CRI={set_cosmetic_tag=CRI_RUS_autonomy}
+KAL={set_cosmetic_tag=KAL_RUS_autonomy}
+BSK={set_cosmetic_tag=BSK_RUS_autonomy}
+RUS={
+		    set_autonomy = {
+        target = CRI
+        autonomous_state = autonomy_dominion
+        freedom_level = 0.2
+	}
+		    set_autonomy = {
+        target = KAL
+        autonomous_state = autonomy_dominion
+        freedom_level = 0.2
+	}
+	    set_autonomy = {
+        target = BSK
+        autonomous_state = autonomy_dominion
+        freedom_level = 0.2
+	}
+
+}
+	}
+		}
+		country_event = {
+	id = russianempire_1789_1812.137
+	title = "the Second League of Armed Neutrality"
+	desc = russianempire_1789_1812.137.d
+	picture = GFX_idi_amin_india
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "Denmark Sweden and Prussia are our allies"
+		ai_chance = { factor = 100 }
+	DEN={country_event = russianempire_1789_1812.138}
+	SWE={country_event = russianempire_1789_1812.139}
+	PRE={country_event = russianempire_1789_1812.140}
+	}
+		}
+				country_event = {
+	id = russianempire_1789_1812.138
+	title = "the Second League of Armed Neutrality"
+	desc = russianempire_1789_1812.138.d
+	picture = GFX_idi_amin_india
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "Russia Sweden and Prussia are our allies"
+		ai_chance = { factor = 100 }
+DEN={set_country_flag=league_of_armed_neutrality}
+	}
+	option = { # 
+		name = "Russia Denmark Sweden and Prussia are not our allies..."
+		ai_chance = { factor = 0 }
+DEN={set_country_flag=league_of_armed_neutrality_no}
+	}
+}
+				country_event = {
+	id = russianempire_1789_1812.139
+	title = "the Second League of Armed Neutrality"
+	desc = russianempire_1789_1812.139.d
+	picture = GFX_idi_amin_india
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "Russia Denmark and Prussia are our allies"
+		ai_chance = { factor = 100 }
+SWE={set_country_flag=league_of_armed_neutrality}
+	}
+	option = { # 
+		name = "Russia Denmark and Prussia are not our allies..."
+		ai_chance = { factor = 0 }
+SWE={set_country_flag=league_of_armed_neutrality_no}
+	}
+}
+				country_event = {
+	id = russianempire_1789_1812.140
+	title = "the Second League of Armed Neutrality"
+	desc = russianempire_1789_1812.140.d
+	picture = GFX_idi_amin_india
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "Russia Denmark and Sweden are our allies"
+		ai_chance = { factor = 100 }
+PRE={set_country_flag=league_of_armed_neutrality}
+	}
+	option = { # 
+		name = "Russia Denmark Sweden and Prussia are not our allies..."
+		ai_chance = { factor = 0 }
+PRE={set_country_flag=league_of_armed_neutrality_no}
+	}
+}
+
+
+		country_event = {
+	id = russianempire_1789_1812.141
+	title = "The Succesful Second League of Armed Neutrality"
+	desc = russianempire_1789_1812.141.d
+	picture = GFX_idi_amin_india
+	#is_triggered_only = yes
+trigger = {
+tag=RUS
+DEN={has_country_flag=league_of_armed_neutrality}
+SWE={has_country_flag=league_of_armed_neutrality}
+PRE={has_country_flag=league_of_armed_neutrality}
+}
+fire_only_once = yes
+	option = { # 
+		name = "Great they all agreed with our initiative"
+		ai_chance = { factor = 100 } 
+RUS={set_country_flag=league_of_armed_neutrality_rus}
+RUS={
+give_guarantee = DEN
+give_guarantee = SWE
+give_guarantee = PRE
+						random_owned_controlled_state = {
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+				}
+}
+DEN={
+give_guarantee = RUS
+give_guarantee = SWE
+give_guarantee = PRE
+						random_owned_controlled_state = {
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+				}
+}
+SWE={
+give_guarantee = RUS
+give_guarantee = DEN
+give_guarantee = PRE
+						random_owned_controlled_state = {
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+				}
+}
+PRE={
+give_guarantee = RUS
+give_guarantee = DEN
+give_guarantee = SWE
+						random_owned_controlled_state = {
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+				}
+}
+	}
+}
+		country_event = {
+	id = russianempire_1789_1812.142
+	title = "The Failure of the Second League of Armed Neutrality"
+	desc = russianempire_1789_1812.142.d
+	picture = GFX_idi_amin_india
+	#is_triggered_only = yes
+trigger = {
+tag=RUS
+or={
+DEN={has_country_flag=league_of_armed_neutrality_no}
+SWE={has_country_flag=league_of_armed_neutrality_no}
+PRE={has_country_flag=league_of_armed_neutrality_no}
+}
+}
+fire_only_once = yes
+	option = { # 
+		name = "Is one of our neighbors conspiring against us?"
+		ai_chance = { factor = 100 } 
+	}
+}
+								country_event = {
+	id = russianempire_1789_1812.143
+	title = "Joining the 2nd Coalition"
+	desc = russianempire_1789_1812.143.d
+	picture = GFX_idi_amin_india
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "This is war!"
+		ai_chance = { factor = 100 }	
+	RUS = {
+	declare_war_on = {
+		target = FRA
+		type = annex_everything
+	}
+	}
+every_country = {
+  limit = {
+has_war_with=FRA
+is_faction_leader=yes
+  or={
+tag=AUS
+tag=ENG
+  }
+  }
+PREV={add_to_faction=RUS}
+}
+	}
+	}
+								country_event = {
+	id = russianempire_1789_1812.144
+	title = "The Kutaisi-Tblisi Accords"
+	desc = russianempire_1789_1812.144.d
+	picture = GFX_idi_amin_india
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "Hope the agree to this treaty"
+		ai_chance = { factor = 100 }	
+OTO={country_event = russianempire_1789_1812.145} 
+	}
+	}
+								country_event = {
+	id = russianempire_1789_1812.145
+	title = "The Kutaisi-Tblisi Accords"
+	desc = russianempire_1789_1812.145.d
+	picture = GFX_idi_amin_india
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "I suppose we agree"
+		ai_chance = { factor = 50 }	
+RUS={country_event = russianempire_1789_1812.146} 
+	}
+	option = { # 
+		name = "This is not to our benefit"
+		ai_chance = { factor = 50 }	
+RUS={country_event = russianempire_1789_1812.147} 
+	}
+	}
+									country_event = {
+	id = russianempire_1789_1812.146
+	title = "The Kutaisi-Tblisi Accords"
+	desc = russianempire_1789_1812.146.d
+	picture = GFX_idi_amin_india
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "They agreed great!"
+		ai_chance = { factor = 100 }
+GEO={set_cosmetic_tag=GEO}
+every_state={
+limit={
+is_core_of=IME
+}
+add_core_of=GEO
+}
+GEO={annex_country = { target = IME transfer_troops = yes }}
+hidden_effect={
+every_state={
+limit={
+is_core_of=IME
+}
+remove_core_of=IME
+}
+GEO={leave_faction=yes}
+every_country = {
+  limit = {
+    has_war_with = GEO
+  }
+  white_peace = GEO
+}
+}
+RUS={
+		    set_autonomy = {
+        target = GEO
+        autonomous_state = autonomy_free
+        freedom_level = 0.2
+	}
+	}
+RUS={
+1210={
+									add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}	
+}
+}
+OTO={
+356={
+									add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}	
+}
+}
+GEO={
+1010={
+									add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}	
+}
+}
+GEO={give_military_access = RUS}
+GEO={give_military_access = OTO}
+RUS={give_military_access = GEO}
+OTO={give_military_access = GEO}
+	}
+									}
+									country_event = {
+	id = russianempire_1789_1812.147
+	title = "The Kutaisi-Tblisi Accords fail"
+	desc = russianempire_1789_1812.147.d
+	picture = GFX_idi_amin_india
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "we can't cooperate with the Ottoman Empire..."
+		ai_chance = { factor = 100 }	
+	}
+	}
+country_event = {
+	id = russianempire_1789_1812.148
+	title = "The Annexation of Kartli-Kakheti"
+	desc = russianempire_1789_1812.148.d
+	picture = GFX_idi_amin_india
+	is_triggered_only = yes
+
+fire_only_once = yes
+	option = { # 
+		name = "Suppose we integrate them"
+		ai_chance = { factor = 100 } 
+		RUS={
+		GEO = {
+			every_unit_leader = {
+				set_nationality = RUS
+			}
+		}
+		annex_country = { target = GEO transfer_troops = yes }
+	}
+every_state={
+limit={
+is_core_of=GEO
+is_owned_by=RUS
+}
+add_core_of=RUS
+}
+	}
+	}
+
+country_event = {
+	id = russianempire_1789_1812.149
+	title = "The Annexation of Imereti"
+	desc = russianempire_1789_1812.149.d
+	picture = GFX_idi_amin_india
+	is_triggered_only = yes
+
+fire_only_once = yes
+	option = { # 
+		name = "Suppose we integrate them"
+		ai_chance = { factor = 100 } 
+		RUS={
+		IME = {
+			every_unit_leader = {
+				set_nationality = RUS
+			}
+		}
+		annex_country = { target = IME transfer_troops = yes }
+	}
+every_state={
+limit={
+is_core_of=IME
+is_owned_by=RUS
+}
+add_core_of=RUS
+}
+	}
+	}
+	country_event = {
+	id = russianempire_1789_1812.150
+	title = "The Annexation of Guria"
+	desc = russianempire_1789_1812.150.d
+	picture = GFX_idi_amin_india
+	is_triggered_only = yes
+
+fire_only_once = yes
+	option = { # 
+		name = "Suppose we integrate them"
+		ai_chance = { factor = 100 } 
+RUS={country_event = russianempire_1789_1812.154}
+		RUS={
+		GUR = {
+			every_unit_leader = {
+				set_nationality = RUS
+			}
+		}
+		annex_country = { target = GUR transfer_troops = yes }
+	}
+every_state={
+limit={
+is_core_of=GUR
+is_owned_by=RUS
+}
+add_core_of=RUS
+}
+	}
+	}
+	country_event = {
+	id = russianempire_1789_1812.151
+	title = "The Annexation of Svaneti"
+	desc = russianempire_1789_1812.151.d
+	picture = GFX_idi_amin_india
+	is_triggered_only = yes
+
+fire_only_once = yes
+	option = { # 
+		name = "Suppose we integrate them"
+		ai_chance = { factor = 100 } 
+		RUS={
+		SVA = {
+			every_unit_leader = {
+				set_nationality = RUS
+			}
+		}
+		annex_country = { target = SVA transfer_troops = yes }
+	}
+every_state={
+limit={
+is_core_of=SVA
+is_owned_by=RUS
+}
+add_core_of=RUS
+}
+	}
+	}
+	country_event = {
+	id = russianempire_1789_1812.152
+	title = "The Annexation of Abkhazia"
+	desc = russianempire_1789_1812.152.d
+	picture = GFX_idi_amin_india
+	is_triggered_only = yes
+
+fire_only_once = yes
+	option = { # 
+		name = "Suppose we integrate them"
+		ai_chance = { factor = 100 } 
+		RUS={
+		ABK = {
+			every_unit_leader = {
+				set_nationality = RUS
+			}
+		}
+		annex_country = { target = ABK transfer_troops = yes }
+	}
+every_state={
+limit={
+is_core_of=ABK
+is_owned_by=RUS
+}
+add_core_of=RUS
+}
+	}
+	}
+	country_event = {
+	id = russianempire_1789_1812.153
+	title = "The Annexation of Mingrelia"
+	desc = russianempire_1789_1812.153.d
+	picture = GFX_idi_amin_india
+	is_triggered_only = yes
+
+fire_only_once = yes
+	option = { # 
+		name = "Suppose we integrate them"
+		ai_chance = { factor = 100 } 
+		RUS={
+		MIG = {
+			every_unit_leader = {
+				set_nationality = RUS
+			}
+		}
+		annex_country = { target = MIG transfer_troops = yes }
+	}
+every_state={
+limit={
+is_core_of=MIG
+is_owned_by=RUS
+}
+add_core_of=RUS
+}
+	}
+	}
+	country_event = {
+	id = russianempire_1789_1812.154
+	title = "The Western Georgian States"
+	desc = russianempire_1789_1812.154.d
+	picture = GFX_idi_amin_india
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "Keeping their autonomy would be helpful"
+		ai_chance = { factor = 100 } 
+	}
+		option = { # 
+		name = "I suppose we integrate Svaneti Abkhazia and Mingrelia too"
+		ai_chance = { factor = 0 } 
+RUS={add_stability=-0.1}
+RUS={set_country_flag=rus_wants_to_integrate_west_georgia}
+	}
+	}
+
+
+			country_event = {
+	id = russianempire_1789_1812.155
+	title = "The Treaty of Turkmenchay"
+	desc = russianempire_1789_1812.155.d
+	picture = GFX_idi_amin_india
+	#is_triggered_only = yes
+trigger = {
+tag = RUS
+has_war_with = QAJ
+or={
+and={
+RUS={has_country_flag=rus_has_second_war_with_iran_gulistan}
+date > 1828.2.21
+}
+and={
+RUS={has_country_flag=rus_has_second_war_with_iran_gulistan}
+or={
+QAJ = {surrender_progress > 0.25 }
+RUS={controls_state = 266}
+}
+}
+}
+}
+fire_only_once = yes
+	option = { # 
+		name = "The Treaty of Turkmenchay"
+		ai_chance = { factor = 100 } 
+every_country = {
+  limit = {
+    has_war_with = QAJ
+  }
+  white_peace = QAJ
+}
+		RUS={
+		ERV = {
+			every_unit_leader = {
+				set_nationality = RUS
+			}
+		}
+		annex_country = { target = ERV transfer_troops = yes }
+	}
+every_state={
+limit={
+is_core_of=ERV
+is_owned_by=RUS
+}
+add_core_of=RUS
+}
+		RUS={
+		TAL = {
+			every_unit_leader = {
+				set_nationality = RUS
+			}
+		}
+		annex_country = { target = TAL transfer_troops = yes }
+	}
+every_state={
+limit={
+is_core_of=TAL
+is_owned_by=RUS
+}
+add_core_of=RUS
+}
+		RUS={
+		NAK = {
+			every_unit_leader = {
+				set_nationality = RUS
+			}
+		}
+		annex_country = { target = NAK transfer_troops = yes }
+	}
+every_state={
+limit={
+is_core_of=NAK
+is_owned_by=RUS
+}
+add_core_of=RUS
+}
+	}
+	}
+	country_event = {
+	id = russianempire_1789_1812.156
+	title = "The Creation of the Septinsular Republic"
+	desc = russianempire_1789_1812.156.d
+	picture = GFX_idi_amin_india
+	is_triggered_only = yes
+
+fire_only_once = yes
+	option = { # 
+		name = "A new Greek state?"
+		ai_chance = { factor = 100 } 
+	every_state={
+	limit={
+	state=964
+	}
+	transfer_state_to=SEP
+	add_core_of=SEP
+	}
+	RUS={
+	    set_autonomy = {
+        target = SEP
+        autonomous_state = autonomy_protectorate
+        freedom_level = 0.2
+	}
+	}
+	}
+	}
+	country_event = {
+	id = russianempire_1789_1812.157
+	title = "The Swedish-Russian War"
+	desc = russianempire_1789_1812.157.d
+	picture = GFX_idi_amin_india
+	is_triggered_only = yes
+
+fire_only_once = yes
+	option = { # 
+		name = "Why not take Finland?"
+		ai_chance = { factor = 100 }
+RUS={set_country_flag=we_need_to_take_finland_treaty_of_hamina}
+	RUS = {
+	declare_war_on = {
+		target = SWE
+		type = annex_everything
+	}
+	} 
+	}
+	}
+	country_event = {
+	id = russianempire_1789_1812.158
+	title = "The Swedish-Russian War"
+	desc = russianempire_1789_1812.158.d
+	picture = GFX_idi_amin_india
+	#is_triggered_only = yes
+trigger = {
+tag = RUS
+has_war_with = SWE
+or={
+and={
+has_start_date > 1808.1.1
+has_start_date < 1809.1.1
+date > 1809.9.17
+date < 1810.1.1
+}
+and={
+has_start_date > 1808.1.1
+has_start_date < 1809.1.1
+SWE = {surrender_progress > 0.25 }
+}
+and={
+RUS={has_country_flag=we_need_to_take_finland_treaty_of_hamina}
+SWE = {surrender_progress > 0.25 }
+}
+and={
+RUS={has_country_flag=we_need_to_take_finland_treaty_of_hamina}
+date > 1809.9.17
+date < 1810.1.1
+}
+}
+}
+fire_only_once = yes
+	option = { # 
+		name = "Finland is ours"
+		ai_chance = { factor = 100 }
+every_country={
+limit={
+has_war_with=SWE
+}
+white_peace=SWE
+}
+hidden_effect={
+every_state={
+limit={
+or={
+is_core_of=FIN
+state=145
+state=146
+state=1285
+}
+}
+transfer_state_to=FIN
+add_core_of=FIN
+remove_core_of=SWE
+remove_core_of=RUS
+}
+}
+RUS={
+	    set_autonomy = {
+        target = FIN
+        autonomous_state = autonomy_protectorate
+        freedom_level = 0.2
+	}
+}
+	}
+	}
+	country_event = {
+	id = russianempire_1789_1812.159
+	title = "Seizing Wallachia and Moldavia"
+	desc = russianempire_1789_1812.159.d
+	picture = GFX_idi_amin_india
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "We cant have the French taking Romania"
+		ai_chance = { factor = 100 }
+OTO={country_event = russianempire_1789_1812.160}
+RUS={set_country_flag=russo_turkish_war_yes}
+RUS={
+	set_autonomy = {
+        target = WAL
+        autonomous_state = autonomy_dominion
+        freedom_level = 0.35
+	}
+	    set_autonomy = {
+        target = MOL
+        autonomous_state = autonomy_dominion
+        freedom_level = 0.35
+	}
+	}
+766={transfer_state_to=MOL}
+1147={transfer_state_to=MOL} 
+WAL={set_cosmetic_tag=WAL_RUS}
+MOL={set_cosmetic_tag=MOL_RUS}
+	}
+	}
+	country_event = {
+	id = russianempire_1789_1812.160
+	title = "Russia seized Wallachia and Moldavia"
+	desc = russianempire_1789_1812.160.d
+	picture = GFX_idi_amin_india
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "This is war close the straits!"
+		ai_chance = { factor = 100 }
+	OTO = {
+	declare_war_on = {
+		target = RUS
+		type = annex_everything
+	}
+	}
+	}
+	}
+	country_event = {
+	id = russianempire_1789_1812.161
+	title = "The Treaty of Bucharest"
+	desc = russianempire_1789_1812.161.d
+	picture = GFX_idi_amin_india
+	#is_triggered_only = yes
+trigger = {
+tag = RUS
+has_war_with = OTO
+or={
+and={
+has_start_date > 1808.1.1
+has_start_date < 1809.1.1
+date > 1812.5.28
+date < 1813.1.1
+}
+and={
+has_start_date > 1808.1.1
+has_start_date < 1809.1.1
+OTO = {surrender_progress > 0.25 }
+}
+and={
+RUS={has_country_flag=russo_turkish_war_yes}
+OTO = {surrender_progress > 0.25 }
+}
+and={
+RUS={has_country_flag=russo_turkish_war_yes}
+date > 1812.5.28
+date < 1813.1.1
+}
+}
+}
+fire_only_once = yes
+	option = { # 
+		name = "Sign the treaty fast we have bigger fish to fry"
+		ai_chance = { factor = 100 }
+every_state={
+limit={
+or={
+state=766
+state=1146
+state=1147
+state=889
+state=78
+}
+}
+transfer_state_to=RUS
+add_core_of=RUS
+}
+every_country={
+limit={
+has_war_with=OTO
+or={
+tag=RUS
+is_ally_with=RUS
+}
+}
+white_peace=OTO
+}
+OTO={
+	set_autonomy = {
+        target = WAL
+        autonomous_state = autonomy_protectorate
+        freedom_level = 0.35
+	}
+	    set_autonomy = {
+        target = MOL
+        autonomous_state = autonomy_protectorate
+        freedom_level = 0.35
+	}
+	}
+WAL={set_cosmetic_tag=WAL_OTO}
+MOL={set_cosmetic_tag=MOL_OTO}
+	}
+	}
+country_event = {
+	id = russianempire_1789_1812.162
+	title = "Joining the French Sphere"
+	desc = russianempire_1789_1812.162.d
+	picture = GFX_idi_amin_india
+	#is_triggered_only = yes
+trigger = {
+PRE={has_cosmetic_tag=greater_poland_uprising_has_happened}
+tag = POL
+FRA={has_war_with=PRE}
+has_war_with = PRE
+has_start_date < 1808.1.1
+}
+fire_only_once = yes
+	option = { # 
+		name = "Let's Join France"
+		ai_chance = { factor = 100 }
+FRA={country_event = russianempire_1789_1812.163}
+	}
+}
+country_event = {
+	id = russianempire_1789_1812.163
+	title = "Poland Joining the French Sphere?"
+	desc = russianempire_1789_1812.163.d
+	picture = GFX_idi_amin_india
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "Let's have them Join France!"
+		ai_chance = { factor = 100 }
+FRA={add_to_faction=POL}
+	}
+	option = { # 
+		name = "They are too backwards for us"
+		ai_chance = { factor = 0 }
+	}
+}
+country_event = {
+	id = russianempire_1789_1812.164
+	title = "Collapse of the Second League of Armed Neutrality"
+	desc = russianempire_1789_1812.164.d
+	picture = GFX_idi_amin_india
+	#is_triggered_only = yes
+trigger = {
+RUS={has_country_leader = { character = RUS_alexanderi }}
+tag = RUS
+RUS={has_country_flag=league_of_armed_neutrality_rus}
+}
+fire_only_once = yes
+	option = { # 
+		name = "New King New Policies"
+		ai_chance = { factor = 100 }
+RUS={add_political_power=25}
+RUS = {
+  diplomatic_relation = {
+    country = SWE
+    relation = guarantee
+    active = no
+  }
+  diplomatic_relation = {
+    country = PRE
+    relation = guarantee
+    active = no
+  }
+  diplomatic_relation = {
+    country = DEN
+    relation = guarantee
+    active = no
+  }
+}
+
+PRE = {
+  diplomatic_relation = {
+    country = SWE
+    relation = guarantee
+    active = no
+  }
+  diplomatic_relation = {
+    country = RUS
+    relation = guarantee
+    active = no
+  }
+  diplomatic_relation = {
+    country = DEN
+    relation = guarantee
+    active = no
+  }
+}
+
+SWE = {
+  diplomatic_relation = {
+    country = RUS
+    relation = guarantee
+    active = no
+  }
+  diplomatic_relation = {
+    country = PRE
+    relation = guarantee
+    active = no
+  }
+  diplomatic_relation = {
+    country = DEN
+    relation = guarantee
+    active = no
+  }
+}
+
+DEN = {
+  diplomatic_relation = {
+    country = RUS
+    relation = guarantee
+    active = no
+  }
+  diplomatic_relation = {
+    country = PRE
+    relation = guarantee
+    active = no
+  }
+  diplomatic_relation = {
+    country = SWE
+    relation = guarantee
+    active = no
+  }
+}
+
+	}
+}
+country_event = {
+	id = russianempire_1789_1812.165
+	title = "The Swedish–Norwegian War"
+	desc = russianempire_1789_1812.165.d
+	picture = GFX_idi_amin_india
+	#is_triggered_only = yes
+trigger = {
+country_exists=NOR
+tag = SWE
+has_start_date < 1815.1.1
+}
+fire_only_once = yes
+	option = { # 
+		name = "Let's invade Norway"
+		ai_chance = { factor = 100 }
+	SWE = {
+	declare_war_on = {
+		target = NOR
+		type = annex_everything
+	}
+	}
+SWE={set_country_flag=sweden_norway_war}
+	}
+}
+country_event = {
+	id = russianempire_1789_1812.166
+	title = "The Convention of Moss with Norway"
+	desc = russianempire_1789_1812.166.d
+	picture = GFX_idi_amin_india
+	#is_triggered_only = yes
+trigger = {
+country_exists=NOR
+tag = SWE
+SWE={has_country_flag=sweden_norway_war}
+or={
+NOR = {surrender_progress > 0.25 }
+date > 1814.8.14
+}
+}
+fire_only_once = yes
+	option = { # 
+every_country={
+limit={
+has_war_with=NOR
+}
+white_peace = NOR
+}
+		name = "Let's form Sweden-Norway"
+		ai_chance = { factor = 100 }
+SWE={
+	    set_autonomy = {
+        target = NOR
+        autonomous_state = autonomy_protectorate
+        freedom_level = 0.2
+	}
+}
+NOR={promote_character=NOR_charlesxiii}
+SWE={set_cosmetic_tag=SWE_NOR}
+NOR={set_cosmetic_tag=NOR_SWE}
+NOR={set_party_name = { ideology = neutrality long_name = NOR_HOG_neutrality_party_long name = NOR_HOG_neutrality_party }}
+	}
+}

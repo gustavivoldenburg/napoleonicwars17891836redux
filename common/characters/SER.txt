@@ -1,4 +1,216 @@
 characters={
+		SER_josephiiser={
+		name=SER_CHARACTER_JOSEPHIISER
+		portraits={
+			civilian={
+				large="GFX_portrait_ser_josephiiser_large"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={Habsburg-Lorraine}
+			desc = SER_JOSEPHIISER_DESC
+			expire="1797.1.1"
+		}
+}
+	SER_leopoldiiser={
+		name=SER_CHARACTER_LEOPOLDIISER
+		portraits={
+			civilian={
+				large="GFX_portrait_ser_leopoldiiser_large"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={Habsburg-Lorraine}
+			desc = SER_LEOPOLDIISER_DESC
+			expire="1797.1.1"
+		}
+}
+	SER_francisiiser={
+		name=SER_CHARACTER_FRANCISIISER
+		portraits={
+			civilian={
+				large="GFX_portrait_ser_francisiiser_large"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={Habsburg-Lorraine}
+			desc = SER_FRANCISIISER_DESC
+			expire="1797.1.1"
+		}
+}
+	SER_ferdinandiser={
+		name=SER_CHARACTER_FERDINANDISER
+		portraits={
+			civilian={
+				large="GFX_portrait_ser_ferdinandiser_large"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={Habsburg-Lorraine}
+			desc = SER_FERDINANDISER_DESC
+			expire="1797.1.1"
+		}
+}
+							SER_stratimirovic={
+		name=SER_CHARACTER_STRATIMIROVIC
+		portraits={
+                        army={
+				small="GFX_idea_ser_stratimirovic_small"
+			}
+			civilian = {
+				large = GFX_portrait_ser_stratimirovic_large
+			}
+		}
+		advisor={
+                        can_be_fired = no
+			slot = political_advisor
+			idea_token = SER_stratimirovic
+			allowed  = {
+				original_tag  = SER
+			}
+			available  = {
+			owns_state=45
+		        }
+			traits  = {
+				Metropolitanate_of_Karlovci
+			}
+			on_add  = {
+			}
+			do_effect  = {
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+	}
+						SER_milovanovic={
+		name=SER_CHARACTER_MILOVANOVIC
+		portraits={
+                        army={
+				small="GFX_idea_ser_milovanovic_small"
+			}
+			civilian = {
+				large = GFX_portrait_ser_milovanovic_large
+			}
+		}
+		advisor={
+                        can_be_fired = no
+			slot = political_advisor
+			idea_token = SER_milovanovic
+			allowed  = {
+				original_tag  = SER
+			}
+			available  = {
+		        }
+			traits  = {
+				serbian_prime_minister
+			}
+			on_add  = {
+			}
+			do_effect  = {
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+	}
+							SER_jakovnenadovic={
+		name=SER_CHARACTER_JAKOVNENADOVIC
+		portraits={
+                        army={
+				small="GFX_idea_ser_jakovnenadovic_small"
+			}
+			civilian = {
+				large = GFX_portrait_ser_jakovnenadovic_large
+			}
+		}
+		advisor={
+                        can_be_fired = no
+			slot = political_advisor
+			idea_token = SER_jakovnenadovic
+			allowed  = {
+				original_tag  = SER
+			}
+			available  = {
+		        }
+			traits  = {
+				serbian_prime_minister
+			}
+			on_add  = {
+			}
+			do_effect  = {
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+	}
+							SER_nikolajevic={
+		name=SER_CHARACTER_NIKOLAJEVIC
+		portraits={
+                        army={
+				small="GFX_idea_ser_nikolajevic_small"
+			}
+			civilian = {
+				large = GFX_portrait_ser_nikolajevic_large
+			}
+		}
+		advisor={
+                        can_be_fired = no
+			slot = political_advisor
+			idea_token = SER_nikolajevic
+			allowed  = {
+				original_tag  = SER
+			}
+			available  = {
+		        }
+			traits  = {
+				serbian_prime_minister
+			}
+			on_add  = {
+			}
+			do_effect  = {
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+	}
+							SER_matijanenadovic={
+		name=SER_CHARACTER_MATIJANENADOVIC
+		portraits={
+                        army={
+				small="GFX_idea_ser_matijanenadovic_small"
+			}
+			civilian = {
+				large = GFX_portrait_ser_matijanenadovic_large
+			}
+		}
+		advisor={
+                        can_be_fired = no
+			slot = political_advisor
+			idea_token = SER_matijanenadovic
+			allowed  = {
+				original_tag  = SER
+			}
+			available  = {
+		        }
+			traits  = {
+				serbian_prime_minister
+			}
+			on_add  = {
+			}
+			do_effect  = {
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+	}
 		SER_karadorde={
 		name=SER_CHARACTER_KARADORDE
 		portraits={
@@ -10,6 +222,19 @@ characters={
 			ideology=despotism
 			traits={Karadordevic}
 			desc = SER_KARADORDE_DESC
+			expire="1797.1.1"
+		}
+}
+		SER_skopljak={
+		name=SER_CHARACTER_SKOPLJAK
+		portraits={
+			civilian={
+				large="GFX_portrait_ser_skopljak_large"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			desc = SER_SKOPLJAK_DESC
 			expire="1797.1.1"
 		}
 }

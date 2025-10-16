@@ -1,4 +1,10 @@
 ﻿capital = 2
+1789.1.1 = {
+		if = {
+		limit = { has_start_date < 1837.1.1 }
+set_oob = "ITA_1789"
+}
+}
 1774.1.1 = {
 recruit_character=ITA_napoleon
 recruit_character=ITA_napoleoni
@@ -8,6 +14,12 @@ promote_character=ITA_napoleoni
 1836.1.1 = {
 retire_character=ITA_napoleon
 retire_character=ITA_napoleoni
+}
+1789.1.1 = {
+ITA={set_party_name = { ideology = neutrality long_name = ITA_BON_neutrality_party_long name = ITA_BON_neutrality_party}}
+}
+1815.1.1 = {
+ITA={set_party_name = { ideology = neutrality long_name = ITA_neutrality_party_long name = ITA_neutrality_party}}
 }
 1812.1.1 = {
 set_politics = {
@@ -20,7 +32,7 @@ set_politics = {
 1800.1.1 = {
 set_cosmetic_tag = ITA_FRA_two # Kingdom of Italy Napoleonic
 }
-1812.1.1 = {
+1805.1.1 = {
 set_cosmetic_tag = ITA_FRA_four # Kingdom of Italy Napoleonic
 }
 1815.1.1 = {
@@ -44,7 +56,7 @@ if = {
 }
 starting_train_buffer = 1.5
 
-set_research_slots = 4
+set_research_slots = 0
 set_stability = 0.6
 set_war_support = 0.7
 1936.1.1 = {
@@ -324,6 +336,9 @@ set_variable = { ITA_ra_air_interception = 0 } #Airforce
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
+	transport = 1
+	early_submarine = 1
+        gw_artillery = 1 basic_train = 1
 }
 1936.1.1 = {
 set_technology = {

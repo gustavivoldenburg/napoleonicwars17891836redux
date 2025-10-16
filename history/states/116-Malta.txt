@@ -14,7 +14,7 @@ state=
 		
                 }
 		1800.1.1 = {
-		controller = FRA
+		
         }
 		1801.1.1 = {
                 owner = ENG

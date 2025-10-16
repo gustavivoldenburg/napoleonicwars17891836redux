@@ -9,6 +9,89 @@
 	}
 }
 }
+1799.1.1 = {
+			if = {
+		limit = { has_start_date < 1831.1.1 }
+NOA={
+give_military_access = RUS
+}
+DAG={set_cosmetic_tag=DAG_TAR_RUS}
+RUS={
+	set_autonomy = {
+        target = DAG
+        autonomous_state = autonomy_protectorate
+        freedom_level = 0.4
+	}
+}
+}
+}
+1804.1.1 = {
+			if = {
+		limit = { has_start_date < 1813.1.1 }
+QAJ={
+		declare_war_on = {
+		target = RUS
+		type = puppet_wargoal_focus
+	}
+}
+KRB={
+		declare_war_on = {
+		target = RUS
+		type = puppet_wargoal_focus
+	}
+}
+GAN={
+		declare_war_on = {
+		target = RUS
+		type = puppet_wargoal_focus
+	}
+}
+BAK={
+		declare_war_on = {
+		target = RUS
+		type = puppet_wargoal_focus
+	}
+}
+}
+}
+1808.1.1 = {
+			if = {
+		limit = { has_start_date < 1809.1.1 }
+    set_autonomy = {
+        target = WAL
+        autonomous_state = autonomy_dominion
+        freedom_level = 0.35
+	}
+	    set_autonomy = {
+        target = MOL
+        autonomous_state = autonomy_dominion
+        freedom_level = 0.35
+	}
+WAL={set_cosmetic_tag=WAL_RUS
+}
+MOL={set_cosmetic_tag=MOL_RUS
+}
+}
+}
+1836.1.1 = {
+			if = {
+		limit = { has_start_date < 1856.1.1 }
+    set_autonomy = {
+        target = WAL
+        autonomous_state = autonomy_dominion
+        freedom_level = 0.35
+	}
+	    set_autonomy = {
+        target = MOL
+        autonomous_state = autonomy_dominion
+        freedom_level = 0.35
+	}
+WAL={set_cosmetic_tag=WAL_RUS
+}
+MOL={set_cosmetic_tag=MOL_RUS
+}
+}
+}
 1789.1.1 = {
 			if = {
 		limit = { has_start_date < 1797.1.1 }
@@ -47,14 +130,14 @@ set_oob = "RUS_2024"
 }
 1789.1.1 = {
 		if = {
-		limit = { has_start_date < 1790.1.1 }
+		limit = { has_start_date < 1801.1.1 }
 set_oob = "RUS_1789"
 }
 }
-1800.1.1 = {
+1808.1.1 = {
 		if = {
-		limit = { has_start_date < 1801.1.1 }
-set_oob = "RUS_1800"
+		limit = { has_start_date < 1809.1.1 }
+set_oob = "RUS_1808"
 }
 }
 1812.1.1 = {
@@ -253,7 +336,7 @@ set_technology = {
 	infantry_weapons = 1
 	transport = 1
 	early_submarine = 1
-        gw_artillery = 1
+        gw_artillery = 1 basic_train = 1
 }
 1789.1.1 = {
 recruit_character=RUS_betskoy
@@ -602,6 +685,17 @@ set_cosmetic_tag = RUS_federation #  russian federation
 	}
     set_autonomy = {
         target = BUK
+        autonomous_state = autonomy_protectorate
+        freedom_level = 0.2
+	}
+				}
+}
+1914.1.1 = {
+				if = {
+		limit = {has_start_date > 1914.1.1 has_start_date < 1919.1.1 }
+	TAN={set_cosmetic_tag=TAN_RUS}
+    set_autonomy = {
+        target = TAN
         autonomous_state = autonomy_protectorate
         freedom_level = 0.2
 	}

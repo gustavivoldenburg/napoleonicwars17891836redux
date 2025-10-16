@@ -30,7 +30,6 @@ state={
 			4088  1 
 		}
 		add_core_of = PAL
-		add_claim_by = ISR
 		1919.1.1 = {
 			owner = ENG
 			controller = ENG
@@ -56,7 +55,7 @@ state={
 	provinces={
 		4088 
 	}
-	manpower=75300
+	manpower=20000
 	buildings_max_level_factor=1.000
 	state_category=pastoral
 	local_supplies=0.000

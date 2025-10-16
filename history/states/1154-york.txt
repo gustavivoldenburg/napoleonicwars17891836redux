@@ -9,7 +9,7 @@ state={
 		}
 		owner = REG
 		add_core_of = REG
-		1812.1.1 = {
+		1808.1.1 = {
 			owner = BAY
 			add_core_of = BAY
 			remove_core_of = REG

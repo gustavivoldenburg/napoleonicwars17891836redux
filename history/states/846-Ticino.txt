@@ -3,11 +3,11 @@ state={
 	id=846
 	name="STATE_846"
 	history={
-		owner = MIL
+		owner = LBV
 		1600.1.1 = {
 			owner = SWI
                 add_core_of = SWI
-                remove_core_of = MIL
+                remove_core_of = LBV
 		}
 		victory_points = {
 			9600 2
@@ -16,7 +16,7 @@ state={
 			infrastructure = 2
 			industrial_complex = 1
 		}
-		add_core_of = MIL
+		add_core_of = LBV
 	}
 
 	provinces={

@@ -5,7 +5,7 @@ state={
 
 	history={
 		victory_points = {
-			13830 5 
+			13830 4 
 		}
 		victory_points = {
 			13656 1 
@@ -14,10 +14,10 @@ state={
 			11583 1 
 		}
 		victory_points = {
-			13648 1
+			3956 1
 		}
 		victory_points = {
-			3609 1
+			3609 5
 		}
 		owner = SER
 		1919.1.1 = {
@@ -42,10 +42,10 @@ state={
 	}
 
 	provinces={
-		797 3609 3939 3956 6998 9599 11583 13648 13649 13653 13656 13829 13830 13832 
+		606 797 3609 3939 3956 6998 9599 11583 13648 13649 13653 13656 13829 13830 13832 
 	}
 	manpower=1000000
 	buildings_max_level_factor=1.000
-	state_category=town
+	state_category=city
 	local_supplies=0.000
 }

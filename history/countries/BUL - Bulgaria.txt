@@ -24,7 +24,7 @@ set_politics = {
 	ruling_party = democratic
 	last_election = "1993.9.8"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
 	democratic = 79
@@ -42,7 +42,6 @@ if = {
 	else = {
 		set_air_oob = "BUL_1936_air_legacy"
 	}
-}
 }
 set_convoys = 5 #VANILLA & DLC
 
@@ -291,7 +290,7 @@ if = { #DLC
 	}
 
 	#TECHNOLOGY
-	set_research_slots = 3 #DLC
+	set_research_slots = 0 #DLC
 
 	#RULING PARTY
 	set_politics = { #DLC
@@ -344,6 +343,7 @@ if = { #DLC
 	}
 
 }
+}
 set_technology = { #VANILLA & DLC
 	infantry_weapons = 1
 }
@@ -373,6 +373,17 @@ if = {
 ##############
 #### 1939 ####
 ##############
+	set_popularities = { #VANILLA & DLC //  # Will get +7 from Italian focus: Potential Allies in the Balkans
+		democratic = 5
+		fascism = 35
+		neutrality = 60
+	}
+	set_politics = { #VANILLA & DLC
+		ruling_party = neutrality
+		last_election = "1789.1.1"
+		election_frequency = 48
+		elections_allowed = no
+	}
 1939.1.1 = {
 	
 	#POLIICS

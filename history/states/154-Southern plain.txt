@@ -17,9 +17,8 @@ state={
                 add_core_of = AUS
 		}
 		1900.1.1 = {
-			owner = AUH
+			owner = HUN
                         remove_core_of = AUS
-                        add_core_of = AUH
 		}
 		buildings = {
 			infrastructure = 2
@@ -41,7 +40,7 @@ state={
 			owner = HUN
 			controller = HUN
 			add_core_of = HUN
-			remove_core_of = AUH
+			remove_core_of = AUS
 
 		}
 

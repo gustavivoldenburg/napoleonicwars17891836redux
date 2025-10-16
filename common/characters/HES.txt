@@ -17,6 +17,37 @@ characters={
 		}
 
 	}
+								HES_jakub={
+		name=HES_CHARACTER_JAKUB
+		portraits={
+                        army={
+				small="GFX_idea_hes_jakub_small"
+			}
+			civilian = {
+				large = GFX_portrait_hes_jakub_large
+			}
+		}
+		advisor={
+                        can_be_fired = no
+			slot = political_advisor
+			idea_token = HES_jakub
+			allowed  = {
+				original_tag  = HES
+			}
+			available  = {
+		        }
+			traits  = {
+				jewishcultleader
+			}
+			on_add  = {
+			}
+			do_effect  = {
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+	}
 	HES_louisix={
 		name=HES_CHARACTER_LOUISIX
 		portraits={

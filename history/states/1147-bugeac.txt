@@ -13,11 +13,11 @@ state={
 			owner = OTO
 
 		}
-		1812.1.1 = {
+		1808.1.1 = {
 			owner = MOL
 			controller = MOL
 		}
-		1813.1.1 = {
+		1812.1.1 = {
 			add_core_of = RUS
 			owner = RUS
 

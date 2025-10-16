@@ -1,4 +1,67 @@
 characters = {
+							HUN_stratimirovic={
+		name=HUN_CHARACTER_STRATIMIROVIC
+		portraits={
+                        army={
+				small="GFX_idea_hun_stratimirovic_small"
+			}
+			civilian = {
+				large = GFX_portrait_hun_stratimirovic_large
+			}
+		}
+		advisor={
+                        can_be_fired = no
+			slot = political_advisor
+			idea_token = HUN_stratimirovic
+			allowed  = {
+				original_tag  = HUN
+			}
+			available  = {
+			owns_state=45
+		        }
+			traits  = {
+				Metropolitanate_of_Karlovci
+			}
+			on_add  = {
+			}
+			do_effect  = {
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+	}
+						HUN_koharyhun={
+		name=HUN_CHARACTER_KOHARYHUN
+		portraits={
+                        army={
+				small="GFX_idea_hun_koharyhun_small"
+			}
+			civilian = {
+				large = GFX_portrait_hun_koharyhun_large
+			}
+		}
+		advisor={
+                        can_be_fired = no
+			slot = political_advisor
+			idea_token = HUN_koharyhun
+			allowed  = {
+				original_tag  = HUN
+			}
+			available  = {
+		        }
+			traits  = {
+				hungarian_magnate
+			}
+			on_add  = {
+			}
+			do_effect  = {
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+	}
 	HUN_mikhail={
 		name=HUN_CHARACTER_MIKHAIL
 		portraits={
@@ -287,8 +350,8 @@ characters = {
 							}
 						}
 						AND = {
-							original_tag = AUS
-							has_country_flag = AUS_otto_on_the_battlefield_flag
+							original_tag = HUN
+							has_country_flag = HUN_otto_on_the_battlefield_flag
 						}
 					}
 					

@@ -30,7 +30,7 @@ state={
 
 		}
 		1900.1.1 = {
-			owner = AUH
+			owner = AUS
 
 		}
 		buildings = {
@@ -44,7 +44,7 @@ state={
 	}
 
 	provinces={
-		417 466 3410 6499 14675 14676 14683 14684 14685 14689 
+		417 466 3410 14675 14676 14683 14684 14685
 	}
 	manpower=1000000
 	buildings_max_level_factor=1.000

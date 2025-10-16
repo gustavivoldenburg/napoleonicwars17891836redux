@@ -2,19 +2,19 @@
 1780.1.1 = {
 recruit_character=BRU_charleswilliamferdinand
 promote_character=BRU_charleswilliamferdinand
+recruit_character=BRU_frederickwilliam
+recruit_character=BRU_charlesii
+recruit_character=BRU_william
 }
 1806.1.1 = {
-recruit_character=BRU_frederickwilliam
 promote_character=BRU_frederickwilliam
 retire_character=BRU_charleswilliamferdinand
 }
 1816.1.1 = {
-recruit_character=BRU_charlesii
 promote_character=BRU_charlesii
 retire_character=BRU_frederickwilliam
 }
 1831.1.1 = {
-recruit_character=BRU_william
 promote_character=BRU_william
 retire_character=BRU_charlesii
 }
@@ -24,9 +24,18 @@ retire_character=BRU_william
 1816.1.1 = {
 set_cosmetic_tag = BRU_duchy # 
 }
+1789.1.1 = {
+		if = {
+		limit = { has_start_date < 1837.1.1 }
+set_oob = "BRU_1789"
+}
+}
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
+	transport = 1
+	early_submarine = 1
+        gw_artillery = 1 basic_train = 1
 }
 
 set_convoys = 20

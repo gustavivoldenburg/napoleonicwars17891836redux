@@ -31,7 +31,7 @@ state={
 		add_core_of = SYR
 		1919.1.1 = {
 			owner = FRA
-			controller = FRA
+			
 			remove_core_of = OTO
 
 		}

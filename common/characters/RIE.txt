@@ -1,0 +1,59 @@
+characters={
+	RIE_aloysvon={
+		name=RIE_CHARACTER_ALOYSVON
+		portraits={
+			civilian={
+				large="GFX_portrait_rie_aloysvon_large"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={Kaunitz-Rietberg}
+			desc = RIE_ALOYSVON_DESC
+			expire="1797.1.1"
+		}
+}
+	RIE_dominik={
+		name=RIE_CHARACTER_DOMINIK
+		portraits={
+			civilian={
+				large="GFX_portrait_rie_dominik_large"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={Kaunitz-Rietberg}
+			desc = RIE_DOMINIK_DESC
+			expire="1797.1.1"
+		}
+}
+	RIE_ernst={
+		name=RIE_CHARACTER_ERNST
+		portraits={
+			civilian={
+				large="GFX_portrait_rie_ernst_large"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={Kaunitz-Rietberg}
+			desc = RIE_ERNST_DESC
+			expire="1797.1.1"
+		}
+}
+	RIE_wenzel={
+		name=RIE_CHARACTER_WENZEL
+		portraits={
+			civilian={
+				large="GFX_portrait_rie_wenzel_large"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={Kaunitz-Rietberg}
+			desc = RIE_WENZEL_DESC
+			expire="1797.1.1"
+		}
+}
+}
+

@@ -1,4 +1,35 @@
 characters={
+						SPR_yriarte={
+		name=SPR_CHARACTER_YRIARTE
+		portraits={
+                        army={
+				small="GFX_idea_spr_yriarte_small"
+			}
+			civilian = {
+				large = GFX_portrait_spr_yriarte_large
+			}
+		}
+		advisor={
+                        can_be_fired = no
+			slot = political_advisor
+			idea_token = SPR_yriarte
+			allowed  = {
+				original_tag  = SPR
+			}
+			available  = {
+		        }
+			traits  = {
+				basel_diplomat
+			}
+			on_add  = {
+			}
+			do_effect  = {
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+	}
 	SPR_manuel_azana = {
 		instance = {
 			allowed = {

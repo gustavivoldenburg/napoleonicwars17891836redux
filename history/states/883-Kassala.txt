@@ -9,18 +9,19 @@ state={
 	history={
 		owner = STY
 		add_core_of = STY
+		add_core_of = CTH
 		1500.1.1 = {
 			owner = AUS
 			add_core_of = AUS
 			remove_core_of = STY
 			remove_core_of = TYR
 			remove_core_of = CEL
-			remove_core_of = TRT
+			remove_core_of = CTH
 
 		}
 		1900.1.1 = {
-			owner = AUH
-			add_core_of = AUH
+			owner = AUS
+			add_core_of = AUS
 			remove_core_of = AUS
 
 		}
@@ -28,20 +29,14 @@ state={
 			9648 10 
 		}
 		victory_points = {
-			3673 3 
+			6687 1 
 		}
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 2
 
 		}
-		1920.1.1 = {
-			owner = AUS
-			controller = AUS
-			add_core_of = AUS
-			remove_core_of = AUH
 
-		}
 		1938.3.12 = {
 			owner = GER
 			controller = GER
@@ -59,9 +54,9 @@ state={
 	}
 
 	provinces={
-		653 3673 6687 6691 9646 9648 9650 9679 11634 14256 14273 14588 14598 14606 14610 
+		653 6687 6691 9646 9648 9650 9679 11634 14273 14598 14606 14608 14610 
 	}
-	manpower=1331322
+	manpower=1031322
 	buildings_max_level_factor=1.000
 	state_category=large_town
 	local_supplies=0.000

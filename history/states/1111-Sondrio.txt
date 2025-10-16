@@ -7,14 +7,20 @@ state={
 		victory_points = {
 			6661 1 
 		}
-		owner = MIL
-		add_core_of = MIL
-		1800.1.1 = {
+		owner = LBV
+		add_core_of = LBV
+		1799.1.1 = {
 			remove_core_of = GRI
 			add_core_of =VNT
 			owner = ITA
 			add_core_of = ITA
 
+		}
+								1800.1.1 = {
+        
+		}
+		                				1801.1.1 = {
+        controller = ITA
 		}
 		1816.1.1 = {
 			remove_core_of = ITA
@@ -27,7 +33,7 @@ state={
 			owner = GRI
 			add_core_of = GRI
 			remove_core_of = LBV
-			remove_core_of = MIL
+			remove_core_of = LBV
 
 		}
 		1871.1.1 = {

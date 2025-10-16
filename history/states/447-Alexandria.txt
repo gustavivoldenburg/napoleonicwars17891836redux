@@ -20,6 +20,12 @@ state={
 			}
 
 		}
+		1800.1.1 = {
+        owner=FRA
+		}
+		1801.1.1 = {
+        owner=EGY
+		}
 		1946.1.1 = {
 			owner = EGY
 			controller = EGY
@@ -33,16 +39,7 @@ state={
 			3996 10 
 		}
 		victory_points = {
-			1071 1 
-		}
-		victory_points = {
 			13249 3 
-		}
-		victory_points = {
-			1068 3 
-		}
-		victory_points = {
-			11974 1 
 		}
 		buildings = {
 			infrastructure = 3
@@ -57,9 +54,9 @@ state={
 	}
 
 	provinces={
-		992 1068 1071 1143 1151 3996 4055 4076 4143 4145 5078 7030 7091 7117 7144 7148 7164 7188 10005 10028 10031 10073 10097 10127 11964 11974 12004 12033 12044 12764 13245 13246 13247 13248 13249 13250 
+		3996 4076 4145 7091 7164 10073 11964 13245 13248 13249	
 	}
-	manpower=3576999
+	manpower=1576999
 	buildings_max_level_factor=1.000
 	state_category=rural
 	local_supplies=0.000

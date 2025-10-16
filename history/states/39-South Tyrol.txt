@@ -20,6 +20,11 @@ state={
 		remove_core_of = CEL
 		remove_core_of = TRT
 		}
+				1808.1.1 = {
+			owner = BAY
+			add_core_of = BAY
+
+		}
 						1812.1.1 = {
 			owner = BAY
                 add_core_of = BAY
@@ -36,8 +41,8 @@ state={
                 remove_core_of = BAY
 		}
 		1900.1.1 = {
-			owner = AUH
-                add_core_of = AUH
+			owner = AUS
+                add_core_of = AUS
                 remove_core_of = AUS
 		}
 		buildings = {
@@ -48,7 +53,7 @@ state={
 			owner = ITA
 			controller = ITA
 			add_core_of = ITA
-			remove_core_of = AUH
+			remove_core_of = AUS
 
 		}
 

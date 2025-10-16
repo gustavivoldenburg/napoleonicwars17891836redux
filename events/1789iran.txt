@@ -1,0 +1,300 @@
+###########################
+# Europe Province Rework Events
+###########################
+
+add_namespace = per_1789_event
+
+# French Revolution
+country_event = {
+	id = per_1789_event.1
+	title = "Qajar Annexation of the Afsharids"
+	desc = per_1789_event.1.d
+	picture = GFX_idi_amin_india
+	#is_triggered_only = yes
+trigger = {
+tag = QAJ
+country_exists=QAJ
+country_exists=AFS
+	or = {
+	AFS = {surrender_progress > 0.1 }
+	not={has_war_with=QAJ}
+	and={
+	416={is_core_of=AFS}
+	416={is_owned_by=QAJ}
+	}
+	}
+}
+fire_only_once = yes
+	option = { # 
+		name = "We will execute the royal family"
+		ai_chance = { factor = 100 } 
+news_event = per_1789_news.1
+QAJ={
+add_war_support=0.05
+add_stability=-0.05
+}
+		every_state={
+limit={
+is_core_of=AFS
+}
+remove_core_of=AFS
+add_core_of=QAJ
+transfer_state_to=QAJ
+} 
+	}
+	option = { # 
+		name = "Time for them to step down"
+		ai_chance = { factor = 0 } 
+QAJ={
+add_war_support=-0.05
+add_stability=0.05
+}
+		every_state={
+limit={
+is_core_of=AFS
+}
+remove_core_of=AFS
+add_core_of=QAJ
+transfer_state_to=QAJ
+} 
+	}
+}
+
+country_event = {
+	id = per_1789_event.2
+	title = "Qajar Annexation of the Zands"
+	desc = per_1789_event.2.d
+	picture = GFX_idi_amin_india
+	#is_triggered_only = yes
+trigger = {
+tag = QAJ
+country_exists=QAJ
+country_exists=PER
+	or = {
+	PER = {surrender_progress > 0.5 }
+	not={has_war_with=QAJ}
+	and={
+	416={is_core_of=PER}
+	416={is_owned_by=QAJ}
+	}
+	}
+}
+fire_only_once = yes
+	option = { # 
+		name = "We will execute the royal family"
+		ai_chance = { factor = 100 }
+RUS={country_event = russianempire_1789_1812.104} 
+QAJ={
+add_war_support=0.05
+add_stability=-0.05
+}
+		every_state={
+limit={
+is_core_of=PER
+}
+remove_core_of=PER
+add_core_of=QAJ
+transfer_state_to=QAJ
+} 
+	}
+	option = { # 
+		name = "Time for them to step down"
+		ai_chance = { factor = 0 } 
+QAJ={
+add_war_support=-0.05
+add_stability=0.05
+}
+		every_state={
+limit={
+is_core_of=PER
+}
+remove_core_of=PER
+add_core_of=QAJ
+transfer_state_to=QAJ
+} 
+	}
+}
+
+country_event = {
+	id = per_1789_event.3
+	title = "Vassalization of the Azeri Khanates"
+	desc = per_1789_event.3.d
+	picture = GFX_idi_amin_india
+	#is_triggered_only = yes
+trigger = {
+tag = QAJ
+NOT={country_exists=PER}
+NOT={country_exists=AFS}
+date > 1795.7.1 has_start_date < 1800.1.1
+}
+fire_only_once = yes
+	option = { # 
+		name = "The Khanates are ours"
+		ai_chance = { factor = 100 } 
+QAJ={
+	BAK={set_cosmetic_tag=BAK_QAJ}
+	TAL={set_cosmetic_tag=TAL_QAJ}
+	ERV={set_cosmetic_tag=ERV_QAJ}
+	KRB={set_cosmetic_tag=KRB_QAJ}
+	GAN={set_cosmetic_tag=GAN_QAJ}
+	NAK={set_cosmetic_tag=NAK_QAJ}
+	set_autonomy = {
+        target = NAK
+        autonomous_state = autonomy_protectorate
+        freedom_level = 0.4
+	}
+	set_autonomy = {
+        target = ERV
+        autonomous_state = autonomy_protectorate
+        freedom_level = 0.4
+	}
+	set_autonomy = {
+        target = KRB
+        autonomous_state = autonomy_protectorate
+        freedom_level = 0.4
+	}
+	set_autonomy = {
+        target = GAN
+        autonomous_state = autonomy_protectorate
+        freedom_level = 0.4
+	}
+	set_autonomy = {
+        target = BAK
+        autonomous_state = autonomy_protectorate
+        freedom_level = 0.4
+	}
+	set_autonomy = {
+        target = TAL
+        autonomous_state = autonomy_protectorate
+        freedom_level = 0.4
+	}
+}
+	}
+}
+country_event = {
+	id = per_1789_event.4
+	title = "Vassalization of the Kalat Khanate"
+	desc = per_1789_event.4.d
+	picture = GFX_idi_amin_india
+	#is_triggered_only = yes
+trigger = {
+tag = QAJ
+NOT={country_exists=PER}
+NOT={country_exists=AFS}
+date > 1798.7.1 has_start_date < 1800.1.1
+}
+fire_only_once = yes
+	option = { # 
+		name = "The Kalate Khanate is ours"
+		ai_chance = { factor = 100 } 
+QAJ={
+BAL={set_cosmetic_tag=BAL_QAJ}
+	set_autonomy = {
+        target = BAL
+        autonomous_state = autonomy_protectorate
+        freedom_level = 0.4
+	}
+}
+	}
+}
+country_event = {
+	id = per_1789_event.5
+	title = "Claims on Dagestan"
+	desc = per_1789_event.5.d
+	picture = GFX_idi_amin_india
+	#is_triggered_only = yes
+trigger = {
+tag = QAJ
+has_war_with=RUS
+date > 1789.1.1 has_start_date < 1805.1.1
+}
+fire_only_once = yes
+	option = { # 
+		name = "Derbent is rightfully Iranian"
+		ai_chance = { factor = 100 } 
+	232={add_claim_by=QAJ}
+	1280={add_claim_by=QAJ}
+	}
+}
+country_event = {
+	id = per_1789_event.6
+	title = "The 1st Russo-Persian War"
+	desc = per_1789_event.6.d
+	picture = GFX_idi_amin_india
+	#is_triggered_only = yes
+trigger = {
+tag = QAJ
+date > 1804.6.22 date < 1805.1.1
+}
+fire_only_once = yes
+	option = { # 
+		name = "We need Georgia back"
+		ai_chance = { factor = 100 } 
+RUS={set_country_flag=rus_has_first_war_with_iran_gulistan}
+QAJ={
+declare_war_on = {
+        target = RUS
+        type = puppet_wargoal_focus
+}
+}
+BAK={
+declare_war_on = {
+        target = RUS
+        type = puppet_wargoal_focus
+}
+}
+GAN={
+declare_war_on = {
+        target = RUS
+        type = puppet_wargoal_focus
+}
+}
+KRB={
+declare_war_on = {
+        target = RUS
+        type = puppet_wargoal_focus
+}
+}
+	}
+}
+country_event = {
+	id = per_1789_event.7
+	title = "The 2nd Russo-Persian War"
+	desc = per_1789_event.7.d
+	picture = GFX_idi_amin_india
+	#is_triggered_only = yes
+trigger = {
+tag = QAJ
+date > 1826.7.19 date < 1827.1.1
+}
+fire_only_once = yes
+	option = { # 
+		name = "We need Baku back"
+		ai_chance = { factor = 100 }
+RUS={set_country_flag=rus_has_second_war_with_iran_gulistan}
+QAJ={
+declare_war_on = {
+        target = RUS
+        type = puppet_wargoal_focus
+}
+}
+NAK={
+declare_war_on = {
+        target = RUS
+        type = puppet_wargoal_focus
+}
+}
+TAL={
+declare_war_on = {
+        target = RUS
+        type = puppet_wargoal_focus
+}
+}
+ERV={
+declare_war_on = {
+        target = RUS
+        type = puppet_wargoal_focus
+}
+} 
+	}
+}

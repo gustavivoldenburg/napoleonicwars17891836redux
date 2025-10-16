@@ -8,6 +8,9 @@ set_war_support = 0.4
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
+	transport = 1
+	early_submarine = 1
+        gw_artillery = 1 basic_train = 1
 }
 
 recruit_character = SHX_yan_xishan

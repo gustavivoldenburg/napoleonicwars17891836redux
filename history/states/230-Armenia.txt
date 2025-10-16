@@ -13,10 +13,6 @@ state={
 			remove_core_of = QAR
 
 		}
-		1600.1.1 = {
-			add_core_of = PER
-
-		}
 		1700.1.1 = {
 			owner = ERV
 			add_core_of = ERV
@@ -97,7 +93,7 @@ state={
 	}
 
 	provinces={
-		3564 6642 12320 12441 13123 14026 14029 14030 14033 14041 14048 
+		3564 6642 6991 11708 12320 12441 13123 14029 14030 14033 14041 14048 
 	}
 	manpower=800000
 	buildings_max_level_factor=1.000

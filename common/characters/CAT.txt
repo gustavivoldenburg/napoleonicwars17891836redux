@@ -1,0 +1,34 @@
+characters = {
+
+	# Lluís Companys i Jover
+		CAT_josephbonaparte={
+		name=CAT_CHARACTER_JOSEPHBONAPARTE
+		portraits={
+			civilian={
+				large="GFX_portrait_cat_josephbonaparte_large"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={Bonaparte}
+			desc = CAT_JOSEPHBONAPARTE_DESC
+			expire="1797.1.1"
+		}
+}
+	CAT_lluis_companys = { 
+		name = CAT_lluis_companys
+		portraits = {
+			civilian = {
+				large = GFX_portrait_CAT_lluis_companys
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			traits = { }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
+
+	
+}

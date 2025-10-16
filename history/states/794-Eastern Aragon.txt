@@ -6,6 +6,14 @@ state={
 	history={
 		owner = ARA
 		add_core_of = ARA
+						1808.1.1 = {
+	    owner=CAT
+		add_core_of=CAT
+		}
+		1814.1.1 = {
+		owner=SPR
+		remove_core_of=CAT
+		}
 				1500.1.1 = {
                 owner = SPR
                 add_core_of = SPR
@@ -15,23 +23,6 @@ state={
 		}
 		victory_points = {
 			3954 1 
-		}
-				        1812.1.1 = {
-		if = {
-		limit = { has_start_date < 1813.1.1 }
-					FRA = {
-				set_province_controller = 790
-				set_province_controller = 11793
-				set_province_controller = 13225
-				set_province_controller = 11819
-				set_province_controller = 11821
-				set_province_controller = 14488
-				set_province_controller = 14495
-				set_province_controller = 899
-				set_province_controller = 915
-				set_province_controller = 9842
-			}
-		}
 		}
 		buildings = {
 			infrastructure = 3

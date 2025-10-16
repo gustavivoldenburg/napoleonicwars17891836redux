@@ -14,7 +14,7 @@ state={
 			owner = PRE
                 remove_core_of = LIT
 		}
-		1812.1.1 = {
+		1808.1.1 = {
 			owner = RUS
                 add_core_of = RUS
                 remove_core_of = POL
@@ -63,7 +63,7 @@ state={
 	}
 
 	provinces={
-		290 318 347 3256 9520 9548 11247 11301 11411 13206 14348 
+		290 318 347 9548 11247 11301 11411 13206 14346 14348 
 	}
 	manpower=600000
 	buildings_max_level_factor=1.000

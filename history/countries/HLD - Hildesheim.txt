@@ -1,8 +1,21 @@
 ﻿capital = 914
-
+1789.1.1 = {
+recruit_character=HLD_westphalen
+promote_character=HLD_westphalen
+recruit_character=HLD_furstenberg
+}
+1790.1.1 = {
+retire_character=HLD_westphalen
+}
+1826.1.1 = {
+retire_character=HLD_furstenberg
+}
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
+	transport = 1
+	early_submarine = 1
+        gw_artillery = 1 basic_train = 1
 }
 
 set_convoys = 20

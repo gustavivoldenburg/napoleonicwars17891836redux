@@ -31,7 +31,7 @@ state={
 			remove_core_of = WGR
 
 		}
-		1812.1.1 = {
+		1808.1.1 = {
 			owner = BRG
 			add_core_of = BRG
 			remove_core_of = DOR

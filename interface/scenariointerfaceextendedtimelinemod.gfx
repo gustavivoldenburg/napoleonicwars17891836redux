@@ -36,6 +36,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/napoleonic_wars_1800.dds"
 	}
 		spriteType = {
+		name = "GFX_the_invasion_of_spain_1808"
+		texturefile = "gfx/interface/the_invasion_of_spain_1808.dds"
+	}
+		spriteType = {
 		name = "GFX_the_invasion_of_russia_1812"
 		texturefile = "gfx/interface/the_invasion_of_russia_1812.dds"
 	}

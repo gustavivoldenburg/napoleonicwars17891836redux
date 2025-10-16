@@ -1,9 +1,16 @@
 ﻿capital = 59
+1789.1.1 = {
+recruit_character=HAN_georgfriedrichvonmartens
+}
+1822.1.1 = {
+retire_character=HAN_georgfriedrichvonmartens
+}
 1762.1.1 = {
 recruit_character=HAN_georgeiiihan
 promote_character=HAN_georgeiiihan
 recruit_character=HAN_georgeivhan
 recruit_character=HAN_williamivhan
+recruit_character=HAN_hermann
 }
 1820.1.1 = {
 promote_character=HAN_georgeivhan
@@ -24,6 +31,7 @@ recruit_character=HAN_william
 }
 1806.1.1 = {
 retire_character=HAN_charleswilliamferdinand
+retire_character=HAN_hermann
 }
 1816.1.1 = {
 retire_character=HAN_frederickwilliam
@@ -34,10 +42,30 @@ retire_character=HAN_charlesii
 1885.1.1 = {
 retire_character=HAN_william
 }
+1789.1.1 = {
+recruit_character=HAN_putter
+}
+1810.1.1 = {
+retire_character=HAN_putter
+}
+1789.1.1 = {
+recruit_character=HAN_schlozer
+}
+1810.1.1 = {
+retire_character=HAN_schlozer
+}
+1789.1.1 = {
+recruit_character=HAN_georg
+}
+1800.1.1 = {
+retire_character=HAN_georg
+}
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
-	
+	transport = 1
+	early_submarine = 1
+        gw_artillery = 1 basic_train = 1
 }
 1789.1.1 = {
 		if = {
@@ -130,7 +158,7 @@ if = {
 }
 
 
-set_research_slots = 3
+set_research_slots = 0
 set_convoys = 50
 set_stability = 0.75
 

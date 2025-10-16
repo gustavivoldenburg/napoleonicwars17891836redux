@@ -2,7 +2,7 @@ bookmarks = {
 	bookmark = {
 		name = "The Greek War of Independence"
 		desc = "1821_DESC"
-		date = 1821.2.21.12
+		date = 1821.2.2.12
 		picture = "GFX_the_greek_war_of_independence_1821"
 		default_country = "FRA"
 		FRA = {
@@ -93,6 +93,15 @@ bookmarks = {
 			}
 		}
 		SPM = {
+                        minor = yes
+			history = OTHER_BLITZKRIEG_DESC
+			ideology = neutrality
+			ideas={
+			}
+			focuses = {
+			}
+		}
+		TTS= {
                         minor = yes
 			history = OTHER_BLITZKRIEG_DESC
 			ideology = neutrality

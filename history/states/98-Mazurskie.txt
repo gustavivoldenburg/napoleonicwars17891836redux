@@ -23,9 +23,8 @@ state={
 			owner = PRE
 
 		}
-		1810.1.1 = {
+		1808.1.1 = {
 			owner = POL
-
 		}
 		buildings = {
 			infrastructure = 2
@@ -46,7 +45,7 @@ state={
 	}
 
 	provinces={
-		3230 6567 9290 9316 14339 14342 14343 14344 14347 14353 
+		3230 6259 6321 6567 9290 9316 13428 14339 14342 14343 14344 14347 14350 14353 
 	}
 	manpower=1000000
 	buildings_max_level_factor=1.000

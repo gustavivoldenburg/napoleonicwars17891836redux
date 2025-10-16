@@ -19,7 +19,7 @@ state={
 			remove_core_of = WGR
 
 		}
-		1812.1.1 = {
+		1808.1.1 = {
 			add_core_of = WTF
 			owner = WTF
 
@@ -51,7 +51,7 @@ state={
 
 		}
 		victory_points = {
-			564 5 
+			564 10
 		}
 		buildings = {
 			infrastructure = 2

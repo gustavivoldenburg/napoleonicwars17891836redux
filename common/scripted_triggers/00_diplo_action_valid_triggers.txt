@@ -1,0 +1,38 @@
+
+# is_diplomatic_action_valid_TOKEN can be used for diplo action validity checks. if not valid it won't appear
+# scope is target country
+# from is action initatior country
+
+# in some cases this trigger is checked for only initatior country, in that case both from & this is same
+
+is_diplomatic_action_valid_stage_coup = {
+	NOT = { has_dlc = "La Resistance" } # we have operation for it
+}
+
+is_diplomatic_action_valid_boost_party_popularity = {
+	NOT = { has_dlc = "La Resistance" } # we have operation for it
+}
+DIPLOMACY_WAR_ENABLE_TRIGGER = {
+always = no
+}
+DIPLOMACY_GUARANTEE_ENABLE_TRIGGER_OVERRIDES_GAME_TRIGGER = {
+always = no
+}
+DIPLOMACY_GUARANTEE_ENABLE_TRIGGER = {
+always = no
+}
+DIPLOMACY_REVOKE_GUARANTEE_ENABLE_TRIGGER = {
+always = no
+}
+DIPLOMACY_GENERATE_WARGOAL_ENABLE_TRIGGER = {
+always = no
+}
+DIPLOMACY_BOOST_PARTY_POPULARITY_ENABLE_TRIGGER = {
+always = no
+}
+DIPLOMACY_STAGE_COUP_ENABLE_TRIGGER = {
+always = no
+}
+DIPLOMACY_LEAVE_FACTION_ENABLE_TRIGGER = {
+always = no
+}

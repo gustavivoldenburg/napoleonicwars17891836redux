@@ -21,6 +21,12 @@ state={
 			industrial_complex = 1
 
 		}
+								1789.1.1 = {
+                owner = ALB
+                }
+				1823.1.1 = {
+                owner = OTO
+                }
 		add_core_of = BYZ
 		1800.1.1 = {
 			add_core_of = GRE
@@ -37,7 +43,7 @@ state={
 	}
 
 	provinces={
-		936 3526 3936 9837 10163 13701 13806 13808 
+		936 3526 3936 9837 10163 13806 13808 
 	}
 	manpower=600000
 	buildings_max_level_factor=1.000

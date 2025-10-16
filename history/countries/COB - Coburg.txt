@@ -1,10 +1,31 @@
 ﻿capital = 1163
-
+1789.1.1 = {
+recruit_character=COB_frederick
+promote_character=COB_frederick
+recruit_character=COB_francis
+recruit_character=COB_ernest
+}
+1801.1.1 = {
+retire_character=COB_frederick
+promote_character=COB_francis
+}
+1807.1.1 = {
+retire_character=COB_francis
+promote_character=COB_ernest
+}
+1845.1.1 = {
+retire_character=COB_ernest
+}
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
+	transport = 1
+	early_submarine = 1
+        gw_artillery = 1 basic_train = 1
 }
-
+1826.1.1 = {
+set_cosmetic_tag=COB_gotha
+}
 set_convoys = 20
 
 

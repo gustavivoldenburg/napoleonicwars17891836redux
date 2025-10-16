@@ -221,7 +221,7 @@ retire_character=OTO_residgeneral
 }
 1500.1.1 = {
 			if = {
-		limit = { has_start_date < 1812.1.1 }
+		limit = { has_start_date < 1822.1.1 }
 WAL={set_cosmetic_tag = WAL_OTO}
 MOL={set_cosmetic_tag = MOL_OTO}
 	set_autonomy = {
@@ -244,25 +244,9 @@ MOL={set_cosmetic_tag = MOL_OTO}
 1814.1.1 = {
 			if = {
 		limit = { has_start_date < 1822.1.1 }
-WAL={set_cosmetic_tag = WAL_OTO}
-MOL={set_cosmetic_tag = MOL_OTO}
+SER={set_cosmetic_tag = SER_OTO}
 	set_autonomy = {
         target = SER
-        autonomous_state = autonomy_protectorate
-        freedom_level = 0.4
-	}
-		set_autonomy = {
-        target = ALG
-        autonomous_state = autonomy_protectorate
-        freedom_level = 0.4
-	}
-	set_autonomy = {
-        target = MOL
-        autonomous_state = autonomy_protectorate
-        freedom_level = 0.4
-	}
-	set_autonomy = {
-        target = WAL
         autonomous_state = autonomy_protectorate
         freedom_level = 0.4
 	}
@@ -320,7 +304,7 @@ set_technology = {
 	infantry_weapons = 1
 	transport = 1
 	early_submarine = 1
-        gw_artillery = 1
+        gw_artillery = 1 basic_train = 1
 }
 
 set_convoys = 100

@@ -21,13 +21,13 @@ state={
 		}
 		1879.1.1 = {
 		victory_points = {
-			13917 1 
+			2207 1 
 		}
 		}
 	}
 
 	provinces={
-		13917
+		2207
 	}
 	manpower=2000
 	buildings_max_level_factor=1.000

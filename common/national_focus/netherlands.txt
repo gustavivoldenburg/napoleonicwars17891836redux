@@ -1417,7 +1417,7 @@ allow_branch = {has_start_date > 1936.1.1}
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_research_slot = 1
+			
 		}
 	}
 
@@ -1921,7 +1921,7 @@ allow_branch = {has_start_date > 1936.1.1}
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			add_research_slot = 1
+			
 		}
 	}
 

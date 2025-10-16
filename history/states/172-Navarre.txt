@@ -6,6 +6,14 @@ state={
 	history={
 		owner = NAV
 		add_core_of = NAV
+						1808.1.1 = {
+	    owner=CAT
+		add_core_of=CAT
+		}
+		1814.1.1 = {
+		owner=SPR
+		remove_core_of=CAT
+		}
 		1500.1.1 = {
                 owner = SPR
                 add_core_of = SPR
@@ -14,7 +22,7 @@ state={
 				remove_core_of = ARA
 		}
 		1812.1.1 = {
-        controller = FRA
+        
 		}
 		1813.1.1 = {
         controller = SPR

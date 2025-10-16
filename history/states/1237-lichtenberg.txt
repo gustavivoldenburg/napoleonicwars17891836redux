@@ -4,6 +4,9 @@ state={
 		history={
 		owner = TRR
 		add_core_of = TRR
+		victory_points = {
+			3423 1 
+		}
 		1950.1.1 = {
 			owner = WGR
 			add_core_of = WGR

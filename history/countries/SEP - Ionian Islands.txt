@@ -1,10 +1,20 @@
 ﻿capital = 964
-1444.11.11 = {
+1789.1.1 = {
+recruit_character=SEP_antonioskomoutos
+promote_character=SEP_antonioskomoutos
+}
+1836.1.1 = {
+retire_character=SEP_antonioskomoutos
+}
+1815.11.11 = {
 set_cosmetic_tag = SEP_ENG #
 }
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
+	transport = 1
+	early_submarine = 1
+        gw_artillery = 1 basic_train = 1
 }
 
 set_convoys = 20

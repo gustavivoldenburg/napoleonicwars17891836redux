@@ -18,6 +18,10 @@ state={
 		1946.1.1 = {
 		owner = YUG
 		}
+				1804.1.1 = {
+			owner = AUS
+                add_core_of = AUS
+		}
 				1814.1.1 = {
         controller = AUS
 		}
@@ -34,25 +38,22 @@ state={
 		add_core_of = CRO
         remove_core_of = HUN
 		}
-        1804.1.1 = {
-                owner = AUS
-                add_core_of = AUS
-                remove_core_of = VNT
-				remove_core_of = RAG
-        }
+
 		1812.1.1 = {
         owner = FRA
         }
 		1816.1.1 = {
         owner = AUS
+		remove_core_of=VNT
+		remove_core_of=ITA
         add_core_of = AUS
         }
 		1900.1.1 = {
-			owner = AUH
+			owner = HUN
                         remove_core_of = AUS
                         remove_core_of = HUN
                         add_core_of = CRO
-                        add_core_of = AUH
+                       
 		}
 		buildings = {
 			infrastructure = 3
@@ -63,7 +64,7 @@ state={
 			owner = YUG
 			controller = YUG
 			add_core_of = YUG
-			remove_core_of = AUH
+			remove_core_of = AUS
 
 		}
 		1992.1.1 = {
@@ -76,7 +77,7 @@ state={
 	}
 
 	provinces={
-		591 984 3592 3596 3601 6611 13321 13323 13659 13664 
+		591 3592 3596 3601 6611 6614 13321 13323 13659
 	}
 	manpower=400000
 	buildings_max_level_factor=1.000

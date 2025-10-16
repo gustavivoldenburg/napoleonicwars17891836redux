@@ -1,4 +1,35 @@
 characters={
+									SPM_josephdemaistre={
+		name=SPM_CHARACTER_JOSEPHDEMAISTRE
+		portraits={
+                        army={
+				small="GFX_idea_spm_josephdemaistre_small"
+			}
+			civilian = {
+				large = GFX_portrait_spm_josephdemaistre_large
+			}
+		}
+		advisor={
+                        can_be_fired = no
+			slot = political_advisor
+			idea_token = SPM_josephdemaistre
+			allowed  = {
+				original_tag  = SPM
+			}
+			available  = {
+		        }
+			traits  = {
+				ambassador_to_russia
+			}
+		on_add = {
+		}
+			do_effect  = {
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+	}
 		SPM_carlo={
 		name=SPM_CHARACTER_CARLO
 		portraits={

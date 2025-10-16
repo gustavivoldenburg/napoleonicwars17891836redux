@@ -1,4 +1,92 @@
 characters={
+	PRE_michael = {
+		name = PRE_michael
+		portraits = {
+			navy = {
+				large = GFX_portrait_PRE_michael
+				small = GFX_portrait_PRE_michael_small
+			}
+		}
+		advisor={			
+			slot = high_command
+			idea_token = PRE_michael
+			ledger = navy
+			allowed = {
+				original_tag = PRE
+			}
+			#cost = 50
+			ai_will_do = {
+				base = 1.000
+			}
+		}
+		navy_leader = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			maneuvering_skill = 2
+			coordination_skill = 2
+		}
+	}
+		PRE_johann = {
+		name = PRE_johann
+		portraits = {
+			navy = {
+				large = GFX_portrait_PRE_johann
+				small = GFX_portrait_PRE_johann_small
+			}
+		}
+		advisor={			
+			slot = high_command
+			idea_token = PRE_johann
+			ledger = navy
+			allowed = {
+				original_tag = PRE
+			}
+			#cost = 50
+			ai_will_do = {
+				base = 1.000
+			}
+		}
+		navy_leader = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			maneuvering_skill = 2
+			coordination_skill = 2
+		}
+	}
+	
+						PRE_hardenberg={
+		name=PRE_CHARACTER_HARDENBERG
+		portraits={
+                        army={
+				small="GFX_idea_pre_hardenberg_small"
+			}
+			civilian = {
+				large = GFX_portrait_pre_hardenberg_large
+			}
+		}
+		advisor={
+                        can_be_fired = no
+			slot = political_advisor
+			idea_token = PRE_hardenberg
+			allowed  = {
+				original_tag  = PRE
+			}
+			available  = {
+		        }
+			traits  = {
+				basel_diplomat
+			}
+			on_add  = {
+			}
+			do_effect  = {
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+	}
 				PRE_louise={
 		name=PRE_CHARACTER_LOUISE
 		portraits={
@@ -24,6 +112,70 @@ characters={
 		        }
 			traits  = {
 				PRE_prussia_best_minister
+			}
+			on_add  = {
+			}
+			do_effect  = {
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}	
+	}
+				PRE_oppenheim={
+		name=PRE_CHARACTER_OPPENHEIM
+		portraits={
+                        army={
+				small="GFX_idea_pre_oppenheim_small"
+			}
+			civilian = {
+				large = GFX_portrait_pre_oppenheim_large
+			}
+		}
+		advisor={
+                        can_be_fired = no
+			slot = political_advisor
+			idea_token = PRE_oppenheim
+			allowed  = {
+				original_tag  = PRE
+			}
+			available  = {
+            owns_state=51
+		        }
+			traits  = {
+				court_jew
+			}
+			on_add  = {
+			}
+			do_effect  = {
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}	
+	}
+					PRE_itzig={
+		name=PRE_CHARACTER_ITZIG
+		portraits={
+                        army={
+				small="GFX_idea_pre_itzig_small"
+			}
+			civilian = {
+				large = GFX_portrait_pre_itzig_large
+			}
+		}
+		advisor={
+                        can_be_fired = no
+			slot = political_advisor
+			idea_token = PRE_itzig
+			allowed  = {
+				original_tag  = PRE
+			}
+			available  = {
+            owns_state=51
+		        }
+			traits  = {
+				court_jew
 			}
 			on_add  = {
 			}
@@ -97,6 +249,87 @@ characters={
 				factor  = 1.000
 			}
 		}	
+	}
+				PRE_abraham={
+		name=PRE_CHARACTER_ABRAHAM
+		portraits={
+                        army={
+				small="GFX_idea_pre_abraham_small"
+			}
+			civilian = {
+				large = GFX_portrait_pre_abraham_large
+			}
+		}
+		advisor={
+                        can_be_fired = no
+			slot = political_advisor
+			idea_token = PRE_abraham
+			allowed  = {
+				original_tag  = PRE
+			}
+			available  = {
+            has_country_flag=PRE_has_abraham_flag
+		        }
+			traits  = {
+				german_jewish_banker
+			}
+			on_add  = {
+			}
+			do_effect  = {
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}	
+	}
+				PRE_israeljacobson={
+		name=PRE_CHARACTER_ISRAELJACOBSON
+		portraits={
+                        army={
+				small="GFX_idea_pre_israeljacobson_small"
+			}
+			civilian = {
+				large = GFX_portrait_pre_israeljacobson_large
+			}
+		}
+		advisor={
+                        can_be_fired = no
+			slot = political_advisor
+			idea_token = PRE_israeljacobson
+			allowed  = {
+				original_tag  = PRE
+			}
+			available  = {
+            has_country_flag=PRE_has_israeljacobson_flag
+		        }
+			traits  = {
+				german_jewish_banker
+			}
+			on_add  = {
+			}
+			do_effect  = {
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}	
+	}
+			PRE_gerhard={
+		name=PRE_CHARACTER_GERHARD
+		portraits={
+			army={
+				large=GFX_portrait_pre_gerhard_large
+				small=GFX_portrait_pre_gerhard_small
+			}
+		}
+		field_marshal={
+			skill=1
+			attack_skill=2
+			defense_skill=3
+			planning_skill=4
+			logistics_skill=5
+			legacy_id=0
+		}
 	}
 		PRE_augusgeneral={
 		name=PRE_CHARACTER_AUGUSGENERAL

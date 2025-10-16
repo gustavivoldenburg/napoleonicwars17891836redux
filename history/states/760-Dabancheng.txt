@@ -10,8 +10,13 @@ state={
 	history={
 		owner = ZZZ
 		1700.1.1 = {
+        owner = QIN
+		add_core_of = KUM
+        }
+				1837.1.1 = {
         owner = KUM
 		add_core_of = KUM
+		remove_core_of=QIN
         }
 		1920.1.1 = {
 			owner = SIK
@@ -22,12 +27,12 @@ state={
 		1946.1.1 = {
 			owner = CHI
 			controller = CHI
-            remove_core_of = AUH
+            remove_core_of = AUS
 		}
 		1950.1.1 = {
 			owner = PRC
 			controller = PRC
-            remove_core_of = AUH
+            remove_core_of = AUS
 		add_core_of = PRC
                 remove_core_of = SIK
 		}

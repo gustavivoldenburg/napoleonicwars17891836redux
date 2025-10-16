@@ -9,7 +9,7 @@ state={
 		owner = KAK
 		}
 				1600.1.1 = {
-		add_core_of = PER
+		add_core_of = GEO
 		}
 				1837.1.1 = {
 			add_core_of = PER

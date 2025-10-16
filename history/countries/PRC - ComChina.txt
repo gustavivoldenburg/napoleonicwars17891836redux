@@ -10,6 +10,9 @@ oob = "PRC_1936"
 }
 set_technology = {
 	infantry_weapons = 1
+	transport = 1
+	early_submarine = 1
+        gw_artillery = 1 basic_train = 1
 }
 1936.1.1 = {
 # Starting tech
@@ -80,7 +83,7 @@ save_global_event_target_as = WTT_communist_china
 		complete_national_focus = PRC_provoke_japan
 		complete_national_focus = PRC_mobile_warfare
 
-		set_research_slots = 3
+		set_research_slots = 0
 
 		add_ideas = {
 			PRC_revolutionary_military_commission

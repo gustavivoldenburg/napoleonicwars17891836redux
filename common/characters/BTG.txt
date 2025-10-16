@@ -1,0 +1,16 @@
+characters={
+	BTG_mos={
+		name=BTG_CHARACTER_MOS
+		portraits={
+			civilian={
+				large="GFX_portrait_btg_mos_large"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			desc = BTG_MOS_DESC
+			expire="1797.1.1"
+		}
+}
+}
+

@@ -10,6 +10,7 @@ state={
 		1600.1.1 = {
 			owner = OTO
 			remove_core_of = SMT
+			add_core_of = OTO
 
 		}
 		1880.1.1 = {
@@ -54,7 +55,7 @@ state={
 	provinces={
 		789 7454 14032 14054 
 	}
-	manpower=200000
+	manpower=150000
 	buildings_max_level_factor=1.000
 	state_category=pastoral
 	local_supplies=0.000

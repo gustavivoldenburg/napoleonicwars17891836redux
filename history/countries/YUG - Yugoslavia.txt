@@ -37,7 +37,7 @@ if = {
 }
 }
 
-set_research_slots = 3
+set_research_slots = 0
 
 recruit_character = YUG_prince_paul
 recruit_character = YUG_milan_stojadinovic
@@ -110,6 +110,9 @@ if = {
 }
 set_technology = {
 	infantry_weapons = 1
+	transport = 1
+	early_submarine = 1
+        gw_artillery = 1 basic_train = 1
 }
 1936.1.1 = {
 set_technology = {
@@ -318,7 +321,7 @@ set_politics = {
 	ruling_party = neutrality
 	last_election = "1935.5.3"
 	election_frequency = 36
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
 	democratic = 15
@@ -332,7 +335,7 @@ set_popularities = {
 		ruling_party = neutrality
 		last_election = "1938.12.1"
 		election_frequency = 36
-		elections_allowed = yes
+		elections_allowed = no
 	}
 	set_popularities = { # Will get +7 from Italian focus: Potential Allies in the Balkans
 		democratic = 10
@@ -360,7 +363,7 @@ set_politics = {
 	ruling_party = democratic
 	last_election = "1993.9.8"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
 	democratic = 79

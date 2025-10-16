@@ -12,6 +12,9 @@ MENA_form_tamaghza:0 "Form Tamaghza"
 MENA_form_tamaghza_nazbol:0 "Form NazBol Tamaghza"
 MENA_form_tamaghza_islamist:0 "Form Islamist Tamaghza"
 
+FRA_integrate_parma:0 "Integrate Parma"
+FRA_integrate_etruria:0 "Integrate Etruria"
+
 form_circassia:0 "Restore Circassia"
 
 form_circassia_category:0 "Restore Circassia"
@@ -140,7 +143,7 @@ FRA_invade_milan:0 "Invade Milan"
 FRA_invade_venice:0 "Invade Venice"
 FRA_invade_naples:0 "Invade Naples"
 FRA_invade_pope:0 "Invade the Papal States"
-FRA_invade_prmmodmas:0 "Invade Parma Modena and Massa"
+FRA_invade_prmmodmas:0 "Invade Parma Modena Massa and the Papal States"
 FRA_invade_genoa:0 "Overthrow the Genoese Government"
 FRA_invade_lucca:0 "Invade Lucca"
 FRA_invade_tuscany:0 "Invade Tuscany"

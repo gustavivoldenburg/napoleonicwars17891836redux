@@ -14,23 +14,11 @@ state={
                 add_core_of = ROM
                 remove_core_of = WAL
 		}
-		1812.1.1 = {
-			owner = WAL
-			controller = WAL
-		}
-		1813.1.1 = {
-			owner = OTO
-			controller = OTO
-		}
-
 		victory_points = {
 			657 5 
 		}
 		victory_points = {
 			687 2 
-		}
-				victory_points = {
-			13545 1 
 		}
 		buildings = {
 			infrastructure = 3
@@ -49,8 +37,8 @@ state={
 
 	}
 
-	provinces={ 657 687 3076 9635 13545 13556 13562 13564 13570 }
-	manpower=400000
+	provinces={ 657 687 3076 9635 13536 13556 13562 13564 13570 }
+	manpower=350000
 	buildings_max_level_factor=1.000
 	state_category=rural
 	local_supplies=0.000

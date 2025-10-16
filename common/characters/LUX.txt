@@ -1,4 +1,21 @@
 characters = {
+				LUX_blasius={
+		name=LUX_CHARACTER_BLASIUS
+		portraits={
+			army={
+				large=GFX_portrait_lux_blasius_large
+				small=GFX_portrait_lux_blasius_small
+			}
+		}
+		field_marshal={
+			skill=1
+			attack_skill=4
+			defense_skill=3
+			planning_skill=1
+			logistics_skill=3
+			legacy_id=0
+		}
+	}
 	LUX_casimir={
 		name=LUX_CHARACTER_CASIMIR
 		portraits={

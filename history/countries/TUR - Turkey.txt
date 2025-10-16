@@ -46,9 +46,12 @@ if = {
 #TUR_neutrality
 set_cosmetic_tag = TUR_neutrality
 
-set_research_slots = 3
+set_research_slots = 0
 set_technology = {
 	infantry_weapons = 1
+	transport = 1
+	early_submarine = 1
+        gw_artillery = 1 basic_train = 1
 }
 1936.1.1 = {
 set_technology = {
@@ -253,7 +256,7 @@ if = {
 		ruling_party = neutrality
 		last_election = "1939.2.8"
 		election_frequency = 60
-		elections_allowed = yes
+		elections_allowed = no
 	}
 
 	if = {
@@ -419,7 +422,7 @@ if = {
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1935.2.8"
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
 	democratic = 6

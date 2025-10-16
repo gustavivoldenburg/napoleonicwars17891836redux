@@ -13,27 +13,7 @@ ideas = {
 			available = {
 				#has_manpower_for_recruit_change_to = { value = 0.005 group = mobilization_laws }
 				OR={date < 1789.1.1 date > 1836.1.1}
-                NOT = { tag = ARG }
-                NOT = { tag = CHL }
-                NOT = { tag = BOL }
-                NOT = { tag = URG }
-                NOT = { tag = BRA }
-                NOT = { tag = PRU }
-                NOT = { tag = VEN }
-                NOT = { tag = ECU }
-                NOT = { tag = COL }
-                NOT = { tag = PAN }
-                NOT = { tag = COS }
-                NOT = { tag = NIC }
-                NOT = { tag = HON }
-                NOT = { tag = ELS }
-                NOT = { tag = GUA }
-                NOT = { tag = PAR }
-                NOT = { tag = MEX }
-                NOT = { tag = CUB }
-                NOT = { tag = HAI }
-                NOT = { tag = DOM }
-                NOT = { tag = PRC }
+
 			}
 
 			modifier = {
@@ -52,27 +32,7 @@ ideas = {
 			available = {
 				#has_manpower_for_recruit_change_to =  { value = 0.015 group = mobilization_laws }
 				OR={date < 1789.1.1 date > 1836.1.1}
-                NOT = { tag = ARG }
-                NOT = { tag = CHL }
-                NOT = { tag = BOL }
-                NOT = { tag = URG }
-                NOT = { tag = BRA }
-                NOT = { tag = PRU }
-                NOT = { tag = VEN }
-                NOT = { tag = ECU }
-                NOT = { tag = COL }
-                NOT = { tag = PAN }
-                NOT = { tag = COS }
-                NOT = { tag = NIC }
-                NOT = { tag = HON }
-                NOT = { tag = ELS }
-                NOT = { tag = GUA }
-                NOT = { tag = PAR }
-                NOT = { tag = MEX }
-                NOT = { tag = CUB }
-                NOT = { tag = HAI }
-                NOT = { tag = DOM }
-                NOT = { tag = PRC }
+
 				if = {
 					limit = {
 						original_tag = HUN
@@ -114,27 +74,7 @@ ideas = {
 				OR={date < 1789.1.1 date > 1836.1.1}
 				NOT = { has_idea = undisturbed_isolation }
 				NOT = { has_idea = isolation }
-                NOT = { tag = ARG }
-                NOT = { tag = CHL }
-                NOT = { tag = BOL }
-                NOT = { tag = URG }
-                NOT = { tag = BRA }
-                NOT = { tag = PRU }
-                NOT = { tag = VEN }
-                NOT = { tag = ECU }
-                NOT = { tag = COL }
-                NOT = { tag = PAN }
-                NOT = { tag = COS }
-                NOT = { tag = NIC }
-                NOT = { tag = HON }
-                NOT = { tag = ELS }
-                NOT = { tag = GUA }
-                NOT = { tag = PAR }
-                NOT = { tag = MEX }
-                NOT = { tag = CUB }
-                NOT = { tag = HAI }
-                NOT = { tag = DOM }
-                NOT = { tag = PRC }
+
 				if = {
 					limit = {
 						original_tag = AST
@@ -223,27 +163,7 @@ ideas = {
 			available = {
 				#has_manpower_for_recruit_change_to = { value = 0.05 group = mobilization_laws }
 				OR={date < 1789.1.1 date > 1836.1.1}
-                NOT = { tag = ARG }
-                NOT = { tag = CHL }
-                NOT = { tag = BOL }
-                NOT = { tag = URG }
-                NOT = { tag = BRA }
-                NOT = { tag = PRU }
-                NOT = { tag = VEN }
-                NOT = { tag = ECU }
-                NOT = { tag = COL }
-                NOT = { tag = PAN }
-                NOT = { tag = COS }
-                NOT = { tag = NIC }
-                NOT = { tag = HON }
-                NOT = { tag = ELS }
-                NOT = { tag = GUA }
-                NOT = { tag = PAR }
-                NOT = { tag = MEX }
-                NOT = { tag = CUB }
-                NOT = { tag = HAI }
-                NOT = { tag = DOM }
-                NOT = { tag = PRC }
+
 				OR = {
 					has_government = fascism
 					has_government = communism
@@ -386,27 +306,7 @@ ideas = {
 			available = {
 				#has_manpower_for_recruit_change_to =  { value = 0.1 group = mobilization_laws }
 				OR={date < 1789.1.1 date > 1836.1.1}
-                NOT = { tag = ARG }
-                NOT = { tag = CHL }
-                NOT = { tag = BOL }
-                NOT = { tag = URG }
-                NOT = { tag = BRA }
-                NOT = { tag = PRU }
-                NOT = { tag = VEN }
-                NOT = { tag = ECU }
-                NOT = { tag = COL }
-                NOT = { tag = PAN }
-                NOT = { tag = COS }
-                NOT = { tag = NIC }
-                NOT = { tag = HON }
-                NOT = { tag = ELS }
-                NOT = { tag = GUA }
-                NOT = { tag = PAR }
-                NOT = { tag = MEX }
-                NOT = { tag = CUB }
-                NOT = { tag = HAI }
-                NOT = { tag = DOM }
-                NOT = { tag = PRC }
+
 				OR = {
 					has_government = fascism
 					has_government = communism
@@ -553,27 +453,7 @@ ideas = {
 			available = {
 				#has_manpower_for_recruit_change_to =  { value = 0.2 group = mobilization_laws }
 				OR={date < 1789.1.1 date > 1836.1.1}
-                NOT = { tag = ARG }
-                NOT = { tag = CHL }
-                NOT = { tag = BOL }
-                NOT = { tag = URG }
-                NOT = { tag = BRA }
-                NOT = { tag = PRU }
-                NOT = { tag = VEN }
-                NOT = { tag = ECU }
-                NOT = { tag = COL }
-                NOT = { tag = PAN }
-                NOT = { tag = COS }
-                NOT = { tag = NIC }
-                NOT = { tag = HON }
-                NOT = { tag = ELS }
-                NOT = { tag = GUA }
-                NOT = { tag = PAR }
-                NOT = { tag = MEX }
-                NOT = { tag = CUB }
-                NOT = { tag = HAI }
-                NOT = { tag = DOM }
-                NOT = { tag = PRC }
+
 				has_war = yes
 				OR = {
 					has_war_support > 0.7
@@ -705,27 +585,7 @@ ideas = {
 			available = {
 				#has_manpower_for_recruit_change_to =  { value = 0.25 group = mobilization_laws }
 				OR={date < 1789.1.1 date > 1836.1.1}
-                NOT = { tag = ARG }
-                NOT = { tag = CHL }
-                NOT = { tag = BOL }
-                NOT = { tag = URG }
-                NOT = { tag = BRA }
-                NOT = { tag = PRU }
-                NOT = { tag = VEN }
-                NOT = { tag = ECU }
-                NOT = { tag = COL }
-                NOT = { tag = PAN }
-                NOT = { tag = COS }
-                NOT = { tag = NIC }
-                NOT = { tag = HON }
-                NOT = { tag = ELS }
-                NOT = { tag = GUA }
-                NOT = { tag = PAR }
-                NOT = { tag = MEX }
-                NOT = { tag = CUB }
-                NOT = { tag = HAI }
-                NOT = { tag = DOM }
-                NOT = { tag = PRC }
+
 				has_war = yes
 				OR = {
 					has_war_support > 0.85

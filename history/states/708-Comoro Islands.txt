@@ -9,7 +9,7 @@ state={
 		owner = ZZZ
 		1843.1.1 = {
 			owner = FRA
-			controller = FRA
+			
 		}
 		1842.1.1 = {
 		buildings = {
@@ -21,7 +21,7 @@ state={
 		}
 		1900.1.1 = {
 			owner = FRA
-			controller = FRA
+			
                 add_core_of = MAD
 		}
 								1961.1.1 = {

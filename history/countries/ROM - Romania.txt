@@ -38,7 +38,7 @@ if = {
 	}
 }
 }
-set_research_slots = 3
+set_research_slots = 0
 set_stability = 0.6
 set_war_support = 0.6
 
@@ -86,6 +86,9 @@ recruit_character = ROM_octavian_goga
 }
 set_technology = {
 	infantry_weapons = 1
+	transport = 1
+	early_submarine = 1
+        gw_artillery = 1 basic_train = 1
 }
 1936.1.1 = {
 if = {
@@ -354,7 +357,7 @@ set_politics = {
 	ruling_party = democratic
 	last_election = "1933.12.20"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
 	democratic = 60
@@ -396,7 +399,7 @@ set_politics = {
 	ruling_party = democratic
 	last_election = "1993.9.8"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
 	democratic = 79

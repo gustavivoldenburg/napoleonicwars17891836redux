@@ -1,5 +1,5 @@
 ﻿focus_tree = {
-	id = prussianreworkn_focus
+	id = prussianrework_focus
 	
 	country = {
 		factor = 0
@@ -48,6 +48,7 @@ allow_branch = { has_start_date > 1789.1.1
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		search_filters = { FOCUS_FILTER_ALTHISTORY }
 		completion_reward = {
+		PRE={country_event = pre_1789_event.122}
 		}
 	}
 	focus = {
@@ -93,7 +94,7 @@ allow_branch = { has_start_date > 1789.1.1
 	}
 	focus = {
 		id = prussianrework_althistory_8
-		icon = GFX_focus_renounce_the_treaty_of_trianon
+		icon = GFX_focus_chi_british_cooperation
 
 		x = 2
 		y = 18
@@ -574,6 +575,7 @@ allow_branch = { has_start_date > 1789.1.1
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		
 		completion_reward = {
+		PRE={country_event = pre_1789_event.122}
 		}
 	}
 		focus = {
@@ -614,7 +616,7 @@ allow_branch = { has_start_date > 1789.1.1
 	}
 		focus = {
 		id = prussianrework_1789_1815_first_100_focus_5
-		icon = GFX_focus_renounce_the_treaty_of_trianon
+		icon = GFX_focus_generic_polish_deal
 allow_branch = { has_start_date > 1789.1.1
     has_start_date < 1836.1.1 }
 		x = -11
@@ -1073,7 +1075,6 @@ allow_branch = { has_start_date > 1789.1.1
 		}
 
 		available = {
-        FRA={has_war = yes}
 		}
 
 		bypass = {
@@ -1087,6 +1088,8 @@ allow_branch = { has_start_date > 1789.1.1
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		
 		completion_reward = {
+		add_popularity = { ideology = neutrality popularity = 0.05}
+		add_war_support=0.05
 		PRE={country_event = pre_1789_event.26}
 		}
 	}
@@ -1120,6 +1123,7 @@ allow_branch = { has_start_date > 1789.1.1
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		
 		completion_reward = {
+		add_popularity = { ideology = neutrality popularity = 0.05}
 		PRE={country_event = pre_1789_event.53}
 		}
 	}
@@ -1701,7 +1705,6 @@ allow_branch = { has_start_date > 1789.1.1
 		}
 
 		available = {
-
 		}
 
 		bypass = {
@@ -1715,6 +1718,7 @@ allow_branch = { has_start_date > 1789.1.1
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		
 		completion_reward = {
+		add_popularity = { ideology = neutrality popularity = 0.05}
 		}
 	}
 		focus = {
@@ -2171,6 +2175,7 @@ has_country_leader = {
 		
 		
 		completion_reward = {
+		PRE={country_event = pre_1789_event.120}
 		}
 	}
 		focus = {
@@ -2891,7 +2896,7 @@ focus = {
 	}
 		focus = {
 		id = prussianrework_1789_1815_first_100_focus_63
-		icon = GFX_focus_renounce_the_treaty_of_trianon
+		icon = GFX_focus_chi_british_cooperation
 
 		x = 1
 		y = 6
@@ -2920,6 +2925,7 @@ focus = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		
 		completion_reward = {
+		PRE={set_country_flag=pre_has_puppeted_hanover}
 		PRE={country_event = pre_1789_event.70}
 		}
 	}
@@ -3842,7 +3848,7 @@ focus = {
 	}
 		focus = {
 		id = prussianrework_1789_1815_first_100_focus_83
-		icon = GFX_goal_generic_consumer_goods
+		icon = GFX_focus_generic_polish_deal
 
 		x = -11
 		y = 8
@@ -3957,11 +3963,7 @@ focus = {
 		completion_reward = {	
 					add_ideas = why_we_fight_focus
 			custom_effect_tooltip = why_we_fight_effect
-			hidden_effect = {
-				if = {
-					limit = { NOT = { has_idea = neutrality_idea } }
-					set_rule = { can_create_factions = yes }
-				}			
+			hidden_effect = {			
 			}
 		}
 	}
@@ -4125,9 +4127,6 @@ focus = {
 		
 		completion_reward = {
 					add_ideas = ideological_fanaticism_focus
-			set_rule = {
-				can_create_factions = yes
-			}
 			hidden_effect = {
 				set_rule = { can_use_kamikaze_pilots = yes }
 			}
@@ -4173,7 +4172,7 @@ focus = {
 				limit = {
 					original_research_slots < 3
 				}
-				add_research_slot = 1
+				
 			}
 			if = {
 				limit = {
@@ -4203,7 +4202,7 @@ focus = {
 	}
 focus = {
 		id = prussianrework_1789_1815_first_100_focus_91
-		icon = GFX_goal_generic_neutrality_focus
+		icon = GFX_focus_chi_british_cooperation
 
 		x = -8
 		y = 11
@@ -4211,15 +4210,22 @@ focus = {
 		cost = 10
 		prerequisite = {
 		focus =	prussianrework_1789_1815_first_100_focus_73
+		}
+				prerequisite = {
 		focus =	prussianrework_1789_1815_first_100_focus_74
+		}
+				prerequisite = {
 		focus =	prussianrework_1789_1815_first_100_focus_75
+		}
+						prerequisite = {
+		focus =	prussianrework_1789_1815_first_100_focus_76
 		}
 		ai_will_do = {
 			factor = 1
 		}
 
 		available = {
-
+PRE={has_country_flag=pre_has_puppeted_hanover}
 		}
 
 		bypass = {
@@ -4238,7 +4244,7 @@ focus = {
 	}
 		focus = {
 		id = prussianrework_1789_1815_first_100_focus_92
-		icon = GFX_goal_generic_neutrality_focus
+		icon = GFX_focus_chi_reach_out_to_france
 
 		x = -8
 		y = 12
@@ -4252,7 +4258,10 @@ focus = {
 		}
 
 		available = {
-
+date > 1806.1.1
+BAY={is_ally_with=FRA}
+BAD={is_ally_with=FRA}
+WUR={is_ally_with=FRA}
 		}
 
 		bypass = {
@@ -4266,6 +4275,10 @@ focus = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		
 		completion_reward = {
+PRE={country_event = pre_1789_event.125}
+SAX={country_event = pre_1789_event.126}
+BRU={country_event = pre_1789_event.127}
+HSE={country_event = pre_1789_event.128}
 		}
 	}
 		focus = {
@@ -6158,7 +6171,7 @@ PRE={has_country_flag=PRE_louse_has_died}
 	}
 		focus = {
 		id = prussianrework_1793_1836_focus_48
-		icon = GFX_goal_generic_neutrality_focus
+		icon = GFX_focus_chi_british_cooperation
         relative_position_id = prussianrework_1793_1836_focus_24
 		x = 14
 		y = 8
@@ -6462,7 +6475,7 @@ focus = {
 	}
 		focus = {
 		id = prussianrework_1793_1836_focus_54
-		icon = GFX_goal_generic_neutrality_focus
+		icon = GFX_focus_generic_polish_deal
         relative_position_id = prussianrework_1793_1836_focus_24
 		x = -18
 		y = 7
@@ -6574,7 +6587,7 @@ focus = {
 		id = prussianrework_1793_1836_focus_57
 		icon = GFX_goal_generic_neutrality_focus
         relative_position_id = prussianrework_1793_1836_focus_24
-		x = 27
+		x = 29
 		y = 7
 		prerequisite = {
 		focus =	prussianrework_1793_1836_focus_36
@@ -6607,7 +6620,7 @@ focus = {
 		id = prussianrework_1793_1836_focus_58
 		icon = GFX_goal_generic_neutrality_focus
         relative_position_id = prussianrework_1793_1836_focus_24
-		x = 31
+		x = 35
 		y = 7
 		prerequisite = {
 		focus =	prussianrework_1793_1836_focus_36
@@ -6641,7 +6654,9 @@ focus = {
         relative_position_id = prussianrework_1793_1836_focus_24
 		x = -11
 		y = 10
-
+		prerequisite = { 
+		focus = prussianrework_1793_1836_focus_53
+		}
 		cost = 4.3
 
 		ai_will_do = {
@@ -6671,7 +6686,9 @@ focus = {
         relative_position_id = prussianrework_1793_1836_focus_24
 		x = -9
 		y = 10
-
+		prerequisite = { 
+		focus = prussianrework_1793_1836_focus_53
+		}
 		cost = 4.3
 
 		ai_will_do = {
@@ -6701,9 +6718,11 @@ focus = {
 		id = prussianrework_1793_1836_focus_61
 		icon = GFX_goal_generic_neutrality_focus
         relative_position_id = prussianrework_1793_1836_focus_24
-		x = 0
-		y = 16
-
+		x = 31
+		y = 8
+		prerequisite = {
+		focus =	prussianrework_1793_1836_focus_58
+		}
 		cost = 4.3
 
 		ai_will_do = {
@@ -6727,15 +6746,18 @@ focus = {
 		
 		
 		completion_reward = {
+		PRE={country_event = pre_1789_event.117}
 		}
 	}
 		focus = {
 		id = prussianrework_1793_1836_focus_62
 		icon = GFX_goal_generic_neutrality_focus
 		relative_position_id = prussianrework_1793_1836_focus_24
-		x = 2
-		y = 16
-
+		x = -24
+		y = 7
+		prerequisite = {
+		focus =	prussianrework_1793_1836_focus_36
+		}
 		cost = 4.3
 
 		ai_will_do = {
@@ -6743,7 +6765,8 @@ focus = {
 		}
 
 		available = {
-
+        country_exists=HOH
+		NOT={HOH={is_subject_of=PRE}}
 		}
 
 		bypass = {
@@ -6757,15 +6780,18 @@ focus = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		
 		completion_reward = {
+		PRE={country_event = pre_1789_event.113}
 		}
 	}
 		focus = {
 		id = prussianrework_1793_1836_focus_63
 		icon = GFX_goal_generic_neutrality_focus
         relative_position_id = prussianrework_1793_1836_focus_24
-		x = 4
-		y = 16
-
+		x = -22
+		y = 7
+		prerequisite = {
+		focus =	prussianrework_1793_1836_focus_36
+		}
 		cost = 4.3
 
 		ai_will_do = {
@@ -6773,7 +6799,8 @@ focus = {
 		}
 
 		available = {
-
+        country_exists=NEU
+		NOT={NEU={is_subject_of=PRE}}
 		}
 
 		bypass = {
@@ -6788,15 +6815,18 @@ focus = {
 		
 		
 		completion_reward = {
+		PRE={country_event = pre_1789_event.114}
 		}
 	}
 		focus = {
 		id = prussianrework_1793_1836_focus_64
 		icon = GFX_goal_generic_neutrality_focus
         relative_position_id = prussianrework_1793_1836_focus_24
-		x = 6
-		y = 16
-
+		x = 33
+		y = 8
+		prerequisite = {
+		focus =	prussianrework_1793_1836_focus_58
+		}
 		cost = 4.3
 
 		ai_will_do = {
@@ -6823,9 +6853,11 @@ focus = {
 		id = prussianrework_1793_1836_focus_65
 		icon = GFX_goal_generic_neutrality_focus
         relative_position_id = prussianrework_1793_1836_focus_24
-		x = 8
-		y = 16
-
+		x = -20
+		y = 9
+		prerequisite = {
+		focus =	prussianrework_1793_1836_focus_36
+		}
 		cost = 4.3
 
 		ai_will_do = {
@@ -6853,9 +6885,11 @@ focus = {
 		id = prussianrework_1793_1836_focus_66
 		icon = GFX_goal_generic_neutrality_focus
         relative_position_id = prussianrework_1793_1836_focus_24
-		x = 10
-		y = 16
-
+		x = -23
+		y = 10
+		prerequisite = {
+		focus =	prussianrework_1793_1836_focus_65
+		}
 		cost = 4.3
 
 		ai_will_do = {
@@ -6877,15 +6911,18 @@ focus = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		
 		completion_reward = {
+		PRE={country_event = pre_1789_event.118}
 		}
 	}
 		focus = {
 		id = prussianrework_1793_1836_focus_67
 		icon = GFX_goal_generic_neutrality_focus
         relative_position_id = prussianrework_1793_1836_focus_24
-		x = 12
-		y = 16
-
+		x = -21
+		y = 10
+		prerequisite = {
+		focus =	prussianrework_1793_1836_focus_65
+		}
 		cost = 4.3
 
 		ai_will_do = {
@@ -6913,9 +6950,11 @@ focus = {
 		id = prussianrework_1793_1836_focus_68
 		icon = GFX_goal_generic_neutrality_focus
         relative_position_id = prussianrework_1793_1836_focus_24
-		x = 14
-		y = 16
-
+		x = -19
+		y = 10
+		prerequisite = {
+		focus =	prussianrework_1793_1836_focus_65
+		}
 		cost = 4.3
 
 		ai_will_do = {
@@ -6943,9 +6982,11 @@ focus = {
 		id = prussianrework_1793_1836_focus_69
 		icon = GFX_goal_generic_neutrality_focus
         relative_position_id = prussianrework_1793_1836_focus_24
-		x = 16
-		y = 16
-
+		x = 35
+		y = 8
+		prerequisite = {
+		focus =	prussianrework_1793_1836_focus_58
+		}
 		cost = 4.3
 
 		ai_will_do = {
@@ -6973,9 +7014,11 @@ focus = {
 		id = prussianrework_1793_1836_focus_70
 		icon = GFX_goal_generic_neutrality_focus
         relative_position_id = prussianrework_1793_1836_focus_24
-		x = 18
-		y = 16
-
+		x = 28
+		y = 8
+		prerequisite = {
+		focus =	prussianrework_1793_1836_focus_57
+		}
 		cost = 4.3
 
 		ai_will_do = {
@@ -7028,9 +7071,11 @@ focus = {
 		id = prussianrework_1793_1836_focus_71
 		icon = GFX_goal_generic_neutrality_focus
         relative_position_id = prussianrework_1793_1836_focus_24
-		x = 0
-		y = 17
-
+		x = 39
+		y = 8
+		prerequisite = {
+		focus =	prussianrework_1793_1836_focus_58
+		}
 		cost = 4.3
 
 		ai_will_do = {
@@ -7054,11 +7099,12 @@ focus = {
 		
 		
 		completion_reward = {
+		PRE={country_event = pre_1789_event.116}
 		}
 	}
 		focus = {
 		id = prussianrework_1793_1836_focus_72
-		icon = GFX_goal_generic_neutrality_focus
+		icon = GFX_focus_generic_polish_deal
 		relative_position_id = prussianrework_1793_1836_focus_24
 		x = -18
 		y = 8
@@ -7094,9 +7140,11 @@ focus = {
 		id = prussianrework_1793_1836_focus_73
 		icon = GFX_goal_generic_neutrality_focus
         relative_position_id = prussianrework_1793_1836_focus_24
-		x = 4
-		y = 17
-
+		x = 8
+		y = 8
+		prerequisite = {
+		focus =	prussianrework_1793_1836_focus_39
+		}
 		cost = 4.3
 
 		ai_will_do = {
@@ -7119,15 +7167,18 @@ focus = {
 		
 		
 		completion_reward = {
+		PRE={country_event = pre_1789_event.115}
 		}
 	}
 		focus = {
 		id = prussianrework_1793_1836_focus_74
 		icon = GFX_goal_generic_neutrality_focus
         relative_position_id = prussianrework_1793_1836_focus_24
-		x = 6
-		y = 17
-
+		x = -17
+		y = 10
+		prerequisite = {
+		focus =	prussianrework_1793_1836_focus_65
+		}
 		cost = 4.3
 
 		ai_will_do = {
@@ -7154,9 +7205,11 @@ focus = {
 		id = prussianrework_1793_1836_focus_75
 		icon = GFX_goal_generic_neutrality_focus
         relative_position_id = prussianrework_1793_1836_focus_24
-		x = 8
-		y = 17
-
+		x = 36
+		y = 9
+		prerequisite = {
+		focus =	prussianrework_1793_1836_focus_69
+		}
 		cost = 4.3
 
 		ai_will_do = {

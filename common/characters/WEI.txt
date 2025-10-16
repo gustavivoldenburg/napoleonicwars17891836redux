@@ -1,0 +1,31 @@
+characters={
+	WEI_charlesaugustus={
+		name=WEI_CHARACTER_CHARLESAUGUSTUS
+		portraits={
+			civilian={
+				large="GFX_portrait_wei_charlesaugustus_large"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={Saxe-Weimar-Eisenach}
+			desc = WEI_CHARLESAUGUSTUS_DESC
+			expire="1797.1.1"
+		}
+}
+	WEI_charlesfrederick={
+		name=WEI_CHARACTER_CHARLESFREDERICK
+		portraits={
+			civilian={
+				large="GFX_portrait_wei_charlesfrederick_large"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={Saxe-Weimar-Eisenach}
+			desc = WEI_CHARLESFREDERICK_DESC
+			expire="1797.1.1"
+		}
+}
+}
+

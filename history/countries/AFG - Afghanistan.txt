@@ -23,6 +23,9 @@ if = {
 }
 set_technology = {
 	infantry_weapons = 1
+	transport = 1
+	early_submarine = 1
+        gw_artillery = 1 basic_train = 1
 }
 1936.1.1 = {
 if = {
@@ -44,30 +47,38 @@ if = {
 		
 	}
 }
+	recruit_character = AFG_mohammed_zahir_shah
+	recruit_character = AFG_mohammad_hashim_khan
+	recruit_character = AFG_sardar_shah_wali_khan
+	recruit_character = AFG_abdur_rahim_khan
+	recruit_character = AFG_mahmud_tarzi
+	recruit_character = AFG_mohammed_daoud_khan
+	recruit_character = AFG_abdul_majid_zabuli
+	recruit_character = AFG_abdul_hai_habibi
+	recruit_character = AFG_qiamuddin_khadim
+	recruit_character = AFG_ghulam_yahya_khan_tarzi
+	recruit_character = AFG_ghulam_muhammad_ghobar
+	recruit_character = AFG_turbaz_khan
+	recruit_character = AFG_mohammad_gul_khan_momand
+	recruit_character = AFG_shah_mahmud_khan
+	recruit_character = AFG_amunullah_khan
+	recruit_character = AFG_soraya_tarzi
+	recruit_character = AFG_provisional_government
+	recruit_character = AFG_muhammad_ibrahim_khan
+	recruit_character = AFG_faqir_of_ipi
+	recruit_character = AFG_mazrak_zadran
+	recruit_character = AFG_nisar_muhammad_yousafzai
+	recruit_character = GER_oskar_von_nidermayer
+	recruit_character = AFG_abdurauf_fitrat
+	recruit_character = AFG_fayzulla_xojayev
+	recruit_character = AFG_korsirmat
+	recruit_character = AFG_junaid_khan
+	recruit_character = AFG_sher_khan_nashir
+	recruit_character = AFG_nur_muhammad_taraki
+	recruit_character = AFG_inyatullah_khan
+	recruit_character = AFG_sheikh_omar_mojadidi
+
 }
-recruit_character = AFG_mohammed_zahir_shah
-recruit_character = AFG_akram_sattari
-recruit_character = AFG_yaqub_khan
-recruit_character = AFG_mihrdil_shahnawaz
-recruit_character = AFG_sardar_shah_wali_khan
-recruit_character = AFG_hares_muzafar
-recruit_character = AFG_asadullah_seraj_khan
-recruit_character = AFG_gholam_wali
-recruit_character = AFG_nasirullah_husain
-recruit_character = AFG_muhammad_amin_bughra
-recruit_character = AFG_azam_ataullah
-recruit_character = AFG_mohammed_daoud_khan
-recruit_character = AFG_renato_bardolucci
-recruit_character = AFG_ali_muhammed_khan
-recruit_character = AFG_mohammed_etemadi_khan
-recruit_character = AFG_aalem_daana
-recruit_character = AFG_wazir_akbar_khan
-recruit_character = AFG_mahmud_khan
-recruit_character = AFG_haji_faiz_muhammed_zikeria
-recruit_character = AFG_mohammad_hashim_khan
-recruit_character = AFG_muhammed_nowroz
-
-
 1939.1.1 = {
 
 	add_political_power = 1198

@@ -27,8 +27,8 @@ state={
 
 		}
 		1900.1.1 = {
-			owner = AUH
-			add_core_of = AUH
+			owner = AUS
+			add_core_of = AUS
 			remove_core_of = AUS
 
 		}
@@ -39,13 +39,7 @@ state={
 			infrastructure = 2
 
 		}
-		1920.1.1 = {
-			owner = AUS
-			controller = AUS
-			add_core_of = AUS
-			remove_core_of = AUH
 
-		}
 		1938.3.12 = {
 			owner = GER
 			controller = GER
@@ -63,7 +57,7 @@ state={
 	}
 
 	provinces={
-		688 3675 14595 14602 14615 
+		688 3675 14588 14595 14602 14615 
 	}
 	manpower=257226
 	buildings_max_level_factor=1.000

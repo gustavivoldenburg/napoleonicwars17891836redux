@@ -10,7 +10,7 @@ state={
 	history={
                 owner = VNT
                 add_core_of = VNT
-		1812.1.1 = {
+		1808.1.1 = {
                 owner = ITA
                 add_core_of = ITA
         }
@@ -18,7 +18,7 @@ state={
                 owner = LBV
                 add_core_of = LBV
                 remove_core_of = VNT
-				remove_core_of = MIL
+
 				remove_core_of = MNT
 				remove_core_of = ITA
         }
@@ -36,12 +36,6 @@ state={
 		victory_points = {
 			11584 20 
 		}
-		victory_points = {
-			603 10 
-		}
-		victory_points = {
-			13324 10 
-		}
 		1936.1.1 = {
 					buildings = {
 			infrastructure = 3
@@ -57,8 +51,8 @@ state={
 		}
 		}
 		buildings = {
-			infrastructure = 3
-			arms_factory = 3
+			infrastructure = 5
+			arms_factory = 1
 			industrial_complex = 1
 			dockyard = 2
 			11584 = {
@@ -71,9 +65,9 @@ state={
 	}
 
 	provinces={
-		603 3604 6656 11584 13324 13326 13327 13328 
+	11584
 	}
-	manpower=3000000
+	manpower=500000
 	buildings_max_level_factor=1.000
 	state_category=city
 	local_supplies=5.000

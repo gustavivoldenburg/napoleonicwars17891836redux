@@ -107,7 +107,7 @@ country_event = {
 	#is_triggered_only = yes
 trigger = {
 original_tag = SWE
-    date > 1792.3.29 date < 1792.4.1
+    date > 1792.3.29 date < 1793.1.1
 }
 fire_only_once = yes
 	option = { # 
@@ -124,7 +124,7 @@ fire_only_once = yes
 	add_manpower=-1
 	add_trait = {
      character = SWE_gustavivadolf
-     ideology = despotism
+     ideology = oldenburg
      trait = underage_monarch
 } 
     add_war_support=-0.05
@@ -164,5 +164,26 @@ fire_only_once = yes
 	ai_chance = { factor = 100 } 
 	news_event = sweden_1789_1812_news.14
 	SWE={set_cosmetic_tag=SCA_kalmar_union}
+	}
+	}
+country_event = {
+	id = sweden_1789_1812.17
+	title = "De-facto peace with Algeria"
+	desc = sweden_1789_1812.17.d
+	picture = GFX_idi_amin_india
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "Finally the war is over"
+		ai_chance = { factor = 100 } 
+		ALG={add_political_power=25}
+		SWE={add_political_power=-25}
+every_country={
+limit={
+has_war_with=ALG
+}
+white_peace = ALG
+}
+	SWE={set_country_flag=SWE_ALG_WAR_has_ended}
 	}
 	}

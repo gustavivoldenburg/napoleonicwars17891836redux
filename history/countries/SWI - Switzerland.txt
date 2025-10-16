@@ -1,4 +1,12 @@
 ﻿capital = 3
+1787.1.1 = {
+			if = {
+		limit = { has_start_date < 1837.1.1 }
+add_ideas = {
+SWI_FRA_swiss_neutrality
+}
+}
+}
 1789.1.1 = {
 NEU={
 set_politics = {
@@ -102,7 +110,7 @@ if = {
 }
 	}
 
-set_research_slots = 3
+set_research_slots = 0
 	1936.1.1 = {
 set_technology = {
 	infantry_weapons = 1
@@ -118,6 +126,9 @@ set_technology = {
 	}
 set_technology = {
 	infantry_weapons = 1
+	transport = 1
+	early_submarine = 1
+        gw_artillery = 1 basic_train = 1
 }
 
 
@@ -460,7 +471,7 @@ set_politics = {
 	ruling_party = democratic
 	last_election = "1935.10.27"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
 	democratic = 96
@@ -472,7 +483,7 @@ set_politics = {
 	ruling_party = democratic
 	last_election = "1935.10.27"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
 	democratic = 96

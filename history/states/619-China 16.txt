@@ -23,7 +23,7 @@ state={
 		1910.1.1 = {
 			owner = CHI
 			controller = CHI
-			remove_core_of = AUH
+			remove_core_of = AUS
 
 		}
 		1919.1.1 = {
@@ -33,19 +33,19 @@ state={
 			owner = SIK
 			controller = SIK
 			add_core_of = SIK
-			remove_core_of = AUH
+			remove_core_of = AUS
 
 		}
 		1946.1.1 = {
 			owner = CHI
 			controller = CHI
-			remove_core_of = AUH
+			remove_core_of = AUS
 
 		}
 		1950.1.1 = {
 			owner = PRC
 			controller = PRC
-			remove_core_of = AUH
+			remove_core_of = AUS
 			add_core_of = PRC
 			remove_core_of = SIK
 

@@ -1,11 +1,11 @@
 ﻿capital = 868
 1789.1.1 = {
-recruit_character=WRZ_ferdinandiii
 recruit_character=WRZ_franz
 promote_character=WRZ_franz
+recruit_character=WRZ_chris
+recruit_character=WRZ_ferdinandiii
 }
 1794.1.1 = {
-recruit_character=WRZ_chris
 promote_character=WRZ_chris
 retire_character=WRZ_franz
 }
@@ -13,14 +13,19 @@ retire_character=WRZ_franz
 promote_character=WRZ_ferdinandiii
 retire_character=WRZ_chris
 }
-1815.1.1 = {
+1825.1.1 = {
 retire_character=WRZ_ferdinandiii
 }
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
+	transport = 1
+	early_submarine = 1
+        gw_artillery = 1 basic_train = 1
 }
-
+1806.1.1 = {
+set_party_name = { ideology = neutrality long_name = WRZ_LOR_neutrality_party_long name = WRZ_LOR_neutrality_party }
+}
 set_convoys = 20
 
 

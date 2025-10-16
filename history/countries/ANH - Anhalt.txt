@@ -1,4 +1,22 @@
 ﻿capital = 1156
+1752.1.1 = {
+recruit_character=ANH_leopoldiii
+promote_character=ANH_leopoldiii
+recruit_character=ANH_leopoldiiii
+}
+1818.1.1 = {
+retire_character=ANH_leopoldiii
+promote_character=ANH_leopoldiiii
+}
+1872.1.1 = {
+retire_character=ANH_leopoldiiii
+}
+1807.1.1 = {
+set_cosmetic_tag=ANH_duchy
+}
+1864.1.1 = {
+set_cosmetic_tag=ANH_unified
+}
 1789.1.1 = {
 		if = {
 		limit = { has_start_date < 1837.1.1 }
@@ -8,6 +26,9 @@ set_oob = "ANH_1789"
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
+	transport = 1
+	early_submarine = 1
+        gw_artillery = 1 basic_train = 1
 }
 
 set_convoys = 20

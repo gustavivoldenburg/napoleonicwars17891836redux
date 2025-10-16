@@ -81,18 +81,4 @@ characters={
 			expire="1797.1.1"
 		}
 }
-	VNT_paolo_renier={
-		name=VNT_CHARACTER_PAOLO_RENIER
-		portraits={
-			civilian={
-				large="GFX_portrait_vnt_paolo_renier_large"
-			}
-		}
-		country_leader={
-			ideology=despotism
-			traits={Habsburg-Lorraine}
-			desc = VNT_PAOLO_RENIER_DESC
-			expire="1789.2.13"
-		}
-}
 }

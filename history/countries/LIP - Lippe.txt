@@ -1,8 +1,25 @@
 ﻿capital = 845
-
+1789.1.1 = {
+recruit_character=LIP_leopoldi
+promote_character=LIP_leopoldi
+recruit_character=LIP_leopoldii
+}
+1803.1.1 = {
+retire_character=LIP_leopoldi
+promote_character=LIP_leopoldii
+}
+1851.1.1 = {
+retire_character=LIP_leopoldii
+}
+1790.1.1 = {
+set_cosmetic_tag=LIP_principality
+}
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
+	transport = 1
+	early_submarine = 1
+        gw_artillery = 1 basic_train = 1
 }
 
 set_convoys = 20

@@ -7,6 +7,65 @@ characters={
 #########################
 
 #### DEMOCRATIC ####
+						DEN_bernstorff={
+		name=DEN_CHARACTER_BERNSTORFF
+		portraits={
+                        army={
+				small="GFX_idea_den_bernstorff_small"
+			}
+			civilian = {
+				large = GFX_portrait_den_bernstorff_large
+			}
+		}
+		advisor={
+                        can_be_fired = no
+			slot = political_advisor
+			idea_token = DEN_bernstorff
+			allowed  = {
+				original_tag  = DEN
+			}
+			available  = {
+		        }
+			traits  = {
+				den_prime_minister
+			}
+			on_add  = {
+			}
+			do_effect  = {
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+	}
+		DEN_michael = {
+		name = DEN_michael
+		portraits = {
+			navy = {
+				large = GFX_portrait_DEN_michael
+				small = GFX_portrait_DEN_michael_small
+			}
+		}
+		advisor={			
+			slot = high_command
+			idea_token = DEN_michael
+			ledger = navy
+			allowed = {
+				original_tag = DEN
+			}
+			#cost = 50
+			ai_will_do = {
+				base = 1.000
+			}
+		}
+		navy_leader = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			maneuvering_skill = 2
+			coordination_skill = 2
+		}
+	}
 		DEN_ernstgeneral={
 		name=DEN_CHARACTER_ERNSTGENERAL
 		portraits={

@@ -1,0 +1,20 @@
+SPM_area_priority = {
+	allowed = { original_tag = SPM }
+	enable = {
+		always = yes
+	}
+	abort_when_not_enabled = yes
+
+ai_strategy = {
+    type = theatre_distribution_demand_increase
+    value = 10
+    id = 922
+}
+
+ai_strategy = {
+    type = theatre_distribution_demand_increase
+    value = 10
+    id = 114
+}
+
+}

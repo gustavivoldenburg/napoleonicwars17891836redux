@@ -27,7 +27,7 @@ state={
 			owner = PRE
 
 		}
-		1812.1.1 = {
+		1808.1.1 = {
 			owner = POL
 
 		}
@@ -79,7 +79,7 @@ state={
 	provinces={
 		3295 6347 14349 14351 14352 
 	}
-	manpower=500000
+	manpower=250000
 	buildings_max_level_factor=1.000
 	state_category=rural
 	local_supplies=0.000

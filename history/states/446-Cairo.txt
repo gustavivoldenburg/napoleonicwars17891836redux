@@ -25,14 +25,23 @@ state={
 		victory_points = {
 			7011 50 
 		}
+		victory_points = {
+			1071 1 
+		}
+		victory_points = {
+			1068 3 
+		}
+		victory_points = {
+			11974 1 
+		}
 		add_core_of = EGY
 
 	}
 
 	provinces={
-		7011 
+		992 1068 1071 1143 1151 4055 4143 5078 7011 7030 7117 7144 7148 7188 10005 10028 10031 10097 10127 11974 12004 12033 12044 12764 13246 13247 13250 
 	}
-	manpower=7000000
+	manpower=9000000
 	buildings_max_level_factor=1.000
 	state_category=town
 	local_supplies=0.000

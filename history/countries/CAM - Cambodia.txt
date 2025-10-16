@@ -1,7 +1,7 @@
 ﻿capital = 741
 
 
-set_research_slots = 3
+set_research_slots = 0
 
 # Starting tech
 # clone of France
@@ -99,7 +99,7 @@ set_politics = {
 	ruling_party = democratic
 	last_election = "1933.2.16"
 	election_frequency = 36
-	elections_allowed = yes
+	elections_allowed = no
 }
 
 set_popularities = {

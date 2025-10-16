@@ -13,9 +13,18 @@ retire_character=IME_davidii
 1816.1.1 = {
 retire_character=IME_solomonii
 }
+1789.1.1 = {
+		if = {
+		limit = { has_start_date < 1837.1.1 }
+set_oob = "IME_1789"
+}
+}
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
+	transport = 1
+	early_submarine = 1
+        gw_artillery = 1 basic_train = 1
 }
 
 set_convoys = 20

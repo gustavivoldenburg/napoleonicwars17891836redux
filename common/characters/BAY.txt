@@ -1,4 +1,35 @@
 characters={
+							BAY_montgelas={
+		name=BAY_CHARACTER_MONTGELAS
+		portraits={
+                        army={
+				small="GFX_idea_bay_montgelas_small"
+			}
+			civilian = {
+				large = GFX_portrait_bay_montgelas_large
+			}
+		}
+		advisor={
+                        can_be_fired = no
+			slot = political_advisor
+			idea_token = BAY_montgelas
+			allowed  = {
+				original_tag  = BAY
+			}
+			available  = {
+		        }
+			traits  = {
+				MinisteroftheRoyalHouseandofForeignAffairsofBavaria
+			}
+			on_add  = {
+			}
+			do_effect  = {
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+	}
 				BAY_wredegeneral={
 		name=BAY_CHARACTER_WREDEGENERAL
 		portraits={

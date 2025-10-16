@@ -7,29 +7,29 @@ state={
 		}
                 owner = VNT
                 add_core_of = VNT
-        1804.1.1 = {
-                owner = AUS
-                add_core_of = AUS
-                remove_core_of = VNT
-				remove_core_of = RAG
-        }
+
 								1945.1.1 = {
 		owner = CRO
 		}
 		1946.1.1 = {
 		owner = YUG
 		}
+						1808.1.1 = {
+                owner = ITA
+                add_core_of = ITA
+        }
 		1812.1.1 = {
         owner = FRA
         }
 		1816.1.1 = {
         owner = AUS
+		remove_core_of=VNT
+		remove_core_of=ITA
         add_core_of = AUS
         }
 		1900.1.1 = {
-                owner = AUH
+                owner = AUS
 		add_core_of = CRO
-                remove_core_of = AUS
                 }
 		buildings = {
 			infrastructure = 0
@@ -46,7 +46,7 @@ state={
 			owner = YUG
 			controller = YUG
             add_core_of = YUG
-            remove_core_of = AUH
+            remove_core_of = AUS
 		}
 		2007.1.1 = {
 			owner = MNT
@@ -59,7 +59,7 @@ state={
 	provinces={
 		9821
 	}
-	manpower=50000
+	manpower=25000
 	buildings_max_level_factor=1.000
 	state_category=pastoral
 	local_supplies=0.000

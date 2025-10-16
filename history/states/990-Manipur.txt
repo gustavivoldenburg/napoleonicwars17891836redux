@@ -4,12 +4,12 @@ state={
 	name="STATE_990"
 
 	history={
-		owner = MIL
-		add_core_of = MIL
+		owner = LBV
+		add_core_of = LBV
 		1600.1.1 = {
 			owner = PRM
 			add_core_of = PRM
-			remove_core_of = MIL
+			remove_core_of = LBV
 
 		}
 		1812.1.1 = {

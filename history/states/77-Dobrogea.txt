@@ -4,6 +4,9 @@ state={
 	name="STATE_77"
 
 	history={
+		buildings = {
+		9614 = {bunker = 2}
+        }
 		victory_points = {
 			11597 2
 		}
@@ -34,7 +37,7 @@ state={
 	}
 
 	provinces={
-		9614 11597 13536 13537 13539 
+		9614 11597 13534 13537 13539 
 	}
 	manpower=378000
 	buildings_max_level_factor=1.000

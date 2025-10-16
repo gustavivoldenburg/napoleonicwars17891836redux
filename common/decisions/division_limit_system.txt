@@ -4,10 +4,17 @@ cost = 100
 		icon = ger_reichskommissariats
 				
 		available = {
+has_war=yes
 		has_capitulated = no
 has_equipment = { infantry_equipment > 9599}
 has_manpower > 100000
 not={has_army_manpower = { size > 95000 }}
+				if = {
+					limit = {
+						original_tag = AUS
+					}
+					AUS={has_country_flag=unlock_aus_train_new_divisions}
+				}
 				if = {
 					limit = {
 						original_tag = ENG
@@ -103,11 +110,18 @@ cost = 100
 		icon = ger_reichskommissariats
 				
 		available = {
+has_war=yes
 		has_capitulated = no
 has_equipment = { infantry_equipment > 9599}
 has_manpower > 100000
 not={has_army_manpower = { size > 191000 }}
 has_army_manpower = { size > 95000 }
+				if = {
+					limit = {
+						original_tag = AUS
+					}
+					AUS={has_country_flag=unlock_aus_train_new_divisions}
+				}
 				if = {
 					limit = {
 						original_tag = ENG
@@ -212,11 +226,18 @@ cost = 100
 		icon = ger_reichskommissariats
 				
 		available = {
+has_war=yes
 		has_capitulated = no
 has_equipment = { infantry_equipment > 9599}
 has_manpower > 100000
 not={has_army_manpower = { size > 287000 }}
 has_army_manpower = { size > 191000 }
+				if = {
+					limit = {
+						original_tag = AUS
+					}
+					AUS={has_country_flag=unlock_aus_train_new_divisions}
+				}
 				if = {
 					limit = {
 						original_tag = ENG
@@ -323,11 +344,18 @@ cost = 100
 		icon = ger_reichskommissariats
 				
 		available = {
+has_war=yes
 		has_capitulated = no
 has_equipment = { infantry_equipment > 9599}
 has_manpower > 100000
 not={has_army_manpower = { size > 383000 }}
 has_army_manpower = { size > 287000 }
+				if = {
+					limit = {
+						original_tag = AUS
+					}
+					AUS={has_country_flag=unlock_aus_train_new_divisions}
+				}
 				if = {
 					limit = {
 						original_tag = ENG
@@ -432,12 +460,19 @@ cost = 100
 		icon = ger_reichskommissariats
 				
 		available = {
+has_war=yes
 		has_capitulated = no
 has_equipment = { infantry_equipment > 9599}
 has_manpower > 100000
 date > 1800.1.1
 not={has_army_manpower = { size > 479000 }}
 has_army_manpower = { size > 383000 }
+				if = {
+					limit = {
+						original_tag = AUS
+					}
+					AUS={has_country_flag=unlock_aus_train_new_divisions}
+				}
 				if = {
 					limit = {
 						original_tag = ENG
@@ -531,12 +566,19 @@ cost = 100
 		icon = ger_reichskommissariats
 				
 		available = {
+has_war=yes
 		has_capitulated = no
 has_equipment = { infantry_equipment > 9599}
 has_manpower > 100000
 date > 1800.1.1
 not={has_army_manpower = { size > 575000 }}
 has_army_manpower = { size > 479000 }
+				if = {
+					limit = {
+						original_tag = AUS
+					}
+					AUS={has_country_flag=unlock_aus_train_new_divisions}
+				}
 				if = {
 					limit = {
 						original_tag = ENG
@@ -630,12 +672,19 @@ cost = 100
 		icon = ger_reichskommissariats
 				
 		available = {
+has_war=yes
 		has_capitulated = no
 has_equipment = { infantry_equipment > 9599}
 has_manpower > 100000
 date > 1805.1.1
 not={has_army_manpower = { size > 671000 }}
 has_army_manpower = { size > 575000 }
+				if = {
+					limit = {
+						original_tag = AUS
+					}
+					AUS={has_country_flag=unlock_aus_train_new_divisions}
+				}
 				if = {
 					limit = {
 						original_tag = ENG
@@ -729,12 +778,19 @@ cost = 100
 		icon = ger_reichskommissariats
 				
 		available = {
+has_war=yes
 		has_capitulated = no
 has_equipment = { infantry_equipment > 9599}
 has_manpower > 100000
 date > 1805.1.1
 not={has_army_manpower = { size > 767000 }}
 has_army_manpower = { size > 671000 }
+				if = {
+					limit = {
+						original_tag = AUS
+					}
+					AUS={has_country_flag=unlock_aus_train_new_divisions}
+				}
 				if = {
 					limit = {
 						original_tag = ENG
@@ -828,12 +884,19 @@ cost = 100
 		icon = ger_reichskommissariats
 				
 		available = {
+has_war=yes
 		has_capitulated = no
 has_equipment = { infantry_equipment > 9599}
 has_manpower > 100000
 date > 1810.1.1
 not={has_army_manpower = { size > 863000 }}
 has_army_manpower = { size > 767000 }
+				if = {
+					limit = {
+						original_tag = AUS
+					}
+					AUS={has_country_flag=unlock_aus_train_new_divisions}
+				}
 				if = {
 					limit = {
 						original_tag = ENG
@@ -926,12 +989,19 @@ cost = 100
 		icon = ger_reichskommissariats
 				
 		available = {
+has_war=yes
 		has_capitulated = no
 has_equipment = { infantry_equipment > 9599}
 has_manpower > 100000
 date > 1810.1.1
 not={has_army_manpower = { size > 959000 }}
 has_army_manpower = { size > 863000 }
+				if = {
+					limit = {
+						original_tag = AUS
+					}
+					AUS={has_country_flag=unlock_aus_train_new_divisions}
+				}
 				if = {
 					limit = {
 						original_tag = ENG

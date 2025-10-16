@@ -24,7 +24,7 @@ set_cosmetic_tag = PRU_SPR #viceroyalty
 1836.1.1 = {
 	retire_character = PRU_teodoro_de_croix
 }
-1813.1.1 = {
+1815.1.1 = {
 set_cosmetic_tag = PRU #independent
 }
 1936.1.1 = {
@@ -59,6 +59,9 @@ add_ideas = {
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
+	transport = 1
+	early_submarine = 1
+        gw_artillery = 1 basic_train = 1
 }
 1936.1.1 = {
 set_technology = {
@@ -118,7 +121,7 @@ recruit_character = PRU_armando_reveredo_iglesias
 recruit_character = PRU_reynaldo_vinatea
 
 
-set_country_flag = monroe_doctrine
+
 
 set_convoys = 5
 
@@ -194,7 +197,7 @@ set_politics = {
 	ruling_party = neutrality
 	last_election = "1931.10.11"
 	election_frequency = 96
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
 	democratic = 49

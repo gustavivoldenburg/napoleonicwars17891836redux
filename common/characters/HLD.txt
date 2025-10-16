@@ -1,0 +1,29 @@
+characters={
+	HLD_westphalen={
+		name=HLD_CHARACTER_WESTPHALEN
+		portraits={
+			civilian={
+				large="GFX_portrait_hld_westphalen_large"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			desc = HLD_WESTPHALEN_DESC
+			expire="1797.1.1"
+		}
+}
+	HLD_furstenberg={
+		name=HLD_CHARACTER_FURSTENBERG
+		portraits={
+			civilian={
+				large="GFX_portrait_hld_furstenberg_large"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			desc = HLD_FURSTENBERG_DESC
+			expire="1797.1.1"
+		}
+}
+}
+

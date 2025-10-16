@@ -22,19 +22,3 @@ add_namespace = aus_1789_news
 		name = "Ok"
 			}
 		}
-
-	news_event = {
-		id = aus_1789_news.2
-		title = "The Battle of Austerlitz"
-		desc = "The French forces have overtaken the town of Austerlitz."
-		picture = GFX_idi_amin_uganda
-	
-		major = yes
-
-		fire_for_sender = yes
-		is_triggered_only = yes
-	
-		option = {
-			name = "Ok"
-		}
-	}

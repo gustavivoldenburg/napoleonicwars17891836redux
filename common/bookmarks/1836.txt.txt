@@ -102,6 +102,15 @@ bookmarks = {
 			focuses = {
 			}
 		}
+		TTS= {
+                        minor = yes
+			history = OTHER_BLITZKRIEG_DESC
+			ideology = neutrality
+			ideas={
+			}
+			focuses = {
+			}
+		}
 		# minors from DLC ####
 		effect = {
 			randomize_weather = 12345 # <- Obligatory in every bookmark !

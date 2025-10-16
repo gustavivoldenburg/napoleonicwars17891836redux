@@ -9,6 +9,7 @@ state={
 		owner = QAR
 		1600.1.1 = {
 			owner = OTO
+			add_core_of = OTO
 			remove_core_of = QAR
 
 		}
@@ -48,9 +49,9 @@ state={
 	}
 
 	provinces={
-		4534 4583 6991 10403 10472 14025 14038 14039 14040 14050 
+		4534 4583 10403 10472 14025 14026 14038 14039 14040 14050 
 	}
-	manpower=200000
+	manpower=250000
 	buildings_max_level_factor=1.000
 	state_category=pastoral
 	local_supplies=0.000

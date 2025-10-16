@@ -4,9 +4,6 @@ state={
 	name="STATE_965"
 
 	history={
-		victory_points = {
-			6557 3 
-		}
 		owner = LIT
 		add_core_of = LIT
 		1600.1.1 = {
@@ -14,19 +11,24 @@ state={
 			add_core_of = POL
 
 		}
+		1789.1.1 = {
+			add_core_of = ZAP
+			remove_core_of = POL
+			remove_core_of = LIT
+
+		}
 		1800.1.1 = {
 			owner = RUS
 			add_core_of = RUS
 			remove_core_of = POL
-			remove_core_of = LIT
-
+			remove_core_of = ZAP
 		}
 		1900.1.1 = {
 			add_core_of = UKR
 
 		}
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2
 
 		}
 				1919.1.1 = {
@@ -64,10 +66,10 @@ state={
 	}
 
 	provinces={
-		572 1697 1837 4488 4743 4785 4831 4842 6435 6557 7707 7805 7863 10187 10561 10631 
+		 535 1697 1837 4488 4785 4831 4842 7707 7863 11503
 	}
-	manpower=1000000
+	manpower=500000
 	buildings_max_level_factor=1.000
-	state_category=town
+	state_category=rural
 	local_supplies=0.000
 }

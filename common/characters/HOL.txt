@@ -1,15 +1,87 @@
 characters={
-	HOL_kingwilliamoforangeisaslutforbigjewishcock={
-		name=HOL_CHARACTER_KINGWILLIAMOFORANGEISASLUTFORBIGJEWISHCOCK
+	HOL_rutger={
+		name=HOL_CHARACTER_RUTGER
 		portraits={
 			civilian={
-				large="GFX_portrait_hol_kingwilliamoforangeisaslutforbigjewishcock_large"
+				large="GFX_portrait_hol_rutger_large"
+			}
+		}
+		country_leader={
+			ideology=liberalism
+			desc = HOL_RUTGER_DESC
+			expire="1797.1.1"
+		}
+}
+	HOL_carel={
+		name=HOL_CHARACTER_CAREL
+		portraits={
+			civilian={
+				large="GFX_portrait_hol_carel_large"
+			}
+		}
+		country_leader={
+			ideology=liberalism
+			desc = HOL_CAREL_DESC
+			expire="1797.1.1"
+		}
+}
+
+
+
+
+	HOL_georgeiiihol={
+		name=HOL_CHARACTER_GEORGEIIIHOL
+		portraits={
+			civilian={
+				large="GFX_portrait_hol_georgeiiihol_large"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={Hanover}
+			desc = HOL_GEORGEIIIHOL_DESC
+			expire="1797.1.1"
+		}
+}
+	HOL_georgeivhol={
+		name=HOL_CHARACTER_GEORGEIVHOL
+		portraits={
+			civilian={
+				large="GFX_portrait_hol_georgeivhol_large"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={Hanover}
+			desc = HOL_GEORGEIVHOL_DESC
+			expire="1797.1.1"
+		}
+}
+	HOL_williamivhol={
+		name=HOL_CHARACTER_WILLIAMIVHOL
+		portraits={
+			civilian={
+				large="GFX_portrait_hol_williamivhol_large"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={Hanover}
+			desc = HOL_WILLIAMIVHOL_DESC
+			expire="1797.1.1"
+		}
+}
+	HOL_kingwilliamoforange={
+		name=HOL_CHARACTER_KINGWILLIAMOFORANGE
+		portraits={
+			civilian={
+				large="GFX_portrait_hol_kingwilliamoforange_large"
 			}
 		}
 		country_leader={
 			ideology=despotism
 			traits={Orange-Nassau}
-			desc = HOL_KINGWILLIAMOFORANGEISASLUTFORBIGJEWISHCOCK_DESC
+			desc = HOL_KINGWILLIAMOFORANGE_DESC
 			expire="1797.1.1"
 		}
 }

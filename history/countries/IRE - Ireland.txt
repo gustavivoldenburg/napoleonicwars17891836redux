@@ -29,9 +29,14 @@ retire_character=IRE_jamesii
 1789.1.1 = {
 recruit_character=IRE_henrybenedict
 promote_character=IRE_henrybenedict
+recruit_character=IRE_fitzjames
 }
-1812.1.1 = {
+1804.1.1 = {
 retire_character=IRE_henrybenedict
+promote_character=IRE_fitzjames
+}
+1836.1.1 = {
+retire_character=IRE_fitzjames
 }
 1938.1.1 = {
 set_cosmetic_tag = IRE_free # 
@@ -40,12 +45,12 @@ set_cosmetic_tag = IRE_free #
 oob = "IRE_1936"
 }
 
-set_research_slots = 3
+set_research_slots = 0
 set_technology = {
 	infantry_weapons = 1
 	transport = 1
 	early_submarine = 1
-        gw_artillery = 1
+        gw_artillery = 1 basic_train = 1
 }
 1936.1.1 = {
 set_technology = {
@@ -142,7 +147,7 @@ set_politics = {
 	ruling_party = democratic
 	last_election = "1933.1.24"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
 	democratic = 98
@@ -155,6 +160,6 @@ set_popularities = {
 		ruling_party = democratic
 		last_election = "1938.6.17"
 		election_frequency = 48
-		elections_allowed = yes
+		elections_allowed = no
 	}
 }

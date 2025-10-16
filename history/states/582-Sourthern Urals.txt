@@ -62,14 +62,11 @@ remove_dynamic_modifier = { modifier = khiva_slavetrade_russia }
 			remove_core_of = SOV
 
 		}
-		victory_points = {
-			10329 1 
-		}
 
 	}
 
 	provinces={
-		4261 4265 4311 4383 7300 7373 10185 10329 11223 12200 
+		4261  4311 4383 7300 7373 12200 
 	}
 	manpower=1044991
 	buildings_max_level_factor=1.000

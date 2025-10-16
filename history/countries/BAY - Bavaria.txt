@@ -1,25 +1,4 @@
 ﻿capital = 52
-
-recruit_character = BAY_rupprecht
-recruit_character = BAY_albrecht
-recruit_character = BAY_heinrich
-recruit_character = BAY_franz_von_bayern
-recruit_character = BAY_max_emmanuel
-recruit_character = BAY_karl
-
-1927.5.9 = {
-	retire_character = BAY_karl
-}
-1955.8.2 = {
-	retire_character = BAY_rupprecht
-}
-1958.2.14 = {
-	retire_character = BAY_heinrich
-}
-1996.7.8 = {
-	retire_character = BAY_albrecht
-}
-
 1789.1.1 = {
 recruit_character=BAY_wredegeneral #1789 #1800 #1848
 recruit_character=BAY_karlgeneral #1789 #1789 #1836
@@ -50,6 +29,12 @@ recruit_character=BAY_washigeneral #1789 #1800 #1859
 recruit_character=BAY_weishgeneral #1789 #1812 #1859
 recruit_character=BAY_zweibgeneral #1789 #1789 #1812
 recruit_character=BAY_oskargeneral #1812 #1836 #1900
+}
+1789.1.1 = {
+recruit_character=BAY_montgelas
+}
+1839.1.1 = {
+retire_character=BAY_montgelas
 }
 1812.1.1 = {
 retire_character=BAY_zweibgeneral
@@ -117,6 +102,9 @@ set_oob = "BAY_1789_1815"
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
+	transport = 1
+	early_submarine = 1
+        gw_artillery = 1 basic_train = 1
 }
 1936.1.1 = {
 set_technology = {
@@ -201,7 +189,7 @@ if = {
 
 
 
-set_research_slots = 3
+set_research_slots = 0
 set_convoys = 50
 set_stability = 0.75
 
@@ -264,7 +252,7 @@ set_stability = 0.75
 
 	}
 }
-1812.1.1 = {
+1808.1.1 = {
 set_cosmetic_tag = BAY_kingdom # Bavarian Kingdom
 }
 set_politics = {

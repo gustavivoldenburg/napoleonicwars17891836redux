@@ -38,12 +38,7 @@ autonomy_state = {
 	}
 
 	allowed = {
-		OVERLORD = { 
-			OR = {
-				original_tag = AUS
-				original_tag = HUN
-			}
-		}
+		OVERLORD = { original_tag = AUS }
 	}
 	
 	can_take_level = {

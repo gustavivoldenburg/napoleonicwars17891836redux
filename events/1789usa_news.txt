@@ -10,9 +10,9 @@ add_namespace = unitedstates_news
 	desc = unitedstates_news.1.d
 	picture = GFX_news_event_usa_president_1
 	
-	major = yes
+	major = no
 
-	fire_for_sender = no
+	fire_for_sender = yes
 	is_triggered_only = yes
 	
 	option = {
@@ -28,9 +28,9 @@ add_namespace = unitedstates_news
 	desc = unitedstates_news.2.d
 	picture = GFX_news_event_usa_president_2
 	
-	major = yes
+	major = no
 
-	fire_for_sender = no
+	fire_for_sender = yes
 	is_triggered_only = yes
 	
 	option = {
@@ -47,9 +47,9 @@ add_namespace = unitedstates_news
 	desc = unitedstates_news.3.d
 	picture = GFX_news_event_usa_president_3
 	
-	major = yes
+	major = no
 
-	fire_for_sender = no
+	fire_for_sender = yes
 	is_triggered_only = yes
 	
 	option = {
@@ -65,9 +65,9 @@ add_namespace = unitedstates_news
 	desc = unitedstates_news.4.d
 	picture = GFX_news_event_usa_president_4
 	
-	major = yes
+	major = no
 
-	fire_for_sender = no
+	fire_for_sender = yes
 	is_triggered_only = yes
 	
 	option = {
@@ -83,9 +83,9 @@ add_namespace = unitedstates_news
 	desc = unitedstates_news.5.d
 	picture = GFX_news_event_usa_president_5
 	
-	major = yes
+	major = no
 
-	fire_for_sender = no
+	fire_for_sender = yes
 	is_triggered_only = yes
 	
 	option = {
@@ -101,9 +101,9 @@ add_namespace = unitedstates_news
 	desc = unitedstates_news.6.d
 	picture = GFX_news_event_usa_president_6
 	
-	major = yes
+	major = no
 
-	fire_for_sender = no
+	fire_for_sender = yes
 	is_triggered_only = yes
 	
 	option = {
@@ -119,9 +119,9 @@ add_namespace = unitedstates_news
 	desc = unitedstates_news.7.d
 	picture = GFX_news_event_usa_president_7
 	
-	major = yes
+	major = no
 
-	fire_for_sender = no
+	fire_for_sender = yes
 	is_triggered_only = yes
 	
 	option = {
@@ -137,9 +137,9 @@ add_namespace = unitedstates_news
 	desc = unitedstates_news.8.d
 	picture = GFX_news_event_usa_president_8
 	
-	major = yes
+	major = no
 
-	fire_for_sender = no
+	fire_for_sender = yes
 	is_triggered_only = yes
 	
 	option = {
@@ -155,9 +155,9 @@ add_namespace = unitedstates_news
 	desc = unitedstates_news.9.d
 	picture = GFX_news_event_usa_president_9
 	
-	major = yes
+	major = no
 
-	fire_for_sender = no
+	fire_for_sender = yes
 	is_triggered_only = yes
 	
 	option = {
@@ -173,9 +173,9 @@ add_namespace = unitedstates_news
 	desc = unitedstates_news.10.d
 	picture = GFX_news_event_usa_president_10
 	
-	major = yes
+	major = no
 
-	fire_for_sender = no
+	fire_for_sender = yes
 	is_triggered_only = yes
 	
 	option = {
@@ -191,9 +191,9 @@ add_namespace = unitedstates_news
 	desc = unitedstates_news.11.d
 	picture = GFX_news_event_usa_president_11
 	
-	major = yes
+	major = no
 
-	fire_for_sender = no
+	fire_for_sender = yes
 	is_triggered_only = yes
 	
 	option = {
@@ -209,9 +209,9 @@ add_namespace = unitedstates_news
 	desc = unitedstates_news.12.d
 	picture = GFX_news_event_usa_president_12
 	
-	major = yes
+	major = no
 
-	fire_for_sender = no
+	fire_for_sender = yes
 	is_triggered_only = yes
 	
 	option = {

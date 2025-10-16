@@ -5,7 +5,7 @@
 set_stability = 0.2 #baseline, THE EMPEROR PROTECTS
 set_war_support = 0.8
 
-set_research_slots = 4
+set_research_slots = 0
 set_fuel_ratio = 1.0
 1946.1.1 = {
 add_ideas = {
@@ -61,6 +61,9 @@ if = {
 }
 set_technology = {
 	infantry_weapons = 1
+	transport = 1
+	early_submarine = 1
+        gw_artillery = 1 basic_train = 1
 }
 1936.1.1 = {
 			if = {
@@ -457,7 +460,7 @@ set_politics = {
 	ruling_party = democratic
 	last_election = "1936.1.1"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
 	democratic = 100
@@ -1514,7 +1517,7 @@ if = {
     ruling_party = democratic
     last_election = "1943.4.20"
     election_frequency = 36
-    elections_allowed = yes
+    elections_allowed = no
   }
   set_popularities = {
     communism = 50

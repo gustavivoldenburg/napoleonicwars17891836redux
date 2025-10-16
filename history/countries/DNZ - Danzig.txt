@@ -14,7 +14,7 @@ set_politics = {
 	elections_allowed = no
 }
 }
-set_research_slots = 3
+set_research_slots = 0
 
 # Starting tech
 set_technology = {
@@ -105,7 +105,7 @@ set_politics = {
 	ruling_party = fascism
 	last_election = "1935.4.7"
 	election_frequency = 36
-	elections_allowed = yes
+	elections_allowed = no
 }
 
 set_popularities = { #popularities based on 1933 election statistics.
@@ -119,7 +119,7 @@ set_politics = {
 	ruling_party = fascism
 	last_election = "1935.4.7"
 	election_frequency = 36
-	elections_allowed = yes
+	elections_allowed = no
 }
 
 set_popularities = { #popularities based on 1933 election statistics.

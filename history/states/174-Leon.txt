@@ -8,26 +8,22 @@ state={
 
 	history={
 		owner = SPR
+						1808.1.1 = {
+	    owner=CAT
+		add_core_of=CAT
+		}
+						1809.1.1 = {
+			controller = SPR
+		}
+		1814.1.1 = {
+		owner=SPR
+		remove_core_of=CAT
+		}
 		victory_points = {
 			726 1 
 		}
 		victory_points = {
 			3874 1 
-		}
-				        1812.1.1 = {
-		if = {
-		limit = { has_start_date < 1813.1.1 }
-					FRA = {
-				set_province_controller = 918
-				set_province_controller = 920
-				set_province_controller = 6746
-				set_province_controller = 726
-				set_province_controller = 14486
-				set_province_controller = 3918
-				set_province_controller = 3920
-				set_province_controller = 14499
-			}
-		}
 		}
 		buildings = {
 			infrastructure = 3

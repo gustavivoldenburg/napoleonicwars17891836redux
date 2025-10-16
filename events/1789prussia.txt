@@ -425,7 +425,9 @@ fire_only_once = yes
 	option = { # 
 		name = "The House of Capet being restored is a requirment!"
 		ai_chance = { factor = 100 } 
+	PRE={
 	add_stability=-0.05
+	}
 	ENG={add_to_faction = PRE}
 		PRE = {
 	declare_war_on = {
@@ -604,6 +606,7 @@ fire_only_once = yes
 	option = { # 
 		name = "Lets Restore the House of Bourbon!"
 		ai_chance = { factor = 100 } 
+	AUS={add_to_faction=PRE}
 		PRE = {
 	declare_war_on = {
 		target = FRA
@@ -952,6 +955,7 @@ fire_only_once = yes
 	original_tag=ANH
 	original_tag=BAD
 	original_tag=WUR
+	
 	original_tag=HOH
 	original_tag=STR
 	original_tag=LIP
@@ -963,6 +967,11 @@ fire_only_once = yes
 	original_tag=NAS
 	original_tag=HES
 	original_tag=LCT
+
+	original_tag=WEI
+	original_tag=GTH
+	original_tag=SCH
+	original_tag=FKF
 	}
 	}
 	country_event = pre_1789_event.39
@@ -1172,7 +1181,7 @@ fire_only_once = yes
 							PRE={
 								set_autonomy = {
 				target = POS
-                autonomous_state = autonomy_integrated_puppet
+                autonomous_state = autonomy_dominion
                 freedom_level = 0.35
 	            }
 							}
@@ -1304,6 +1313,14 @@ fire_only_once = yes
 							PRE={
 								set_autonomy = {
 				target = HAN
+                autonomous_state = autonomy_integrated_puppet
+                freedom_level = 0.35
+	            }
+				}
+		SXL={set_cosmetic_tag=SXL_PRE}
+							PRE={
+								set_autonomy = {
+				target = SXL
                 autonomous_state = autonomy_integrated_puppet
                 freedom_level = 0.35
 	            }
@@ -1675,11 +1692,18 @@ fire_only_once = yes
 	option = { # 
 		name = "Declare war!"
 		ai_chance = { factor = 100 } 
+if={
+limit={
+country_exists=MSV
+country_exists=PRE
+NOT={PRE={has_war_with=MSV}}
+}
 PRE={
 	declare_war_on = {
 		target = MSV
 		type = puppet_wargoal_focus
 	}
+}
 }
 }
 }
@@ -1788,6 +1812,13 @@ fire_only_once = yes
 							PRE={
 								set_autonomy = {
 				target = HAN
+                autonomous_state = autonomy_integrated_puppet
+                freedom_level = 0.35
+	            }
+				}
+							PRE={
+								set_autonomy = {
+				target = SXL
                 autonomous_state = autonomy_integrated_puppet
                 freedom_level = 0.35
 	            }
@@ -2105,8 +2136,8 @@ fire_only_once = yes
 		state=693
 		state=1159
 		state=1188
+		state=1282
 		state=861
-		state=849
         }
         }
         add_core_of=PRE
@@ -2166,7 +2197,7 @@ add_popularity = { ideology = neutrality popularity = -0.01}
 PRE={retire_character=PRE_louise}
 PRE={set_country_flag=PRE_louse_has_died}
 hidden_effect={
-STR={retire_character=POS_louise}
+STR={retire_character=STR_louise}
 }
 	}
 }
@@ -2348,7 +2379,35 @@ fire_only_once = yes
 				}
 	}
 }
-
+country_event = {
+	id = pre_1789_event.101
+	title = "The Prussian Annexation of Lusatia"
+	desc = pre_1789_event.101.d
+	picture = GFX_idi_amin_india
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "Saxony should have been fully ours but we are willing to compromise"
+		ai_chance = { factor = 100 } 
+		SAX={add_war_support=-0.05}
+		AUS={add_war_support=0.05}
+		every_state={
+        limit={
+        or={
+        state=909
+		state=850
+		state=891
+		state=693
+		state=1159
+		state=900
+        }
+        }
+        add_core_of=PRE
+        remove_core_of=SAX
+		transfer_state_to=PRE
+        }
+	}
+}
 country_event = {
 	id = pre_1789_event.105
 	title = "The Meek Country of Mecklenburg-Strelitz"
@@ -2412,4 +2471,511 @@ fire_only_once = yes
 		name = "This means war..."
 		ai_chance = { factor = 100 } #althistory so cant determine chance
 	}
+}
+country_event = {
+	id = pre_1789_event.109
+	title = "The Liberation of Oldenburg"
+	desc = pre_1789_event.109.d
+	picture = GFX_idi_amin_india
+	#is_triggered_only = yes
+trigger = {
+original_tag = PRE
+has_war_with=FRA
+RUS={has_war_with=FRA}
+FRA={
+owns_state=56
+owns_state=720
+NOT={
+controls_state = 56
+controls_state = 720
+}
+}
+}
+fire_only_once = yes
+	option = { # 
+		name = "This amuses the Russian Tsar"
+		ai_chance = { factor = 100 } 
+		OLD={add_war_support=0.01}
+		RUS={add_war_support=0.01}
+		PRE={add_war_support=0.01}
+		every_state={
+        limit={
+        or={
+        state=56
+		state=720
+        }
+        }
+        add_core_of=OLD
+        transfer_state_to=OLD
+        }
+	}
+}
+country_event = {
+	id = pre_1789_event.110
+	title = "The Formation of the Northern German Confederation"
+	desc = pre_1789_event.110.d
+	picture = GFX_idi_amin_india
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "Deutschland über alles"
+		ai_chance = { factor = 100 } 
+	PRE={set_cosmetic_tag=PRE_north_german_confederation}
+	}
+}
+country_event = {
+	id = pre_1789_event.111
+	title = "The Formation of the Northern German Confederation"
+	desc = pre_1789_event.111.d
+	picture = GFX_idi_amin_india
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "Deutschland über alles"
+		ai_chance = { factor = 100 } 
+	SAX={set_cosmetic_tag=SAX_north_german_confederation}
+	}
+}
+country_event = {
+	id = pre_1789_event.112
+	title = "The Formation of the Northern German Confederation"
+	desc = pre_1789_event.112.d
+	picture = GFX_idi_amin_india
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "Deutschland über alles"
+		ai_chance = { factor = 100 } 
+	HAN={set_cosmetic_tag=HAN_north_german_confederation}
+	}
+}
+country_event = {
+	id = pre_1789_event.113
+	title = "The Vassalization of Neuchatel"
+	desc = pre_1789_event.113.d
+	picture = GFX_idi_amin_india
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "We already have the same King"
+		ai_chance = { factor = 100 } 
+		NEU={set_cosmetic_tag=NEU_PRE}
+		PRE={set_country_flag=neu_vassal_pre_flag}
+							PRE={
+				set_autonomy = {
+				target = NEU
+                autonomous_state = autonomy_integrated_puppet
+                freedom_level = 0.35
+	            }
+				}
+}
+}
+country_event = {
+	id = pre_1789_event.114
+	title = "The Hohenzollern's of Hohenzollern"
+	desc = pre_1789_event.114.d
+	picture = GFX_idi_amin_india
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "Ties between our countries are neccesary"
+		ai_chance = { factor = 100 } 
+		HOH={set_cosmetic_tag=HOH_PRE}
+		PRE={set_country_flag=hoh_vassal_pre_flag}
+							PRE={
+				set_autonomy = {
+				target = HOH
+                autonomous_state = autonomy_integrated_puppet
+                freedom_level = 0.35
+	            }
+				}
+}
+}
+country_event = {
+	id = pre_1789_event.115
+	title = "Creation of the Prussian Naval Academy"
+	desc = pre_1789_event.115.d
+	picture = GFX_idi_amin_india
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "Prussia needs a navy in the Baltic"
+		ai_chance = { factor = 100 } 
+		PRE={add_war_support=0.05}
+												85 = {
+								add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = dockyard
+							level = 1
+							instant_build = yes
+						}
+					}
+}
+}
+country_event = {
+	id = pre_1789_event.116
+	title = "The evergreen Rhine"
+	desc = pre_1789_event.116.d
+	picture = GFX_idi_amin_india
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "The Economy is Thriving"
+		ai_chance = { factor = 100 } 
+												51 = {
+													add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+					}
+																	57 = {
+																		add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+					}
+}
+}
+country_event = {
+	id = pre_1789_event.117
+	title = "The Nathan Israel Department Store"
+	desc = pre_1789_event.117.d
+	picture = GFX_idi_amin_india
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "At least they bring some economic growth"
+		ai_chance = { factor = 100 } 
+						64 = {
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+					}
+					PRE={add_stability=0.01}
+hidden_effect={PRE={add_manpower=-1000}}
+}
+}
+country_event = {
+	id = pre_1789_event.118
+	title = "Military Access in Oldenburg"
+	desc = pre_1789_event.118.d
+	picture = GFX_idi_amin_india
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "This is good for our navy"
+		ai_chance = { factor = 100 } 
+		OLD={give_military_access = PRE}
+						56 = {
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = dockyard
+							level = 1
+							instant_build = yes
+						}
+					}
+					PRE={add_stability=0.05}
+					OLD={add_stability=0.05}
+}
+}
+country_event = {
+	id = pre_1789_event.119
+	title = "The Exiled Hohenzollern Kingdom of the Rhine"
+	desc = pre_1789_event.119.d
+	picture = GFX_idi_amin_india
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "This is not looking good for Prussia"
+		ai_chance = { factor = 100 } 
+PRE={set_cosmetic_tag=PRE_rhine_formable}
+}
+}
+country_event = {
+	id = pre_1789_event.120
+	title = "The State of Mecklenburg-Strelitz"
+	desc = pre_1789_event.120.d
+	picture = GFX_idi_amin_india
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "We are the Protector of the Protestant German States"
+		ai_chance = { factor = 100 } 
+}
+	option = { # 
+		name = "This is a golden Opportunity"
+		ai_chance = { factor = 0 } 
+PRE={add_political_power=-25}
+PRE={set_country_flag=PRE_has_claimed_the_throne_of_str}
+}
+}
+country_event = {
+	id = pre_1789_event.121
+	title = "Expansion Into Prussia"
+	desc = pre_1789_event.121.d
+	picture = GFX_idi_amin_india
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "Annex the Saarland"
+		ai_chance = { factor = 25 } 
+		every_state={
+        limit={
+        or={
+        state=873
+        }
+        }
+        add_core_of=FRA
+        remove_core_of=PRE
+        }
+}
+	option = { # 
+		name = "Puppet the West Bank of the Rhine"
+		ai_chance = { factor = 25 } 
+		every_state={
+        limit={
+        or={
+        state=873
+		state=42
+		state=690
+		state=843
+		state=51
+		state=851
+		state=466
+        }
+        }
+        add_core_of=RHI
+		transfer_state_to=RHI
+        remove_core_of=PRE
+        }
+							FRA={
+								set_autonomy = {
+				target = RHI
+                autonomous_state = autonomy_dominion
+                freedom_level = 0.35
+	            }
+				}
+}
+	option = { # 
+		name = "Puppet the Rhineland"
+		ai_chance = { factor = 25 }
+		every_state={
+        limit={
+        or={
+        state=873
+		state=42
+		state=690
+		state=843
+		state=51
+		state=851
+		state=466
+		state=877
+		state=978
+		state=878
+		state=837
+        }
+        }
+        add_core_of=RHI
+		transfer_state_to=RHI
+        remove_core_of=PRE
+        } 
+							FRA={
+								set_autonomy = {
+				target = RHI
+                autonomous_state = autonomy_dominion
+                freedom_level = 0.35
+	            }
+				}
+}
+	option = { # 
+		name = "Puppet the Rhineland and Westphalia"
+		ai_chance = { factor = 25 }
+		every_state={
+        limit={
+        or={
+        state=873
+		state=42
+		state=690
+		state=843
+		state=51
+		state=851
+		state=466
+		state=877
+		state=978
+		state=878
+		state=872
+		state=703
+		state=1155
+		state=1246
+		state=1165
+		state=704
+		state=57
+		state=837
+        }
+        }
+        add_core_of=RHI
+		transfer_state_to=RHI
+        remove_core_of=PRE
+        }  
+							FRA={
+								set_autonomy = {
+				target = RHI
+                autonomous_state = autonomy_dominion
+                freedom_level = 0.35
+	            }
+				}
+}
+}
+country_event = {
+	id = pre_1789_event.122
+	title = "Chosing our Allies"
+	desc = pre_1789_event.122.d
+	picture = GFX_idi_amin_india
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "It has been cemented"
+		ai_chance = { factor = 100 } 
+PRE={
+remove_ideas = {
+pre_stuck_between_east_and_west
+}
+}
+}
+}
+country_event = {
+	id = pre_1789_event.123
+	title = "Intervention against the French invasion of Egypt"
+	desc = pre_1789_event.123.d
+	picture = GFX_idi_amin_india
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "We need to build up our country first..."
+		ai_chance = { factor = 100 } 
+PRE={
+diplomatic_relation = { country = OTO relation = guarantee active = no }
+}
+OTO={
+diplomatic_relation = { country = PRE relation = guarantee active = no }
+}
+}
+}
+country_event = {
+	id = pre_1789_event.124
+	title = "The Return of Hanover to Britain"
+	desc = pre_1789_event.124.d
+	picture = GFX_idi_amin_india
+	#is_triggered_only = yes
+trigger = {
+original_tag = PRE
+date > 1801.10.1 has_start_date < 1808.1.1
+PRE={has_country_flag=pre_has_puppeted_hanover}
+}
+fire_only_once = yes
+	option = { # 
+		name = "We better see something in return"
+		ai_chance = { factor = 100 } 
+HAN={set_cosmetic_tag=HAN}
+SXL={set_cosmetic_tag=SXL}
+ENG={
+    set_autonomy = {
+        target = SXL
+        autonomous_state = autonomy_personal_union
+        freedom_level = 0.35
+	}
+	    set_autonomy = {
+        target = HAN
+        autonomous_state = autonomy_personal_union
+        freedom_level = 0.35
+	}
+}
+ENG={add_political_power=-25}
+PRE={add_political_power=25}
+PRE={add_war_support=0.025}
+	}
+}
+
+country_event = {
+	id = pre_1789_event.125
+	title = "Prussia joins the 4th Coalition"
+	desc = pre_1789_event.125.d
+	picture = GFX_idi_amin_india
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "We ought to remove the Revolution"
+		ai_chance = { factor = 100 }
+ENG={add_to_faction=PRE} 
+PRE={
+	declare_war_on = {
+		target = FRA
+		type = annex_everything
+	}
+}
+}
+}
+country_event = {
+	id = pre_1789_event.126
+	title = "Saxony joins the 4th Coalition"
+	desc = pre_1789_event.126.d
+	picture = GFX_idi_amin_india
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "We ought to remove the Revolution"
+		ai_chance = { factor = 100 }
+ENG={add_to_faction=SAX} 
+SAX={
+	declare_war_on = {
+		target = FRA
+		type = annex_everything
+	}
+}
+}
+}
+country_event = {
+	id = pre_1789_event.127
+	title = "Brunswick joins the 4th Coalition"
+	desc = pre_1789_event.127.d
+	picture = GFX_idi_amin_india
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "We ought to remove the Revolution"
+		ai_chance = { factor = 100 }
+ENG={add_to_faction=BRU} 
+BRU={
+	declare_war_on = {
+		target = FRA
+		type = annex_everything
+	}
+}
+}
+}
+country_event = {
+	id = pre_1789_event.128
+	title = "Hesse Kassel joins the 4th Coalition"
+	desc = pre_1789_event.128.d
+	picture = GFX_idi_amin_india
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "We ought to remove the Revolution"
+		ai_chance = { factor = 100 }
+ENG={add_to_faction=HSE} 
+HSE={
+	declare_war_on = {
+		target = FRA
+		type = annex_everything
+	}
+}
+}
 }

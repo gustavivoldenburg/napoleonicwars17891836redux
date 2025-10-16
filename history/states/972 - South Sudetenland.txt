@@ -17,7 +17,7 @@ state={
 		remove_core_of = DDR
 		remove_core_of = WGR
 		}
-		1812.1.1 = {
+		1808.1.1 = {
 		owner = WTF
 		add_core_of = WTF
 		}
@@ -50,7 +50,7 @@ state={
 
 		}
 		victory_points = {
-			13376 2 
+			13376 10
 		}
 		victory_points = {
 			9375 1 

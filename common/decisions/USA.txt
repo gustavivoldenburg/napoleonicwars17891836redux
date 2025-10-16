@@ -1029,7 +1029,7 @@ USA_aid_britain = {
 			war_support_weekly = 0.001		
 			industrial_capacity_factory = 0.02
 			industrial_capacity_dockyard = 0.02
-			consumer_goods_factor = -0.05
+			consumer_goods_factor = -0.15
 		}
 
 		days_remove = 360
@@ -2632,7 +2632,6 @@ USA_intervention_mandate = {
 			
 		}
 		visible = {
-                date > 1937.1.1
 			OR = {
 				has_country_flag = USA_china_window
 				OR = {
@@ -2643,6 +2642,9 @@ USA_intervention_mandate = {
 								is_subject_of = JAP
 							}
 						}
+					}
+					event_target:WTT_current_china_leader = {
+						surrender_progress > 0.5
 					}
 				}
 			}
@@ -2824,7 +2826,7 @@ USA_intervention_mandate = {
 					}
 				}
 				OR = {
-					has_civil_war = yes
+					has_civil_war = no
 					AND = {
 						is_subject = yes
 						NOT = { tag = CAN }
@@ -2845,12 +2847,33 @@ USA_intervention_mandate = {
 		cost = 50
 		days_remove = 35
 		war_with_target_on_remove = yes
+
 		ai_will_do = {
 			factor = 1
 			modifier = {
 				has_war = yes
 				factor = 0
 			}
+			modifier = {
+				FROM = {
+					has_added_tension_amount < 8
+				}
+				factor = 0
+			}
+
+			modifier = {
+				FROM = {
+					OR = {
+						has_added_tension_amount > 30
+						has_government = fascism
+						has_government = communism
+					}
+					NOT = { is_in_faction_with = USA }
+				}
+				factor = 2
+
+			}
+
 		}
 		remove_effect = {
 			create_wargoal = {
@@ -3029,6 +3052,112 @@ USA_decolonisation = {
 						}
 					}
 				}
+			}
+		}
+	}
+}
+
+operations = {
+
+	USA_initiate_the_greenland_patrol = {
+
+		icon = generic_operation
+	
+		allowed = {
+			tag = USA
+		}
+		
+		available = {
+			OR = {
+				has_government = democratic
+				has_government = neutrality
+			}
+			101 = {
+				is_owned_and_controlled_by = DEN
+			}
+			DEN = {
+				is_subject = yes
+			}
+			IF = {
+				limit = {	
+					DEN = {
+						is_subject = yes
+					}
+				}
+				DEN = {
+					overlord = {
+						NOT = {
+							has_government = democratic
+							has_war_with = USA #Unfair to just grab a piece of land from your enemy like this
+							is_in_faction_with = ROOT
+						}
+					}
+				}
+			}
+		}
+
+		cost = 50
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			base = 1
+			modifier = {
+				factor = 50 
+				DEN = {
+					overlord = {
+						OR = {
+							has_government = fascism
+							has_government = communism
+						}
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				is_historical_focus_on = yes
+				ENG = {
+					has_war_with = GER
+					has_subject = CAN
+				}	
+				GER = {
+					has_government = fascism
+					has_subject = DEN
+				}
+			}
+		} 
+		
+		visible = {
+			tag = USA
+			OR = {
+				has_government = democratic
+				has_government = neutrality
+			}
+			101 = {
+				is_owned_and_controlled_by = DEN
+			}
+			DEN = {
+				is_subject = yes
+				overlord = {
+					is_major = yes
+					NOT = {
+						has_government = democratic
+						has_war_with = USA #Unfair to just grab a piece of land from your enemy like this
+						is_in_faction_with = ROOT
+					}
+				}
+			}
+			has_dlc = "Arms Against Tyranny"
+		}
+		
+		complete_effect = {
+			DEN = { country_event = { id = AAT_USA_events.01 days = 2 } }
+			add_ideas = USA_greenland_patrol_idea
+			ROOT = {
+				transfer_state = 101
+			}
+			hidden_effect = {
+				set_global_flag = USA_occupied_DEN_greenland
 			}
 		}
 	}

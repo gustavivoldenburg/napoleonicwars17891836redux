@@ -1,15 +1,55 @@
-﻿
-
-focus_tree = {
+﻿focus_tree = {
 	id = uninhabited_focus
 	
 	country = {
 		factor = 0
-		
-		modifier = {
-			add = 10
-			tag = ZZZ
-		}
+        modifier = { add = 100 tag = ZZZ }
+        modifier = { add = 100 tag = GER }
+        modifier = { add = 100 tag = ITA }
+        modifier = { add = 100 tag = JAP }
+        modifier = { add = 100 tag = POL }
+        modifier = { add = 100 tag = SOV }
+        modifier = { add = 100 tag = AST }
+        modifier = { add = 100 tag = RAJ }
+        modifier = { add = 100 tag = CAN }
+        modifier = { add = 100 tag = NZL }
+        modifier = { add = 100 tag = SAF }
+        modifier = { add = 100 tag = CZE }
+        modifier = { add = 100 tag = HUN }
+        modifier = { add = 100 tag = ROM }
+        modifier = { add = 100 tag = YUG }
+        modifier = { add = 100 tag = CHI }
+        modifier = { add = 100 tag = PRC }
+        modifier = { add = 100 tag = MAN }
+        modifier = { add = 100 tag = GXC }
+        modifier = { add = 100 tag = SHX }
+        modifier = { add = 100 tag = SIK }
+        modifier = { add = 100 tag = XSM }
+        modifier = { add = 100 tag = YUN }
+        modifier = { add = 100 tag = MEX }
+        modifier = { add = 100 tag = POR }
+        modifier = { add = 100 tag = BUL }
+        modifier = { add = 100 tag = GRE }
+        modifier = { add = 100 tag = TUR }
+        modifier = { add = 100 tag = EST }
+        modifier = { add = 100 tag = LAT }
+        modifier = { add = 100 tag = LIT }
+        modifier = { add = 100 tag = ETH }
+        modifier = { add = 100 tag = SWI }
+        modifier = { add = 100 tag = DEN }
+        modifier = { add = 100 tag = FIN }
+        modifier = { add = 100 tag = ICE }
+        modifier = { add = 100 tag = NOR }
+        modifier = { add = 100 tag = ARG }
+        modifier = { add = 100 tag = BRA }
+        modifier = { add = 100 tag = CHL }
+        modifier = { add = 100 tag = PAR }
+        modifier = { add = 100 tag = URG }
+        modifier = { add = 100 tag = AUS }
+        modifier = { add = 100 tag = COG }
+        modifier = { add = 100 tag = AFG }
+        modifier = { add = 100 tag = PER }
+        modifier = { add = 100 tag = IRQ }
 	}
 	
 	default = no

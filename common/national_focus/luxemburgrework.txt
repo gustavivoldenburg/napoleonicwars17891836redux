@@ -1,0 +1,1075 @@
+﻿focus_tree = {
+	id = luxemburgianrework_focus
+	country = {
+		factor = 0
+		modifier = { add = 100 tag = BEL }
+	}
+
+	initial_show_position = {
+		x = 0
+	}
+continuous_focus_position = { x = 7000 y = 0000 }
+	default = no
+focus = {
+		id = luxemburgianrework_althistory_1
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		prerequisite = {
+		focus =	luxemburgianrework_1789_1815_first_100_focus_1
+		}
+								mutually_exclusive = { 
+		focus = luxemburgianrework_1789_1815_first_100_focus_2
+		focus = luxemburgianrework_althistory_2
+		}
+		x = -1
+		y = 1
+allow_branch = { has_start_date > 1789.1.1
+    has_start_date < 1836.1.1 }
+		cost = 4.3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+        search_filters = { FOCUS_FILTER_ALTHISTORY }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+focus = {
+		id = luxemburgianrework_althistory_2
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		prerequisite = {
+		focus =	luxemburgianrework_1789_1815_first_100_focus_1
+		}
+								mutually_exclusive = { 
+		focus = luxemburgianrework_1789_1815_first_100_focus_2
+		focus = luxemburgianrework_althistory_1
+		}
+		x = 3
+		y = 1
+allow_branch = { has_start_date > 1789.1.1
+    has_start_date < 1836.1.1 }
+		cost = 4.3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+        search_filters = { FOCUS_FILTER_ALTHISTORY }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+focus = {
+		id = luxemburgianrework_althistory_3
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		prerequisite = {
+		focus =	luxemburgianrework_1789_1815_first_100_focus_2
+		focus = luxemburgianrework_althistory_1
+		focus = luxemburgianrework_althistory_2
+		}
+								mutually_exclusive = { 
+		focus = luxemburgianrework_1789_1815_first_100_focus_3
+		focus = luxemburgianrework_althistory_4
+		}
+		x = 3
+		y = 2
+allow_branch = { has_start_date > 1789.1.1
+    has_start_date < 1836.1.1 }
+		cost = 4.3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+        search_filters = { FOCUS_FILTER_ALTHISTORY }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+focus = {
+		id = luxemburgianrework_althistory_4
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		prerequisite = {
+		focus =	luxemburgianrework_1789_1815_first_100_focus_1
+		}
+								mutually_exclusive = { 
+		focus = luxemburgianrework_1789_1815_first_100_focus_3
+		focus = luxemburgianrework_althistory_3
+		}
+		x = -1
+		y = 2
+allow_branch = { has_start_date > 1789.1.1
+    has_start_date < 1836.1.1 }
+		cost = 4.3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+        search_filters = { FOCUS_FILTER_ALTHISTORY }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+focus = {
+		id = luxemburgianrework_althistory_5
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		prerequisite = {
+		focus = luxemburgianrework_althistory_7
+		focus =	luxemburgianrework_1789_1815_first_100_focus_5
+		}
+								mutually_exclusive = { 
+		focus = luxemburgianrework_1789_1815_first_100_focus_6
+		focus = luxemburgianrework_althistory_6
+		}
+		x = 3
+		y = 5
+allow_branch = { has_start_date > 1789.1.1
+    has_start_date < 1836.1.1 }
+		cost = 4.3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+        search_filters = { FOCUS_FILTER_ALTHISTORY }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = luxemburgianrework_althistory_6
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		prerequisite = {
+		focus = luxemburgianrework_althistory_7
+		focus =	luxemburgianrework_1789_1815_first_100_focus_5
+		}
+								mutually_exclusive = { 
+		focus = luxemburgianrework_1789_1815_first_100_focus_6
+		focus = luxemburgianrework_althistory_5
+		}
+		x = -1
+		y = 5
+allow_branch = { has_start_date > 1789.1.1
+    has_start_date < 1836.1.1 }
+		cost = 4.3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+        search_filters = { FOCUS_FILTER_ALTHISTORY }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = luxemburgianrework_althistory_7
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		prerequisite = {
+		focus =	luxemburgianrework_1789_1815_first_100_focus_4
+		}
+								mutually_exclusive = { 
+		focus = luxemburgianrework_1789_1815_first_100_focus_5
+		}
+		x = 2
+		y = 4
+allow_branch = { has_start_date > 1789.1.1
+    has_start_date < 1836.1.1 }
+		cost = 4.3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+        search_filters = { FOCUS_FILTER_ALTHISTORY }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = luxemburgianrework_althistory_8
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+								mutually_exclusive = { 
+		focus = luxemburgianrework_1789_1815_first_100_focus_7
+		}
+				prerequisite = {
+		focus = luxemburgianrework_althistory_5
+		focus = luxemburgianrework_althistory_6
+		focus =	luxemburgianrework_1789_1815_first_100_focus_6
+		}
+		x = 2
+		y = 6
+allow_branch = { has_start_date > 1789.1.1
+    has_start_date < 1836.1.1 }
+		cost = 4.3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+        search_filters = { FOCUS_FILTER_ALTHISTORY }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = luxemburgianrework_althistory_9
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+								mutually_exclusive = { 
+		focus = luxemburgianrework_1789_1815_first_100_focus_8
+		}
+		prerequisite = {
+		focus = luxemburgianrework_althistory_8
+		focus =	luxemburgianrework_1789_1815_first_100_focus_7
+		}
+		x = 2
+		y = 7
+allow_branch = { has_start_date > 1789.1.1
+    has_start_date < 1836.1.1 }
+		cost = 4.3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+        search_filters = { FOCUS_FILTER_ALTHISTORY }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+focus = {
+		id = luxemburgianrework_1789_1815_first_100_focus_1
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+
+		x = 1
+		y = 0
+allow_branch = { has_start_date > 1789.1.1
+    has_start_date < 1836.1.1 }
+		cost = 4.3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = luxemburgianrework_1789_1815_first_100_focus_2
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		prerequisite = {
+		focus =	luxemburgianrework_1789_1815_first_100_focus_1
+		}
+						mutually_exclusive = { 
+		focus = luxemburgianrework_althistory_1
+		focus = luxemburgianrework_althistory_2
+		}
+		x = 1
+		y = 1
+allow_branch = { has_start_date > 1789.1.1
+    has_start_date < 1836.1.1 }
+		cost = 4.3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = luxemburgianrework_1789_1815_first_100_focus_3
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		prerequisite = {
+		focus =	luxemburgianrework_1789_1815_first_100_focus_2
+		focus = luxemburgianrework_althistory_1
+		focus = luxemburgianrework_althistory_2
+		}
+										mutually_exclusive = { 
+		focus = luxemburgianrework_althistory_3
+		focus = luxemburgianrework_althistory_4
+		}
+		x = 1
+		y = 2
+allow_branch = { has_start_date > 1789.1.1
+    has_start_date < 1836.1.1 }
+		cost = 4.3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = luxemburgianrework_1789_1815_first_100_focus_4
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		prerequisite = {
+		focus =	luxemburgianrework_1789_1815_first_100_focus_3
+		}
+		x = 1
+		y = 3
+allow_branch = { has_start_date > 1789.1.1
+    has_start_date < 1836.1.1 }
+		cost = 4.3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = luxemburgianrework_1789_1815_first_100_focus_5
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		prerequisite = {
+		focus =	luxemburgianrework_1789_1815_first_100_focus_4
+		}
+										mutually_exclusive = { 
+		focus = luxemburgianrework_althistory_7
+		}
+		x = 0
+		y = 4
+allow_branch = { has_start_date > 1789.1.1
+    has_start_date < 1836.1.1 }
+		cost = 4.3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = luxemburgianrework_1789_1815_first_100_focus_6
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		prerequisite = {
+		focus = luxemburgianrework_althistory_7
+		focus =	luxemburgianrework_1789_1815_first_100_focus_5
+		}
+												mutually_exclusive = { 
+		focus = luxemburgianrework_althistory_5
+		focus = luxemburgianrework_althistory_6
+		}
+		x = 1
+		y = 5
+allow_branch = { has_start_date > 1789.1.1
+    has_start_date < 1836.1.1 }
+		cost = 4.3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = luxemburgianrework_1789_1815_first_100_focus_7
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		prerequisite = {
+		focus = luxemburgianrework_althistory_5
+		focus = luxemburgianrework_althistory_6
+		focus =	luxemburgianrework_1789_1815_first_100_focus_6
+		}
+										mutually_exclusive = { 
+		focus = luxemburgianrework_althistory_8
+		}
+		x = 0
+		y = 6
+allow_branch = { has_start_date > 1789.1.1
+    has_start_date < 1836.1.1 }
+		cost = 4.3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = luxemburgianrework_1789_1815_first_100_focus_8
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		prerequisite = {
+		focus = luxemburgianrework_althistory_8
+		focus =	luxemburgianrework_1789_1815_first_100_focus_7
+		}
+										mutually_exclusive = { 
+		focus = luxemburgianrework_althistory_9
+		}
+		x = 0
+		y = 7
+allow_branch = { has_start_date > 1789.1.1
+    has_start_date < 1836.1.1 }
+		cost = 4.3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = luxemburgianrework_1789_1815_first_100_focus_9
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		prerequisite = {
+		focus = luxemburgianrework_althistory_9
+		focus =	luxemburgianrework_1789_1815_first_100_focus_8
+		}
+		x = 1
+		y = 8
+allow_branch = { has_start_date > 1789.1.1
+    has_start_date < 1836.1.1 }
+		cost = 4.3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = luxemburgianrework_1789_1815_first_100_focus_10
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+
+		x = 1
+		y = 9
+allow_branch = { has_start_date > 1789.1.1
+    has_start_date < 1836.1.1 }
+		cost = 4.3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = luxemburgianrework_1789_1815_first_100_focus_11
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+
+		x = 1
+		y = 10
+allow_branch = { has_start_date > 1789.1.1
+    has_start_date < 1836.1.1 }
+		cost = 4.3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = luxemburgianrework_1789_1815_first_100_focus_12
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+
+		x = 1
+		y = 11
+allow_branch = { has_start_date > 1789.1.1
+    has_start_date < 1836.1.1 }
+		cost = 4.3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = luxemburgianrework_1789_1815_first_100_focus_13
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+
+		x = 1
+		y = 12
+allow_branch = { has_start_date > 1789.1.1
+    has_start_date < 1836.1.1 }
+		cost = 4.3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = luxemburgianrework_1789_1815_first_100_focus_14
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+
+		x = 1
+		y = 13
+allow_branch = { has_start_date > 1789.1.1
+    has_start_date < 1836.1.1 }
+		cost = 4.3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = luxemburgianrework_1789_1815_first_100_focus_15
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+
+		x = 1
+		y = 14
+allow_branch = { has_start_date > 1789.1.1
+    has_start_date < 1836.1.1 }
+		cost = 4.3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = luxemburgianrework_1789_1815_first_100_focus_16
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+
+		x = 1
+		y = 15
+allow_branch = { has_start_date > 1789.1.1
+    has_start_date < 1836.1.1 }
+		cost = 4.3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = luxemburgianrework_1789_1815_first_100_focus_17
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+
+		x = 1
+		y = 16
+allow_branch = { has_start_date > 1789.1.1
+    has_start_date < 1836.1.1 }
+		cost = 4.3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = luxemburgianrework_1789_1815_first_100_focus_18
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+
+		x = 1
+		y = 17
+allow_branch = { has_start_date > 1789.1.1
+    has_start_date < 1836.1.1 }
+		cost = 4.3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = luxemburgianrework_1789_1815_first_100_focus_19
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+
+		x = 1
+		y = 18
+allow_branch = { has_start_date > 1789.1.1
+    has_start_date < 1836.1.1 }
+		cost = 4.3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = luxemburgianrework_1789_1815_first_100_focus_20
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+
+		x = 1
+		y = 19
+allow_branch = { has_start_date > 1789.1.1
+    has_start_date < 1836.1.1 }
+		cost = 4.3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = luxemburgianrework_1789_1815_first_100_focus_21
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+
+		x = 1
+		y = 20
+allow_branch = { has_start_date > 1789.1.1
+    has_start_date < 1836.1.1 }
+		cost = 4.3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = luxemburgianrework_1789_1815_first_100_focus_22
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+
+		x = 1
+		y = 21
+allow_branch = { has_start_date > 1789.1.1
+    has_start_date < 1836.1.1 }
+		cost = 4.3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = luxemburgianrework_1789_1815_first_100_focus_23
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+
+		x = 1
+		y = 22
+allow_branch = { has_start_date > 1789.1.1
+    has_start_date < 1836.1.1 }
+		cost = 4.3
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+}

@@ -40,8 +40,8 @@ state={
 
 		}
 		1900.1.1 = {
-			owner = AUH
-			add_core_of = AUH
+			owner = AUS
+			add_core_of = AUS
 			remove_core_of = AUS
 
 		}
@@ -52,13 +52,7 @@ state={
 			infrastructure = 2
 
 		}
-		1920.1.1 = {
-			owner = AUS
-			controller = AUS
-			add_core_of = AUS
-			remove_core_of = AUH
 
-		}
 		1938.3.12 = {
 			owner = GER
 			controller = GER

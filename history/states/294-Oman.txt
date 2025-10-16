@@ -6,6 +6,11 @@ state={
 		oil=2.000
 	}
 	history={
+		owner = ZZZ
+				buildings = {
+			infrastructure = 0
+		}
+		1900.1.1 = {
 		victory_points = {
 			10760 3 
 		}
@@ -16,6 +21,7 @@ state={
 			10760 = {
 				naval_base = 3
 			}
+		}
 		}
 	}
 	provinces={

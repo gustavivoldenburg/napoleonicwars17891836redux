@@ -14,7 +14,7 @@ state={
 			owner = PRE
 
 		}
-		1812.1.1 = {
+		1808.1.1 = {
 			owner = POL
 			add_core_of = POL
 
@@ -111,7 +111,7 @@ state={
 	provinces={
 		17 388 3381 3460 3532 6558 9252 9532 11558 13407 13408 13417 13422 13423 13425 13431 
 	}
-	manpower=1500000
+	manpower=1750000
 	buildings_max_level_factor=1.000
 	state_category=large_town
 	local_supplies=0.000

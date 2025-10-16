@@ -14,8 +14,20 @@ state={
 			owner = YUG
 
 		}
-						victory_points = {
+		victory_points = {
 			982 2
+		}
+		victory_points = {
+			9588 1
+		}
+		victory_points = {
+			11741 1
+		}
+		victory_points = {
+			13827 1
+		}
+		victory_points = {
+			13841 1
 		}
 		1500.1.1 = {
 			owner = OTO
@@ -27,13 +39,6 @@ state={
 		1900.1.1 = {
 			owner = BOS
 			controller = BOS
-			add_core_of = BOS
-			remove_core_of = SER
-
-		}
-		1910.1.1 = {
-			owner = AUH
-			controller = AUH
 			add_core_of = BOS
 			remove_core_of = SER
 
@@ -58,10 +63,10 @@ state={
 	}
 
 	provinces={
-		606 982 9588 11741 
+		982 9588 11741 13827 13841 
 	}
-	manpower=100000
+	manpower=500000
 	buildings_max_level_factor=1.000
-	state_category=pastoral
+	state_category=rural
 	local_supplies=0.000
 }

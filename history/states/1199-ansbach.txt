@@ -27,7 +27,7 @@ state={
 			remove_core_of = BYR
 
 		}
-		1812.1.1 = {
+		1808.1.1 = {
 			add_core_of = BAY
 			owner = BAY
 			remove_core_of = PRE
@@ -61,7 +61,7 @@ state={
 	}
 
 	provinces={
-		14669 14677 14681 
+		561 14669 14677 14681 14673
 	}
 	manpower=490000
 	buildings_max_level_factor=1.000

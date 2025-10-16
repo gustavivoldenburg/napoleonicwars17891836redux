@@ -19,6 +19,9 @@ set_stability = 0.8
 set_war_support = 0.3
 set_technology = {
 	infantry_weapons = 1
+	transport = 1
+	early_submarine = 1
+        gw_artillery = 1 basic_train = 1
 }
 1936.1.1 = {
 set_technology = {
@@ -241,7 +244,7 @@ set_politics = {
 	ruling_party = democratic
 	last_election = "1935.11.27"
 	election_frequency = 36
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
 	democratic = 100
@@ -254,7 +257,7 @@ set_convoys = 70
 		ruling_party = democratic
 		last_election = "1938.10.15"
 		election_frequency = 60
-		elections_allowed = yes
+		elections_allowed = no
 	}
 
 	# Didn't take office until '40, added for flavor

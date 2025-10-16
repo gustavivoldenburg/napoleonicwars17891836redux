@@ -16,6 +16,12 @@ state={
 		remove_core_of = DDR
 		remove_core_of = WGR
 		}
+				1808.1.1 = {
+		owner = BAY
+        add_core_of = BAY
+		remove_core_of = WUR
+		remove_core_of = ULM
+		}
 		1810.1.1 = {
 		owner = WUR
         add_core_of = WUR
@@ -40,7 +46,7 @@ state={
                 remove_core_of = PRE
                 }
 		victory_points = {
-			11499 3 
+			11499 10
 		}
 		buildings = {
 			infrastructure = 2

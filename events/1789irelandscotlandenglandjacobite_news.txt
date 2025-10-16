@@ -1,0 +1,24 @@
+﻿###########################
+# News Events
+###########################
+
+add_namespace = ire_1789_news
+
+		news_event = {
+	id = ire_1789_news.1
+	title = "The 2nd Stuart Restoration"
+	desc = ire_1789_news.1.d
+	picture = GFX_idi_amin_uganda
+	
+	major = yes
+
+	fire_for_sender = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = "are the 1290s back on the menu?"
+			}
+		option = {
+		name = "this is not good for democracy"
+			}
+		}

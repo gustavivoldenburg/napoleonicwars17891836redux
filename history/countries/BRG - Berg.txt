@@ -20,6 +20,9 @@ recruit_character=BRG_louisii
 promote_character=BRG_maximilianijoseph
 retire_character=BRG_charlestheodore
 }
+1808.1.1 = {
+promote_character=BRG_napoleon
+}
 1812.1.1 = {
 promote_character=BRG_louisii
 }
@@ -42,6 +45,9 @@ set_cosmetic_tag = BRG_grandduchy # Berg Grand Duchy
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
+	transport = 1
+	early_submarine = 1
+        gw_artillery = 1 basic_train = 1
 }
 
 set_convoys = 20

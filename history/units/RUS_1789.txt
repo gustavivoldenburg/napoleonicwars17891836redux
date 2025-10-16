@@ -3,16 +3,17 @@
 
 	division_names_group = RUS_Inf_01
 
-	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 2 y = 0 }
-		infantry = { x = 3 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 1 y = 1 }
-		infantry = { x = 2 y = 1 }
-		infantry = { x = 3 y = 1 }
-	}
+regiments = {
+        infantry = { x = 0 y = 0 }
+        infantry = { x = 1 y = 0 }
+        infantry = { x = 2 y = 0 }
+        infantry = { x = 0 y = 1 }
+        infantry = { x = 1 y = 1 }
+        infantry = { x = 2 y = 1 }
+		infantry = { x = 0 y = 2 }
+        artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }
+    }
 	priority = 2
 }
 units = {
@@ -74,7 +75,7 @@ units = {
 	#Russian Army
 	division = {
 		name = "Russian Division"
-		location = 9206
+		location = 3161
 		division_template = "Russian Division"
 		start_experience_factor = 0.3
 	}
@@ -111,7 +112,7 @@ units = {
 	#Russian Army
 	division = {
 		name = "Russian Division"
-		location = 11162
+		location = 9183
 		division_template = "Russian Division"
 		start_experience_factor = 0.3
 	}
@@ -148,7 +149,7 @@ units = {
 	#Russian Army
 	division = {
 		name = "Russian Division"
-		location = 3050
+		location = 11056
 		division_template = "Russian Division"
 		start_experience_factor = 0.3
 	}
@@ -185,7 +186,7 @@ units = {
 	#Russian Army
 	division = {
 		name = "Russian Division"
-		location = 6150
+		location = 52
 		division_template = "Russian Division"
 		start_experience_factor = 0.3
 	}
@@ -222,7 +223,7 @@ units = {
 	#Russian Army
 	division = {
 		name = "Russian Division"
-		location = 3187
+		location = 139
 		division_template = "Russian Division"
 		start_experience_factor = 0.3
 	}

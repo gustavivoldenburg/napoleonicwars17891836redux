@@ -62,6 +62,9 @@ add_ideas = {
 
 set_technology = {
 	infantry_weapons = 1
+	transport = 1
+	early_submarine = 1
+        gw_artillery = 1 basic_train = 1
 }
 1936.1.1 = {
 # Starting tech
@@ -183,7 +186,7 @@ IF = {
 
 
 
-set_country_flag = monroe_doctrine
+
 
 1939.1.1 = {
 
@@ -280,7 +283,7 @@ set_politics = {
 	ruling_party = neutrality
 	last_election = "1931.11.8"
 	election_frequency = 72
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
 	democratic = 5
@@ -294,7 +297,7 @@ set_popularities = {
 		ruling_party = neutrality
 		last_election = "1937.9.5"
 		election_frequency = 108
-		elections_allowed = yes
+		elections_allowed = no
 	}
 
 	set_popularities = {

@@ -20,7 +20,10 @@ state={
 			owner = SAV
 
 		}
-		1812.1.1 = {
+						1800.1.1 = {
+        
+		}
+		1808.1.1 = {
 			remove_core_of = SAV
 			owner = FRA
 

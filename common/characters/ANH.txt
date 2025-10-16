@@ -1,0 +1,31 @@
+characters={
+	ANH_leopoldiii={
+		name=ANH_CHARACTER_LEOPOLDIII
+		portraits={
+			civilian={
+				large="GFX_portrait_anh_leopoldiii_large"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={Ascania}
+			desc = ANH_LEOPOLDIII_DESC
+			expire="1797.1.1"
+		}
+}
+	ANH_leopoldiiii={
+		name=ANH_CHARACTER_LEOPOLDIIII
+		portraits={
+			civilian={
+				large="GFX_portrait_anh_leopoldiiii_large"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={Ascania}
+			desc = ANH_LEOPOLDIIII_DESC
+			expire="1797.1.1"
+		}
+}
+}
+

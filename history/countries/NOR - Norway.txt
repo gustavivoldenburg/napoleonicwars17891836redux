@@ -137,7 +137,7 @@ if = {
 	NOR_character_flag_setup_for_cw = yes 
 }
 }
-set_research_slots = 3
+set_research_slots = 0
 1936.1.1 = {
 add_ideas = {
 	limited_conscription
@@ -150,7 +150,7 @@ set_technology = {
 	infantry_weapons = 1
 	transport = 1
 	early_submarine = 1
-        gw_artillery = 1
+        gw_artillery = 1 basic_train = 1
 }
 1936.1.1 = {
 set_technology = {
@@ -354,7 +354,7 @@ set_politics = {
 	ruling_party = democratic
 	last_election = "1933.10.16"
 	election_frequency = 36
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
 	democratic = 96
@@ -367,7 +367,7 @@ set_popularities = {
 		ruling_party = democratic
 		last_election = "1936.10.19"
 		election_frequency = 36
-		elections_allowed = yes
+		elections_allowed = no
 	}
 	set_popularities = {
 		democratic = 84

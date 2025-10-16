@@ -3,23 +3,24 @@
 
 	division_names_group = SWE_Inf_01
 
-	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 2 y = 0 }
-		infantry = { x = 3 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 1 y = 1 }
-		infantry = { x = 2 y = 1 }
-		infantry = { x = 3 y = 1 }
-	}
+regiments = {
+        infantry = { x = 0 y = 0 }
+        infantry = { x = 1 y = 0 }
+        infantry = { x = 2 y = 0 }
+        infantry = { x = 0 y = 1 }
+        infantry = { x = 1 y = 1 }
+        infantry = { x = 2 y = 1 }
+		infantry = { x = 0 y = 2 }
+        artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }
+    }
 	priority = 2
 }
 units = {
 	#Swedish Army
 	division = {
 		name = "Swedish Division"
-		location = 6050
+		location = 204
 		division_template = "Swedish Division"
 		start_experience_factor = 0.3
 	}
@@ -28,7 +29,7 @@ units = {
 	#Swedish Army
 	division = {
 		name = "Swedish Division"
-		location = 6050
+		location = 9073
 		division_template = "Swedish Division"
 		start_experience_factor = 0.3
 	}
@@ -73,7 +74,7 @@ units = {
 	#Swedish Army
 	division = {
 		name = "Swedish Division"
-		location = 139
+		location = 11105
 		division_template = "Swedish Division"
 		start_experience_factor = 0.3
 	}
@@ -82,7 +83,7 @@ units = {
 	#Swedish Army
 	division = {
 		name = "Swedish Division"
-		location = 52
+		location = 3131
 		division_template = "Swedish Division"
 		start_experience_factor = 0.3
 	}
@@ -91,7 +92,7 @@ units = {
 	#Swedish Army
 	division = {
 		name = "Swedish Division"
-		location = 6082
+		location = 165
 		division_template = "Swedish Division"
 		start_experience_factor = 0.3
 	}
@@ -100,7 +101,7 @@ units = {
 	#Swedish Army
 	division = {
 		name = "Swedish Division"
-		location = 6186
+		location = 11138
 		division_template = "Swedish Division"
 		start_experience_factor = 0.3
 	}

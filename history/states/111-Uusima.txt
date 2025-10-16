@@ -6,6 +6,9 @@ state={
 	history={
 		owner = SWE
 		add_core_of = FIN
+		1808.1.1 = {
+			controller = RUS
+		}
 		1809.1.1 = {
                 owner = FIN
                 }
@@ -26,13 +29,7 @@ state={
 			}
 		}
                 }
-		1920.1.1 = {
-			owner = FIN
-			controller = FIN
-			add_core_of = FIN
-			remove_core_of = RUS
 
-		}
 		buildings = {
 			infrastructure = 3
 			arms_factory = 1
@@ -46,9 +43,9 @@ state={
 	}
 
 	provinces={
-		204 3061 3161 6009 6082 6108 6144 6186 9129 9183 11056 11105 11211 
+		204 6009 6108 6144 9129 11105 11211 
 	}
-	manpower=1500000
+	manpower=1200000
 	buildings_max_level_factor=1.000
 	state_category=large_town
 	local_supplies=0.000

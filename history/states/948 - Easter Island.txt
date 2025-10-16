@@ -7,9 +7,6 @@ state={
 		victory_points = {
 			937 2
 		}
-						victory_points = {
-			13824 1
-		}
 		owner = SER
                 add_core_of = SER
 		buildings = {
@@ -56,9 +53,9 @@ state={
 	}
 
 	provinces={
-		937 13824 
+		937
 	}
-	manpower=50000
+	manpower=25000
 	buildings_max_level_factor=1.000
 	state_category=pastoral
 	local_supplies=0.000

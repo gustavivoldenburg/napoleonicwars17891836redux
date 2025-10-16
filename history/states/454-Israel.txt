@@ -31,14 +31,10 @@ state={
 		victory_points = {
 			4206 10
 		}
-		victory_points = {
-			1065 1 
+				victory_points = {
+			13731 1
 		}
-		victory_points = {
-			1015 1 
-		}
-		add_core_of = ISR
-		add_claim_by = PAL
+		add_core_of = PAL
 		1919.1.1 = {
 			owner = ENG
 			controller = ENG
@@ -61,18 +57,19 @@ state={
 
 		}
 		1946.1.1 = {
+		add_core_of=ISR
 			owner = ISR
 			controller = ISR
-			remove_core_of = SPR
+			remove_core_of = PAL
 
 		}
 
 	}
 
 	provinces={
-		1 1015 1065 1201 4206 7176 11970 13722 13724 13725 13727 13731 
+		4206 13731 
 	}
-	manpower=524842
+	manpower=179142
 	buildings_max_level_factor=1.000
 	state_category=rural
 	local_supplies=0.000

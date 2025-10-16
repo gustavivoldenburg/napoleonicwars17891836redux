@@ -22,6 +22,10 @@ state={
 		}
 		buildings = {
 			infrastructure = 2
+					772 = {
+				naval_base = 2
+
+			}
 		}
 		1919.1.1 = {
 			add_core_of = GEO
@@ -49,9 +53,9 @@ state={
 		}
 	}
 	provinces={
-		772 3658 4463 14073 
+		772 14073 
 	}
-	manpower=500000
+	manpower=200000
 	buildings_max_level_factor=1.000
 	state_category=town
 	local_supplies=0.000

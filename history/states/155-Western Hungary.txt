@@ -19,10 +19,10 @@ state={
 			owner = AUS
                 add_core_of = AUS
 		}
-		1900.1.1 = {
-			owner = AUH
+		1868.1.1 = {
+			owner = HUN
                         remove_core_of = AUS
-                        add_core_of = AUH
+                        add_core_of = HUN
 		}
 		victory_points = {
 			11610 5 
@@ -44,7 +44,7 @@ state={
 			owner = HUN
 			controller = HUN
 			add_core_of = HUN
-			remove_core_of = AUH
+			remove_core_of = AUS
 
 		}
 

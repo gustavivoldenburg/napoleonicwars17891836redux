@@ -1,0 +1,16 @@
+characters={
+	FUL_harstall={
+		name=FUL_CHARACTER_HARSTALL
+		portraits={
+			civilian={
+				large="GFX_portrait_ful_harstall_large"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			desc = FUL_HARSTALL_DESC
+			expire="1797.1.1"
+		}
+}
+}
+

@@ -13,7 +13,7 @@ state={
 
 		}
 		1600.1.1 = {
-			add_core_of = PER
+			add_core_of = GEO
 
 		}
 		1919.1.1 = {
@@ -64,7 +64,7 @@ state={
 	}
 
 	provinces={
-		11708 12380 12450 14056 
+		9702 12380 12450 14056 
 	}
 	manpower=100000
 	buildings_max_level_factor=1.000

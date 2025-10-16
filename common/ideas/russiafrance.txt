@@ -19,6 +19,22 @@ surrender_limit = 1
 army_core_defence_factor = 0.1
 			}
 		}
+														SWI_FRA_swiss_neutrality= {
+			picture = russian_flag_paris
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			
+			modifier = {
+surrender_limit = 1
+			}
+		}
 											CIR_army= {
 			picture = russian_flag_paris
 			
@@ -38,6 +54,24 @@ army_core_defence_factor = 0.1
 			ai_focus_defense_factor =2
 			}
 		}
+											FRA_mass_inflation_counterfeit= {
+			picture = russian_flag_paris
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			
+			modifier = {
+                        production_speed_industrial_complex_factor = -0.25
+                        production_speed_arms_factory_factor = -0.05
+			political_power_gain = -0.5
+			}
+		}
 			CIR_offensive= {
 			picture = russian_flag_paris
 			
@@ -53,6 +87,23 @@ army_core_defence_factor = 0.1
 targeted_modifier = {
     tag = CIR
     attack_bonus_against = 0.2
+}
+		}
+			FRA_invade_HOL_frozen_rhine= {
+			picture = russian_flag_paris
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			
+targeted_modifier = {
+    tag = HOL
+    attack_bonus_against = 0.3
 }
 		}	
 					OTO_offensive= {
@@ -102,11 +153,11 @@ targeted_modifier = {
 			removal_cost = -1
 			
 			modifier = {
-            army_core_defence_factor = 0.4
-			army_core_attack_factor = 0.2
+            army_core_defence_factor = 1
+			army_core_attack_factor = 1
 			political_power_gain = -1
-			army_speed_factor = -0.2
-			ai_focus_defense_factor =0.5
+			army_speed_factor = -0.25
+			ai_focus_defense_factor =1
 			}
 		}
 		pre_stuck_between_east_and_west	= {
@@ -266,9 +317,9 @@ surrender_limit = 0.5
 			modifier = {
 army_defence_factor = -0.05
 army_attack_factor = -0.05
-army_core_defence_factor = 0.3
-army_core_attack_factor = 0.3
-army_speed_factor = -0.75
+army_core_defence_factor = 0.2
+army_core_attack_factor = 0.2
+army_speed_factor = -0.95
 surrender_limit = 1
 		ai_focus_defense_factor = 0.1000
 		ai_join_ally_desire_factor = -5000.0
@@ -384,7 +435,7 @@ production_speed_industrial_complex_factor = 0.01
 			removal_cost = -1
 			
 			modifier = {
-
+recruitable_population_factor=0.01
 training_time_factor = 0.15
 			}
 		}
@@ -725,7 +776,6 @@ fra_nancy_affair_debuff= {
 			}
 			removal_cost = -1
 			modifier = {
-recruitable_population_factor=-0.01
 war_support_factor = 0.1
 weekly_manpower = -25
 }
@@ -809,10 +859,9 @@ industrial_capacity_factory = -0.1
 			}
 			removal_cost = -1
 						modifier = {
-army_speed_factor = -0.1
-weekly_manpower = -25
-stability_factor=-0.1
-war_support_factor=-0.1
+army_speed_factor = -0.2
+stability_factor=-0.2
+war_support_factor=-0.2
 political_power_gain = -0.01
 			}
 		}
@@ -865,6 +914,30 @@ targeted_modifier = {
 }
 targeted_modifier = {
     tag = HOL
+    attack_bonus_against = 0.25
+}
+		}
+fra_cross_the_belgium={
+			picture = russian_flag_paris
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+targeted_modifier = {
+    tag = BEL
+    attack_bonus_against = 0.1
+}
+targeted_modifier = {
+    tag = LIE
+    attack_bonus_against = 0.1
+}
+targeted_modifier = {
+    tag = LUX
     attack_bonus_against = 0.25
 }
 		}
@@ -1234,7 +1307,6 @@ stability_factor=-0.01
 			}
 			removal_cost = -1
 									modifier = {
-recruitable_population_factor=-0.001
 political_power_gain=-0.25
 production_speed_buildings_factor = 0.2
 stability_factor=-0.025
@@ -1288,6 +1360,24 @@ production_speed_buildings_factor = -0.05
 political_power_gain=-0.25
 									}
 		}
+unprepared_army_fra={
+			picture = russian_flag_paris
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+									modifier = {
+		army_defence_factor = -0.25
+		army_attack_factor = -0.25
+		war_support_factor=-0.25
+		army_speed_factor = -0.25
+									}
+		}
 							majorcounterrevolution={
 			picture = russian_flag_paris
 			
@@ -1317,6 +1407,8 @@ production_speed_buildings_factor = -0.25
 			removal_cost = -1
 			
 			modifier = {
+research_speed_factor = -1
+			surrender_limit = 1
 			production_speed_buildings_factor = -0.39
                         industrial_capacity_factory = -0.39
 guarantee_cost =1000
@@ -1353,6 +1445,79 @@ production_speed_buildings_factor = 0.01
 production_speed_buildings_factor = -0.01
 									}
 		}
+italian_campaign_idea_invade_them_ai={
+			picture = russian_flag_paris
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+targeted_modifier = {
+    tag = PRM
+    attack_bonus_against = 0.1
+}
+targeted_modifier = {
+    tag = MAS
+    attack_bonus_against = 0.1
+}
+targeted_modifier = {
+    tag = MOD
+    attack_bonus_against = 0.1
+}
+targeted_modifier = {
+    tag = GOA
+    attack_bonus_against = 0.1
+}
+targeted_modifier = {
+    tag = SPM
+    attack_bonus_against = 0.1
+}
+targeted_modifier = {
+    tag = LUC
+    attack_bonus_against = 0.1
+}
+targeted_modifier = {
+    tag = TUS
+    attack_bonus_against = 0.1
+}
+targeted_modifier = {
+    tag = NAP
+    attack_bonus_against = 0.1
+}
+targeted_modifier = {
+    tag = SIC
+    attack_bonus_against = 0.1
+}
+targeted_modifier = {
+    tag = PAP
+    attack_bonus_against = 0.1
+}
+targeted_modifier = {
+    tag = LBV
+    attack_bonus_against = 0.1
+}
+targeted_modifier = {
+    tag = RAG
+    attack_bonus_against = 0.1
+}
+targeted_modifier = {
+    tag = VNT
+    attack_bonus_against = 0.1
+}
+targeted_modifier = {
+    tag = KNI
+    attack_bonus_against = 0.1
+}
+}
+
+
+
+
+
 							failureincorsica={
 			picture = russian_flag_paris
 			
@@ -1385,7 +1550,7 @@ targeted_modifier = {
     attack_bonus_against = -0.05
 }
 targeted_modifier = {
-    tag = NAP
+    tag = TTS
     attack_bonus_against = -0.05
 }
 		}

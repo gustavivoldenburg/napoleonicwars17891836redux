@@ -31,13 +31,6 @@ state={
 			remove_core_of = SER
 
 		}
-		1910.1.1 = {
-			owner = AUH
-			controller = AUH
-			add_core_of = BOS
-			remove_core_of = SER
-
-		}
 		buildings = {
 			infrastructure = 1
 
@@ -66,9 +59,9 @@ state={
 	}
 
 	provinces={
-		953 11845 13825 13827 
+		953 13825
 	}
-	manpower=100000
+	manpower=25000
 	buildings_max_level_factor=1.000
 	state_category=pastoral
 	local_supplies=0.000

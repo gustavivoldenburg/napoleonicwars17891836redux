@@ -1,4 +1,43 @@
 ﻿capital = 949
+1789.1.1 = {
+recruit_character=SER_stratimirovic
+}
+1837.1.1 = {
+retire_character=SER_stratimirovic
+}
+1818.1.1 = {
+		if = {
+		limit = { has_start_date < 1845.1.1 }
+		set_capital = {
+  state = 926
+  remember_old_capital = no
+}
+}
+}
+1789.1.1 = {
+recruit_character=SER_matijanenadovic
+}
+1855.1.1 = {
+retire_character=SER_matijanenadovic
+}
+1789.1.1 = {
+recruit_character=SER_milovanovic
+}
+1824.1.1 = {
+retire_character=SER_milovanovic
+}
+1789.1.1 = {
+recruit_character=SER_jakovnenadovic
+}
+1837.1.1 = {
+retire_character=SER_jakovnenadovic
+}
+1789.1.1 = {
+recruit_character=SER_nikolajevic
+}
+1817.1.1 = {
+retire_character=SER_nikolajevic
+}
 1815.1.1 = {
 			if = {
 		limit = { has_start_date < 1840.1.1 }
@@ -11,12 +50,52 @@ set_party_name = { ideology = neutrality long_name = SER_OBR_neutrality_party_lo
 set_party_name = { ideology = neutrality long_name = SER_OBR_neutrality_party_long name = SER_OBR_neutrality_party }
 }
 }
+1791.1.1 = {
+			if = {
+		limit = { has_start_date < 1815.1.1 }
+set_party_name = { ideology = neutrality long_name = SER_OSM_neutrality_party_long name = SER_OSM_neutrality_party }
+}
+}
+1789.1.1 = {
+			if = {
+		limit = { has_start_date < 1790.1.1 }
+set_party_name = { ideology = neutrality long_name = SER_LOR_neutrality_party_long name = SER_LOR_neutrality_party }
+}
+}
+1789.1.1 = {
+recruit_character=SER_francisiiser
+recruit_character=SER_ferdinandiser
+recruit_character=SER_josephiiser
+recruit_character=SER_leopoldiiser
+}
+1800.1.1 = {
+retire_character=SER_josephiiser
+retire_character=SER_leopoldiiser
+}
+1836.1.1 = {
+retire_character=SER_francisiiser
+}
+1849.1.1 = {
+retire_character=SER_ferdinandiser
+}
+1789.1.1 = {
+recruit_character=SER_skopljak
+}
+1800.1.1 = {
+promote_character=SER_skopljak
+}
+1837.1.1 = {
+retire_character=SER_skopljak
+}
 1789.1.1 = {
 recruit_character=SER_karadorde
+promote_character=SER_josephiiser
+recruit_character=SER_milosobrenovici
+}
+1804.1.1 = {
 promote_character=SER_karadorde
 }
-1813.1.1 = {
-recruit_character=SER_milosobrenovici
+1815.1.1 = {
 promote_character=SER_milosobrenovici
 retire_character=SER_karadorde
 }
@@ -33,6 +112,9 @@ set_cosmetic_tag = SER_OTO # Serbian Sanjak Smederevo
 set_cosmetic_tag = SER_revolution # Serbian Revolution
 }
 1814.1.1 = {
+set_cosmetic_tag = SER_OTO # Serbian principality
+}
+1815.1.1 = {
 set_cosmetic_tag = SER_principality # Serbian principality
 }
 1889.1.1 = {
@@ -54,7 +136,7 @@ set_oob = "SER_1789"
 }
 }
 
-set_research_slots = 3
+set_research_slots = 0
 1936.1.1 = {
 add_ideas = {
 	anti_german_military
@@ -62,6 +144,9 @@ add_ideas = {
 }
 set_technology = {
 	infantry_weapons = 1
+	transport = 1
+	early_submarine = 1
+        gw_artillery = 1 basic_train = 1
 }
 1936.1.1 = {
 set_technology = {
@@ -230,7 +315,7 @@ set_popularities = {
 		ruling_party = neutrality
 		last_election = "1936.1.1"
 		election_frequency = 48
-		elections_allowed = yes
+		elections_allowed = no
 	}
 }
 2000.1.1 = {
@@ -238,7 +323,7 @@ set_popularities = {
 		ruling_party = democratic
 		last_election = "2000.1.1"
 		election_frequency = 48
-		elections_allowed = yes
+		elections_allowed = no
 	}
 set_popularities = {
 	democratic = 50

@@ -1,0 +1,17 @@
+characters={
+	LIC_ernest={
+		name=LIC_CHARACTER_ERNEST
+		portraits={
+			civilian={
+				large="GFX_portrait_lic_ernest_large"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={Saxe-Coburg-Gotha}
+			desc = LIC_ERNEST_DESC
+			expire="1797.1.1"
+		}
+}
+}
+

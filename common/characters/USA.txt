@@ -1,26 +1,41 @@
 characters={
-	USA_joe_biden={
-		name="Joe Biden"
+					USA_johnjay={
+		name=USA_CHARACTER_JOHNJAY
 		portraits={
-			civilian={
-				large=GFX_portrait_USA_joe_biden
+                        army={
+				small="GFX_idea_usa_johnjay_small"
+			}
+			civilian = {
+				large = GFX_portrait_usa_johnjay_large
 			}
 		}
-		country_leader={
-			ideology=liberalism
-		}
-	}
-	USA_donald_trump={
-		name="Donald Trump"
-		portraits={
-			civilian={
-				large=GFX_portrait_USA_donald_trump
+		advisor={
+                        can_be_fired = no
+			slot = political_advisor
+			idea_token = USA_johnjay
+			allowed  = {
+				original_tag  = USA
+			}
+			available  = {
+		        }
+			traits  = {
+				Chief_Justice_of_the_United_States
+			}
+			on_add  = {
+			}
+			do_effect  = {
+			}
+			ai_will_do  = {
+				factor  = 1.000
 			}
 		}
-		country_leader={
-			ideology=conservatism
-		}
 	}
+
+
+
+
+
+
 	USA_georgewashington={
 		name=USA_CHARACTER_GEORGEWASHINGTON
 		portraits={
@@ -112,7 +127,7 @@ characters={
 			expire="1797.1.1"
 		}
 }
-	USA_franklin_delano_roosevelt={
+USA_franklin_delano_roosevelt={
 		name=USA_franklin_delano_roosevelt
 		portraits={
 			civilian={
@@ -142,16 +157,16 @@ characters={
 	}
 
 	# NATIVE AMERICAN COUNCIL
-	USA_native_american_council = { 
+	USA_native_american_council = {
 		name = USA_native_american_council
 		portraits = {
 			civilian = {
 				large = GFX_portrait_native_american_usa_council
 				#small = GFX_portrait_AFA_mohamed_yayyo_small
 			}
-			
+
 		}
-		
+
 	}
 
 	USA_carnot_wheeler={
@@ -190,16 +205,16 @@ characters={
 					limit  = {
 						has_dlc = "Man the Guns"
 					}
-					has_completed_focus  = USA_suspend_the_presecution 
+					has_completed_focus  = USA_suspend_the_presecution
 					NOT  = {
 						focus_progress  = {
-							focus  = USA_neutrality_act 
+							focus  = USA_neutrality_act
 							progress > 0.000
 						}
 					}
 					NOT  = {
 						focus_progress  = {
-							focus  = USA_limited_intervention 
+							focus  = USA_limited_intervention
 							progress > 0.000
 						}
 					}
@@ -215,25 +230,25 @@ characters={
 				}
 			}
 			traits  = {
-				communist_revolutionary 
+				communist_revolutionary
 			}
 			do_effect  = {
 				NOT  = {
-					has_government  = communism 
+					has_government  = communism
 				}
 			}
 			ai_will_do  = {
 				factor  = 10.000
 				modifier  = {
-					is_historical_focus_on  = yes 
+					is_historical_focus_on  = yes
 					has_game_rule  = {
-						rule  = USA_ai_behavior 
-						option  = default 
+						rule  = USA_ai_behavior
+						option  = default
 					}
 					factor  = 0.000
 				}
 				modifier  = {
-					is_historical_focus_on  = yes 
+					is_historical_focus_on  = yes
 					NOT  = {
 						has_dlc = "Man the Guns"
 					}
@@ -267,14 +282,14 @@ characters={
 		}
 		advisor={
 			cost = 150
-			
+
 			slot = theorist
 			idea_token = george_patton
 			ledger = army
 				allowed = {
 					original_tag = USA
 				}
-				
+
 				traits = {
 					mobile_warfare_expert
 				}
@@ -309,7 +324,7 @@ characters={
 			allowed = {
 				original_tag = USA
 			}
-			
+
 			traits = {
 				superior_firepower_expert
 			}
@@ -336,21 +351,29 @@ characters={
 				small="GFX_idea_dwight_eisenhower"
 			}
 		}
-		advisor={
+		advisor = {
 			slot = army_chief
 			idea_token = dwight_eisenhower
 			allowed = {
+				OR = {
 					original_tag = USA
+					is_literally_china = yes
 				}
-				traits = {
-					army_chief_offensive_2
+			}
+			available = {
+				NOT = {
+					has_country_flag = dwight_d_eisenhower_sent_to_china
 				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
+			}
+			traits = {
+				army_chief_offensive_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
 		}
-		
+
 		field_marshal={
 			traits={ trait_cautious armor_officer politically_connected organizer logistics_wizard offensive_doctrine }
 			skill=5
@@ -425,7 +448,7 @@ characters={
 					factor = 1.000
 				}
 		}
-		
+
 		corps_commander={
 			traits={ trait_reckless infantry_officer }
 			skill=4
@@ -451,13 +474,19 @@ characters={
 			slot = army_chief
 			idea_token = douglas_macarthur
 			allowed = {
-				original_tag = USA
+				OR = {
+					is_literally_china = yes
+					original_tag = USA
+				}
 			}
 			available = {
 				NOT = {
-					has_country_leader = {
-						ruling_only = yes
-						character = USA_douglas_macarthur
+					OR = {
+						has_country_flag = douglas_macarthur_sent_to_china
+						has_country_leader = {
+							ruling_only = yes
+							character = USA_douglas_macarthur
+						}
 					}
 				}
 			}
@@ -469,7 +498,7 @@ characters={
 				factor = 1.000
 			}
 		}
-		
+
 		field_marshal={
 			traits={ brilliant_strategist career_officer media_personality politically_connected offensive_doctrine }
 			skill=4
@@ -734,7 +763,7 @@ characters={
 				factor = 1.000
 			}
 		}
-		
+
 		corps_commander={
 			traits={ career_officer infantry_officer panzer_leader }
 			skill=4
@@ -761,7 +790,10 @@ characters={
 			idea_token = joseph_stilwell
 			ledger = army
 			allowed = {
-				original_tag = USA
+				OR = {
+					is_literally_china = yes
+					original_tag = USA
+				}
 			}
 			available = {
 				NOT = {
@@ -776,7 +808,7 @@ characters={
 				factor = 1.000
 			}
 		}
-		
+
 		corps_commander={
 			traits={ career_officer harsh_leader infantry_officer politically_connected }
 			skill=1
@@ -841,8 +873,8 @@ characters={
 			defense_skill = 1
 			planning_skill = 3
 			logistics_skill = 3
-			visible = { 
-				has_completed_focus = USA_intervention_in_asia 
+			visible = {
+				has_completed_focus = USA_intervention_in_asia
 			}
 		}
 	}
@@ -871,7 +903,7 @@ characters={
 				factor = 1.000
 			}
 		}
-		
+
 		navy_leader={
 			traits={ navy_career_officer aviation_enthusiast caustic_personality blockade_runner superior_tactician }
 			skill=5
@@ -907,7 +939,7 @@ characters={
 				factor = 1.000
 			}
 		}
-		
+
 		navy_leader={
 			traits={ gentlemanly naval_lineage superior_tactician spotter blue_water_expert }
 			skill=5
@@ -981,7 +1013,7 @@ characters={
 				factor = 1.000
 			}
 		}
-		
+
 		navy_leader={
 			traits={ gunnery_expert superior_tactician spotter }
 			skill=3
@@ -1091,7 +1123,7 @@ characters={
 
 	# Bradley up there
 
-	
+
 	USA_dewitt_clinton_ramsey={
 		name=USA_dewitt_clinton_ramsey
 		portraits={
@@ -1161,7 +1193,7 @@ characters={
 			}
 		}
 		advisor={
-			cost = 100	
+			cost = 100
 			slot = theorist
 			idea_token = harold_mcclelland
 			ledger = air
@@ -1169,54 +1201,6 @@ characters={
 				original_tag = USA
 			}
 			traits = { air_warfare_theorist }
-		}
-	}
-
-	USA_robert_oppenheimer={
-		name=USA_robert_oppenheimer
-		portraits={
-			army={
-				small="GFX_idea_robert_oppenheimer"
-			}
-		}
-		advisor={
-			cost = 100
-			slot = theorist
-			idea_token = robert_oppenheimer
-			ledger = army
-			allowed = {
-				original_tag = USA
-			}
-			research_bonus = {
-				nuclear = 0.150
-			}
-			traits = {
-				nuclear_scientist
-			}
-		}
-	}
-
-	USA_robert_goddard={
-		name=USA_robert_goddard
-		portraits={
-			army={
-				small="GFX_idea_robert_goddard"
-			}
-		}
-		advisor={
-			cost = 100
-			slot = theorist
-			idea_token = robert_goddard
-			ledger = air
-			allowed = {
-				original_tag = USA
-			}
-			research_bonus = {
-				rocketry = 0.150
-			}
-			traits = {
-				rocket_scientist
-			}
 		}
 	}
 
@@ -1247,12 +1231,17 @@ characters={
 			}
 			cost = 100
 			ai_will_do = {
-				factor = 1.000
+				base = 1
+				modifier = {
+					factor = 10
+					# I don't care that it's earlier than historical, the US needs army XP earlier...
+					date > 1938.6.1
+				}
 			}
 		}
 	}
 
-	
+
 	### NAVY CHIEFS ###
 
 	# King up there
@@ -1330,7 +1319,7 @@ characters={
 			}
 		}
 	}
-	
+
 	USA_charles_lindbergh={
 		name=USA_charles_lindbergh
 		portraits={
@@ -1458,7 +1447,7 @@ characters={
 			}
 		}
 	}
-	
+
 	USA_thomas_kinkaid={
 		name=USA_thomas_kinkaid
 		portraits={
@@ -1485,7 +1474,7 @@ characters={
 
 
 	### POLITICAL ADVISORS ###
-		
+
 	#Earl Bowder up there
 
 	USA_harry_white={
@@ -1499,35 +1488,26 @@ characters={
 			slot = political_advisor
 			idea_token = harry_white
 			allowed  = {
-				OR = {
-					original_tag  = USA
-					original_tag  = CHL
-				}
+				original_tag  = USA
 			}
 			available  = {
-				OR = {
-					if  = {
-						limit  = {
-							has_dlc = "Man the Guns"
-						}
-						has_completed_focus  = USA_reach_out_to_the_ware_group 
-					}
 
-					AND = {
-						CHL_hub_of_the_revolution_trigger = yes
-						USA = { has_completed_focus = USA_america_first }
-					}	
+				if  = {
+					limit  = {
+						has_dlc = "Man the Guns"
+					}
+					has_completed_focus  = USA_reach_out_to_the_ware_group
 				}
-				
+
 				NOT  = {
-					has_idea  = USA_henry_morgenthau 
+					has_idea  = USA_henry_morgenthau
 				}
 			}
 			visible  = {
 				has_dlc = "Man the Guns"
 			}
 			traits  = {
-				financial_expert 
+				financial_expert
 			}
 			cost  = 0.000
 			do_effect  = {
@@ -1537,7 +1517,7 @@ characters={
 			}
 		}
 		allowed_civil_war = {
-			has_government = communism 
+			has_government = communism
 		}
 	}
 
@@ -1555,7 +1535,6 @@ characters={
 				OR = {
 					original_tag  = USA
 					original_tag = SWE
-					original_tag = CHL
 				}
 			}
 			available  = {
@@ -1564,25 +1543,19 @@ characters={
 						limit  = {
 							has_dlc = "Man the Guns"
 						}
-						has_completed_focus  = USA_reach_out_to_the_ware_group 
+						has_completed_focus  = USA_reach_out_to_the_ware_group
 					}
-
 					AND = {
 						SWE_refuge_for_revolutionaries_trigger = yes
 						USA = { has_completed_focus = USA_america_first }
 					}
-
-					AND = {
-						CHL_hub_of_the_revolution_trigger = yes
-						USA = { has_completed_focus = USA_america_first }
-					}	
 				}
 			}
 			visible  = {
 				has_dlc = "Man the Guns"
 			}
 			traits  = {
-				economist 
+				economist
 			}
 			cost  = 0.000
 			do_effect  = {
@@ -1592,7 +1565,7 @@ characters={
 			}
 		}
 		allowed_civil_war  = {
-			has_government  = communism 
+			has_government  = communism
 		}
 	}
 
@@ -1610,7 +1583,6 @@ characters={
 				OR = {
 					original_tag  = USA
 					original_tag = SWE
-					original_tag = CHL
 				}
 			}
 			available  = {
@@ -1619,23 +1591,19 @@ characters={
 						limit  = {
 							has_dlc = "Man the Guns"
 						}
-						has_completed_focus  = USA_reach_out_to_the_ware_group 
+						has_completed_focus  = USA_reach_out_to_the_ware_group
 					}
 					AND = {
 						SWE_refuge_for_revolutionaries_trigger = yes
 						USA = { has_completed_focus = USA_america_first }
 					}
-					AND = {
-						CHL_hub_of_the_revolution_trigger = yes
-						USA = { has_completed_focus = USA_america_first }
-					}	
 				}
 			}
 			visible  = {
 				has_dlc = "Man the Guns"
 			}
 			traits  = {
-				editor 
+				editor
 			}
 			cost  = 0.000
 			do_effect  = {
@@ -1645,7 +1613,7 @@ characters={
 			}
 		}
 		allowed_civil_war  = {
-			has_government  = communism 
+			has_government  = communism
 		}
 	}
 
@@ -1667,14 +1635,14 @@ characters={
 					limit  = {
 						has_dlc = "Man the Guns"
 					}
-					has_completed_focus  = USA_america_first 
+					has_completed_focus  = USA_america_first
 				}
 			}
 			visible  = {
 				has_dlc = "Man the Guns"
 			}
 			traits  = {
-				editor 
+				editor
 			}
 			cost  = 50.000
 			do_effect  = {
@@ -1685,7 +1653,7 @@ characters={
 		}
 		allowed_civil_war  = {
 			NOT  = {
-				has_government  = communism 
+				has_government  = communism
 			}
 		}
 	}
@@ -1708,14 +1676,14 @@ characters={
 					limit  = {
 						has_dlc = "Man the Guns"
 					}
-					has_completed_focus  = USA_america_first 
+					has_completed_focus  = USA_america_first
 				}
 			}
 			visible  = {
 				has_dlc = "Man the Guns"
 			}
 			traits  = {
-				captain_of_industry 
+				captain_of_industry
 			}
 			cost  = 50.000
 			do_effect  = {
@@ -1726,7 +1694,7 @@ characters={
 		}
 		allowed_civil_war  = {
 			NOT  = {
-				has_government  = communism 
+				has_government  = communism
 			}
 		}
 	}
@@ -1755,11 +1723,11 @@ characters={
 				}
 			}
 			traits  = {
-				democratic_reformer 
+				democratic_reformer
 			}
 			do_effect  = {
 				NOT  = {
-					has_government  = democratic 
+					has_government  = democratic
 				}
 			}
 			ai_will_do  = {
@@ -1786,16 +1754,16 @@ characters={
 					limit  = {
 						has_dlc = "Man the Guns"
 					}
-					has_completed_focus  = USA_america_first 
+					has_completed_focus  = USA_america_first
 					NOT  = {
 						focus_progress  = {
-							focus  = USA_neutrality_act 
+							focus  = USA_neutrality_act
 							progress > 0.000
 						}
 					}
 					NOT  = {
 						focus_progress  = {
-							focus  = USA_limited_intervention 
+							focus  = USA_limited_intervention
 							progress > 0.000
 						}
 					}
@@ -1810,25 +1778,25 @@ characters={
 				}
 			}
 			traits  = {
-				fascist_demagogue 
+				fascist_demagogue
 			}
 			do_effect  = {
 				NOT  = {
-					has_government  = fascism 
+					has_government  = fascism
 				}
 			}
 			ai_will_do  = {
 				factor  = 10.000
 				modifier  = {
-					is_historical_focus_on  = yes 
+					is_historical_focus_on  = yes
 					has_game_rule  = {
-						rule  = USA_ai_behavior 
-						option  = default 
+						rule  = USA_ai_behavior
+						option  = default
 					}
 					factor  = 0.000
 				}
 				modifier  = {
-					is_historical_focus_on  = yes 
+					is_historical_focus_on  = yes
 					NOT  = {
 						has_dlc = "Man the Guns"
 					}
@@ -1859,7 +1827,7 @@ characters={
 				original_tag  = USA
 			}
 			traits  = {
-				silent_workhorse 
+				silent_workhorse
 			}
 		}
 	}
@@ -1878,10 +1846,10 @@ characters={
 				original_tag  = USA
 			}
 			available  = {
-				has_completed_focus  = USA_empower_the_huac 
+				has_completed_focus  = USA_empower_the_huac
 			}
 			traits  = {
-				anti_communist_crusader 
+				anti_communist_crusader
 			}
 		}
 	}
@@ -1900,7 +1868,7 @@ characters={
 				original_tag  = USA
 			}
 			traits  = {
-				compassionate_gentleman 
+				compassionate_gentleman
 			}
 		}
 	}
@@ -1919,9 +1887,9 @@ characters={
 				original_tag  = USA
 			}
 			traits  = {
-				smooth_talking_charmer 
+				smooth_talking_charmer
 			}
-		}		
+		}
 	}
 
 	USA_henry_morgenthau={
@@ -1939,11 +1907,11 @@ characters={
 			}
 			available  = {
 				NOT  = {
-					has_idea  = harry_white 
+					has_idea  = harry_white
 				}
 			}
 			traits  = {
-				financial_expert 
+				financial_expert
 			}
 		}
 	}
@@ -1962,7 +1930,7 @@ characters={
 				original_tag  = USA
 			}
 			traits  = {
-				war_industrialist 
+				war_industrialist
 			}
 		}
 	}
@@ -1981,7 +1949,7 @@ characters={
 				original_tag  = USA
 			}
 			traits  = {
-				armaments_organizer 
+				armaments_organizer
 			}
 		}
 	}
@@ -1997,7 +1965,7 @@ characters={
 			slot = political_advisor
 			idea_token = usa_william_donovan
 			available  = {
-				has_intelligence_agency  = yes 
+				has_intelligence_agency  = yes
 				threat > 0.500
 			}
 			allowed  = {
@@ -2005,8 +1973,182 @@ characters={
 				has_dlc = "La Resistance"
 			}
 			traits  = {
-				head_of_intelligence 
+				head_of_intelligence
 			}
-		}		
+		}
 	}
+
+
+  #####
+ #     #   ####   #  ######  #    #  #####  #   ####   #####   ####
+ #        #    #  #  #       ##   #    #    #  #         #    #
+  #####   #       #  #####   # #  #    #    #   ####     #     ####
+       #  #       #  #       #  # #    #    #       #    #         #
+ #     #  #    #  #  #       #   ##    #    #  #    #    #    #    #
+  #####    ####   #  ######  #    #    #    #   ####     #     ####
+
+
+
+	USA_robert_oppenheimer = {
+		name = USA_robert_oppenheimer
+		portraits = {
+			army = {
+				large = GFX_portrait_USA_robert_oppenheimer
+				small = GFX_idea_robert_oppenheimer
+			}
+		}
+
+		scientist = {
+			traits = { scientist_trait_nuclear_specialist scientist_trait_brilliant_theorist }
+			skills = {
+				specialization_nuclear = 2
+			}
+		}
+
+		#advisor={
+		#	cost = 100
+		#	slot = theorist
+		#	idea_token = robert_oppenheimer
+		#	ledger = army
+		#	allowed = {
+		#		original_tag = USA
+		#	}
+		#	research_bonus = {
+		#		nuclear = 0.150
+		#	}
+		#	traits = {
+		#		nuclear_scientist
+		#	}
+		#}
+	}
+
+	USA_robert_goddard = {
+		name = USA_robert_goddard
+		portraits = {
+			army = {
+				large = GFX_portrait_USA_robert_goddard
+				small = GFX_idea_robert_goddard
+			}
+		}
+
+		scientist = {
+			traits = { scientist_trait_rocketry_specialist scientist_trait_bright }
+			skills = {
+				specialization_air = 3
+			}
+		}
+
+		#advisor={
+		#	cost = 100
+		#	slot = theorist
+		#	idea_token = robert_goddard
+		#	ledger = air
+		#	allowed = {
+		#		original_tag = USA
+		#	}
+		#	research_bonus = {
+		#		rocketry = 0.150
+		#	}
+		#	traits = {
+		#		rocket_scientist
+		#	}
+		#}
+	}
+
+	USA_leslie_skinner = {
+		name = USA_leslie_skinner
+		portraits = {
+			army = {
+				large = GFX_portrait_USA_leslie_skinner
+			}
+		}
+
+		scientist = {
+			traits = { scientist_trait_rocketry_specialist scientist_trait_gifted_engineer }
+			skills = {
+				specialization_air = 2
+			}
+		}
+	}
+
+	USA_edward_curtis_wells = {
+		name = USA_edward_curtis_wells
+		portraits = {
+			army = {
+				large = GFX_portrait_USA_edward_curtis_wells
+			}
+		}
+
+		scientist = {
+			traits = { scientist_trait_aircraft_specialist }
+			skills = {
+				specialization_air = 2
+			}
+		}
+	}
+
+	USA_william_francis_gibbs = {
+		name = USA_william_francis_gibbs
+		portraits = {
+			army = {
+				large = GFX_portrait_USA_william_francis_gibbs
+			}
+		}
+
+		scientist = {
+			traits = { scientist_trait_surface_ship_specialist }
+			skills = {
+				specialization_naval = 2
+			}
+		}
+	}
+
+	USA_andrew_mckee = {
+		name = USA_andrew_mckee
+		portraits = {
+			army = {
+				large = GFX_portrait_USA_andrew_mckee
+			}
+		}
+
+		scientist = {
+			traits = { scientist_trait_submarine_specialist }
+			skills = {
+				specialization_naval = 2
+			}
+		}
+	}
+
+	USA_john_walter_christie = {
+		name = USA_john_walter_christie
+		portraits = {
+			army = {
+				large = GFX_portrait_USA_john_walter_christie
+			}
+		}
+
+		scientist = {
+			traits = { scientist_trait_armored_specialist scientist_trait_gifted_engineer }
+			skills = {
+				specialization_land = 2
+			}
+		}
+	}
+
+	USA_vannevar_bush = {
+		name = USA_vannevar_bush
+		portraits = {
+			army = {
+				large = GFX_portrait_USA_vannevar_bush
+			}
+		}
+
+		scientist = {
+			traits = { scientist_trait_electronics_specialist }
+			skills = {
+				specialization_air = 2
+			}
+		}
+	}
+
 }

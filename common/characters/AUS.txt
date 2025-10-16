@@ -1,9 +1,360 @@
 characters = { 
 
+	#####################
+	###COUNTRY LEADERS###
+	#####################
+
+	#Nonaligned
+			AUS_leiberich={
+		name=AUS_CHARACTER_LEIBERICH
+		portraits={
+			army={
+				large=GFX_portrait_aus_leiberich_large
+				small=GFX_portrait_aus_leiberich_small
+			}
+		}
+		field_marshal={
+			skill=2
+			attack_skill=2
+			defense_skill=5
+			planning_skill=1
+			logistics_skill=3
+			legacy_id=0
+		}
+	}
+			AUS_jozsef={
+		name=AUS_CHARACTER_JOZSEF
+		portraits={
+			army={
+				large=GFX_portrait_aus_jozsef_large
+				small=GFX_portrait_aus_jozsef_small
+			}
+		}
+		field_marshal={
+			skill=5
+			attack_skill=4
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=5
+			legacy_id=0
+		}
+	}
+						AUS_stratimirovic={
+		name=AUS_CHARACTER_STRATIMIROVIC
+		portraits={
+                        army={
+				small="GFX_idea_aus_stratimirovic_small"
+			}
+			civilian = {
+				large = GFX_portrait_aus_stratimirovic_large
+			}
+		}
+		advisor={
+                        can_be_fired = no
+			slot = political_advisor
+			idea_token = AUS_stratimirovic
+			allowed  = {
+				original_tag  = AUS
+			}
+			available  = {
+			owns_state=45
+		        }
+			traits  = {
+				Metropolitanate_of_Karlovci
+			}
+			on_add  = {
+			}
+			do_effect  = {
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+	}
+					AUS_fanny={
+		name=AUS_CHARACTER_FANNY
+		portraits={
+                        army={
+				small="GFX_idea_aus_fanny_small"
+			}
+			civilian = {
+				large = GFX_portrait_aus_fanny_large
+			}
+		}
+		advisor={
+                        can_be_fired = no
+			slot = political_advisor
+			idea_token = AUS_fanny
+			allowed  = {
+				original_tag  = AUS
+			}
+			available  = {
+		        }
+			traits  = {
+				Viennese_socialite
+			}
+			on_add  = {
+			}
+			do_effect  = {
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+	}
+				AUS_rothschildii={
+		name=AUS_CHARACTER_ROTHSCHILDII
+		portraits={
+                        army={
+				small="GFX_idea_aus_rothschildii_small"
+			}
+			civilian = {
+				large = GFX_portrait_aus_rothschildii_large
+			}
+		}
+		advisor={
+                        can_be_fired = no
+			slot = political_advisor
+			idea_token = AUS_rothschildii
+			allowed  = {
+				original_tag  = AUS
+			}
+			available  = {
+		        }
+			traits  = {
+				rothschild_banker
+			}
+			on_add  = {
+			}
+			do_effect  = {
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+	}	
+					AUS_aloysvon={
+		name=AUS_CHARACTER_ALOYSVON
+		portraits={
+                        army={
+				small="GFX_idea_aus_aloysvon_small"
+			}
+			civilian = {
+				large = GFX_portrait_aus_aloysvon_large
+			}
+		}
+		advisor={
+                        can_be_fired = no
+			slot = political_advisor
+			idea_token = AUS_aloysvon
+			allowed  = {
+				original_tag  = AUS
+			}
+			available  = {
+		        }
+			traits  = {
+				count_of_rietberg
+			}
+			on_add  = {
+			}
+			do_effect  = {
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+	}
+					AUS_kohary={
+		name=AUS_CHARACTER_KOHARY
+		portraits={
+                        army={
+				small="GFX_idea_aus_kohary_small"
+			}
+			civilian = {
+				large = GFX_portrait_aus_kohary_large
+			}
+		}
+		advisor={
+                        can_be_fired = no
+			slot = political_advisor
+			idea_token = AUS_kohary
+			allowed  = {
+				original_tag  = AUS
+			}
+			available  = {
+			NOT={country_exists=HUN}
+		        }
+			traits  = {
+				hungarian_magnate
+			}
+			on_add  = {
+			}
+			do_effect  = {
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+	}
+						AUS_eskeles={
+		name=AUS_CHARACTER_ESKELES
+		portraits={
+                        army={
+				small="GFX_idea_aus_eskeles_small"
+			}
+			civilian = {
+				large = GFX_portrait_aus_eskeles_large
+			}
+		}
+		advisor={
+                        can_be_fired = no
+			slot = political_advisor
+			idea_token = AUS_eskeles
+			allowed  = {
+				original_tag  = AUS
+			}
+			available  = {
+		        }
+			traits  = {
+				court_jew
+			}
+			on_add  = {
+			}
+			do_effect  = {
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+	}
+							AUS_michaelhaydn={
+		name=AUS_CHARACTER_MICHAELHAYDN
+		portraits={
+                        army={
+				small="GFX_idea_aus_michaelhaydn_small"
+			}
+			civilian = {
+				large = GFX_portrait_aus_michaelhaydn_large
+			}
+		}
+		advisor={
+                        can_be_fired = no
+			slot = political_advisor
+			idea_token = AUS_michaelhaydn
+			allowed  = {
+				original_tag  = AUS
+			}
+			available  = {
+		        }
+			traits  = {
+				composer_music
+			}
+			on_add  = {
+			}
+			do_effect  = {
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+	}
+								AUS_haydn={
+		name=AUS_CHARACTER_HAYDN
+		portraits={
+                        army={
+				small="GFX_idea_aus_haydn_small"
+			}
+			civilian = {
+				large = GFX_portrait_aus_haydn_large
+			}
+		}
+		advisor={
+                        can_be_fired = no
+			slot = political_advisor
+			idea_token = AUS_haydn
+			allowed  = {
+				original_tag  = AUS
+			}
+			available  = {
+		        }
+			traits  = {
+				composer_music
+			}
+			on_add  = {
+			}
+			do_effect  = {
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+	}
+								AUS_mozart={
+		name=AUS_CHARACTER_MOZART
+		portraits={
+                        army={
+				small="GFX_idea_aus_mozart_small"
+			}
+			civilian = {
+				large = GFX_portrait_aus_mozart_large
+			}
+		}
+		advisor={
+                        can_be_fired = no
+			slot = political_advisor
+			idea_token = AUS_mozart
+			allowed  = {
+				original_tag  = AUS
+			}
+			available  = {
+		        }
+			traits  = {
+				composer_music
+			}
+			on_add  = {
+			}
+			do_effect  = {
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+	}
+								AUS_beethoven={
+		name=AUS_CHARACTER_BEETHOVEN
+		portraits={
+                        army={
+				small="GFX_idea_aus_beethoven_small"
+			}
+			civilian = {
+				large = GFX_portrait_aus_beethoven_large
+			}
+		}
+		advisor={
+                        can_be_fired = no
+			slot = political_advisor
+			idea_token = AUS_beethoven
+			allowed  = {
+				original_tag  = AUS
+			}
+			available  = {
+		        }
+			traits  = {
+				composer_music
+			}
+			on_add  = {
+			}
+			do_effect  = {
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+	}
 	AUS_metternich={
 		name=AUS_CHARACTER_METTERNICH
 		portraits={
-            army={
+                        army={
 				small="GFX_idea_aus_metternich_small"
 			}
 			civilian = {
@@ -11,7 +362,7 @@ characters = {
 			}
 		}
 		advisor={
-            can_be_fired = no
+                        can_be_fired = no
 			slot = political_advisor
 			idea_token = AUS_metternich
 			allowed  = {
@@ -30,41 +381,7 @@ characters = {
 				factor  = 1.000
 			}
 		}
-	}
-
-	AUS_bernhard_von_eskeles = {
-		name="Bernhard, Knight and Baron von Eskeles"
-		portraits={
-			army={
-				small="GFX_idea_aus_bernhard_von_eskeles_small"
-			}
-			civilian = {
-				large = GFX_portrait_aus_bernhard_von_eskeles_large
-			}
-		}
-		advisor={
-            can_be_fired = yes
-			slot = political_advisor
-			idea_token = AUS_bernhard_von_eskeles
-			allowed  = {
-				original_tag  = AUS
-			}
-			available  = {
-				has_completed_focus = austria_1789_1815_first_100_focus_28
-		    }
-			traits  = {
-				court_jew
-			}
-			on_add  = {
-			}
-			do_effect  = {
-			}
-			ai_will_do  = {
-				factor  = 1.000
-			}
-		}
-	}
-
+	}		
 	AUS_ladislaus={
 		name=AUS_CHARACTER_LADISLAUS
 		portraits={
@@ -1699,50 +2016,6 @@ characters = {
 	#######################
 	#######GENERALS########
 	#######################
-
-	AUS_jozsef_alvinczi = {
-		name = "Alvinczi József"
-		portraits = {
-			army = {
-				large = "GFX_portrait_AUS_jozsef_alvinczi"
-				small = "GFX_portrait_AUS_jozsef_alvinczi_small"
-			}
-		}
-		corps_commander = {
-			traits = {}
-			skill = 4
-			attack_skill = 4
-			defense_skill = 3
-			planning_skill = 4
-			logistics_skill = 4
-			legacy_id = -1
-			visible = {
-				
-			}
-		}
-	}
-
-	AUS_karl_mack = {
-		name = "Karl Freiherr Mack von Leiberich"
-		portraits = {
-			army = {
-				large = "GFX_portrait_AUS_karl_mack"
-				small = "GFX_portrait_AUS_karl_mack_small"
-			}
-		}
-		corps_commander = {
-			traits = {}
-			skill = 2
-			attack_skill = 2
-			defense_skill = 2
-			planning_skill = 1
-			logistics_skill = 2
-			legacy_id = -1
-			visible = {
-				date > 1.1.1793
-			}
-		}
-	}
 
 	AUS_karl_eglseer = {
 		name = AUS_karl_eglseer

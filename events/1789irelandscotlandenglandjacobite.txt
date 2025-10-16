@@ -1,0 +1,110 @@
+###########################
+# Europe Province Rework Events
+###########################
+
+add_namespace = ire_1789_event
+
+# French Revolution
+country_event = {
+	id = ire_1789_event.1
+	title = "The 2nd Stuart Restoration"
+	desc = ire_1789_event.1.d
+	picture = GFX_idi_amin_india
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "The Colonies left us"
+		ai_chance = { factor = 100 } 
+	news_event = ire_1789_news.1
+	HOL={set_cosmetic_tag=netherlands_hanover_kingdom}
+	RAJ={set_cosmetic_tag=HAN_RAJ}
+	AST={set_cosmetic_tag=HAN_AST}
+	CAN={set_cosmetic_tag=HAN_CAN}
+	INS={set_cosmetic_tag=HAN_DEI}
+	COW={set_cosmetic_tag=ENG_jacobite}
+    IRE={set_cosmetic_tag=IRE_jacobite}
+    SCO={set_cosmetic_tag=SCO_jacobite}
+every_country = {
+  limit = {
+is_subject_of=ENG
+not={tag=NIR}
+  }
+ENG={
+	    set_autonomy = {
+        target = PREV
+        autonomous_state = autonomy_free
+        freedom_level = 0.2
+		}
+	}
+HOL={
+	    set_autonomy = {
+        target = PREV
+        autonomous_state = autonomy_dominion
+        freedom_level = 0.2
+		}
+	}
+}
+		every_state={
+		limit={
+		or={
+		is_core_of=HAN
+		}
+		}
+		add_core_of=HOL
+		}
+		HOL={
+		annex_country = { target = HAN transfer_troops = yes }
+		}
+		HOL={
+		annex_country = { target = ENG transfer_troops = yes }
+		}
+	every_state={
+limit={
+is_core_of=IRE
+}
+transfer_state_to=IRE
+}
+	every_state={
+limit={
+country_exists=NIR
+}
+IRE={annex_country = { target = NIR transfer_troops = no }}
+}
+	every_state={
+limit={
+is_core_of=SCO
+}
+transfer_state_to=SCO
+}
+	every_state={
+limit={
+is_core_of=ENG
+not={is_core_of=SCO}
+not={is_core_of=IRE}
+}
+add_core_of=COW
+transfer_state_to=COW
+}
+every_state={
+remove_core_of=ENG
+}
+COW={
+		set_capital = {
+  state = 126
+  remember_old_capital = yes
+}
+}
+IRE={
+	set_autonomy = {
+        target = COW
+        autonomous_state = autonomy_personal_union
+        freedom_level = 0.4
+	}
+		set_autonomy = {
+        target = SCO
+        autonomous_state = autonomy_personal_union
+        freedom_level = 0.4
+	}
+}
+	}
+}

@@ -1,0 +1,45 @@
+characters={
+	FUR_karl={
+		name=FUR_CHARACTER_KARL
+		portraits={
+			civilian={
+				large="GFX_portrait_fur_karl_large"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={Furstenberg}
+			desc = FUR_KARL_DESC
+			expire="1797.1.1"
+		}
+}
+	FUR_charles={
+		name=FUR_CHARACTER_CHARLES
+		portraits={
+			civilian={
+				large="GFX_portrait_fur_charles_large"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={Furstenberg}
+			desc = FUR_CHARLES_DESC
+			expire="1797.1.1"
+		}
+}
+	FUR_joseph={
+		name=FUR_CHARACTER_JOSEPH
+		portraits={
+			civilian={
+				large="GFX_portrait_fur_joseph_large"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={Furstenberg}
+			desc = FUR_JOSEPH_DESC
+			expire="1797.1.1"
+		}
+}
+}
+

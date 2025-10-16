@@ -1,0 +1,15 @@
+characters={
+	BOS_husein={
+		name=BOS_CHARACTER_HUSEIN
+		portraits={
+			civilian={
+				large="GFX_portrait_bos_husein_large"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			desc = BOS_HUSEIN_DESC
+			expire="1797.1.1"
+		}
+}
+}

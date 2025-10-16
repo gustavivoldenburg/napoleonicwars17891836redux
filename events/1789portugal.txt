@@ -13,7 +13,7 @@ country_event = {
 	#is_triggered_only = yes
 trigger = {	
 date > 1815.12.16 has_start_date < 1816.1.1 
-original_tag = POR			
+tag = POR			
 }
 fire_only_once = yes
 	option = { # 

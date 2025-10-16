@@ -6,7 +6,8 @@ state={
 	history={
 		owner = OSN
                 add_core_of = OSN
-		1812.1.1 = {
+		1808.1.1 = {
+		owner=WTF
         add_core_of = WTF
         }
 		1814.1.1 = {

@@ -1,4 +1,4 @@
-l_english:
+﻿l_english:
 french_revolution_harsh:0 " The French Revolution"
 
 french_debt_revolution:0 "French Debt"
@@ -53,10 +53,19 @@ delusional_expansionism:0 "Delusional Expansionism"
 
 hun_bop:0 "Balance of Power" 
 
+has_invaded_prm_mod_mas:0 "Has Invaded Parma Modena Massa and the Papal States"
+armistice_with_sardinia_piedmont_so_you_can_invade_italy:0 "Has had Peace with Sardinia-Piedmont"
+pre_has_puppeted_hanover:0 "Prussia has held Hanover for Ransom"
+unprepared_army_fra:0 "The Unprepared French Army"
 ita_hidden_ai_idea:0 "Italy hidden Idea"
 oto_hidden_ai_idea:0 "Ottomans hidden Idea"
 tissue_necrosis:0 "Tissue Necrosis"
-
+jurist_and_diplomat:0 "Jurist and Diplomat"
+israel_france_has_won_war_against_ottomans_ohmygod_flag:0 "France has pushed into the Palestinian coast Jerusalem and Anatolia"
+italian_campaign_idea_invade_them_ai:0 "The Italian Campaign" 
+italian_gambit_i_supposed:0 "Has Taken the Italian Campaign" 
+Chief_Justice_of_the_United_States:0 "Chief Justice of the United States" 
+rus_wants_to_integrate_west_georgia:0 "Pushed for Further Georgians gains at the Treaty of Adrianople/Annexation of Guria" 
 
 liberte:0 "Liberté" 
 
@@ -103,6 +112,8 @@ russian_jewry:0 "Russian Jewry"
 alleged_backwardness:0 "Alleged Backwardness"
 
 fra_cross_the_rhine:0 "Crossing the Rhine"
+
+fra_cross_the_belgium:0 "Pushing into Belgium"
 
 swe_has_revoked_the_treaty_of_abo:0 "Sweden has fully revoked the Treaty of Åbo"
 
@@ -156,6 +167,8 @@ swiss_has_puppeted_by_fra:0 "France has changed the Swiss Government"
 wonthegamble:0 "the Glorious Revolution of 1688"
 
 gustav_iii_has_died:0 "Gustav III has been Murdered"
+
+hol_is_puppet_of_fra:0 "The Batavian Republic has been formed"
 
 yellowfever:0 "The Yellow Fever"
 usabudget:0 "The American Budget"
@@ -227,7 +240,7 @@ swe_oldenburg_dynasty:0"Has Proclaimed the House of Holstein-Gottorp Oldenburg"
 ultraroyalist:0 "Ultra Royalist Politician"
 prestigious_foreign_minister:0 "Prestigious Foreign Minister"
 prestigious_self_serving_foreign_minister:0 "Prestigious Self Serving Foreign Minister"
-
+treaty_of_campo_formio_has_happened:0"The Treaty of Campo Formio has happened (1st Coalition has ended)"
 britain_prime_minister_whig:0"Whig"
 britain_prime_minister_tory:0"Tory"
 britain_prime_minister_conservative:0"Conservative"
@@ -382,3 +395,34 @@ PRE_has_claimed_the_throne_of_str:0 "Prussia has claimed the Throne of Mecklenbu
 rothschild_banker:0 "Rothschild Banker"
 
 member_of_the_house_of_medici:0 "Member of the House of Medici"
+
+hungarian_magnate:0 "Hungarian Magnate"
+composer_music:0 "Composer"
+court_jew:0 "Court Jew"
+serbian_prime_minister:0 "Serbian Prime Minister"
+LordChiefJusticeofIreland:0 "Lord Chief Justice of Ireland"
+MarshaloftheRealm:0 "Marshal of the Realm"
+fra_prime_minister:0 "French Prime Minister"
+den_prime_minister:0 "Danish Prime Minister"
+fra_terrorist:0 "Terrorist"
+professoroflaw:0 "Professor of Law"
+has_signed_a_seperate_peace_pre:0 "Has Signed a Seperate Peace with Prussia"
+count_of_rietberg:0 "The Count of Rietberg"
+basel_diplomat:0 "Diplomat"
+campoformio_prelude_give_access_to_new_focus:0 "The Peace before Campo Formio has happened"
+han_anglophile:0 "Anglophile"
+campoformio_focus:0 "The Treaty of Campo Formio has happened"
+masonic_physician:0 "Masonic Physician"
+Viennese_socialite:0 "Viennese socialite"
+Metropolitanate_of_Karlovci:0 "Metropolitanate of Karlovci"
+unlock_aus_train_new_divisions:0 "The War of the 1st Coalition has triggered"
+
+fra_hyper_inflation:0 "France has Hyperinflation"
+FRA_mass_inflation_counterfeit:0 "French Hyperinflation"
+
+FRA_invade_HOL_frozen_rhine:0 "The Frozen Rhine River"
+unlock_parma_etruria_integration:0 "Has declared war on Parma and Etruria"
+SWI_FRA_swiss_neutrality:0 "Swiss Neutrality"
+the_armistice_of_steyr_has_happened_flag:0 "The Armistice of Steyr has happened between France and Austria"
+MinisteroftheRoyalHouseandofForeignAffairsofBavaria:0 "Minister of the Royal House and of Foreign Affairs of Bavaria"
+jewishcultleader:0 "Jewish Cult Leader"

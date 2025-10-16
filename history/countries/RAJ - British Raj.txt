@@ -35,6 +35,9 @@ set_stability = 0.6
 set_war_support = 0.1
 set_technology = {
 	infantry_weapons = 1
+	transport = 1
+	early_submarine = 1
+        gw_artillery = 1 basic_train = 1
 }
 1936.1.1 = {
 # Starting tech
@@ -50,8 +53,6 @@ set_technology = {
 	fuel_silos = 1
 	fuel_refining = 1
 }
-}
-
 recruit_character = RAJ_lord_linlithgow
 recruit_character = RAJ_v_d_savarkar
 recruit_character = RAJ_p_krishna_pillai
@@ -103,7 +104,7 @@ if = {
 	recruit_character = RAJ_kodandera_subayya_thimayya
 	recruit_character = RAJ_jayanto_nath_chaudhuri
 }
-
+}
 1936.1.1 = {
 if = {
 	limit = {

@@ -1,0 +1,45 @@
+characters={
+	GTH_ernestii={
+		name=GTH_CHARACTER_ERNESTII
+		portraits={
+			civilian={
+				large="GFX_portrait_gth_ernestii_large"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={Saxe-Gotha-Altenburg}
+			desc = GTH_ERNESTII_DESC
+			expire="1797.1.1"
+		}
+}
+	GTH_frederickiv={
+		name=GTH_CHARACTER_FREDERICKIV
+		portraits={
+			civilian={
+				large="GFX_portrait_gth_frederickiv_large"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={Saxe-Gotha-Altenburg}
+			desc = GTH_FREDERICKIV_DESC
+			expire="1797.1.1"
+		}
+}
+	GTH_augustus={
+		name=GTH_CHARACTER_AUGUSTUS
+		portraits={
+			civilian={
+				large="GFX_portrait_gth_augustus_large"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={Saxe-Gotha-Altenburg}
+			desc = GTH_AUGUSTUS_DESC
+			expire="1797.1.1"
+		}
+}
+}
+

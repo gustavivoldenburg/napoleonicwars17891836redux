@@ -3,7 +3,7 @@ performance_south_america = {
 		icon = ger_reichskommissariats
 				
 		available = {
-		has_capitulated = no
+		
 		date > 1936.1.1 date < 1936.1.2
 			}
 		cost = 0
@@ -51,7 +51,7 @@ performance_colonies = {
 		icon = ger_reichskommissariats
 				
 		available = {
-		has_capitulated = no
+		
 		date > 1936.1.1 date < 1936.1.2
 			}
 		cost = 0
@@ -97,7 +97,7 @@ performance_canada = {
 		icon = ger_reichskommissariats
 				
 		available = {
-		has_capitulated = no
+		
 		date > 1789.1.1 date < 1836.1.1
 			}
 		cost = 0
@@ -131,7 +131,7 @@ performance_canadaaustralia = {
 		icon = ger_reichskommissariats
 				
 		available = {
-		has_capitulated = no
+		
 		date > 1789.1.1 date < 1836.1.1
 			}
 		cost = 0
@@ -161,7 +161,7 @@ performance_kumul = {
 		icon = ger_reichskommissariats
 				
 		available = {
-		has_capitulated = no
+		
 		date > 1789.1.1 date < 1836.1.1
 			}
 		cost = 0
@@ -193,7 +193,7 @@ performance_iran = {
 		icon = ger_reichskommissariats
 				
 		available = {
-		has_capitulated = no
+		
 		date > 1789.1.1 date < 1800.1.1
 			}
 		cost = 0
@@ -224,7 +224,7 @@ performance_america = {
 		icon = ger_reichskommissariats
 				
 		available = {
-		has_capitulated = no
+		
 		date > 1789.1.1 date < 1836.1.1
 			}
 		cost = 0
@@ -262,7 +262,7 @@ performance_circassia = {
 		icon = ger_reichskommissariats
 				
 		available = {
-		has_capitulated = no
+		
 		date > 1789.1.1 date < 1836.1.1
 			}
 		cost = 0
@@ -295,7 +295,7 @@ performance_cascadialouisiana = {
 		icon = ger_reichskommissariats
 				
 		available = {
-		has_capitulated = no
+		
 		date > 1789.1.1 date < 1836.1.1
 			}
 		cost = 0
@@ -325,7 +325,7 @@ performance_imereti = {
 		icon = ger_reichskommissariats
 				
 		available = {
-		has_capitulated = no
+		
 		date > 1789.1.1 date < 1836.1.1
 			}
 		cost = 0
@@ -357,7 +357,7 @@ performance_sea = {
 		icon = ger_reichskommissariats
 				
 		available = {
-		has_capitulated = no
+		
 		date > 1789.1.1 date < 1836.1.1
 			}
 		cost = 0
@@ -388,7 +388,7 @@ performance_india = {
 		icon = ger_reichskommissariats
 				
 		available = {
-		has_capitulated = no
+		
 		date > 1789.1.1 date < 1836.1.1
 			}
 		cost = 0
@@ -424,7 +424,7 @@ performance_egypt = {
 		icon = ger_reichskommissariats
 				
 		available = {
-		has_capitulated = no
+		
 		date > 1789.1.1 date < 1836.1.1
 			}
 		cost = 0
@@ -453,7 +453,7 @@ performance_oman = {
 		icon = ger_reichskommissariats
 				
 		available = {
-		has_capitulated = no
+		
 		date > 1789.1.1 date < 1836.1.1
 			}
 		cost = 0
@@ -482,7 +482,7 @@ performance_azeri = {
 		icon = ger_reichskommissariats
 				
 		available = {
-		has_capitulated = no
+		
 		date > 1789.1.1 date < 1836.1.1
 			}
 		cost = 0
@@ -516,7 +516,7 @@ performance_switzerland = {
 		icon = ger_reichskommissariats
 				
 		available = {
-		has_capitulated = no
+		
 		date > 1789.1.1 date < 1836.1.1
 			}
 		cost = 0
@@ -548,7 +548,7 @@ performance_colonization = {
 		icon = ger_reichskommissariats
 				
 		available = {
-		has_capitulated = no
+		
 		date > 1789.1.1 date < 1836.1.1
 			}
 		cost = 0
@@ -575,8 +575,8 @@ performance_divisionlimitsystem = {
 		icon = ger_reichskommissariats
 				
 		available = {
-		has_capitulated = no
-		date > 1789.1.1 date < 1836.1.1
+		
+		date > 1789.1.1 date < 1837.1.1
 			}
 		cost = 0
 		ai_will_do = {
@@ -606,7 +606,7 @@ performance_africa = {
 		icon = ger_reichskommissariats
 				
 		available = {
-		has_capitulated = no
+		
 		date > 1789.1.1 date < 1836.1.1
 			}
 		cost = 0
@@ -643,7 +643,6 @@ performance_africa = {
 
 		SUD={add_state_core=551 transfer_state=551}
 		SUD={add_state_core=1047 transfer_state=1047}
-		SUD={add_state_core=1060 transfer_state=1060}
 		}
 	}
 }

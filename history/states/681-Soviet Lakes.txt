@@ -13,7 +13,10 @@ state={
 			12589 20 
 		}
                 }
-		1800.1.1 = {
+						1807.1.1 = {
+                owner = ENG
+                }
+		1837.1.1 = {
 		add_core_of = SAF
                 owner = SAF
                 }

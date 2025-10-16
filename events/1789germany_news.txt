@@ -1,0 +1,42 @@
+﻿###########################
+# News Events
+###########################
+
+add_namespace = ger_1789_news
+
+		news_event = {
+	id = ger_1789_news.1
+	title = "The United Kingdom of Portugal, Brazil and the Algarves"
+	desc = ger_1789_news.1.d
+	picture = GFX_idi_amin_uganda
+	
+	major = yes
+
+	fire_for_sender = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = "Ok"
+			}
+		option = {
+		name = "Ok"
+			}
+		}
+		news_event = {
+	id = ger_1789_news.17
+	title = "The extinction of the House of Este"
+	desc = ger_1789_news.17.d
+	picture = GFX_idi_amin_uganda
+	
+	major = yes
+
+	fire_for_sender = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = "So the House of Habsburg-Lorraine owns Modena and Massa now?"
+			}
+		option = {
+		name = "Arent their lands occupied by the French?"
+			}
+		}

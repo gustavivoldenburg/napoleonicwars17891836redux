@@ -1,0 +1,31 @@
+characters={
+	LIP_leopoldi={
+		name=LIP_CHARACTER_LEOPOLDI
+		portraits={
+			civilian={
+				large="GFX_portrait_lip_leopoldi_large"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={Lippe}
+			desc = LIP_LEOPOLDI_DESC
+			expire="1797.1.1"
+		}
+}
+	LIP_leopoldii={
+		name=LIP_CHARACTER_LEOPOLDII
+		portraits={
+			civilian={
+				large="GFX_portrait_lip_leopoldii_large"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={Lippe}
+			desc = LIP_LEOPOLDII_DESC
+			expire="1797.1.1"
+		}
+}
+}
+

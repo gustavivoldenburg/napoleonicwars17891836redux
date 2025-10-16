@@ -45,6 +45,7 @@ country_event = viennacongress_event.12
 		}
 		SWI={
 country_event = viennacongress_event.13
+country_event = viennacongress_event.17
 		}
 		SPM={
 country_event = viennacongress_event.14
@@ -301,8 +302,8 @@ fire_only_once = yes
         state=159
         }
         }
-        add_core_of=MIL
-        transfer_state_to=MIL
+        add_core_of=LBV
+        transfer_state_to=LBV
         }
 				every_state={
         limit={
@@ -394,8 +395,8 @@ fire_only_once = yes
         state=159
         }
         }
-        add_core_of=MIL
-        transfer_state_to=MIL
+        add_core_of=LBV
+        transfer_state_to=LBV
         }
 				every_state={
         limit={
@@ -843,6 +844,15 @@ fire_only_once = yes
 		add_core_of=PFZ
 		remove_core_of=FRA
         }
+				every_state={
+        limit={
+        or={
+        state=1237
+        }
+        }
+		add_core_of=LIC
+		remove_core_of=FRA
+        }
 		every_state={
         limit={
         or={
@@ -903,5 +913,31 @@ fire_only_once = yes
         freedom_level = 0.4
 	}
 	}
+	}
+}
+country_event = {
+	id = viennacongress_event.17
+	title = "The return of Geneva"
+	desc = viennacongress_event.17.d
+	picture = GFX_idi_amin_india
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "Guess we dont need the French anymore"
+		ai_chance = { factor = 100 } 
+				every_state={
+        limit={
+		or={
+		is_owned_by=FRA
+		is_owned_by=VND
+		}
+        or={
+        state=151
+        }
+        }
+        transfer_state_to=SWI
+		add_core_of=SWI
+		remove_core_of=FRA
+        }
 	}
 }

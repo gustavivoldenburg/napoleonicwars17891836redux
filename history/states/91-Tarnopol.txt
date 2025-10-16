@@ -35,13 +35,16 @@ state={
 
 		}
 		1900.1.1 = {
-			owner = AUH
+			owner = AUS
 			remove_core_of = POL
 			add_core_of = UKR
 
 		}
 		victory_points = {
 			11479 20 
+		}
+				victory_points = {
+			9494 2
 		}
 		1936.1.1 = {
 			buildings = {
@@ -75,7 +78,7 @@ state={
 	}
 
 	provinces={
-		1223 1272 4277 7425 10220 10268 10277 11479 12266 
+		1223 1272 4277 7425 9494 10220 10268 11479 12266 14333
 	}
 	manpower=2557470
 	buildings_max_level_factor=1.000

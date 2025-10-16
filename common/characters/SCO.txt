@@ -1,15 +1,43 @@
 characters={
-	SCO_kingwilliamoforangeisaslutforbigjewishcock={
-		name=SCO_CHARACTER_KINGWILLIAMOFORANGEISASLUTFORBIGJEWISHCOCK
+	SCO_henrybenedict={
+		name=SCO_CHARACTER_HENRYBENEDICT
 		portraits={
 			civilian={
-				large="GFX_portrait_sco_kingwilliamoforangeisaslutforbigjewishcock_large"
+				large="GFX_portrait_sco_henrybenedict_large"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={Stuart}
+			desc = SCO_HENRYBENEDICT_DESC
+			expire="1797.1.1"
+		}
+}
+	SCO_fitzjames={
+		name=SCO_CHARACTER_FITZJAMES
+		portraits={
+			civilian={
+				large="GFX_portrait_sco_fitzjames_large"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={Stuart}
+			desc = SCO_FITZJAMES_DESC
+			expire="1797.1.1"
+		}
+}
+	SCO_kingwilliamoforange={
+		name=SCO_CHARACTER_KINGWILLIAMOFORANGE
+		portraits={
+			civilian={
+				large="GFX_portrait_sco_kingwilliamoforange_large"
 			}
 		}
 		country_leader={
 			ideology=despotism
 			traits={Orange-Nassau}
-			desc = SCO_KINGWILLIAMOFORANGEISASLUTFORBIGJEWISHCOCK_DESC
+			desc = SCO_KINGWILLIAMOFORANGE_DESC
 			expire="1797.1.1"
 		}
 }

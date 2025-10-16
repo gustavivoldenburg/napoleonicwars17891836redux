@@ -12,5 +12,31 @@ characters={
 			expire="1797.1.1"
 		}
 }
+	REG_mos={
+		name=REG_CHARACTER_MOS
+		portraits={
+			civilian={
+				large="GFX_portrait_reg_mos_large"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			desc = REG_MOS_DESC
+			expire="1797.1.1"
+		}
+}
+	REG_jettenbach={
+		name=REG_CHARACTER_JETTENBACH
+		portraits={
+			civilian={
+				large="GFX_portrait_reg_jettenbach_large"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			desc = REG_JETTENBACH_DESC
+			expire="1797.1.1"
+		}
+}
 }
 

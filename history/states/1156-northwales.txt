@@ -8,9 +8,6 @@ state={
 		victory_points = {
 			9560 2 
 		}
-		victory_points = {
-			9456 1 
-		}
 								1950.1.1 = {
 		owner = DDR
 		add_core_of = DDR
@@ -47,7 +44,7 @@ state={
 }
 
 	provinces={
-		9456 9560 
+		9560 
 	}
 	manpower=350000
 	buildings_max_level_factor=1.000

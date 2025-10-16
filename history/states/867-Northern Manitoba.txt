@@ -34,7 +34,7 @@ state={
 			remove_core_of = POM
 
 		}
-		1812.1.1 = {
+		1808.1.1 = {
 		owner = WTF
 		add_core_of = WTF
 		remove_core_of=PRE
@@ -67,7 +67,10 @@ state={
 			3522 10 
 		}
 		victory_points = {
-			6582 5 
+			6582 10 
+		}
+		victory_points = {
+			13373 1 
 		}
 		buildings = {
 			infrastructure = 3
@@ -78,9 +81,9 @@ state={
 	}
 
 	provinces={
-		3522 6487 6582 11468 13373 
+		3522 6582 13373 
 	}
-	manpower=1000000
+	manpower=350000
 	buildings_max_level_factor=1.000
 	state_category=city
 	local_supplies=0.000

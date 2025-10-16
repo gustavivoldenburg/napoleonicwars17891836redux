@@ -2,12 +2,6 @@
 	add_ideas = {
         mezzogiorno
 	}
-1789.1.1 = {
-recruit_character=NAP_rothschildiiii
-}
-1859.1.1 = {
-retire_character=NAP_rothschildiiii
-}
 1812.1.1 = {
 set_politics = {
 	ruling_party = neutrality
@@ -17,22 +11,15 @@ set_politics = {
 }
 }
 1765.1.1 = {
-recruit_character=NAP_ferdinandi
-promote_character=NAP_ferdinandi
+NAP={set_party_name = { ideology = neutrality long_name = NAP_BON_neutrality_party_long name = NAP_BON_neutrality_party}}
 recruit_character=NAP_josephbonaparte
 recruit_character=NAP_joachimmurat
-recruit_character=NAP_luigidemedici
 }
-1812.1.1 = {
+1809.1.1 = {
 promote_character=NAP_joachimmurat
 }
 1816.1.1 = {
 retire_character=NAP_joachimmurat
-promote_character=NAP_ferdinandi
-}
-1826.1.1 = {
-retire_character=NAP_ferdinandi
-retire_character=NAP_luigidemedici
 }
 1844.1.1 = {
 retire_character=NAP_josephbonaparte
@@ -47,6 +34,9 @@ set_oob = "NAP_1789"
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
+	transport = 1
+	early_submarine = 1
+        gw_artillery = 1 basic_train = 1
 }
 
 set_convoys = 20

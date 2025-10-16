@@ -68,6 +68,8 @@ industrial_capacity_factory = -0.59
 			removal_cost = -1
 			
 			modifier = {
+research_speed_factor = -1
+			surrender_limit = 1
 			production_speed_buildings_factor = -0.49
 industrial_capacity_factory = -0.49
   guarantee_cost =100

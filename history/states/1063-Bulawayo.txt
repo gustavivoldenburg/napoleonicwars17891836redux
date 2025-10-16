@@ -4,20 +4,31 @@ state={
 	name="STATE_1063"
 
 	history={
-		owner = ZZZ
-		1900.1.1 = {
-		add_core_of = ZIM
-                owner = ENG
-                }
-		1900.1.1 = {
-		victory_points = {
-			4851 1 
+	                owner = ZZZ
+										1776.1.1 = {
+        owner = MEX
+		add_core_of = MEX
+        }
+		1812.1.1 = {
+		buildings = {
+			infrastructure = 1
 		}
                 }
-						1961.1.1 = {
-        owner = ZIM
-		add_core_of = ZIM
+		1812.1.1 = {
+        owner = ALA
+		add_core_of = ALA
+		remove_core_of=MEX
         }
+		1850.1.1 = {
+                owner = USA
+                add_core_of = USA
+                remove_core_of = ALA
+                }
+		1812.1.1 = {
+		victory_points = {
+			6757 1 
+		}
+                }
 		buildings = {
 			infrastructure = 0
 
@@ -25,9 +36,9 @@ state={
 	}
 
 	provinces={
-		2151 4851 13918 
+		6757
 	}
-	manpower=400000
+	manpower=1000
 	buildings_max_level_factor=1.000
 	state_category=pastoral
 	local_supplies=0.000

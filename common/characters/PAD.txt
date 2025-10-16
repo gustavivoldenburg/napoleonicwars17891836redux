@@ -1,0 +1,29 @@
+characters={
+	PAD_westphalen={
+		name=PAD_CHARACTER_WESTPHALEN
+		portraits={
+			civilian={
+				large="GFX_portrait_pad_westphalen_large"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			desc = PAD_WESTPHALEN_DESC
+			expire="1797.1.1"
+		}
+}
+	PAD_furstenberg={
+		name=PAD_CHARACTER_FURSTENBERG
+		portraits={
+			civilian={
+				large="GFX_portrait_pad_furstenberg_large"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			desc = PAD_FURSTENBERG_DESC
+			expire="1797.1.1"
+		}
+}
+}
+

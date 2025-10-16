@@ -143,14 +143,12 @@ fire_only_once = yes
 	BKV={promote_character=BKV_leopoldiibkv}
 	BOH={promote_character=BOH_leopoldiiboh}
 	HUN={promote_character=HUN_leopoldiihun}
-	MIL={promote_character=MIL_leopoldiimil}
 	MTU={promote_character=MTU_leopoldiimtu}
 	LBV={promote_character=LBV_leopoldiilbv}
 	GLL={retire_character=GLL_josephiigll}
 	BKV={retire_character=BKV_josephiibkv}
 	BOH={retire_character=BOH_josephiiboh}
 	HUN={retire_character=HUN_josephiihun}
-	MIL={retire_character=MIL_josephiimil}
 	MTU={retire_character=MTU_josephiimtu}
 	LBV={retire_character=LBV_josephiilbv}
     }
@@ -181,14 +179,12 @@ fire_only_once = yes
 	BKV={promote_character=BKV_francisiibkv}
 	BOH={promote_character=BOH_francisiiboh}
 	HUN={promote_character=HUN_francisiihun}
-	MIL={promote_character=MIL_francisiimil}
 	MTU={promote_character=MTU_francisiimtu}
 	LBV={promote_character=LBV_francisiilbv}
 	GLL={retire_character=GLL_leopoldiigll}
 	BKV={retire_character=BKV_leopoldiibkv}
 	BOH={retire_character=BOH_leopoldiiboh}
 	HUN={retire_character=HUN_leopoldiihun}
-	MIL={retire_character=MIL_leopoldiimil}
 	MTU={retire_character=MTU_leopoldiimtu}
 	LBV={retire_character=LBV_leopoldiilbv}
     }
@@ -219,14 +215,12 @@ fire_only_once = yes
 	BKV={promote_character=BKV_ferdinandibkv}
 	BOH={promote_character=BOH_ferdinandiboh}
 	HUN={promote_character=HUN_ferdinandihun}
-	MIL={promote_character=MIL_ferdinandimil}
 	MTU={promote_character=MTU_ferdinandimtu}
 	LBV={promote_character=LBV_ferdinandilbv}
 	GLL={retire_character=GLL_francisiigll}
 	BKV={retire_character=BKV_francisiibkv}
 	BOH={retire_character=BOH_francisiiboh}
 	HUN={retire_character=HUN_francisiihun}
-	MIL={retire_character=MIL_francisiimil}
 	MTU={retire_character=MTU_francisiimtu}
 	LBV={retire_character=LBV_francisiilbv}
     }
@@ -277,6 +271,7 @@ fire_only_once = yes
 	}
 	}
 	TYR={set_country_flag=tyrol_war_fra_bav}
+	TYR={country_event = aus_1789_event.13}
 	}
 }
 
@@ -359,7 +354,7 @@ fire_only_once = yes
 		transfer_state = 6
 		transfer_state = 34
 		transfer_state = 973
-		transfer_state = 978
+		transfer_state = 1243
 		transfer_state = 1171
 		transfer_state = 984
 		}
@@ -373,7 +368,7 @@ fire_only_once = yes
 		transfer_state = 51
 		transfer_state = 985
 		}
-				TRR={
+				LUX={
 		transfer_state = 970
 		transfer_state = 8
 		transfer_state = 42
@@ -383,12 +378,12 @@ fire_only_once = yes
 		transfer_state = 1239
 		transfer_state = 1182
 		}
-	TRR={set_cosmetic_tag=TRR_vienna}
+	LUX={set_cosmetic_tag=LUX_vienna}
 	CLG={set_cosmetic_tag=CLG_vienna}
 	BEL={set_cosmetic_tag=BEL_vienna}
 	AUS={
 			set_autonomy = {
-        target = TRR
+        target = LUX
         autonomous_state = autonomy_protectorate
         freedom_level = 0.4
 	}
@@ -409,508 +404,29 @@ fire_only_once = yes
 	}
 	}
 }
-
 country_event = {
 	id = aus_1789_event.13
-	title = "Defeat at Austerlitz"
+	title = "Tyrolean Rebellion"
 	desc = aus_1789_event.13.d
 	picture = GFX_idi_amin_india
-	is_triggered_only = no
-	fire_only_once = yes
-	
-	trigger = {
-		any_country = {
-			owns_state = 75
-			OR = {
-				original_tag = AUS
-				is_subject_of = AUS
-			}
-		}
-		any_country = {
-			controls_province = 6562
-			has_cosmetic_tag = FRA_empire
-		}
-	}
-
+	is_triggered_only = yes
+fire_only_once = yes
 	option = { # 
-		name = "We Must Surrender"
-		every_country = {
-			limit = {
-				OR = {
-					original_tag = AUS
-					is_puppet_of = AUS
-				}
-			}
-			white_peace = FRA
-		}
-		if = {
-			limit = {
-				AUS_karl_mack = {
-					is_leading_army = yes
-				}
-			}
-			country_event = aus_1789_event.15
-		}
-		country_event = {
-			id = aus_1789_event.14
-			days = 22
-		}
-		news_event = aus_1789_news.2
+		name = "Tyrolean Rebellion"
+		ai_chance = { factor = 100 } 
+	TYR={add_manpower = 50000 load_oob = "TYR_1808"}
+			TYR = {
+	declare_war_on = {
+		target = BAY
+		type = annex_everything
+	}
+	}
+			TYR = {
+	declare_war_on = {
+		target = FRA
+		type = annex_everything
+	}
+	}
 	}
 }
 
-country_event = {
-	id = aus_1789_event.14
-	title = "Peace of Pressburg"
-	desc = aus_1789_event.13.d
-	picture = GFX_idi_amin_india
-	is_triggered_only = yes
-	fire_only_once = yes
-
-	option = { # 
-		name = "We Have No Choice"
-		AUS = {
-			leave_faction = yes
-		}
-		if = {
-			limit = {
-				any_country = {
-					owns_state = 1250
-					OR = {
-						original_tag = AUS
-						is_puppet_of = AUS
-					}
-				}
-			}
-			if = {
-				limit = {
-					BAD = {
-						is_ally_with = FRA
-					}
-				}
-				1250 = {
-					transfer_state_to = BAD
-				}
-			}
-			else_if = {
-				limit = {
-					WUR = {
-						is_ally_with = FRA
-					}
-				}
-				1250 = {
-					transfer_state_to = WUR
-				}
-			}
-			else = {
-				1250 = {
-					transfer_state_to = FRA
-				}
-			}
-		}
-		if = {
-			limit = {
-				ITA = {
-					is_subject_of = FRA
-				}
-			}
-			if = {
-				limit = {
-					any_country = {
-						owns_state = 103
-						OR = {
-							original_tag = AUS
-							is_puppet_of = AUS
-						}
-					}
-				}
-				103 = {
-					transfer_state_to = ITA
-				}
-			}
-			if = {
-				limit = {
-					any_country = {
-						owns_state = 160
-						OR = {
-							original_tag = AUS
-							is_puppet_of = AUS
-						}
-					}
-				}
-				160 = {
-					transfer_state_to = ITA
-				}
-			}
-			if = {
-				limit = {
-					any_country = {
-						owns_state = 163
-						OR = {
-							original_tag = AUS
-							is_puppet_of = AUS
-						}
-					}
-				}
-				163 = {
-					transfer_state_to = ITA
-				}
-			}
-			if = {
-				limit = {
-					any_country = {
-						owns_state = 856
-						OR = {
-							original_tag = AUS
-							is_puppet_of = AUS
-						}
-					}
-				}
-				856 = {
-					transfer_state_to = ITA
-				}
-			}
-			if = {
-				limit = {
-					any_country = {
-						owns_state = 857
-						OR = {
-							original_tag = AUS
-							is_puppet_of = AUS
-						}
-					}
-				}
-				857 = {
-					transfer_state_to = ITA
-				}
-			}
-			if = {
-				limit = {
-					any_country = {
-						owns_state = 931
-						OR = {
-							original_tag = AUS
-							is_puppet_of = AUS
-						}
-					}
-				}
-				931 = {
-					transfer_state_to = ITA
-				}
-			}
-			if = {
-				limit = {
-					any_country = {
-						owns_state = 950
-						OR = {
-							original_tag = AUS
-							is_puppet_of = AUS
-						}
-					}
-				}
-				950 = {
-					transfer_state_to = ITA
-				}
-			}
-			if = {
-				limit = {
-					any_country = {
-						owns_state = 959
-						OR = {
-							original_tag = AUS
-							is_puppet_of = AUS
-						}
-					}
-				}
-				959 = {
-					transfer_state_to = ITA
-				}
-			}
-			if = {
-				limit = {
-					any_country = {
-						owns_state = 977
-						OR = {
-							original_tag = AUS
-							is_puppet_of = AUS
-						}
-					}
-				}
-				977 = {
-					transfer_state_to = ITA
-				}
-			}
-		}
-		else = {
-			if = {
-				limit = {
-					any_country = {
-						owns_state = 103
-						OR = {
-							original_tag = AUS
-							is_puppet_of = AUS
-						}
-					}
-				}
-				103 = {
-					transfer_state_to = FRA
-				}
-			}
-			if = {
-				limit = {
-					any_country = {
-						owns_state = 160
-						OR = {
-							original_tag = AUS
-							is_puppet_of = AUS
-						}
-					}
-				}
-				160 = {
-					transfer_state_to = FRA
-				}
-			}
-			if = {
-				limit = {
-					any_country = {
-						owns_state = 163
-						OR = {
-							original_tag = AUS
-							is_puppet_of = AUS
-						}
-					}
-				}
-				163 = {
-					transfer_state_to = FRA
-				}
-			}
-			if = {
-				limit = {
-					any_country = {
-						owns_state = 856
-						OR = {
-							original_tag = AUS
-							is_puppet_of = AUS
-						}
-					}
-				}
-				856 = {
-					transfer_state_to = FRA
-				}
-			}
-			if = {
-				limit = {
-					any_country = {
-						owns_state = 857
-						OR = {
-							original_tag = AUS
-							is_puppet_of = AUS
-						}
-					}
-				}
-				857 = {
-					transfer_state_to = FRA
-				}
-			}
-			if = {
-				limit = {
-					any_country = {
-						owns_state = 931
-						OR = {
-							original_tag = AUS
-							is_puppet_of = AUS
-						}
-					}
-				}
-				931 = {
-					transfer_state_to = FRA
-				}
-			}
-			if = {
-				limit = {
-					any_country = {
-						owns_state = 950
-						OR = {
-							original_tag = AUS
-							is_puppet_of = AUS
-						}
-					}
-				}
-				950 = {
-					transfer_state_to = FRA
-				}
-			}
-			if = {
-				limit = {
-					any_country = {
-						owns_state = 959
-						OR = {
-							original_tag = AUS
-							is_puppet_of = AUS
-						}
-					}
-				}
-				959 = {
-					transfer_state_to = FRA
-				}
-			}
-			if = {
-				limit = {
-					any_country = {
-						owns_state = 977
-						OR = {
-							original_tag = AUS
-							is_puppet_of = AUS
-						}
-					}
-				}
-				977 = {
-					transfer_state_to = FRA
-				}
-			}
-		}
-		set_autonomy = {
-			target = LUC
-			autonomous_state = autonomy_free
-			end_wars = no
-			end_civil_wars = no
-		}
-		BAY = {
-			annex_country = {
-				target = AUG
-				transfer_troops = no
-			}
-			if = {
-				limit = {
-					any_country = {
-						owns_state = 39
-						OR = {
-							original_tag = AUS
-							is_puppet_of = AUS
-						}
-					}
-				}
-				39 = {
-					transfer_state_to = BAY
-				}
-			}
-			if = {
-				limit = {
-					any_country = {
-						owns_state = 153
-						OR = {
-							original_tag = AUS
-							is_puppet_of = AUS
-						}
-					}
-				}
-				153 = {
-					transfer_state_to = BAY
-				}
-			}
-			if = {
-				limit = {
-					any_country = {
-						owns_state = 855
-						OR = {
-							original_tag = AUS
-							is_puppet_of = AUS
-						}
-					}
-				}
-				855 = {
-					transfer_state_to = BAY
-				}
-			}
-			if = {
-				limit = {
-					any_country = {
-						owns_state = 881
-						OR = {
-							original_tag = AUS
-							is_puppet_of = AUS
-						}
-					}
-				}
-				881 = {
-					transfer_state_to = BAY
-				}
-			}
-			if = {
-				limit = {
-					any_country = {
-						owns_state = 1190
-						OR = {
-							original_tag = AUS
-							is_puppet_of = AUS
-						}
-					}
-				}
-				1190 = {
-					transfer_state_to = BAY
-				}
-			}
-		}
-		AUS = {
-			annex_country = {
-				target = SAL
-				transfer_troops = no
-			}
-		}
-		every_state = {
-			limit = {
-				region = 299
-				is_owned_by = AUS
-			}
-			transfer_state_to = BAY
-		}
-		every_state = {
-			limit = {
-				region = 276
-				is_owned_by = AUS
-			}
-			transfer_state_to = FRA
-		}
-		WRZ = {
-			set_cosmetic_tag = WRZ_electorate
-			promote_character = WRZ_ferdinandiii
-		}
-	}
-}
-
-country_event = {
-	id = aus_1789_event.15
-	title = "Blame for Austerlitz"
-	desc = aus_1789_event.13.d
-	picture = GFX_idi_amin_india
-	is_triggered_only = yes
-	fire_only_once = yes
-
-	option = {
-		name = "Mack is Truly Incompetent"
-		AUS_karl_mack = {
-			remove_unit_leader_role = yes
-		}
-		add_stability = 0.05
-	}
-
-	option = {
-		name = "He Can Remain"
-		add_stability = -0.05
-	}
-}
-
-country_event = {
-	id = aus_1789_event.16
-	title = "The Declaration of Pillnitz"
-	desc = aus_1789_event.13.d
-	picture = GFX_idi_amin_india
-	is_triggered_only = yes
-	fire_only_once = yes
-
-	option = {
-		name = "The Situation is of Our Common Interest"
-		add_ideas = declaration_of_pillnitz
-	}
-
-}

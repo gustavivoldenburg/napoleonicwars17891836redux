@@ -90,7 +90,7 @@ if = {
 }
 
 
-set_research_slots = 3
+set_research_slots = 0
 set_convoys = 50
 set_stability = 0.75
 
@@ -156,7 +156,7 @@ set_stability = 0.75
 1774.1.1 = {
 set_cosmetic_tag = OLD_duchy # 
 }
-1812.1.1 = {
+1815.1.1 = {
 set_cosmetic_tag = OLD_grandduchy # Netherlands East Indies
 }
 set_politics = {

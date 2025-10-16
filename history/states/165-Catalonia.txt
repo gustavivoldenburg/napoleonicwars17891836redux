@@ -14,8 +14,13 @@ state={
 				remove_core_of = ARA
 						
 		}
+1808.1.1 = {
+owner = CAT
+add_core_of=CAT
+}
 1812.1.1 = {
 owner = FRA
+remove_core_of=CAT
 }
 1816.1.1 = {
 owner = SPR

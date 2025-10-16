@@ -23,9 +23,8 @@ state={
 		1946.1.1 = {
 		owner = POL
 		}
-		1810.1.1 = {
+		1808.1.1 = {
 			owner = POL
-
 		}
 		1936.1.1 = {
 			buildings = {
@@ -56,7 +55,7 @@ state={
 	}
 
 	provinces={
-		524 3544 9400 11385 11492 13410 13415 
+		3544 9400 11385 11492 13410 13415 
 	}
 	manpower=3000000
 	buildings_max_level_factor=1.000

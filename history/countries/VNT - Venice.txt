@@ -10,11 +10,15 @@ recruit_character=VNT_paolorenier
 recruit_character=VNT_lodovicomanin
 recruit_character=VNT_francisiivnt
 recruit_character=VNT_ferdinandivnt
+recruit_character=VNT_josephiivnt
+recruit_character=VNT_leopoldiivnt
 promote_character=VNT_paolorenier
 }
 1800.1.1 = {
 promote_character=VNT_francisiivnt
 retire_character=VNT_paolorenier
+retire_character=VNT_josephiivnt
+retire_character=VNT_leopoldiivnt
 }
 1803.1.1 = {
 retire_character=VNT_lodovicomanin
@@ -30,11 +34,14 @@ set_oob = "VNT_1789"
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
+	transport = 1
+	early_submarine = 1
+        gw_artillery = 1 basic_train = 1
 }
 
 set_convoys = 20
-1800.1.1 = {
-set_party_name = { ideology = neutrality long_name = HUN_legitimists_party_long name = HUN_legitimists_party }
+1799.1.1 = {
+set_party_name = { ideology = neutrality long_name = VNT_LOR_neutrality_party_long name = VNT_LOR_neutrality_party }
 }
 
 1939.1.1 = {

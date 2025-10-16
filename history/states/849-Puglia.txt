@@ -3,8 +3,19 @@ state={
 	id=849
 	name="STATE_849"
 	history={
-		owner = SAX
-                add_core_of = SAX
+		owner = NDH
+                add_core_of = NDH
+		1808.1.1 = {
+		owner = WTF
+		add_core_of = WTF
+		remove_core_of = ERF
+		remove_core_of = NDH
+		}
+		1814.1.1 = {
+		owner = PRE
+		add_core_of = PRE
+		remove_core_of = WTF
+		}
 						1950.1.1 = {
 		owner = DDR
 		add_core_of = DDR
@@ -40,9 +51,6 @@ state={
 			remove_core_of = PRE
 
 		}
-		victory_points = {
-			425 10
-		}
 				victory_points = {
 			13368 2 
 		}
@@ -54,9 +62,9 @@ state={
 	}
 
 	provinces={
-		425 13368 
+		13368 
 	}
-	manpower=420000
+	manpower=200000
 	buildings_max_level_factor=1.000
 	state_category=rural
 	local_supplies=0.000

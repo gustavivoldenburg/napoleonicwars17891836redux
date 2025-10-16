@@ -1,0 +1,62 @@
+state={
+	id=1286
+	name="STATE_1286"
+history={
+		owner = SIC
+        add_core_of = SIC
+		1801.1.1 = {
+		remove_core_of = NAP
+		remove_core_of = SIC
+		add_core_of = TTS
+		owner = TTS
+		}
+		1871.1.1 = {
+                owner = ITA
+                add_core_of = ITA
+		}
+				1945.1.1 = {
+		controller = ENG
+		}
+		1946.1.1 = {
+		controller = ITA
+		}
+		1919.1.1 = {
+                remove_core_of = SPM
+                remove_core_of = PAP
+                remove_core_of = TOS
+                remove_core_of = TTS
+                remove_core_of = LBV
+		}
+		victory_points = {
+			4159 10 
+		}
+		victory_points = {
+			14101 10 
+		}
+		1936.1.1 = {
+					buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			4159 = {
+				naval_base = 8
+
+			}
+		}
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			4159 = {
+				naval_base = 8
+
+			}
+		}
+	}
+	provinces={
+		1156 3857 4159 14101 14103 
+	}
+	manpower=1268838
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

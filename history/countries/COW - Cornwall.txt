@@ -1,10 +1,24 @@
 ﻿capital = 123
-
+1789.1.1 = {
+recruit_character=COW_henrybenedict
+promote_character=COW_henrybenedict
+recruit_character=COW_fitzjames
+}
+1804.1.1 = {
+retire_character=COW_henrybenedict
+promote_character=COW_fitzjames
+}
+1836.1.1 = {
+retire_character=COW_fitzjames
+}
 #oob = ""
 
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
+	transport = 1
+	early_submarine = 1
+        gw_artillery = 1 basic_train = 1
 }
 1936.1.1 = {
 	set_technology = {
@@ -50,15 +64,14 @@ set_convoys = 20
 	}
 }
 set_politics = {
-	ruling_party = democratic
-	last_election = "1936.1.1"
+	ruling_party = neutrality
+	last_election = "1789.1.1"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
-	democratic = 93
-	fascism = 3
-	communism = 4
+	democratic = 50
+	neutrality = 50
 }
 
 #create_country_leader = {

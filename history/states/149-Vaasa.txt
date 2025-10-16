@@ -6,6 +6,9 @@ state={
 	history={
 		owner = SWE
 		add_core_of = FIN
+				1808.1.1 = {
+			controller = RUS
+		}
 		1809.1.1 = {
                 owner = FIN
                 }
@@ -24,13 +27,7 @@ state={
 			}
 
 		}
-		1920.1.1 = {
-			owner = FIN
-			controller = FIN
-			add_core_of = FIN
-			remove_core_of = RUS
 
-		}
 
 	}
 

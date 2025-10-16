@@ -23,7 +23,7 @@ if = {
 	set_oob = "CAN_1936_nsb"
 }
 
-set_research_slots = 3
+set_research_slots = 0
 
 
 # Starting tech
@@ -96,7 +96,7 @@ set_politics = {
 	ruling_party = democratic
 	last_election = "1935.10.14"
 	election_frequency = 60
-	elections_allowed = yes
+	elections_allowed = no
 }
 
 set_popularities = {

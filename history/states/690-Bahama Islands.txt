@@ -22,7 +22,7 @@ state={
 		add_core_of = RHI
 		remove_core_of = JUL
 		}
-		1812.1.1 = {
+		1808.1.1 = {
 			owner = FRA
 		}
 		1816.1.1 = {

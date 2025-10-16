@@ -19,6 +19,8 @@ state={
         }
 		1816.1.1 = {
         owner = AUS
+		remove_core_of=VNT
+		remove_core_of=ITA
         add_core_of = AUS
         }
 						1814.1.1 = {
@@ -28,9 +30,8 @@ state={
         controller = AUS
 		}
 		1900.1.1 = {
-		owner = AUH
-                add_core_of = AUH
-                remove_core_of = AUS
+		owner = AUS
+                add_core_of = AUS
                 }
 		1900.1.1 = {
                 add_core_of = SLV
@@ -46,7 +47,7 @@ state={
 			controller = ITA
             add_core_of = ITA
             remove_core_of = SLV
-            remove_core_of = AUH
+            remove_core_of = AUS
 		}
 		buildings = {
 			infrastructure = 2
@@ -64,6 +65,6 @@ state={
 	}
 	manpower=250000
 	buildings_max_level_factor=1.000
-	state_category=pastoral
+	state_category=town
 	local_supplies=0.000
 }

@@ -1,7 +1,7 @@
 ﻿capital = 691
 
 
-set_research_slots = 2
+set_research_slots = 0
 set_stability = 0.75
 set_war_support = 0.5
 # Starting tech
@@ -17,7 +17,7 @@ set_politics = {
 	ruling_party = neutrality
 	last_election = "1819.1.1"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
 	neutrality = 15
@@ -35,7 +35,7 @@ add_ideas = {
 		ruling_party = neutrality
 		last_election = "1936.11.3"
 		election_frequency = 48
-		elections_allowed = yes
+		elections_allowed = no
 	}
 }
 

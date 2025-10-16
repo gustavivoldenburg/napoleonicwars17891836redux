@@ -11,6 +11,9 @@
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
+	transport = 1
+	early_submarine = 1
+        gw_artillery = 1 basic_train = 1
 }
 1936.1.1 = {
 set_technology = {
@@ -104,7 +107,7 @@ set_politics = {
 	ruling_party = democratic
 	last_election = "1896.5.1"
 	election_frequency = 48
-	elections_allowed = yes ##suspended through duration of war, which is handled via event
+	elections_allowed = no ##suspended through duration of war, which is handled via event
 }
 set_popularities = {
 	democratic = 80

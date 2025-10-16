@@ -2,8 +2,13 @@ state={
 	id=918
 	name="STATE_918"
 	history={
+		owner = TTS
+        add_core_of = TTS
+		1805.1.1 = {
+		add_core_of = NAP
 		owner = NAP
-        add_core_of = NAP
+		remove_core_of=TTS
+		}
 		1817.1.1 = {
 		remove_core_of = NAP
 		remove_core_of = SIC
@@ -43,7 +48,11 @@ state={
 				naval_base = 10
 
 			}
-			11998 = {
+			13698 = {
+				naval_base = 5
+
+			}
+			6979 = {
 				naval_base = 2
 
 			}

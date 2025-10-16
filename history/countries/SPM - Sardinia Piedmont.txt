@@ -1,4 +1,21 @@
 ﻿capital = 158
+1789.1.1 = {
+			if = {
+		limit = { has_start_date < 1799.1.1 }
+TOS={
+give_military_access = SPM
+}
+MOD={
+give_military_access = SPM
+}
+MAS={
+give_military_access = SPM
+}
+PRM={
+give_military_access = SPM
+}
+}
+}
 1773.1.1 = {
 recruit_character=SPM_victoramadeusiii
 promote_character=SPM_victoramadeusiii
@@ -13,6 +30,7 @@ recruit_character=SPM_giorgio
 recruit_character=SPM_anselmo
 recruit_character=SPM_giuseppe
 recruit_character=SPM_carlo
+recruit_character=SPM_josephdemaistre
 }
 1800.1.1 = {
 promote_character=SPM_charlesemmanueliv
@@ -36,6 +54,7 @@ retire_character=SPM_victoremmanueli
 retire_character=SPM_ferdinandi
 retire_character=SPM_savoia
 retire_character=SPM_anselmo
+retire_character=SPM_josephdemaistre
 }
 1839.1.1 = {
 retire_character=SPM_giorgio
@@ -84,13 +103,16 @@ set_oob = "SPM_1836"
 }
 
 
-set_research_slots = 3
+set_research_slots = 0
 set_stability = 0.5
 set_war_support = 0.5
 add_ideas = {
 }
 set_technology = {
 	infantry_weapons = 1
+	transport = 1
+	early_submarine = 1
+        gw_artillery = 1 basic_train = 1
 }
 1936.1.1 = {
 # Starting tech

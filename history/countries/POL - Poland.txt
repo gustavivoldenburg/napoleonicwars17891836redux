@@ -101,15 +101,18 @@ retire_character=POL_maciegeneral
 1569.1.1 = {
 set_cosmetic_tag = POL_LIT # polish lithuanian commonwealth
 }
-1800.1.1 = {
-set_cosmetic_tag = POL # poland
+1805.1.1 = {
+set_cosmetic_tag = POL_duchy_of_warsaw # poland
+}
+1814.1.1 = {
+set_cosmetic_tag = POL_RUS # poland
 }
 1561.1.1 = {
 			if = {
-		limit = { has_start_date < 1796.01.01 }
+		limit = { has_start_date < 1796.1.1 }
 	set_autonomy = {
         target = COU
-        autonomous_state = autonomy_dominion
+        autonomous_state = autonomy_protectorate
         freedom_level = 0.4
 	}
 }
@@ -168,7 +171,7 @@ recruit_character=POL_ponia
 promote_character=POL_ponia
 retire_character=POL_stanislawiiaugust
 }
-1812.1.1 = {
+1808.1.1 = {
 promote_character=POL_frederickaugustusipol
 }
 1814.1.1 = {
@@ -182,6 +185,9 @@ retire_character=POL_ponia
 retire_character=POL_frederickaugustusipol
 retire_character=POL_zajac
 retire_character=POL_konstantinpavlovich
+}
+1859.1.1 = {
+retire_character=POL_ivan
 }
 1926.1.1 = {
 recruit_character=POL_ignacy_moscicki
@@ -248,7 +254,7 @@ if = {
 }
 }
 
-set_research_slots = 3
+set_research_slots = 0
 
 # Starting tech
 1936.1.1 = {
@@ -272,6 +278,7 @@ set_technology = {
 	infantry_weapons = 1
 	transport = 1
 	early_submarine = 1
+        gw_artillery = 1 basic_train = 1
 }
 1936.1.1 = {
 if = {
@@ -675,7 +682,7 @@ set_politics = {
 	ruling_party = democratic
 	last_election = "1993.9.8"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
 	democratic = 79
