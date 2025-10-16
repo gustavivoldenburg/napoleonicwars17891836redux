@@ -45,7 +45,6 @@
         modifier = { add = 100 tag = CHL }
         modifier = { add = 100 tag = PAR }
         modifier = { add = 100 tag = URG }
-        modifier = { add = 100 tag = AUS }
         modifier = { add = 100 tag = COG }
         modifier = { add = 100 tag = AFG }
         modifier = { add = 100 tag = PER }

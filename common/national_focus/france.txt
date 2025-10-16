@@ -13188,7 +13188,7 @@ hidden_effect={
 		}
 			            set_autonomy = {
         target = VNT
-        autonomous_state = autonomy_protectorate
+        autonomous_state = autonomy_dominion
         freedom_level = 0.35
     }
 		add_political_power=-100
@@ -13498,7 +13498,7 @@ MNZ={is_subject_of = FRA}
 		PAP={set_cosmetic_tag = PAP_FRA}
 	            set_autonomy = {
         target = PAP
-        autonomous_state = autonomy_protectorate
+        autonomous_state = autonomy_dominion
         freedom_level = 0.35
     }
 		}
@@ -13956,7 +13956,7 @@ SPM={
 		NAP={set_cosmetic_tag = NAP_FRA}
 	            set_autonomy = {
         target = NAP
-        autonomous_state = autonomy_protectorate
+        autonomous_state = autonomy_dominion
         freedom_level = 0.35
     }
 			every_state={
@@ -14830,7 +14830,7 @@ search_filters = { FOCUS_FILTER_ALTHISTORY }
 						ENG={
 				set_autonomy = {
 				target = HOL
-                autonomous_state = autonomy_protectorate
+                autonomous_state = autonomy_dominion
                 freedom_level = 0.35
 	            }
 				}
@@ -15414,6 +15414,7 @@ FRA={country_event = fra_1789_event.57}
 		NOT={FRA={has_country_flag=the_armistice_of_steyr_has_happened_flag}}
 		has_war_with=AUS
 		NOT={is_ally_with=BAY}
+		NOT={is_ally_with=WUR}
 		}
 
 		bypass = {

@@ -121,6 +121,12 @@ fire_only_once = yes
 	option = { # 
 		name = "Seems we won"
 		ai_chance = { factor = 100 }
+				AUS={
+				set_autonomy = {
+				target = BEL
+                autonomous_state = autonomy_dominion
+                freedom_level = 0.35
+	            }
 	LUX={annex_country = { target = BEL transfer_troops = no }} 
 	LUX={set_cosmetic_tag=BEL_AUS}
 	}
