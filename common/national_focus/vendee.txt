@@ -1,0 +1,142 @@
+focus_tree = {
+    id = VND_vendee_tree
+    country = { tag = VND }   # Change if your Vendée tag is different
+    default = no
+
+    continuous_focus_position = { x = 0 y = 0 }
+
+    focus = {
+        id = VND_counter_revolution
+        icon = GFX_goal_generic_political_reform
+        x = 10
+        y = 0
+        cost = 8
+        ai_will_do = { factor = 1 }
+        completion_reward = {
+            set_country_flag = VND_counter_revolution_started
+            unlock_decision_category = VND_rescue_the_king_cat
+            add_political_power = 50
+            add_stability = 0.05
+        }
+    }
+
+    # ===========================
+    # Branch A: With the Federalists
+    # ===========================
+    focus = {
+        id = VND_federalist_overture
+        icon = GFX_goal_support_democracy
+        prerequisite = { focus = VND_counter_revolution }
+        mutually_exclusive = { focus = VND_royalist_purity }
+        x = 7
+        y = 1
+        cost = 8
+        available = { NOT = { has_country_flag = VND_royalist_path } }
+        completion_reward = {
+            set_country_flag = VND_federalist_path
+            add_stability = 0.05
+            add_war_support = -0.02
+            add_political_power = 50
+            add_ideas = VND_federalist_contacts_idea
+        }
+    }
+
+    focus = {
+        id = VND_constitutional_monarchy
+        icon = GFX_goal_support_monarchy
+        prerequisite = { focus = VND_federalist_overture }
+        x = 7
+        y = 2
+        cost = 10
+        completion_reward = {
+            set_rule = { can_force_government = yes }
+            set_country_flag = VND_constitutional_monarchy_intent
+            add_ideas = VND_compromise_charter_idea
+            add_stability = 0.05
+        }
+    }
+
+    focus = {
+        id = VND_pardon_lafayette
+        icon = GFX_goal_generic_political_pressure
+        prerequisite = { focus = VND_constitutional_monarchy }
+        x = 7
+        y = 3
+        cost = 8
+        completion_reward = {
+            country_event = { id = vendee.100 days = 1 }  # “Pardon Lafayette?” dialog
+        }
+    }
+
+    focus = {
+        id = VND_fate_of_jacobins
+        icon = GFX_goal_generic_political_discourse
+        prerequisite = { focus = VND_pardon_lafayette }
+        x = 7
+        y = 4
+        cost = 8
+        available = { has_global_flag = FR_civil_war_over }   # Set this when your civil war ends
+        completion_reward = {
+            country_event = { id = vendee.110 days = 1 }      # “Fate of the Jacobins”
+        }
+    }
+
+    # ===========================
+    # Branch B: On our own (Restore the Ancien Régime)
+    # ===========================
+    focus = {
+        id = VND_royalist_purity
+        icon = GFX_goal_generic_monarchy
+        prerequisite = { focus = VND_counter_revolution }
+        mutually_exclusive = { focus = VND_federalist_overture }
+        x = 13
+        y = 1
+        cost = 8
+        completion_reward = {
+            set_country_flag = VND_royalist_path
+            add_ideas = VND_clerical_support_idea
+            add_stability = 0.05
+            add_political_power = 50
+        }
+    }
+
+    focus = {
+        id = VND_restore_ancient_regime
+        icon = GFX_goal_generic_army_nationalism
+        prerequisite = { focus = VND_royalist_purity }
+        x = 13
+        y = 2
+        cost = 10
+        completion_reward = {
+            set_rule = { can_force_government = yes }
+            set_country_flag = VND_ancient_regime_restoration
+            add_stability = 0.05
+            add_war_support = 0.03
+        }
+    }
+
+    focus = {
+        id = VND_try_lafayette
+        icon = GFX_goal_generic_demand_territory
+        prerequisite = { focus = VND_restore_ancient_regime }
+        x = 13
+        y = 3
+        cost = 8
+        completion_reward = {
+            country_event = { id = vendee.200 days = 1 }  # “Trial of Lafayette”
+        }
+    }
+
+    focus = {
+        id = VND_fate_of_national_assembly
+        icon = GFX_goal_generic_political_reform
+        prerequisite = { focus = VND_try_lafayette }
+        x = 13
+        y = 4
+        cost = 8
+        available = { has_global_flag = FR_civil_war_over }
+        completion_reward = {
+            country_event = { id = vendee.210 days = 1 }  # “Fate of the National Assembly”
+        }
+    }
+}

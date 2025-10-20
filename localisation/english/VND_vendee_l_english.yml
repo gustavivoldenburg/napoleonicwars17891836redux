@@ -1,0 +1,76 @@
+﻿l_english:
+  VND_vendee_tree:0 "Vendée Focus Tree"
+
+  VND_counter_revolution:0 "Rally the Counter-Revolution"
+  VND_counter_revolution_desc:0 "The West rises. Priests sheltered, peasants armed, and Paris can mind its own guillotine."
+
+  VND_federalist_overture:0 "Overtures to the Federalists"
+  VND_federalist_overture_desc:0 "We can live with a charter if it stops the bloodletting."
+
+  VND_constitutional_monarchy:0 "The Compromise Charter"
+  VND_constitutional_monarchy_desc:0 "Crown above, liberties below. It’s not pure, but it’s livable."
+
+  VND_pardon_lafayette:0 "Question of Lafayette"
+  VND_pardon_lafayette_desc:0 "Hero, traitor, or useful symbol?"
+
+  VND_fate_of_jacobins:0 "Fate of the Jacobins"
+  VND_fate_of_jacobins_desc:0 "After the civil war, what do we do with the zealots?"
+
+  VND_royalist_purity:0 "Royalist Purity"
+  VND_royalist_purity_desc:0 "No half-measures. Throne and altar."
+
+  VND_restore_ancient_regime:0 "Restore the Ancien Régime"
+  VND_restore_ancient_regime_desc:0 "Customs, estates, and authority return."
+
+  VND_try_lafayette:0 "Try Lafayette"
+  VND_try_lafayette_desc:0 "Let’s put the Marquis on the scales of justice."
+
+  VND_fate_of_national_assembly:0 "Fate of the National Assembly"
+  VND_fate_of_national_assembly_desc:0 "Dissolve it, tame it, or cleanse it?"
+
+  # Ideas
+  VND_federalist_contacts_idea:0 "Federalist Contacts"
+  VND_compromise_charter_idea:0 "Compromise Charter"
+  VND_clerical_support_idea:0 "Clerical Support"
+
+  # Decisions
+  VND_rescue_the_king_cat:0 "Rescue the King"
+  VND_rescue_the_king_cat_desc:0 "Louis XVI sits in Paris. Time is running out; 21 January 1793 is a deadline you can’t negotiate with."
+
+  VND_contact_royalist_cells:0 "Contact Royalist Cells"
+  VND_contact_royalist_cells_desc:0 "Whispered passwords in church porches."
+
+  VND_smuggle_disguises:0 "Smuggle Disguises"
+  VND_smuggle_disguises_desc:0 "A valet’s coat can be as powerful as a musket."
+
+  VND_execute_the_rescue:0 "Execute the Rescue"
+  VND_execute_the_rescue_desc:0 "Open the gates, swap the carriage, pray the guards blink."
+
+  # Events
+  vendee.060.t:0 "Operation: The King’s Escape"
+  vendee.060.d:0 "Our agents are in position. Do we tempt fate and Parisian patrols tonight?"
+  vendee.060.a:0 "Do it."
+
+  vendee.100.t:0 "The Question of Lafayette"
+  vendee.100.d:0 "The Marquis stands between factions. Mercy, prudence, or disdain?"
+  vendee.100.a:0 "Full pardon and welcome."
+  vendee.100.b:0 "Conditional release after the civil war."
+  vendee.100.c:0 "Refuse any amnesty."
+
+  vendee.110.t:0 "Fate of the Jacobins"
+  vendee.110.d:0 "The war is done. The clubs are quiet. What now?"
+  vendee.110.a:0 "Exile the leadership."
+  vendee.110.b:0 "General amnesty."
+  vendee.110.c:0 "Harsh justice."
+
+  vendee.200.t:0 "Trial of Lafayette"
+  vendee.200.d:0 "The Marquis is in our custody. The court awaits a verdict."
+  vendee.200.a:0 "Execute him."
+  vendee.200.b:0 "Exile him."
+  vendee.200.c:0 "Pardon him."
+
+  vendee.210.t:0 "Fate of the National Assembly"
+  vendee.210.d:0 "A kingdom cannot serve two masters. What becomes of the Assembly?"
+  vendee.210.a:0 "Dissolve it."
+  vendee.210.b:0 "Keep it as an advisory chamber."
+  vendee.210.c:0 "Purge radicals, keep the institution."

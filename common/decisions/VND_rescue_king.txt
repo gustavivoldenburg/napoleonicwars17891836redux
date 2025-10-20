@@ -1,0 +1,56 @@
+category = {
+    id = VND_rescue_the_king_cat
+    icon = generic_treaty
+    allowed = { tag = VND }
+    visible = {
+        has_global_flag = FR_LouisXVI_imprisoned
+        VND_pre_execution_window = yes
+    }
+    # Optional tooltip gating on the same window:
+    cancel_if = { NOT = { VND_pre_execution_window = yes } }
+}
+
+decisions = {
+
+    VND_contact_royalist_cells = {
+        icon = generic_prepare
+        allowed = { has_country_flag = VND_counter_revolution_started }
+        visible = { has_global_flag = FR_LouisXVI_imprisoned VND_pre_execution_window = yes }
+        days_remove = 30
+        cost = 35
+        available = { VND_pre_execution_window = yes }
+        complete_effect = {
+            add_to_variable = { var = VND_rescue_prep value = 1 }
+            add_political_power = -15
+        }
+        ai_will_do = { factor = 1 }
+    }
+
+    VND_smuggle_disguises = {
+        icon = generic_smuggle
+        allowed = { has_country_flag = VND_counter_revolution_started }
+        visible = { has_global_flag = FR_LouisXVI_imprisoned VND_pre_execution_window = yes }
+        days_remove = 30
+        cost = 35
+        available = { VND_pre_execution_window = yes }
+        complete_effect = {
+            add_to_variable = { var = VND_rescue_prep value = 1 }
+            add_stability = 0.01
+        }
+        ai_will_do = { factor = 1 }
+    }
+
+    VND_execute_the_rescue = {
+        icon = generic_coup
+        allowed = { has_country_flag = VND_counter_revolution_started }
+        visible = { has_global_flag = FR_LouisXVI_imprisoned VND_pre_execution_window = yes }
+        days_remove = 7
+        cost = 50
+        available = { VND_pre_execution_window = yes }
+        remove_effect = { }  # nothing on timeout
+        complete_effect = {
+            country_event = { id = vendee.060 days = 1 }  # Rescue outcome check
+        }
+        ai_will_do = { factor = 1 }
+    }
+}

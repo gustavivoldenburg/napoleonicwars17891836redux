@@ -1,0 +1,19 @@
+ideas = {
+    VND_federalist_contacts_idea = {
+        allowed = { original_tag = VND }
+        picture = generic_political_advisor
+        modifier = { stability_factor = 0.02 political_power_gain = 0.05 }
+    }
+
+    VND_compromise_charter_idea = {
+        allowed = { original_tag = VND }
+        picture = generic_head_of_government
+        modifier = { stability_factor = 0.03 }
+    }
+
+    VND_clerical_support_idea = {
+        allowed = { original_tag = VND }
+        picture = generic_theorist
+        modifier = { stability_factor = 0.03 war_support_factor = 0.02 }
+    }
+}

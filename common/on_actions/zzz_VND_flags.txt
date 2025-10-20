@@ -1,0 +1,16 @@
+on_actions = {
+    # Call this from your France resolution pipeline
+    on_weekly_pulse = {
+        effect = {
+            if = {
+                limit = {
+                    has_global_flag = FR_civil_war_active
+                    # Your own end conditions here…
+                    # e.g. NOT = { any_country = { is_in_civil_war = yes tag = FRA } }
+                }
+                clr_global_flag = FR_civil_war_active
+                set_global_flag = FR_civil_war_over
+            }
+        }
+    }
+}

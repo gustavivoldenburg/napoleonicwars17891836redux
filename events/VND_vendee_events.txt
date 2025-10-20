@@ -1,0 +1,183 @@
+add_namespace = vendee
+
+# 060: Rescue outcome
+country_event = {
+    id = vendee.060
+    title = vendee.060.t
+    desc  = vendee.060.d
+    picture = GFX_report_event_crisis
+
+    trigger = {
+        tag = VND
+        has_global_flag = FR_LouisXVI_imprisoned
+        VND_pre_execution_window = yes
+    }
+
+    immediate = { }  # you can log variables here if you like
+
+    option = {
+        name = vendee.060.a  # Attempt the rescue
+
+        # If you're using "check_variable" trigger in your mod base, prefer that.
+        # Fallback: branch on >=2 prep as a crude threshold.
+        if = {
+            limit = { check_variable = { which = VND_rescue_prep value >= 2 } }
+            random_list = {
+                70 = {  # Success path
+                    set_global_flag = FR_LouisXVI_rescued
+                    clr_global_flag = FR_LouisXVI_imprisoned
+                    set_country_flag = VND_rescued_the_king
+                    add_stability = 0.05
+                    add_political_power = 100
+
+                    # Hook for your France side: swap ruler to Louis XVI, end imprisonment, etc.
+                    # Example (adjust to your setup):
+                    # FRA = {
+                    #   set_ruling_party = neutrality
+                    #   set_politics = { ruling_party = neutrality elections_allowed = no }
+                    #   country_event = { id = france.royal_return days = 1 }
+                    # }
+                }
+                30 = {  # Fail but before 21 Jan
+                    set_global_flag = FR_rescue_attempt_failed
+                    add_war_support = -0.02
+                    add_stability = -0.02
+                    # If your timeline later fires the execution event on 21 Jan, do nothing else here.
+                }
+            }
+        }
+        else = {
+            random_list = {
+                40 = {  # low prep, lucky success
+                    set_global_flag = FR_LouisXVI_rescued
+                    clr_global_flag = FR_LouisXVI_imprisoned
+                    set_country_flag = VND_rescued_the_king
+                    add_stability = 0.03
+                    add_political_power = 60
+                }
+                60 = {
+                    set_global_flag = FR_rescue_attempt_failed
+                    add_war_support = -0.03
+                    add_stability = -0.03
+                }
+            }
+        }
+    }
+}
+
+# 100: Pardon Lafayette? (Federalist path)
+country_event = {
+    id = vendee.100
+    title = vendee.100.t
+    desc  = vendee.100.d
+    picture = GFX_report_event_political
+
+    trigger = { has_country_flag = VND_federalist_path }
+
+    option = {
+        name = vendee.100.a   # Full Pardon
+        add_stability = 0.02
+        set_global_flag = FR_Lafayette_pardoned
+        add_political_power = 50
+        # Hook: if you model Lafayette as a FRA character/idea, flip his status here.
+    }
+    option = {
+        name = vendee.100.b   # Conditional Release (after civil war)
+        set_country_flag = VND_lafayette_conditional
+        add_political_power = 25
+    }
+    option = {
+        name = vendee.100.c   # Refuse
+        add_war_support = 0.02
+        add_stability = -0.02
+    }
+}
+
+# 110: Fate of the Jacobins (post–civil war)
+country_event = {
+    id = vendee.110
+    title = vendee.110.t
+    desc  = vendee.110.d
+    picture = GFX_report_event_political
+
+    trigger = { VND_post_civil_war = yes }
+
+    option = {
+        name = vendee.110.a  # Exile the Leadership
+        add_stability = 0.02
+        add_war_support = -0.01
+        set_country_flag = VND_exiled_jacobins
+    }
+    option = {
+        name = vendee.110.b  # General Amnesty
+        add_stability = 0.03
+        add_war_support = -0.02
+        set_country_flag = VND_amnesty_jacobins
+    }
+    option = {
+        name = vendee.110.c  # Harsh Justice
+        add_war_support = 0.03
+        add_stability = -0.03
+        set_country_flag = VND_executed_jacobins
+    }
+}
+
+# 200: Trial of Lafayette (Royalist path)
+country_event = {
+    id = vendee.200
+    title = vendee.200.t
+    desc  = vendee.200.d
+    picture = GFX_report_event_political
+
+    trigger = { has_country_flag = VND_royalist_path }
+
+    option = {
+        name = vendee.200.a  # Execute
+        add_war_support = 0.03
+        add_stability = -0.03
+        set_global_flag = FR_Lafayette_executed
+    }
+    option = {
+        name = vendee.200.b  # Exile
+        add_stability = 0.01
+        set_global_flag = FR_Lafayette_exiled
+    }
+    option = {
+        name = vendee.200.c  # Pardon
+        add_stability = 0.03
+        add_political_power = 50
+        set_global_flag = FR_Lafayette_pardoned
+    }
+}
+
+# 210: Fate of the National Assembly (post–civil war, Royalist)
+country_event = {
+    id = vendee.210
+    title = vendee.210.t
+    desc  = vendee.210.d
+    picture = GFX_report_event_parliament
+
+    trigger = {
+        has_country_flag = VND_royalist_path
+        VND_post_civil_war = yes
+    }
+
+    option = {
+        name = vendee.210.a  # Dissolve it
+        add_stability = 0.02
+        add_war_support = 0.02
+        set_country_flag = VND_dissolved_assembly
+        # Hook: remove parliament mechanics if you have them
+    }
+    option = {
+        name = vendee.210.b  # Keep as Advisory Chamber
+        add_stability = 0.03
+        set_country_flag = VND_advisory_assembly
+    }
+    option = {
+        name = vendee.210.c  # Purge Radicals, Keep Institution
+        add_stability = 0.01
+        add_war_support = 0.01
+        set_country_flag = VND_purged_assembly
+    }
+}

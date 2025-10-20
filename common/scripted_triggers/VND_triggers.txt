@@ -1,0 +1,7 @@
+VND_pre_execution_window = {
+    date < 1793.1.21
+}
+
+VND_post_civil_war = {
+    has_global_flag = FR_civil_war_over
+}
