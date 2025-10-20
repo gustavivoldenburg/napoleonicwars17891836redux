@@ -55,7 +55,7 @@ focus_tree = {
 
     focus = {
         id = VND_constitutional_monarchy
-        icon = GFX_goal_support_monarchy
+        icon = GFX_focus_spr_torchbearers_of_tomorrow
         prerequisite = { focus = VND_federalist_overture }
         x = 7
         y = 2
@@ -82,7 +82,7 @@ focus_tree = {
 
     focus = {
         id = VND_fate_of_jacobins
-        icon = GFX_goal_generic_political_discourse
+        icon = GFX_goal_continuous_restrict_freedom
         prerequisite = { focus = VND_pardon_lafayette }
         x = 7
         y = 4
