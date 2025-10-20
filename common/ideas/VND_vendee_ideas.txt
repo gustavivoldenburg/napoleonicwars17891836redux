@@ -2,7 +2,7 @@ ideas = {
     country = {
     VND_federalist_contacts_idea = {
         allowed = { original_tag = VND }
-        picture = generic_political_advisor
+        picture = GFX_focus_CHL_invite_french_aristocracy
         modifier = { stability_factor = 0.02 political_power_gain = 0.05 }
     }
 

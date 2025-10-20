@@ -20,14 +20,13 @@ focus_tree = {
 
     focus = {
         id = VND_counter_revolution
-        icon = GFX_goal_generic_political_reform
+        icon = GFX_SOV_capital_of_the_tsars_ccp_2d_sov_compatibility
         x = 10
         y = 0
         cost = 8
         ai_will_do = { factor = 1 }
         completion_reward = {
             set_country_flag = VND_counter_revolution_started
-            unlock_decision_category = VND_rescue_the_king_cat
             add_political_power = 50
             add_stability = 0.05
         }
