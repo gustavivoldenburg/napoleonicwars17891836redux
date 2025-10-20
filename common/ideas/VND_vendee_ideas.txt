@@ -62,7 +62,7 @@ ideas = {
 
     VND_prussian_tactics_idea = {
         allowed = { original_tag = VND }
-        picture = generic_army_high_command
+        picture = GER_fan_prussian_militarism
         modifier = {
             division_organization = 5
             initiative_factor = 0.05
