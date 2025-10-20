@@ -16,7 +16,7 @@ focus_tree = {
 		}
 
 
-    continuous_focus_position = { x = 0 y = 0 }
+    continuous_focus_position = { x = 2000 y = 2000 }
 
     focus = {
         id = VND_counter_revolution
@@ -98,7 +98,7 @@ focus_tree = {
     # ===========================
     focus = {
         id = VND_royalist_purity
-        icon = GFX_goal_generic_monarchy
+        icon = GFX_focus_generic_strike_at_democracy2
         prerequisite = { focus = VND_counter_revolution }
         mutually_exclusive = { focus = VND_federalist_overture }
         x = 13
@@ -156,7 +156,7 @@ focus_tree = {
     # ===========================
     focus = {
         id = VND_raise_vendee_army
-        icon = GFX_goal_generic_army_mobilization
+        icon = GFX_focus_generic_full_social_mobilization
         prerequisite = { focus = VND_counter_revolution }
         x = 10
         y = 1
@@ -171,7 +171,7 @@ focus_tree = {
 
     focus = {
         id = VND_royal_women_at_arms
-        icon = GFX_goal_generic_army_reform
+        icon = GFX_focus_generic_women_in_military
         prerequisite = { focus = VND_raise_vendee_army }
         x = 9
         y = 2
