@@ -2,7 +2,7 @@
 music_station = "base_music"
 
 music = {
-	song = "la_marseillaise"
+	song = "maintheme"
 	chance = {
 		modifier = {
 			factor = 0.5

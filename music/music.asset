@@ -1,5 +1,10 @@
 
-
+# MAIN THEME
+music = {
+	name = "maintheme"
+	file = "la_marseillaise.ogg"
+	volume = 0.65
+}
 
 # General Peace:
 music = {
