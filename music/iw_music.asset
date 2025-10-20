@@ -2,3 +2,23 @@ music = {
 	name = "la_marseillaise"
 	file = "la_marseillaise.ogg"
 }
+music = {
+	name = "The girl I left behind me"
+	file = "The girl I left behind me.ogg"
+}
+music = {
+	name = "The Preußischer Präsentiermarsch"
+	file = "The Preußischer Präsentiermarsch.ogg"
+}
+music = {
+	name = "Marcia La Leopolda"
+	file = "Marcia La Leopolda.ogg"
+}
+music = {
+	name = "Marche de la garde consulaire a Marengo"
+	file = "Marche de la garde consulaire a Marengo.ogg"
+}
+music = {
+	name = "Marcha Real"
+	file = "Marcha Real.ogg"
+}

@@ -8,3 +8,57 @@ music = {
 		}
 	}
 }
+music = {
+	song = "The girl I left behind me"
+	chance = {
+		factor = 0
+		modifier = {
+			factor = 100
+		}
+	}
+}
+music = {
+	song = "Marcia La Leopolda"
+	chance = {
+		factor = 0
+		modifier = {
+			factor = 100
+		}
+	}
+}
+music = {
+	song = "Marche de la garde consulaire a Marengo"
+	chance = {
+		factor = 0
+		modifier = {
+			factor = 100
+		}
+	}
+}
+music = {
+	song = "The Preußischer Präsentiermarsch"
+	chance = {
+		factor = 0
+		modifier = {
+			factor = 100
+		}
+	}
+}
+music = {
+	song = "Marcha Real"
+	chance = {
+		factor = 0
+		modifier = {
+			factor = 100
+		}
+	}
+}
+music = {
+	song = "Marcha de Granaderos"
+	chance = {
+		factor = 0
+		modifier = {
+			factor = 100
+		}
+	}
+}
