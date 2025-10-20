@@ -152,4 +152,52 @@ focus_tree = {
             country_event = { id = vendee.210 days = 1 }  # “Fate of the National Assembly”
         }
     }
+	# ===========================
+    # Military Branch
+    # ===========================
+    focus = {
+        id = VND_raise_vendee_army
+        icon = GFX_goal_generic_army_mobilization
+        prerequisite = { focus = VND_counter_revolution }
+        x = 10
+        y = 1
+        cost = 8
+        ai_will_do = { factor = 1 }
+        completion_reward = {
+            add_ideas = VND_vendee_maquis_idea
+            add_army_experience = 10
+            add_war_support = 0.03
+        }
+    }
+
+    focus = {
+        id = VND_royal_women_at_arms
+        icon = GFX_goal_generic_army_reform
+        prerequisite = { focus = VND_raise_vendee_army }
+        x = 9
+        y = 2
+        cost = 8
+        ai_will_do = { factor = 1 }
+        completion_reward = {
+            add_ideas = VND_women_royal_warriors_idea
+            add_stability = -0.08
+        }
+    }
+
+    # Ask the First Coalition for help (fires request event; donors may accept or refuse)
+    focus = {
+        id = VND_call_first_coalition
+        icon = GFX_goal_generic_diplomacy
+        prerequisite = { focus = VND_raise_vendee_army }
+        x = 11
+        y = 2
+        cost = 10
+        available = { NOT = { has_country_flag = VND_called_first_coalition } }
+        ai_will_do = { factor = 1 }
+        completion_reward = {
+            set_country_flag = VND_called_first_coalition
+            country_event = { id = vendee.300 days = 1 }
+        }
+    }
+
 }

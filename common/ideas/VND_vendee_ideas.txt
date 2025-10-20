@@ -17,5 +17,57 @@ ideas = {
         picture = generic_theorist
         modifier = { stability_factor = 0.03 war_support_factor = 0.02 }
     }
+	
+	VND_vendee_maquis_idea = {
+        allowed = { original_tag = VND }
+        picture = generic_army_high_command
+        modifier = {
+            division_attack_on_core_factor = 0.05
+            training_time_army_factor = -0.05
+            supply_consumption_factor = -0.03
+        }
+    }
+
+    # One-focus “women at arms” buff: small, useful, done.
+    VND_women_royal_warriors_idea = {
+        allowed = { original_tag = VND }
+        picture = generic_military_theorist
+        modifier = {
+            recruitable_population_factor = 0.02
+            division_attack_factor = 0.02
+            planning_speed = 0.05
+        }
+    }
+
+    # Timed foreign-aid ideas granted on acceptance
+    VND_british_subsidies_idea = {
+        allowed = { original_tag = VND }
+        picture = generic_industrial_concern
+        modifier = {
+            industrial_capacity_factory = 0.03
+            command_power_gain_mult = 0.10
+            production_speed_arms_factory_factor = 0.05
+        }
+    }
+
+    VND_austrian_drillmasters_idea = {
+        allowed = { original_tag = VND }
+        picture = generic_military_theorist
+        modifier = {
+            land_doctrine_cost_factor = -0.10
+            army_leader_start_attack_level = 1
+            army_morale_factor = 0.05
+        }
+    }
+
+    VND_prussian_tactics_idea = {
+        allowed = { original_tag = VND }
+        picture = generic_army_high_command
+        modifier = {
+            division_organization = 5
+            initiative_factor = 0.05
+            max_planning = 0.05
+        }
+    }
 	}
 }

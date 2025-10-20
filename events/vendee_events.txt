@@ -117,3 +117,161 @@ country_event = {
         set_country_flag = VND_purged_assembly
     }
 }
+
+# 300: Choose whom to ask in the First Coalition
+country_event = {
+    id = vendee.300
+    title = vendee.300.t
+    desc  = vendee.300.d
+    picture = GFX_report_event_diplomatic
+    trigger = { tag = VND }
+
+    option = {
+        name = vendee.300.a  # Ask Britain
+        ai_chance = { factor = 50 }
+        ENG = { country_event = { id = vendee.301 days = 1 } }
+    }
+    option = {
+        name = vendee.300.b  # Ask Austria
+        ai_chance = { factor = 30 }
+        AUS = { country_event = { id = vendee.302 days = 1 } }
+    }
+    option = {
+        name = vendee.300.c  # Ask Prussia
+        ai_chance = { factor = 20 }
+        PRU = { country_event = { id = vendee.303 days = 1 } }
+    }
+}
+
+# 301: Britain responds
+country_event = {
+    id = vendee.301
+    is_triggered_only = yes
+    title = vendee.301.t
+    desc  = vendee.301.d
+    picture = GFX_report_event_parliament
+    immediate = { }
+
+    option = {
+        name = vendee.301.a   # Approve subsidies and advisors
+        ai_chance = { factor = 65 }
+        VND = {
+            add_timed_idea = { idea = VND_british_subsidies_idea days = 180 }
+            add_equipment_to_stockpile = { type = infantry_equipment amount = 1000 producer = ENG }
+            add_political_power = 50
+            country_event = { id = vendee.305 days = 1 }  # Notify acceptance
+        }
+        add_opinion_modifier = { target = VND modifier = positive_trade_relations }
+    }
+    option = {
+        name = vendee.301.b   # Decline
+        ai_chance = { factor = 35 }
+        VND = { country_event = { id = vendee.314 days = 1 } }
+        add_opinion_modifier = { target = VND modifier = embargo }
+    }
+}
+
+# 302: Austria responds
+country_event = {
+    id = vendee.302
+    is_triggered_only = yes
+    title = vendee.302.t
+    desc  = vendee.302.d
+    picture = GFX_report_event_military
+
+    option = {
+        name = vendee.302.a   # Send drillmasters
+        ai_chance = { factor = 55 }
+        VND = {
+            add_timed_idea = { idea = VND_austrian_drillmasters_idea days = 180 }
+            add_equipment_to_stockpile = { type = infantry_equipment amount = 700 producer = AUS }
+            add_army_experience = 15
+            country_event = { id = vendee.306 days = 1 }
+        }
+        add_opinion_modifier = { target = VND modifier = military_advisors_opinion }
+    }
+    option = {
+        name = vendee.302.b   # Decline
+        ai_chance = { factor = 45 }
+        VND = { country_event = { id = vendee.316 days = 1 } }
+    }
+}
+
+# 303: Prussia responds
+country_event = {
+    id = vendee.303
+    is_triggered_only = yes
+    title = vendee.303.t
+    desc  = vendee.303.d
+    picture = GFX_report_event_military
+
+    option = {
+        name = vendee.303.a   # Share tactics
+        ai_chance = { factor = 45 }
+        VND = {
+            add_timed_idea = { idea = VND_prussian_tactics_idea days = 180 }
+            add_equipment_to_stockpile = { type = infantry_equipment amount = 500 producer = PRU }
+            add_political_power = 25
+            country_event = { id = vendee.307 days = 1 }
+        }
+        add_opinion_modifier = { target = VND modifier = military_advisors_opinion }
+    }
+    option = {
+        name = vendee.303.b   # Decline
+        ai_chance = { factor = 55 }
+        VND = { country_event = { id = vendee.317 days = 1 } }
+    }
+}
+
+country_event = {
+    id = vendee.305
+    title = vendee.305.t
+    desc  = vendee.305.d
+    picture = GFX_report_event_diplomatic
+    trigger = { tag = VND }
+    option = { name = vendee.ok }
+}
+
+country_event = {
+    id = vendee.306
+    title = vendee.306.t
+    desc  = vendee.306.d
+    picture = GFX_report_event_diplomatic
+    trigger = { tag = VND }
+    option = { name = vendee.ok }
+}
+
+country_event = {
+    id = vendee.307
+    title = vendee.307.t
+    desc  = vendee.307.d
+    picture = GFX_report_event_diplomatic
+    trigger = { tag = VND }
+    option = { name = vendee.ok }
+}
+
+# Decline notifications (to VND)
+country_event = {
+    id = vendee.314
+    title = vendee.314.t
+    desc  = vendee.314.d
+    picture = GFX_report_event_diplomatic
+    trigger = { tag = VND }
+    option = { name = vendee.ok }
+}
+country_event = {
+    id = vendee.316
+    title = vendee.316.t
+    desc  = vendee.316.d
+    picture = GFX_report_event_diplomatic
+    trigger = { tag = VND }
+    option = { name = vendee.ok }
+}
+country_event = {
+    id = vendee.317
+    title = vendee.317.t
+    desc  = vendee.317.d
+    picture = GFX_report_event_diplomatic
+    trigger = { tag = VND }
+    option = { name = vendee.ok }
+}

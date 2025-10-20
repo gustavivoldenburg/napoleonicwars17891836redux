@@ -74,3 +74,64 @@
   vendee.210.a:0 "Dissolve it."
   vendee.210.b:0 "Keep it as an advisory chamber."
   vendee.210.c:0 "Purge radicals, keep the institution."
+
+  # Military branch focuses
+  VND_raise_vendee_army:0 "Raise the Vendée Army"
+  VND_raise_vendee_army_desc:0 "Rifles, rosaries, and rough terrain. We know how to fight at home."
+
+  VND_royal_women_at_arms:0 "Royal Women at Arms"
+  VND_royal_women_at_arms_desc:0 "When the realm is in peril, everyone stands the line. Uniforms optional, courage mandatory."
+
+  VND_call_first_coalition:0 "Appeal to the First Coalition"
+  VND_call_first_coalition_desc:0 "If Europe wants the Revolution stopped, they can start by helping us."
+
+  # Ideas
+  VND_vendee_maquis_idea:0 "Vendée Maquis"
+  VND_women_royal_warriors_idea:0 "Women Royal Warriors"
+  VND_british_subsidies_idea:0 "British Subsidies"
+  VND_austrian_drillmasters_idea:0 "Austrian Drillmasters"
+  VND_prussian_tactics_idea:0 "Prussian Tactics Advisors"
+
+  # Coalition ask
+  vendee.300.t:0 "A Call to the First Coalition"
+  vendee.300.d:0 "Our fight weakens the Revolution’s hold in the West. Which court shall we petition for aid?"
+  vendee.300.a:0 "Appeal to Britain"
+  vendee.300.b:0 "Appeal to Austria"
+  vendee.300.c:0 "Appeal to Prussia"
+
+  # Britain
+  vendee.301.t:0 "Vendée Requests British Aid"
+  vendee.301.d:0 "Counter-revolutionaries ask Whitehall for subsidies and advisors."
+  vendee.301.a:0 "Grant subsidies and advisors."
+  vendee.301.b:0 "Decline."
+
+  # Austria
+  vendee.302.t:0 "Vendée Requests Austrian Aid"
+  vendee.302.d:0 "The Western rebellion seeks our drillmasters and materiel."
+  vendee.302.a:0 "Send drillmasters and equipment."
+  vendee.302.b:0 "Decline."
+
+  # Prussia
+  vendee.303.t:0 "Vendée Requests Prussian Aid"
+  vendee.303.d:0 "They ask for tactical guidance and arms."
+  vendee.303.a:0 "Share tactics and arms."
+  vendee.303.b:0 "Decline."
+
+  # Accept notifications (to VND)
+  vendee.305.t:0 "Britain Approves"
+  vendee.305.d:0 "Subsidies and advisors arrive from across the Channel."
+  vendee.306.t:0 "Austria Approves"
+  vendee.306.d:0 "Drillmasters in white coats step off the wagons."
+  vendee.307.t:0 "Prussia Approves"
+  vendee.307.d:0 "Prussian tacticians unroll their maps."
+
+  # Decline notifications (to VND)
+  vendee.314.t:0 "Britain Declines"
+  vendee.314.d:0 "No funds, only speeches."
+  vendee.316.t:0 "Austria Declines"
+  vendee.316.d:0 "Vienna sends regrets."
+  vendee.317.t:0 "Prussia Declines"
+  vendee.317.d:0 "Berlin will not intervene."
+
+  vendee.ok:0 "Noted."
+
