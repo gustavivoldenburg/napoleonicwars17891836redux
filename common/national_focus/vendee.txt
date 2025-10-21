@@ -17,10 +17,13 @@ focus_tree = {
         icon = GFX_goal_vive_king
         x = 10
         y = 0
-        cost = 8
+        cost = 3
         ai_will_do = { factor = 1 }
         completion_reward = {
             set_country_flag = VND_counter_revolution_started
+			completion_reward = {
+                country_event = { id = vendee.1 days = 1 }
+            }   
             add_political_power = 50
             add_stability = 0.05
         }
@@ -36,8 +39,8 @@ focus_tree = {
         mutually_exclusive = { focus = VND_royalist_purity }
         x = 7
         y = 1
-        cost = 8
-        available = { NOT = { has_country_flag = VND_royalist_path } }
+        cost = 3
+        available =  { has_country_flag = VND_royalist_path } 
         completion_reward = {
             set_country_flag = VND_federalist_path
             add_stability = 0.05
@@ -53,7 +56,8 @@ focus_tree = {
         prerequisite = { focus = VND_federalist_overture }
         x = 7
         y = 2
-        cost = 10
+        cost = 3
+		available =  { has_country_flag = vendee_federalist_alliance } 
         completion_reward = {
             set_rule = { can_force_government = yes }
             set_country_flag = VND_constitutional_monarchy_intent
@@ -68,7 +72,7 @@ focus_tree = {
         prerequisite = { focus = VND_constitutional_monarchy }
         x = 7
         y = 3
-        cost = 8
+        cost = 3
         completion_reward = {
             country_event = { id = vendee.100 days = 1 }  # “Pardon Lafayette?” dialog
         }
@@ -80,7 +84,7 @@ focus_tree = {
         prerequisite = { focus = VND_pardon_lafayette }
         x = 7
         y = 4
-        cost = 8
+        cost = 3
         available = { has_global_flag = FR_civil_war_over }   # Set this when your civil war ends
         completion_reward = {
             country_event = { id = vendee.110 days = 1 }      # “Fate of the Jacobins”
@@ -97,7 +101,7 @@ focus_tree = {
         mutually_exclusive = { focus = VND_federalist_overture }
         x = 13
         y = 1
-        cost = 8
+        cost = 3
         completion_reward = {
             set_country_flag = VND_royalist_path
             add_ideas = VND_clerical_support_idea
@@ -112,7 +116,7 @@ focus_tree = {
         prerequisite = { focus = VND_royalist_purity }
         x = 13
         y = 2
-        cost = 10
+        cost = 3
         completion_reward = {
             set_rule = { can_force_government = yes }
             set_country_flag = VND_ancient_regime_restoration
@@ -127,7 +131,7 @@ focus_tree = {
         prerequisite = { focus = VND_restore_ancient_regime }
         x = 13
         y = 3
-        cost = 8
+        cost = 3
         completion_reward = {
             country_event = { id = vendee.200 days = 1 }  # “Trial of Lafayette”
         }
@@ -139,7 +143,7 @@ focus_tree = {
         prerequisite = { focus = VND_try_lafayette }
         x = 13
         y = 4
-        cost = 8
+        cost = 4
         available = { has_global_flag = FR_civil_war_over }
         completion_reward = {
             country_event = { id = vendee.210 days = 1 }  # “Fate of the National Assembly”
@@ -154,7 +158,7 @@ focus_tree = {
         prerequisite = { focus = VND_counter_revolution }
         x = 10
         y = 1
-        cost = 8
+        cost = 5
         ai_will_do = { factor = 1 }
         completion_reward = {
             add_ideas = VND_vendee_maquis_idea
@@ -169,7 +173,7 @@ focus_tree = {
         prerequisite = { focus = VND_raise_vendee_army }
         x = 9
         y = 2
-        cost = 8
+        cost = 5
         ai_will_do = { factor = 1 }
         completion_reward = {
             add_ideas = VND_women_royal_warriors_idea
@@ -184,7 +188,7 @@ focus_tree = {
         prerequisite = { focus = VND_raise_vendee_army }
         x = 11
         y = 2
-        cost = 10
+        cost = 6
         available = { NOT = { has_country_flag = VND_called_first_coalition } }
         ai_will_do = { factor = 1 }
         completion_reward = {

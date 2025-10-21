@@ -806,3 +806,7 @@ bel_1789_event.3.d:0 "The Belgian Revolution"
 ire_1789_event.1.d:0 "The Jacobite Rebellion of the 1800s"
 ire_1789_event.2.d:0 "Expulsion of 100k Ulster Protestants"
 ire_1789_news.1.d:0 "The Jacobite Rebellion of the 1800s"
+
+treaty.1.t: "France republic Capitulates"
+treaty.1.d: "Those abomination has finally ceased to exist"
+treaty.1.a: "huh"

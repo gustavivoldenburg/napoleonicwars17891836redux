@@ -276,3 +276,39 @@ country_event = {
     trigger = { tag = VND }
     option = { name = vendee.ok }
 }
+country_event = {
+  id = vendee.1
+  title = vendee.1.a
+  desc = vendee.1.b
+
+  picture: GFX_event_vendee_rescue
+
+  is_triggered_only: yes
+
+  option: {
+    name: "The King thanks you for your service and assistance."
+    
+    add_political_power: 50
+    add_stability: 0.05
+    custom_effect_tooltip: "We gain Federalist support and move toward constitutional monarchy."
+    
+    hidden_effect: {
+      set_country_flag: vendee_federalist_alliance
+    }
+  }
+
+  option: {
+    name: "Republicans are republicans. Kill them all."
+    # Hardline Absolutist path - execute the Federalists
+    trigger: { always: yes }
+    
+    add_political_power: -25
+    add_stability: -0.03
+    add_war_support: 0.05
+    custom_effect_tooltip: "We reject compromise with any form of republicanism."
+    
+    hidden_effect: {
+      set_country_flag: VND_royalist_path
+    }
+  }
+}  
