@@ -66,6 +66,7 @@ country_event = {
     picture = GFX_report_event_political
 
     trigger = { has_country_flag = VND_royalist_path }
+	fire_only_once = yes
 
     option = {
         name = vendee.200.a  # Execute
