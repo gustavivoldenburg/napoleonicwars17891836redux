@@ -20,7 +20,7 @@ on_actions = {
         SPR = { transfer_state = 806 }
 		PRE = { transfer_state = 16 }
 		POR = { transfer_state = 310 }
-		POR = { transfer_state = 1112 }
+		LUX = { transfer_state = 1112 }
 
         VND = {
           transfer_state = 32
