@@ -63,7 +63,7 @@ ideas = {
         allowed = { original_tag = VND }
         picture = GER_fan_prussian_militarism
         modifier = {
-            division_organization = 5
+            division_organization = 0.02
             initiative_factor = 0.05
             max_planning = 0.05
         }
