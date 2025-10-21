@@ -96,6 +96,7 @@ focus_tree = {
         id = VND_royalist_purity
         icon = GFX_focus_generic_strike_at_democracy2
         prerequisite = { focus = VND_counter_revolution }
+		available =  { has_country_flag = VND_royalist_path } 
         mutually_exclusive = { focus = VND_federalist_overture }
         x = 13
         y = 1
@@ -187,7 +188,6 @@ focus_tree = {
         x = 11
         y = 2
         cost = 6
-        available = { NOT = { has_country_flag = VND_called_first_coalition } }
         ai_will_do = { factor = 1 }
         completion_reward = {
             set_country_flag = VND_called_first_coalition
