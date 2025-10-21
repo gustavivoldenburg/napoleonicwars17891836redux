@@ -63,7 +63,7 @@ country_event = {
     id = vendee.200
     title = vendee.200.t
     desc  = vendee.200.d
-    picture = GFX_report_event_political
+    picture = GFX_report_lafayette_traitor
 
     trigger = { has_country_flag = VND_royalist_path }
 	fire_only_once = yes
