@@ -186,6 +186,11 @@ spriteTypes = {
 		name = "GFX_idea_rus_wylie_small"
 		texturefile = "gfx/interface/ideas/idea_wylie_small.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_idea_woman_warrior"
+		texturefile = "gfx/interface/ideas/VND/woman_warrior.dds"
+	}
 
 
 

@@ -28,10 +28,9 @@ ideas = {
         }
     }
 
-    # One-focus “women at arms” buff: small, useful, done.
     VND_women_royal_warriors_idea = {
         allowed = { original_tag = VND }
-        picture = generic_military_theorist
+        picture = woman_warrior
         modifier = {
             recruitable_population_factor = 0.02
             division_attack_factor = 0.02
