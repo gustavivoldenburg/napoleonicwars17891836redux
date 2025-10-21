@@ -9,11 +9,18 @@ on_actions = {
 		set_country_flag = french_surrender_done
 
         ENG = { transfer_state = 29 }
+		ENG = { transfer_state = 694 }
+		ENG = { transfer_state = 1176 }
+		ENG = { transfer_state = 1104 }
         BEL = { transfer_state = 986 }
         BEL = { transfer_state = 969 }
         AUS = { transfer_state = 28 }
+		AUS = { transfer_state = 1234 }
         SPR = { transfer_state = 1105 }
         SPR = { transfer_state = 806 }
+		PRE = { transfer_state = 16 }
+		POR = { transfer_state = 310 }
+		POR = { transfer_state = 1112 }
 
         VND = {
           transfer_state = 32
@@ -34,13 +41,8 @@ on_actions = {
           transfer_state = 1103
           transfer_state = 17
           transfer_state = 785
-          transfer_state = 1104
-          transfer_state = 1176
           transfer_state = 18
           transfer_state = 27
-          transfer_state = 1112
-          transfer_state = 1234
-          transfer_state = 16
         }
 
         29   = { add_state_core = VND }
