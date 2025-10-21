@@ -2,7 +2,8 @@ on_actions = {
   on_capitulation = {
     effect = {
       if = {
-        limit = { FROM = { tag = FRA } }
+        limit = {
+          ROOT = { tag = FRA has_capitulated = yes }
         }
 
         VND = { annex_country = { target = FRA transfer_troops = yes } }
