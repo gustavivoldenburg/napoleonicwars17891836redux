@@ -10924,7 +10924,6 @@ date > 1792.1.1
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		
 		completion_reward = {
-		FRA={add_ideas={war_of_survival_fra}}
 		932 = { add_claim_by = root }
 		960 = { add_claim_by = root }
 		
