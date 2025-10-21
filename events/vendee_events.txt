@@ -293,6 +293,7 @@ country_event = {
     
     hidden_effect = {
       set_country_flag = vendee_federalist_alliance
+	  set_country_flag = rescue_king
     }
   }
 
@@ -305,6 +306,23 @@ country_event = {
     
     hidden_effect = {
       set_country_flag = VND_royalist_path
+	  set_country_flag = rescue_king
     }
+  }
+}
+country_event = {
+  id = vendee.2
+  title = vendee.2.a
+  desc = vendee.2.b
+  picture = GFX_report_event_diplomatic
+
+  trigger = { has_country_flag = rescue_king }
+  fire_only_once = yes
+
+  option = {
+    name = vendee.2.c
+  }
+  option = {
+    name = vendee.2.d
   }
 }  
