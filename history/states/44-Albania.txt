@@ -32,13 +32,13 @@ state={
 		}
 		add_core_of = ALB
 		1500.1.1 = {
-                owner = OTO
+                owner = TUR
                 }
 				1789.1.1 = {
                 owner = ALB
                 }
 				1823.1.1 = {
-                owner = OTO
+                owner = TUR
                 }
 		1913.1.1 = {
 			owner = ALB

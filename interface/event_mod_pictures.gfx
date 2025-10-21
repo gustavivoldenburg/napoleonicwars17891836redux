@@ -150,7 +150,11 @@ spriteTypes = {
 	}
 
 
-        spriteType = {
+	        spriteType = {
+		name = "GFX_idea_rus_lazarev_small"
+		texturefile = "gfx/interface/ideas/idea_lazarev_small.dds"
+	}
+	        spriteType = {
 		name = "GFX_idea_rus_betskoy_small"
 		texturefile = "gfx/interface/ideas/idea_betskoy_small.dds"
 	}
@@ -648,36 +652,36 @@ spriteTypes = {
 
 
         spriteType = {
-		name = "GFX_portrait_oto_kocageneral_large"
-		texturefile = "gfx/leaders/OTO/portrait_kocageneral_large.dds"
+		name = "GFX_portrait_tur_kocageneral_large"
+		texturefile = "gfx/leaders/TUR/portrait_kocageneral_large.dds"
 	}
 	        spriteType = {
-		name = "GFX_portrait_oto_gazigeneral_large"
-		texturefile = "gfx/leaders/OTO/portrait_gazigeneral_large.dds"
+		name = "GFX_portrait_tur_gazigeneral_large"
+		texturefile = "gfx/leaders/TUR/portrait_gazigeneral_large.dds"
 	}
 	        spriteType = {
-		name = "GFX_portrait_oto_nasuhzadegeneral_large"
-		texturefile = "gfx/leaders/OTO/portrait_nasuhzadegeneral_large.dds"
+		name = "GFX_portrait_tur_nasuhzadegeneral_large"
+		texturefile = "gfx/leaders/TUR/portrait_nasuhzadegeneral_large.dds"
 	}
 	        spriteType = {
-		name = "GFX_portrait_oto_omergeneral_large"
-		texturefile = "gfx/leaders/OTO/portrait_omergeneral_large.dds"
+		name = "GFX_portrait_tur_omergeneral_large"
+		texturefile = "gfx/leaders/TUR/portrait_omergeneral_large.dds"
 	}
 	        spriteType = {
-		name = "GFX_portrait_oto_mahmudgeneral_large"
-		texturefile = "gfx/leaders/OTO/portrait_mahmudgeneral_large.dds"
+		name = "GFX_portrait_tur_mahmudgeneral_large"
+		texturefile = "gfx/leaders/TUR/portrait_mahmudgeneral_large.dds"
 	}
 	        spriteType = {
-		name = "GFX_portrait_oto_hurshidgeneral_large"
-		texturefile = "gfx/leaders/OTO/portrait_hurshidgeneral_large.dds"
+		name = "GFX_portrait_tur_hurshidgeneral_large"
+		texturefile = "gfx/leaders/TUR/portrait_hurshidgeneral_large.dds"
 	}
 	        spriteType = {
-		name = "GFX_portrait_oto_husrevgeneral_large"
-		texturefile = "gfx/leaders/OTO/portrait_husrevgeneral_large.dds"
+		name = "GFX_portrait_tur_husrevgeneral_large"
+		texturefile = "gfx/leaders/TUR/portrait_husrevgeneral_large.dds"
 	}
 	        spriteType = {
-		name = "GFX_portrait_oto_residgeneral_large"
-		texturefile = "gfx/leaders/OTO/portrait_residgeneral_large.dds"
+		name = "GFX_portrait_tur_residgeneral_large"
+		texturefile = "gfx/leaders/TUR/portrait_residgeneral_large.dds"
 	}
 
 
@@ -2040,16 +2044,16 @@ spriteTypes = {
 	}
 
 				        spriteType = {
-		name = "GFX_portrait_qin_qianlong_large"
-		texturefile = "gfx/leaders/QIN/portrait_qianlong_large.dds"
+		name = "GFX_portrait_chi_qianlong_large"
+		texturefile = "gfx/leaders/CHI/portrait_qianlong_large.dds"
 	}
 					        spriteType = {
-		name = "GFX_portrait_qin_jiaqing_large"
-		texturefile = "gfx/leaders/QIN/portrait_jiaqing_large.dds"
+		name = "GFX_portrait_chi_jiaqing_large"
+		texturefile = "gfx/leaders/CHI/portrait_jiaqing_large.dds"
 	}
 					        spriteType = {
-		name = "GFX_portrait_qin_daoguang_large"
-		texturefile = "gfx/leaders/QIN/portrait_daoguang_large.dds"
+		name = "GFX_portrait_chi_daoguang_large"
+		texturefile = "gfx/leaders/CHI/portrait_daoguang_large.dds"
 	}
 
 
@@ -2257,6 +2261,10 @@ spriteTypes = {
 		name = "GFX_portrait_ser_skopljak_large"
 		texturefile = "gfx/leaders/SER/portrait_skopljak_large.dds"
 	}
+		        spriteType = {
+		name = "GFX_portrait_ser_hadji_large"
+		texturefile = "gfx/leaders/SER/portrait_hadji_large.dds"
+	}
 	        spriteType = {
 		name = "GFX_portrait_pre_gerhard_large"
 		texturefile = "gfx/leaders/PRE/portrait_gerhard_large.dds"
@@ -2307,20 +2315,20 @@ spriteTypes = {
 		texturefile = "gfx/leaders/LCT/portrait_johannijoseph_large.dds"
 	}
         spriteType = {
-		name = "GFX_portrait_oto_abdulhamidi_large"
-		texturefile = "gfx/leaders/OTO/portrait_abdulhamidi_large.dds"
+		name = "GFX_portrait_tur_abdulhamidi_large"
+		texturefile = "gfx/leaders/TUR/portrait_abdulhamidi_large.dds"
 	}
         spriteType = {
-		name = "GFX_portrait_oto_selimiii_large"
-		texturefile = "gfx/leaders/OTO/portrait_selimiii_large.dds"
+		name = "GFX_portrait_tur_selimiii_large"
+		texturefile = "gfx/leaders/TUR/portrait_selimiii_large.dds"
 	}
         spriteType = {
-		name = "GFX_portrait_oto_mustafaiv_large"
-		texturefile = "gfx/leaders/OTO/portrait_mustafaiv_large.dds"
+		name = "GFX_portrait_tur_mustafaiv_large"
+		texturefile = "gfx/leaders/TUR/portrait_mustafaiv_large.dds"
 	}
         spriteType = {
-		name = "GFX_portrait_oto_mahmudii_large"
-		texturefile = "gfx/leaders/OTO/portrait_mahmudii_large.dds"
+		name = "GFX_portrait_tur_mahmudii_large"
+		texturefile = "gfx/leaders/TUR/portrait_mahmudii_large.dds"
 	}
         spriteType = {
 		name = "GFX_portrait_per_jafarkhan_large"
@@ -2421,8 +2429,8 @@ spriteTypes = {
 		texturefile = "gfx/leaders/IME/portrait_davidii_large.dds"
 	}
 		spriteType = {
-		name = "GFX_portrait_oto_suleimanii_large"
-		texturefile = "gfx/leaders/OTO/portrait_suleimanii_large.dds"
+		name = "GFX_portrait_tur_suleimanii_large"
+		texturefile = "gfx/leaders/TUR/portrait_suleimanii_large.dds"
 	}
         spriteType = {
 		name = "GFX_portrait_ime_solomonii_large"
@@ -3280,42 +3288,58 @@ spriteTypes = {
 		name = "GFX_portrait_rus_catherineii_large"
 		texturefile = "gfx/leaders/RUS/portrait_catherineii_large.dds"
 	}
+	        spriteType = {
+		name = "GFX_portrait_fra_macdonald_large"
+		texturefile = "gfx/leaders/FRA/portrait_macdonald_large.dds"
+	}
+	        spriteType = {
+		name = "GFX_portrait_neu_berthier_large"
+		texturefile = "gfx/leaders/NEU/portrait_berthier_large.dds"
+	}
+	        spriteType = {
+		name = "GFX_portrait_rus_arakcheyev_large"
+		texturefile = "gfx/leaders/RUS/portrait_arakcheyev_large.dds"
+	}
+	        spriteType = {
+		name = "GFX_portrait_rus_madatov_large"
+		texturefile = "gfx/leaders/RUS/portrait_madatov_large.dds"
+	}
         spriteType = {
 		name = "GFX_portrait_rus_pauli_large"
 		texturefile = "gfx/leaders/RUS/portrait_pauli_large.dds"
 	}
 
         spriteType = {
-		name = "GFX_portrait_kni_pauli_large"
-		texturefile = "gfx/leaders/KNI/portrait_pauli_large.dds"
+		name = "GFX_portrait_mlt_pauli_large"
+		texturefile = "gfx/leaders/MLT/portrait_pauli_large.dds"
 	}
         spriteType = {
-		name = "GFX_portrait_kni_nicholasi_large"
-		texturefile = "gfx/leaders/KNI/portrait_nicholasi_large.dds"
+		name = "GFX_portrait_mlt_nicholasi_large"
+		texturefile = "gfx/leaders/MLT/portrait_nicholasi_large.dds"
 	}
 	        spriteType = {
-		name = "GFX_portrait_kni_alexanderi_large"
-		texturefile = "gfx/leaders/KNI/portrait_alexanderi_large.dds"
+		name = "GFX_portrait_mlt_alexanderi_large"
+		texturefile = "gfx/leaders/MLT/portrait_alexanderi_large.dds"
 	}
 	        spriteType = {
-		name = "GFX_portrait_kni_tommasi_large"
-		texturefile = "gfx/leaders/KNI/portrait_tommasi_large.dds"
+		name = "GFX_portrait_mlt_tommasi_large"
+		texturefile = "gfx/leaders/MLT/portrait_tommasi_large.dds"
 	}
 	        spriteType = {
-		name = "GFX_portrait_kni_saltykov_large"
-		texturefile = "gfx/leaders/KNI/portrait_saltykov_large.dds"
+		name = "GFX_portrait_mlt_saltykov_large"
+		texturefile = "gfx/leaders/MLT/portrait_saltykov_large.dds"
 	}
 	        spriteType = {
-		name = "GFX_portrait_kni_maria_large"
-		texturefile = "gfx/leaders/KNI/portrait_maria_large.dds"
+		name = "GFX_portrait_mlt_maria_large"
+		texturefile = "gfx/leaders/MLT/portrait_maria_large.dds"
 	}
 	        spriteType = {
-		name = "GFX_portrait_kni_rohan_large"
-		texturefile = "gfx/leaders/KNI/portrait_rohan_large.dds"
+		name = "GFX_portrait_mlt_rohan_large"
+		texturefile = "gfx/leaders/MLT/portrait_rohan_large.dds"
 	}
 	        spriteType = {
-		name = "GFX_portrait_kni_von_large"
-		texturefile = "gfx/leaders/KNI/portrait_von_large.dds"
+		name = "GFX_portrait_mlt_von_large"
+		texturefile = "gfx/leaders/MLT/portrait_von_large.dds"
 	}
 
 
@@ -3376,6 +3400,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_france_metric_system"
 		texturefile = "gfx/interface/ideas/france_metric_system.dds"
+	}
+		spriteType = {
+		name = "GFX_idea_louisxvi"
+		texturefile = "gfx/interface/ideas/louisxvi.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_one_nine_century"

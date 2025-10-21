@@ -1,16 +1,22 @@
 focus_tree = {
-    id_portuguese_focus
+    id = portugueserework_focus
 
     country = {
         factor = 0
 
         modifier = {
-            add = 10
+            add = 100
             tag = POR 
 
-            default = no
         }
     }
+
+	initial_show_position = {
+		x = 0
+	}
+continuous_focus_position = { x = 100 y = 3000 }
+
+default = no
     focus = {
         id = POR_rebuild_lisbon
         icon = GFX_goal
@@ -34,8 +40,8 @@ focus_tree = {
                 has_idea = POR_recovering_from_lisbon_earthquake
             }
         }
-
-        completion_award = {
+        
+        completion_reward = {
             remove_ideas = POR_recovering_from_lisbon_earthquake_
         }
     }
@@ -67,7 +73,7 @@ focus_tree = {
             }
         }
 
-        completion_award = {
+        completion_reward = {
             add_political_power = 100
             add_timed_idea = {
                 idea = POR_reforming_the_treasury
@@ -99,7 +105,7 @@ focus_tree = {
 
         }
 
-        completion_award = {
+        completion_reward = {
             add_ideas = POR_modernising_education
             add_stability = -0.05
         }
@@ -113,7 +119,7 @@ focus_tree = {
         prerequisite = {
             focus = POR_reform_the_treasury
         }
-        mutually_exclusive = { POR_encourage_pombaline_thought }
+        mutually_exclusive = { focus = POR_encourage_pombaline_thought }
 
         cost = 4.3
 
@@ -131,7 +137,7 @@ focus_tree = {
 
         }
 
-        completion_award = {
+        completion_reward = {
             add_political_power = 100
             add_stability = 0.05
             add_ideas = POR_old_order
@@ -164,7 +170,7 @@ focus_tree = {
 
         }
 
-        completion_award = {
+        completion_reward = {
             add_ideas = POR_whispers_of_revolution
         }
     }
@@ -188,7 +194,7 @@ focus_tree = {
 
         }
 
-        completion_award = {
+        completion_reward = {
             112 = {
             add_extra_state_shared_building_slots = 1
             add_building_construction = {
@@ -224,7 +230,7 @@ focus_tree = {
 
         }
 
-        completion_award = {
+        completion_reward = {
             add_ideas = POR_colonial_navy_2
         }
     }
@@ -257,7 +263,7 @@ focus_tree = {
 
         }
 
-        completion_award = {
+        completion_reward = {
             540 = {
                 add_extra_state_shared_building_slots = 1
                 add_building_construction = {

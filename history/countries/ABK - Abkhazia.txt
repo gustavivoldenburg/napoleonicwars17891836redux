@@ -1,5 +1,4 @@
 ﻿capital = 826 #Sukhumi
-
 #oob = "ABK_1936"
 
 set_research_slots = 0
@@ -98,6 +97,6 @@ set_popularities = {
 
 
 recruit_character = ABK_kirilli_bechvaya
-recruit_character = ABK_kelesh_ahmed_bey_sharvashidze
+
 
 

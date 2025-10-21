@@ -7,7 +7,7 @@ characters = {
 				small=GFX_portrait_por_pedrogeneral_small
 			}
 		}
-		field_marshal={
+		corps_commander={
 			skill=2
 			attack_skill=2
 			defense_skill=2
@@ -24,7 +24,7 @@ characters = {
 				small=GFX_portrait_por_limageneral_small
 			}
 		}
-		field_marshal={
+		corps_commander={
 			skill=2
 			attack_skill=2
 			defense_skill=2
@@ -41,12 +41,12 @@ characters = {
 				small=GFX_portrait_por_josegeneral_small
 			}
 		}
-		field_marshal={
-			skill=2
-			attack_skill=2
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=2
+		corps_commander={
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
 			legacy_id=0
 		}
 	}
@@ -58,12 +58,12 @@ characters = {
 				small=GFX_portrait_por_ebengeneral_small
 			}
 		}
-		field_marshal={
-			skill=2
-			attack_skill=2
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=2
+		corps_commander={
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
 			legacy_id=0
 		}
 	}
@@ -75,7 +75,7 @@ characters = {
 				small=GFX_portrait_por_miguelgeneral_small
 			}
 		}
-		field_marshal={
+		corps_commander={
 			skill=2
 			attack_skill=2
 			defense_skill=2
@@ -92,7 +92,7 @@ characters = {
 				small=GFX_portrait_por_bernardimgeneral_small
 			}
 		}
-		field_marshal={
+		corps_commander={
 			skill=2
 			attack_skill=2
 			defense_skill=2
@@ -109,7 +109,7 @@ characters = {
 				small=GFX_portrait_por_gomesgeneral_small
 			}
 		}
-		field_marshal={
+		corps_commander={
 			skill=2
 			attack_skill=2
 			defense_skill=2
@@ -126,7 +126,7 @@ characters = {
 				small=GFX_portrait_por_carlosgeneral_small
 			}
 		}
-		field_marshal={
+		corps_commander={
 			skill=2
 			attack_skill=2
 			defense_skill=2
@@ -143,12 +143,12 @@ characters = {
 				small=GFX_portrait_por_paulageneral_small
 			}
 		}
-		field_marshal={
-			skill=2
-			attack_skill=2
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=2
+		corps_commander={
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
 			legacy_id=0
 		}
 	}
@@ -177,12 +177,12 @@ characters = {
 				small=GFX_portrait_por_nicholasgeneral_small
 			}
 		}
-		field_marshal={
-			skill=2
-			attack_skill=2
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=2
+		corps_commander={
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
 			legacy_id=0
 		}
 	}
@@ -194,7 +194,7 @@ characters = {
 				small=GFX_portrait_por_manuelgeneral_small
 			}
 		}
-		field_marshal={
+		corps_commander={
 			skill=2
 			attack_skill=2
 			defense_skill=2
@@ -211,12 +211,12 @@ characters = {
 				small=GFX_portrait_por_leitegeneral_small
 			}
 		}
-		field_marshal={
-			skill=2
-			attack_skill=2
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=2
+		corps_commander={
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
 			legacy_id=0
 		}
 	}
@@ -335,7 +335,7 @@ characters = {
 				small = GFX_portrait_POR_jose_vicente_de_freitas_small
 			}
 		}
-		field_marshal = {
+		corps_commander = {
 			traits = { old_guard politically_connected }
 			skill = 3
 			attack_skill = 4

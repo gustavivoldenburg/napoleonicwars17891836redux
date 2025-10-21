@@ -15000,10 +15000,10 @@ focus = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		
 		completion_reward = {
-								QIN = {
+								CHI = {
 						random_owned_controlled_state={
 						limit={
-						is_core_of=QIN
+						is_core_of=CHI
 						}
                         add_extra_state_shared_building_slots = 1
 						add_building_construction = {

@@ -1,17 +1,14 @@
 ﻿capital = 276
-1776.1.1 = {
 set_cosmetic_tag = CAN_french_revolution_ENG
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1789.1.1"
+	election_frequency = 48
+	elections_allowed = no
 }
-1868.1.1 = {
-set_cosmetic_tag = CAN
-}
-2023.1.1 = {
-recruit_character=CAN_shawndriscoll
-promote_character=CAN_shawndriscoll
-retire_character=CAN_mackenzie_king
-}
-2023.1.1 = {
-set_party_name = { ideology = democratic long_name = CAN_procon_democratic_party_long name = CAN_procon_democratic_party }
+
+set_popularities = {
+	neutrality = 100
 }
 set_technology = {
 	infantry_weapons = 1
@@ -49,17 +46,18 @@ if = {
 			engines_1 = 1
 			aircraft_construction = 1
 			iw_small_airframe = 1
+			bba_early_transport_plane = 1
 		}
 	else = {
 		set_air_oob = "CAN_1936_air_legacy"
 	}
 }
-}
-set_research_slots = 0
 
+set_research_slots = 3
+set_country_flag = monroe_doctrine
 set_stability = 0.8
 set_war_support = 0.1
-1936.1.1 = {
+
 recruit_character = CAN_mackenzie_king
 recruit_character = CAN_adrien_arcand
 recruit_character = CAN_tim_buck
@@ -84,7 +82,7 @@ recruit_character = CAN_andrew_mcnaughton
 recruit_character = CAN_george_jones
 recruit_character = CAN_raymond_collishaw
 recruit_character = CAN_guy_simonds
-recruit_character = CAN_gino_verchiella
+recruit_character = CAN_james_stanley_scott
 recruit_character = CAN_alasdair_murray
 recruit_character = CAN_george_volkoff
 recruit_character = CAN_george_croil
@@ -99,7 +97,14 @@ recruit_character = CAN_william_kashtan
 recruit_character = CAN_leo_richer_lafleche
 recruit_character = CAN_r_b_bennett
 recruit_character = CAN_louis_st_laurent
+recruit_character = CAN_lindsay_gordon
 
+IF = {
+	limit = {
+		has_dlc = "Trial of Allegiance"
+	}
+	recruit_character = CAN_first_nations_council
+}
 
 # Starting tech
 set_technology = {
@@ -122,7 +127,7 @@ if = {
 		early_fighter = 1
 		naval_bomber1 = 1
 		early_bomber = 1
-		
+		early_transport_plane = 1
 	}
 }
 
@@ -235,6 +240,7 @@ if = {
 				aa_lmg = 1
 				early_bombs = 1
 				engines_1 = 1
+				bba_early_transport_plane = 1
 			}
 		else = {
 			set_air_oob = "CAN_1939_air_legacy"
@@ -265,7 +271,6 @@ if = {
 		#electronics
 		electronic_mechanical_engineering = 1
 		radio = 1
-		radio_detection = 1
 		mechanical_computing = 1
 		computing_machine = 1
 
@@ -284,6 +289,9 @@ if = {
 		dispersed_industry2 = 1
 		dispersed_industry3 = 1
 	}
+	complete_special_project = {
+		project = sp:sp_air_radar
+	}
 	if = {
 		limit = { not = { has_dlc = "Man the Guns" } }
 		set_technology = {
@@ -299,12 +307,12 @@ if = {
 		}
 	}
 }
-
+1936.1.1 = {
 set_politics = {
 	ruling_party = democratic
 	last_election = "1935.10.14"
 	election_frequency = 60
-	elections_allowed = no
+	elections_allowed = yes
 }
 
 set_popularities = {
@@ -312,21 +320,7 @@ set_popularities = {
 	fascism = 1
 	communism = 1
 }
-2023.1.1 = {
-set_politics = {
-	ruling_party = democratic
-	last_election = "2021.10.20"
-	election_frequency = 48
-	elections_allowed = no
-}
 
-set_popularities = {
-	democratic = 100
-}
-}
-1965.1.1 = {
-set_cosmetic_tag = CAN
-}
 set_convoys = 100
 set_stability = 0.75
 
@@ -336,7 +330,7 @@ if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 	### Ship Variants ###
 	create_equipment_variant = {
-		name = "Sanguenay Class"
+		name = "River Class"
 		type = destroyer_1
 		upgrades = {
 			ship_torpedo_upgrade = 1
@@ -369,7 +363,7 @@ if = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Sanguenay Class"
+		name = "River Class"
 		type = ship_hull_light_1
 		name_group = CAN_DD_HISTORICAL
 		parent_version = 0
@@ -385,7 +379,7 @@ if = {
 		}
 	}
 }
-
+}
 # 1939 Start #
 1939.1.1 = {
 	if = {

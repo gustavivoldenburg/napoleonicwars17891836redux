@@ -5,7 +5,7 @@ state={
 	history={
 		owner = ZZZ
 		1600.1.1 = {
-		owner = OTO
+		owner = TUR
 		}
 		1900.1.1 = {
 		add_core_of = HEJ

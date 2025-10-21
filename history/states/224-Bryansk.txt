@@ -4,12 +4,12 @@ state={
 	name="STATE_224"
 
 	history={
-		owner = CHE
-		add_core_of = CHE
+		owner = UKR
+		add_core_of = UKR
 		1600.1.1 = {
 		owner = RUS
         add_core_of = RUS
-	    remove_core_of = CHE
+	  remove_core_of=UKR  
 		}
 		victory_points = {
 			3335 10 
@@ -30,13 +30,7 @@ state={
 		owner = SOV
 		add_core_of=SOV
 		}
-		1920.1.1 = {
-			owner = SOV
-			controller = SOV
-			add_core_of = SOV
-			remove_core_of = RUS
 
-		}
 		1993.1.1 = {
 			owner = RUS
 			controller = RUS

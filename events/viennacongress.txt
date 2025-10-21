@@ -25,6 +25,9 @@ fire_only_once = yes
 		name = "Sign the Treaty"
 		ai_chance = { factor = 100 } 
 		news_event = viennacongress_news.1
+		ENG={
+country_event = viennacongress_event.19
+		}
 		AUS={
 country_event = viennacongress_event.5
 country_event = viennacongress_event.6
@@ -53,6 +56,7 @@ country_event = viennacongress_event.14
 		AUS={
 country_event = viennacongress_event.15
 country_event = viennacongress_event.16
+country_event = viennacongress_event.18
 		}
 		every_country = {
   limit = {
@@ -235,6 +239,24 @@ fire_only_once = yes
 	option = { # 
 		name = "Dissolve it"
 		ai_chance = { factor = 100 } 
+MTU={
+set_party_name = { ideology = neutrality long_name = MTU_LOR_neutrality_party_long name = MTU_LOR_neutrality_party }
+add_popularity = { ideology = neutrality popularity = 0.25 }
+set_politics = { ruling_party = neutrality elections_allowed = no}
+set_cosmetic_tag=MTU
+}
+LBV={
+set_party_name = { ideology = neutrality long_name = LBV_LOR_neutrality_party_long name = LBV_LOR_neutrality_party }
+add_popularity = { ideology = neutrality popularity = 0.25 }
+set_politics = { ruling_party = neutrality elections_allowed = no}
+set_cosmetic_tag=LBV
+}
+VNT={
+set_party_name = { ideology = neutrality long_name = VNT_LOR_neutrality_party_long name = VNT_LOR_neutrality_party }
+add_popularity = { ideology = neutrality popularity = 0.25 }
+set_politics = { ruling_party = neutrality elections_allowed = no}
+set_cosmetic_tag=VNT
+}
 		every_state={
         limit={
         or={
@@ -253,6 +275,7 @@ fire_only_once = yes
 		state=1111
 		state=977
         state=160
+		state=1060
 		state=931
 		state=856
         }
@@ -880,7 +903,7 @@ fire_only_once = yes
 		transfer_state = 51
 		transfer_state = 985
 		}
-				TRR={
+				LUX={
 		transfer_state = 970
 		transfer_state = 8
 		transfer_state = 42
@@ -889,12 +912,16 @@ fire_only_once = yes
 		transfer_state = 1239
 		transfer_state = 1182
 		}
-	TRR={set_cosmetic_tag=TRR_vienna}
+	LUX={set_cosmetic_tag=LUX_vienna}
 	CLG={set_cosmetic_tag=CLG_vienna}
 	BEL={set_cosmetic_tag=BEL_vienna}
+	LUX={set_party_name = { ideology = neutrality long_name = LUX_LOR_neutrality_party_long name = LUX_LOR_neutrality_party }}
+	BEL={set_party_name = { ideology = neutrality long_name = BEL_LOR_neutrality_party_long name = BEL_LOR_neutrality_party }}
+	LUX={promote_character=LUX_charles}
+	BEL={promote_character=BEL_charles}
 	AUS={
 			set_autonomy = {
-        target = TRR
+        target = LUX
         autonomous_state = autonomy_protectorate
         freedom_level = 0.4
 	}
@@ -939,5 +966,57 @@ fire_only_once = yes
 		add_core_of=SWI
 		remove_core_of=FRA
         }
+	}
+}
+country_event = {
+	id = viennacongress_event.18
+	title = "The return of Tyrol"
+	desc = viennacongress_event.18.d
+	picture = GFX_idi_amin_india
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "Andreas Hofer would have wanted this"
+		ai_chance = { factor = 100 } 
+				every_state={
+        limit={
+        or={
+        state=881
+		state=153
+		state=882
+		state=855
+		state=39
+		state=1190
+		state=1192
+        }
+        }
+        transfer_state_to=AUS
+		add_core_of=AUS
+		remove_core_of=BAY
+		hidden_effect={
+		remove_core_of=SAL
+		remove_core_of=TRT
+		}
+        }
+	}
+}
+country_event = {
+	id = viennacongress_event.19
+	title = "The British Ionian Islands"
+	desc = viennacongress_event.19.d
+	picture = GFX_idi_amin_india
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "Hopefully everyone agrees to this"
+		ai_chance = { factor = 100 } 
+SEP={set_cosmetic_tag=SEP_ENG}
+		ENG={
+			set_autonomy = {
+        target = SEP
+        autonomous_state = autonomy_protectorate
+        freedom_level = 0.4
+	}
+	}
 	}
 }

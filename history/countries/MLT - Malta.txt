@@ -2,6 +2,46 @@
 	add_ideas = {
         mezzogiorno
 	}
+MLT={set_cosmetic_tag=KNI}
+1776.1.1 = {
+set_party_name = { ideology = neutrality long_name = MLT_ROH_neutrality_party_long name = MLT_ROH_neutrality_party }
+}
+1800.1.1 = {
+set_party_name = { ideology = neutrality long_name = MLT_RUS_neutrality_party_long name = MLT_RUS_neutrality_party }
+}
+1805.1.1 = {
+set_party_name = { ideology = neutrality long_name = MLT_neutrality_party_long name = MLT_neutrality_party }
+}
+1776.1.1 = {
+recruit_character=MLT_rohan
+promote_character=MLT_rohan
+recruit_character=MLT_von
+recruit_character=MLT_pauli
+recruit_character=MLT_alexanderi
+recruit_character=MLT_saltykov
+recruit_character=MLT_tommasi
+recruit_character=MLT_maria
+recruit_character=MLT_nicholasi
+}
+1800.1.1 = {
+promote_character=MLT_pauli
+retire_character=MLT_rohan
+}
+1801.1.1 = {
+retire_character=MLT_pauli
+retire_character=MLT_von
+retire_character=MLT_tommasi
+}
+1821.1.1 = {
+retire_character=MLT_saltykov
+retire_character=MLT_maria
+}
+1836.1.1 = {
+retire_character=MLT_alexanderi
+}
+1857.1.1 = {
+retire_character=MLT_nicholasi
+}
 #oob = ""
 
 # Starting tech
@@ -13,7 +53,7 @@ set_technology = {
 }
 
 set_convoys = 5
-
+1936.1.1 = {
 recruit_character = MLT_aco2
 recruit_character = MLT_nt
 recruit_character = MLT_communist_guy
@@ -34,7 +74,7 @@ recruit_character = MLT_awt
 recruit_character = MLT_acgs
 recruit_character = MLT_mt
 recruit_character = MLT_nccr
-
+}
 1939.1.1 = {
 	#generic focuses
 	complete_national_focus = army_effort
@@ -70,14 +110,12 @@ recruit_character = MLT_nccr
 	}
 }
 set_politics = {
-	ruling_party = democratic
-	last_election = "1936.1.1"
+	ruling_party = neutrality
+	last_election = "1789.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	democratic = 50
-	fascism = 8
-	communism = 15
-	neutrality = 27
+	democratic = 25
+	neutrality = 75
 }

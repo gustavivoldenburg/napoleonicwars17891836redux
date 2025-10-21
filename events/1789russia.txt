@@ -59,7 +59,7 @@ fire_only_once = yes
 		name = "Invade Georgia"
 		ai_chance = { factor = 50 }
 	RUS={set_state_controller = 1002}
-	CIR={give_military_access = RUS}
+	KBK={give_military_access = RUS}
 	RUS = {
 	declare_war_on = {
 		target = GEO
@@ -85,7 +85,7 @@ fire_only_once = yes
 		name = "Invade Georgia"
 		ai_chance = { factor = 50 }
 	RUS={set_state_controller = 1002}
-	CIR={give_military_access = RUS}
+	KBK={give_military_access = RUS}
 	RUS = {
 	declare_war_on = {
 		target = GEO
@@ -216,12 +216,12 @@ fire_only_once = yes
 SER={country_event = russianempire_1789_1812.22}
 every_country = {
   limit = {
-  has_war_with = OTO
+  has_war_with = TUR
 	or = {
 tag = AUS
 }
   }
-  white_peace = OTO
+  white_peace = TUR
 }
 	}
 
@@ -235,10 +235,10 @@ tag = AUS
 trigger = {
 tag = AUS
     date > 1789.1.1 date < 1800.1.1
-	has_war_with = OTO
+	has_war_with = TUR
 	or = {
 	date > 1792.1.1
-	OTO = {surrender_progress > 0.25 }
+	TUR = {surrender_progress > 0.25 }
 	AUS = {surrender_progress > 0.25 }
 	}
 }
@@ -251,12 +251,12 @@ SER={leave_faction=yes}
 }
 every_country = {
   limit = {
-  has_war_with = OTO
+  has_war_with = TUR
 	or = {
 tag = AUS
 }
   }
-  white_peace = OTO
+  white_peace = TUR
 }
 	}
 
@@ -270,7 +270,7 @@ tag = AUS
 trigger = {
 tag = RUS
     date > 1792.1.9 date < 1793.1.1 
-	has_war_with = OTO
+	has_war_with = TUR
 }
 fire_only_once = yes
 	option = { # 
@@ -284,7 +284,7 @@ RUS={has_completed_focus = russianempirerework_1789_1815_first_100_focus_3}
   }
   }
 		RUS={add_war_support = -0.05}
-		OTO={add_war_support = 0.05}
+		TUR={add_war_support = 0.05}
 		RUS={
 		transfer_state = 192
 		transfer_state = 834
@@ -297,13 +297,13 @@ RUS={set_country_flag = treaty_jassy_flag}
 }
 every_country = {
   limit = {
-  has_war_with = OTO
+  has_war_with = TUR
 	or = {
 tag = RUS
 tag = SER
 }
   }
-  white_peace = OTO
+  white_peace = TUR
 }
 	}
 
@@ -318,9 +318,9 @@ trigger = {
 tag = RUS
 RUS={has_country_flag=greek_plan_history_flag}
     date > 1789.1.1 date < 1792.1.9
-	has_war_with = OTO
+	has_war_with = TUR
 	or = {
-	OTO = {surrender_progress > 0.25 }
+	TUR = {surrender_progress > 0.25 }
 	RUS = {surrender_progress > 0.25 }
 	RUS={controls_state = 48}
 	RUS={controls_state = 801}
@@ -339,7 +339,7 @@ RUS={has_completed_focus = russianempirerework_1789_1815_first_100_focus_3}
   }
   }
 		RUS={add_war_support = 0.05}
-		OTO={add_war_support = -0.05}
+		TUR={add_war_support = -0.05}
 		RUS={
 		transfer_state = 192
 		transfer_state = 834
@@ -352,13 +352,13 @@ RUS={set_country_flag = treaty_jassy_flag}
 }
 every_country = {
   limit = {
-  has_war_with = OTO
+  has_war_with = TUR
 	or = {
 tag = RUS
 tag = SER
 }
   }
-  white_peace = OTO
+  white_peace = TUR
 }
 	}
 
@@ -371,11 +371,11 @@ tag = SER
 	#is_triggered_only = yes
 trigger = {
 tag = RUS
+has_war_with = POL
 RUS={has_country_flag=polish_russian_war_first_flag}
-    date > 1792.1.1 date < 1794.1.1 
-	has_war_with = POL
-	or = {
-	POL = {surrender_progress > 0.1 }
+or = {
+    date > 1792.7.27 
+	POL = {surrender_progress > 0.25 }
 	RUS={controls_state = 94}
 	}
 }
@@ -621,9 +621,9 @@ trigger = {
 tag = RUS
 country_exists=MOL
 country_exists=WAL
-country_exists=OTO
+country_exists=TUR
     date > 1789.1.1 date < 1800.1.1
-	has_war_with = OTO
+	has_war_with = TUR
 	has_war_with = MOL
 	has_war_with = WAL
 	or={
@@ -760,10 +760,10 @@ fire_only_once = yes
 	option = { # 
 		name = "Accept being an Ottoman Vassal"
 		ai_chance = { factor = 100 } 
-    SER={set_cosmetic_tag = SER_OTO}
-SER={promote_character=SER_skopljak}
+    SER={set_cosmetic_tag = SER_TUR}
+SER={promote_character=SER_hadji}
 SER={set_party_name = { ideology = neutrality long_name = SER_OSM_neutrality_party_long name = SER_OSM_neutrality_party }}
-OTO={
+TUR={
 	set_autonomy = {
         target = SER
         autonomous_state = autonomy_protectorate
@@ -856,16 +856,16 @@ fire_only_once = yes
 	#is_triggered_only = yes
 trigger = {
 tag=RUS
-has_war_with=OTO
+has_war_with=TUR
 date > 1789.1.1 
 date < 1791.1.1 
 RUS={has_country_flag=greek_plan_althistory_flag}
 or={
 and={
 RUS={controls_state=797}
-OTO = {surrender_progress > 0.4 }
+TUR = {surrender_progress > 0.4 }
 }
-OTO = {surrender_progress > 0.5 }
+TUR = {surrender_progress > 0.5 }
 }
 }
 fire_only_once = yes
@@ -919,9 +919,9 @@ RUS={set_country_flag = treaty_greek_plan_flag}
 }
 every_country = {
 limit={
-has_war_with=OTO
+has_war_with=TUR
 }
-white_peace = OTO
+white_peace = TUR
 }
 every_country = {
 limit={
@@ -979,9 +979,9 @@ RUS={set_country_flag = treaty_greek_plan_flag}
 }
 every_country = {
 limit={
-has_war_with=OTO
+has_war_with=TUR
 }
-white_peace = OTO
+white_peace = TUR
 }
 every_country = {
 limit={
@@ -1039,9 +1039,9 @@ RUS={set_country_flag = treaty_greek_plan_flag}
 }
 every_country = {
 limit={
-has_war_with=OTO
+has_war_with=TUR
 }
-white_peace = OTO
+white_peace = TUR
 }
 every_country = {
 limit={
@@ -1097,7 +1097,7 @@ white_peace = RUS
 			797 = { set_state_name = "Constantinople" }
 			set_province_name = { id = 9833 name = "Constantinople" }
 		}
-OTO={
+TUR={
 				set_capital = {
   state = 798
   remember_old_capital = no
@@ -1108,9 +1108,9 @@ RUS={set_country_flag = treaty_greek_plan_flag}
 }
 every_country = {
 limit={
-has_war_with=OTO
+has_war_with=TUR
 }
-white_peace = OTO
+white_peace = TUR
 }
 every_country = {
 limit={
@@ -1128,11 +1128,11 @@ white_peace = RUS
 	#is_triggered_only = yes
 trigger = {
 tag = RUS
-has_war_with = CIR
+has_war_with = KBK
 date < 1800.1.1 
     or={
     date > 1792.1.1 
-	CIR = {surrender_progress > 0.1 }
+	KBK = {surrender_progress > 0.1 }
 	}
 }
 fire_only_once = yes
@@ -1141,12 +1141,12 @@ fire_only_once = yes
 		ai_chance = { factor = 100 } 
 RUS={add_war_support=-0.1}
 RUS={add_stability=-0.1}
-RUS={set_country_flag=CIR_RUS_peace_flag}
+RUS={set_country_flag=KBK_RUS_peace_flag}
 every_country = {
   limit = {
-    has_war_with = CIR
+    has_war_with = KBK
   }
-  white_peace = CIR
+  white_peace = KBK
 }
 	}
 
@@ -1217,13 +1217,13 @@ fire_only_once = yes
 	option = { # 
 		name = "Annex Kiev"
 		ai_chance = { factor = 100 } 
-		annex_country = { target = KIE transfer_troops = no }
+		annex_country = { target = UKR transfer_troops = no }
 		every_state={
 		limit={
-		is_core_of=KIE
+		is_core_of=UKR
 		}
 		add_core_of=RUS
-		remove_core_of=KIE
+		remove_core_of=UKR
 		}
 }
 }
@@ -1528,7 +1528,7 @@ fire_only_once = yes
 		name = "The Anapa Campaign"
 		ai_chance = { factor = 100 } 
 			add_timed_idea = {
-				idea = CIR_offensive
+				idea = KBK_offensive
 				days = 30
 			}
 }
@@ -1536,12 +1536,12 @@ fire_only_once = yes
 		name = "The Karachey-Cherkessia Campaign"
 		ai_chance = { factor = 0 } 
 			add_timed_idea = {
-				idea = CIR_offensive_kuban
+				idea = KBK_offensive_kuban
 				days = 30
 			}
 	DON = {
 	declare_war_on = {
-		target = CIR
+		target = KBK
 		type = annex_everything
 	}
 	}
@@ -1558,7 +1558,7 @@ fire_only_once = yes
 		name = "We need to take Odessa"
 		ai_chance = { factor = 100 } 
 			add_timed_idea = {
-				idea = OTO_offensive
+				idea = TUR_offensive
 				days = 30
 			}
 }
@@ -1599,9 +1599,9 @@ fire_only_once = yes
 		ai_chance = { factor = 100 } 
 every_country = {
   limit = {
-    has_war_with = CIR
+    has_war_with = KBK
   }
-  white_peace = CIR
+  white_peace = KBK
 }
 	}
 
@@ -1980,12 +1980,12 @@ fire_only_once = yes
 		ai_chance = { factor = 100 } 
 	random_list={
 	50={
-	OTO={
+	TUR={
     add_war_support=-0.025
 	}
 	}
 	50={
-		OTO={
+		TUR={
     add_political_power=-25
 	}
 	}
@@ -1997,7 +1997,7 @@ fire_only_once = yes
 	add_state_core = 834
 	}
 	hidden_effect={
-				ZAP={
+				UKR={
     remove_state_core = 192
 	remove_state_core = 1204
 	remove_state_core = 1228
@@ -2229,7 +2229,7 @@ fire_only_once = yes
 		remove_state_core = 183
 		remove_state_core = 1149
 		}
-		KNI={
+		MLT={
 		remove_state_core = 47
 		remove_state_core = 731
 		remove_state_core = 939
@@ -2376,7 +2376,7 @@ fire_only_once = yes
 		ai_chance = { factor = 100 } 
 		RUS={promote_character=RUS_alexanderi}
 		RUS={retire_character=RUS_pauli}
-		KNI={retire_character=KNI_pauli}
+		MLT={retire_character=MLT_pauli}
 		add_political_power=-25
 	}
 		option = { # 
@@ -2384,7 +2384,7 @@ fire_only_once = yes
 		ai_chance = { factor = 0 } 
 		RUS={promote_character=RUS_alexanderi}
 		RUS={retire_character=RUS_pauli}
-		KNI={retire_character=KNI_pauli}
+		MLT={retire_character=MLT_pauli}
 		add_stability=0.1
 		add_political_power=-25
 	}
@@ -2439,7 +2439,7 @@ fire_only_once = yes
 		MEA={add_state_core=186}
 			MEA = {
 	declare_war_on = {
-		target = OTO
+		target = TUR
 		type = annex_everything
 	}
 	}
@@ -2455,12 +2455,12 @@ fire_only_once = yes
 	#is_triggered_only = yes
 trigger = {
 GRE={has_country_flag=greek_war_of_independence_flag}
-tag = OTO
+tag = TUR
 country_exists=ALB
 	or={
 	ALB = {surrender_progress > 0.1 }
-	OTO={controls_state=185}
-	OTO={controls_state=44}
+	TUR={controls_state=185}
+	TUR={controls_state=44}
     ALB={has_capitulated = yes}
 	}
 }
@@ -2468,7 +2468,7 @@ fire_only_once = yes
 	option = { # 
 		name = "Ali Pasha's End!"
 		ai_chance = { factor = 100 } 
-		OTO={add_stability=-0.1
+		TUR={add_stability=-0.1
 		annex_country = { target = ALB transfer_troops = no }}
 	}
 	}
@@ -2485,19 +2485,19 @@ NOT={RUS={has_country_flag=russia_joined_greek_war_of_independence_flag}}
 tag = GRE
 RUS={is_ai = yes}
 or={
-OTO={has_war_with=RUS}
-OTO={has_war_with=GRE}
+TUR={has_war_with=RUS}
+TUR={has_war_with=GRE}
 }
 country_exists=GRE
 country_exists=RUS
-country_exists=OTO
+country_exists=TUR
 	or={
-	OTO = {surrender_progress > 0.25 }
+	TUR = {surrender_progress > 0.25 }
 	RUS={controls_state=797}
 	RUS={controls_state=798}
     GRE={controls_state=797}
 	GRE={controls_state=798}
-    OTO={has_capitulated = yes}
+    TUR={has_capitulated = yes}
 	}
 }
 fire_only_once = yes
@@ -2507,7 +2507,7 @@ fire_only_once = yes
 if = {
     limit = {
         OR = {
-            OTO = {
+            TUR = {
                 casualties_inflicted_by = {
                     opponent = GRE
                     thousands > 100
@@ -2524,9 +2524,9 @@ if = {
 }
 	every_country={
 	limit={
-	has_war_with=OTO
+	has_war_with=TUR
 	}
-	white_peace=OTO
+	white_peace=TUR
 	}
 	GRE={transfer_state=47}
 	GRE={transfer_state=947}
@@ -2555,7 +2555,7 @@ RUS={country_event = russianempire_1789_1812.133}
 if = {
     limit = {
         OR = {
-            OTO = {
+            TUR = {
                 casualties_inflicted_by = {
                     opponent = GRE
                     thousands > 100
@@ -2572,9 +2572,9 @@ if = {
 }
 	every_country={
 	limit={
-	has_war_with=OTO
+	has_war_with=TUR
 	}
-	white_peace=OTO
+	white_peace=TUR
 	}
 	GRE={transfer_state=47}
 	GRE={transfer_state=947}
@@ -3084,7 +3084,7 @@ fire_only_once = yes
 		transfer_state=537
 		transfer_state=655
 		}
-		QIN={country_event = russianempire_1789_1812.89}
+		CHI={country_event = russianempire_1789_1812.89}
 		JAP={country_event = russianempire_1789_1812.89}
 	}
 	}
@@ -3108,9 +3108,9 @@ fire_only_once = yes
 	#is_triggered_only = yes
 trigger = {
 RUS={has_country_flag=greek_plan_althistory_flag}
-RUS={has_war_with=OTO}
+RUS={has_war_with=TUR}
 tag = ENG
-OTO={
+TUR={
 casualties_inflicted_by = {
     opponent = RUS
     thousands > 100
@@ -3122,14 +3122,14 @@ fire_only_once = yes
 	option = { # 
 		name = "We need to Intervene!"
 		ai_chance = { factor = 100 }
-		OTO={add_war_support=0.1}
+		TUR={add_war_support=0.1}
 		ENG={add_war_support=0.1}
 		hidden_effect={
 		ENG={add_manpower=-100000}
 		RUS={country_event = russianempire_1789_1812.88}
 		}
-			OTO={add_manpower=100000}
-				OTO={
+			TUR={add_manpower=100000}
+				TUR={
 						add_equipment_to_stockpile = {
 					type = infantry_equipment
 					amount = 100000
@@ -3162,7 +3162,7 @@ fire_only_once = no
 	option = { # 
 		name = "We cant let this Happen!"
 		ai_chance = { factor = 100 }
-		add_ideas=QIN_JAP_RUS_the_russian_threat
+		add_ideas=CHI_JAP_RUS_the_russian_threat
 	}
 	}
 								country_event = {
@@ -3220,7 +3220,7 @@ fire_only_once = yes
 	option = { # 
 		name = "Morea will be Liberated"
 		ai_chance = { factor = 100 }
-						OTO = {
+						TUR = {
 				set_province_controller = 7211
 				set_province_controller = 4078
 				set_province_controller = 13681
@@ -3238,11 +3238,11 @@ add_ideas = {
 GRE_greek_war_of_independence
 }
 	}
-	OTO={add_manpower = 100000 load_oob = "OTO_1790" 
+	TUR={add_manpower = 100000 load_oob = "TUR_1790" 
 					add_equipment_to_stockpile = {
 					type = infantry_equipment
 					amount = 100000
-					producer = OTO
+					producer = TUR
 				}
 	}
 	}
@@ -3254,7 +3254,7 @@ GRE_greek_war_of_independence
 	picture = GFX_idi_amin_india
 	#is_triggered_only = yes
 trigger = {
-tag = KNI
+tag = MLT
     date > 1799.7.6 date < 1800.1.1 
 }
 fire_only_once = yes
@@ -3312,7 +3312,7 @@ fire_only_once = yes
 	picture = GFX_idi_amin_india
 	#is_triggered_only = yes
 trigger = {
-tag = KNI
+tag = MLT
     date > 1797.7.17 date < 1798.1.1 
 }
 fire_only_once = yes
@@ -3321,9 +3321,9 @@ fire_only_once = yes
 		ai_chance = { factor = 100 }
 	    add_manpower=-1
 	RUS={set_country_flag=emmanuelderohanpolduc_has_died}
-	KNI={retire_character=KNI_rohan}
-	KNI={promote_character=KNI_von}
-	KNI={set_party_name = { ideology = neutrality long_name = KNI_neutrality_party_long name = KNI_neutrality_party }}
+	MLT={retire_character=MLT_rohan}
+	MLT={promote_character=MLT_von}
+	MLT={set_party_name = { ideology = neutrality long_name = MLT_neutrality_party_long name = MLT_neutrality_party }}
 	}
 	}
 
@@ -3404,7 +3404,7 @@ fire_only_once = yes
 		RUS={promote_character=RUS_nicholasi}
 		RUS={retire_character=RUS_alexanderi}
 		hidden_effect={
-		KNI={retire_character=KNI_alexanderi}
+		MLT={retire_character=MLT_alexanderi}
 		}
 		add_political_power=-25
 	}
@@ -3460,11 +3460,11 @@ fire_only_once = yes
 	option = { # 
 		name = "Malta is now ours!"
 		ai_chance = { factor = 100 } 
-	KNI={promote_character=KNI_pauli}
-	KNI={set_party_name = { ideology = neutrality long_name = KNI_RUS_neutrality_party_long name = KNI_RUS_neutrality_party }}
+	MLT={promote_character=MLT_pauli}
+	MLT={set_party_name = { ideology = neutrality long_name = MLT_RUS_neutrality_party_long name = MLT_RUS_neutrality_party }}
 	RUS={
 		    set_autonomy = {
-        target = KNI
+        target = MLT
         autonomous_state = autonomy_protectorate
         freedom_level = 0.2
 	}
@@ -3479,9 +3479,9 @@ fire_only_once = yes
 	#is_triggered_only = yes
 trigger = {
 tag = RUS
-NOT={country_exists=ZAP}
+NOT={country_exists=UKR}
 NOT={country_exists=POD}
-NOT={country_exists=KIE}
+NOT={country_exists=UKR}
 198={is_core_of=RUS}
 202={is_core_of=RUS}
 192={is_core_of=RUS}
@@ -3494,10 +3494,10 @@ fire_only_once = yes
 add_political_power=25
 	every_state={
 limit={
-is_core_of=ZAP
+is_core_of=UKR
 }
 add_core_of=RUS
-remove_core_of=ZAP
+remove_core_of=UKR
 }
 	}
 	option = { # 
@@ -3508,10 +3508,10 @@ RUS={set_country_flag=RUS_BKV_claim}
 RUS={set_country_flag=RUS_GLL_claim}
 	every_state={
 limit={
-is_core_of=ZAP
+is_core_of=UKR
 }
 add_core_of=RUS
-remove_core_of=ZAP
+remove_core_of=UKR
 }
 	every_state={
 limit={
@@ -3521,9 +3521,9 @@ remove_core_of=POD
 }
 	every_state={
 limit={
-is_core_of=KIE
+is_core_of=UKR
 }
-remove_core_of=KIE
+remove_core_of=UKR
 }
 	}
 	}
@@ -3736,7 +3736,7 @@ fire_only_once = yes
 	option = { # 
 		name = "This will be a great buffer between Austria and a hypothetical Republican France"
 		ai_chance = { factor = 100 }
-    SIC={set_cosmetic_tag=PAP_capet_ITA_federation
+    TTS={set_cosmetic_tag=PAP_capet_ITA_federation
 					set_capital = {
   state = 2
   remember_old_capital = no
@@ -3744,7 +3744,7 @@ fire_only_once = yes
 annex_country = { target = PAP transfer_troops = yes }
 annex_country = { target = LUC transfer_troops = yes }
 annex_country = { target = PRM transfer_troops = yes }
-annex_country = { target = NAP transfer_troops = yes }
+annex_country = { target = SIC transfer_troops = yes }
 	}
 	every_state={
 limit={
@@ -3752,14 +3752,28 @@ or={
 is_core_of=PAP
 is_core_of=LUC
 is_core_of=PRM
-is_core_of=NAP
+is_core_of=SIC
 }
 }
 remove_core_of=PAP
 remove_core_of=LUC
 remove_core_of=PRM
-remove_core_of=NAP
-add_core_of=SIC
+remove_core_of=SIC
+add_core_of=TTS
+}
+	every_state={
+limit={
+or={
+RUS={
+has_country_leader = { character = RUS_pauli }
+}
+}
+}
+remove_core_of=PAP
+remove_core_of=LUC
+remove_core_of=PRM
+remove_core_of=SIC
+add_core_of=TTS
 }
 	}
 	}
@@ -3773,26 +3787,26 @@ add_core_of=SIC
 	#is_triggered_only = yes
 trigger = {
 tag = RUS
-has_war_with=OTO
+has_war_with=TUR
 RUS={controls_province = 13572}
-OTO={owns_state=1147}
+TUR={owns_state=1147}
     date > 1789.1.11 date < 1792.1.1
 }
 fire_only_once = yes
 	option = { # 
 		name = "It will be fully Russian sooner or later"
 		ai_chance = { factor = 100 }
-	OTO={add_manpower=-40000}
+	TUR={add_manpower=-40000}
 	RUS={add_manpower=-4000}
 	RUS={add_war_support=0.05}
 	RUS={
 		add_equipment_to_stockpile = {
                     type = infantry_equipment
                     amount = 4000
-                    producer = OTO
+                    producer = TUR
                 }
 	}
-	OTO={country_event = russianempire_1789_1812.126}
+	TUR={country_event = russianempire_1789_1812.126}
 	}
 	}
 					country_event = {
@@ -3805,11 +3819,11 @@ fire_only_once = yes
 	option = { # 
 		name = "Lets have a Defensive Strategy"
 		ai_chance = { factor = 100 }
-	    OTO={
+	    TUR={
 		add_war_support=0.05
 		add_stability=0.05
 			add_timed_idea = {
-				idea = OTO_defensive_strategy_izmail_russo_turkish_war
+				idea = TUR_defensive_strategy_izmail_russo_turkish_war
 				days = 1100
 			}
 		}
@@ -3823,7 +3837,7 @@ fire_only_once = yes
 	#is_triggered_only = yes
 trigger = {
 tag=RUS
-has_war_with=OTO
+has_war_with=TUR
 date > 1791.1.1 
 date < 1793.1.1 
 RUS={has_country_flag=greek_plan_althistory_flag}
@@ -3835,9 +3849,9 @@ fire_only_once = yes
 		ai_chance = { factor = 100 } 
 every_country = {
 limit={
-has_war_with=OTO
+has_war_with=TUR
 }
-white_peace = OTO
+white_peace = TUR
 }
 every_country = {
 limit={
@@ -3858,7 +3872,7 @@ fire_only_once = yes
 		name = "We need to establish a new Kingdom"
 		ai_chance = { factor = 100 } 
 ALB={set_cosmetic_tag=ALB_GRE_kingdom}	
-OTO={
+TUR={
 	    set_autonomy = {
         target = ALB
         autonomous_state = autonomy_free
@@ -3972,7 +3986,7 @@ add_core_of=SER
 	#is_triggered_only = yes
 trigger = {
     date > 1831.1.20 date < 1831.3.1 
-tag=OTO
+tag=TUR
 }
 fire_only_once = yes
 	option = { # 
@@ -3983,7 +3997,7 @@ BOS={set_cosmetic_tag=BOS_islam}
 				every_state = {
 					limit = {
                     is_core_of = BOS
-					is_owned_by=OTO
+					is_owned_by=TUR
 					}
 					transfer_state_to=BOS
 				}
@@ -4001,7 +4015,7 @@ fire_only_once = yes
 		ai_chance = { factor = 100 } 
 BOS={set_country_flag=bosnia_uprising_ottoman_war_flag}
 BOS={add_manpower = 30000 load_oob = "BOS_1836"}
-		OTO={
+		TUR={
 			declare_war_on = {
 		target = BOS
 		type = puppet_wargoal_focus
@@ -4267,7 +4281,7 @@ state=938
 state=983
 }
 }
-transfer_state_to=OTO
+transfer_state_to=TUR
 } 
 	every_state={
 limit={
@@ -4378,7 +4392,7 @@ state=938
 state=983
 }
 }
-transfer_state_to=OTO
+transfer_state_to=TUR
 } 
 	every_state={
 limit={
@@ -4763,7 +4777,7 @@ fire_only_once = yes
 	option = { # 
 		name = "Hope the agree to this treaty"
 		ai_chance = { factor = 100 }	
-OTO={country_event = russianempire_1789_1812.145} 
+TUR={country_event = russianempire_1789_1812.145} 
 	}
 	}
 								country_event = {
@@ -4833,7 +4847,7 @@ RUS={
 						}	
 }
 }
-OTO={
+TUR={
 356={
 									add_building_construction = {
 							type = industrial_complex
@@ -4852,9 +4866,9 @@ GEO={
 }
 }
 GEO={give_military_access = RUS}
-GEO={give_military_access = OTO}
+GEO={give_military_access = TUR}
 RUS={give_military_access = GEO}
-OTO={give_military_access = GEO}
+TUR={give_military_access = GEO}
 	}
 									}
 									country_event = {
@@ -5263,7 +5277,7 @@ fire_only_once = yes
 	option = { # 
 		name = "We cant have the French taking Romania"
 		ai_chance = { factor = 100 }
-OTO={country_event = russianempire_1789_1812.160}
+TUR={country_event = russianempire_1789_1812.160}
 RUS={set_country_flag=russo_turkish_war_yes}
 RUS={
 	set_autonomy = {
@@ -5293,7 +5307,7 @@ fire_only_once = yes
 	option = { # 
 		name = "This is war close the straits!"
 		ai_chance = { factor = 100 }
-	OTO = {
+	TUR = {
 	declare_war_on = {
 		target = RUS
 		type = annex_everything
@@ -5309,7 +5323,7 @@ fire_only_once = yes
 	#is_triggered_only = yes
 trigger = {
 tag = RUS
-has_war_with = OTO
+has_war_with = TUR
 or={
 and={
 has_start_date > 1808.1.1
@@ -5320,11 +5334,11 @@ date < 1813.1.1
 and={
 has_start_date > 1808.1.1
 has_start_date < 1809.1.1
-OTO = {surrender_progress > 0.25 }
+TUR = {surrender_progress > 0.25 }
 }
 and={
 RUS={has_country_flag=russo_turkish_war_yes}
-OTO = {surrender_progress > 0.25 }
+TUR = {surrender_progress > 0.25 }
 }
 and={
 RUS={has_country_flag=russo_turkish_war_yes}
@@ -5352,15 +5366,15 @@ add_core_of=RUS
 }
 every_country={
 limit={
-has_war_with=OTO
+has_war_with=TUR
 or={
 tag=RUS
 is_ally_with=RUS
 }
 }
-white_peace=OTO
+white_peace=TUR
 }
-OTO={
+TUR={
 	set_autonomy = {
         target = WAL
         autonomous_state = autonomy_protectorate
@@ -5372,8 +5386,8 @@ OTO={
         freedom_level = 0.35
 	}
 	}
-WAL={set_cosmetic_tag=WAL_OTO}
-MOL={set_cosmetic_tag=MOL_OTO}
+WAL={set_cosmetic_tag=WAL_TUR}
+MOL={set_cosmetic_tag=MOL_TUR}
 	}
 	}
 country_event = {

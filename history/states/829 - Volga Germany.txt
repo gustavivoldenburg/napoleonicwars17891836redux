@@ -31,13 +31,7 @@ remove_dynamic_modifier = { modifier = khiva_slavetrade_russia }
 		owner = SOV
 		add_core_of=SOV
 		}
-		1920.1.1 = {
-			owner = SOV
-			controller = SOV
-			add_core_of = SOV
-			remove_core_of = RUS
 
-		}
 		1946.1.1 = {
 			remove_core_of = VGE
 

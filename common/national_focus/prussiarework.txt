@@ -762,7 +762,7 @@ allow_branch = { has_start_date > 1789.1.1
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		
 		completion_reward = {
-		OTO={country_event = pre_1789_event.74}
+		TUR={country_event = pre_1789_event.74}
 		}
 	}
 		focus = {
@@ -4275,6 +4275,7 @@ WUR={is_ally_with=FRA}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		
 		completion_reward = {
+PRE={set_country_flag=prussia_fourth_coalition}
 PRE={country_event = pre_1789_event.125}
 SAX={country_event = pre_1789_event.126}
 BRU={country_event = pre_1789_event.127}

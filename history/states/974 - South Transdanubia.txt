@@ -4,16 +4,11 @@ state={
 	name="STATE_974"
 
 	history={
-		owner = OTO
+		owner = TUR
 						victory_points = {
 			13545 1 
 		}
-		1878.1.1 = {
-			owner = ROM
-			controller = ROM
-                add_core_of = ROM
-                remove_core_of = WAL
-		}
+
 		buildings = {
 			infrastructure = 1
 

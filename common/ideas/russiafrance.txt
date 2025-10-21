@@ -1,8 +1,6 @@
 ideas = {
 	country = {
-
-
-														GRE_greek_war_of_independence= {
+			GRE_greek_war_of_independence= {
 			picture = russian_flag_paris
 			
 			allowed = {
@@ -35,7 +33,7 @@ army_core_defence_factor = 0.1
 surrender_limit = 1
 			}
 		}
-											CIR_army= {
+											KBK_army= {
 			picture = russian_flag_paris
 			
 			allowed = {
@@ -54,6 +52,28 @@ surrender_limit = 1
 			ai_focus_defense_factor =2
 			}
 		}
+france_spain_cooperation_basel= {
+			picture = russian_flag_paris
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			
+			modifier = {
+            production_speed_industrial_complex_factor = 0.025
+            production_speed_arms_factory_factor = 0.025
+			political_power_gain = -0.01
+			}
+		}
+
+
+
+
 											FRA_mass_inflation_counterfeit= {
 			picture = russian_flag_paris
 			
@@ -72,7 +92,7 @@ surrender_limit = 1
 			political_power_gain = -0.5
 			}
 		}
-			CIR_offensive= {
+			KBK_offensive= {
 			picture = russian_flag_paris
 			
 			allowed = {
@@ -85,7 +105,7 @@ surrender_limit = 1
 			removal_cost = -1
 			
 targeted_modifier = {
-    tag = CIR
+    tag = KBK
     attack_bonus_against = 0.2
 }
 		}
@@ -106,7 +126,7 @@ targeted_modifier = {
     attack_bonus_against = 0.3
 }
 		}	
-					OTO_offensive= {
+					TUR_offensive= {
 			picture = russian_flag_paris
 			
 			allowed = {
@@ -119,11 +139,11 @@ targeted_modifier = {
 			removal_cost = -1
 			
 targeted_modifier = {
-    tag = OTO
+    tag = TUR
     attack_bonus_against = 0.2
 }
 		}
-					CIR_offensive_kuban= {
+					KBK_offensive_kuban= {
 			picture = russian_flag_paris
 			
 			allowed = {
@@ -136,7 +156,7 @@ targeted_modifier = {
 			removal_cost = -1
 			
 targeted_modifier = {
-    tag = CIR
+    tag = KBK
     attack_bonus_against = 0.1
 }
 		}		
@@ -251,7 +271,7 @@ war_support_factor = 0.1
 			}
 		}
 												louisxviidea= {
-			picture = russian_flag_paris
+			picture = louisxvi
 			
 			allowed = {
 				always = no
@@ -365,7 +385,7 @@ army_defence_factor = -0.05
 army_attack_factor = -0.05
 			}
 		}
-OTO_defensive_strategy_izmail_russo_turkish_war= {
+TUR_defensive_strategy_izmail_russo_turkish_war= {
 			picture = russian_flag_paris
 			
 			allowed = {
@@ -468,7 +488,7 @@ targeted_modifier = {
     attack_bonus_against = 0.1
 }
 		}
-QIN_JAP_RUS_the_russian_threat= {
+CHI_JAP_RUS_the_russian_threat= {
 			picture = russian_flag_paris
 			
 			allowed = {
@@ -1509,7 +1529,7 @@ targeted_modifier = {
     attack_bonus_against = 0.1
 }
 targeted_modifier = {
-    tag = KNI
+    tag = MLT
     attack_bonus_against = 0.1
 }
 }

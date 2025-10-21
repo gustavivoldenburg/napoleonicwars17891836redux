@@ -165,7 +165,7 @@ pauli_reform_RUS_frenchrevolution = {
 			date > 1789.1.1 date < 1900.1.1 
 			original_tag=RUS
 			has_country_leader = { character = RUS_pauli }
-			country_exists=KIE
+			country_exists=UKR
 		}
 
 		cost = 25

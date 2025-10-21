@@ -35,14 +35,7 @@ state={
 		victory_points = {
 			11528 1 
 		}
-				1919.1.1 = {
-			owner = UKR
-			controller = UKR
-			add_core_of = UKR
-			remove_core_of = RUS
-			remove_core_of = GLL
 
-		}
 		1920.1.1 = {
 			owner = POL
 			controller = POL

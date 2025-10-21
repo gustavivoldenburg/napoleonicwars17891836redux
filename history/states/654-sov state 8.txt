@@ -15,7 +15,7 @@ state={
                 }
 		1776.1.1 = {
 		add_core_of=MON
-                owner = QIN
+                owner = CHI
                 }
 						1900.1.1 = {
 		add_core_of = RUS

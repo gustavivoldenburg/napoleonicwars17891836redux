@@ -10,22 +10,22 @@ state={
 			}
 
 		}
-		owner = WDF
-		add_core_of = WDF
+		owner = UKR
+		add_core_of = UKR
 		1600.1.1 = {
-			owner = OTO
-			remove_core_of = WDF
+			owner = TUR
+			
 			remove_core_of = POD
 			remove_core_of = SMG
 			remove_core_of = SMO
-			remove_core_of = KIE
-			remove_core_of = CHE
-			add_core_of = ZAP
+			remove_core_of = UKR
+			
+			add_core_of = UKR
 
 		}
 		1700.1.1 = {
 			add_core_of = RUS
-			remove_core_of = ZAP
+			remove_core_of = UKR
 
 		}
 		1776.1.1 = {
@@ -36,10 +36,7 @@ state={
 			remove_core_of = LIT
 
 		}
-		1900.1.1 = {
-			add_core_of = UKR
 
-		}
 		1800.1.1 = {
 
 		}
@@ -47,21 +44,8 @@ state={
 			infrastructure = 3
 
 		}
-				1919.1.1 = {
-			owner = UKR
-			controller = UKR
-			add_core_of = UKR
-			remove_core_of = RUS
-			remove_core_of = GLL
 
-		}
-		1920.1.1 = {
-			owner = SOV
-			controller = SOV
-			add_core_of = SOV
-			remove_core_of = RUS
 
-		}
 		1993.1.1 = {
 			owner = UKR
 			controller = UKR

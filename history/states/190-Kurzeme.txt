@@ -22,10 +22,6 @@ state={
 			remove_core_of = LIV
 
 		}
-		1945.1.1 = {
-			owner = RLV
-
-		}
 		1946.1.1 = {
 			owner = SOV
 

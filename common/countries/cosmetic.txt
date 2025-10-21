@@ -556,51 +556,51 @@ ALB_GRE_kingdom = {
 	color = rgb { 85 100 129 }
 	color_ui = rgb { 85 100 129 }
 }
-SER_OTO = {
+SER_TUR = {
 	color = rgb { 169 17 1 }
 	color_ui = rgb { 169 17 1 }
 }
-EGY_OTO = {
+EGY_TUR = {
 	color = rgb { 169 17 1 }
 	color_ui = rgb { 169 17 1 }
 }
-WAL_OTO = {
+WAL_TUR = {
 	color = rgb { 169 17 1 }
 	color_ui = rgb { 169 17 1 }
 }
-MIG_OTO = {
+MIG_TUR = {
 	color = rgb { 169 17 1 }
 	color_ui = rgb { 169 17 1 }
 }
-SVA_OTO = {
+SVA_TUR = {
 	color = rgb { 169 17 1 }
 	color_ui = rgb { 169 17 1 }
 }
-MOL_OTO = {
+MOL_TUR = {
 	color = rgb { 169 17 1 }
 	color_ui = rgb { 169 17 1 }
 }
-ABK_OTO = {
+ABK_TUR = {
 	color = rgb { 169 17 1 }
 	color_ui = rgb { 169 17 1 }
 }
-IME_OTO = {
+IME_TUR = {
 	color = rgb { 169 17 1 }
 	color_ui = rgb { 169 17 1 }
 }
-GUR_OTO = {
+GUR_TUR = {
 	color = rgb { 169 17 1 }
 	color_ui = rgb { 169 17 1 }
 }
-LEB_OTO = {
+LEB_TUR = {
 	color = rgb { 169 17 1 }
 	color_ui = rgb { 169 17 1 }
 }
-ABK_OTO = {
+ABK_TUR = {
 	color = rgb { 169 17 1 }
 	color_ui = rgb { 169 17 1 }
 }
-IRQ_OTO = {
+IRQ_TUR = {
 	color = rgb { 169 17 1 }
 	color_ui = rgb { 169 17 1 }
 }
@@ -644,7 +644,7 @@ BSK_RUS = {
 	color = rgb { 23 103 46 }
 	color_ui = rgb { 23 103 46 }
 }
-KIE_RUS = {
+UKR_RUS = {
 	color = rgb { 23 103 46 }
 	color_ui = rgb { 23 103 46 }
 }

@@ -21,13 +21,7 @@ state={
 			remove_core_of = RUS
 
 		}
-		1920.1.1 = {
-			owner = SOV
-			controller = SOV
-			add_core_of = SOV
-			remove_core_of = RUS
 
-		}
 		1993.1.1 = {
 			owner = TMS
 			controller = TMS

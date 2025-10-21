@@ -24,8 +24,8 @@ set_cosmetic_tag = MTU_AUS #austrian puppet
 1790.1.1 = {
 set_cosmetic_tag = MTU #independent
 }
-1740.1.1 = {
-set_party_name = { ideology = neutrality long_name = HUN_legitimists_party_long name = HUN_legitimists_party }
+1789.1.1 = {
+set_party_name = { ideology = neutrality long_name = MTU_LOR_neutrality_party_long name = MTU_LOR_neutrality_party }
 }
 # Starting tech
 set_technology = {

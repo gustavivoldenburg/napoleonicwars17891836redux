@@ -8,12 +8,7 @@ state={
 			6652 3 
 		}
 		owner = WAL
-		1878.1.1 = {
-			owner = ROM
-			controller = ROM
-                add_core_of = ROM
-                remove_core_of = WAL
-		}
+
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1

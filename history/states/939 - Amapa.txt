@@ -4,7 +4,7 @@ state={
 	name="STATE_939"
 
 	history={
-		owner = OTO
+		owner = TUR
 		1936.1.1 = {
 			buildings = {
 				infrastructure = 2
@@ -25,7 +25,7 @@ state={
                 owner = ALB
                 }
 				1823.1.1 = {
-                owner = OTO
+                owner = TUR
                 }
 		add_core_of = BYZ
 		1800.1.1 = {

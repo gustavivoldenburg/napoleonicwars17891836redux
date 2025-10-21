@@ -12,7 +12,7 @@ state={
 		1600.1.1 = {
 		add_core_of = PER
 		remove_core_of = QAR
-		owner = OTO
+		owner = TUR
 		}
 		1689.1.1 = {
 		add_core_of = PER

@@ -22,7 +22,7 @@ state={
 		        1821.1.1 = {
 		if = {
 		limit = { has_start_date < 1822.1.1 }
-					OTO = {
+					TUR = {
 				set_province_controller = 7211
 				set_province_controller = 4078
 				set_province_controller = 13681
@@ -33,7 +33,7 @@ state={
 		}
 		owner = MEA
 		1600.1.1 = {
-		owner = OTO
+		owner = TUR
 		}
 		1700.1.1 = {
 		owner = VNT
@@ -41,7 +41,7 @@ state={
 		remove_core_of = MEA
 		}
 		1715.1.1 = {
-		owner = OTO
+		owner = TUR
 		}
 		1800.1.1 = {
 		add_core_of = GRE

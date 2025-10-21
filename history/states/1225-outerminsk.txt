@@ -14,9 +14,7 @@ state={
                 remove_core_of = POL
                 remove_core_of = LIT
                 }
-		1900.1.1 = {
-                add_core_of = BLR
-                }
+
 		buildings = {
 			infrastructure = 2
 		}
@@ -28,13 +26,7 @@ state={
 			remove_core_of = GLL
 
 		}
-		1920.1.1 = {
-			owner = SOV
-			controller = SOV
-			add_core_of = SOV
-			remove_core_of = RUS
 
-		}
 		1993.1.1 = {
 			owner = BLR
 			controller = BLR

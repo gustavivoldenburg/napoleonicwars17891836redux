@@ -9,13 +9,13 @@ state={
 
 		}
 		1900.1.1 = {
-		owner = OTO
+		owner = TUR
 		add_core_of = JOR
                 }
 						1919.1.1 = {
 			owner = SYR
 			controller = SYR
-			remove_core_of = OTO
+			remove_core_of = TUR
 
 		}
 		1920.1.1 = {
@@ -28,7 +28,7 @@ state={
 			owner = JOR
 			controller = JOR
 			add_core_of = JOR
-			remove_core_of = OTO
+			remove_core_of = TUR
 
 		}
 

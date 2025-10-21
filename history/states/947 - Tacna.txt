@@ -4,7 +4,7 @@ state={
 	history={
 		owner = NAX
 		1600.1.1 = {
-		owner = OTO
+		owner = TUR
 		}
 		1800.1.1 = {
 		add_core_of = GRE

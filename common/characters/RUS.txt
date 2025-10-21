@@ -30,6 +30,37 @@ characters={
 			}
 		}	
 	}
+		RUS_lazarev={
+		name=RUS_CHARACTER_LAZAREV
+		portraits={
+                        army={
+				small="GFX_idea_rus_lazarev_small"
+			}
+			civilian = {
+				large = GFX_portrait_rus_lazarev_large
+			}
+		}
+		advisor={
+                        can_be_fired = no
+			slot = political_advisor
+			idea_token = RUS_lazarev
+			allowed  = {
+				original_tag  = RUS
+			}
+			available  = {
+		        }
+			traits  = {
+				russian_armenian_banker
+			}
+			on_add  = {
+			}
+			do_effect  = {
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}	
+	}
 		RUS_pahlen={
 		name=RUS_CHARACTER_PAHLEN
 		portraits={
@@ -272,7 +303,43 @@ characters={
 				small=GFX_portrait_rus_lodewijk_small
 			}
 		}
-		field_marshal={
+		corps_commander={
+                visible={RUS={has_country_flag=dutch_has_been_hired}}
+			skill=3
+			attack_skill=3
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=5
+			legacy_id=0
+		}
+	}
+			RUS_madatov={
+		name=RUS_CHARACTER_MADATOV
+		portraits={
+			army={
+				large=GFX_portrait_rus_madatov_large
+				small=GFX_portrait_rus_madatov_small
+			}
+		}
+		corps_commander={
+                visible={RUS={has_country_flag=dutch_has_been_hired}}
+			skill=3
+			attack_skill=3
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=5
+			legacy_id=0
+		}
+	}
+			RUS_arakcheyev={
+		name=RUS_CHARACTER_ARAKCHEYEV
+		portraits={
+			army={
+				large=GFX_portrait_rus_arakcheyev_large
+				small=GFX_portrait_rus_arakcheyev_small
+			}
+		}
+		corps_commander={
                 visible={RUS={has_country_flag=dutch_has_been_hired}}
 			skill=3
 			attack_skill=3

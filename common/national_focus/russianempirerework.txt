@@ -664,9 +664,9 @@ mutually_exclusive = {  focus = russianempirerework_1789_1815_first_100_focus_88
 		focus =russianempirerework_althistory_17
 		}
 		available = {
-		NOT={has_war_with=OTO}
+		NOT={has_war_with=TUR}
 		GEO={is_subject_of=RUS}
-		IME={is_subject_of=OTO}
+		IME={is_subject_of=TUR}
 		}
 
 		bypass = {
@@ -1210,7 +1210,7 @@ allow_branch = { NOT={has_country_flag=napoleonrussia} has_start_date > 1789.1.1
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		
 		completion_reward = {
-		OTO={add_stability=-0.1 add_manpower = -20000}
+		TUR={add_stability=-0.1 add_manpower = -20000}
 		}
 	}
 		focus = {
@@ -1697,7 +1697,7 @@ allow_branch = { NOT={has_country_flag=napoleonrussia} has_start_date > 1789.1.1
 		
 		completion_reward = {
 		RUS={country_event = russianempire_1789_1812.44}
-		OTO={add_political_power=-50}
+		TUR={add_political_power=-50}
 		}
 	}
 		focus = {
@@ -1718,7 +1718,7 @@ allow_branch = { NOT={has_country_flag=napoleonrussia} has_start_date > 1789.1.1
 		}
 
 		available = {
-        has_war_with=CIR
+        has_war_with=KBK
 		}
 
 		bypass = {
@@ -1733,7 +1733,7 @@ allow_branch = { NOT={has_country_flag=napoleonrussia} has_start_date > 1789.1.1
 		
 		completion_reward = {
 		RUS={country_event = russianempire_1789_1812.43}
-		CIR={add_political_power=-50}
+		KBK={add_political_power=-50}
 		}
 	}
 		focus = {
@@ -2410,7 +2410,7 @@ mutually_exclusive = {  focus = russianempirerework_althistory_37  }
 
 		available = {
 has_army_manpower = { size > 299999}
-        NOT={RUS={has_country_flag=CIR_RUS_peace_flag}}
+        NOT={RUS={has_country_flag=KBK_RUS_peace_flag}}
 		}
 
 		bypass = {
@@ -2600,8 +2600,8 @@ mutually_exclusive = {  focus = russianempirerework_althistory_38  }
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		
 		completion_reward = {
-		OTO={add_war_support=-0.025}
-		OTO={add_political_power=-25}
+		TUR={add_war_support=-0.025}
+		TUR={add_political_power=-25}
 		RUS={country_event = russianempire_1789_1812.83} 
 		}
 	}
@@ -2636,8 +2636,8 @@ mutually_exclusive = {  focus = russianempirerework_althistory_38  }
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		
 		completion_reward = {
-		OTO={add_war_support=-0.025}
-		OTO={add_political_power=-25}
+		TUR={add_war_support=-0.025}
+		TUR={add_political_power=-25}
 		RUS={country_event = russianempire_1789_1812.84} 
 		}
 	}
@@ -3382,7 +3382,7 @@ has_country_flag=treaty_secondpartion_flag
 		add_state_core = 1229
 		add_state_core = 915
 		}
-						       		KIE={
+						       		UKR={
 		transfer_state = 194
 		transfer_state = 201
 		transfer_state = 203
@@ -3390,7 +3390,7 @@ has_country_flag=treaty_secondpartion_flag
 		transfer_state = 1220
 		transfer_state = 965
 		}
-				       		KIE={
+				       		UKR={
 		add_state_core = 194
 		add_state_core = 201
 		add_state_core = 203
@@ -4154,7 +4154,7 @@ mutually_exclusive = { focus =russianempirerework_althistory_4  }
 						}
 						}
 		}
-				QIN={
+				CHI={
 					random_owned_controlled_state={
                         add_extra_state_shared_building_slots = 1
 						add_building_construction = {
@@ -6926,7 +6926,7 @@ has_country_leader = { character = RUS_pauli }
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		
 		completion_reward = {
-NOA={
+KBK={
 give_military_access = RUS
 }
 									828 = {

@@ -22,15 +22,15 @@ state={
 		owner = BYZ
 		add_core_of = BYZ
 		1453.1.1 = {
-		add_core_of = OTO
-		owner = OTO
+		add_core_of = TUR
+		owner = TUR
 		remove_core_of = BYZ
 		}
 		1925.1.1 = {
 			owner = TUR
 			controller = TUR
 			add_core_of = TUR
-			remove_core_of = OTO
+			remove_core_of = TUR
 
 		}
 		1936.1.1 = {

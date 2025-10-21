@@ -1,0 +1,111 @@
+characters={
+		MLT_rohan={
+		name=MLT_CHARACTER_ROHAN
+		portraits={
+			civilian={
+				large="GFX_portrait_mlt_rohan_large"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={Rohan}
+			desc = MLT_ROHAN_DESC
+			expire="1797.1.1"
+		}
+}
+		MLT_von={
+		name=MLT_CHARACTER_VON
+		portraits={
+			civilian={
+				large="GFX_portrait_mlt_von_large"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			desc = MLT_VON_DESC
+			expire="1797.1.1"
+		}
+}
+		MLT_saltykov={
+		name=MLT_CHARACTER_SALTYKOV
+		portraits={
+			civilian={
+				large="GFX_portrait_mlt_saltykov_large"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			desc = MLT_SALTYKOV_DESC
+			expire="1797.1.1"
+		}
+}
+		MLT_tommasi={
+		name=MLT_CHARACTER_TOMMASI
+		portraits={
+			civilian={
+				large="GFX_portrait_mlt_tommasi_large"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			desc = MLT_TOMMASI_DESC
+			expire="1797.1.1"
+		}
+}
+		MLT_maria={
+		name=MLT_CHARACTER_MARIA
+		portraits={
+			civilian={
+				large="GFX_portrait_mlt_maria_large"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			desc = MLT_MARIA_DESC
+			expire="1797.1.1"
+		}
+}
+	MLT_pauli={
+		name=MLT_CHARACTER_PAULI
+		portraits={
+			civilian={
+				large="GFX_portrait_mlt_pauli_large"
+			}
+		}
+		country_leader={
+			ideology=oldenburg
+			traits={Holstein-Gottorp-Romanov}
+			desc = MLT_PAULI_DESC
+			expire="1797.1.1"
+		}
+}
+	MLT_alexanderi={
+		name=MLT_CHARACTER_ALEXANDERI
+		portraits={
+			civilian={
+				large="GFX_portrait_mlt_alexanderi_large"
+			}
+		}
+		country_leader={
+			ideology=oldenburg
+			traits={Holstein-Gottorp-Romanov}
+			desc = MLT_ALEXANDERI_DESC
+			expire="1797.1.1"
+		}
+}
+	MLT_nicholasi={
+		name=MLT_CHARACTER_NICHOLASI
+		portraits={
+			civilian={
+				large="GFX_portrait_mlt_nicholasi_large"
+			}
+		}
+		country_leader={
+			ideology=oldenburg
+			traits={Holstein-Gottorp-Romanov}
+			desc = MLT_NICHOLASI_DESC
+			expire="1797.1.1"
+		}
+}
+}
+

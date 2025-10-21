@@ -1,0 +1,275 @@
+###########################
+# Europe Province Rework Events
+###########################
+
+add_namespace = bay_1789_event
+
+# French Revolution
+country_event = {
+	id = bay_1789_event.1
+	title = "The Mediatisation of Memmingen"
+	desc = bay_1789_event.1.d
+	picture = GFX_idi_amin_india
+	#is_triggered_only = yes
+trigger = {	
+date > 1802.1.1 date < 1803.1.1 
+tag = BAY	
+}
+fire_only_once = yes
+	option = { # 
+		name = "It's ours now"
+		ai_chance = { factor = 100 } 
+BAY={annex_country = { target = MEM transfer_troops = yes }}
+hidden_effect={
+		every_state={
+        limit={
+        is_core_of=MEM
+        }
+        add_core_of=BAY
+		transfer_state_to=BAY
+        remove_core_of=MEM
+        } 
+	}
+	}
+}
+country_event = {
+	id = bay_1789_event.2
+	title = "The Mediatisation of Augsburg"
+	desc = bay_1789_event.2.d
+	picture = GFX_idi_amin_india
+	#is_triggered_only = yes
+trigger = {	
+date > 1806.3.4 date < 1807.1.1 
+tag = BAY	
+}
+fire_only_once = yes
+	option = { # 
+		name = "It's ours now"
+		ai_chance = { factor = 100 } 
+BAY={annex_country = { target = AUG transfer_troops = yes }}
+hidden_effect={
+		every_state={
+        limit={
+        is_core_of=AUG
+        }
+        add_core_of=BAY
+		transfer_state_to=BAY
+        remove_core_of=AUG
+        } 
+	}
+	}
+}
+country_event = {
+	id = bay_1789_event.3
+	title = "The Mediatisation of Passau"
+	desc = bay_1789_event.3.d
+	picture = GFX_idi_amin_india
+	#is_triggered_only = yes
+trigger = {	
+date > 1803.1.1 date < 1804.1.1 
+tag = BAY	
+}
+fire_only_once = yes
+	option = { # 
+		name = "It's ours now"
+		ai_chance = { factor = 100 } 
+BAY={annex_country = { target = PAS transfer_troops = yes }}
+hidden_effect={
+		every_state={
+        limit={
+        is_core_of=PAS
+        }
+        add_core_of=BAY
+		transfer_state_to=BAY
+        remove_core_of=PAS
+        } 
+	}
+	}
+}
+country_event = {
+	id = bay_1789_event.4
+	title = "The Mediatisation of Regensburg"
+	desc = bay_1789_event.4.d
+	picture = GFX_idi_amin_india
+	#is_triggered_only = yes
+trigger = {	
+date > 1810.6.30 date < 1811.1.1 
+tag = BAY	
+}
+fire_only_once = yes
+	option = { # 
+		name = "It's ours now"
+		ai_chance = { factor = 100 } 
+BAY={annex_country = { target = REG transfer_troops = yes }}
+hidden_effect={
+		every_state={
+        limit={
+        is_core_of=REG
+        }
+        add_core_of=BAY
+		transfer_state_to=BAY
+        remove_core_of=REG
+        } 
+	}
+	}
+}
+country_event = {
+	id = bay_1789_event.5
+	title = "The Mediatisation of Rothenburg"
+	desc = bay_1789_event.5.d
+	picture = GFX_idi_amin_india
+	#is_triggered_only = yes
+trigger = {	
+date > 1802.1.1 date < 1803.1.1 
+tag = BAY	
+}
+fire_only_once = yes
+	option = { # 
+		name = "It's ours now"
+		ai_chance = { factor = 100 } 
+BAY={annex_country = { target = RTH transfer_troops = yes }}
+hidden_effect={
+		every_state={
+        limit={
+        is_core_of=RTH
+        }
+        add_core_of=BAY
+		transfer_state_to=BAY
+        remove_core_of=RTH
+        } 
+	}
+	}
+}
+country_event = {
+	id = bay_1789_event.6
+	title = "The Mediatisation of Nurnberg"
+	desc = bay_1789_event.6.d
+	picture = GFX_idi_amin_india
+	#is_triggered_only = yes
+trigger = {	
+date > 1806.9.15 date < 1807.1.1 
+tag = BAY	
+}
+fire_only_once = yes
+	option = { # 
+		name = "It's ours now"
+		ai_chance = { factor = 100 } 
+BAY={annex_country = { target = NUR transfer_troops = yes }}
+hidden_effect={
+		every_state={
+        limit={
+        is_core_of=NUR
+        }
+        add_core_of=BAY
+		transfer_state_to=BAY
+        remove_core_of=NUR
+        } 
+	}
+	}
+}
+country_event = {
+	id = bay_1789_event.7
+	title = "The Mediatisation of Bamberg"
+	desc = bay_1789_event.7.d
+	picture = GFX_idi_amin_india
+	#is_triggered_only = yes
+trigger = {	
+date > 1802.1.1 date < 1803.1.1 
+tag = BAY	
+}
+fire_only_once = yes
+	option = { # 
+		name = "It's ours now"
+		ai_chance = { factor = 100 } 
+BAY={annex_country = { target = BAM transfer_troops = yes }}
+hidden_effect={
+		every_state={
+        limit={
+        is_core_of=BAM
+        }
+        add_core_of=BAY
+		transfer_state_to=BAY
+        remove_core_of=BAM
+        } 
+	}
+	}
+}
+country_event = {
+	id = bay_1789_event.8
+	title = "The Mediatisation of Wurzburg"
+	desc = bay_1789_event.8.d
+	picture = GFX_idi_amin_india
+	#is_triggered_only = yes
+trigger = {	
+date > 1814.6.3 date < 1815.1.1 
+tag = BAY	
+}
+fire_only_once = yes
+	option = { # 
+		name = "It's ours now"
+		ai_chance = { factor = 100 } 
+BAY={annex_country = { target = WRZ transfer_troops = yes }}
+hidden_effect={
+		every_state={
+        limit={
+        is_core_of=WRZ
+        }
+        add_core_of=BAY
+		transfer_state_to=BAY
+        remove_core_of=WRZ
+        } 
+	}
+	}
+}
+country_event = {
+	id = bay_1789_event.9
+	title = "The Mediatisation of Ansbach"
+	desc = bay_1789_event.9.d
+	picture = GFX_idi_amin_india
+	#is_triggered_only = yes
+trigger = {	
+date > 1805.12.15 date < 1806.1.1 
+tag = BAY	
+}
+fire_only_once = yes
+	option = { # 
+		name = "It's ours now"
+		ai_chance = { factor = 100 } 
+hidden_effect={
+		every_state={
+        limit={
+        state=1199
+        }
+        add_core_of=BAY
+		transfer_state_to=BAY
+        remove_core_of=PRE
+        } 
+	}
+	}
+}
+country_event = {
+	id = bay_1789_event.10
+	title = "The Mediatisation of Bayreuth"
+	desc = bay_1789_event.10.d
+	picture = GFX_idi_amin_india
+	#is_triggered_only = yes
+trigger = {	
+date > 1810.6.30 date < 1811.1.1 
+tag = BAY	
+}
+fire_only_once = yes
+	option = { # 
+		name = "It's ours now"
+		ai_chance = { factor = 100 } 
+hidden_effect={
+		every_state={
+        limit={
+        state=1198
+        }
+        add_core_of=BAY
+		transfer_state_to=BAY
+        remove_core_of=PRE
+        } 
+	}
+	}
+}

@@ -32,7 +32,9 @@ set_stability = 0.5
 set_war_support = 0.5
 add_ideas = {
 }
-
+1789.1.1 = {
+set_party_name = { ideology = neutrality long_name = LBV_LOR_neutrality_party_long name = LBV_LOR_neutrality_party }
+}
 
 # Starting tech
 set_technology = {

@@ -4,8 +4,8 @@ state={
 	name="STATE_567"
 
 	history={
-		add_core_of = CIR
-		owner = CIR
+		add_core_of = KBK
+		owner = KBK
 		1867.1.1 = {
 			owner = RUS
 			add_core_of = RUS
@@ -13,7 +13,7 @@ state={
 		}
 		1900.1.1 = {
 			add_core_of = ADY
-			remove_core_of = CIR
+			
 
 		}
 		1858.1.1 = {
@@ -35,13 +35,7 @@ state={
 		remove_core_of = KUB
 		remove_core_of = DAG
 		}
-		1920.1.1 = {
-			owner = SOV
-			controller = SOV
-			add_core_of = SOV
-			remove_core_of = RUS
 
-		}
 		1993.1.1 = {
 			owner = RUS
 			controller = RUS

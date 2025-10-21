@@ -7,8 +7,8 @@ state={
 	}
 
 	history={
-		owner = NOA
-                add_core_of = NOA
+		owner = KBK
+                add_core_of = KBK
 		1836.1.1 = {
                 owner = RUS
                 add_core_of = RUS

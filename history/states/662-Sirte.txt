@@ -20,7 +20,7 @@ state={
 
 		}
 		1836.1.1 = {
-			owner = OTO
+			owner = TUR
 			add_core_of = TRP
 			remove_core_of=CYR
 			remove_core_of = ALY
@@ -50,7 +50,7 @@ state={
 		1911.1.1 = {
 			owner = LBA
 			controller = LBA
-			remove_core_of = OTO
+			remove_core_of = TUR
 
 		}
 		1920.1.1 = {

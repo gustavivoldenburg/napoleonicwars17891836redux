@@ -7,9 +7,9 @@ state={
 		owner = EGY
 		add_core_of = EGY
 		1600.1.1 = {
-			owner = OTO
+			owner = TUR
 			add_core_of = LEB
-			add_core_of = OTO
+			add_core_of = TUR
 			remove_core_of = ALY
 			remove_core_of = KRM
 			remove_core_of = RAM
@@ -46,19 +46,19 @@ state={
 		}
 		add_core_of = LEB
 				1842.1.1 = {
-			owner = OTO
-			add_core_of = OTO
+			owner = TUR
+			add_core_of = TUR
 
 		}
 		1919.1.1 = {
 			owner = LEB
-			remove_core_of = OTO
+			remove_core_of = TUR
 
 		}
 		1943.1.1 = {
 			owner = LEB
 			controller = LEB
-            remove_core_of = OTO
+            remove_core_of = TUR
 		}
 
 	}

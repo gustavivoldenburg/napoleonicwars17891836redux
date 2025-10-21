@@ -4,14 +4,14 @@ state={
 	manpower = 120000
 	state_category = pastoral
 	history={
-		owner = KNI
-		add_core_of = KNI
+		owner = MLT
+		add_core_of = MLT
 		1530.1.1 = {
-		owner = OTO
+		owner = TUR
 		}
 		1800.1.1 = {
 		add_core_of = GRE
-		remove_core_of = KNI
+		remove_core_of = MLT
 		}
 		victory_points = {
 			10007 1 

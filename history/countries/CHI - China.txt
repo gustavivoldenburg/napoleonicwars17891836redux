@@ -1,11 +1,21 @@
-﻿capital = 613 # Nanjing
-1949.1.1 = {
-		set_capital = {
-  state = 524
-  remember_old_capital = no
+﻿capital = 608
+1736.1.1 = {
+recruit_character=CHI_qianlong
+promote_character=CHI_qianlong
+recruit_character=CHI_jiaqing
+recruit_character=CHI_daoguang
 }
+1800.1.1 = {
+promote_character=CHI_jiaqing
+retire_character=CHI_qianlong
 }
-
+1821.1.1 = {
+promote_character=CHI_daoguang
+retire_character=CHI_jiaqing
+}
+1851.1.1 = {
+retire_character=CHI_daoguang
+}
 1936.1.1 = {
 oob = "CHI_1936"
 		if = {
@@ -27,7 +37,6 @@ if = {
 			early_bomber = 1
 		}
 	}
-}
 }
 }
 recruit_character = CHI_chiang_kaishek
@@ -70,6 +79,7 @@ recruit_character = CHI_lin_sen
 
 set_stability = 0.2
 set_war_support = 0.5
+}
 set_technology = {
 	infantry_weapons = 1
 	transport = 1
@@ -320,7 +330,7 @@ set_convoys = 40
 }
 set_politics = {
 	ruling_party = neutrality
-	last_election = "1936.1.1"
+	last_election = "1789.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
@@ -328,9 +338,7 @@ set_politics = {
 set_popularities = {
 	neutrality = 100
 }
-1949.1.1 = {
-set_cosmetic_tag = CHI_taiwan # taiwan
-}
+1936.1.1 = {
 add_opinion_modifier = { target = PRC modifier = hostile_status }
 
 ### VARIANTS ###
@@ -411,4 +419,5 @@ if = {
 			rear_1_custom_slot = empty
 		}
 	}
+}
 }

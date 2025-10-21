@@ -1,0 +1,45 @@
+characters={
+	CHI_daoguang={
+		name=CHI_CHARACTER_DAOGUANG
+		portraits={
+			civilian={
+				large="GFX_portrait_chi_daoguang_large"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={Aisin-Goro}
+			desc = CHI_DAOGUANG_DESC
+			expire="1797.1.1"
+		}
+}
+	CHI_qianlong={
+		name=CHI_CHARACTER_QIANLONG
+		portraits={
+			civilian={
+				large="GFX_portrait_chi_qianlong_large"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={Aisin-Goro}
+			desc = CHI_QIANLONG_DESC
+			expire="1797.1.1"
+		}
+}
+	CHI_jiaqing={
+		name=CHI_CHARACTER_JIAQING
+		portraits={
+			civilian={
+				large="GFX_portrait_chi_jiaqing_large"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={Aisin-Goro}
+			desc = CHI_JIAQING_DESC
+			expire="1797.1.1"
+		}
+}
+}
+

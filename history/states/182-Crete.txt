@@ -7,7 +7,7 @@ state={
 		owner = CRE
 		add_core_of = CRE
 		1700.1.1 = {
-		owner = OTO
+		owner = TUR
 		}
 		1800.1.1 = {
 		add_core_of = GRE

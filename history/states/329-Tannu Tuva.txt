@@ -12,7 +12,7 @@ state={
 	history={
 		owner = ZZZ
 		1776.1.1 = {
-        owner = QIN
+        owner = CHI
 		add_core_of = MON
         }
 		buildings = {

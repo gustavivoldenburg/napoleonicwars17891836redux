@@ -17,7 +17,7 @@ country_exists=QAJ
 country_exists=AFS
 	or = {
 	AFS = {surrender_progress > 0.1 }
-	not={has_war_with=QAJ}
+	not={has_war_with=AFS}
 	and={
 	416={is_core_of=AFS}
 	416={is_owned_by=QAJ}
@@ -72,7 +72,7 @@ country_exists=QAJ
 country_exists=PER
 	or = {
 	PER = {surrender_progress > 0.5 }
-	not={has_war_with=QAJ}
+	not={has_war_with=PER}
 	and={
 	416={is_core_of=PER}
 	416={is_owned_by=QAJ}

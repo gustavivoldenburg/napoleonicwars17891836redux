@@ -8,8 +8,8 @@ state={
 		add_core_of = QAR
 		owner = QAR
 		1600.1.1 = {
-			owner = OTO
-			add_core_of = OTO
+			owner = TUR
+			add_core_of = TUR
 			remove_core_of = QAR
 
 		}

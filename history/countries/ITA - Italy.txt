@@ -53,12 +53,13 @@ if = {
 	}
 	set_oob = "ITA_1936_nsb"
 }
-}
+
 starting_train_buffer = 1.5
 
 set_research_slots = 0
 set_stability = 0.6
 set_war_support = 0.7
+}
 1936.1.1 = {
 add_ideas = {
         ita_hidden_ai_idea
@@ -72,7 +73,7 @@ add_ideas = {
 #######################################
 ############ MISSIOLINIS ##############
 #######################################
-
+1936.1.1 = {
 set_variable = { ITA_missiolinis_number_of_missions_triggered = 0 }
 set_variable = { ITA_missiolinis_number_of_missions_resolved = 0 }
 set_variable = { ITA_missiolinis_active_missions = 0 }
@@ -332,7 +333,7 @@ set_variable = { ITA_ra_air_cas_present_factor = 0 } #Airforce
 set_variable = { ITA_ra_air_mission_efficiency = 0 } #Airforce
 set_variable = { ITA_ra_air_attack = 0 } #Airforce
 set_variable = { ITA_ra_air_interception = 0 } #Airforce
-
+}
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
@@ -795,6 +796,7 @@ set_popularities = {
 	neutrality = 5
 }
 }
+1936.1.1 = {
 recruit_character = ITA_benito_mussolini
 recruit_character = ITA_grand_council
 recruit_character = ITA_vittorio_emanuele_iii
@@ -1537,7 +1539,7 @@ if = {
 	}
 }
 
-
+}
 1939.1.1 = {
 	if = {
 		limit = {

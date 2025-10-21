@@ -6,6 +6,9 @@ ideas = {
             allowed = {
                 always = no
             }
+			allowed_civil_war = {
+				always = yes
+			}
 
             removal_cost = -1
 
@@ -25,6 +28,9 @@ ideas = {
             allowed = {
                 always = no
             }
+			allowed_civil_war = {
+				always = yes
+			}
 
             removal_cost = -1
 
@@ -44,6 +50,9 @@ ideas = {
             allowed = {
                 always = no
             }
+			allowed_civil_war = {
+				always = yes
+			}
 
             removal_cost = -1
 
@@ -63,6 +72,9 @@ ideas = {
             allowed = {
                 always = no
             }
+			allowed_civil_war = {
+				always = yes
+			}
 
             removal_cost = -1
 
@@ -82,7 +94,9 @@ ideas = {
             allowed = {
                 always = no
             }
-
+			allowed_civil_war = {
+				always = yes
+			}
             removal_cost = -1
 
             picture = idea_generic_army_problems
@@ -101,6 +115,9 @@ ideas = {
             allowed = {
                 always = no
             }
+			allowed_civil_war = {
+				always = yes
+			}
 
             removal_cost = -1
 
@@ -120,6 +137,9 @@ ideas = {
             allowed = {
                 always = no
             }
+			allowed_civil_war = {
+				always = yes
+			}
 
             removal_cost = -1
 
@@ -139,6 +159,9 @@ ideas = {
             allowed = {
                 always = no
             }
+			allowed_civil_war = {
+				always = yes
+			}
 
             removal_cost = -1
 
@@ -154,6 +177,9 @@ ideas = {
             allowed = {
                 always = no
             }
+			allowed_civil_war = {
+				always = yes
+			}
 
             removal_cost = -1
 
@@ -170,6 +196,9 @@ ideas = {
             allowed = {
                 always = no
             }
+			allowed_civil_war = {
+				always = yes
+			}
 
             removal_cost = -1
 
@@ -186,6 +215,9 @@ ideas = {
             allowed = {
                 always = no
             }
+			allowed_civil_war = {
+				always = yes
+			}
 
             removal_cost = -1
 
@@ -200,6 +232,9 @@ ideas = {
             allowed = {
                 always = no
             }
+			allowed_civil_war = {
+				always = yes
+			}
 
             removal_cost = -1
 
@@ -214,6 +249,9 @@ ideas = {
             allowed = {
                 always = no
             }
+			allowed_civil_war = {
+				always = yes
+			}
 
             removal_cost = -1
 
@@ -228,6 +266,9 @@ ideas = {
             allowed = {
                 always = no
             }
+			allowed_civil_war = {
+				always = yes
+			}
 
             removal_cost = -1
 
@@ -242,6 +283,9 @@ ideas = {
             allowed = {
                 always = no
             }
+			allowed_civil_war = {
+				always = yes
+			}
 
             removal_cost = -1
 
@@ -257,6 +301,9 @@ ideas = {
             allowed = {
                 always = no
             }
+			allowed_civil_war = {
+				always = yes
+			}
 
             removal_cost = -1
 

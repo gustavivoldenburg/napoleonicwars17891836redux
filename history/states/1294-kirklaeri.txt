@@ -2,7 +2,7 @@ state={
 	id=1294
 	name="STATE_1294"
 		history={
-		owner = OTO
+		owner = TUR
 								buildings = {
 		922 = {bunker = 2}
         }
@@ -12,12 +12,12 @@ state={
 		buildings = {
 			infrastructure = 2
 		}
-		add_core_of = OTO
+		add_core_of = TUR
 		1920.1.1 = {
 			owner = TUR
 			controller = TUR
 			add_core_of = TUR
-			remove_core_of = OTO
+			remove_core_of = TUR
 
 		}
 

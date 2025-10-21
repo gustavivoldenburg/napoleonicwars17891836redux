@@ -5,7 +5,7 @@ state={
 
 	history={
 		owner = ZZZ
-				owner = MUG
+				owner = ZZZ
 		add_core_of = MUG
 		1661.1.1 = {
 	    add_core_of = RAJ

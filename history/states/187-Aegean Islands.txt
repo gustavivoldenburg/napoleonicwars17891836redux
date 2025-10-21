@@ -10,7 +10,7 @@ state={
 		owner = GOA
         add_core_of = GOA
 		1600.1.1 = {
-		owner = OTO
+		owner = TUR
 		add_core_of = GOA
 		}
 		1800.1.1 = {

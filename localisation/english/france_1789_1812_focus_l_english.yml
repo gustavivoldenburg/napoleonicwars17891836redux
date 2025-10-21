@@ -8,17 +8,17 @@ france_1789_1815_first_50_focus_3_desc:0 "Riot in the Faubourg Saint-Antoine"
 france_1789_1815_first_50_focus_4:0 "Eruption of The French Revolution" #1789
 france_1789_1815_first_50_focus_4_desc:0 "The Costly Wars between 1688 and 1788 have really fumbled French Stability."
 france_1789_1815_first_50_focus_5:0 "Form the National Constituent Assembly" #1789
-france_1789_1815_first_50_focus_5_desc:0 "The Estates-General has failed to reconcile the competing claims of order and reform. Representatives of the Third Estate, joined now by sympathisers from the clergy and nobility, convene as a National Constituent Assembly. Their task is sober and singular: to draft a constitution that will give the nation a legal foundation and settle the question of sovereignty."
+france_1789_1815_first_50_focus_5_desc:0 "Form the National Constituent Assembly."
 france_1789_1815_first_50_focus_6:0 "Abolish Feudalism" #1789
 france_1789_1815_first_50_focus_6_desc:0 "The Abolition of feudalism in France will liberate the French People."
 france_1789_1815_first_50_focus_7:0 "Support The Liège Revolution" #1789
 france_1789_1815_first_50_focus_7_desc:0 "The Liège Revolution Will be used to allegedly free the Waloons from feudalism."
 france_1789_1815_first_50_focus_8:0 "Declaration of the Rights of Man and of the Citizen" #1789
-france_1789_1815_first_50_focus_8_desc:0 "Men are born and remain free and equal in rights."
+france_1789_1815_first_50_focus_8_desc:0 "Declaration of the Rights of Man and of the Citizen."
 france_1789_1815_first_50_focus_9:0 "Support The Brabant Revolution" #1789
 france_1789_1815_first_50_focus_9_desc:0 "The Brabant Revolution Will be used to allegedly free the Belgians from feudalism."
 france_1789_1815_first_50_focus_10:0 "Women's March on Versailles" #1789
-france_1789_1815_first_50_focus_10_desc:0 "Rising bread prices and royal indifference have driven the people to fury. Thousands of women from Paris—armed with pikes, muskets, and anger—are marching to Versailles to confront the king. Their demand is simple: bread, and a ruler who remembers his people. This march may compel the crown to return to Paris, placing the monarch under the watchful eye of the revolution."
+france_1789_1815_first_50_focus_10_desc:0 "Women's March on Versailles"
 france_1789_1815_first_50_focus_11:0 "Nationalization of Church Lands" #1789
 france_1789_1815_first_50_focus_11_desc:0 "The Lands of the Catholic Church bust be Nationalized. The Clergy needs a Constitutional Amendment."
 france_1789_1815_first_50_focus_12:0 "Maintain the constitutional laws" #1789
@@ -87,7 +87,7 @@ france_1789_1815_first_50_focus_43:0 "Overthrow the Monarchy" #1792
 france_1789_1815_first_50_focus_43_desc:0 "The King is not the most competent head of state of France, it is the Republic! Anyways he will not have his head for much longer"
 france_1789_1815_first_50_focus_44:0 "Proclaim the French First Republic" #1792
 france_1789_1815_first_50_focus_44_desc:0 "This period of History will be characterized by the downfall and abolition of the French monarchy."
-france_1789_1815_first_50_focus_45:0 "We need to spread the Revolution to Germany" #1792
+france_1789_1815_first_50_focus_45:0 "spread the Revolution to Germany" #1792
 france_1789_1815_first_50_focus_45_desc:0 ""
 france_1789_1815_first_50_focus_46:0 "Annex Savoy" #1792
 france_1789_1815_first_50_focus_46_desc:0 "Incorporating Savoy may strangle our relationship with Sardinia Piedmont. However the people of Savoy are French and need to be incorporated into France."
@@ -151,15 +151,15 @@ france_1793_1799_focus_24:0 "Make peace with the Chouans" #1795
 france_1793_1799_focus_24_desc:0 "The Treaty of La Jaunaye it is"
 france_1793_1799_focus_25:0 "Establish the Franc" #1795
 france_1793_1799_focus_25_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_26:0 "Improve our relations with Prussia" #1795
-france_1793_1799_focus_26_desc:0 "Marie Antoinette has to be executed too."
+france_1793_1799_focus_26:0 "France's Natural Borders"  #1795
+france_1793_1799_focus_26_desc:0 "The Revolution must be defended not only within France, but at its natural frontiers — the Rhine, the Alps, and the Pyrenees. These borders will ensure the Republic's safety and unite those who speak our tongue or share our ideals. Integration is both a necessity and our duty."
 france_1793_1799_focus_27:0 "Treaty of the Hague" #1795
 france_1793_1799_focus_27_desc:0 "The Netherlands now being a French Puppet they have to give us Zeelandic Flanders and Maastricht."
 france_1793_1799_focus_28:0 "Suppress the Revolutionary Tribunal" #1795
 france_1793_1799_focus_28_desc:0 "Marie Antoinette has to be executed too."
 france_1793_1799_focus_29:0 "The Defeat of the Royalists" #1795
 france_1793_1799_focus_29_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_30:0 "Make Peace with the Spanish Bourbons" #1795
+france_1793_1799_focus_30:0 "The Peace of Basel" #1795
 france_1793_1799_focus_30_desc:0 "Marie Antoinette has to be executed too."
 france_1793_1799_focus_31:0 "Annex Liege" #1795
 france_1793_1799_focus_31_desc:0 "Marie Antoinette has to be executed too."
@@ -175,11 +175,11 @@ france_1793_1799_focus_36:0 "installation of the twelve municipalities of Paris"
 france_1793_1799_focus_36_desc:0 "Marie Antoinette has to be executed too."
 france_1793_1799_focus_37:0 "The territorial mandate" #1796
 france_1793_1799_focus_37_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_38:0 "Treaty of Paris with the House of Savoy" #1796
+france_1793_1799_focus_38:0 "The 1796 Armistice with Sardinia-Piedmont" #1796
 france_1793_1799_focus_38_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_39:0 "Improve our Relations with the Papal States" #1796
+france_1793_1799_focus_39:0 "Treaty of Paris with the House of Savoy" #1796
 france_1793_1799_focus_39_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_40:0 "Proclaim the pacification of the West" #1796
+france_1793_1799_focus_40:0 "Improve our Relations with the Papal States" #1796
 france_1793_1799_focus_40_desc:0 "Marie Antoinette has to be executed too."
 
 france_1793_1799_focus_41:0 "Peace treaty with Ferdinand IV" #1796
@@ -196,30 +196,30 @@ france_1793_1799_focus_46:0 "Form the Cispadane Republic" #1796
 france_1793_1799_focus_46_desc:0 "Marie Antoinette has to be executed too."
 france_1793_1799_focus_47:0 "Growing Conservatism in France" #1796
 france_1793_1799_focus_47_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_48:0 "Exploit the Papal Economy"
+france_1793_1799_focus_48:0 "Exploit the Papal Economy" #1797
 france_1793_1799_focus_48_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_49:0 "The Treaty of Tolentino"
+france_1793_1799_focus_49:0 "The Treaty of Tolentino" #1797
 france_1793_1799_focus_49_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_50:0 "Form the Cisalpine Republic"
+france_1793_1799_focus_50:0 "Form the Cisalpine Republic" #1797
 france_1793_1799_focus_50_desc:0 "Marie Antoinette has to be executed too."
 
-france_1793_1799_focus_51:0 "The 1796 Armistice with Sardinia-Piedmont"
+france_1793_1799_focus_51:0 "Opening of negotiations in Lille" #1797
 france_1793_1799_focus_51_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_52:0 "Opening of negotiations in Lille"
+france_1793_1799_focus_52:0 "Puppet Genoa" #1797
 france_1793_1799_focus_52_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_53:0 "A provisional democratic government of Venice"
+france_1793_1799_focus_53:0 "The provisional democratic government of Venice" #1797
 france_1793_1799_focus_53_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_54:0 "Treaty of Peace between France and Portugal"
+france_1793_1799_focus_54:0 "Treaty of Peace between France and Portugal" #1797
 france_1793_1799_focus_54_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_55:0 "The Coup of 18 Fructidor"
+france_1793_1799_focus_55:0 "The Coup of 18 Fructidor" #1797
 france_1793_1799_focus_55_desc:0 "The Conservatives won the election we cant allow this!"
-france_1793_1799_focus_56:0 "Create a Cisrhenian Republic"
+france_1793_1799_focus_56:0 "Create a Cisrhenian Republic" #1797
 france_1793_1799_focus_56_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_57:0 "The Treaty of Campo Formio"
+france_1793_1799_focus_57:0 "The Treaty of Campo Formio" #1797
 france_1793_1799_focus_57_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_58:0 "The Second Congress in Rastatt"
+france_1793_1799_focus_58:0 "The Second Congress in Rastatt" #1797
 france_1793_1799_focus_58_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_59:0 "Annex the Southern Rhine"
+france_1793_1799_focus_59:0 "Annex the Southern Rhine" #1797
 france_1793_1799_focus_59_desc:0 "Marie Antoinette has to be executed too."
 france_1793_1799_focus_60:0 "Invade Switzerland"
 france_1793_1799_focus_60_desc:0 "Marie Antoinette has to be executed too."
@@ -251,9 +251,9 @@ france_1793_1799_focus_72:0 "Declare war on Austria"
 france_1793_1799_focus_72_desc:0 "Marie Antoinette has to be executed too."
 france_1793_1799_focus_73:0 "Invade Palestine"
 france_1793_1799_focus_73_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_74:0 "Hegemony in Italy"
+france_1793_1799_focus_74:0 "Puppet Lucca"
 france_1793_1799_focus_74_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_75:0 "Revitalize Paris"
+france_1793_1799_focus_75:0 "Hegemony in Italy"
 france_1793_1799_focus_75_desc:0 "Marie Antoinette has to be executed too."
 france_1793_1799_focus_76:0 "Remove Treilhard and Reubell from the Government"
 france_1793_1799_focus_76_desc:0 "Marie Antoinette has to be executed too."
@@ -261,7 +261,7 @@ france_1793_1799_focus_77:0 "Compulsory borrowing on the rich"
 france_1793_1799_focus_77_desc:0 "Marie Antoinette has to be executed too."
 france_1793_1799_focus_78:0 "The Hostage law"
 france_1793_1799_focus_78_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_79:0 "Declare certain departments to be in a state of trouble"
+france_1793_1799_focus_79:0 "Revitalize Paris"
 france_1793_1799_focus_79_desc:0 "Marie Antoinette has to be executed too."
 france_1793_1799_focus_80:0 "Catastrophe in Egypt"
 france_1793_1799_focus_80_desc:0 "Marie Antoinette has to be executed too."
@@ -274,282 +274,282 @@ france_1793_1799_focus_83:0 "Partial end of the French Revolution"
 france_1793_1799_focus_83_desc:0 "Marie Antoinette has to be executed too."
 france_1793_1799_focus_84:0 "Constitutional Referendum"
 france_1793_1799_focus_84_desc:0 "(THE 1789-1800 PART OF THE FOCUS WILL BECOME OBSOLETE WHEN YOU TAKE THIS FOCUS!)"
-france_1793_1799_focus_85:0 "Found the Bank of France"
+france_1793_1799_focus_85:0 "Found the Bank of France " #1800
 france_1793_1799_focus_85_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_86:0 "The Liberator of Corsica"
+france_1793_1799_focus_86:0 "The Liberator of Corsica" #1800
 france_1793_1799_focus_86_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_87:0 "Spend More Money on security"
+france_1793_1799_focus_87:0 "Spend More Money on security" #1800
 france_1793_1799_focus_87_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_88:0 "Re-established censorship in theatres"
+france_1793_1799_focus_88:0 "Invade Bavaria" #1800
 france_1793_1799_focus_88_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_89:0 "Cross the Alps"
+france_1793_1799_focus_89:0 "Cross the Alps" #1800
 france_1793_1799_focus_89_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_90:0 "Bring order to the Cisalpine Republic"
+france_1793_1799_focus_90:0 "Bring order to the Cisalpine Republic" #1800
 france_1793_1799_focus_90_desc:0 "Marie Antoinette has to be executed too."
 
-france_1793_1799_focus_91:0 "Organisational scheme for military hospitals"
+france_1793_1799_focus_91:0 "Organisational scheme for military hospitals" #1800
 france_1793_1799_focus_91_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_92:0 "Invade Bavaria"
+france_1793_1799_focus_92:0 "" #1800
 france_1793_1799_focus_92_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_93:0 "the Convention at Mortefontaine"
+france_1793_1799_focus_93:0 "the Convention at Mortefontaine" #1800
 france_1793_1799_focus_93_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_94:0 "Third Treaty of San Ildefonso"
+france_1793_1799_focus_94:0 "Third Treaty of San Ildefonso" #1800
 france_1793_1799_focus_94_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_95:0 "Resignation of the Minister of War"
+france_1793_1799_focus_95:0 "Resignation of the Minister of War" #1800
 france_1793_1799_focus_95_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_96:0 "Recall The émigrés to France"
+france_1793_1799_focus_96:0 "Recall The émigrés to France" #1800
 france_1793_1799_focus_96_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_97:0 "Deportation without trial of 133 Jacobins"
+france_1793_1799_focus_97:0 "Deportation without trial of 133 Jacobins" #1801
 france_1793_1799_focus_97_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_98:0 "Treaty of Lunéville"
+france_1793_1799_focus_98:0 "Treaty of Lunéville" #1801
 france_1793_1799_focus_98_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_99:0 "Treaty of Florence"
+france_1793_1799_focus_99:0 "Treaty of Florence" #1801
 france_1793_1799_focus_99_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_100:0 "Treaty of Aranjuez"
+france_1793_1799_focus_100:0 "Treaty of Aranjuez" #1801
 france_1793_1799_focus_100_desc:0 "Marie Antoinette has to be executed too."
 
-france_1793_1799_focus_101:0 "Monopoly of the Post Office"
+france_1793_1799_focus_101:0 "Monopoly of the Post Office" #1801
 france_1793_1799_focus_101_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_102:0 "Compose the national council of forty-five bishops"
-france_1793_1799_focus_102_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_103:0 "Concordat between France and Pope Pius VII"
+france_1793_1799_focus_102:0 "Compose the national council of forty-five bishops" #1801
+france_1793_1799_focus_102_desc:0 "Marie Antoinette has to be executed too." 
+france_1793_1799_focus_103:0 "Concordat between France and Pope Pius VII" #1801
 france_1793_1799_focus_103_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_104:0 "The Rural Fishing Code"
+france_1793_1799_focus_104:0 "The Rural Fishing Code" #1801
 france_1793_1799_focus_104_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_105:0 "Peace Treaty of Madrid between France and Portugal"
+france_1793_1799_focus_105:0 "Peace Treaty of Madrid between France and Portugal" #1801
 france_1793_1799_focus_105_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_106:0 "Peace between France and the United Kingdom"
+france_1793_1799_focus_106:0 "Peace between France and the United Kingdom" #1801
 france_1793_1799_focus_106_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_107:0 "Appoint General Davout as Commander-in-Chief of the Grenadiers"
+france_1793_1799_focus_107:0 "Appoint General Davout as Commander-in-Chief of the Grenadiers" #1801
 france_1793_1799_focus_107_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_108:0 "Treaty between France and the Regency of Algiers"
+france_1793_1799_focus_108:0 "Treaty between France and the Regency of Algiers" #1801
 france_1793_1799_focus_108_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_109:0 "Elect Bonaparte as President of the Cisalpine Republic"
+france_1793_1799_focus_109:0 "Elect Bonaparte as President of the Cisalpine Republic" #1802
 france_1793_1799_focus_109_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_110:0 "institute the residency of Paris Hospitals"
+france_1793_1799_focus_110:0 "institute the residency of Paris Hospitals" #1802
 france_1793_1799_focus_110_desc:0 "Marie Antoinette has to be executed too."
 
-france_1793_1799_focus_111:0 "Treaty of Amiens"
+france_1793_1799_focus_111:0 "Treaty of Amiens" #1802
 france_1793_1799_focus_111_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_112:0 " promulgation of the Concordat"
+france_1793_1799_focus_112:0 " promulgation of the Concordat" #1802
 france_1793_1799_focus_112_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_113:0 "End the war with the Ottomans"
+france_1793_1799_focus_113:0 "End the war with the Ottomans" #1802
 france_1793_1799_focus_113_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_114:0 "Reform of the land tax"
+france_1793_1799_focus_114:0 "Reform of the land tax" #1802
 france_1793_1799_focus_114_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_115:0 "Decree prohibiting blacks, mulattoes"
+france_1793_1799_focus_115:0 "Decree prohibiting blacks, mulattoes" #1802
 france_1793_1799_focus_115_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_116:0 "Officially Annex the Cisrhenian Republic"
+france_1793_1799_focus_116:0 "Officially Annex the Cisrhenian Republic" #1802
 france_1793_1799_focus_116_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_117:0 "Annex Piedmont and give Valais some Autonomy"
+france_1793_1799_focus_117:0 "Annex Piedmont and give Valais some Autonomy" #1802
 france_1793_1799_focus_117_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_118:0 "Abolish the Ministry of General Police"
+france_1793_1799_focus_118:0 "Abolish the Ministry of General Police" #1802
 france_1793_1799_focus_118_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_119:0 "Establish model cadastres"
+france_1793_1799_focus_119:0 "Establish model cadastres" #1802
 france_1793_1799_focus_119_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_120:0 "Chambers of Commerce"
+france_1793_1799_focus_120:0 "Chambers of Commerce" #1802
 france_1793_1799_focus_120_desc:0 "Marie Antoinette has to be executed too."
 
-france_1793_1799_focus_121:0 "Creation of the senatories"
+france_1793_1799_focus_121:0 "Creation of the senatories" #1803
 france_1793_1799_focus_121_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_122:0 "Mediation between Bonaparte and Swiss deputies"
+france_1793_1799_focus_122:0 "Mediation between Bonaparte and Swiss deputies" #1803
 france_1793_1799_focus_122_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_123:0 "Decree on divorce"
+france_1793_1799_focus_123:0 "Decree on divorce" #1803
 france_1793_1799_focus_123_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_124:0 "Forbid worker strikes and trade unions"
+france_1793_1799_focus_124:0 "Forbid worker strikes and trade unions" #1803
 france_1793_1799_focus_124_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_125:0 "Sneakily Invade Hanover"
+france_1793_1799_focus_125:0 "Sneakily Invade Hanover" #1803
 france_1793_1799_focus_125_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_126:0 "Prohibiting Imports from British colonies and factories"
+france_1793_1799_focus_126:0 "Prohibiting Imports from British colonies and factories" #1803
 france_1793_1799_focus_126_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_127:0 "Sell Louisiana to the USA"
+france_1793_1799_focus_127:0 "Sell Louisiana to the USA" #1803
 france_1793_1799_focus_127_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_128:0 "Inauguration of the Galerie des Antiques at the Louvre"
+france_1793_1799_focus_128:0 "The Irish Legion" #1803
 france_1793_1799_focus_128_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_129:0 "Reorganizing the infantry corps"
+france_1793_1799_focus_129:0 "Reorganizing the infantry corps" #1803
 france_1793_1799_focus_129_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_130:0 "Vaccination against Smallpox"
+france_1793_1799_focus_130:0 "Vaccination against Smallpox" #1803
 france_1793_1799_focus_130_desc:0 "Marie Antoinette has to be executed too."
 
-france_1793_1799_focus_131:0 "Subsidy agreement between France and Spain"
+france_1793_1799_focus_131:0 "Subsidy agreement between France and Spain" #1803
 france_1793_1799_focus_131_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_132:0 "Creation of the Chambers of Manufactures"
+france_1793_1799_focus_132:0 "Creation of the Chambers of Manufactures" #1803
 france_1793_1799_focus_132_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_133:0 "The Mamluk Division"
+france_1793_1799_focus_133:0 "The Mamluk Division" #1804
 france_1793_1799_focus_133_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_134:0 "Appoint Pierre-François Réal"
+france_1793_1799_focus_134:0 "Appoint Pierre-François Réal" #1804
 france_1793_1799_focus_134_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_135:0 "Conspire against the Electorate of Baden"
+france_1793_1799_focus_135:0 "Conspire against the Electorate of Baden" #1804
 france_1793_1799_focus_135_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_136:0 "Establish the Napoleonic Code"
+france_1793_1799_focus_136:0 "Establish the Napoleonic Code" #1804
 france_1793_1799_focus_136_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_137:0 "Form the French Empire"
+france_1793_1799_focus_137:0 "Form the French Empire" #1804
 france_1793_1799_focus_137_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_138:0 "Subject religious congregations to authorisation"
+france_1793_1799_focus_138:0 "Subject religious congregations to authorisation" #1804
 france_1793_1799_focus_138_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_139:0 "Set the budget of the Court"
+france_1793_1799_focus_139:0 "Set the budget of the Court" #1804
 france_1793_1799_focus_139_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_140:0 "Decree by the General Council of Bridges and Roads"
+france_1793_1799_focus_140:0 "Decree by the General Council of Bridges and Roads" #1804
 france_1793_1799_focus_140_desc:0 "Marie Antoinette has to be executed too."
 
-france_1793_1799_focus_141:0 "Expand the Industry in the Rhine"
+france_1793_1799_focus_141:0 "Expand the Industry in the Rhine" #1804
 france_1793_1799_focus_141_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_142:0 "Sabotage British India"
+france_1793_1799_focus_142:0 "Sabotage British India" #1804
 france_1793_1799_focus_142_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_143:0 "Constitutional referendum"
+france_1793_1799_focus_143:0 "Constitutional referendum" #1804
 france_1793_1799_focus_143_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_144:0 "Coronation of Napoleon I"
+france_1793_1799_focus_144:0 "Coronation of Napoleon I" #1804
 france_1793_1799_focus_144_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_145:0 "Propose peace to the King of England"
+france_1793_1799_focus_145:0 "Propose peace to the King of England" #1805
 france_1793_1799_focus_145_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_146:0 "Raise thirty thousand conscripts"
+france_1793_1799_focus_146:0 "Raise thirty thousand conscripts" #1805
 france_1793_1799_focus_146_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_147:0 "Customs tariff"
+france_1793_1799_focus_147:0 "Customs tariff" #1805
 france_1793_1799_focus_147_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_148:0 "The monitoring of publications and representations"
+france_1793_1799_focus_148:0 "The monitoring of publications and representations" #1805
 france_1793_1799_focus_148_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_149:0 "Create the departmental reserve companies"
+france_1793_1799_focus_149:0 "Create the departmental reserve companies" #1805
 france_1793_1799_focus_149_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_150:0 "Annexation of Genoa"
+france_1793_1799_focus_150:0 "Annexation of Genoa" #1805
 france_1793_1799_focus_150_desc:0 "Marie Antoinette has to be executed too."
 
-france_1793_1799_focus_151:0 "Abandon the Camp of Boulogne"
+france_1793_1799_focus_151:0 "Abandon the Camp of Boulogne" #1805
 france_1793_1799_focus_151_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_152:0 "The Alliance with Bavaria"
+france_1793_1799_focus_152:0 "The Alliance with Bavaria" #1805
 france_1793_1799_focus_152_desc:0 "Bavaria and Austria are natural enemies."
-france_1793_1799_focus_153:0 "The Alliance with Baden"
+france_1793_1799_focus_153:0 "The Alliance with Baden" #1805
 france_1793_1799_focus_153_desc:0 "Baden is having some succession issues we could ally with them."
-france_1793_1799_focus_154:0 "The Alliance with Wurtemberg"
+france_1793_1799_focus_154:0 "The Alliance with Wurtemberg" #1805
 france_1793_1799_focus_154_desc:0 "The Monarch of Wurtemberg is seeking further ties with France this is ideal for us."
-france_1793_1799_focus_155:0 "The Treaty of Pressburg"
+france_1793_1799_focus_155:0 "" #1805
 france_1793_1799_focus_155_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_156:0 "Abandon the republican calendar"
+france_1793_1799_focus_156:0 "Abandon the republican calendar" #1805
 france_1793_1799_focus_156_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_157:0 "Heal the financial crisis"
+france_1793_1799_focus_157:0 "Heal the financial crisis" #1806
 france_1793_1799_focus_157_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_158:0 "Invade the Kingdom of Naples"
+france_1793_1799_focus_158:0 "Invade the Kingdom of Naples" #1806
 france_1793_1799_focus_158_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_159:0 "Seize Power in Berg and establish the Grand Duchy of Berg"
+france_1793_1799_focus_159:0 "Seize Power in Berg and establish the Grand Duchy of Berg" #1806
 france_1793_1799_focus_159_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_160:0 "Antagonize Prussia"
+france_1793_1799_focus_160:0 "Antagonize Prussia" #1806
 france_1793_1799_focus_160_desc:0 "Marie Antoinette has to be executed too."
 
-france_1793_1799_focus_161:0 "Low-Confidence regarding Austria and Russia"
+france_1793_1799_focus_161:0 "Low-Confidence regarding Austria and Russia" #1806
 france_1793_1799_focus_161_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_162:0 "Claim Magdeburg-Anhalt"
+france_1793_1799_focus_162:0 "Claim Magdeburg-Anhalt" #1806
 france_1793_1799_focus_162_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_163:0 "Allgedly Protect Saxon Independence"
+france_1793_1799_focus_163:0 "Allgedly Protect Saxon Independence" #1806
 france_1793_1799_focus_163_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_164:0 "Claim Hanover"
+france_1793_1799_focus_164:0 "Claim Hanover" #1806
 france_1793_1799_focus_164_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_165:0 "Proclaim the Confederation of the Rhine"
+france_1793_1799_focus_165:0 "Proclaim the Confederation of the Rhine" #1806
 france_1793_1799_focus_165_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_166:0 "Claim the Prussian Partion of Poland"
+france_1793_1799_focus_166:0 "Claim the Prussian Partion of Poland" #1806
 france_1793_1799_focus_166_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_167:0 "Ionian Islands for Bialystok"
+france_1793_1799_focus_167:0 "Ionian Islands for Bialystok" #1806
 france_1793_1799_focus_167_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_168:0 "Claim Danzig"
+france_1793_1799_focus_168:0 "Claim Danzig" #1806
 france_1793_1799_focus_168_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_169:0 "Establish the Jewish Grand Sanhedrin"
+france_1793_1799_focus_169:0 "Establish the Jewish Grand Sanhedrin" #1807
 france_1793_1799_focus_169_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_170:0 "Try to Circumvent British Blockades"
+france_1793_1799_focus_170:0 "Try to Circumvent British Blockades" #1807
 france_1793_1799_focus_170_desc:0 "Marie Antoinette has to be executed too."
 
-france_1793_1799_focus_171:0 "Civil status of the Jews"
+france_1793_1799_focus_171:0 "Civil status of the Jews" #1807
 france_1793_1799_focus_171_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_172:0 "Creating the military crew train"
+france_1793_1799_focus_172:0 "Creating the military crew train" #1807
 france_1793_1799_focus_172_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_173:0 "Treaty of Finckenstein"
+france_1793_1799_focus_173:0 "Treaty of Finckenstein" #1807
 france_1793_1799_focus_173_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_174:0 "Claim Prussian Exclaves in the West"
+france_1793_1799_focus_174:0 "Claim Prussian Exclaves in the West" #1807
 france_1793_1799_focus_174_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_175:0 "The Treaties of Tilsit"
+france_1793_1799_focus_175:0 "The Treaties of Tilsit" #1807
 france_1793_1799_focus_175_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_176:0 "Abolition of the Tribunate"
+france_1793_1799_focus_176:0 "Abolition of the Tribunate" #1807
 france_1793_1799_focus_176_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_177:0 "The Danish-French Alliance"
+france_1793_1799_focus_177:0 "The Danish-French Alliance" #1807
 france_1793_1799_focus_177_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_178:0 "Creation of the Court of Auditors"
+france_1793_1799_focus_178:0 "Creation of the Court of Auditors" #1807
 france_1793_1799_focus_178_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_179:0 "Invade Portugal"
+france_1793_1799_focus_179:0 "Invade Portugal" #1807
 france_1793_1799_focus_179_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_180:0 "The Treaty of Fontainebleau (October 1807)"
+france_1793_1799_focus_180:0 "The Treaty of Fontainebleau (October 1807)" #1807
 france_1793_1799_focus_180_desc:0 "Portugal ought to be Partioned"
 
-france_1793_1799_focus_181:0 "Hire Count Bigot de Préameneu"
+france_1793_1799_focus_181:0 "Hire Count Bigot de Préameneu" #1808
 france_1793_1799_focus_181_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_182:0 "Remove the Ragusan Republic"
+france_1793_1799_focus_182:0 "Remove the Ragusan Republic" #1808
 france_1793_1799_focus_182_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_183:0 "Puppet Mecklenburg-Strelitz"
+france_1793_1799_focus_183:0 "Puppet Mecklenburg-Strelitz" #1808
 france_1793_1799_focus_183_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_184:0 "Seize Marche"
+france_1793_1799_focus_184:0 "Seize Marche" #1808
 france_1793_1799_focus_184_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_185:0 "Unsurp the Spanish Throne"
+france_1793_1799_focus_185:0 "Unsurp the Spanish Throne" #1808
 france_1793_1799_focus_185_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_186:0 "Invade Etruria and Parma"
+france_1793_1799_focus_186:0 "Annex Etruria and Parma" #1808
 france_1793_1799_focus_186_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_187:0 "Make Murat King of Naples"
+france_1793_1799_focus_187:0 "Make Murat King of Naples" #1808
 france_1793_1799_focus_187_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_188:0 "Decree concerning Jews without Surnames"
+france_1793_1799_focus_188:0 "Decree concerning Jews without Surnames" #1808
 france_1793_1799_focus_188_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_189:0 "Invade Bentheim"
+france_1793_1799_focus_189:0 "Invade Bentheim" #1808
 france_1793_1799_focus_189_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_190:0 "Coerce Oldenburg and the Hanseatic Cities"
+france_1793_1799_focus_190:0 "Coerce Oldenburg and the Hanseatic Cities" #1808
 france_1793_1799_focus_190_desc:0 "Marie Antoinette has to be executed too."
 
-france_1793_1799_focus_191:0 "Claim Salzburg"
+france_1793_1799_focus_191:0 "Claim Salzburg" #1808
 france_1793_1799_focus_191_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_192:0 "Claim the Illyrian Coast"
+france_1793_1799_focus_192:0 "Claim the Illyrian Coast" #1808
 france_1793_1799_focus_192_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_193:0 "Claim West Galicia for Poland"
+france_1793_1799_focus_193:0 "Claim West Galicia for Poland" #1809
 france_1793_1799_focus_193_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_194:0 "Disgrace of Talleyrand"
+france_1793_1799_focus_194:0 "Disgrace of Talleyrand" #1809
 france_1793_1799_focus_194_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_195:0 "Create the Dieppe Chamber of Commerce"
+france_1793_1799_focus_195:0 "Create the Dieppe Chamber of Commerce" #1809
 france_1793_1799_focus_195_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_196:0 ""
+france_1793_1799_focus_196:0 "" #1809
 france_1793_1799_focus_196_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_197:0 ""
+france_1793_1799_focus_197:0 "" #1809
 france_1793_1799_focus_197_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_198:0 "Annex the Papal States"
+france_1793_1799_focus_198:0 "Annex the Papal States" #1809
 france_1793_1799_focus_198_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_199:0 "Reorganize Latium and Umbria"
+france_1793_1799_focus_199:0 "Reorganize Latium and Umbria" #1809
 france_1793_1799_focus_199_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_200:0 "Arrest the Pope"
+france_1793_1799_focus_200:0 "Arrest the Pope" #1809
 france_1793_1799_focus_200_desc:0 "Marie Antoinette has to be executed too."
 
-france_1793_1799_focus_201:0 "Canonical investiture to the new French bishops"
+france_1793_1799_focus_201:0 "Canonical investiture to the new French bishops" #1809
 france_1793_1799_focus_201_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_202:0 ""
+france_1793_1799_focus_202:0 "" #1809
 france_1793_1799_focus_202_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_203:0 "Peace of Schönbrunn (End the 5th Coalition)"
+france_1793_1799_focus_203:0 "Peace of Schönbrunn (End the 5th Coalition)" #1809
 france_1793_1799_focus_203_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_204:0 ""
+france_1793_1799_focus_204:0 "" #1809
 france_1793_1799_focus_204_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_205:0 "The divorce of Napoleon and Joséphine de Beauharnais"
+france_1793_1799_focus_205:0 "" #1810
 france_1793_1799_focus_205_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_206:0 "New food preservation process"
+france_1793_1799_focus_206:0 "New food preservation process" #1810
 france_1793_1799_focus_206_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_207:0 "Reinstate Censorship"
+france_1793_1799_focus_207:0 "Reinstate Censorship" #1810
 france_1793_1799_focus_207_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_208:0 "Annex Trentino into Italy"
+france_1793_1799_focus_208:0 "Annex Trentino into Italy" #1810
 france_1793_1799_focus_208_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_209:0 "Reorganize the Ministry of Police"
+france_1793_1799_focus_209:0 "Reorganize the Ministry of Police" #1810
 france_1793_1799_focus_209_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_210:0 "The Minister of the Interior"
+france_1793_1799_focus_210:0 "The Minister of the Interior" #1810
 france_1793_1799_focus_210_desc:0 "Marie Antoinette has to be executed too."
 
-france_1793_1799_focus_211:0 "License's to export cereals, wine and spirits"
+france_1793_1799_focus_211:0 "License's to export cereals, wine and spirits" #1810
 france_1793_1799_focus_211_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_212:0 "Annex the Netherlands"
+france_1793_1799_focus_212:0 "Annex the Netherlands" #1810
 france_1793_1799_focus_212_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_213:0 "Regulate Newspapers"
+france_1793_1799_focus_213:0 "Regulate Newspapers" #1810
 france_1793_1799_focus_213_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_214:0 ""
+france_1793_1799_focus_214:0 "" #1810
 france_1793_1799_focus_214_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_215:0 ""
+france_1793_1799_focus_215:0 "" #1810
 france_1793_1799_focus_215_desc:0 "Marie Antoinette has to be executed too."
-france_1793_1799_focus_216:0 "The Decree of Fontainebleau against Smugglers"
+france_1793_1799_focus_216:0 "The Decree of Fontainebleau against Smugglers" #1810
 france_1793_1799_focus_216_desc:0 "Marie Antoinette has to be executed too."
 france_1793_1799_focus_217:0 "Reunite Valais with the Empire"
 france_1793_1799_focus_217_desc:0 "Marie Antoinette has to be executed too."

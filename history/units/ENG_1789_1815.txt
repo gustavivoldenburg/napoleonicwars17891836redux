@@ -101,7 +101,7 @@ units = {
 	#British Army
 	division = {
 		name = "British Division"
-		location = 9297
+		location = 4135
 		division_template = "British Division"
 		start_experience_factor = 0.3
 	}
@@ -110,7 +110,7 @@ units = {
 	#British Army
 	division = {
 		name = "British Division"
-		location = 9297
+		location = 4135
 		division_template = "British Division"
 		start_experience_factor = 0.3
 	}
@@ -119,7 +119,7 @@ units = {
 	#British Army
 	division = {
 		name = "British Division"
-		location = 9297
+		location = 4135
 		division_template = "British Division"
 		start_experience_factor = 0.3
 	}

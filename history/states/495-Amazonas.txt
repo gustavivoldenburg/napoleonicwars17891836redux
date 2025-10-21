@@ -13,7 +13,6 @@ state={
                 }
 						1789.1.1 = {
         add_core_of = BRA
-        owner = BRA
         }
 		1779.1.1 = {
 		buildings = {

@@ -1,5 +1,20 @@
 ﻿capital = 827 #Nalchik
-
+add_ideas = {
+	KBK_army
+}
+KBK={set_cosmetic_tag=CIR}
+1789.1.1 = {
+		if = {
+		limit = { has_start_date < 1820.1.1 }
+set_oob = "KBK_1789"
+				add_manpower = 100000
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 100000
+					producer = KBK
+				}
+}
+}
 #oob = "KBK_1936"
 
 set_research_slots = 0
@@ -91,8 +106,8 @@ if = {
 }
 }
 set_politics = {
-	ruling_party = democratic
-	last_election = "1936.1.1"
+	ruling_party = neutrality
+	last_election = "1789.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
@@ -100,8 +115,6 @@ set_politics = {
 set_popularities = {
 	democratic = 70
 	fascism = 30
-	communism = 0
-	neutrality = 0
 }
 
 

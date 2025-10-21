@@ -14,8 +14,8 @@ state={
 
 		}
 		1500.1.1 = {
-			owner = OTO
-			controller = OTO
+			owner = TUR
+			controller = TUR
                 add_core_of = BOS
                 remove_core_of = SER
 
@@ -26,8 +26,8 @@ state={
 
 		}
 		1910.1.1 = {
-			owner = OTO
-			controller = OTO
+			owner = TUR
+			controller = TUR
 
 		}
 		1914.1.1 = {

@@ -35,70 +35,6 @@ retire_character=POR_nicholasgeneral
 1859.1.1 = {
 retire_character=POR_paulageneral
 }
-1900.1.1 = {
-}
-
-
-1776.1.1 = {
-			if = {
-		limit = { has_start_date < 1780.01.02 }
-	set_autonomy = {
-        target = BRA
-        autonomous_state = autonomy_protectorate
-        freedom_level = 0.4
-	}
-}
-}
-1788.1.1 = {
-			if = {
-		limit = { has_start_date < 1790.01.02 }
-	set_autonomy = {
-        target = BRA
-        autonomous_state = autonomy_protectorate
-        freedom_level = 0.4
-	}
-}
-}
-1799.1.1 = {
-			if = {
-		limit = { has_start_date < 1801.01.02 }
-	set_autonomy = {
-        target = BRA
-        autonomous_state = autonomy_protectorate
-        freedom_level = 0.4
-	}
-}
-}
-1812.1.1 = {
-			if = {
-		limit = { has_start_date < 1813.01.02 }
-	set_autonomy = {
-        target = BRA
-        autonomous_state = autonomy_protectorate
-        freedom_level = 0.4
-	}
-}
-}
-1814.1.1 = {
-			if = {
-		limit = { has_start_date < 1815.01.02 }
-	set_autonomy = {
-        target = BRA
-        autonomous_state = autonomy_protectorate
-        freedom_level = 0.4
-	}
-}
-}
-1821.1.1 = {
-			if = {
-		limit = { has_start_date < 1822.01.02 }
-	set_autonomy = {
-        target = BRA
-        autonomous_state = autonomy_protectorate
-        freedom_level = 0.4
-	}
-}
-}
 1735.1.1 = {
 recruit_character=POR_mariai
 promote_character=POR_mariai
@@ -131,20 +67,14 @@ promote_character=POR_antonio_de_oliveira_salazar
 1969.1.1 = {
 retire_character=POR_antonio_de_oliveira_salazar
 }
-1444.11.11 = {
+1789.1.1 = {
 set_cosmetic_tag = POR_kingdom # Portugal Kingdom
 }
 1816.1.1 = {
 set_cosmetic_tag = POR_BRA_ALG # Portugal Kingdom
 }
 1836.1.1 = {
-set_cosmetic_tag = POR_kingdom # Portugal Kingdom
-}
-1914.1.1 = {
-set_cosmetic_tag = POR # Salazar
-}
-1970.1.1 = {
-set_cosmetic_tag = POR_kingdom # Portugal Kingdom
+set_cosmetic_tag = POR_liberal # Portugal Kingdom
 }
 1444.11.11 = {
 set_party_name = { ideology = neutrality long_name = POR_BRA_neutrality_party_long name = POR_BRA_neutrality_party }

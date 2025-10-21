@@ -6,7 +6,7 @@ state={
 	history={
 		owner = ZZZ
 		1789.1.1 = {
-                owner = QIN
+                owner = CHI
 		add_core_of = TIB
 		}
 		1901.1.1 = {

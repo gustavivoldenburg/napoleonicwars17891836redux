@@ -7,7 +7,7 @@ state={
 	}
 
 	history={
-		owner = OTO
+		owner = TUR
 		1880.1.1 = {
 			owner = BUL
 			controller = BUL

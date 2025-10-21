@@ -10,23 +10,9 @@ state={
 		remove_core_of = VNT
 		}
 		1801.1.1 = {
-		owner=FRA
-		add_core_of = GRE
-		remove_core_of = VNT
-		}
-		1812.1.1 = {
-		owner=ENG
-		add_core_of = GRE
-		remove_core_of = VNT
-		}
-		1816.1.1 = {
+		owner=SEP
 		add_core_of = SEP
-		owner = SEP
-        }
-		1864.1.1 = {
-		owner=GRE
-		add_core_of = GRE
-		remove_core_of = SEP
+		remove_core_of = VNT
 		}
 		victory_points = {
 			10203 1 

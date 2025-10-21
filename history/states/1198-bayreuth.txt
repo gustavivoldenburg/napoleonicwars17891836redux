@@ -23,7 +23,10 @@ state={
 				remove_core_of = ANS
 				remove_core_of = BYR
                 }
-		1808.1.1 = {
+			1807.1.1 = {
+                owner = FRA
+                }
+		1810.1.1 = {
                 add_core_of = BAY
                 owner = BAY
                 remove_core_of = PRE

@@ -5,57 +5,18 @@ state={
 	resources={
 		steel=16.000
 	}
-
 	history={
-		owner = MUS
-		add_core_of = MUS
-		1550.1.1 = {
-			owner = RUS
-			controller = RUS
-			add_core_of = RUS
-			remove_core_of = MUS
-			remove_core_of = NOV
-			remove_core_of = PSK
-			remove_core_of = RYA
-		}
+		owner = RUS
+		add_core_of = RUS
 		victory_points = {
 			6380 50 
-		}
-						1919.1.1 = {
-		owner = SOV
-		add_core_of=SOV
 		}
 		buildings = {
 			infrastructure = 4
 			arms_factory = 5
 			industrial_complex = 1
 		}
-		1936.1.1 = {
-		buildings = {
-			infrastructure = 4
-			arms_factory = 7
-			industrial_complex = 5
-			air_base = 10
-
-		}
-                }
-		1920.1.1 = {
-			owner = SOV
-			controller = SOV
-			add_core_of = SOV
-			remove_core_of = RUS
-
-		}
-		1993.1.1 = {
-			owner = RUS
-			controller = RUS
-			add_core_of = RUS
-			remove_core_of = SOV
-
-		}
-
 	}
-
 	provinces={
 		6380 
 	}

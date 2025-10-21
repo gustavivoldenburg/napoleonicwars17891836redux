@@ -106,28 +106,3 @@ fire_only_once = yes
 	}
 	}
 }
-country_event = {
-	id = bel_1789_event.4
-	title = "The Failure of the Brabantian Revolution"
-	desc = bel_1789_event.4.d
-	picture = GFX_idi_amin_india
-	#is_triggered_only = yes
-trigger = {	
-date > 1790.3.12 has_start_date < 1800.1.1 
-original_tag = LUX		
-has_war_with=BEL
-}
-fire_only_once = yes
-	option = { # 
-		name = "Seems we won"
-		ai_chance = { factor = 100 }
-				AUS={
-				set_autonomy = {
-				target = BEL
-                autonomous_state = autonomy_dominion
-                freedom_level = 0.35
-	            }
-	LUX={annex_country = { target = BEL transfer_troops = no }} 
-	LUX={set_cosmetic_tag=BEL_AUS}
-	}
-}

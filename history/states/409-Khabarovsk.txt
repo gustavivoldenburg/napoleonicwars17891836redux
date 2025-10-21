@@ -14,13 +14,13 @@ state={
 		}
                 }
 		1700.1.1 = {
-		add_core_of = QIN
-                owner = QIN
+		add_core_of = CHI
+                owner = CHI
                 }
 	    1860.1.1 = {
 		add_core_of = RUS
                 owner = RUS
-		remove_core_of=QIN
+		remove_core_of=CHI
         }
 		1936.1.1 = {
 		add_core_of = FER

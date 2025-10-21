@@ -10,13 +10,11 @@ state={
 		1600.1.1 = {
                 owner = POR
                 }
-													1776.1.1 = {
+						1789.1.1 = {
         add_core_of = BRA
-        owner = BRA
         }
 						1789.1.1 = {
         add_core_of = BRA
-        owner = BRA
         }
 		1599.1.1 = {
 		victory_points = {

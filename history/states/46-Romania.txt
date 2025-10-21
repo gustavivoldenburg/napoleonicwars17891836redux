@@ -8,12 +8,7 @@ state={
 
 	history={
 		owner = WAL
-		1878.1.1 = {
-			owner = ROM
-			controller = ROM
-                add_core_of = ROM
-                remove_core_of = WAL
-		}
+
 		1459.1.1 = {
 		victory_points = {
 			9617 20 

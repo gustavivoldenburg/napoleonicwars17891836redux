@@ -289,7 +289,7 @@ adjacency_rule =
 
 #Kiel Canal
 adjacency_rule = {
-	name = "KIEL_CANAL"
+	name = "UKRL_CANAL"
 
 	contested =
 	{

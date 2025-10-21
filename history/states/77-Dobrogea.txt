@@ -13,7 +13,7 @@ state={
 		victory_points = {
 			9614 1 
 		}
-		owner = OTO
+		owner = TUR
 		1880.1.1 = {
 			owner = BUL
 			controller = BUL

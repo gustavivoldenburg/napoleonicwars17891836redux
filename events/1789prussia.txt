@@ -1599,7 +1599,7 @@ fire_only_once = yes
 		name = "Great"
 		ai_chance = { factor = 100 } 
 		PRE={set_country_flag=PRE_ottoman_prussian_alliance_flag}
-			OTO = {
+			TUR = {
 				add_opinion_modifier = {
 					target = PRE
 					modifier = ottoman_prussian_alliance
@@ -1607,16 +1607,16 @@ fire_only_once = yes
 			}
 			PRE = {
 				add_opinion_modifier = {
-					target = OTO
+					target = TUR
 					modifier = ottoman_prussian_alliance
 				}
 			}
 PRE={add_political_power=25}
-OTO={add_political_power=25}
+TUR={add_political_power=25}
 PRE={
-give_guarantee = OTO
+give_guarantee = TUR
 }
-OTO={
+TUR={
 give_guarantee = PRE
 }
 }
@@ -1960,13 +1960,13 @@ fire_only_once = yes
 	option = { # 
 		name = "This is very much mutually beneficial!"
 		ai_chance = { factor = 100 } 
-	OTO={add_political_power=25}
+	TUR={add_political_power=25}
 	PRE={country_event = pre_1789_event.61}
 	}
 		option = { # 
 		name = "We dont see any benefit in this"
 		ai_chance = { factor = 0 }
-		OTO={add_political_power=-25} 
+		TUR={add_political_power=-25} 
 	}
 }
 country_event = {
@@ -2861,9 +2861,9 @@ fire_only_once = yes
 		name = "We need to build up our country first..."
 		ai_chance = { factor = 100 } 
 PRE={
-diplomatic_relation = { country = OTO relation = guarantee active = no }
+diplomatic_relation = { country = TUR relation = guarantee active = no }
 }
-OTO={
+TUR={
 diplomatic_relation = { country = PRE relation = guarantee active = no }
 }
 }

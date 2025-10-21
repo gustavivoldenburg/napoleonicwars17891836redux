@@ -10,17 +10,33 @@ set_technology = {
 1789.1.1 = {
 recruit_character=NEU_frederickwilliamii
 recruit_character=NEU_frederickwilliamiii
+recruit_character=NEU_berthier
 promote_character=NEU_frederickwilliamii
 }
 1800.1.1 = {
 promote_character=NEU_frederickwilliamiii
 retire_character=NEU_frederickwilliamii
 }
+1805.1.1 = {
+promote_character=NEU_berthier
+}
+1815.1.1 = {
+promote_character=NEU_frederickwilliamiii
+retire_character=NEU_berthier
+}
 1841.1.1 = {
 retire_character=NEU_frederickwilliamiii
 }
 set_convoys = 20
-
+1789.1.1 = {
+set_party_name = { ideology = neutrality long_name = NEU_HOH_neutrality_party_long name = NEU_HOH_neutrality_party }
+}
+1805.1.1 = {
+set_party_name = { ideology = neutrality long_name = NEU_BER_neutrality_party_long name = NEU_BER_neutrality_party }
+}
+1815.1.1 = {
+set_party_name = { ideology = neutrality long_name = NEU_HOH_neutrality_party_long name = NEU_HOH_neutrality_party }
+}
 
 1939.1.1 = {
 	

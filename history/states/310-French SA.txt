@@ -28,7 +28,7 @@ state={
 		}
                 }
 		1809.1.1 = {
-                owner = BRA
+                owner = POR
                 }
 		1818.1.1 = {
                 owner = FRA

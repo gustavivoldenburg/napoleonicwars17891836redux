@@ -19,8 +19,8 @@ state={
 		}
 		add_core_of = TRE
 				1500.1.1 = {
-		owner = OTO
-		add_core_of = OTO
+		owner = TUR
+		add_core_of = TUR
 		}
 						1800.1.1 = {
 		add_core_of = GRE
@@ -36,7 +36,7 @@ state={
 			add_core_of = TUR
 			remove_core_of = ARM
 			remove_core_of = GEO
-                        remove_core_of = OTO
+                        remove_core_of = TUR
 
 		}
 		1936.1.1 = {

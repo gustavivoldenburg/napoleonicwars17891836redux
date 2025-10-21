@@ -4,8 +4,8 @@ state={
 	name="STATE_981"
 
 	history={
-		owner = SAV
-		add_core_of = SAV
+		owner = SPM
+		add_core_of = SPM
 		1720.1.1 = {
 			owner = SPM
 			add_core_of = SPM

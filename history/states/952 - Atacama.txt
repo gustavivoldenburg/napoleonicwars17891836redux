@@ -10,7 +10,7 @@ state={
 		owner = SER
 		add_core_of = SER
 		1500.1.1 = {
-			owner = OTO
+			owner = TUR
 
 		}
 		1900.1.1 = {
@@ -25,7 +25,7 @@ state={
                 owner = ALB
                 }
 				1823.1.1 = {
-                owner = OTO
+                owner = TUR
                 }
 		1914.1.1 = {
 			owner = SER
@@ -43,7 +43,7 @@ state={
 				1823.1.1 = {
 				add_core_of=SER
 				remove_core_of=ALB
-                owner = OTO
+                owner = TUR
                 }
 		1919.1.1 = {
 			owner = YUG

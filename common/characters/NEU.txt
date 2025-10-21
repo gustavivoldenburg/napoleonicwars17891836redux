@@ -1,4 +1,17 @@
 characters={
+	NEU_berthier={
+		name=NEU_CHARACTER_BERTHIER
+		portraits={
+			civilian={
+				large="GFX_portrait_neu_berthier_large"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			desc = NEU_BERTHIER_DESC
+			expire="1797.1.1"
+		}
+}
 	NEU_frederickthegreat={
 		name=NEU_CHARACTER_FREDERICKTHEGREAT
 		portraits={

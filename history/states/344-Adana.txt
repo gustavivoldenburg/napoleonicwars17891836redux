@@ -14,9 +14,9 @@ state={
 		}
 		add_core_of = RAM
 						1608.1.1 = {
-			owner = OTO
-			controller = OTO
-			add_core_of = OTO
+			owner = TUR
+			controller = TUR
+			add_core_of = TUR
 			remove_core_of = ALY
 			remove_core_of = KRM
 			remove_core_of = RAM
@@ -30,7 +30,7 @@ state={
 			owner = TUR
 			controller = TUR
 			add_core_of = TUR
-			remove_core_of = OTO
+			remove_core_of = TUR
 
 		}
 

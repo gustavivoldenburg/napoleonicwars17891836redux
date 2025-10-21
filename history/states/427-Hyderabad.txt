@@ -7,13 +7,7 @@ state={
 	}
 
 	history={
-		owner = MUG
-		add_core_of = MUG
-		1725.1.1 = {
-        remove_core_of = MUG
-		add_core_of = HYD
-		owner = HYD
-		}
+		owner = ZZZ
 		1800.1.1 = {
 	    add_core_of = RAJ
 		owner = RAJ

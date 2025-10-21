@@ -238,6 +238,19 @@ characters={
 			expire="1797.1.1"
 		}
 }
+		SER_hadji={
+		name=SER_CHARACTER_HADJI
+		portraits={
+			civilian={
+				large="GFX_portrait_ser_hadji_large"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			desc = SER_HADJI_DESC
+			expire="1797.1.1"
+		}
+}
 	SER_milosobrenovici={
 		name=SER_CHARACTER_MILOSOBRENOVICI
 		portraits={

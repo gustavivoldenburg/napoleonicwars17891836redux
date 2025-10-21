@@ -15,10 +15,7 @@ state={
 			add_core_of = GLL
 
 		}
-																1945.1.1 = {
-		owner = RPO
-		}
-		1946.1.1 = {
+																1946.1.1 = {
 		owner = POL
 		}
 		1804.1.1 = {

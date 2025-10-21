@@ -20,14 +20,14 @@ state={
 						1789.1.1 = {
 			owner = DON
 		add_core_of = DON
-		remove_core_of = ZAP
+		remove_core_of = UKR
 		remove_core_of = POL
 		remove_core_of = RUS
 		}
 		1800.1.1 = {
 			owner = RUS
 		add_core_of = RUS
-		remove_core_of = ZAP
+		remove_core_of = UKR
 		remove_core_of = DON
 		remove_core_of = POL
 		}
@@ -35,13 +35,7 @@ state={
 		owner = SOV
 		add_core_of=SOV
 		}
-		1920.1.1 = {
-			owner = SOV
-			controller = SOV
-			add_core_of = SOV
-			remove_core_of = RUS
 
-		}
 		1993.1.1 = {
 			owner = RUS
 			controller = RUS

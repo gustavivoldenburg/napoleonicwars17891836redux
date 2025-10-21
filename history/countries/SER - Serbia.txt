@@ -44,13 +44,31 @@ retire_character=SER_nikolajevic
 set_party_name = { ideology = neutrality long_name = SER_OBR_neutrality_party_long name = SER_OBR_neutrality_party }
 }
 }
+1805.1.1 = {
+			if = {
+		limit = { has_start_date < 1813.1.1 }
+set_party_name = { ideology = neutrality long_name = SER_KAR_neutrality_party_long name = SER_KAR_neutrality_party }
+}
+}
 1859.1.1 = {
 			if = {
 		limit = { has_start_date < 1903.1.1 }
 set_party_name = { ideology = neutrality long_name = SER_OBR_neutrality_party_long name = SER_OBR_neutrality_party }
 }
 }
+1841.1.1 = {
+			if = {
+		limit = { has_start_date < 1858.1.1 }
+set_party_name = { ideology = neutrality long_name = SER_KAR_neutrality_party_long name = SER_KAR_neutrality_party }
+}
+}
 1791.1.1 = {
+			if = {
+		limit = { has_start_date < 1805.1.1 }
+set_party_name = { ideology = neutrality long_name = SER_OSM_neutrality_party_long name = SER_OSM_neutrality_party }
+}
+}
+1814.1.1 = {
 			if = {
 		limit = { has_start_date < 1815.1.1 }
 set_party_name = { ideology = neutrality long_name = SER_OSM_neutrality_party_long name = SER_OSM_neutrality_party }
@@ -79,9 +97,18 @@ retire_character=SER_francisiiser
 retire_character=SER_ferdinandiser
 }
 1789.1.1 = {
-recruit_character=SER_skopljak
+recruit_character=SER_hadji
 }
 1800.1.1 = {
+promote_character=SER_hadji
+}
+1802.1.1 = {
+retire_character=SER_hadji
+}
+1789.1.1 = {
+recruit_character=SER_skopljak
+}
+1803.1.1 = {
 promote_character=SER_skopljak
 }
 1837.1.1 = {
@@ -95,6 +122,9 @@ recruit_character=SER_milosobrenovici
 1804.1.1 = {
 promote_character=SER_karadorde
 }
+1814.1.1 = {
+promote_character=SER_skopljak
+}
 1815.1.1 = {
 promote_character=SER_milosobrenovici
 retire_character=SER_karadorde
@@ -106,13 +136,13 @@ retire_character=SER_milosobrenovici
 set_cosmetic_tag = SER_uprising # 1789-1791 austrian ottoman war
 }
 1800.1.1 = {
-set_cosmetic_tag = SER_OTO # Serbian Sanjak Smederevo
+set_cosmetic_tag = SER_TUR # Serbian Sanjak Smederevo
 }
 1804.1.1 = {
 set_cosmetic_tag = SER_revolution # Serbian Revolution
 }
 1814.1.1 = {
-set_cosmetic_tag = SER_OTO # Serbian principality
+set_cosmetic_tag = SER_TUR # Serbian principality
 }
 1815.1.1 = {
 set_cosmetic_tag = SER_principality # Serbian principality

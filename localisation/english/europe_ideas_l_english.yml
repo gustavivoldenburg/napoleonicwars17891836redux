@@ -53,6 +53,8 @@ delusional_expansionism:0 "Delusional Expansionism"
 
 hun_bop:0 "Balance of Power" 
 
+
+france_spain_cooperation_basel:0 "Franco-Spanish Cooperation" 
 has_invaded_prm_mod_mas:0 "Has Invaded Parma Modena Massa and the Papal States"
 armistice_with_sardinia_piedmont_so_you_can_invade_italy:0 "Has had Peace with Sardinia-Piedmont"
 pre_has_puppeted_hanover:0 "Prussia has held Hanover for Ransom"
@@ -275,17 +277,20 @@ france_ministerofpubliceducation:0"Minister of Public Education"
 
 	POL_austrian_protection_against_russia:0 "Austrian Protection Against Russia"
 
-CIR_army:0 "The Circassian Army"
+KBK_army:0 "The Circassian Army"
 
 POL_greater_poland_uprising:0 "Greater Poland uprising"
 
-CIR_offensive:0 "Anapa Campaign"
+KBK_offensive:0 "Anapa Campaign"
 
-CIR_offensive_kuban:0 "The Karachey-Cherkessia Campaign"
+KBK_offensive_kuban:0 "The Karachey-Cherkessia Campaign"
 
-OTO_offensive:0 "Odessa Campaign"
+TUR_offensive:0 "Odessa Campaign"
+russian_armenian_banker:0 "Russian-Armenian Banker"
+PRE_has_reformed_the_army:0 "Prussia has expanded the Army"
+OTO_has_reformed_the_army:0 "The Ottoman Empire has expanded the Army"
 
-CIR_RUS_peace_flag:0 "Has signed a peace deal with Circassia"
+KBK_RUS_peace_flag:0 "Has signed a peace deal with Circassia"
 
 GRE_greek_war_of_independence:0 "The Greek War of Independence"
 
@@ -309,7 +314,7 @@ ENG_focus_outside_of_europe:0 "Focus outside of Europe"
 
 RUS_has_won_the_greek_plan_flag:0 "The Greek Plan was successful"
 
-QIN_JAP_RUS_the_russian_threat:0 "The Russian Threat"
+CHI_JAP_RUS_the_russian_threat:0 "The Russian Threat"
 
 RUS_russia_greek_plan_ambition:0 "Greek Plan Ambition"
 
@@ -356,7 +361,7 @@ POM_pomerania_war_of_independence:0 "The Pomeranian Rival Government"
 pre_stuck_between_east_and_west:0 "Stuck between East and West"
 
 BEL_brabantian_revolution_has_happened:0 "The Brabantian Revolution has happened"
-OTO_defensive_strategy_izmail_russo_turkish_war:0 "Ottoman Defensive Strategy"
+TUR_defensive_strategy_izmail_russo_turkish_war:0 "Ottoman Defensive Strategy"
 
 polish_prussian_alliance:0 "Polish-Prussian Alliance"
 

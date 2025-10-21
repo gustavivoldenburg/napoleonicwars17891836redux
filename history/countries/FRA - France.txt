@@ -1,4 +1,14 @@
 ﻿capital = 988
+1808.1.1 = {
+			if = {
+		limit = { has_start_date < 1815.1.1 }
+	set_autonomy = {
+        target = SEP
+        autonomous_state = autonomy_integrated_puppet
+        freedom_level = 0.4
+	}
+}
+}
 1750.1.1 = {
 recruit_character=FRA_barthelemy
 }
@@ -139,7 +149,6 @@ BRG={set_party_name = { ideology = neutrality long_name = BRG_BON_neutrality_par
 HOL={set_party_name = { ideology = neutrality long_name = HOL_BON_neutrality_party_long name = HOL_BON_neutrality_party}}
 NAP={set_party_name = { ideology = neutrality long_name = NAP_MUR_neutrality_party_long name = NAP_MUR_neutrality_party}}
 ITA={set_party_name = { ideology = neutrality long_name = ITA_BON_neutrality_party_long name = ITA_BON_neutrality_party}}
-LUC={set_cosmetic_tag = LUC_PIO}
 PRE={set_country_flag = napoleonprussiatwo_flag}
 ITA={set_cosmetic_tag = ITA_FRA_four}
 NAP={set_cosmetic_tag = NAP_FRA_kingdom}
@@ -370,30 +379,6 @@ set_oob = "GENERIC_DIVISION_1444_1789"
 }
 }
 }
-1837.1.1 = {
-		if = {
-limit = { has_start_date < 1936.1.1 }
-SOV={set_oob = "SOV_1919"}
-every_possible_country = {
-if={
-limit={
-NOT={original_tag=ZZZ}
-NOT={original_tag=RUS}
-NOT={original_tag=UKR}
-NOT={original_tag=SOV}
-NOT={original_tag=POL}
-NOT={original_tag=LIT}
-NOT={original_tag=LAT}
-NOT={original_tag=WUK}
-NOT={original_tag=EST}
-NOT={original_tag=BLR}
-NOT={original_tag=MAK}
-}
-}
-set_oob = "GENERIC_DIVISION_1444_1789"
-}
-}
-}
 1914.1.1 = {
 		if = {
 limit = { has_start_date < 1915.1.1 }
@@ -520,6 +505,12 @@ add_ideas = {hre_autonomy_idea_napoleonic_wars}
 		metricsystem
 	}
 }
+}
+1789.1.1 = {
+recruit_character=FRA_macdonald
+}
+1840.1.1 = {
+retire_character=FRA_macdonald
 }
 1770.1.1 = {
 recruit_character=FRA_louisxvi
@@ -899,7 +890,7 @@ set_politics = {
 		type = puppet_wargoal_focus
 	}
 	}
-	OTO={
+	TUR={
 		declare_war_on = {
 		target = FRA
 		type = puppet_wargoal_focus
@@ -1296,7 +1287,6 @@ BAD={
 }
 NAP={set_party_name = { ideology = neutrality long_name = NAP_MUR_neutrality_party_long name = NAP_MUR_neutrality_party}}
 ITA={set_party_name = { ideology = neutrality long_name = ITA_BON_neutrality_party_long name = ITA_BON_neutrality_party}}
-LUC={set_cosmetic_tag = LUC_PIO}
 ITA={set_cosmetic_tag = ITA_FRA_four}
 NAP={set_cosmetic_tag = NAP_FRA_kingdom}
 FRA={
@@ -1399,7 +1389,7 @@ RUS={
 		type = puppet_wargoal_focus
 	}
 }
-OTO={
+TUR={
 		declare_war_on = {
 		target = RUS
 		type = puppet_wargoal_focus

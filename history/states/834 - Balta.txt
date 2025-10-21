@@ -4,26 +4,26 @@ state={
 	name="STATE_834"
 
 	history={
-		owner = WDF
-		add_core_of = WDF
+		owner = UKR
+		add_core_of = UKR
 		1600.1.1 = {
-			owner = OTO
-			remove_core_of = WDF
+			owner = TUR
+			
 			remove_core_of = POD
 			remove_core_of = SMG
 			remove_core_of = SMO
-			remove_core_of = KIE
-			remove_core_of = CHE
-			add_core_of = ZAP
+			remove_core_of = UKR
+			
+			add_core_of = UKR
 
 		}
 		1793.1.1 = {
 			add_core_of = RUS
-			remove_core_of = ZAP
+			remove_core_of = UKR
 
 		}
 		1789.1.1 = {
-			owner = OTO
+			owner = TUR
 			remove_core_of = POL
 			remove_core_of = CRI
 			remove_core_of = LIT
@@ -50,37 +50,10 @@ state={
 			infrastructure = 1
 
 		}
-				1919.1.1 = {
-			owner = UKR
-			controller = UKR
-			add_core_of = UKR
-			remove_core_of = RUS
-			remove_core_of = GLL
 
-		}
-		1920.1.1 = {
-			owner = SOV
-			controller = SOV
-			add_core_of = SOV
-			remove_core_of = RUS
 
-		}
-		1945.1.1 = {
-			owner = SOV
-			controller = SOV
-			remove_core_of = UKR
-			remove_core_of = ROM
-			add_core_of = MOL
 
-		}
-		1993.1.1 = {
-			owner = MSS
-			controller = MSS
-			add_core_of = MOL
-			remove_core_of = SOV
-			add_core_of = MSS
 
-		}
 
 	}
 

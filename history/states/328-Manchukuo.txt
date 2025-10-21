@@ -9,29 +9,29 @@ state={
 	history={
 		owner = ZZZ
 		1700.1.1 = {
-        owner = QIN
-		add_core_of = QIN
+        owner = CHI
+		add_core_of = CHI
         }
 		1900.1.1 = {
 		add_core_of = CHI
-		remove_core_of = MNG
+		remove_core_of = CHI
         }
 		1905.1.1 = {
-                owner = QIN
+                owner = CHI
 		}
 		1912.1.1 = {
             owner = CHI
 		}
 				1912.1.1 = {
             owner = CHI
-		remove_core_of = QIN
+		remove_core_of = CHI
 		}
 1919.1.1 = {
         }
 		1920.1.1 = {
             owner = MAN
             add_core_of = MAN
-            remove_core_of = QIN
+            remove_core_of = CHI
 		}
 		1946.1.1 = {
 			owner = PRC

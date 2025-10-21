@@ -542,18 +542,7 @@ ITA={controls_state=1109}
 		}
 
 		complete_effect = {
-		every_state={
-		limit={
-		or={
-		state=1060
-		state=856
-		state=931
-		state=1110
-		state=977
-		}
-		}
-		transfer_state_to=FRA
-		}
+		VNT={country_event = fra_1789_event.216}
 		hidden_effect={set_global_flag = italian_gambit_venice_flag AUS = {
 		}
 	}
@@ -608,72 +597,6 @@ FRA_italiangambit = {
 	}
 }
 FRA_italiangambit = {
-	FRA_invade_genoa = {
-
-		icon = ger_reichskommissariats
-
-		available = {
-			FRA={has_country_flag=italian_gambit_i_supposed}
-			
-			date > 1797.6.14 date < 1800.1.1 
-		}
-
-		cost = 0
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				add = 1
-			}
-		}
-
-		visible = {
-			has_country_flag=italian_gambit_i_supposed
-			NOT = { has_global_flag = italian_gambit_genoa_flag }
-		}
-
-		complete_effect = {
-	set_autonomy = {
-		target = GOA
-		autonomous_state = autonomy_dominion
-	}
-		hidden_effect={set_global_flag = italian_gambit_genoa_flag}
-	}
-}
-}
-FRA_italiangambit = {
-	FRA_invade_lucca = {
-
-		icon = ger_reichskommissariats
-
-		available = {
-			FRA={has_country_flag=italian_gambit_i_supposed}
-			
-			date > 1799.1.22 date < 1800.1.1 
-		}
-
-		cost = 0
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				add = 1
-			}
-		}
-
-		visible = {
-			has_country_flag=italian_gambit_i_supposed
-			NOT = { has_global_flag = italian_gambit_lucca_flag }
-		}
-
-		complete_effect = {
-	set_autonomy = {
-		target = LUC
-		autonomous_state = autonomy_dominion
-	}
-		hidden_effect={set_global_flag = italian_gambit_lucca_flag}
-        }
-}
-}
-FRA_italiangambit = {
 	FRA_seperate_peace_tuscany = {
 
 		icon = ger_reichskommissariats
@@ -717,41 +640,6 @@ FRA_italiangambit = {
 	}
 }
 FRA_italiangambit = {
-	FRA_invade_tuscany = {
-
-		icon = ger_reichskommissariats
-
-		available = {
-			FRA={has_country_flag=italian_gambit_i_supposed}
-			
-			date > 1799.5.1 date < 1800.1.1 
-                NOT={has_war_with = TOS}
-		}
-
-		cost = 0
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				add = 1
-			}
-		}
-
-		visible = {
-			has_country_flag=italian_gambit_i_supposed
-			NOT = { has_global_flag = italian_gambit_tuscany_flag }
-		}
-
-		complete_effect = {
-		hidden_effect={set_global_flag = italian_gambit_tuscany_flag AUS = {
-                        add_to_faction = TOS}}
-		declare_war_on = {
-		target = TOS
-		type = puppet_wargoal_focus
-	    }
-		}
-	}
-}
-FRA_italiangambit = {
 	FRA_invade_sicily = {
 
 		icon = ger_reichskommissariats
@@ -779,7 +667,7 @@ FRA_italiangambit = {
 		hidden_effect={set_global_flag = italian_gambit_sicily_flag AUS = {
                         add_to_faction = TTS}}
 		declare_war_on = {
-		target = TTS
+		target = SIC
 		type = puppet_wargoal_focus
 	    }
 		}
@@ -811,9 +699,9 @@ FRA_italiangambit = {
 
 		complete_effect = {
 		hidden_effect={set_global_flag = italian_gambit_malta_flag AUS = {
-                        add_to_faction = KNI}}
+                        add_to_faction = MLT}}
 		declare_war_on = {
-		target = KNI
+		target = MLT
 		type = puppet_wargoal_focus
 	    }
 		}

@@ -10,14 +10,14 @@ state={
 
 		}
 		1900.1.1 = {
-		owner = OTO
+		owner = TUR
 		add_core_of = SAU
                 }
 		1919.1.1 = {
 			owner = SAU
 			controller = SAU
 			add_core_of = SAU
-			remove_core_of = OTO
+			remove_core_of = TUR
 
 		}
 

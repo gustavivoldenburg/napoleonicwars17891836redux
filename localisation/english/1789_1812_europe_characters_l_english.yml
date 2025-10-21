@@ -113,6 +113,7 @@ AUS_CHARACTER_LEIBERICH:0 "Karl Freiherr Mack von Leiberich" #general
 MOD_CHARACTER_KARL:0 "Ferdinand Karl, Archduke of Austria-Este"
 MOD_CHARACTER_MARIA:0 "Maria Theresa of Austria-Este, Queen of Sardinia"
 SER_CHARACTER_SKOPLJAK:0 "Sulejman Pasha Skopljak"
+SER_CHARACTER_HADJI:0 "Hadji Mustafa Pasha"
 PRE_CHARACTER_GERHARD:0 "Gerhard von Scharnhorst"
 ENG_CHARACTER_HORATIONELSON:0 "Horatio Nelson, 1st Viscount Nelson" #general
 
@@ -145,9 +146,9 @@ EIS_CHARACTER_CHARLESAUGUSTUS:0 "Charles Augustus"
 REG_CHARACTER_JETTENBACH:0 "Maximilian Prokop from Toerring-Jettenbach"
 FUL_CHARACTER_HARSTALL:0 "Adalbert von Harstall"
 
-QIN_CHARACTER_QIANLONG:0 "Qianlong Emperor"
-QIN_CHARACTER_JIAQING:0 "Jiaqing Emperor"
-QIN_CHARACTER_DAOGUANG:0 "Daoguang Emperor"
+CHI_CHARACTER_QIANLONG:0 "Qianlong Emperor"
+CHI_CHARACTER_JIAQING:0 "Jiaqing Emperor"
+CHI_CHARACTER_DAOGUANG:0 "Daoguang Emperor"
 
 FUR_CHARACTER_JOSEPH:0 "Joseph Maria, Prince of Fürstenberg"
 FUR_CHARACTER_KARL:0 "Karl Joachim, Prince of Fürstenberg"
@@ -247,14 +248,14 @@ PRE_CHARACTER_WOLZOGENERAL:0 "Ludwig von Wolzogen"
 PRE_CHARACTER_WARTEGENERAL:0 "Ludwig Yorck von Wartenburg"
 PRE_CHARACTER_ZIETEGENERAL:0 "Hans Ernst Karl, Graf von Zieten"
 
-OTO_CHARACTER_KOCAGENERAL:0 "Koca Yusuf Pasha"
-OTO_CHARACTER_GAZIGENERAL:0 "Cezayirli Gazi Hasan Pasha"
-OTO_CHARACTER_NASUHZADEGENERAL:0 "Nasuhzade Ali Pasha"
-OTO_CHARACTER_OMERGENERAL:0 "Omer Vrioni"
-OTO_CHARACTER_MAHMUDGENERAL:0 "Mahmud Dramali Pasha"
-OTO_CHARACTER_HURSHIDGENERAL:0 "Hurshid Pasha"
-OTO_CHARACTER_HUSREVGENERAL:0 "Koca Hüsrev Mehmed Pasha"
-OTO_CHARACTER_RESIDGENERAL:0 "Reşid Mehmed Pasha"
+TUR_CHARACTER_KOCAGENERAL:0 "Koca Yusuf Pasha"
+TUR_CHARACTER_GAZIGENERAL:0 "Cezayirli Gazi Hasan Pasha"
+TUR_CHARACTER_NASUHZADEGENERAL:0 "Nasuhzade Ali Pasha"
+TUR_CHARACTER_OMERGENERAL:0 "Omer Vrioni"
+TUR_CHARACTER_MAHMUDGENERAL:0 "Mahmud Dramali Pasha"
+TUR_CHARACTER_HURSHIDGENERAL:0 "Hurshid Pasha"
+TUR_CHARACTER_HUSREVGENERAL:0 "Koca Hüsrev Mehmed Pasha"
+TUR_CHARACTER_RESIDGENERAL:0 "Reşid Mehmed Pasha"
 
 BAY_CHARACTER_WREDEGENERAL:0 "Karl Philipp von Wrede"
 BAY_CHARACTER_KARLGENERAL:0 "Karl August von Beckers zu Westerstetten"
@@ -360,6 +361,12 @@ DEN_CHARACTER_LORENTZGENERAL:0 "Lorentz Fisker"
 DEN_CHARACTER_FREDERIKGENERAL:0 "Prince Frederik of Hesse"
 DEN_CHARACTER_FREDERICKGENERAL:0 "Prince Frederick of Hesse-Kassel"
 DEN_CHARACTER_JESSENGENERAL:0 "Carl Wilhelm Jessen"
+
+NEU_CHARACTER_BERTHIER:0 "Louis-Alexandre Berthier"
+FRA_CHARACTER_MACDONALD:0 "Étienne Macdonald"
+RUS_CHARACTER_LAZAREV:0 "Ivan Lazarevich Lazarev"
+RUS_CHARACTER_MADATOV:0 "Valerian Grigoryevich Madatov"
+RUS_CHARACTER_ARAKCHEYEV:0 "Aleksey Arakcheyev"
 
 
 POR_CHARACTER_PEDROGENERAL:0 "Pedro de Almeida Portugal"
@@ -1032,17 +1039,17 @@ LCT_ALOYSI_DESC:0 "Aloys I was the Prince of Liechtenstein from 18 August 1781 u
 LCT_CHARACTER_JOHANNIJOSEPH:0 "Johann I Joseph"
 LCT_JOHANNIJOSEPH_DESC:0 "Johann I Joseph was Prince of Liechtenstein between 1805 and 1806 and again from 1814 until 1836. He was the last Liechtenstein prince to rule under the Holy Roman Empire between 1805 and 1806 and as regent of Liechtenstein from 1806 until 1814. He was the fourth son of Franz Joseph I, Prince of Liechtenstein."
 
-OTO_CHARACTER_ABDULHAMIDI:0 "Abdul Hamid I"
-OTO_ABUDLHAMIDI_DESC:0 "Abdulhamid was the 27th sultan of the Ottoman Empire from 1774 to 1789."
+TUR_CHARACTER_ABDULHAMIDI:0 "Abdul Hamid I"
+TUR_ABUDLHAMIDI_DESC:0 "Abdulhamid was the 27th sultan of the Ottoman Empire from 1774 to 1789."
 
-OTO_CHARACTER_SELIMIII:0 "Selim III"
-OTO_SELIMIII_DESC:0 "Selim III was the sultan of the Ottoman Empire from 1789 to 1807. Regarded as an enlightened ruler, he was eventually deposed and imprisoned by the Janissaries, who placed his cousin Mustafa on the throne as Mustafa IV. A group of assassins subsequently killed Selim."
+TUR_CHARACTER_SELIMIII:0 "Selim III"
+TUR_SELIMIII_DESC:0 "Selim III was the sultan of the Ottoman Empire from 1789 to 1807. Regarded as an enlightened ruler, he was eventually deposed and imprisoned by the Janissaries, who placed his cousin Mustafa on the throne as Mustafa IV. A group of assassins subsequently killed Selim."
 
-OTO_CHARACTER_MUSTAFAIV:0 "Mustafa IV"
-OTO_MUSTAFAIV_DESC:0 "Mustafa IV was the sultan of the Ottoman Empire from 1807 to 1808."
+TUR_CHARACTER_MUSTAFAIV:0 "Mustafa IV"
+TUR_MUSTAFAIV_DESC:0 "Mustafa IV was the sultan of the Ottoman Empire from 1807 to 1808."
 
-OTO_CHARACTER_MAHMUDII:0 "Mahmud II"
-OTO_MAHMUDII_DESC:0 "Mahmud II was the sultan of the Ottoman Empire from 1808 until his death in 1839. Often described as Peter the Great of Turkey, Mahmud instituted extensive administrative, military, and fiscal reforms which culminated in the Decree of Tanzimat that was carried out by his successors. His disbandment of the conservative Janissary corps removed a major obstacle to his and his successors' reforms in the Empire. Mahmud's reign was also marked by further Ottoman military defeat and loss of territory as a result of nationalist uprisings and European intervention."
+TUR_CHARACTER_MAHMUDII:0 "Mahmud II"
+TUR_MAHMUDII_DESC:0 "Mahmud II was the sultan of the Ottoman Empire from 1808 until his death in 1839. Often described as Peter the Great of Turkey, Mahmud instituted extensive administrative, military, and fiscal reforms which culminated in the Decree of Tanzimat that was carried out by his successors. His disbandment of the conservative Janissary corps removed a major obstacle to his and his successors' reforms in the Empire. Mahmud's reign was also marked by further Ottoman military defeat and loss of territory as a result of nationalist uprisings and European intervention."
 
 PER_CHARACTER_JAFARKHAN:0 "Jafar Khan"
 PER_JAFARKHAN_DESC:0 "Jafar Khan Zand,  was the seventh shah of the Zand dynasty of Iran from 1785 to 1789. He was the son of Sadiq Khan Zand, who was removed from the throne in Shiraz by Ali Murad Khan, who had previously taken Isfahan for himself."
@@ -1578,20 +1585,20 @@ RUS_CATHERINEII_DESC:0 "Catherine II (Catherine the Great) was the reigning empr
 RUS_CHARACTER_PAULI:0 "Paul I"
 RUS_PAULI_DESC:0 "Paul I was Emperor of Russia from 1796 to 1801"
 
-KNI_CHARACTER_SALTYKOV:0 "Nikolay Ivanovich Saltykov"
-KNI_CHARACTER_ROHAN:0 "Emmanuel de Rohan-Polduc"
-KNI_CHARACTER_VON:0 "Ferdinand von Hompesch zu Bolheim"
-KNI_CHARACTER_MARIA:0 "Innico Maria Guevara Suardo"
-KNI_CHARACTER_TOMMASI:0 "Giovanni Battista Tommasi"
+MLT_CHARACTER_SALTYKOV:0 "Nikolay Ivanovich Saltykov"
+MLT_CHARACTER_ROHAN:0 "Emmanuel de Rohan-Polduc"
+MLT_CHARACTER_VON:0 "Ferdinand von Hompesch zu Bolheim"
+MLT_CHARACTER_MARIA:0 "Innico Maria Guevara Suardo"
+MLT_CHARACTER_TOMMASI:0 "Giovanni Battista Tommasi"
 
-KNI_CHARACTER_PAULI:0 "Paul I"
-KNI_PAULI_DESC:0 "Paul I was de facto Grand Master of the Knights Hospitaller from 1799 to 1801 and ordered the construction of a number of priories of the Order of Malta. Paul's pro-German sentiments and unpredictable behavior made him unpopular among the Russian nobility, and he was secretly assassinated by his own officers."
+MLT_CHARACTER_PAULI:0 "Paul I"
+MLT_PAULI_DESC:0 "Paul I was de facto Grand Master of the Knights Hospitaller from 1799 to 1801 and ordered the construction of a number of priories of the Order of Malta. Paul's pro-German sentiments and unpredictable behavior made him unpopular among the Russian nobility, and he was secretly assassinated by his own officers."
 
-KNI_CHARACTER_ALEXANDERI:0 "Alexander I"
-KNI_ALEXANDERI_DESC:0 "Alexander I nicknamed (the Blessed) was Emperor of Russia from 1801 the first king of Congress Poland from 1815 and the grand duke of Finland" 
+MLT_CHARACTER_ALEXANDERI:0 "Alexander I"
+MLT_ALEXANDERI_DESC:0 "Alexander I nicknamed (the Blessed) was Emperor of Russia from 1801 the first king of Congress Poland from 1815 and the grand duke of Finland" 
 
-KNI_CHARACTER_NICHOLASI:0 "Nicholas I"
-KNI_NICHOLASI_DESC:0 "Nicholas I was Emperor of Russia, King of Congress Poland, and Grand Duke of Finland"
+MLT_CHARACTER_NICHOLASI:0 "Nicholas I"
+MLT_NICHOLASI_DESC:0 "Nicholas I was Emperor of Russia, King of Congress Poland, and Grand Duke of Finland"
 
 RUS_CHARACTER_ALEXANDERI:0 "Alexander I"
 RUS_ALEXANDERI_DESC:0 "Alexander I nicknamed (the Blessed) was Emperor of Russia from 1801 the first king of Congress Poland from 1815 and the grand duke of Finland" 
@@ -1623,7 +1630,7 @@ RUS_NICHOLASII_DESC:0 "Nicholas II was the last reigning Emperor of Russia, King
 RUS_CHARACTER_PUTIN:0 "Vladimir Putin"
 RUS_PUTIN_DESC:0 "Vladimir Putin"
 
-ABK_CHARACTER_kelesh_ahmed_bey_sharvashidze:0 "Kelesh Ahmed-Bey Sharvashidze"
+ABK_CHARACTER_KELESH_AHMED_BEY_SHARVASHIDZE:0 "Kelesh Ahmed-Bey Sharvashidze"
 
 AFG_CHARACTER_TIMUR_SHAH_DURRANI:0 "Timur Shah Durrani"
 

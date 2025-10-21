@@ -297,8 +297,7 @@ ita_1789_event.12.d:0 "Restoration of the house of Medici in Tuscany"
 fra_1789_event.1.d:0 "The French Revolution"
 fra_1789_event.2.d:0 "The Liège Revolution"
 fra_1789_event.3.d:0 "The Brabant Revolution"
-fra_1789_event.4.d:0 "The storming of the Bastille"
-fra_1789_event.4.d_desc: "On 14 July 1789 crowds in Paris stormed and seized the Bastille, a medieval fortress and prison that had long stood as a symbol of royal authority. The garrison surrendered after skirmishes; the physical damage was limited, but the event rapidly acquired symbolic weight. Governments and newspapers across Europe are reporting the incident with a mixture of alarm and curiosity as the implications for order and authority remain uncertain."
+fra_1789_event.4.d:0 "On 14 July 1789 crowds in Paris stormed and seized the Bastille, a medieval fortress and prison that had long stood as a symbol of royal authority. The garrison surrendered after skirmishes; the physical damage was limited, but the event rapidly acquired symbolic weight. Governments and newspapers across Europe are reporting the incident with a mixture of alarm and curiosity as the implications for order and authority remain uncertain."
 fra_1789_event.5.d:0 "Join Austria in the war of the 1st Coalition"
 fra_1789_event.6.d:0 "Where should we expel 50000 dissidents?"
 fra_1789_event.7.d:0 "Armistice of Cherasco"
@@ -309,7 +308,7 @@ fra_1789_event.11.d:0 "The Emigrants have shown their true colors; they are loya
 fra_1789_event.12.d:0 "Armistice of Cherasco"
 fra_1789_event.13.d:0 "Treaty of Campo Formio"
 fra_1789_event.14.d:0 "White Peace between France and Prussia"
-fra_1789_event.15.d:0 "White Peace between France and Spain"
+fra_1789_event.15.d:0 "The Peace of Basel"
 fra_1789_event.16.d:0 "The Haitian Revolution"
 fra_1789_event.17.d:0 "French opinion on the Haitian Declaration of Independence"
 fra_1789_event.18.d:0 "The Ventôse Decrees never had enough support to actually be passed"
@@ -538,6 +537,41 @@ fra_1789_event.229.d:0 "Peace out with Bavaria Salzburg & Wurtemberg"
 fra_1789_event.230.d:0 "The Bordeaux Provence & Lyon Counter-Revolutionaries"
 fra_1789_event.231.d:0 "Austria Joins the 3rd Coalition"
 fra_1789_event.232.d:0 "The Territorial Mandate"
+fra_1789_event.233.d:0 "The end of the Brabantian Revolution"
+fra_1789_event.234.d:0 "The divorce of Napoleon and Joséphine de Beauharnais. It did indeed not end well."
+fra_1789_event.235.d:0 "The Marriage of Napoleon and Joséphine de Beauharnais"
+fra_1789_event.236.d:0 "Proclaim the Pacification of the West"
+fra_1789_event.237.d:0 "Though the Republic of Venice proclaims strict neutrality, its ancient territories are now caught in the crossfire between France and Austria. As Napoleon advances through northern Italy, both armies disregard Venetian borders, marching and fighting across her lands. Venice, old and hesitant, stands idle — but for how long can neutrality shield her from the storm?"
+fra_1789_event.238.d:0 "White Peace between France and Spain"
+fra_1789_event.239.d:0 "Peace with Haiti"
+fra_1789_event.240.d:0 "The Treaties of Tilsit"
+fra_1789_event.241.d:0 "The Danish-French Alliance"
+
+fra_1789_event.242.d:0 "Austria declares war on France in 1805"
+fra_1789_event.243.d:0 "The Treaty of Pressburg"
+fra_1789_event.244.d:0 "Austria Joining the 3rd Coalition"
+fra_1789_event.245.d:0 "The Treaty of Pressburg"
+
+fra_1789_event.246.d:0 "Austria declares war on France in 1809"
+fra_1789_event.247.d:0 "The Treaty of Schönbrunn"
+fra_1789_event.248.d:0 "Austria Joining the 5th Coalition"
+fra_1789_event.249.d:0 "The Treaty of Schönbrunn"
+
+
+fra_1789_event.250.d:0 "The Reign of Terror"
+fra_1789_event.251.d:0 "The end of the Reign of Terror"
+
+bay_1789_event.1.d:0 "The Mediatisation of Memmingen"
+bay_1789_event.2.d:0 "The Mediatisation of Augsburg"
+bay_1789_event.3.d:0 "The Mediatisation of Passau"
+bay_1789_event.4.d:0 "The Mediatisation of Regensburg"
+bay_1789_event.5.d:0 "The Mediatisation of Rothenburg"
+bay_1789_event.6.d:0 "The Mediatisation of Nurnberg"
+bay_1789_event.7.d:0 "The Mediatisation of Bamberg"
+bay_1789_event.8.d:0 "The Mediatisation of Wurzberg"
+bay_1789_event.9.d:0 "The Mediatisation of Ansbach"
+bay_1789_event.10.d:0 "The Mediatisation of Bayreuth"
+
 
 fra_1789_news.1.d:0 "The French Revolution"
 fra_1789_news.2.d:0 "The Liège Revolution"
@@ -581,6 +615,10 @@ viennacongress_event.15.d:0 "The Return of the Free and Hanseatic City of Hambur
 viennacongress_event.16.d:0 "The Provisional Government of Belgium and the Rhine"
 
 viennacongress_event.17.d:0 "Return of Geneva to Switzerland"
+
+viennacongress_event.18.d:0 "Return of Tyrol to Austria"
+
+viennacongress_event.19.d:0 "The British Ionian Islands"
 
 aus_1789_event.1.d:0 "With the imminent fall of the Holy Roman Empire we have to centralize our domains to contain the revolutionairy leopard."
 aus_1789_news.1.d:0 "Centralization of the Habsburg-Lorraine Empire is the best thing to do"
@@ -745,6 +783,9 @@ pre_1789_event.127.d:0 "Brunswick joins the 4th Coalition"
 pre_1789_event.128.d:0 "Hesse Kassel joins the 4th Coalition"
 
 por_1789_event.1.d:0 "The Creation of the United Kingdom of Portugal, Brazil and the Algarves"
+por_1789_event.2.d:0 "The Miguelist flag"
+por_1789_event.3.d:0 "The liberal flag"
+
 
 spr_1789_event.1.d:0 "Texas New Mexico and California need more autonomy"
 
@@ -806,7 +847,3 @@ bel_1789_event.3.d:0 "The Belgian Revolution"
 ire_1789_event.1.d:0 "The Jacobite Rebellion of the 1800s"
 ire_1789_event.2.d:0 "Expulsion of 100k Ulster Protestants"
 ire_1789_news.1.d:0 "The Jacobite Rebellion of the 1800s"
-
-treaty.1.t: "France republic Capitulates"
-treaty.1.d: "Those abomination has finally ceased to exist"
-treaty.1.a: "huh"

@@ -4,7 +4,7 @@ state={
 	name="STATE_801"
 
 	history={
-		owner = OTO
+		owner = TUR
 				buildings = {
 		9612 = {bunker = 2}
         }

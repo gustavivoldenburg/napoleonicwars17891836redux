@@ -463,7 +463,7 @@ if = { #########   By Blood Alone Stuff
 1800.1.1 = {
 set_cosmetic_tag = SWI_helvetic # Swiss republic
 }
-1812.1.1 = {
+1803.1.1 = {
 set_cosmetic_tag = SWI # swiss confederation
 }
 1836.1.1 = {

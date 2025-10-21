@@ -8,9 +8,9 @@ state={
 		add_core_of = SMT
 		add_core_of = GEO
 		1600.1.1 = {
-			owner = OTO
+			owner = TUR
 			remove_core_of = SMT
-			add_core_of = OTO
+			add_core_of = TUR
 
 		}
 		1880.1.1 = {

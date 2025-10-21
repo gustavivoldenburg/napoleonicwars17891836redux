@@ -11,6 +11,15 @@ retire_character=LUC_ferdinandi
 1848.1.1 = {
 retire_character=LUC_marie
 }
+1799.1.1 = {
+LUC={set_cosmetic_tag=LUC_republican}
+}
+1805.1.1 = {
+LUC={set_cosmetic_tag=LUC_PIO}
+}
+1815.1.1 = {
+LUC={set_cosmetic_tag=LUC_duchy}
+}
 1812.1.1 = {
 set_politics = {
 	ruling_party = neutrality

@@ -7,7 +7,7 @@ state={
 		owner = EPI
 		add_core_of = EPI
 				1600.1.1 = {
-		owner = OTO
+		owner = TUR
 		}
 		1800.1.1 = {
 		add_core_of = GRE
@@ -17,7 +17,7 @@ state={
                 owner = ALB
                 }
 				1823.1.1 = {
-                owner = OTO
+                owner = TUR
                 }
 		1836.1.1 = {
 		owner = GRE

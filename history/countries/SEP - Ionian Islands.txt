@@ -6,7 +6,10 @@ promote_character=SEP_antonioskomoutos
 1836.1.1 = {
 retire_character=SEP_antonioskomoutos
 }
-1815.11.11 = {
+1808.1.1 = {
+set_cosmetic_tag = SEP_FRA #
+}
+1815.1.1 = {
 set_cosmetic_tag = SEP_ENG #
 }
 # Starting tech

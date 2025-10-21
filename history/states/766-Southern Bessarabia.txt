@@ -10,7 +10,7 @@ state={
 		add_core_of = MOL
 		owner = MOL
 		1600.1.1 = {
-			owner = OTO
+			owner = TUR
 
 		}
 		1808.1.1 = {

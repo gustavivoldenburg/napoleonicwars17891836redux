@@ -4,7 +4,7 @@ state={
 	name="STATE_923"
 
 	history={
-		owner = OTO
+		owner = TUR
 		add_core_of = BYZ
 		1800.1.1 = {
 		add_core_of = GRE
@@ -14,7 +14,7 @@ state={
                 owner = ALB
                 }
 				1823.1.1 = {
-                owner = OTO
+                owner = TUR
                 }
 		1900.1.1 = {
 		owner = GRE

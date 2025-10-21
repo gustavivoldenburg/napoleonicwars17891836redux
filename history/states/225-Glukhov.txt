@@ -7,22 +7,19 @@ state={
 		victory_points = {
 			3520 10 
 		}
-		owner = CHE
-		add_core_of = CHE
+		owner = UKR
+		add_core_of = UKR
 		1600.1.1 = {
 			owner = RUS
 			add_core_of = RUS
-			remove_core_of = CHE
+			remove_core_of=UKR
 
 		}
 		buildings = {
 			infrastructure = 3
 
 		}
-		1900.1.1 = {
-			add_core_of = UKR
 
-		}
 						1919.1.1 = {
 			owner = UKR
 			controller = SOV
@@ -31,13 +28,7 @@ state={
 			remove_core_of = GLL
 
 		}
-		1920.1.1 = {
-			owner = SOV
-			controller = SOV
-			add_core_of = SOV
-			remove_core_of = RUS
 
-		}
 		1993.1.1 = {
 			owner = UKR
 			controller = UKR

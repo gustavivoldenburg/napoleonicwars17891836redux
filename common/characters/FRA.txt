@@ -205,6 +205,23 @@ characters={
 			legacy_id=0
 		}
 	}
+			FRA_macdonald={
+		name=FRA_CHARACTER_MACDONALD
+		portraits={
+			army={
+				large=GFX_portrait_fra_macdonald_large
+				small=GFX_portrait_fra_macdonald_small
+			}
+		}
+		field_marshal={
+			skill=5
+			attack_skill=2
+			defense_skill=1
+			planning_skill=3
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
 			FRA_brunegeneral={
 		name=FRA_CHARACTER_BRUNEGENERAL
 		portraits={

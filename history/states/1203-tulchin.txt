@@ -8,25 +8,22 @@ state={
 		add_core_of = POD
 		1600.1.1 = {
 			owner = POL
-			remove_core_of = WDF
+			
 			remove_core_of = POD
 			remove_core_of = SMG
 			remove_core_of = SMO
-			remove_core_of = KIE
-			remove_core_of = CHE
-			add_core_of = ZAP
+			remove_core_of = UKR
+			
+			add_core_of = UKR
 
 		}
 		1800.1.1 = {
 			owner = RUS
 			add_core_of = RUS
-			remove_core_of = ZAP
+			remove_core_of = UKR
 
 		}
-		1900.1.1 = {
-			add_core_of = UKR
 
-		}
 		buildings = {
 			infrastructure = 2
 
@@ -39,13 +36,7 @@ state={
 			remove_core_of = GLL
 
 		}
-		1920.1.1 = {
-			owner = SOV
-			controller = SOV
-			add_core_of = SOV
-			remove_core_of = RUS
 
-		}
 		1993.1.1 = {
 			owner = UKR
 			controller = UKR

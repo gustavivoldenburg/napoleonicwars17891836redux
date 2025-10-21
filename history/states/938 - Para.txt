@@ -10,7 +10,7 @@ state={
 						victory_points = {
 			833 2
 		}
-		owner = OTO
+		owner = TUR
                 add_core_of = BUL
 		1900.1.1 = {
 		add_core_of = MAC
@@ -27,7 +27,7 @@ state={
 				1823.1.1 = {
 				add_core_of=BUL
 				remove_core_of=ALB
-                owner = OTO
+                owner = TUR
                 }
 		buildings = {
 			infrastructure = 1
@@ -41,7 +41,7 @@ state={
                 owner = ALB
                 }
 				1823.1.1 = {
-                owner = OTO
+                owner = TUR
                 }
 		1919.1.1 = {
 			owner = YUG

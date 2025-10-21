@@ -29,13 +29,7 @@ state={
 		buildings = {
 			infrastructure = 0
 		}
-		1920.1.1 = {
-			owner = SOV
-			controller = SOV
-			add_core_of = SOV
-			remove_core_of = RUS
 
-		}
 		1993.1.1 = {
 			owner = RUS
 			controller = RUS

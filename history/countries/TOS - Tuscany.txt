@@ -13,6 +13,12 @@ recruit_character=TOS_luigidemedici
 promote_character=TOS_ferdinandiii
 retire_character=TOS_leopoldi
 }
+1808.1.1 = {
+promote_character=TOS_charlesii
+}
+1815.1.1 = {
+promote_character=TOS_ferdinandiii
+}
 1836.1.1 = {
 promote_character=TOS_leopoldii
 retire_character=TOS_ferdinandiii
@@ -34,11 +40,20 @@ set_oob = "TOS_1789"
 1740.1.1 = {
 set_cosmetic_tag = TOS_AUS #austrian puppet
 }
-1790.1.1 = {
-set_cosmetic_tag = TOS #independent
+1805.1.1 = {
+set_cosmetic_tag = TOS_etruria #spanish puppet
+}
+1815.1.1 = {
+set_cosmetic_tag = TOS_AUS #independent
 }
 1740.1.1 = {
-set_party_name = { ideology = neutrality long_name = HUN_legitimists_party_long name = HUN_legitimists_party }
+set_party_name = { ideology = neutrality long_name = TOS_LOR_neutrality_party_long name = TOS_LOR_neutrality_party }
+}
+1805.1.1 = {
+set_party_name = { ideology = neutrality long_name = TOS_BOU_neutrality_party_long name = TOS_BOU_neutrality_party }
+}
+1815.1.1 = {
+set_party_name = { ideology = neutrality long_name = TOS_LOR_neutrality_party_long name = TOS_LOR_neutrality_party }
 }
 
 set_research_slots = 0

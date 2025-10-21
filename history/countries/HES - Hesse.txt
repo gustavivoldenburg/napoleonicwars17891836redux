@@ -6,7 +6,7 @@ set_cosmetic_tag = HES_landgraviate #
 recruit_character=HES_jakub
 }
 1800.1.1 = {
-retire_character=HAN_jakub
+retire_character=HES_jakub
 }
 1806.1.1 = {
 set_cosmetic_tag = HES_grandduchy # Netherlands East Indies

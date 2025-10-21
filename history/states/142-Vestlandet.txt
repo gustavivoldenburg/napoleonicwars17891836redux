@@ -27,9 +27,6 @@ state={
 			remove_core_of = DEN
 
 		}
-		1945.1.1 = {
-		owner = RNO
-		}
 		1946.1.1 = {
 		owner = NOR
 		}

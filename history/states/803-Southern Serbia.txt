@@ -6,7 +6,7 @@ state={
 	history={
 		owner = SER
 		1500.1.1 = {
-                owner = OTO
+                owner = TUR
 		add_core_of = BUL
 		remove_core_of = SER
                 }

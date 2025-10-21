@@ -2436,7 +2436,7 @@ allow_branch = { has_start_date > 1789.1.1
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		
 		completion_reward = {
-		SWE={country_event=sweden_1789_1812.15}
+		SWE={country_event=sweden_1789_1812.17}
 		}
 	}
 		focus = {
