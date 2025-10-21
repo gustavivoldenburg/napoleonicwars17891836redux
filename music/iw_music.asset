@@ -22,3 +22,63 @@ music = {
 	name = "Marcha Real"
 	file = "Marcha Real.ogg"
 }
+music = {
+	name = "Marcha de Granaderos"
+	file = "Marcha de Granaderos.ogg"
+}
+music = {
+	name = "March of the Semyonovsky Life-Guard Regiment"
+	file = "March of the Semyonovsky Life-Guard Regiment.ogg"
+}
+music = {
+	name = "Le pas cadence"
+	file = "Le pas cadence.ogg"
+}
+music = {
+	name = "La Victoire est a nous"
+	file = "La Victoire est a nous.ogg"
+}
+music = {
+	name = "La Marseillaise(maria version)"
+	file = "La Marseillaise(maria version).ogg"
+}
+music = {
+	name = "La Marche du Sacre de Napoléon"
+	file = "La Marche du Sacre de Napoléon.ogg"
+}
+music = {
+	name = "La Grenadiere"
+	file = "La Grenadiere.ogg"
+}
+music = {
+	name = "Kong Christian Stod Ved Højen Mast"
+	file = "Kong Christian Stod Ved Højen Mast.ogg"
+}
+music = {
+	name = "Hymno Patriótico"
+	file = "Hymno Patriótico.ogg"
+}
+music = {
+	name = "Het Wilhelmus"
+	file = "Het Wilhelmus.ogg"
+}
+music = {
+	name = "Hail_columbia"
+	file = "Hail_columbia.ogg"
+}
+music = {
+	name = "Gott erhalte Franz den Kaiser"
+	file = "Gott erhalte Franz den Kaiser.ogg"
+}
+music = {
+	name = "God save the King"
+	file = "God save the King.ogg"
+}
+music = {
+	name = "Fantaisie sur l'Hymne National Russe"
+	file = "Fantaisie sur l'Hymne National Russe.ogg"
+}
+music = {
+	name = "Chant du Départ"
+	file = "Chant du Départ.ogg"
+}
