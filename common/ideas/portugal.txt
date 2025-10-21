@@ -1,0 +1,271 @@
+ideas = {
+
+    country = {
+        POR_weak_army = {
+
+            allowed = {
+                always = no
+            }
+
+            removal_cost = -1
+
+            picture = idea_generic_army_problems
+
+            modifier = {
+                army_org = -0.3
+                army_defence_factor = -0.3
+                training_time_factor = 0.3
+                experience_gain_army = -0.45
+                conscription_factor = -0.1
+                land_doctrine_cost_factor = 0.15
+            }
+        }
+        POR_weak_army_2 = {
+
+            allowed = {
+                always = no
+            }
+
+            removal_cost = -1
+
+            picture = idea_generic_army_problems
+
+            modifier = {
+                army_org = -0.25
+                army_defence_factor = -0.25
+                training_time_factor = 0.27
+                experience_gain_army = -0.25
+                conscription_factor = -0.08
+                land_doctrine_cost_factor = 0.12
+            }
+        }
+        POR_weak_army_3 = {
+
+            allowed = {
+                always = no
+            }
+
+            removal_cost = -1
+
+            picture = idea_generic_army_problems
+
+            modifier = {
+                army_org = -0.2
+                army_defence_factor = -0.2
+                training_time_factor = 0.2
+                experience_gain_army = -0.22
+                conscription_factor = -0.06
+                land_doctrine_cost_factor = 0.1
+            }
+        }
+        POR_weak_army_4 = {
+
+            allowed = {
+                always = no
+            }
+
+            removal_cost = -1
+
+            picture = idea_generic_army_problems
+
+            modifier = {
+                army_org = -0.15
+                army_defence_factor = -0.15
+                training_time_factor = 0.15
+                experience_gain_army = -0.2
+                conscription_factor = -0.04
+                land_doctrine_cost_factor = 0.05
+            }
+        }
+        POR_weak_army_5 = {
+
+            allowed = {
+                always = no
+            }
+
+            removal_cost = -1
+
+            picture = idea_generic_army_problems
+
+            modifier = {
+                army_org = -0.1
+                army_defence_factor = -0.1
+                training_time_factor = 0.1
+                experience_gain_army = -0.15
+                conscription_factor = -0.02
+                land_doctrine_cost_factor = 0.025
+            }
+        }
+        POR_weak_army_6 = {
+
+            allowed = {
+                always = no
+            }
+
+            removal_cost = -1
+
+            picture = idea_generic_army_problems
+
+            modifier = {
+                army_org = -0.05
+                army_defence_factor = -0.05
+                training_time_factor = 0.05
+                experience_gain_army = -0.1
+                conscription_factor = -0.0
+                land_doctrine_cost_factor = 0.0
+            }
+        }
+        POR_weak_army_7 = {
+
+            allowed = {
+                always = no
+            }
+
+            removal_cost = -1
+
+            picture = idea_generic_army_problems
+
+            modifier = {
+                army_org = -0.05
+                army_defence_factor = -0.05
+                training_time_factor = 0.05
+                experience_gain_army = -0.05
+                conscription_factor = -0.0
+                land_doctrine_cost_factor = 0.0
+            }
+        }
+        POR_recovering_from_lisbon_earthquake = {
+
+            allowed = {
+                always = no
+            }
+
+            removal_cost = -1
+
+            picture = idea_BEL_scars_of_ww1 
+
+            modifier = {
+                production_speed_industrial_complex_factor = -0.1
+                production_speed_infrastructure_factor = -0.5
+            }
+        }
+        POR_old_order = {
+
+            allowed = {
+                always = no
+            }
+
+            removal_cost = -1
+
+            picture = generic_morale_bonus
+
+            modifier = {
+                stability_factor = 0.1
+                political_power_factor = -0.1
+                research_speed_factor = -0.15
+            }
+        }
+        POR_whispers_of_revolution = {
+
+            allowed = {
+                always = no
+            }
+
+            removal_cost = -1
+
+            picture = generic_morale_bonus
+
+            modifier = {
+                stability_factor = -0.05
+                political_power_factor = 0.1
+                research_speed_factor = 0.05
+            }
+        }
+        POR_british_counsel = {
+
+            allowed = {
+                always = no
+            }
+
+            removal_cost = -1
+
+            picture = generic_morale_bonus
+
+            modifier = {
+                industrial_capacity_dockyard = 0.1
+            }
+        }
+        POR_reforming_the_treasury = {
+
+            allowed = {
+                always = no
+            }
+
+            removal_cost = -1
+
+            picture = generic_morale_bonus
+
+            modifier = {
+                production_speed_industrial_complex_factor = 0.1
+            }
+        }
+        POR_modernising_education = {
+
+            allowed = {
+                always = no
+            }
+
+            removal_cost = -1
+
+            picture = generic_morale_bonus
+
+            modifier = {
+                political_power_factor = 0.05
+            }
+        }
+        POR_brazilian_trade = {
+
+            allowed = {
+                always = no
+            }
+
+            removal_cost = -1
+
+            picture = generic_morale_bonus
+
+            modifier = {
+                local_resources_factor = 0.1
+            }
+        }
+        POR_colonial_navy = {
+           
+            allowed = {
+                always = no
+            }
+
+            removal_cost = -1
+
+            picture = generic_morale_bonus
+
+            modifier = {
+                production_speed_dockyard_factor = 0.1
+                industrial_capacity_dockyard = 0.1
+            }
+        }
+        POR_colonial_navy_2 = {
+           
+            allowed = {
+                always = no
+            }
+
+            removal_cost = -1
+
+            picture = generic_morale_bonus
+
+            modifier = {
+                production_speed_dockyard_factor = 0.15
+                industrial_capacity_dockyard = 0.15
+            }
+        }
+    }
+}
