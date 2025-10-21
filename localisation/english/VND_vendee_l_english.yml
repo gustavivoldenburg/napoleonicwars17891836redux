@@ -63,16 +63,16 @@
   vendee.110.c:0 "Harsh justice."
 
   vendee.200.t:0 "Trial of Lafayette"
-  vendee.200.d:0 "The Marquis is in our custody. The court awaits a verdict."
-  vendee.200.a:0 "Execute him."
+  vendee.200.d:0 "The Traitor Marquis is in our custody. The court awaits a verdict."
+  vendee.200.a:0 "Execute This Traitor!"
   vendee.200.b:0 "Exile him."
-  vendee.200.c:0 "Pardon him."
+  vendee.200.c:0 "Lafayette tries to save monarchy,Pardon him."
 
   vendee.210.t:0 "Fate of the National Assembly"
   vendee.210.d:0 "A kingdom cannot serve two masters. What becomes of the Assembly?"
-  vendee.210.a:0 "Dissolve it."
+  vendee.210.a:0 "Dissolve This ABOMINATION!"
   vendee.210.b:0 "Keep it as an advisory chamber."
-  vendee.210.c:0 "Purge radicals, keep the institution."
+  vendee.210.c:0 "Dissolve it, and PURGE THEM ALL!!"
 
   # Military branch focuses
   VND_raise_vendee_army:0 "Raise the Vendée Army"
