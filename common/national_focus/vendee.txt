@@ -188,7 +188,6 @@ focus_tree = {
         x = 11
         y = 2
         cost = 6
-        available = { NOT = { has_country_flag = VND_called_first_coalition } }
         ai_will_do = { factor = 1 }
         completion_reward = {
             set_country_flag = VND_called_first_coalition
