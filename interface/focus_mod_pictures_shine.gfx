@@ -1,6 +1,6 @@
 spriteTypes = {	
 	SpriteType = {
-		name = "GFX_focus_vive_king_shine"
+		name = "GFX_goal_vive_king_shine"
 		texturefile = "gfx/interface/goals/VND/vive_king.dds"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {

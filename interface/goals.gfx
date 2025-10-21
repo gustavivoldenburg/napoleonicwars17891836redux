@@ -1,6 +1,0 @@
-spriteTypes = {	
-	SpriteType = { 
-		name = "GFX_focus_vive_king"
-		texturefile = "gfx/interface/goals/VND/vive_king.dds"
-	}
-}

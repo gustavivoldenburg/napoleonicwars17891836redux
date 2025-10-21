@@ -5,7 +5,7 @@ focus_tree = {
 		factor = 0
 		modifier = {
 			add = 10
-			tag = VDN
+			tag = VND
 		}
 	}
 
@@ -14,7 +14,7 @@ focus_tree = {
 
     focus = {
         id = VND_counter_revolution
-        icon = GFX_SOV_capital_of_the_tsars_ccp_2d_sov_compatibility
+        icon = GFX_goal_vive_king
         x = 10
         y = 0
         cost = 8
