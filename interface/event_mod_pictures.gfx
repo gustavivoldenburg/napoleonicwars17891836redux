@@ -3559,7 +3559,11 @@ spriteTypes = {
 		texturefile = "gfx/leaders/HUN/portrait_gyorgy_banffy.dds"
 	}
 	spriteType = {
-		name = "GFX_report_lafayette_traitor"
-		texturefile = "gfx/leaders/event_pictures/lafayette_traitor.dds"
+		name = "GFX_lafayette_event_image"
+		texturefile = "gfx/leaders/event_pictures/report_event_lafayette.dds"
+	}
+	spriteType = {
+		name = "GFX_return_palace_event_image"
+		texturefile = "gfx/leaders/event_pictures/report_event_return_vendee.dds"
 	}
 }
