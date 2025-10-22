@@ -2045,6 +2045,7 @@ country_event = {
 	trigger = {
 tag=FRA
 FRA={has_war = yes}
+has_country_flag = fra_republic_path
 date > 1789.1.1 date < 1800.1.1 
 	}
 fire_only_once = yes
