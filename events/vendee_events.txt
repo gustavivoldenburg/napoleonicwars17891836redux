@@ -13,15 +13,12 @@ country_event = {
     option = {
         name = vendee.100.a   # Full Pardon
         add_stability = 0.02
-        set_global_flag = FR_Lafayette_pardoned
+        set_country_flag_flag = FR_Lafayette_pardoned
         add_political_power = 50
-        # Hook: if you model Lafayette as a FRA character/idea, flip his status here.
-    }
-    option = {
-        name = vendee.100.b   # Conditional Release (after civil war)
-        set_country_flag = VND_lafayette_conditional
-        add_political_power = 25
-    }
+		custom_effect_tooltip = VND_lafayette_general_tt
+    }		
+
+    
     option = {
         name = vendee.100.c   # Refuse
         add_war_support = 0.02

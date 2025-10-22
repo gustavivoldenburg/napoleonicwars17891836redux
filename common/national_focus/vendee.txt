@@ -135,11 +135,28 @@ focus_tree = {
             country_event = { id = vendee.200 days = 1 }  # “Trial of Lafayette”
         }
     }
+	focus = {
+        id = VND_return_church_lands
+        icon = GFX_goal_generic_construct_civ_factory
+        prerequisite = { focus = VND_restore_ancient_regime }
+        x = 13
+        y = 3
+        cost = 4
+		available = { has_global_flag = french_surrender_done }
+        completion_reward = {
+            add_political_power = 40
+            set_country_flag = VND_returned_church_lands
+			country_event = { id = vendee.5 days = 1 }
+        }
+    }
 
     focus = {
         id = VND_fate_of_national_assembly
         icon = GFX_goal_generic_political_reform
-        prerequisite = { focus = VND_try_lafayette }
+        prerequisite = { 
+		    focus = VND_try_lafayette
+			focus = VND_return_church_lands
+        }
         x = 13
         y = 4
         cost = 4
@@ -192,6 +209,20 @@ focus_tree = {
         completion_reward = {
             set_country_flag = VND_called_first_coalition
             country_event = { id = vendee.300 days = 1 }
+        }
+    }
+	
+	focus = {
+        id = VND_spain_advisers
+        icon = GFX_goal_generic_army_artillery2
+        prerequisite = { focus = VND_call_first_coalition }
+        x = 11
+        y = 3
+        cost = 3
+        completion_reward = {
+            add_army_experience = 30
+			add_convoys = 20
+			add_political_power = 30
         }
     }
 

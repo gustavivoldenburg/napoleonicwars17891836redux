@@ -10,7 +10,7 @@ characters={
 			ideology=despotism
 			traits={Bourbon}
 			desc = VND_LOUISXVII_DESC
-			expire="1797.1.1"
+			expire="1800.1.1"
 		}
     }
 	VND_Maurice_dElbee = {
@@ -39,5 +39,35 @@ characters={
             logistics_skill = 2
         }
 	}
-}
+	VND_lafayette_general = {
+            name = "Marquis de Lafayette"
+			
+            portraits = {
+                army = { large = "gfx/leaders/VND/VND_lafayette.dds" }
+				civilian = { large = "gfx/leaders/VND/VND_lafayette.dds" }
+            }
+			
+			available = {
+			    has_country_flag = FR_Lafayette_pardoned
+			}	
+
+            corps_commander = {
+                traits = { charismatic }
+                skill = 4
+                attack_skill = 3
+                defense_skill = 4
+                planning_skill = 5
+                logistics_skill = 3
+            }
+	
+	        field_marshal = {
+                traits = { charismatic }
+                skill = 4
+                attack_skill = 2
+                defense_skill = 3
+                planning_skill = 4
+                logistics_skill = 2
+            }   
+	}
+}	
 
