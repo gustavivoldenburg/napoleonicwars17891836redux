@@ -139,13 +139,12 @@ focus_tree = {
         id = VND_return_church_lands
         icon = GFX_goal_generic_construct_civ_factory
         prerequisite = { focus = VND_restore_ancient_regime }
-        x = 13
+        x = 12
         y = 3
         cost = 4
 		available = { has_global_flag = french_surrender_done }
         completion_reward = {
             add_political_power = 40
-            set_country_flag = VND_returned_church_lands
 			country_event = { id = vendee.5 days = 1 }
         }
     }

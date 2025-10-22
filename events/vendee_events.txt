@@ -13,7 +13,7 @@ country_event = {
     option = {
         name = vendee.100.a   # Full Pardon
         add_stability = 0.02
-        set_country_flag_flag = FR_Lafayette_pardoned
+        set_country_flag = FR_Lafayette_pardoned
         add_political_power = 50
 		custom_effect_tooltip = VND_lafayette_general_tt
     }		
