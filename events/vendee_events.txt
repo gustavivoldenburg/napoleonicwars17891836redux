@@ -8,7 +8,7 @@ country_event = {
     desc  = vendee.100.d
     picture = GFX_report_event_political
 
-    trigger = { has_country_flag = VND_federalist_path }
+    is_triggered_only = yes
 
     option = {
         name = vendee.100.a   # Full Pardon
@@ -36,7 +36,7 @@ country_event = {
     desc  = vendee.110.d
     picture = GFX_report_event_political
 
-    trigger = { VND_post_civil_war = yes }
+    is_triggered_only = yes
 
     option = {
         name = vendee.110.a  # Exile the Leadership
