@@ -2,6 +2,7 @@
 1789.1.1 = {
 recruit_character=VND_louisxvii
 recruit_character = VND_Maurice_dElbee
+recruit_character = VND_lafayette_general
 promote_character=VND_louisxvii
 }
 # Starting tech
