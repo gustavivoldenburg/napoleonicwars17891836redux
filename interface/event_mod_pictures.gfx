@@ -3411,6 +3411,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/VND/louis_xvii.dds"
 	}
 	spriteType = {
+		name = "GFX_idea_brazil_portugal_trade"
+		texturefile = "gfx/interface/ideas/brazil_portugal_trade.dds"
+	}
+	spriteType = {
 		name = "GFX_idea_louisxvi"
 		texturefile = "gfx/interface/ideas/louisxvi.dds"
 	}

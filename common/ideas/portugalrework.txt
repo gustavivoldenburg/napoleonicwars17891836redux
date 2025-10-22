@@ -272,7 +272,7 @@ ideas = {
 
             removal_cost = -1
 
-            picture = generic_morale_bonus
+            picture = brazil_portugal_trade
 
             modifier = {
                 local_resources_factor = 0.1
