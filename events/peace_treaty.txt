@@ -12,13 +12,10 @@ country_event = {
     tag = FRA
     has_war = yes
     NOT = { has_capitulated = yes }
-    surrender_progress > 0.90
-    NOT = { has_country_flag = french_surrender_done }
+    surrender_progress > 0.85
   }
    immediate = {
 	VND = { annex_country = { target = FRA transfer_troops = yes } }
-	
-	set_country_flag = french_surrender_done
 
         ENG = { transfer_state = 29 }
 		ENG = { transfer_state = 694 }
