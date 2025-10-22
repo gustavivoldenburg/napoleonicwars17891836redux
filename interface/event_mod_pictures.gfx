@@ -3406,7 +3406,11 @@ spriteTypes = {
 		name = "GFX_idea_france_metric_system"
 		texturefile = "gfx/interface/ideas/france_metric_system.dds"
 	}
-		spriteType = {
+	spriteType = {
+		name = "GFX_idea_louis_xvii"
+		texturefile = "gfx/interface/ideas/VND/louis_xvii.dds"
+	}
+	spriteType = {
 		name = "GFX_idea_louisxvi"
 		texturefile = "gfx/interface/ideas/louisxvi.dds"
 	}
