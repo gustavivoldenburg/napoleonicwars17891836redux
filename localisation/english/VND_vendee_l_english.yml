@@ -34,8 +34,6 @@
   VND_clerical_support_idea:0 "Clerical Support"
 
   # Decisions
-  VND_rescue_the_king_cat:0 "Rescue the King"
-  VND_rescue_the_king_cat_desc:0 "Louis XVI sits in Paris. Time is running out; 21 January 1793 is a deadline you can’t negotiate with."
 
   VND_contact_royalist_cells:0 "Contact Royalist Cells"
   VND_contact_royalist_cells_desc:0 "Whispered passwords in church porches."
