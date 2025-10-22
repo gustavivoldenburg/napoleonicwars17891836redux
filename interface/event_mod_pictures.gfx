@@ -3560,10 +3560,10 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_lafayette_event_image"
-		texturefile = "gfx/leaders/event_pictures/report_event_lafayette.dds"
+		texturefile = "gfx/event_pictures/report_event_lafayette.dds"
 	}
 	spriteType = {
 		name = "GFX_return_palace_event_image"
-		texturefile = "gfx/leaders/event_pictures/report_event_return_vendee.dds"
+		texturefile = "gfx/event_pictures/report_event_return_vendee.dds"
 	}
 }
