@@ -37,6 +37,7 @@ country_event = {
     picture = GFX_report_event_political
 
     is_triggerd_only = yes
+	fire_only_once = yes
 
     option = {
         name = vendee.110.a  # Exile the Leadership
