@@ -16,8 +16,9 @@ country_event = {
     NOT = { has_country_flag = french_surrender_done }
   }
    immediate = {
-    set_country_flag = french_surrender_done
 	VND = { annex_country = { target = FRA transfer_troops = yes } }
+	
+	set_country_flag = french_surrender_done
 
         ENG = { transfer_state = 29 }
 		ENG = { transfer_state = 694 }
