@@ -34,8 +34,6 @@
   VND_clerical_support_idea:0 "Clerical Support"
 
   # Decisions
-  VND_rescue_the_king_cat:0 "Rescue the King"
-  VND_rescue_the_king_cat_desc:0 "Louis XVI sits in Paris. Time is running out; 21 January 1793 is a deadline you can’t negotiate with."
 
   VND_contact_royalist_cells:0 "Contact Royalist Cells"
   VND_contact_royalist_cells_desc:0 "Whispered passwords in church porches."
@@ -57,6 +55,15 @@
   vendee.2.b: "The rescue party finally reached the safety of a Vendéen outpost as dawn broke over the Loire valley. Louis XVII, still dressed in the tattered prison clothes that hung loosely on his malnourished frame, was brought into a warm room—perhaps the first warmth he had felt in months.\n\nAs loyal officers knelt before their young sovereign, the boy remained silent, his eyes hollow and distant. A physician was summoned, and food was brought, though the child barely touched it. It was only when an elderly officer—a man who had once served at Versailles—gently asked about his captivity that the dam finally broke.\n\nIn a quiet, broken voice, Louis XVII began to speak of the Temple Prison. He told of the darkness of his cell, where sunlight never reached. Of the screams he heard through the walls—his mother's screams, his aunt's prayers, sounds that haunted his sleepless nights. He spoke of Simon the cobbler, the brutal guardian appointed by the Committee, who had beaten him for refusing to denounce his own mother as a whore and a traitor.\n\n'They made me sing their songs,' the boy whispered, tears streaming down his face. 'The songs about killing kings. They laughed when I cried. They... they told me Maman was dead. That they had killed her. Is it true? Is she...?'\n\nThe room fell into awful silence. Every man present felt his blood turn to ice, then to fire. The child before them had been broken by monsters who called themselves liberators. Some officers wept openly. Others gripped their sword hilts until their knuckles turned white.\n\nThis was what the Revolution had done. This was what they were fighting against. Not abstract principles or political philosophy—but this. A tortured child who had committed no crime except being born into the wrong family.\n\nThe boy-king would need time to heal, if such wounds ever could heal. But one thing was certain: the men of the Vendée now knew, with absolute clarity, that their cause was just."
   vendee.2.c: "The Republic will answer for these crimes."
   vendee.2.d: "We must protect him from ever suffering again."
+  vendee.3.a: "The Question of Women soldier"
+  vendee.3.b: "The civil war has ended. The tricolor lies trampled in the mud, replaced once more by the white banner of the Bourbons. Church bells ring across a France exhausted by years of bloodshed. But in the victory parades, something unprecedented catches the eye of foreign observers and traditionalists alike—women in uniform, bearing arms, marching alongside their male comrades.\n\nThe women of the Vendée had taken up arms out of desperate necessity. When the Republic's armies came with fire and blade, when priests were drowned and villages burned, the women fought beside their fathers, husbands, and brothers. Some became scouts and messengers. Others loaded muskets and tended the wounded. A few, like the legendary Marie-Louise Victoire de Donnissan, led men into battle themselves.\n\nNow, with peace restored, these women await the young King's judgment. Many wish to return to their homes, their farms, their families—the war having taken enough from them already. But others, having tasted freedom and purpose in the ranks, petition to remain in service. They argue that they have proven themselves in blood, that they have earned the right to serve France as soldiers.\n\nThe court is divided. Conservative advisors argue that women bearing arms violates natural order and tradition—that France must return to proper Christian values after years of revolutionary chaos. Others, particularly younger officers who fought alongside these women, argue that merit and loyalty matter more than tradition, that these women bled for the King and deserve recognition.\n\nThe Catholic bishops offer no clear guidance, torn between admiration for these Judith-like defenders of the faith and concern for proper social order.\n\nLouis XVII, now a young man hardened by childhood suffering and years of war, must decide. Will he honor tradition and demobilize all female soldiers? Will he create a special auxiliary corps that acknowledges their service while maintaining separation? Or will he take the radical step of allowing them to serve as equals—a decision that would shock every court in Europe?"
+  vendee.3.c: "Women soldiers are discharged with honors and pensions."
+  vendee.3.d: "Let each woman choose her own path freely."
+  french_surrender_done: "Republic Regime is defeated"
+  vendee.4.a: "The Empty Throne"
+  vendee.4.b: "The great golden gates of Versailles swung open for the first time in years, their hinges groaning like the ghosts of the old regime. Louis XVII sat motionless in the royal carriage as it passed through, his face pale and unreadable. The palace that should have been his childhood home had become a monument to everything he had lost.\n\nThe Republic had fallen. Paris had surrendered after the Coalition forces breached the final barricades. The revolutionary government collapsed into chaos as former Jacobins fled or turned on each other. Some tried to escape abroad; others were dragged from hiding by vengeful crowds. The Committee of Public Safety was no more. The guillotine in the Place de la Révolution stood silent, its blade rusted with the blood of thousands.\n\nAs the young King stepped from his carriage, he stood before the palace where his father had once ruled, where his mother had walked through glittering halls, where his aunt had prayed in the chapel. All of them were gone now—murdered by the Revolution that had promised liberty and delivered only death.\n\nThe palace itself bore the scars of revolutionary fervor. Paintings had been slashed, royal symbols defaced, furniture looted or burned. The Hall of Mirrors, once the greatest room in Europe, was covered in dust and grime. Yet it still stood, wounded but unbroken, like France itself.\n\nVendéen soldiers and Coalition troops lined the courtyards, while crowds gathered at the gates—some weeping with joy at the restoration, others watching in sullen silence, still loyal to republican ideals even in defeat. The bishops waited to offer prayers of thanksgiving. Emigré nobles who had fled years ago now rushed forward, eager to reclaim their positions and properties.\n\nLouis XVII stood at the threshold of his inheritance. He was no longer the terrified boy who had been dragged from this palace by revolutionary mobs. He was no longer the broken child who wept in a prison cell. He was a young man who had survived hell itself and emerged victorious.\n\nBut as he looked up at the vast facade of Versailles, one question burned in his mind: What kind of France would he build from the ashes of the Republic? Would he restore the old order that had fallen so catastrophically? Would he forge something new? Would he show mercy to his enemies, or would the guillotine simply change hands?\n\nThe fate of France now rested on the shoulders of a king who had known only suffering, war, and loss. History held its breath."
+  vendee.4.c: "Long Live The Kingdom!"
+  VND_lafayette_general_tt: "§BLafayette will become general§!"
   
   
   vendee.100.t:0 "The Question of Lafayette"
@@ -83,15 +90,13 @@
   vendee.210.b:0 "Keep it as an advisory chamber."
   vendee.210.c:0 "Dissolve it, and PURGE THEM ALL!!"
 
-  # Military branch focuses
-  VND_raise_vendee_army:0 "Raise the Vendée Army"
-  VND_raise_vendee_army_desc:0 "Rifles, rosaries, and rough terrain. We know how to fight at home."
 
-  VND_royal_women_at_arms:0 "Royal Women at Arms"
-  VND_royal_women_at_arms_desc:0 "When the realm is in peril, everyone stands the line. Uniforms optional, courage mandatory."
-
-  VND_call_first_coalition:0 "Appeal to the First Coalition"
-  VND_call_first_coalition_desc:0 "If Europe wants the Revolution stopped, they can start by helping us."
+  VND_raise_vendee_army: "Raise the Vendée Army"
+  VND_raise_vendee_army_desc: "Rifles, rosaries, and rough terrain. We know how to fight at home."
+  VND_royal_women_at_arms: "Royal Women at Arms"
+  VND_royal_women_at_arms_desc: "When the realm is in peril, everyone stands the line. Uniforms optional, courage mandatory."
+  VND_call_first_coalition: "Appeal to the First Coalition"
+  VND_call_first_coalition_desc: "If Europe wants the Revolution stopped, they can start by helping us."
 
   # Ideas
   VND_vendee_maquis_idea:0 "Vendée Maquis"

@@ -10994,6 +10994,7 @@ mutually_exclusive = { focus = france_1793_1799_focus_1 }
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		
 		completion_reward = {
+		set_country_flag = fra_republic_path
 		FRA={add_ideas={war_of_survival_fra}}
 		932 = { add_claim_by = root }
 		960 = { add_claim_by = root }

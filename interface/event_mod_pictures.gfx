@@ -3406,7 +3406,15 @@ spriteTypes = {
 		name = "GFX_idea_france_metric_system"
 		texturefile = "gfx/interface/ideas/france_metric_system.dds"
 	}
-		spriteType = {
+	spriteType = {
+		name = "GFX_idea_louis_xvii"
+		texturefile = "gfx/interface/ideas/VND/louis_xvii.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_brazil_portugal_trade"
+		texturefile = "gfx/interface/ideas/brazil_portugal_trade.dds"
+	}
+	spriteType = {
 		name = "GFX_idea_louisxvi"
 		texturefile = "gfx/interface/ideas/louisxvi.dds"
 	}
@@ -3559,7 +3567,11 @@ spriteTypes = {
 		texturefile = "gfx/leaders/HUN/portrait_gyorgy_banffy.dds"
 	}
 	spriteType = {
-		name = "GFX_report_lafayette_traitor"
-		texturefile = "gfx/leaders/event_pictures/lafayette_traitor.dds"
+		name = "GFX_lafayette_event_image"
+		texturefile = "gfx/event_pictures/report_event_lafayette.dds"
+	}
+	spriteType = {
+		name = "GFX_return_palace_event_image"
+		texturefile = "gfx/event_pictures/report_event_return_vendee.dds"
 	}
 }
