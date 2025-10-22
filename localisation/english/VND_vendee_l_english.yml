@@ -90,15 +90,13 @@
   vendee.210.b:0 "Keep it as an advisory chamber."
   vendee.210.c:0 "Dissolve it, and PURGE THEM ALL!!"
 
-  # Military branch focuses
-  VND_raise_vendee_army:0 "Raise the Vendée Army"
-  VND_raise_vendee_army_desc:0 "Rifles, rosaries, and rough terrain. We know how to fight at home."
 
-  VND_royal_women_at_arms:0 "Royal Women at Arms"
-  VND_royal_women_at_arms_desc:0 "When the realm is in peril, everyone stands the line. Uniforms optional, courage mandatory."
-
-  VND_call_first_coalition:0 "Appeal to the First Coalition"
-  VND_call_first_coalition_desc:0 "If Europe wants the Revolution stopped, they can start by helping us."
+  VND_raise_vendee_army: "Raise the Vendée Army"
+  VND_raise_vendee_army_desc: "Rifles, rosaries, and rough terrain. We know how to fight at home."
+  VND_royal_women_at_arms: "Royal Women at Arms"
+  VND_royal_women_at_arms_desc: "When the realm is in peril, everyone stands the line. Uniforms optional, courage mandatory."
+  VND_call_first_coalition: "Appeal to the First Coalition"
+  VND_call_first_coalition_desc: "If Europe wants the Revolution stopped, they can start by helping us."
 
   # Ideas
   VND_vendee_maquis_idea:0 "Vendée Maquis"
