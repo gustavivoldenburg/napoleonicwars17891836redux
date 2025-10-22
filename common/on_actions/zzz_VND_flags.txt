@@ -1,10 +1,6 @@
 on_actions = {
-  on_capitulation = {
+  on_capitulation_FRA = {
     effect = {
-      if = {
-        limit = {
-          FRA = { has_capitulated = yes }
-        }
 
         VND = { annex_country = { target = FRA transfer_troops = yes } }
 		set_country_flag = french_surrender_done
