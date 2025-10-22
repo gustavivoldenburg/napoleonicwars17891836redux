@@ -83,7 +83,7 @@ focus_tree = {
         x = 7
         y = 4
         cost = 3
-        available = { has_country_flag = french_surrender_done }
+        available = { has_global_flag = french_surrender_done }
         completion_reward = {
             country_event = { id = vendee.110 days = 1 }      # “Fate of the Jacobins”
         }
@@ -143,7 +143,7 @@ focus_tree = {
         x = 13
         y = 4
         cost = 4
-        available = { has_country_flag = french_surrender_done }
+        available = { has_global_flag = french_surrender_done }
         completion_reward = {
             country_event = { id = vendee.210 days = 1 }  # “Fate of the National Assembly”
         }

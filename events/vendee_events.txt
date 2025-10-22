@@ -36,7 +36,7 @@ country_event = {
     desc  = vendee.110.d
     picture = GFX_report_event_political
 
-    is_triggered_only = yes
+    is_triggerd_only = yes
 
     option = {
         name = vendee.110.a  # Exile the Leadership
@@ -65,7 +65,7 @@ country_event = {
     desc  = vendee.200.d
     picture = GFX_report_lafayette_traitor
 
-    trigger = { has_country_flag = VND_royalist_path }
+    is_triggerd_only = yes
 	fire_only_once = yes
 
     option = {
@@ -94,10 +94,8 @@ country_event = {
     desc  = vendee.210.d
     picture = GFX_report_event_parliament
 
-    trigger = {
-        has_country_flag = VND_royalist_path
-        VND_post_civil_war = yes
-    }
+    is_triggerd_only = yes
+	fire_only_once = yes
 
     option = {
         name = vendee.210.a  # Dissolve it
@@ -234,7 +232,7 @@ country_event = {
     desc  = vendee.305.d
     picture = GFX_report_event_diplomatic
 	fire_only_once = yes
-    is_trigger_only = yes
+    is_triggered_only = yes
     option = { name = vendee.ok }
 }
 
@@ -244,7 +242,7 @@ country_event = {
     desc  = vendee.306.d
     picture = GFX_report_event_diplomatic
     fire_only_once = yes
-	is_trigger_only = yes
+	is_triggered_only = yes
     option = { name = vendee.ok }
 }
 
@@ -254,7 +252,7 @@ country_event = {
     desc  = vendee.307.d
     picture = GFX_report_event_diplomatic
     fire_only_once = yes
-    is_trigger_only = yes
+    is_triggered_only = yes
     option = { name = vendee.ok }
 }
 
@@ -265,7 +263,7 @@ country_event = {
     desc  = vendee.314.d
     picture = GFX_report_event_diplomatic
     fire_only_once = yes
-    is_trigger_only = yes
+    is_triggered_only = yes
     option = { name = vendee.ok }
 }
 country_event = {
@@ -274,7 +272,7 @@ country_event = {
     desc  = vendee.316.d
     picture = GFX_report_event_diplomatic
     fire_only_once = yes
-    is_trigger_only = yes
+    is_triggered_only = yes
     option = { name = vendee.ok }
 }
 country_event = {
@@ -283,7 +281,7 @@ country_event = {
     desc  = vendee.317.d
     picture = GFX_report_event_diplomatic
     fire_only_once = yes
-    is_trigger_only = yes
+    is_triggered_only = yes
     option = { name = vendee.ok }
 }
 country_event = {
@@ -327,7 +325,6 @@ country_event = {
   picture = GFX_report_event_diplomatic
 
     trigger = { 
-        tag = VND
         has_country_flag = rescue_king 
     }
   fire_only_once = yes
@@ -345,9 +342,8 @@ country_event = {
   desc = vendee.3.b
   picture = GFX_report_event_diplomatic
 
-    trigger = { 
-	    tag = VND
-        has_country_flag = french_surrender_done
+    trigger = {
+        has_global_flag = french_surrender_done
     }
   fire_only_once = yes
 
@@ -360,9 +356,6 @@ country_event = {
   }
   option = {
     name = vendee.3.d
-	trigger: {
-      has_country_flag: vendee_federalist_alliance
-    }
 	add_stability = -0.10
     add_war_support = -0.10
   }
@@ -374,15 +367,13 @@ country_event = {
   picture = GFX_report_event_diplomatic
 
     trigger = { 
-	  tag = VND
-      NOT = { exists = FRA }  
+	  has_global_flag = french_surrender_done 
     }
   fire_only_once = yes
 
   option = {
     name = vendee.4.c
 	
-	set_country_flag = french_surrender_done
 	add_stability = 0.05
     add_war_support = 0.05
   }

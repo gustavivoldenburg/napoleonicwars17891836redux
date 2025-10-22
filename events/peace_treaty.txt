@@ -18,7 +18,8 @@ country_event = {
     surrender_progress > 0.80
   }
    immediate = {
-	VND = { annex_country = { target = FRA transfer_troops = yes } }
+     set_global_flag = french_surrender_done
+	 VND = { annex_country = { target = FRA transfer_troops = yes } }
 
         ENG = { transfer_state = 29 }
 		ENG = { transfer_state = 694 }
