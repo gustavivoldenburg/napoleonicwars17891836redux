@@ -243,7 +243,8 @@ country_event = {
     title = vendee.306.t
     desc  = vendee.306.d
     picture = GFX_report_event_diplomatic
-    trigger = { tag = VND }
+    fire_only_once = yes
+	is_trigger_only = yes
     option = { name = vendee.ok }
 }
 
