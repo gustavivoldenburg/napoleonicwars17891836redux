@@ -11,8 +11,11 @@ country_event = {
   trigger = {
     tag = FRA
     has_war = yes
-    NOT = { has_capitulated = yes }
-    surrender_progress > 0.85
+    NOT = { 
+	    has_capitulated = yes
+		has_country_flag = french_surrender_done
+	}
+    surrender_progress > 0.80
   }
    immediate = {
 	VND = { annex_country = { target = FRA transfer_troops = yes } }
@@ -54,4 +57,5 @@ country_event = {
           transfer_state = 27
         }
 	}
+	option = { name = treaty.85.a }
 }	

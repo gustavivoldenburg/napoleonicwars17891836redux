@@ -326,7 +326,10 @@ country_event = {
   desc = vendee.2.b
   picture = GFX_report_event_diplomatic
 
-  trigger = { has_country_flag = rescue_king }
+    trigger = { 
+        tag = VND
+        has_country_flag = rescue_king 
+    }
   fire_only_once = yes
 
   option = {
@@ -343,8 +346,8 @@ country_event = {
   picture = GFX_report_event_diplomatic
 
     trigger = { 
+	    tag = VND
         has_country_flag = french_surrender_done
-		has_ideas = VND_women_royal_warriors_idea
     }
   fire_only_once = yes
 
@@ -363,4 +366,24 @@ country_event = {
 	add_stability = -0.10
     add_war_support = -0.10
   }
-} 
+}
+country_event = {
+  id = vendee.4
+  title = vendee.4.a
+  desc = vendee.4.b
+  picture = GFX_report_event_diplomatic
+
+    trigger = { 
+	  tag = VND
+      NOT = { exists = FRA }  
+    }
+  fire_only_once = yes
+
+  option = {
+    name = vendee.4.c
+	
+	set_country_flag = french_surrender_done
+	add_stability = 0.05
+    add_war_support = 0.05
+  }
+}  
