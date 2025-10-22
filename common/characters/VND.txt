@@ -39,17 +39,13 @@ characters={
             logistics_skill = 2
         }
 	}
-	VND_lafayette_general = {
+	VND_lafayettei = {
             name = "Marquis de Lafayette"
 			
             portraits = {
-                army = { large = "gfx/leaders/VND/VND_lafayette.dds" }
-				civilian = { large = "gfx/leaders/VND/VND_lafayette.dds" }
-            }
-			
-			available = {
-			    has_country_flag = FR_Lafayette_pardoned
-			}	
+                army = { large = "gfx/leaders/VND/VND_lafayette_i.dds" }
+				civilian = { large = "gfx/leaders/VND/VND_lafayette_i.dds" }
+            }	
 
             corps_commander = {
                 traits = { charismatic }
