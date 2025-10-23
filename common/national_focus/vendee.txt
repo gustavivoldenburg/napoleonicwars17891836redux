@@ -142,7 +142,6 @@ focus_tree = {
         x = 15
         y = 3
         cost = 4
-		available = { has_global_flag = french_surrender_done }
         completion_reward = {
             add_political_power = 40
 			960 = {
