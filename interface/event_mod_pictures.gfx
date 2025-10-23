@@ -3574,4 +3574,8 @@ spriteTypes = {
 		name = "GFX_return_palace_event_image"
 		texturefile = "gfx/event_pictures/report_event_return_vendee.dds"
 	}
+	spriteType = {
+		name = "GFX_louis_truma_event_image"
+		texturefile = "gfx/event_pictures/report_event_louis_truma.dds"
+	}
 }
