@@ -3578,4 +3578,8 @@ spriteTypes = {
 		name = "GFX_louis_truma_event_image"
 		texturefile = "gfx/event_pictures/report_event_louis_truma.dds"
 	}
+	spriteType = {
+		name = "GFX_federalist_revolt_event_image"
+		texturefile = "gfx/event_pictures/report_event_federalist_revolt.dds"
+	}
 }

@@ -381,3 +381,30 @@ country_event = {
 	set_country_flag = vendee_next_focus
   }
 }
+country_event = {
+  id = vendee.6
+  title = vendee.6.a
+  desc = vendee.6.b
+  picture = GFX_federalist_revolt_event_image
+  fire_only_once = yes
+  is_triggered_only = yes
+
+  option = {
+    name = vendee.6.c
+  }
+  option = {
+    name = vendee.6.d
+  }
+}
+country_event = {
+  id = vendee.5
+  title = vendee.5.a
+  desc = vendee.5.b
+  picture = GFX_return_palace_event_image
+  fire_only_once = yes
+  is_triggered_only = yes
+
+  option = {
+    name = vendee.5.c
+  }
+}

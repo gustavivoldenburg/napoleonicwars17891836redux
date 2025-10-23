@@ -32,8 +32,8 @@ country_event = {
         SPR = { transfer_state = 1105 }
         SPR = { transfer_state = 806 }
 		PRE = { transfer_state = 16 }
-		POR = { transfer_state = 310 }
-		LUX = { transfer_state = 1112 }
+		HOL = { transfer_state = 310 }
+		PRU = { transfer_state = 1112 }
 		POR = { transfer_state = 958 }
 
         VND = {
@@ -57,6 +57,10 @@ country_event = {
           transfer_state = 785
           transfer_state = 18
           transfer_state = 27
+        }
+		every_state = {
+            limit = { is_controlled_by = FRA }
+            add_core_of = VND
         }
 	}
 	option = { name = treaty.85.a }
