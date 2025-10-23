@@ -78,7 +78,7 @@ focus_tree = {
 	
 	focus = {
         id = VND_federalist_rebel
-        icon = GFX_goal_generic_political_pressure
+        icon = GFX_federalist_rebel
         prerequisite = { focus = VND_constitutional_monarchy }
         x = 6
         y = 3

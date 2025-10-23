@@ -35,8 +35,8 @@ spriteTypes = {
 		name = "GFX_goal_polandwarrussia"
 		texturefile = "gfx/interface/goals/goal_polandwarrussia.dds"
 	}
-        spriteType = {
-		name = "GFX_goal_internationalclique"
-		texturefile = "gfx/interface/goals/goal_internationalclique.dds"
+    spriteType = {
+		name = "GFX_federalist_rebel"
+		texturefile = "gfx/interface/goals/VND/GFX_federalist_rebel.dds"
 	}
 }
