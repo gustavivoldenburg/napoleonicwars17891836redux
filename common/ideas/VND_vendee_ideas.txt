@@ -20,9 +20,9 @@ ideas = {
 	
 	VND_vendee_maquis_idea = {
         allowed = { original_tag = VND }
-        picture = generic_army_high_command
+        picture = AFG_adopt_nufus
         modifier = {
-            division_attack_on_core_factor = 0.05
+		    army_core_attack_factor = 0.05
             training_time_army_factor = -0.05
             supply_consumption_factor = -0.03
         }
@@ -71,7 +71,7 @@ ideas = {
 	
     VND_rural_warfare_idea = {
         allowed = { original_tag = VND }
-        picture = generic_army_high_command
+        picture = generic_mountain_warfare
 
         modifier = {
             army_core_defence_factor = 0.07
