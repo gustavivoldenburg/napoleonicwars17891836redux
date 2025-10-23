@@ -3,8 +3,9 @@
 recruit_character = VND_louisxvii
 recruit_character = VND_Maurice_dElbee
 promote_character = VND_louisxvii
-recruit_character = VND_lafayettei
-
+recruit_character = VND_Renee_Bordereau
+recruit_character = VND_Rochejaquelein
+recruit_character = VND_Cathelineau
 }
 # Starting tech
 set_technology = {
