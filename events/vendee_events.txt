@@ -380,4 +380,4 @@ country_event = {
     add_war_support = 0.05
 	set_country_flag = vendee_next_focus
   }
-}  
+}
