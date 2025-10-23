@@ -48,6 +48,11 @@ characters={
       skill = 3 attack_skill = 4 defense_skill = 3 planning_skill = 2 logistics_skill = 2
 	  expire="1793.7.7"
     }
+	field_marshal = {
+      traits = { infantry_leader aggressive_assaulter }
+      skill = 3 attack_skill = 4 defense_skill = 3 planning_skill = 2 logistics_skill = 2
+	  expire="1793.7.7"
+    }
   }
 
   VND_Rochejaquelein = {
@@ -68,6 +73,14 @@ characters={
     portraits = { army = { large = "gfx/leaders/VND/VND_Renee_Bordereau.dds" } }
 
     corp_commander = {
+      traits = { cavalry_leader trickster }
+      skill = 3
+      attack_skill = 3
+      defense_skill = 2
+      planning_skill = 2
+      logistics_skill = 2
+    }
+	field_marshal = {
       traits = { cavalry_leader trickster }
       skill = 3
       attack_skill = 3

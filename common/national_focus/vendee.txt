@@ -75,6 +75,18 @@ focus_tree = {
             country_event = { id = vendee.100 days = 1 }  # “Pardon Lafayette?” dialog
         }
     }
+	
+	focus = {
+        id = VND_federalist_rebel
+        icon = GFX_goal_generic_political_pressure
+        prerequisite = { focus = VND_constitutional_monarchy }
+        x = 6
+        y = 3
+        cost = 3
+        completion_reward = {
+            load_oob =  VND_Inf_02
+        }
+    }
 
     focus = {
         id = VND_fate_of_jacobins
