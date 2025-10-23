@@ -10,7 +10,7 @@ focus_tree = {
 	}
 
 
-    continuous_focus_position = { x = 2000 y = 2000 }
+    continuous_focus_position = { x = 4000 y = 4000 }
 
     focus = {
         id = VND_counter_revolution
@@ -79,8 +79,10 @@ focus_tree = {
 	focus = {
         id = VND_federalist_rebel
         icon = GFX_federalist_rebel
-        prerequisite = { focus = VND_constitutional_monarchy }
-        x = 6
+        prerequisite = { 
+		    focus = VND_constitutional_monarchy
+		}
+        x = 5
         y = 3
         cost = 3
         completion_reward = {
@@ -98,6 +100,21 @@ focus_tree = {
         available = { has_global_flag = french_surrender_done }
         completion_reward = {
             country_event = { id = vendee.110 days = 1 }      # “Fate of the Jacobins”
+        }
+    }
+	focus = {
+        id = VND_moderate_shank_hand
+        icon = GFX_goal_continuous_restrict_freedom
+        prerequisite = { 
+		    focus = VND_federalist_rebel
+			focus = VND_pardon_lafayette
+		}
+        x = 5
+        y = 4
+        cost = 3
+        available = { has_global_flag = french_surrender_done }
+        completion_reward = {
+            country_event = { id = vendee.6 days = 1 }      # “Fate of the Jacobins”
         }
     }
 
@@ -194,7 +211,7 @@ focus_tree = {
         cost = 4
         available = { has_global_flag = french_surrender_done }
         completion_reward = {
-            country_event = { id = vendee.6 days = 1 }  # “Fate of the Federalist”
+            country_event = { id = vendee.7 days = 1 }  # “Fate of the Federalist”
         }
     }
 	
@@ -263,11 +280,11 @@ focus_tree = {
         id = VND_rural_warfare
         icon = GFX_goal_generic_army_artillery2
         prerequisite = { focus =VND_royal_women_at_arms }
-        x = 10
+        x = 9
         y = 3
         cost = 3
         completion_reward = {
-            VND_rural_warfare_idea
+            add_ideas = VND_rural_warfare_idea
         }
     }
 

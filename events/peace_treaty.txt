@@ -13,7 +13,7 @@ country_event = {
     has_war = yes
     NOT = { 
 	    has_capitulated = yes
-		has_country_flag = french_surrender_done
+		has_country_flag = french_surrender_done_nah
 	}
     surrender_progress > 0.80
   }
@@ -34,6 +34,7 @@ country_event = {
 		PRE = { transfer_state = 16 }
 		POR = { transfer_state = 310 }
 		LUX = { transfer_state = 1112 }
+		POR = { transfer_state = 958 }
 
         VND = {
           transfer_state = 32
