@@ -67,9 +67,8 @@
   
   
   vendee.100.t:0 "The Question of Lafayette"
-  vendee.100.d:0 "The Marquis stands between factions. Mercy, prudence, or disdain?"
+  vendee.100.d:0 "A courier from Vienna arrived at court bearing unexpected news—and an unexpected prisoner. The Austrians, having held the Marquis de Lafayette in their fortress at Olmütz for years, have decided his fate is no longer their concern. With characteristic Habsburg pragmatism, they have transferred the famous general to Vendéen custody, washing their hands of a man who embarrasses all sides.\n\nGilbert du Motier, Marquis de Lafayette, now stands in chains before the court of the young King he once served—and whose family he failed to save. The 'Hero of Two Worlds' who fought for American liberty and French reform now appears gaunt and aged, his revolutionary ideals having led to nothing but terror and tyranny.\n\nThe constitutional monarchists see an opportunity. Lafayette championed a British-style monarchy with the King as a symbolic figurehead—precisely what they envision for France's future. His prestige, especially with the Americans, could legitimize a moderate settlement. 'He made mistakes,' they argue, 'but he tried to save Louis XVI. He fled the Jacobins just as we did.'\n\nThe absolutists are incensed. 'This man stripped your father of his powers!' they remind the King. 'He commanded the mob that imprisoned the Royal Family at the Tuileries! His constitutional fantasies paved the road to the guillotine! He is a traitor who deserves a traitor's death!'\n\nThe Federalist advisors offer a middle path: clemency in exchange for public service. Lafayette's military expertise and international connections could prove valuable, and mercy would demonstrate that constitutional monarchy is not vengeance.\n\nLouis XVII studies the prisoner in silence. Here stands the man who once swore to protect the Royal Family, who commanded the National Guard that failed to stop the Revolution's descent into madness. The King remembers his father's letters, which spoke of Lafayette with both disappointment and a strange, persistent hope that the Marquis might yet prove loyal.\n\nWhat justice does Lafayette deserve? The answer will define what kind of monarchy France shall become."
   vendee.100.a:0 "Full pardon and welcome."
-  vendee.100.b:0 "Conditional release after the civil war."
   vendee.100.c:0 "Refuse any amnesty."
 
   vendee.110.t:0 "Fate of the Jacobins"
@@ -79,16 +78,17 @@
   vendee.110.c:0 "Harsh justice."
 
   vendee.200.t:0 "Trial of Lafayette"
-  vendee.200.d:0 "The Traitor Marquis is in our custody. The court awaits a verdict."
-  vendee.200.a:0 "Execute This Traitor!"
-  vendee.200.b:0 "Exile him."
-  vendee.200.c:0 "Lafayette tries to save monarchy,Pardon him."
+  vendee.200.d: "The great hall of the Vendéen headquarters falls silent as guards drag the prisoner forward. Gilbert du Motier, Marquis de Lafayette—once called the 'Hero of Two Worlds'—now stands in chains before a tribunal of royalist officers and Catholic clergy. The Austrians, having tired of housing this embarrassment, have delivered him into Vendéen hands with a simple message: 'Do with him as you please.'\n\nThe charges are read aloud, each one met with growls of anger from the assembled loyalists. Treason against the Crown. Complicity in the imprisonment of the Royal Family. Commanding the forces that failed—or refused—to protect Louis XVI and Marie Antoinette. Propagating the poisonous doctrines of constitutional monarchy that weakened the throne and enabled the Jacobin terror.\n\n'I served France,' Lafayette protests weakly. 'I tried to save the King. I fled the Revolution when it turned to madness—'\n\n'You created that madness!' an officer shouts. 'Your American ideals, your National Assembly, your constitutional fantasies—all of it led to the guillotine! The King's blood is on your hands as surely as if you wielded the blade yourself!'\n\nThe prosecution presents damning evidence: Lafayette's letters advocating limits on royal power, his orders to the National Guard during the October Days when the mob dragged the Royal Family from Versailles, his failure to prevent the flight to Varennes from becoming a disaster. Most damningly, they read his pamphlets calling for a monarchy 'restrained by law'—words that sound like blasphemy in this room of absolute monarchists.\n\nYet even here, some voices counsel caution. An elderly nobleman notes that Lafayette was imprisoned by the very revolutionaries he supposedly served—proof that even the Jacobins saw him as an enemy. A priest reminds the court that vengeance belongs to God, and that mercy is a kingly virtue. A pragmatic general suggests that executing a man famous in America and England might damage Vendée's hopes for foreign recognition and support.\n\nBut the civil war still rages. Republican armies still burn churches and murder priests across France. The traumatized young King, scarred by years of revolutionary brutality, must decide: Does Lafayette deserve the mercy he failed to show the Royal Family? Or does justice demand that this architect of revolution face the same fate he helped bring upon his King?"
+  vendee.200.a:0 "Guilty. He hangs at dawn as a traitor to the Crown."
+  vendee.200.b:0 "Guilty. Life imprisonment in a fortress—let him rot."
+  vendee.200.c:0 "Exile him to America. Let him live with his failure."
 
   vendee.210.t:0 "Fate of the National Assembly"
   vendee.210.d:0 "A kingdom cannot serve two masters. What becomes of the Assembly?"
   vendee.210.a:0 "Dissolve This ABOMINATION!"
   vendee.210.b:0 "Keep it as an advisory chamber."
   vendee.210.c:0 "Dissolve it, and PURGE THEM ALL!!"
+  VND_regent: "Regent"
 
 
   VND_raise_vendee_army: "Raise the Vendée Army"
