@@ -227,6 +227,7 @@ focus_tree = {
         completion_reward = {
             add_ideas = VND_women_royal_warriors_idea
             add_stability = -0.08
+			set_country_flag = vendee_women
         }
     }
 
@@ -256,6 +257,17 @@ focus_tree = {
             add_army_experience = 30
 			add_convoys = 20
 			add_political_power = 30
+        }
+    }
+	focus = {
+        id = VND_rural_warfare
+        icon = GFX_goal_generic_army_artillery2
+        prerequisite = { focus =VND_royal_women_at_arms }
+        x = 10
+        y = 3
+        cost = 3
+        completion_reward = {
+            VND_rural_warfare_idea
         }
     }
 
