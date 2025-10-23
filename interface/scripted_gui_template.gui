@@ -32,7 +32,7 @@ guiTypes = {
 		iconType ={
 			name ="bubble"
 			spriteType = "GFX_bubble"
-			position = { x= 280 y = 350 }
+			position = { x= 150 y = 240 }
 			Orientation = "UPPER_LEFT"
 		}
 
