@@ -201,7 +201,10 @@ ideologies = {
 			
 			constitution_monarchy  = {
 			}
-
+			
+			enlightened_absolutism  = {
+			}
+			
 			oligarchism  = {
 			}
 

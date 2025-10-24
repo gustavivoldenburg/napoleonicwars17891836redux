@@ -443,7 +443,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=despotism
+			ideology=absolute_monarchy
             traits={Ascania catherine_the_great_leader_generous}
 			desc = RUS_CATHERINEII_DESC
 			expire="1797.1.1"

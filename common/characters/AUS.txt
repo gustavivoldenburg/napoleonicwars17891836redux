@@ -525,7 +525,7 @@ characters = {
 			}
 		}
 		country_leader={
-			ideology=despotism
+			ideology=enlightened_absolutism
 			desc = AUS_JOSEPH_I_DESC
 		}
 	}

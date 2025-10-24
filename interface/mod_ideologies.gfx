@@ -7,4 +7,8 @@ spriteTypes = {
 		name = "GFX_ideology_constitution_monarchy"
 		texturefile = "gfx/interface/ideologies/constitution_monarchy.dds"
     }
-}	
+	SpriteType = {
+		name = "GFX_ideology_enlightened_absolutism"
+		texturefile = "gfx/interface/ideologies/enlightened_absolutism.dds"
+    }
+}
