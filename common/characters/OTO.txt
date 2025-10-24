@@ -143,7 +143,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=despotism
+			ideology=absolute_monarchy
 			traits={Osman}
 			desc = OTO_ABDULHAMIDI_DESC
 			expire="1797.1.1"
