@@ -235,7 +235,7 @@ characters = {
 			}
 		}
 		country_leader={
-			ideology=despotism
+			ideology=absolute_monarchy
 			desc = POR_MARIAII_DESC
 			expire="1797.1.1"
 		}
