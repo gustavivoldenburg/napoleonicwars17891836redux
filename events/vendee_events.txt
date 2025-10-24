@@ -378,7 +378,6 @@ country_event = {
 	
 	add_stability = 0.05
     add_war_support = 0.05
-	set_country_flag = vendee_next_focus
   }
 }
 country_event = {
