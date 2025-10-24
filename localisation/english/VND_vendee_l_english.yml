@@ -80,7 +80,7 @@
   vendee.8.c: "A regent? what next......girl education?(if you want girl education choose lafayette!)"
   VND_louis_orlean_tt: "§YYou unlock orlean path§!"
   VND_what_next: "Uncertain Future"
-  
+  lafayette_path: "§BChoose Lafayette Path§!"
   vendee.100.t:0 "The Question of Lafayette"
   vendee.100.d:0 "A courier from Vienna arrived at court bearing unexpected news—and an unexpected prisoner. The Austrians, having held the Marquis de Lafayette in their fortress at Olmütz for years, have decided his fate is no longer their concern. With characteristic Habsburg pragmatism, they have transferred the famous general to Vendéen custody, washing their hands of a man who embarrasses all sides.\n\nGilbert du Motier, Marquis de Lafayette, now stands in chains before the court of the young King he once served—and whose family he failed to save. The 'Hero of Two Worlds' who fought for American liberty and French reform now appears gaunt and aged, his revolutionary ideals having led to nothing but terror and tyranny.\n\nThe constitutional monarchists see an opportunity. Lafayette championed a British-style monarchy with the King as a symbolic figurehead—precisely what they envision for France's future. His prestige, especially with the Americans, could legitimize a moderate settlement. 'He made mistakes,' they argue, 'but he tried to save Louis XVI. He fled the Jacobins just as we did.'\n\nThe absolutists are incensed. 'This man stripped your father of his powers!' they remind the King. 'He commanded the mob that imprisoned the Royal Family at the Tuileries! His constitutional fantasies paved the road to the guillotine! He is a traitor who deserves a traitor's death!'\n\nThe Federalist advisors offer a middle path: clemency in exchange for public service. Lafayette's military expertise and international connections could prove valuable, and mercy would demonstrate that constitutional monarchy is not vengeance.\n\nLouis XVII studies the prisoner in silence. Here stands the man who once swore to protect the Royal Family, who commanded the National Guard that failed to stop the Revolution's descent into madness. The King remembers his father's letters, which spoke of Lafayette with both disappointment and a strange, persistent hope that the Marquis might yet prove loyal.\n\nWhat justice does Lafayette deserve? The answer will define what kind of monarchy France shall become."
   vendee.100.a:0 "Full pardon and welcome."
@@ -107,7 +107,11 @@
   VND_Inf_02: "Federalist Division"
   VND_rural_warfare_idea: "Rural Warfare"
   VND_rural_warfare: "Vendee Rural"
-
+  vendee.7.a: "Fate of Federalist"
+  vendee.7.b: "The civil war has ended in total victory for the Royal cause. The Jacobin leadership has been executed, their reign of terror finally brought to an end. But in the dungeons of reclaimed fortresses and requisitioned buildings, another group awaits judgment—the Federalists.\n\nThese men had been enemies of the Jacobins, opponents of Robespierre's tyranny. Some had even offered aid during the darkest days of the war. But they had also been revolutionaries once, men who had voted for a Republic, who had supported the overthrow of Louis XVI. Their hands, too, were stained with the crime of regicide—if not by direct vote, then by complicity in the system that murdered a King.\n\nLouis XVII, now showing signs of recovery from his childhood ordeal, has grown into a young man of quiet intensity. The haunted look never quite leaves his eyes, but his mind is sharp and his will growing stronger each day. When his advisors present the Federalist question, he listens carefully to all sides.\n\nThe hardline royalists demand blood. 'They are republicans, Your Majesty,' declares the Comte de Charette. 'They supported the Revolution. They may have turned against the Jacobins, but only when the Terror threatened them personally. They would have been content to let France remain a republic. They must face justice.'\n\nOthers counsel pragmatism. 'The Federalists control significant territories, Sire,' explains a senior minister. 'Many are skilled administrators, military officers, men of education. To execute them all would create martyrs and deprive France of talent she desperately needs. We have already lost so many...'\n\nThe Catholic clergy urges mercy. 'Our Lord taught forgiveness, Your Majesty. These men have renounced the Jacobin madness. Some have already sworn loyalty to the Crown. If we show mercy, we demonstrate that royal justice is superior to revolutionary vengeance.'\n\nLouis XVII sits in silence for a long moment, his fingers tracing the scars on his wrists—reminders of shackles worn in childhood. Finally, he speaks, and all present lean forward to hear the King's judgment."
+  vendee.7.c: "Hang Them!"
+  vendee.7.d: "Mercy for those who submit. They must swear absolute loyalty."
+  vendee.7.e: "Enough blood has been spilled. Grant general amnesty."
 
   VND_raise_vendee_army: "Raise the Vendée Army"
   VND_raise_vendee_army_desc: "Rifles, rosaries, and rough terrain. We know how to fight at home."
@@ -165,4 +169,39 @@
   vendee.317.d:0 "Berlin will not intervene."
 
   vendee.ok:0 "Noted."
+  
+  # ========= ECONOMY DEBUFFS =========
+  econ_crisis_stage_10:0 "Economic Meltdown"
+  econ_crisis_stage_9:0 "Economic Collapse"
+  econ_crisis_stage_8:0 "Severe Recession"
+  econ_crisis_stage_7:0 "Major Downturn"
+  econ_crisis_stage_6:0 "Deep Slowdown"
+  econ_crisis_stage_5:0 "Heavy Headwinds"
+  econ_crisis_stage_4:0 "Strained Economy"
+  econ_crisis_stage_3:0 "Fragile Recovery"
+  econ_crisis_stage_2:0 "Tepid Uptick"
+  econ_crisis_stage_1:0 "Faint Stabilization"
 
+  # ========= ARMY DEBUFFS =========
+  army_collapse_stage_10:0 "Army In Disarray"
+  army_collapse_stage_9:0 "Shattered Command"
+  army_collapse_stage_8:0 "Broken Cohesion"
+  army_collapse_stage_7:0 "Severe Disorganization"
+  army_collapse_stage_6:0 "Critical Inefficiency"
+  army_collapse_stage_5:0 "Operational Strain"
+  army_collapse_stage_4:0 "Low Readiness"
+  army_collapse_stage_3:0 "Shaky Discipline"
+  army_collapse_stage_2:0 "Uneven Standards"
+  army_collapse_stage_1:0 "Minimal Recovery"
+
+  # ========= POLITICAL/PP DEBUFFS =========
+  political_collapse_stage_10:0 "Political Breakdown"
+  political_collapse_stage_9:0 "Paralysed State"
+  political_collapse_stage_8:0 "Crisis of Governance"
+  political_collapse_stage_7:0 "Faction Gridlock"
+  political_collapse_stage_6:0 "Fraying Legitimacy"
+  political_collapse_stage_5:0 "Weak Executive"
+  political_collapse_stage_4:0 "Shaky Coalition"
+  political_collapse_stage_3:0 "Thin Authority"
+  political_collapse_stage_2:0 "Tentative Order"
+  political_collapse_stage_1:0 "Wobbly Calm"

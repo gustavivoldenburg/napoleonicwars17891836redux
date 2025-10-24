@@ -409,6 +409,84 @@ country_event = {
   }
 }
 country_event = {
+  id = vendee.7
+  title = vendee.7.a
+  desc = vendee.7.b
+  picture = GFX_regent_event_image
+  fire_only_once = yes
+  is_triggered_only = yes
+
+  option = {
+    name = vendee.7.c
+	21 = {
+            add_resistance = -10
+            add_compliance = -10
+    }
+    20 = {
+            add_resistance = -10
+            add_compliance = -10
+    }
+    19 = {
+            add_resistance = -10
+            add_compliance = -10
+    }
+    22 = {
+            add_resistance = -10
+            add_compliance = -10
+    }	
+	14 = {
+            add_resistance = -10
+            add_compliance = -10
+    }
+	}
+  option = {
+    name = vendee.7.d
+	21 = {
+            add_resistance = 2.5
+            add_compliance = 2.5
+    }
+    20 = {
+            add_resistance = 2.5
+            add_compliance = 2.5
+    }
+    19 = {
+            add_resistance = 2.5
+            add_compliance = 2.5
+    }
+    22 = {
+            add_resistance = 2.5
+            add_compliance = 2.5
+    }	
+	14 = {
+            add_resistance = 2.5
+            add_compliance = 2.5
+    }	
+  }	
+  option = {
+    name = vendee.7.e
+	21 = {
+            add_resistance = 5
+            add_compliance = 5
+    }
+    20 = {
+            add_resistance = 5
+            add_compliance = 5
+    }
+    19 = {
+            add_resistance = 5
+            add_compliance = 5
+    }
+    22 = {
+            add_resistance = 5
+            add_compliance = 5
+    }	
+	14 = {
+            add_resistance = 5
+            add_compliance = 5
+    }
+ } 
+
+country_event = {
   id = vendee.8
   title = vendee.8.a
   desc = vendee.8.b
@@ -416,13 +494,19 @@ country_event = {
   fire_only_once = yes
   is_triggered_only = yes
 
-  option = {
-    name = vendee.8.c
-	set_country_flag = next_focus
-	add_ideas = {
-	    political_collapse_stage_10
-		army_collapse_stage_10
-        econ_crisis_stage_10
-	}	
-  }
-}
+    option = {
+        name = vendee.8.c
+	    set_country_flag = next_focus
+	    add_ideas = {
+	            political_collapse_stage_10
+		        army_collapse_stage_10
+                econ_crisis_stage_10
+	    }
+        remove_ideas = 	{
+	        VND_rural_warfare_idea
+			VND_federalist_contacts_idea
+			VND_compromise_charter_idea
+			the_counter_revolutionary
+        }
+    }
+}	
