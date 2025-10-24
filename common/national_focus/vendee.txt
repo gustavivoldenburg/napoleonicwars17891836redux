@@ -367,5 +367,24 @@ focus_tree = {
             add_ideas = VND_rural_warfare_idea
         }
     }
+	# ===========================
+    # POST-CIVIL WAR Branch
+    # ===========================
+	focus = {
+        id = VND_what_next
+        icon = GFX_goal_generic_army_artillery2
+        prerequisite = { 
+		        focus = VND_moderate_shank_hand
+				focus = VND_fate_of_jacobins 
+		        focus = VND_fate_of_national_assembly
+				focus = VND_fate_of_federalist
+		}
+        x = 10
+        y = 5
+        cost = 3
+        completion_reward = {
+		 set_country_flag = next_focus
+        }
+    }
 
 }
