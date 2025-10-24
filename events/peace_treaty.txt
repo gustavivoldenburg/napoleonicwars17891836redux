@@ -33,7 +33,7 @@ country_event = {
         SPR = { transfer_state = 806 }
 		PRE = { transfer_state = 16 }
 		HOL = { transfer_state = 310 }
-		PRU = { transfer_state = 1112 }
+		PRE = { transfer_state = 1112 }
 		POR = { transfer_state = 958 }
 
         VND = {

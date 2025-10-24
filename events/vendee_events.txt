@@ -400,7 +400,7 @@ country_event = {
   id = vendee.5
   title = vendee.5.a
   desc = vendee.5.b
-  picture = GFX_return_palace_event_image
+  picture = GFX_federalist_revolt_event_image
   fire_only_once = yes
   is_triggered_only = yes
 
