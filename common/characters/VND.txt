@@ -7,7 +7,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=despotism
+			ideology=absolute_monarchy
 			traits={Bourbon}
 			desc = VND_LOUISXVII_DESC
 			expire="1800.1.1"

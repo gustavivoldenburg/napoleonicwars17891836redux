@@ -195,6 +195,12 @@ ideologies = {
 
 			despotism  = {
 			}
+			
+			absolute_monarchy  = {
+			}
+			
+			constitution_monarchy  = {
+			}
 
 			oligarchism  = {
 			}
