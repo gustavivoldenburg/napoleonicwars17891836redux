@@ -3582,4 +3582,8 @@ spriteTypes = {
 		name = "GFX_federalist_revolt_event_image"
 		texturefile = "gfx/event_pictures/report_event_federalist_revolt.dds"
 	}
+	spriteType = {
+		name = "GFX_regent_event_image"
+		texturefile = "gfx/event_pictures/report_event_regent.dds"
+	}
 }

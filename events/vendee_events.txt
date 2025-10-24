@@ -23,6 +23,7 @@ country_event = {
         name = vendee.100.c   # Refuse
         add_war_support = 0.02
         add_stability = -0.02
+		custom_effect_tooltip = VND_louis_orlean_tt
     }
 }
 
@@ -405,5 +406,22 @@ country_event = {
 
   option = {
     name = vendee.5.c
+  }
+}
+country_event = {
+  id = vendee.8
+  title = vendee.8.a
+  desc = vendee.8.b
+  picture = GFX_regent_event_image
+  fire_only_once = yes
+  is_triggered_only = yes
+
+  option = {
+    name = vendee.8.c
+	add_ideas = {
+	    political_collapse_stage_10
+		army_collapse_stage_10
+        econ_crisis_stage_10
+	}	
   }
 }

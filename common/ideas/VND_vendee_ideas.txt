@@ -91,5 +91,378 @@ ideas = {
         removal_cost = -1
     }
 
+		econ_crisis_stage_10 = {
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.25
+				production_speed_buildings_factor = -0.6
+				industrial_capacity_factory = -0.5
+				industrial_capacity_dockyard = -0.5
+				production_factory_efficiency_gain_factor = -0.5
+				production_factory_start_efficiency_factor = -0.4
+				local_resources_factor = -0.35
+				research_speed_factor = -0.05
+				stability_factor = -0.15
+			}
+		}
+		econ_crisis_stage_9 = {
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.225
+				production_speed_buildings_factor = -0.54
+				industrial_capacity_factory = -0.45
+				industrial_capacity_dockyard = -0.45
+				production_factory_efficiency_gain_factor = -0.45
+				production_factory_start_efficiency_factor = -0.36
+				local_resources_factor = -0.315
+				research_speed_factor = -0.045
+				stability_factor = -0.135
+			}
+		}
+		econ_crisis_stage_8 = {
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.2
+				production_speed_buildings_factor = -0.48
+				industrial_capacity_factory = -0.4
+				industrial_capacity_dockyard = -0.4
+				production_factory_efficiency_gain_factor = -0.4
+				production_factory_start_efficiency_factor = -0.32
+				local_resources_factor = -0.28
+				research_speed_factor = -0.04
+				stability_factor = -0.12
+			}
+		}
+		econ_crisis_stage_7 = {
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.175
+				production_speed_buildings_factor = -0.42
+				industrial_capacity_factory = -0.35
+				industrial_capacity_dockyard = -0.35
+				production_factory_efficiency_gain_factor = -0.35
+				production_factory_start_efficiency_factor = -0.28
+				local_resources_factor = -0.245
+				research_speed_factor = -0.035
+				stability_factor = -0.105
+			}
+		}
+		econ_crisis_stage_6 = {
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.15
+				production_speed_buildings_factor = -0.36
+				industrial_capacity_factory = -0.3
+				industrial_capacity_dockyard = -0.3
+				production_factory_efficiency_gain_factor = -0.3
+				production_factory_start_efficiency_factor = -0.24
+				local_resources_factor = -0.21
+				research_speed_factor = -0.03
+				stability_factor = -0.09
+			}
+		}
+		econ_crisis_stage_5 = {
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.125
+				production_speed_buildings_factor = -0.3
+				industrial_capacity_factory = -0.25
+				industrial_capacity_dockyard = -0.25
+				production_factory_efficiency_gain_factor = -0.25
+				production_factory_start_efficiency_factor = -0.2
+				local_resources_factor = -0.175
+				research_speed_factor = -0.025
+				stability_factor = -0.075
+			}
+		}
+		econ_crisis_stage_4 = {
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.1
+				production_speed_buildings_factor = -0.24
+				industrial_capacity_factory = -0.2
+				industrial_capacity_dockyard = -0.2
+				production_factory_efficiency_gain_factor = -0.2
+				production_factory_start_efficiency_factor = -0.16
+				local_resources_factor = -0.14
+				research_speed_factor = -0.02
+				stability_factor = -0.06
+			}
+		}
+		econ_crisis_stage_3 = {
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.075
+				production_speed_buildings_factor = -0.18
+				industrial_capacity_factory = -0.15
+				industrial_capacity_dockyard = -0.15
+				production_factory_efficiency_gain_factor = -0.15
+				production_factory_start_efficiency_factor = -0.12
+				local_resources_factor = -0.105
+				research_speed_factor = -0.015
+				stability_factor = -0.045
+			}
+		}
+		econ_crisis_stage_2 = {
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.05
+				production_speed_buildings_factor = -0.12
+				industrial_capacity_factory = -0.1
+				industrial_capacity_dockyard = -0.1
+				production_factory_efficiency_gain_factor = -0.1
+				production_factory_start_efficiency_factor = -0.08
+				local_resources_factor = -0.07
+				research_speed_factor = -0.01
+				stability_factor = -0.03
+			}
+		}
+		econ_crisis_stage_1 = {
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.025
+				production_speed_buildings_factor = -0.06
+				industrial_capacity_factory = -0.05
+				industrial_capacity_dockyard = -0.05
+				production_factory_efficiency_gain_factor = -0.05
+				production_factory_start_efficiency_factor = -0.04
+				local_resources_factor = -0.035
+				research_speed_factor = -0.005
+				stability_factor = -0.015
+			}
+		}
+
+		army_collapse_stage_10 = {
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = -0.5
+				army_defence_factor = -0.5
+				army_org_factor = -0.25
+				army_morale_factor = -0.3
+				training_time_army_factor = 0.5
+				planning_speed = -0.5
+				max_planning = -0.3
+				land_reinforce_rate = -0.2
+				army_speed_factor = -0.2
+				supply_consumption_factor = 0.3
+				experience_gain_army_factor = -0.3
+			}
+		}
+		army_collapse_stage_9 = {
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = -0.45
+				army_defence_factor = -0.45
+				army_org_factor = -0.225
+				army_morale_factor = -0.27
+				training_time_army_factor = 0.45
+				planning_speed = -0.45
+				max_planning = -0.27
+				land_reinforce_rate = -0.18
+				army_speed_factor = -0.18
+				supply_consumption_factor = 0.27
+				experience_gain_army_factor = -0.27
+			}
+		}
+		army_collapse_stage_8 = {
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = -0.4
+				army_defence_factor = -0.4
+				army_org_factor = -0.2
+				army_morale_factor = -0.24
+				training_time_army_factor = 0.4
+				planning_speed = -0.4
+				max_planning = -0.24
+				land_reinforce_rate = -0.16
+				army_speed_factor = -0.16
+				supply_consumption_factor = 0.24
+				experience_gain_army_factor = -0.24
+			}
+		}
+		army_collapse_stage_7 = {
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = -0.35
+				army_defence_factor = -0.35
+				army_org_factor = -0.175
+				army_morale_factor = -0.21
+				training_time_army_factor = 0.35
+				planning_speed = -0.35
+				max_planning = -0.21
+				land_reinforce_rate = -0.14
+				army_speed_factor = -0.14
+				supply_consumption_factor = 0.21
+				experience_gain_army_factor = -0.21
+			}
+		}
+		army_collapse_stage_6 = {
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = -0.3
+				army_defence_factor = -0.3
+				army_org_factor = -0.15
+				army_morale_factor = -0.18
+				training_time_army_factor = 0.3
+				planning_speed = -0.3
+				max_planning = -0.18
+				land_reinforce_rate = -0.12
+				army_speed_factor = -0.12
+				supply_consumption_factor = 0.18
+				experience_gain_army_factor = -0.18
+			}
+		}
+		army_collapse_stage_5 = {
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = -0.25
+				army_defence_factor = -0.25
+				army_org_factor = -0.125
+				army_morale_factor = -0.15
+				training_time_army_factor = 0.25
+				planning_speed = -0.25
+				max_planning = -0.15
+				land_reinforce_rate = -0.1
+				army_speed_factor = -0.1
+				supply_consumption_factor = 0.15
+				experience_gain_army_factor = -0.15
+			}
+		}
+		army_collapse_stage_4 = {
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = -0.2
+				army_defence_factor = -0.2
+				army_org_factor = -0.1
+				army_morale_factor = -0.12
+				training_time_army_factor = 0.2
+				planning_speed = -0.2
+				max_planning = -0.12
+				land_reinforce_rate = -0.08
+				army_speed_factor = -0.08
+				supply_consumption_factor = 0.12
+				experience_gain_army_factor = -0.12
+			}
+		}
+		army_collapse_stage_3 = {
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = -0.15
+				army_defence_factor = -0.15
+				army_org_factor = -0.075
+				army_morale_factor = -0.09
+				training_time_army_factor = 0.15
+				planning_speed = -0.15
+				max_planning = -0.09
+				land_reinforce_rate = -0.06
+				army_speed_factor = -0.06
+				supply_consumption_factor = 0.09
+				experience_gain_army_factor = -0.09
+			}
+		}
+		army_collapse_stage_2 = {
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = -0.1
+				army_defence_factor = -0.1
+				army_org_factor = -0.05
+				army_morale_factor = -0.06
+				training_time_army_factor = 0.1
+				planning_speed = -0.1
+				max_planning = -0.06
+				land_reinforce_rate = -0.04
+				army_speed_factor = -0.04
+				supply_consumption_factor = 0.06
+				experience_gain_army_factor = -0.06
+			}
+		}
+		army_collapse_stage_1 = {
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = -0.05
+				army_defence_factor = -0.05
+				army_org_factor = -0.025
+				army_morale_factor = -0.03
+				training_time_army_factor = 0.05
+				planning_speed = -0.05
+				max_planning = -0.03
+				land_reinforce_rate = -0.02
+				army_speed_factor = -0.02
+				supply_consumption_factor = 0.03
+				experience_gain_army_factor = -0.03
+			}
+		}
+
+		political_collapse_stage_10 = {
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.30
+				political_power_factor = -0.50
+			}
+		}
+		political_collapse_stage_9 = {
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.27
+				political_power_factor = -0.45
+			}
+		}
+		political_collapse_stage_8 = {
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.24
+				political_power_factor = -0.40
+			}
+		}
+		political_collapse_stage_7 = {
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.21
+				political_power_factor = -0.35
+			}
+		}
+		political_collapse_stage_6 = {
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.18
+				political_power_factor = -0.30
+			}
+		}
+		political_collapse_stage_5 = {
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.15
+				political_power_factor = -0.25
+			}
+		}
+		political_collapse_stage_4 = {
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.12
+				political_power_factor = -0.20
+			}
+		}
+		political_collapse_stage_3 = {
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.09
+				political_power_factor = -0.15
+			}
+		}
+		political_collapse_stage_2 = {
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.06
+				political_power_factor = -0.10
+			}
+		}
+		political_collapse_stage_1 = {
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.03
+				political_power_factor = -0.05
+			}
+		}
+
 	}
 }

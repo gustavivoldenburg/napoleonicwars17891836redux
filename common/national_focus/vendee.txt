@@ -384,6 +384,7 @@ focus_tree = {
         cost = 3
         completion_reward = {
 		 set_country_flag = next_focus
+		 country_event = { id = vendee.8 days = 1 }
         }
     }
 	
