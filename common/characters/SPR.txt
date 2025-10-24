@@ -77,7 +77,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=despotism
+			ideology=absolute_monarchy
 			traits={Bourbon-Anjou}
 			desc = SPR_CHARLESIV_DESC
 			expire="1797.1.1"
