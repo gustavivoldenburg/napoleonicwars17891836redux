@@ -11,4 +11,8 @@ spriteTypes = {
 		name = "GFX_ideology_enlightened_absolutism"
 		texturefile = "gfx/interface/ideologies/enlightened_absolutism.dds"
     }
+	SpriteType = {
+		name = "GFX_ideology_theocracy"
+		texturefile = "gfx/interface/ideologies/theocracy.dds"
+    }
 }

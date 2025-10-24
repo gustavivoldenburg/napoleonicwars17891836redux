@@ -7,7 +7,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=despotism
+			ideology=theocracy
 			desc = PAP_PIUSVI_DESC
 			expire="1797.1.1"
 		}
@@ -20,7 +20,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=despotism
+			ideology=theocracy
 			desc = PAP_PIUSVII_DESC
 			expire="1797.1.1"
 		}
@@ -33,7 +33,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=despotism
+			ideology=theocracy
 			desc = PAP_LEOXII_DESC
 			expire="1797.1.1"
 		}
@@ -46,7 +46,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=despotism
+			ideology=theocracy
 			desc = PAP_PIUSVIII_DESC
 			expire="1797.1.1"
 		}
@@ -59,7 +59,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=despotism
+			ideology=theocracy
 			desc = PAP_GREGORYXVI_DESC
 			expire="1797.1.1"
 		}
@@ -72,7 +72,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=despotism
+			ideology=theocracy
 			desc = PAP_PIUSIX_DESC
 			expire="1797.1.1"
 		}

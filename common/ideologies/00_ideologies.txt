@@ -205,6 +205,9 @@ ideologies = {
 			enlightened_absolutism  = {
 			}
 			
+			theocracy  = {
+			}
+			
 			oligarchism  = {
 			}
 

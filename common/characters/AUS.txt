@@ -525,7 +525,7 @@ characters = {
 			}
 		}
 		country_leader={
-			ideology=enlightened_absolutism
+			ideology=absolute_monarchy
 			desc = AUS_JOSEPH_I_DESC
 		}
 	}
@@ -657,7 +657,7 @@ characters = {
 			}
 		}
 		country_leader={
-			ideology=despotism
+			ideology=enlightened_absolutism
 			traits={Habsburg-Lorraine}
 			desc = AUS_JOSEPHIIAUS_DESC
 			expire="1797.1.1"
