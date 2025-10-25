@@ -385,7 +385,9 @@ focus_tree = {
 		 country_event = { id = vendee.8 days = 1 }
         }
     }
-	
+	# ===========================
+    # Lafayette path
+    # ===========================
 
     focus = {
         id = VND_lafayette_path
@@ -394,11 +396,15 @@ focus_tree = {
         allow_branch = { has_country_flag = next_focus }
         x = 5
         y = 6
-        cost = 3
+        cost = 8
         available = { 
 		    has_country_flag = next_focus
 			has_country_flag = lafayette_path
 		}
+		completion_reward = {
+		 set_politics = { ruling_party = democratic } 
+		 country_event = { id = vendee.9 days = 1 }
+        }
     }
 
 }
