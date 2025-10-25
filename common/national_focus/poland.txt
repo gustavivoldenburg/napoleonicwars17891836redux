@@ -47,8 +47,8 @@ focus_tree = {
         prerequisite = { focus = POL_The_Great_Sejm }
         ai_will_do = { factor = 2 }
         completion_reward = {
-            experience_gain_army = 0.25
-            weekly_manpower = 150
+            army_experience = 50
+            manpower = 10000
         }
     }
  }
