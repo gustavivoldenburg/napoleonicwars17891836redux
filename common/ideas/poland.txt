@@ -33,7 +33,7 @@ ideas = {
 
             modifier = {
                 consumer_goods_factor = 0.5
-				cic_construction_boost = -0.3
+				production_speed_buildings_factor = -0.3
 				production_factory_efficiency_gain_factor = -0.2
             }
 
@@ -52,7 +52,7 @@ ideas = {
 
             modifier = {
                 consumer_goods_factor = 0.3
-				cic_construction_boost = -0.2
+				production_speed_buildings_factor = -0.2
 				production_factory_efficiency_gain_factor = -0.1
             }
 
