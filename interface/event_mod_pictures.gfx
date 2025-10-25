@@ -3594,4 +3594,8 @@ spriteTypes = {
 		name = "GFX_idea_economy_dead"
 		texturefile = "gfx/interface/ideas/VND/economy_dead.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_political_unstable"
+		texturefile = "gfx/interface/ideas/VND/political_unstable.dds"
+	}
 }

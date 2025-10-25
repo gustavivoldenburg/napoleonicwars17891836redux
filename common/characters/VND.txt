@@ -107,6 +107,19 @@ characters={
       logistics_skill = 2
     }
   }
-
+    VND_lafayette={
+		name = "Marquis de Lafayette"
+		portraits={
+			civilian={
+				large="gfx/leaders/VND/VND_lafayette"
+			}
+		}
+		country_leader={
+			ideology=liberal_monarchy
+			traits={VND_regent}
+			desc = VND_LAFAYETTE_DESC
+			expire="1805.1.1"
+		}
+    }
 }	
 
