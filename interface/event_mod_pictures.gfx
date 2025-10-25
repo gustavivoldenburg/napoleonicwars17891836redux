@@ -3598,4 +3598,8 @@ spriteTypes = {
 		name = "GFX_idea_political_unstable"
 		texturefile = "gfx/interface/ideas/VND/political_unstable.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_louis_xvii"
+		texturefile = "gfx/interface/ideas/VND/louis_xvii.dds"
+	}
 }
