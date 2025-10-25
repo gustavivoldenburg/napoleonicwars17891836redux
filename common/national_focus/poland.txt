@@ -11,12 +11,12 @@ focus_tree = {
 
 
     continuous_focus_position = { x = 4000 y = 4000 }
-
+    
     focus = {
         id = POL_The_Great_Sejm
-        icon = GFX_goal_vive_king
-        x = 10
-        y = 0
+        icon = GFX_
+        x = 1
+        y = 2
         cost = 1
         ai_will_do = { factor = 1 }
         completion_reward = {
@@ -24,3 +24,4 @@ focus_tree = {
             add_stability = 10
         }
     }
+
