@@ -3,7 +3,7 @@ characters={
 		name= "Stanislaw august poniatowski"
 		portraits={
 			civilian={
-				large="gfx/leaders/POL/POL_stanislaw_august"
+				large="gfx/leaders/POL/POL_stanislaw_august.dds"
 			}
 		}
 		country_leader={
