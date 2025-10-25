@@ -19,7 +19,7 @@ ideas = {
 				stability_factor = -0.3
             }
         }
-		POL_economy_stuck_in_17th_century = {
+		POL_economy_stuck_in_17th_century1 = {
 			allowed = {
                 always = no
             }
