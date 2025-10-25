@@ -6,6 +6,7 @@ promote_character = VND_louisxvii
 recruit_character = VND_Renee_Bordereau
 recruit_character = VND_Rochejaquelein
 recruit_character = VND_Cathelineau
+recruit_character = VND_charles_de_bonchamps
 }
 # Starting tech
 set_technology = {

@@ -89,6 +89,24 @@ characters={
       logistics_skill = 2
     }
   }
+  
+  VND_charles_de_bonchamps = {
+    name = "Charles de Bonchamps"
+    portraits = { army = { large = "gfx/leaders/VND/VND_Bonchamps.dds" } }
+	
+	field_marshal = {
+      traits = { 
+	    organizer
+        defensive_doctrine
+        cavalry_leader
+	  }
+      skill = 4
+      attack_skill = 3
+      defense_skill = 4
+      planning_skill = 4
+      logistics_skill = 2
+    }
+  }
 
 }	
 
