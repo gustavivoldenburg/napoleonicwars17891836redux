@@ -51,4 +51,34 @@ focus_tree = {
             add_manpower = 10000
         }
     }
+    focus = {
+        id = POL_Let_Bourgeoisie_in_Charge
+        mutually_exclusive = { focus = POL_Let_Bourgeoisie_in_Charge }
+        icon = GFX
+        x = 22
+        y = 1
+        cost = 10
+        prerequisite = { focus = POL_The_Great_Sejm }
+        ai_will_do = { factor = 2 }
+        completion_reward = {
+            add_opinion_modifier = { target = RUS modifier = large_decrease }
+            add_stability = 0.05
+            add_popularity = { ideology = democratic popularity = 0.15 }
+        }
+    }
+    focus = {
+        id = POL_Let_Magnates_in_Charge
+        mutually_exclusive = { focus = POL_Let_Magnates_in_Charge }
+        icon = GFX
+        x = 18
+        y = 1
+        cost = 10
+        prerequisite = { focus = POL_The_Great_Sejm }
+        ai_will_do = { factor = 2 }
+        completion_reward = {
+            consumer_goods_factor = -0.1
+            add_opinion_modifier = { target = RUS modifier = large_increase }
+            add_popularity = { ideology = neutrality popularity = 0.15 }
+        }
+    }
  }
