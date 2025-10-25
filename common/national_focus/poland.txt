@@ -38,4 +38,17 @@ focus_tree = {
             add_stability = 0.05
         }
     }
+    focus = {
+        id = POL_Improve_The_Warsaw_Academy
+        icon = GFX
+        x = 24
+        y = 1
+        cost = 5
+        prerequisite = { focus = POL_The_Great_Sejm }
+        ai_will_do = { factor = 2 }
+        completion_reward = {
+            experience_gain_army = 0.25
+            weekly_manpower = 150
+        }
+    }
  }
