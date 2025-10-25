@@ -11,8 +11,6 @@ set_technology = {
 }
 add_ideas = {
     POL_liberum_veto
-}
-add_ideas = {
     POL_economy_stuck_in_17th_century 
 }
 set_convoys = 20
