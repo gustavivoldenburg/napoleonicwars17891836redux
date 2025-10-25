@@ -8,8 +8,8 @@ characters={
 		}
 		country_leader={
 			ideology=enlightened_absolutism
-			traits={Bourbon}
-			desc = VND_LOUISXVII_DESC
+			traits={}
+			desc = POL_stanislaw_DESC
 			expire="1800.1.1"
 		}
     }
