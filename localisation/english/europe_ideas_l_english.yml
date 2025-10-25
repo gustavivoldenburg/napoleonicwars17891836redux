@@ -302,6 +302,8 @@ romania_has_been_formed_flag:0 "Romania has been Formed"
 
 POL_has_constitution_of_RUS_flag:0 "Poland-Lithuania has signed the Constitution of 3 May 1791"
 
+POL_liberum_veto:0 "Liberum veto is a mandatory law, that cannot be changed by a normal Sejm. Otherwise, the nobles wont accept this fact, and the Russian will invade the country."
+
 RUS_has_claimed_yedisan_aka_odessa_flag:0 "Russia has Claimed Yedisan"
 
 RUS_POL_war_focus_flag:0 "The Polish–Russian War Started"
