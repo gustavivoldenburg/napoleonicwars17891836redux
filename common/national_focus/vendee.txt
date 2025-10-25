@@ -405,6 +405,7 @@ focus_tree = {
 		 set_politics = { ruling_party = democratic } 
 		 country_event = { id = vendee.9 days = 1 }
 		 add_ideas = { VND_louis_xvii_idea }
+		 swap_ideas = { remove_idea = political_collapse_stage_10 add_idea = political_collapse_stage_9 }
         }
     }
 

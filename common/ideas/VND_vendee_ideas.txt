@@ -424,6 +424,7 @@ ideas = {
 		}
 
 		political_collapse_stage_10 = {
+		    picture = political_unstable
 			removal_cost = -1
 			modifier = {
 				stability_factor = -0.30
@@ -431,6 +432,7 @@ ideas = {
 			}
 		}
 		political_collapse_stage_9 = {
+		    picture = political_unstable
 			removal_cost = -1
 			modifier = {
 				stability_factor = -0.27
@@ -438,6 +440,7 @@ ideas = {
 			}
 		}
 		political_collapse_stage_8 = {
+		    picture = political_unstable
 			removal_cost = -1
 			modifier = {
 				stability_factor = -0.24
@@ -445,6 +448,7 @@ ideas = {
 			}
 		}
 		political_collapse_stage_7 = {
+		    picture = political_unstable
 			removal_cost = -1
 			modifier = {
 				stability_factor = -0.21
@@ -452,6 +456,7 @@ ideas = {
 			}
 		}
 		political_collapse_stage_6 = {
+		    picture = political_unstable
 			removal_cost = -1
 			modifier = {
 				stability_factor = -0.18
@@ -459,6 +464,7 @@ ideas = {
 			}
 		}
 		political_collapse_stage_5 = {
+		    picture = political_unstable
 			removal_cost = -1
 			modifier = {
 				stability_factor = -0.15
@@ -466,6 +472,7 @@ ideas = {
 			}
 		}
 		political_collapse_stage_4 = {
+		    picture = political_unstable
 			removal_cost = -1
 			modifier = {
 				stability_factor = -0.12
@@ -473,6 +480,7 @@ ideas = {
 			}
 		}
 		political_collapse_stage_3 = {
+		    picture = political_unstable
 			removal_cost = -1
 			modifier = {
 				stability_factor = -0.09
@@ -480,6 +488,7 @@ ideas = {
 			}
 		}
 		political_collapse_stage_2 = {
+		    picture = political_unstable
 			removal_cost = -1
 			modifier = {
 				stability_factor = -0.06
@@ -487,6 +496,7 @@ ideas = {
 			}
 		}
 		political_collapse_stage_1 = {
+		    picture = political_unstable
 			removal_cost = -1
 			modifier = {
 				stability_factor = -0.03
