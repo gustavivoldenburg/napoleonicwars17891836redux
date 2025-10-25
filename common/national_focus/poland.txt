@@ -4,7 +4,7 @@ focus_tree = {
     country = {
         factor = 0
         modifier = {
-            add = 10
+            add = 100
             tag = POL
         }
  }
@@ -14,7 +14,7 @@ focus_tree = {
     continuous_focus_position = { x = 4000 y = 4000 }
 
     focus = {
-        id = POL_The_GreatSejm
+        id = POL_The_Great_Sejm
         icon = GFX
         x = 1
         y = 2
