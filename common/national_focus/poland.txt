@@ -11,13 +11,13 @@ focus_tree = {
 
 
 
-    continuous_focus_position = { x = 4000 y = 4000 }
+    continuous_focus_position = { x = 2000 y = 2000 }
 
     focus = {
         id = POL_The_Great_Sejm
         icon = GFX
-        x = 1
-        y = 2
+        x = 20
+        y = 0
         cost = 5
         ai_will_do = { factor = 1 }
         completion_reward = {
@@ -28,8 +28,8 @@ focus_tree = {
     focus = {
         id = POL_Peasant_Safety_Measures
         icon = GFX
-        x = 1
-        y = 3
+        x = 20
+        y = 1
         cost = 5
         prerequisite = { focus = POL_The_Great_Sejm }
         ai_will_do = { factor = 1 }
