@@ -11,7 +11,7 @@ ideas = {
 
             removal_cost = -1
 
-            picture = idea_generic_army_problems
+            picture = russian_flag_paris
 
             modifier = {
                 surrender_limit = -0.8
@@ -29,7 +29,7 @@ ideas = {
 
             removal_cost = -1
 
-            picture = idea_generic_army_problems
+            picture = russian_flag_paris
 
             modifier = {
                 consumer_goods_factor = 0.5
@@ -48,7 +48,7 @@ ideas = {
 
             removal_cost = -1
 
-            picture = idea_generic_army_problems
+            picture = russian_flag_paris
 
             modifier = {
                 political_power_gain = 0.5
