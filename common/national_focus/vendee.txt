@@ -404,7 +404,7 @@ focus_tree = {
 		completion_reward = {
 		 set_politics = { ruling_party = democratic } 
 		 country_event = { id = vendee.9 days = 1 }
-		 add_idea = VND_louis_xvii_idea
+		 add_ideas = { VND_louis_xvii_idea }
         }
     }
 
