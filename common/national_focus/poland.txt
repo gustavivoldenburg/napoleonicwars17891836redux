@@ -48,7 +48,7 @@ focus_tree = {
         ai_will_do = { factor = 2 }
         completion_reward = {
             army_experience = 50
-            manpower = 10000
+            add_manpower = 10000
         }
     }
  }
