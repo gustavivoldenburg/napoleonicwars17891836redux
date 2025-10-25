@@ -7,14 +7,15 @@ focus_tree = {
             add = 10
             tag = POL
         }
-    }
+ }
+
 
 
     continuous_focus_position = { x = 4000 y = 4000 }
-    
+
     focus = {
-        id = POL_The_Great_Sejm
-        icon = GFX_
+        id = POL_The_GreatSejm
+        icon = GFX
         x = 1
         y = 2
         cost = 1
@@ -24,5 +25,4 @@ focus_tree = {
             add_stability = 10
         }
     }
-
-}
+ }
