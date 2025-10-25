@@ -111,7 +111,7 @@ characters={
 		name = "Marquis de Lafayette"
 		portraits={
 			civilian={
-				large="gfx/leaders/VND/VND_lafayette"
+				large="gfx/leaders/VND/VND_lafayette.dds"
 			}
 		}
 		country_leader={
