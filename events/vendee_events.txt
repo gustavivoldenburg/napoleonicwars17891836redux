@@ -135,7 +135,7 @@ country_event = {
     option = {
         name = vendee.300.c  # Ask Prussia
         ai_chance = { factor = 20 }
-        PRU = { country_event = { id = vendee.303 days = 1 } }
+        PRE = { country_event = { id = vendee.303 days = 1 } }
     }
 }
 
@@ -506,6 +506,7 @@ country_event = {
 			VND_federalist_contacts_idea
 			VND_compromise_charter_idea
 			the_counter_revolutionary
+			VND_clerical_support_idea
         }
     }
 }	

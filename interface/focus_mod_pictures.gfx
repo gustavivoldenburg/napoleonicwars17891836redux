@@ -43,4 +43,12 @@ spriteTypes = {
 		name = "GFX_goal_vive_king"
 		texturefile = "gfx/interface/goals/VND/vive_king.dds"
 	}
+	spriteType = {
+		name = "GFX_goal_lafayette_path"
+		texturefile = "gfx/interface/goals/VND/GFX_lafayette_path.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_help_coalition"
+		texturefile = "gfx/interface/goals/VND/GFX_help_coalition.dds"
+	}
 }

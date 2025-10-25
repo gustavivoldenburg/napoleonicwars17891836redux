@@ -133,7 +133,6 @@ focus_tree = {
         y = 1
         cost = 3
         completion_reward = {
-            set_country_flag = VND_royalist_path
             add_ideas = VND_clerical_support_idea
             add_stability = 0.05
             add_political_power = 50
@@ -218,7 +217,7 @@ focus_tree = {
     }
 	
 	# ===========================
-    # Military Branch
+    # Military Branch civil war path
     # ===========================
     focus = {
         id = VND_raise_vendee_army
@@ -328,7 +327,7 @@ focus_tree = {
     # Ask the First Coalition for help (fires request event; donors may accept or refuse)
     focus = {
         id = VND_call_first_coalition
-        icon = GFX_goal_generic_diplomacy
+        icon = GFX_goal_help_coalition
         prerequisite = { focus = VND_raise_vendee_army }
 		bypass = { has_global_flag = french_surrender_done }
         x = 11
@@ -342,17 +341,16 @@ focus_tree = {
     }
 	
 	focus = {
-        id = VND_spain_advisers
+        id = VND_greenvill
         icon = GFX_goal_generic_army_artillery2
         prerequisite = { focus = VND_call_first_coalition }
+		available = { has_country_flag = VND_royalist_path }
 		bypass = { has_global_flag = french_surrender_done }
         x = 11
         y = 3
         cost = 3
         completion_reward = {
-            add_army_experience = 30
-			add_convoys = 20
-			add_political_power = 30
+            load_oob = VND_Inf_01_1
         }
     }
 	focus = {
@@ -391,7 +389,7 @@ focus_tree = {
 
     focus = {
         id = VND_lafayette_path
-        icon = GFX_focus_generic_political_reform
+        icon = GFX_goal_lafayette_path
         prerequisite = { focus = VND_what_next }
         allow_branch = { has_country_flag = next_focus }
         x = 5

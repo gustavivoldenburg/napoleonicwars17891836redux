@@ -1,7 +1,7 @@
 ﻿division_template = {
 	name = "Vendean Division"
 
-	division_names_group = VND_Inf_01
+	division_names_group = VND_Inf_01_1
 
 regiments = {
         infantry = { x = 0 y = 0 }
@@ -20,7 +20,7 @@ units = {
 	#Vendean Army
 	division = {
 		name = "Vendean Division"
-		location = 14577
+		location = 6449
 		division_template = "Vendean Division"
 		start_experience_factor = 0.3
 	}
@@ -29,7 +29,7 @@ units = {
 	#Vendean Army
 	division = {
 		name = "Vendean Division"
-		location = 14581
+		location = 6449
 		division_template = "Vendean Division"
 		start_experience_factor = 0.3
 	}
@@ -38,7 +38,7 @@ units = {
 	#Vendean Army
 	division = {
 		name = "Vendean Division"
-		location = 9631
+		location = 6449
 		division_template = "Vendean Division"
 		start_experience_factor = 0.3
 	}
@@ -47,7 +47,7 @@ units = {
 	#Vendean Army
 	division = {
 		name = "Vendean Division"
-		location = 14570
+		location = 9434
 		division_template = "Vendean Division"
 		start_experience_factor = 0.3
 	}
@@ -56,7 +56,7 @@ units = {
 	#Vendean Army
 	division = {
 		name = "Vendean Division"
-		location = 11600
+		location = 9434
 		division_template = "Vendean Division"
 		start_experience_factor = 0.3
 	}
