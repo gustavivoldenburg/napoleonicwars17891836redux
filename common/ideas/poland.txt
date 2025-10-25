@@ -1,6 +1,6 @@
 ideas = {
 	country = {
-		POL_liberum_veto = {
+		POL_liberum_veto1 = {
 
             allowed = {
                 always = no
