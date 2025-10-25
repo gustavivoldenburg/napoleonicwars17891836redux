@@ -19,5 +19,24 @@ ideas = {
 				stability_factor = -0.3
             }
         }
+		POL_economy_stuck_in_17th_century = {
+			allowed = {
+                always = no
+            }
+			allowed_civil_war = {
+				always = yes
+			}
+
+            removal_cost = -1
+
+            picture = idea_generic_army_problems
+
+            modifier = {
+                consumer_goods_factor = 0.5
+				cic_construction_boost = -0.3
+				production_factory_efficiency_gain_factor = -0.1
+            }
+
+		}
 	}
 }
