@@ -38,5 +38,22 @@ ideas = {
             }
 
 		}
+		POL_the_great_sejm = {
+			allowed = {
+                always = no
+            }
+			allowed_civil_war = {
+				always = yes
+			}
+
+            removal_cost = -1
+
+            picture = idea_generic_army_problems
+
+            modifier = {
+                political_power_gain = 0.5
+				stability_factor = 0.1
+            }
+		}
 	}
 }
