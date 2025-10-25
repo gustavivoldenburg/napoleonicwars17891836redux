@@ -21,8 +21,8 @@ focus_tree = {
         cost = 1
         ai_will_do = { factor = 1 }
         completion_reward = {
+            POL = { add_ideas = the_great_sejm }
             add_political_power = 100
-            add_stability = 0.1
         }
     }
  }
