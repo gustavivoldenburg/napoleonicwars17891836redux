@@ -3586,4 +3586,8 @@ spriteTypes = {
 		name = "GFX_regent_event_image"
 		texturefile = "gfx/event_pictures/report_event_regent.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_army_destoryed"
+		texturefile = "gfx/interface/ideas/VND/army_destoryed.dds"
+	}
 }

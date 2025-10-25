@@ -1,7 +1,5 @@
 add_namespace = vendee
 
-
-
 country_event = {
     id = vendee.100
     title = vendee.100.t
@@ -485,6 +483,7 @@ country_event = {
             add_compliance = 5
     }
  } 
+} 
 
 country_event = {
   id = vendee.8
