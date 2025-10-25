@@ -9,7 +9,10 @@ ideologies = {
 
 			liberalism = {
 			}
-
+			
+			liberal_monarchy = {
+            }
+			
 			socialism = {
 			}
 

@@ -98,7 +98,7 @@ focus_tree = {
         prerequisite = { focus = VND_pardon_lafayette }
         x = 7
         y = 4
-        cost = 3
+        cost = 6
         available = { has_global_flag = french_surrender_done }
         completion_reward = {
             country_event = { id = vendee.110 days = 1 }      # “Fate of the Jacobins”
@@ -106,14 +106,14 @@ focus_tree = {
     }
 	focus = {
         id = VND_moderate_shank_hand
-        icon = GFX_goal_continuous_restrict_freedom
+        icon = GFX_SOV_bring_old_trotskyists_back_ccp_2d_sov_compatibility
         prerequisite = { 
 		    focus = VND_federalist_rebel
 			focus = VND_pardon_lafayette
 		}
         x = 5
         y = 4
-        cost = 3
+        cost = 6
         available = { has_global_flag = french_surrender_done }
         completion_reward = {
             country_event = { id = vendee.6 days = 1 }      # “Fate of the Jacobins”
@@ -141,7 +141,7 @@ focus_tree = {
 
     focus = {
         id = VND_restore_ancient_regime
-        icon = GFX_goal_generic_army_nationalism
+        icon = GFX_SOV_demand_eastern_poland_ccp_2d_sov_compatibility
         prerequisite = { focus = VND_royalist_purity }
         x = 13
         y = 2
@@ -187,14 +187,14 @@ focus_tree = {
 
     focus = {
         id = VND_fate_of_national_assembly
-        icon = GFX_goal_generic_political_reform
+        icon = GFX_focus_eng_move_to_secure_the_dominions
         prerequisite = { 
 		    focus = VND_try_lafayette
 			focus = VND_return_church_lands
         }
         x = 13
         y = 4
-        cost = 4
+        cost = 6
         available = { has_global_flag = french_surrender_done }
         completion_reward = {
             country_event = { id = vendee.210 days = 1 }  # “Fate of the National Assembly”
@@ -202,14 +202,14 @@ focus_tree = {
     }
 	focus = {
         id = VND_fate_of_federalist
-        icon = GFX_goal_generic_political_reform
+        icon = GFX_SOV_japanese_overtures_ccp_2d_sov_compatibility
         prerequisite = { 
 		    focus = VND_try_lafayette
 			focus = VND_return_church_lands
         }
         x = 15
         y = 4
-        cost = 4
+        cost = 6
         available = { has_global_flag = french_surrender_done }
         completion_reward = {
             country_event = { id = vendee.7 days = 1 }  # “Fate of the Federalist”
@@ -225,7 +225,7 @@ focus_tree = {
         prerequisite = { focus = VND_counter_revolution }
 		bypass = { has_global_flag = french_surrender_done }
         x = 10
-        y = 1
+        y = 2
         cost = 5
         ai_will_do = { factor = 1 }
         completion_reward = {
@@ -314,7 +314,7 @@ focus_tree = {
         prerequisite = { focus = VND_raise_vendee_army }
 		bypass = { has_global_flag = french_surrender_done }
         x = 9
-        y = 2
+        y = 3
         cost = 5
         ai_will_do = { factor = 1 }
         completion_reward = {
@@ -331,7 +331,7 @@ focus_tree = {
         prerequisite = { focus = VND_raise_vendee_army }
 		bypass = { has_global_flag = french_surrender_done }
         x = 11
-        y = 2
+        y = 3
         cost = 6
         ai_will_do = { factor = 1 }
         completion_reward = {
@@ -342,13 +342,13 @@ focus_tree = {
 	
 	focus = {
         id = VND_greenvill
-        icon = GFX_goal_generic_army_artillery2
+        icon = GFX_focus_generic_atlantic_coast
         prerequisite = { focus = VND_call_first_coalition }
 		available = { has_country_flag = VND_royalist_path }
 		bypass = { has_global_flag = french_surrender_done }
         x = 11
-        y = 3
-        cost = 3
+        y = 4
+        cost = 5
         completion_reward = {
             load_oob = VND_Inf_01_1
         }
@@ -359,8 +359,8 @@ focus_tree = {
         prerequisite = { focus =VND_royal_women_at_arms }
 		bypass = { has_global_flag = french_surrender_done }
         x = 9
-        y = 3
-        cost = 3
+        y = 4
+        cost = 4
         completion_reward = {
             add_ideas = VND_rural_warfare_idea
         }
@@ -370,7 +370,7 @@ focus_tree = {
     # ===========================
 	focus = {
         id = VND_what_next
-        icon = GFX_goal_generic_army_artillery2
+        icon = GFX_goal_unknown
         prerequisite = { 
 		        focus = VND_moderate_shank_hand
 				focus = VND_fate_of_jacobins 
