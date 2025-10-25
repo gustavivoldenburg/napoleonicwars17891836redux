@@ -44,8 +44,8 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/VND/vive_king.dds"
 	}
 	spriteType = {
-		name = "GFX_goal_lafayette_path"
-		texturefile = "gfx/interface/goals/VND/GFX_lafayette_path.dds"
+		name = "GFX_goal_lafayette_path1"
+		texturefile = "gfx/interface/goals/VND/GFX_lafayette_path1.dds"
 	}
 	spriteType = {
 		name = "GFX_goal_help_coalition"
