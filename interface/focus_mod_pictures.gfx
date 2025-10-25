@@ -35,8 +35,20 @@ spriteTypes = {
 		name = "GFX_goal_polandwarrussia"
 		texturefile = "gfx/interface/goals/goal_polandwarrussia.dds"
 	}
-        spriteType = {
-		name = "GFX_goal_internationalclique"
-		texturefile = "gfx/interface/goals/goal_internationalclique.dds"
+    spriteType = {
+		name = "GFX_federalist_rebel"
+		texturefile = "gfx/interface/goals/VND/GFX_federalist_rebel.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_vive_king"
+		texturefile = "gfx/interface/goals/VND/vive_king.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_lafayette_path1"
+		texturefile = "gfx/interface/goals/VND/GFX_lafayette_path1.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_help_coalition"
+		texturefile = "gfx/interface/goals/VND/GFX_help_coalition.dds"
 	}
 }

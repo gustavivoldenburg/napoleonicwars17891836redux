@@ -15552,4 +15552,10 @@ ambassador_to_russia = {
 			}
 		}
 	}
+	
+	VND_regent = {
+		random = no
+		stability_factor = 0.05
+		political_power_factor = -0.10
+	}
 }

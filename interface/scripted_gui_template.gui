@@ -1,0 +1,50 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "vendee_gui_window"
+		position = { x = 0 y = 0}	
+		size = { width = 800 height= 650 }
+		orientation = center
+		origo = center
+		fade_time = 100
+		moveable = yes
+		fade_type = linear
+		click_to_front = no
+		clipping = no
+		
+		background = {
+			name = "Background"		
+			quadTextureSprite ="GFX_scripted_gui_window_background"
+		}
+
+		buttonType ={
+			name ="close_button"
+			spriteType = "GFX_close_button"
+			position = { x= 20 y = 20 }
+			Orientation = "UPPER_LEFT"
+		}	
+		iconType ={
+			name ="vendee"
+			spriteType = "GFX_vendee_history"
+			position = { x= 280 y = 50 }
+			Orientation = "UPPER_LEFT"
+		}
+		iconType ={
+			name ="bubble"
+			spriteType = "GFX_bubble"
+			position = { x= 150 y = 240 }
+			Orientation = "UPPER_LEFT"
+		}
+
+		instantTextboxType = {
+			name = "political_title"
+			position = { x = 1 y = 130 }
+			font = "hoi_34header"
+			borderSize = {x = 40 y = 40}
+			text = "vendee_history_text"
+			maxWidth = 10000
+			maxHeight = 10000
+			fixedsize = yes
+		}
+	}
+}

@@ -1,0 +1,165 @@
+﻿division_template = {
+	name = "Federalist Division"
+
+	division_names_group = VND_Inf_02
+
+regiments = {
+        infantry = { x = 0 y = 0 }
+        infantry = { x = 1 y = 0 }
+        infantry = { x = 2 y = 0 }
+        infantry = { x = 0 y = 1 }
+        infantry = { x = 1 y = 1 }
+        infantry = { x = 2 y = 1 }
+		infantry = { x = 0 y = 2 }
+        artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }
+    }
+	priority = 2
+}
+units = {
+	#Federalist Army
+	division = {
+		name = "Federalist Division"
+		location = 9737
+		division_template = "Federalist Division"
+		start_experience_factor = 0.3
+	}
+}
+units = {
+	#Federalist Army
+	division = {
+		name = "Federalist Division"
+		location = 9737
+		division_template = "Federalist Division"
+		start_experience_factor = 0.3
+	}
+}
+units = {
+	#Federalist Army
+	division = {
+		name = "Federalist Division"
+		location = 6613
+		division_template = "Federalist Division"
+		start_experience_factor = 0.3
+	}
+}
+units = {
+	#Federalist Army
+	division = {
+		name = "Federalist Division"
+		location = 6613
+		division_template = "Federalist Division"
+		start_experience_factor = 0.3
+	}
+}
+units = {
+	#Federalist Army
+	division = {
+		name = "Federalist Division"
+		location = 6613
+		division_template = "Federalist Division"
+		start_experience_factor = 0.3
+	}
+}
+units = {
+	#Federalist Army
+	division = {
+		name = "Federalist Division"
+		location = 9495
+		division_template = "Federalist Division"
+		start_experience_factor = 0.3
+	}
+}
+units = {
+	#Federalist Army
+	division = {
+		name = "Federalist Division"
+		location = 11563
+		division_template = "Federalist Division"
+		start_experience_factor = 0.3
+	}
+}
+units = {
+	#Federalist Army
+	division = {
+		name = "Federalist Division"
+		location = 3552
+		division_template = "Federalist Division"
+		start_experience_factor = 0.3
+	}
+}
+units = {
+	#Federalist Army
+	division = {
+		name = "Federalist Division"
+		location = 3552
+		division_template = "Federalist Division"
+		start_experience_factor = 0.3
+	}
+}
+units = {
+	#Federalist Army
+	division = {
+		name = "Federalist Division"
+		location = 9898
+		division_template = "Federalist Division"
+		start_experience_factor = 0.3
+	}
+}
+units = {
+	#Federalist Army
+	division = {
+		name = "Federalist Division"
+		location = 9898
+		division_template = "Federalist Division"
+		start_experience_factor = 0.3
+	}
+}
+units = {
+	#Federalist Army
+	division = {
+		name = "Federalist Division"
+		location = 11834
+		division_template = "Federalist Division"
+		start_experience_factor = 0.3
+	}
+}
+units = {
+	#Federalist Army
+	division = {
+		name = "Federalist Division"
+		location = 11834
+		division_template = "Federalist Division"
+		start_experience_factor = 0.3
+	}
+}
+units = {
+	#Federalist Army
+	division = {
+		name = "Federalist Division"
+		location = 11834
+		division_template = "Federalist Division"
+		start_experience_factor = 0.3
+	}
+}
+units = {
+	#Federalist Army
+	division = {
+		name = "Federalist Division"
+		location = 911
+		division_template = "Federalist Division"
+		start_experience_factor = 0.3
+	}
+}
+### Starting Equipment ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "VND"
+		}
+		requested_factories = 1
+		progress = 0.28
+		efficiency = 100
+	}
+}

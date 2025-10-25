@@ -10,7 +10,7 @@ focus_tree = {
 	}
 
 
-    continuous_focus_position = { x = 2000 y = 2000 }
+    continuous_focus_position = { x = 4000 y = 4000 }
 
     focus = {
         id = VND_counter_revolution
@@ -75,6 +75,22 @@ focus_tree = {
             country_event = { id = vendee.100 days = 1 }  # “Pardon Lafayette?” dialog
         }
     }
+	
+	focus = {
+        id = VND_federalist_rebel
+        icon = GFX_federalist_rebel
+        prerequisite = { 
+		    focus = VND_constitutional_monarchy
+		}
+		bypass = { has_global_flag = french_surrender_done }
+        x = 5
+        y = 3
+        cost = 3
+        completion_reward = {
+            load_oob =  VND_Inf_02
+			country_event = { id = vendee.5 days = 1 }
+        }
+    }
 
     focus = {
         id = VND_fate_of_jacobins
@@ -82,10 +98,25 @@ focus_tree = {
         prerequisite = { focus = VND_pardon_lafayette }
         x = 7
         y = 4
-        cost = 3
+        cost = 6
         available = { has_global_flag = french_surrender_done }
         completion_reward = {
             country_event = { id = vendee.110 days = 1 }      # “Fate of the Jacobins”
+        }
+    }
+	focus = {
+        id = VND_moderate_shank_hand
+        icon = GFX_SOV_bring_old_trotskyists_back_ccp_2d_sov_compatibility
+        prerequisite = { 
+		    focus = VND_federalist_rebel
+			focus = VND_pardon_lafayette
+		}
+        x = 5
+        y = 4
+        cost = 6
+        available = { has_global_flag = french_surrender_done }
+        completion_reward = {
+            country_event = { id = vendee.6 days = 1 }      # “Fate of the Jacobins”
         }
     }
 
@@ -102,7 +133,6 @@ focus_tree = {
         y = 1
         cost = 3
         completion_reward = {
-            set_country_flag = VND_royalist_path
             add_ideas = VND_clerical_support_idea
             add_stability = 0.05
             add_political_power = 50
@@ -111,7 +141,7 @@ focus_tree = {
 
     focus = {
         id = VND_restore_ancient_regime
-        icon = GFX_goal_generic_army_nationalism
+        icon = GFX_SOV_demand_eastern_poland_ccp_2d_sov_compatibility
         prerequisite = { focus = VND_royalist_purity }
         x = 13
         y = 2
@@ -139,46 +169,142 @@ focus_tree = {
         id = VND_return_church_lands
         icon = GFX_goal_generic_construct_civ_factory
         prerequisite = { focus = VND_restore_ancient_regime }
-        x = 12
+        x = 15
         y = 3
         cost = 4
-		available = { has_global_flag = french_surrender_done }
         completion_reward = {
             add_political_power = 40
-			country_event = { id = vendee.5 days = 1 }
+			960 = {
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 2
+                    instant_build = yes
+                }
+            }
         }
-    }
+	}	
 
     focus = {
         id = VND_fate_of_national_assembly
-        icon = GFX_goal_generic_political_reform
+        icon = GFX_focus_eng_move_to_secure_the_dominions
         prerequisite = { 
 		    focus = VND_try_lafayette
 			focus = VND_return_church_lands
         }
         x = 13
         y = 4
-        cost = 4
+        cost = 6
         available = { has_global_flag = french_surrender_done }
         completion_reward = {
             country_event = { id = vendee.210 days = 1 }  # “Fate of the National Assembly”
         }
     }
+	focus = {
+        id = VND_fate_of_federalist
+        icon = GFX_SOV_japanese_overtures_ccp_2d_sov_compatibility
+        prerequisite = { 
+		    focus = VND_try_lafayette
+			focus = VND_return_church_lands
+        }
+        x = 15
+        y = 4
+        cost = 6
+        available = { has_global_flag = french_surrender_done }
+        completion_reward = {
+            country_event = { id = vendee.7 days = 1 }  # “Fate of the Federalist”
+        }
+    }
+	
 	# ===========================
-    # Military Branch
+    # Military Branch civil war path
     # ===========================
     focus = {
         id = VND_raise_vendee_army
         icon = GFX_focus_generic_full_social_mobilization
         prerequisite = { focus = VND_counter_revolution }
+		bypass = { has_global_flag = french_surrender_done }
         x = 10
-        y = 1
+        y = 2
         cost = 5
         ai_will_do = { factor = 1 }
         completion_reward = {
             add_ideas = VND_vendee_maquis_idea
             add_army_experience = 10
             add_war_support = 0.03
+			random_owned_controlled_state = {
+            limit = {
+                is_fully_controlled_by = ROOT
+                free_building_slots = { building = industrial_complex size > 0 include_locked = yes }
+            }
+            add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+        }
+        random_owned_controlled_state = {
+            limit = {
+                is_fully_controlled_by = ROOT
+                free_building_slots = { building = industrial_complex size > 0 include_locked = yes }
+            }
+            add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+        }
+        random_owned_controlled_state = {
+            limit = {
+                is_fully_controlled_by = ROOT
+                free_building_slots = { building = industrial_complex size > 0 include_locked = yes }
+            }
+            add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+        }
+        random_owned_controlled_state = {
+            limit = {
+                is_fully_controlled_by = ROOT
+                free_building_slots = { building = industrial_complex size > 0 include_locked = yes }
+            }
+            add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+        }
+        random_owned_controlled_state = {
+            limit = {
+                is_fully_controlled_by = ROOT
+                free_building_slots = { building = industrial_complex size > 0 include_locked = yes }
+            }
+            add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+        }
+
+        # MIL x5
+        random_owned_controlled_state = {
+            limit = {
+                is_fully_controlled_by = ROOT
+                free_building_slots = { building = arms_factory size > 0 include_locked = yes }
+            }
+            add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+        }
+        random_owned_controlled_state = {
+            limit = {
+                is_fully_controlled_by = ROOT
+                free_building_slots = { building = arms_factory size > 0 include_locked = yes }
+            }
+            add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+        }
+        random_owned_controlled_state = {
+            limit = {
+                is_fully_controlled_by = ROOT
+                free_building_slots = { building = arms_factory size > 0 include_locked = yes }
+            }
+            add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+        }
+        random_owned_controlled_state = {
+            limit = {
+                is_fully_controlled_by = ROOT
+                free_building_slots = { building = arms_factory size > 0 include_locked = yes }
+            }
+            add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+        }
+        random_owned_controlled_state = {
+            limit = {
+                is_fully_controlled_by = ROOT
+                free_building_slots = { building = arms_factory size > 0 include_locked = yes }
+            }
+            add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+        }
+    
         }
     }
 
@@ -186,23 +312,26 @@ focus_tree = {
         id = VND_royal_women_at_arms
         icon = GFX_focus_generic_women_in_military
         prerequisite = { focus = VND_raise_vendee_army }
+		bypass = { has_global_flag = french_surrender_done }
         x = 9
-        y = 2
+        y = 3
         cost = 5
         ai_will_do = { factor = 1 }
         completion_reward = {
             add_ideas = VND_women_royal_warriors_idea
             add_stability = -0.08
+			set_country_flag = vendee_women
         }
     }
 
     # Ask the First Coalition for help (fires request event; donors may accept or refuse)
     focus = {
         id = VND_call_first_coalition
-        icon = GFX_goal_generic_diplomacy
+        icon = GFX_goal_help_coalition
         prerequisite = { focus = VND_raise_vendee_army }
+		bypass = { has_global_flag = french_surrender_done }
         x = 11
-        y = 2
+        y = 3
         cost = 6
         ai_will_do = { factor = 1 }
         completion_reward = {
@@ -212,16 +341,71 @@ focus_tree = {
     }
 	
 	focus = {
-        id = VND_spain_advisers
-        icon = GFX_goal_generic_army_artillery2
+        id = VND_greenvill
+        icon = GFX_focus_generic_atlantic_coast
         prerequisite = { focus = VND_call_first_coalition }
+		available = { has_country_flag = VND_royalist_path }
+		bypass = { has_global_flag = french_surrender_done }
         x = 11
-        y = 3
+        y = 4
+        cost = 5
+        completion_reward = {
+            load_oob = VND_Inf_01_1
+        }
+    }
+	focus = {
+        id = VND_rural_warfare
+        icon = GFX_goal_generic_army_artillery2
+        prerequisite = { focus =VND_royal_women_at_arms }
+		bypass = { has_global_flag = french_surrender_done }
+        x = 9
+        y = 4
+        cost = 4
+        completion_reward = {
+            add_ideas = VND_rural_warfare_idea
+        }
+    }
+	# ===========================
+    # POST-CIVIL WAR Branch
+    # ===========================
+	focus = {
+        id = VND_what_next
+        icon = GFX_goal_unknown
+        prerequisite = { 
+		        focus = VND_moderate_shank_hand
+				focus = VND_fate_of_jacobins 
+		        focus = VND_fate_of_national_assembly
+				focus = VND_fate_of_federalist
+		}
+        x = 10
+        y = 5
         cost = 3
         completion_reward = {
-            add_army_experience = 30
-			add_convoys = 20
-			add_political_power = 30
+		 set_country_flag = next_focus
+		 country_event = { id = vendee.8 days = 1 }
+        }
+    }
+	# ===========================
+    # Lafayette path
+    # ===========================
+
+    focus = {
+        id = VND_lafayette_path
+        icon = GFX_goal_lafayette_path1
+        prerequisite = { focus = VND_what_next }
+        allow_branch = { has_country_flag = next_focus }
+        x = 5
+        y = 6
+        cost = 8
+        available = { 
+		    has_country_flag = next_focus
+			has_country_flag = lafayette_path
+		}
+		completion_reward = {
+		 set_politics = { ruling_party = democratic } 
+		 country_event = { id = vendee.9 days = 1 }
+		 add_ideas = { VND_louis_xvii_idea }
+		 swap_ideas = { remove_idea = political_collapse_stage_10 add_idea = political_collapse_stage_9 }
         }
     }
 

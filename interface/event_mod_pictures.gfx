@@ -3574,4 +3574,32 @@ spriteTypes = {
 		name = "GFX_return_palace_event_image"
 		texturefile = "gfx/event_pictures/report_event_return_vendee.dds"
 	}
+	spriteType = {
+		name = "GFX_louis_truma_event_image"
+		texturefile = "gfx/event_pictures/report_event_louis_truma.dds"
+	}
+	spriteType = {
+		name = "GFX_federalist_revolt_event_image"
+		texturefile = "gfx/event_pictures/report_event_federalist_revolt.dds"
+	}
+	spriteType = {
+		name = "GFX_regent_event_image"
+		texturefile = "gfx/event_pictures/report_event_regent.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_army_destoryed"
+		texturefile = "gfx/interface/ideas/VND/army_destoryed.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_economy_dead"
+		texturefile = "gfx/interface/ideas/VND/economy_dead.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_political_unstable"
+		texturefile = "gfx/interface/ideas/VND/political_unstable.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_louis_xvii"
+		texturefile = "gfx/interface/ideas/VND/louis_xvii.dds"
+	}
 }

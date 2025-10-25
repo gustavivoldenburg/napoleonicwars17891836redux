@@ -7,7 +7,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=despotism
+			ideology=absolute_monarchy
 			traits={Bourbon}
 			desc = VND_LOUISXVII_DESC
 			expire="1800.1.1"
@@ -39,31 +39,87 @@ characters={
             logistics_skill = 2
         }
 	}
-	VND_lafayettei = {
-            name = "Marquis de Lafayette"
-			
-            portraits = {
-                army = { large = "gfx/leaders/VND/VND_lafayette_i.dds" }
-				civilian = { large = "gfx/leaders/VND/VND_lafayette_i.dds" }
-            }	
 
-            corps_commander = {
-                traits = { charismatic }
-                skill = 4
-                attack_skill = 3
-                defense_skill = 4
-                planning_skill = 5
-                logistics_skill = 3
-            }
+  VND_Cathelineau = {
+    name = "Jacques Cathelineau"
+    portraits = { army = { large = "gfx/leaders/VND/VND_Cathelineau.dds" } }
+    corp_commander = {
+      traits = { infantry_leader aggressive_assaulter }
+      skill = 3 attack_skill = 4 defense_skill = 3 planning_skill = 2 logistics_skill = 2
+	  expire="1793.7.7"
+    }
+	field_marshal = {
+      traits = { infantry_leader aggressive_assaulter }
+      skill = 3 attack_skill = 4 defense_skill = 3 planning_skill = 2 logistics_skill = 2
+	  expire="1793.7.7"
+    }
+  }
+
+  VND_Rochejaquelein = {
+    name = "Henri de la Rochejaquelein"
+    portraits = { army = { large = "gfx/leaders/VND/VND_Rochejaquelein.dds" } }
+    corp_commander = {
+      traits = { infantry_leader trickster }
+      skill = 3 attack_skill = 4 defense_skill = 2 planning_skill = 3 logistics_skill = 1
+    }
+    field_marshal = {
+      traits = { inspirational_leader aggressive_assaulter }
+      skill = 4 attack_skill = 5 defense_skill = 2 planning_skill = 3 logistics_skill = 1
+    }
+  }
+  
+  VND_Renee_Bordereau = {
+    name = "Renée Bordereau"
+    portraits = { army = { large = "gfx/leaders/VND/VND_Renee_Bordereau.dds" } }
+
+    corp_commander = {
+      traits = { cavalry_leader trickster }
+      skill = 3
+      attack_skill = 3
+      defense_skill = 2
+      planning_skill = 2
+      logistics_skill = 2
+    }
+	field_marshal = {
+      traits = { cavalry_leader trickster }
+      skill = 3
+      attack_skill = 3
+      defense_skill = 2
+      planning_skill = 2
+      logistics_skill = 2
+    }
+  }
+  
+  VND_charles_de_bonchamps = {
+    name = "Charles de Bonchamps"
+    portraits = { army = { large = "gfx/leaders/VND/VND_Bonchamps.dds" } }
 	
-	        field_marshal = {
-                traits = { charismatic }
-                skill = 4
-                attack_skill = 2
-                defense_skill = 3
-                planning_skill = 4
-                logistics_skill = 2
-            }   
-	}
+	field_marshal = {
+      traits = { 
+	    organizer
+        defensive_doctrine
+        cavalry_leader
+	  }
+      skill = 4
+      attack_skill = 3
+      defense_skill = 4
+      planning_skill = 4
+      logistics_skill = 2
+    }
+  }
+    VND_lafayette={
+		name = "Marquis de Lafayette"
+		portraits={
+			civilian={
+				large="gfx/leaders/VND/VND_lafayette.dds"
+			}
+		}
+		country_leader={
+			ideology=liberal_monarchy
+			traits={VND_regent}
+			desc = VND_LAFAYETTE_DESC
+			expire="1805.1.1"
+		}
+    }
 }	
 

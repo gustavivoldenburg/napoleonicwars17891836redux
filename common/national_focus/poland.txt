@@ -1,0 +1,54 @@
+focus_tree = {
+    id = poland_focus
+
+    country = {
+        factor = 0
+        modifier = {
+            add = 100
+            tag = POL
+        }
+ }
+
+
+
+    continuous_focus_position = { x = 2000 y = 2000 }
+
+    focus = {
+        id = POL_The_Great_Sejm
+        icon = GFX
+        x = 20
+        y = 0
+        cost = 5
+        ai_will_do = { factor = 1 }
+        completion_reward = {
+            add_ideas { idea = POL_the_great_sejm_continues }
+            add_political_power = 100
+        }
+    }
+    focus = {
+        id = POL_Peasant_Safety_Measures
+        icon = GFX
+        x = 20
+        y = 1
+        cost = 5
+        prerequisite = { focus = POL_The_Great_Sejm }
+        ai_will_do = { factor = 1 }
+        completion_reward = {
+            add_war_support = 0.05
+            add_stability = 0.05
+        }
+    }
+    focus = {
+        id = POL_Improve_The_Warsaw_Academy
+        icon = GFX
+        x = 24
+        y = 1
+        cost = 5
+        prerequisite = { focus = POL_The_Great_Sejm }
+        ai_will_do = { factor = 2 }
+        completion_reward = {
+            army_experience = 50
+            add_manpower = 10000
+        }
+    }
+ }
