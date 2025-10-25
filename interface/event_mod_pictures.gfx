@@ -3602,4 +3602,8 @@ spriteTypes = {
 		name = "GFX_idea_louis_xvii"
 		texturefile = "gfx/interface/ideas/VND/louis_xvii.dds"
 	}
+	spriteType = {
+		name = "GFX_lafayette_regent_event_image"
+		texturefile = "gfx/event_pictures/report_event_lafayette_regent.dds"
+	}
 }
