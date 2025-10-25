@@ -38,7 +38,7 @@ ideas = {
             }
 
 		}
-		POL_the_great_sejm = {
+		POL_the_great_sejm_continues = {
 			allowed = {
                 always = no
             }
