@@ -3590,4 +3590,8 @@ spriteTypes = {
 		name = "GFX_idea_army_destoryed"
 		texturefile = "gfx/interface/ideas/VND/army_destoryed.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_economy_dead"
+		texturefile = "gfx/interface/ideas/VND/economy_dead.dds"
+	}
 }

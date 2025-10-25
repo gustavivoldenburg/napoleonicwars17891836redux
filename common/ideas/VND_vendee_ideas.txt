@@ -92,6 +92,7 @@ ideas = {
     }
 
 		econ_crisis_stage_10 = {
+		    picture = economy_dead
 			removal_cost = -1
 			modifier = {
 				consumer_goods_factor = 0.25
@@ -106,6 +107,7 @@ ideas = {
 			}
 		}
 		econ_crisis_stage_9 = {
+		    picture = economy_dead
 			removal_cost = -1
 			modifier = {
 				consumer_goods_factor = 0.225
@@ -120,6 +122,7 @@ ideas = {
 			}
 		}
 		econ_crisis_stage_8 = {
+		    picture = economy_dead
 			removal_cost = -1
 			modifier = {
 				consumer_goods_factor = 0.2
@@ -134,6 +137,7 @@ ideas = {
 			}
 		}
 		econ_crisis_stage_7 = {
+		    picture = economy_dead
 			removal_cost = -1
 			modifier = {
 				consumer_goods_factor = 0.175
@@ -148,6 +152,7 @@ ideas = {
 			}
 		}
 		econ_crisis_stage_6 = {
+		    picture = economy_dead
 			removal_cost = -1
 			modifier = {
 				consumer_goods_factor = 0.15
@@ -162,6 +167,7 @@ ideas = {
 			}
 		}
 		econ_crisis_stage_5 = {
+		    picture = economy_dead
 			removal_cost = -1
 			modifier = {
 				consumer_goods_factor = 0.125
@@ -176,6 +182,7 @@ ideas = {
 			}
 		}
 		econ_crisis_stage_4 = {
+		    picture = economy_dead
 			removal_cost = -1
 			modifier = {
 				consumer_goods_factor = 0.1
@@ -190,6 +197,7 @@ ideas = {
 			}
 		}
 		econ_crisis_stage_3 = {
+		    picture = economy_dead
 			removal_cost = -1
 			modifier = {
 				consumer_goods_factor = 0.075
@@ -204,6 +212,7 @@ ideas = {
 			}
 		}
 		econ_crisis_stage_2 = {
+		    picture = economy_dead
 			removal_cost = -1
 			modifier = {
 				consumer_goods_factor = 0.05
@@ -218,6 +227,7 @@ ideas = {
 			}
 		}
 		econ_crisis_stage_1 = {
+		    picture = economy_dead
 			removal_cost = -1
 			modifier = {
 				consumer_goods_factor = 0.025
