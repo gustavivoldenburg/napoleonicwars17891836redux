@@ -16,25 +16,25 @@ focus_tree = {
     focus = {
         id = POL_The_Great_Sejm
         icon = GFX
-        x = 10
-        y = 20
+        x = 1
+        y = 2
         cost = 5
         ai_will_do = { factor = 1 }
         completion_reward = {
-            add_ideas { idea = POL_the_great_sejm }
+            add_ideas { idea = POL_the_great_sejm_continues }
             add_political_power = 100
         }
     }
     focus = {
         id = POL_Peasant_Safety_Measures
         icon = GFX
-        x = 10
-        y = 30
+        x = 1
+        y = 3
         cost = 5
         prerequisite = { focus = POL_The_Great_Sejm }
         ai_will_do = { factor = 1 }
         completion_reward = {
-            add_monthly_population = 0.3
+            monthly_population = 0.3
             add_stability = 0.05
         }
     }
