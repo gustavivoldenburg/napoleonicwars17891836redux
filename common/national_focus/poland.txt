@@ -34,7 +34,7 @@ focus_tree = {
         prerequisite = { focus = POL_The_Great_Sejm }
         ai_will_do = { factor = 1 }
         completion_reward = {
-            add_monthly_population = 0.3
+            monthly_population = 0.3
             add_stability = 0.05
         }
     }
