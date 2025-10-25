@@ -1,4 +1,4 @@
-capital = Warsaw
+capital = 10
 1789.1.1 = {
 
 }
@@ -11,6 +11,9 @@ set_technology = {
 }
 add_ideas = {
     POL_liberum_veto
+}
+add_ideas = {
+
 }
 set_convoys = 20
 
