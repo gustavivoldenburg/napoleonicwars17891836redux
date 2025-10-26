@@ -3,7 +3,6 @@ VND_federalist_timeout = {
 	priority = 10
 	allowed = {
 	    TAG = VND
-		has_completed_focus = VND_federalist_promise
 		has_country_flag = federalist_start
 	}
 }

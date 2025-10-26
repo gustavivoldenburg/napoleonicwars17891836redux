@@ -16,9 +16,8 @@ VND_federalist_timeout = {
 
     visible = {	
 	    TAG = VND
-		has_completed_focus = VND_federalist_promise
+		has_country_flag = federalist_start
 	}
-	
 	complete_effect = {
         21 = {
             add_core_of = VND
