@@ -294,7 +294,7 @@ default = no
         }
 
         completion_reward = {
-            add_ideas = POR_colonial_navy_2
+            add_ideas = POR_colonial_navy
         }
     }
     focus = {
@@ -375,7 +375,7 @@ default = no
     }
     focus = {
         id = POR_the_royal_family_of_sciences
-        icon = GFX_focus_research_2
+        icon = GFX_focus_research2
         relative_position_id = POR_rebuild_lisbon
         x = 5
         y = 5
@@ -494,6 +494,8 @@ default = no
         y = 2
         prerequisite = {
             focus = POR_banquet_of_philosophers
+        }
+        prerequisite = {
             focus = POR_the_partido_frances_emerges
         }
 
