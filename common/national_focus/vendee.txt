@@ -389,15 +389,16 @@ focus_tree = {
         id = VND_federalist_promise
         icon = GFX_goal_unknown
 		allow_branch = { has_country_flag = next_focus }
-		available =  { has_country_flag = vendee_federalist_alliance }
+		available =  { 
+            always = no
+		}
         prerequisite = { 
 		        focus = VND_what_next
 		}
         x = 7
         y = 6
-        cost = 3
+        cost = 10
         completion_reward = {
-		 country_event = { id = vendee.10 days = 1 }
         }
     }
 	# ===========================

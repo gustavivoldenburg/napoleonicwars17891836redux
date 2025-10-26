@@ -497,6 +497,7 @@ country_event = {
     option = {
         name = vendee.8.c
 	    set_country_flag = next_focus
+		set_country_flag = federalist_wait
 	    add_ideas = {
 	            political_collapse_stage_10
 		        army_collapse_stage_10
@@ -506,7 +507,7 @@ country_event = {
 	        VND_rural_warfare_idea
 			VND_federalist_contacts_idea
 			VND_compromise_charter_idea
-			the_counter_revolutionary
+			the_counter_revolution
 			VND_clerical_support_idea
         }
     }
@@ -521,7 +522,6 @@ country_event = {
 
     option = {
         name = vendee.9.c
-		set_country_flag = federalist_wait
     }
 }	
 country_event = {
@@ -538,5 +538,8 @@ country_event = {
     option = {
         name = vendee.10.c
 		custom_effect_tooltip = federalist_waiting_tt
+		complete_national_focus = VND_federalist_promise
+		set_country_flag = federalist_start
+		activate_mission = VND_federalist_timeout
     }
 }
