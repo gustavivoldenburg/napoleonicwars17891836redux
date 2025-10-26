@@ -114,7 +114,7 @@
   vendee.7.c: "Hang Them!"
   vendee.7.d: "Mercy for those who submit. They must swear absolute loyalty."
   vendee.7.e: "Enough blood has been spilled. Grant general amnesty."
-  VND_greenvill: "Invasion of Greenvile"
+  VND_greenvill: "Invasion of Normandy"
   VND_moderate_shank_hand: "Reconcile The Moderate"
   VND_fate_of_federalist: "Fate of Federalist"
   VND_lafayette_path: "Lafayette as Regent"
@@ -177,7 +177,7 @@
   vendee.316.t:0 "Austria Declines"
   vendee.316.d:0 "Vienna sends regrets."
   vendee.317.t:0 "Prussia Declines"
-  vendee.317.d:0 "Berlin will not intervene."
+  vendee.317.d:0 "Berlin will not Help."
 
   vendee.ok:0 "Noted."
   
