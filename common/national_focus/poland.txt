@@ -140,7 +140,7 @@ focus_tree = {
         }
     }
     focus = {
-        id = POL_expansion_of_port_Palanga
+        id = POL_expansion_of_port_palanga
         icon = GFX_expand_port_palanga
         x = 40
         y = 1
