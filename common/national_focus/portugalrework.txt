@@ -211,6 +211,8 @@ default = no
         y = 4
         prerequisite = {
             focus = POR_reform_the_royal_army
+        }
+        prerequisite = {
             focus = POR_winds_from_paris
         }
         mutually_exclusive = { focus = POR_maintain_the_old_order }
@@ -350,7 +352,7 @@ default = no
         x = 0
         y = 3
         prerequisite = {
-            POR_secure_brazils_trade
+            focus = POR_secure_brazils_trade
         }
 
         cost = 4.3
