@@ -14,7 +14,7 @@ ideas = {
             picture = russian_flag_paris
 
             modifier = {
-                surrender_limit = -0.8
+                surrender_limit = -1
 				disabled_ideas = 1
 				stability_factor = -0.3
             }
@@ -72,6 +72,23 @@ ideas = {
             modifier = {
                 political_power_gain = 0.5
 				stability_factor = 0.1
+            }
+		}
+		POL_bourgeoisie_support_of_reforms = {
+			allowed = {
+                always = no
+            }
+			allowed_civil_war = {
+				always = yes
+			}
+
+            removal_cost = -1
+
+            picture = russian_flag_paris
+
+            modifier = {
+                recruitable_population_factor = 0.5
+				weekly_manpower = 200
             }
 		}
 	}
