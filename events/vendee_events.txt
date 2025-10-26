@@ -497,6 +497,7 @@ country_event = {
     option = {
         name = vendee.8.c
 	    set_country_flag = next_focus
+		set_country_flag = federalist_wait
 	    add_ideas = {
 	            political_collapse_stage_10
 		        army_collapse_stage_10
@@ -521,7 +522,6 @@ country_event = {
 
     option = {
         name = vendee.9.c
-		set_country_flag = federalist_wait
     }
 }	
 country_event = {
@@ -538,5 +538,7 @@ country_event = {
     option = {
         name = vendee.10.c
 		custom_effect_tooltip = federalist_waiting_tt
+		complete_national_focus = VND_federalist_promise
+		hidden_effect = { activate_mission = federalist_patience_mission}
     }
 }
