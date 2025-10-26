@@ -37,11 +37,11 @@ spriteTypes = {
 	}
 	spriteType = {
         name = "GFX_the_great_sejm"
-        texturefile = "gfx/interface/goals/VND/the_great_sejn.dds"
+        texturefile = "gfx/interface/goals/POL/the_great_sejn.dds"
     }
 		spriteType = {
         name = "GFX_peasant_safety_measures"
-        texturefile = "gfx/interface/goals/VND/GFX_peasant_safety_measures.dds"
+        texturefile = "gfx/interface/goals/POL/GFX_peasant_safety_measures.dds"
     }
     spriteType = {
 		name = "GFX_federalist_rebel"
