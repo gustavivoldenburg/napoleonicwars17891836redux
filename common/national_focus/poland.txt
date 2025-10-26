@@ -44,7 +44,7 @@ focus_tree = {
         x = 36
         y = 1
         cost = 5
-        prerequisite = { focus = POL_The_Great_Sejm }
+        prerequisite = { focus = POL_the_great_sejm }
         ai_will_do = { factor = 2 }
         completion_reward = {
             army_experience = 50
