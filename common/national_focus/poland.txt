@@ -188,10 +188,7 @@ focus_tree = {
         prerequisite = { focus = POL_Peasant_Safety_Measures }
         ai_will_do = { factor = 1 }
         completion_reward = {
-            add_resources = { 
-            state = 90
-            type = steel 
-            amount = 10 }
+            add_resource = { type = steel amount = 10 state = 90 }
             90 = {
                 add_extra_state_shared_building_slots = 1
                 add_building_construction = {
