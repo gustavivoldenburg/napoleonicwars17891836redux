@@ -40,7 +40,7 @@ focus_tree = {
     }
     focus = {
         id = POL_Improve_The_Warsaw_Academy
-        icon = GFX
+        icon = GFX_POL_university
         x = 36
         y = 1
         cost = 5
@@ -54,7 +54,7 @@ focus_tree = {
     focus = {
         id = POL_Let_Bourgeoisie_in_Charge
         mutually_exclusive = { focus = POL_Let_Magnates_in_Charge }
-        icon = GFX
+        icon = GFX_borguois_path
         x = 23
         y = 1
         cost = 10
@@ -141,7 +141,7 @@ focus_tree = {
     }
     focus = {
         id = POL_Expansion_of_port_Palanga
-        icon = GFX
+        icon = GFX_expand_port_palanga
         x = 40
         y = 1
         cost = 5
@@ -219,7 +219,7 @@ focus_tree = {
     }
     focus = {
         id = POL_Annex_The_Duchy_of_Courland
-        icon = GFX
+        icon = GFX_take_courland
         x = 26
         y = 1
         cost = 10
