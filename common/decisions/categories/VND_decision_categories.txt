@@ -1,6 +1,11 @@
 VND_federalist_decision = {
 	allowed = {
 		original_tag = VND
-		has_country_flag = federalist_start
 	}
+	
+	visible = {
+	    has_country_flag = federalist_start
+	}	
+	
+	priority = 10
 }
