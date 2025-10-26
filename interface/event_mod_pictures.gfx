@@ -3606,4 +3606,8 @@ spriteTypes = {
 		name = "GFX_lafayette_regent_event_image"
 		texturefile = "gfx/event_pictures/report_event_lafayette_regent.dds"
 	}
+	spriteType = {
+		name = "GFX_lafayette_oath_event_image"
+		texturefile = "gfx/event_pictures/report_event_lafayette_oath.dds"
+	}
 }
