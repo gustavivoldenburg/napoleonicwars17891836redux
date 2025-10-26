@@ -540,6 +540,5 @@ country_event = {
 		custom_effect_tooltip = federalist_waiting_tt
 		complete_national_focus = VND_federalist_promise
 		set_country_flag = federalist_start
-		activate_mission = VND_federalist_timeout
     }
 }
