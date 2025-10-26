@@ -164,7 +164,7 @@ spriteTypes = {
         	name = "GFX_the_great_sejm_shine"
         	texturefile = "gfx/interface/goals/POL/the_great_sejm.dds"
 				effectfile = "gfx/FX/buttonstate.lua"
-    	}	
+    	
 		animation = {
 			animationmaskfile = "gfx/interface/goals/POL/GFX_the_great_sejm.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
@@ -190,11 +190,12 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		legacy_lazy_load = no
-		spriteType = {
+		
+	}
+	spriteType = {
         	name = "GFX_peasant_safety_act_shine"
         	texturefile = "gfx/interface/goals/POL/peasant_safety_act.dds"
-				effectfile = "gfx/FX/buttonstate.lua"
-    	}	
+				effectfile = "gfx/FX/buttonstate.lua"	
 		animation = {
 			animationmaskfile = "gfx/interface/goals/POL/GFX_peasant_safety_act.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
@@ -220,11 +221,11 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		legacy_lazy_load = no
+	}	
 		spriteType = {
         	name = "GFX_borguois_path_shine"
         	texturefile = "gfx/interface/goals/POL/borguois_path.dds"
 				effectfile = "gfx/FX/buttonstate.lua"
-    	}	
 		animation = {
 			animationmaskfile = "gfx/interface/goals/POL/GFX_borguois_path.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
@@ -250,11 +251,11 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		legacy_lazy_load = no
-		spriteType = {
+	}	
+	spriteType = {
         	name = "GFX_expand_port_palanga_shine"
         	texturefile = "gfx/interface/goals/POL/expand_port_palanga.dds"
 				effectfile = "gfx/FX/buttonstate.lua"
-    	}	
 		animation = {
 			animationmaskfile = "gfx/interface/goals/POL/GFX_expand_port_palanga.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
@@ -280,11 +281,11 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		legacy_lazy_load = no
-		spriteType = {
+	}	
+	spriteType = {
         	name = "GFX_POL_university_shine"
         	texturefile = "gfx/interface/goals/POL/POL_university.dds"
 				effectfile = "gfx/FX/buttonstate.lua"
-    	}	
 		animation = {
 			animationmaskfile = "gfx/interface/goals/POL/GFX_POL_university.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
@@ -310,11 +311,11 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		legacy_lazy_load = no
-		spriteType = {
+	}	
+	spriteType = {
         	name = "GFX_take_courland_shine"
         	texturefile = "gfx/interface/goals/POL/take_courland.dds"
 				effectfile = "gfx/FX/buttonstate.lua"
-    	}	
 		animation = {
 			animationmaskfile = "gfx/interface/goals/POL/GFX_take_courland.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
@@ -340,4 +341,5 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		legacy_lazy_load = no
+	}	
 }
