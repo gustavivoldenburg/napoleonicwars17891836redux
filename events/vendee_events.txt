@@ -507,7 +507,7 @@ country_event = {
 	        VND_rural_warfare_idea
 			VND_federalist_contacts_idea
 			VND_compromise_charter_idea
-			the_counter_revolutionary
+			the_counter_revolution
 			VND_clerical_support_idea
         }
     }
@@ -539,6 +539,7 @@ country_event = {
         name = vendee.10.c
 		custom_effect_tooltip = federalist_waiting_tt
 		complete_national_focus = VND_federalist_promise
-		hidden_effect = { activate_mission = federalist_patience_mission}
+		set_country_flag = federalist_start
+		activate_mission = VND_federalist_timeout
     }
 }

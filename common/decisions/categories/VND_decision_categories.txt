@@ -1,5 +1,8 @@
 VND_federalist_timeout = {
 	icon = GFX_decision_category_power_struggle
+	priority = 10
 	allowed = {
+	    TAG = VND
+		has_completed_focus = VND_federalist_promise
 	}
 }
