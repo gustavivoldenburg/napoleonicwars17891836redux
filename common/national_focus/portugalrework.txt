@@ -350,7 +350,7 @@ default = no
         x = 0
         y = 3
         prerequisite = {
-            POR_secure_brazils_trade
+            focus = POR_secure_brazils_trade
         }
 
         cost = 4.3
