@@ -27,7 +27,7 @@ focus_tree = {
     }
     focus = {
         id = POL_Peasant_Safety_Measures
-        icon = GFX_peasant_safety_measures
+        icon = GFX_peasant_safety_act
         x = 30
         y = 1
         cost = 5

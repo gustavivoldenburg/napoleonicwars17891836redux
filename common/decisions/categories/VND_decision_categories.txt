@@ -1,8 +1,9 @@
-VND_federalist_timeout = {
-	icon = GFX_decision_category_power_struggle
-	priority = 10
+VND_federalist_decision = {
 	allowed = {
-	    TAG = VND
-		has_country_flag = federalist_start
+		original_tag = VND
+		has_completed_focus = VND_federalist_promise
+	}
+	visible = {
+		has_completed_focus = VND_federalist_promise
 	}
 }

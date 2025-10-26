@@ -40,24 +40,24 @@ spriteTypes = {
         texturefile = "gfx/interface/goals/POL/the_great_sejm.dds"
     }
 		spriteType = {
-        name = "GFX_peasant_safety_measures"
-        texturefile = "gfx/interface/goals/POL/GFX_peasant_safety_act.dds"
+        name = "GFX_peasant_safety_act"
+        texturefile = "gfx/interface/goals/POL/peasant_safety_act.dds"
     }
 	spriteType = {
         name = "GFX_borguois_path"
-        texturefile = "gfx/interface/goals/POL/GFX_borguois.dds"
+        texturefile = "gfx/interface/goals/POL/borguois_path.dds"
     }
 	spriteType = {
         name = "GFX_take_courland"
-        texturefile = "gfx/interface/goals/POL/GFX_take_courland.dds"
+        texturefile = "gfx/interface/goals/POL/take_courland.dds"
     }
 	spriteType = {
         name = "GFX_POL_university"
-        texturefile = "gfx/interface/goals/POL/GFX_POL_university.dds"
+        texturefile = "gfx/interface/goals/POL/POL_university.dds"
     }
 	spriteType = {
         name = "GFX_expand_port_palanga"
-        texturefile = "gfx/interface/goals/POL/GFX_expand_port_palanga.dds"
+        texturefile = "gfx/interface/goals/POL/expand_port_palanga.dds"
     }
     spriteType = {
 		name = "GFX_federalist_rebel"
