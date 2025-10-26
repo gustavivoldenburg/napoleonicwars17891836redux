@@ -381,7 +381,7 @@ focus_tree = {
         y = 5
         cost = 3
         completion_reward = {
-		 set_country_flag = next_focus
+		 set_country_flag = federalist_start
 		 country_event = { id = vendee.8 days = 1 }
         }
     }
@@ -399,6 +399,7 @@ focus_tree = {
         y = 6
         cost = 10
         completion_reward = {
+		     activate_decision = federalist_patience_mission
         }
     }
 	# ===========================

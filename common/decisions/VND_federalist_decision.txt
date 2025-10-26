@@ -6,8 +6,8 @@ VND_federalist_decision = {
 	days_mission_timeout = 210
 	is_good = no
 	
-	allowed = {
-	    always = yes
+	visible = {	
+	    has_country_flag = federalist_start  
 	}	
 	
 	available = {
@@ -16,9 +16,6 @@ VND_federalist_decision = {
     
     fire_only_once = no
 
-    visible = {	
-	    has_country_flag = federalist_start
-	}
 	complete_effect = {
         21 = {
             add_core_of = VND
