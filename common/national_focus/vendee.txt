@@ -436,7 +436,7 @@ focus_tree = {
         id = VND_fete_lafayette
         icon = GFX_goal_lafayette_path1
         prerequisite = { focus = VND_lafayette_path }
-        x = 5
+        x = 2
         y = 7
         cost = 5
 		completion_reward = {

@@ -84,7 +84,7 @@ ideas = {
         picture = generic_mountain_warfare
 
         modifier = {
-            army_core_defence_factor = 0.010
+            army_core_defence_factor = 0.10
             supply_consumption_factor = -0.08
             recon_factor = 0.15 
             org_loss_when_moving = -0.08 
@@ -94,8 +94,8 @@ ideas = {
 
         targeted_modifier = {
             tag = FRA
-            attack_bonus_against = 0.010
-            defense_bonus_against = 0.010
+            attack_bonus_against = 0.10
+            defense_bonus_against = 0.10
         }
 
         removal_cost = -1
