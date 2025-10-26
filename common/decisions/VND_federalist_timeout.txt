@@ -1,3 +1,65 @@
 VND_federalist_timeout = {
 
+    federalist_patience_mission = {
+	
+	icon = GFX_decision_category_power_struggle
+	days_mission_timeout = 220
+	is_good = no
+	
+	available = {
+	    always = no
+	}
+    
+    fire_only_once = yes
+
+    visible = {
+	    ROOT = {
+		    has_country_flag = federalist_wait
+		}
+		NOT = {
+		    has_country_flag = federalist_done
+		}	
+	}
+	
+	timeout_effect = {
+        21 = {
+            add_core_of = VND
+        }
+        20 = {
+            add_core_of = VND
+        }
+        19 = {
+            add_core_of = VND
+        }
+        22 = {
+            add_core_of = VND
+        }	
+	    14 = {
+            add_core_of = VND
+        }
+    }
+
+    complete_effect = {
+        21 = {
+            add_resistance = 90
+            add_compliance = -50
+        }
+        20 = {
+            add_resistance = 90
+            add_compliance = -50
+        }
+        19 = {
+            add_resistance = 90
+            add_compliance = -50
+        }
+        22 = {
+            add_resistance = 90
+            add_compliance = -50
+        }	
+	    14 = {
+            add_resistance = 90
+            add_compliance = -50
+        }
+    }
+  }	
 }
