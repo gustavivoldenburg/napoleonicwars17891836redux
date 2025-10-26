@@ -1,0 +1,7 @@
+VND_federalist_timeout = {
+	icon = power_struggle
+	allowed = {
+		original_tag = VND
+		has_country_flag = federalist_wait
+	}
+}
