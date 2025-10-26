@@ -51,4 +51,142 @@ focus_tree = {
             add_manpower = 10000
         }
     }
+    focus = {
+        id = POL_Let_Bourgeoisie_in_Charge
+        mutually_exclusive = { focus = POL_Let_Bourgeoisie_in_Charge }
+        icon = GFX
+        x = 22
+        y = 1
+        cost = 10
+        prerequisite = { focus = POL_The_Great_Sejm }
+        ai_will_do = { factor = 3 }
+        completion_reward = {
+            add_opinion_modifier = { target = RUS modifier = large_decrease }
+            add_stability = 0.05
+            add_popularity = { ideology = democratic popularity = 0.15 }
+        }
+    }
+    focus = {
+        id = POL_Let_Magnates_in_Charge
+        mutually_exclusive = { focus = POL_Let_Magnates_in_Charge }
+        icon = GFX
+        x = 18
+        y = 1
+        cost = 10
+        prerequisite = { focus = POL_The_Great_Sejm }
+        ai_will_do = { factor = 4 }
+        completion_reward = {
+            consumer_goods_factor = -0.1
+            add_opinion_modifier = { target = RUS modifier = large_increase }
+            add_popularity = { ideology = neutrality popularity = 0.15 }
+        }
+    }
+    focus = {
+        id = POL_Restructuring_of_the_voivodeships
+        icon = GFX
+        x = 25
+        y = 2
+        cost = 10
+        prerequisite = { focus = POL_Peasant_Safety_Measures }
+        ai_will_do = { factor = 1 }
+        completion_reward = {
+            remove_ideas { idea = POL_economy_stuck_in_17th_century1 }
+            add_ideas { idea = POL_economy_stuck_in_17th_century2 }
+            10 = {
+                
+            add_extra_state_shared_building_slots = 1
+            add_building_construction = {
+                type = industrial_complex
+                level = 1
+                instant_build = yes
+                }
+            }   
+
+            
+        }
+    }
+    focus = {
+        id = POL_Restructuring_of_the_voivodeships
+        icon = GFX
+        x = 25
+        y = 2
+        cost = 5
+        prerequisite = { focus = POL_Peasant_Safety_Measures }
+        ai_will_do = { factor = 1 }
+        completion_reward = {
+            remove_ideas { idea = POL_economy_stuck_in_17th_century1 }
+            add_ideas { idea = POL_economy_stuck_in_17th_century2 }
+            10 = {
+                
+            add_extra_state_shared_building_slots = 1
+            add_building_construction = {
+                type = industrial_complex
+                level = 1
+                instant_build = yes
+                }
+            }   
+
+            
+        }
+    }
+    focus = {
+        id = POL_Create_the_city_of_Lodz
+        icon = GFX
+        x = 27
+        y = 2
+        cost = 10
+        prerequisite = { focus = POL_Peasant_Safety_Measures }
+        ai_will_do = { factor = 1 }
+        completion_reward = {
+            
+            87 = {
+                
+            add_extra_state_shared_building_slots = 4
+            add_building_construction = {
+                    type = infrastructure 
+                    level = 3
+                    instant_build = yes
+                }
+            add_building_construction = {
+                    type = arms_factory 
+                    level = 2
+                    instant_build = yes
+            }
+            add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+            }
+            
+            }   
+
+            
+        }
+    }
+    focus = {
+        id = POL_Expansion_of_port_Palanga
+        icon = GFX
+        x = 36
+        y = 1
+        cost = 5
+        prerequisite = { focus = POL_The_Great_Sejm }
+        ai_will_do = { factor = 1 }
+        completion_reward = {
+            189 {
+                add_extra_state_shared_building_slots = 3
+                add_building_construction = {
+                    type = dockyard
+                    level = 3
+                    instant_build = yes
+                }
+                add_building_construction = {
+                    type = coastal_bunker
+                    level = 3
+                    instant_build = yes
+                }
+            }
+            
+        }
+    }
+ 
  }

@@ -1,0 +1,20 @@
+add_namespace = pol_1789_news
+
+news_event = {
+	id = pol_1789_news.1
+	title = "The Great Sejm continues its meeting"
+	desc = pol_1789_news.1.d
+	picture = GFX_idi_amin_uganda
+	
+	major = no
+
+	fire_for_sender = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = "Great! Poland may reform!"
+			}
+		option = {
+		name = "Worrying"
+			}
+		}

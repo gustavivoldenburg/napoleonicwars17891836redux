@@ -183,7 +183,7 @@ ideas = {
 
             removal_cost = -1
 
-            picture = generic_morale_bonus
+            picture = generic_monarchist_uprising
 
             modifier = {
                 stability_factor = 0.1
@@ -202,7 +202,7 @@ ideas = {
 
             removal_cost = -1
 
-            picture = generic_morale_bonus
+            picture = generic_democratic_drift_bonus
 
             modifier = {
                 stability_factor = -0.05
@@ -221,7 +221,7 @@ ideas = {
 
             removal_cost = -1
 
-            picture = generic_morale_bonus
+            picture = ARG_british_influences
 
             modifier = {
                 industrial_capacity_dockyard = 0.1
@@ -238,7 +238,7 @@ ideas = {
 
             removal_cost = -1
 
-            picture = generic_morale_bonus
+            picture = generic_economic_increase
 
             modifier = {
                 production_speed_industrial_complex_factor = 0.1
@@ -255,7 +255,7 @@ ideas = {
 
             removal_cost = -1
 
-            picture = generic_morale_bonus
+            picture = generic_research_bonus
 
             modifier = {
                 political_power_factor = 0.05
@@ -272,7 +272,7 @@ ideas = {
 
             removal_cost = -1
 
-            picture = brazil_portugal_trade
+            picture = BRA_us_of_brazil
 
             modifier = {
                 local_resources_factor = 0.1
@@ -289,7 +289,7 @@ ideas = {
 
             removal_cost = -1
 
-            picture = generic_morale_bonus
+            picture = generic_navy_cruiser_warfare
 
             modifier = {
                 production_speed_dockyard_factor = 0.1
@@ -307,7 +307,7 @@ ideas = {
 
             removal_cost = -1
 
-            picture = generic_morale_bonus
+            picture = generic_navy_cruiser_warfare
 
             modifier = {
                 production_speed_dockyard_factor = 0.15

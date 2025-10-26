@@ -12,7 +12,7 @@ set_technology = {
 }
 add_ideas = {
     POL_liberum_veto
-    POL_economy_stuck_in_17th_century 
+    POL_economy_stuck_in_17th_century1
 }
 set_convoys = 20
 

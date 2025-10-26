@@ -19,7 +19,7 @@ ideas = {
 				stability_factor = -0.3
             }
         }
-		POL_economy_stuck_in_17th_century = {
+		POL_economy_stuck_in_17th_century1 = {
 			allowed = {
                 always = no
             }
@@ -33,7 +33,26 @@ ideas = {
 
             modifier = {
                 consumer_goods_factor = 0.5
-				cic_construction_boost = -0.3
+				production_speed_buildings_factor = -0.3
+				production_factory_efficiency_gain_factor = -0.2
+            }
+
+		}
+		POL_economy_stuck_in_17th_century2 = {
+			allowed = {
+                always = no
+            }
+			allowed_civil_war = {
+				always = yes
+			}
+
+            removal_cost = -1
+
+            picture = russian_flag_paris
+
+            modifier = {
+                consumer_goods_factor = 0.3
+				production_speed_buildings_factor = -0.2
 				production_factory_efficiency_gain_factor = -0.1
             }
 

@@ -215,7 +215,7 @@ default = no
         }
         mutually_exclusive = { focus = POR_maintain_the_old_order }
 
-        cost = 4.3
+        cost = 12
 
         ai_will_do = {
             factor = 1
@@ -268,7 +268,7 @@ default = no
         }
     }
     focus = {
-        id = reinforce_the_colonial_navy
+        id = POR_reinforce_the_colonial_navy
         icon = GFX_goal_generic_navy_cruiser
         relative_position_id = POR_secure_brazils_trade
         x = 2
@@ -296,7 +296,7 @@ default = no
         }
     }
     focus = {
-        id = invest_in_angola_and_mozambique
+        id = POR_invest_in_angola_and_mozambique
         icon = GFX_focus_generic_africa_factory
         relative_position_id = POR_secure_brazils_trade
         x = -2

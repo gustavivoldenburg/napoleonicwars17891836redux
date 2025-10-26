@@ -302,12 +302,14 @@ romania_has_been_formed_flag:0 "Romania has been Formed"
 
 POL_has_constitution_of_RUS_flag:0 "Poland-Lithuania has signed the Constitution of 3 May 1791"
 
-POL_liberum_veto:0 "Liberum Veto"
-POL_liberum_veto_desc: "Liberum veto is an mandatory law in our current goverment, that limits our reform capabilities, and creates corruption in the Sejm. We cannot remove it, since from 1767, the law is under protection."
-POL_economy_stuck_in_17th_century:0 "Economy stuck in the Past"
-POL_economy_stuck_in_17th_century_desc: "Our economy still uses tactics, that were abolished centuries ago in the western countries!"
+POL_liberum_veto1:0 "Liberum Veto"
+POL_liberum_veto1_desc: "Liberum veto is an mandatory law in our current goverment, that limits our reform capabilities, and creates corruption in the Sejm. We cannot remove it, since from 1767, the law is under protection."
+POL_economy_stuck_in_17th_century1:0 "Economy stuck in the Past"
+POL_economy_stuck_in_17th_century1_desc: "Our economy still uses tactics, that were abolished centuries ago in the western countries!"
 POL_the_great_sejm_continues:0 "The Great Sejm"
 POL_the_great_sejm_continues_desc: "The Great Sejm, after a short break, is back in the parliament, to begin reforms."
+POL_economy_stuck_in_17th_century2:0 "Economy stuck in the Past"
+POL_economy_stuck_in_17th_century2_desc: "Our economy still uses tactics, that were abolished centuries ago in the western countries!"
 RUS_has_claimed_yedisan_aka_odessa_flag:0 "Russia has Claimed Yedisan"
 
 RUS_POL_war_focus_flag:0 "The Polish–Russian War Started"
