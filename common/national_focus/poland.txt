@@ -7,7 +7,7 @@ focus_tree = {
             add = 100
             tag = POL
         }
- }
+    }
 
 
 
@@ -27,7 +27,7 @@ focus_tree = {
     }
     focus = {
         id = POL_Peasant_Safety_Measures
-        icon = GFX_peasant_safety_measures
+        icon = GFX_peasant_safety_act
         x = 30
         y = 1
         cost = 5
@@ -69,7 +69,7 @@ focus_tree = {
     focus = {
         id = POL_Let_Magnates_in_Charge
         mutually_exclusive = { focus = POL_Let_Bourgeoisie_in_Charge }
-        icon = GFX
+        icon = GFX_borguois_path
         x = 17
         y = 1
         cost = 10
@@ -83,7 +83,7 @@ focus_tree = {
     }
     focus = {
         id = POL_Restructuring_of_the_voivodeships
-        icon = GFX
+        icon = GFX_borguois_path
         x = 30
         y = 2
         cost = 5
@@ -107,7 +107,7 @@ focus_tree = {
     }
     focus = {
         id = POL_Create_the_city_of_Lodz
-        icon = GFX
+        icon = GFX_borguois_path
         x = 28
         y = 2
         cost = 10
@@ -166,7 +166,7 @@ focus_tree = {
     }
     focus = {
         id = POL_Increase_the_rights_of_Bourgeoisie
-        icon = GFX
+        icon = GFX_borguois_path
         x = 17
         y = 2
         cost = 5
@@ -181,7 +181,7 @@ focus_tree = {
     }
     focus = {
         id = POL_Open_iron_mines_in_Kielce
-        icon = GFX
+        icon = GFX_borguois_path
         x = 32
         y = 2
         cost = 10
@@ -203,7 +203,7 @@ focus_tree = {
     }
     focus = {
         id = POL_Promote_the_ideas_of_liberty
-        icon = GFX
+        icon = GFX_borguois_path
         x = 23
         y = 2
         cost = 5

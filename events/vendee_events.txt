@@ -497,7 +497,6 @@ country_event = {
     option = {
         name = vendee.8.c
 	    set_country_flag = next_focus
-		set_country_flag = federalist_wait
 	    add_ideas = {
 	            political_collapse_stage_10
 		        army_collapse_stage_10
@@ -532,7 +531,7 @@ country_event = {
   fire_only_once = yes
     trigger = { 
 	    tag = VND
-	    has_country_flag = federalist_wait
+	    has_country_flag = next_focus
     }
 
     option = {
@@ -540,6 +539,18 @@ country_event = {
 		custom_effect_tooltip = federalist_waiting_tt
 		complete_national_focus = VND_federalist_promise
 		set_country_flag = federalist_start
-		activate_mission = VND_federalist_timeout
+    }
+}
+country_event = {
+  id = vendee.11
+  title = vendee.11.a
+  desc = vendee.11.b
+  picture = GFX_lafayette_oath_event_image
+  fire_only_once = yes
+  is_triggered_only = yes
+
+    option = {
+        name = vendee.11.c
+		swap_ideas = { remove_idea = political_collapse_stage_9 add_idea = political_collapse_stage_8 }
     }
 }
