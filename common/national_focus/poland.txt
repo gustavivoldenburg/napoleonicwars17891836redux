@@ -14,7 +14,7 @@ focus_tree = {
     continuous_focus_position = { x = 2000 y = 2000 }
 
     focus = {
-        id = POL_The_Great_Sejm
+        id = POL_the_great_sejm
         icon = GFX_the_great_sejm
         x = 20
         y = 0
@@ -26,12 +26,12 @@ focus_tree = {
         }
     }
     focus = {
-        id = POL_Peasant_Safety_Measures
+        id = POL_peasant_safety_measures
         icon = GFX_peasant_safety_act
         x = 30
         y = 1
         cost = 5
-        prerequisite = { focus = POL_The_Great_Sejm }
+        prerequisite = { focus = POL_the_great_sejm }
         ai_will_do = { factor = 1 }
         completion_reward = {
             monthly_population = 0.3
@@ -39,12 +39,12 @@ focus_tree = {
         }
     }
     focus = {
-        id = POL_Improve_The_Warsaw_Academy
+        id = POL_improve_the_warsaw_academy
         icon = GFX_POL_university
         x = 36
         y = 1
         cost = 5
-        prerequisite = { focus = POL_The_Great_Sejm }
+        prerequisite = { focus = POL_the_great_sejm }
         ai_will_do = { factor = 2 }
         completion_reward = {
             army_experience = 50
@@ -52,13 +52,13 @@ focus_tree = {
         }
     }
     focus = {
-        id = POL_Let_Bourgeoisie_in_Charge
-        mutually_exclusive = { focus = POL_Let_Magnates_in_Charge }
+        id = POL_let_bourgeoisie_in_charge
+        mutually_exclusive = { focus = POL_let_magnates_in_charge }
         icon = GFX_borguois_path
         x = 23
         y = 1
         cost = 10
-        prerequisite = { focus = POL_The_Great_Sejm }
+        prerequisite = { focus = POL_the_great_sejm }
         ai_will_do = { factor = 2 }
         completion_reward = {
             add_opinion_modifier = { target = RUS modifier = large_decrease }
@@ -67,13 +67,13 @@ focus_tree = {
         }
     }
     focus = {
-        id = POL_Let_Magnates_in_Charge
-        mutually_exclusive = { focus = POL_Let_Bourgeoisie_in_Charge }
+        id = POL_let_magnates_in_charge
+        mutually_exclusive = { focus = POL_let_bourgeoisie_in_charge }
         icon = GFX_borguois_path
         x = 17
         y = 1
         cost = 10
-        prerequisite = { focus = POL_The_Great_Sejm }
+        prerequisite = { focus = POL_the_great_sejm }
         ai_will_do = { factor = 2 }
         completion_reward = {
             add_political_power = 25
@@ -82,12 +82,12 @@ focus_tree = {
         }
     }
     focus = {
-        id = POL_Restructuring_of_the_voivodeships
+        id = POL_restructuring_of_the_voivodeships
         icon = GFX_borguois_path
         x = 30
         y = 2
         cost = 5
-        prerequisite = { focus = POL_Peasant_Safety_Measures }
+        prerequisite = { focus = POL_peasant_safety_measures }
         ai_will_do = { factor = 1 }
         completion_reward = {
             remove_ideas { idea = POL_economy_stuck_in_17th_century1 }
@@ -106,12 +106,12 @@ focus_tree = {
         }
     }
     focus = {
-        id = POL_Create_the_city_of_Lodz
+        id = POL_create_the_city_of_lodz
         icon = GFX_borguois_path
         x = 28
         y = 2
         cost = 10
-        prerequisite = { focus = POL_Peasant_Safety_Measures }
+        prerequisite = { focus = POL_peasant_safety_measures }
         ai_will_do = { factor = 1 }
         completion_reward = {
             
@@ -140,12 +140,12 @@ focus_tree = {
         }
     }
     focus = {
-        id = POL_Expansion_of_port_Palanga
+        id = POL_expansion_of_port_palanga
         icon = GFX_expand_port_palanga
         x = 40
         y = 1
         cost = 5
-        prerequisite = { focus = POL_The_Great_Sejm }
+        prerequisite = { focus = POL_the_great_sejm }
         ai_will_do = { factor = 1 }
         completion_reward = {
             189 {
@@ -165,12 +165,12 @@ focus_tree = {
         }
     }
     focus = {
-        id = POL_Increase_the_rights_of_Bourgeoisie
+        id = POL_increase_the_rights_of_bourgeoisie
         icon = GFX_borguois_path
         x = 17
         y = 2
         cost = 5
-        prerequisite = { focus = POL_Let_Magnates_in_Charge }
+        prerequisite = { focus = POL_let_magnates_in_charge }
         ai_will_do = { factor = 1 }
         completion_reward = {
             add_ideas { idea = POL_bourgeoisie_support_of_reforms }
@@ -180,12 +180,12 @@ focus_tree = {
 
     }
     focus = {
-        id = POL_Open_iron_mines_in_Kielce
+        id = POL_open_iron_mines_in_kielce
         icon = GFX_borguois_path
         x = 32
         y = 2
         cost = 10
-        prerequisite = { focus = POL_Peasant_Safety_Measures }
+        prerequisite = { focus = POL_peasant_safety_measures }
         ai_will_do = { factor = 1 }
         completion_reward = {
             add_resource = { type = steel amount = 10 state = 90 }
@@ -202,12 +202,12 @@ focus_tree = {
         
     }
     focus = {
-        id = POL_Promote_the_ideas_of_liberty
+        id = POL_promote_the_ideas_of_liberty
         icon = GFX_borguois_path
         x = 23
         y = 2
         cost = 5
-        prerequisite = { focus = POL_Let_Bourgeoisie_in_Charge }
+        prerequisite = { focus = POL_let_bourgeoisie_in_charge }
         ai_will_do = { factor = 1 }
         completion_reward = {
             add_popularity = { ideology = democratic popularity = 0.1 }
@@ -218,12 +218,12 @@ focus_tree = {
 
     }
     focus = {
-        id = POL_Annex_The_Duchy_of_Courland
+        id = POL_annex_the_duchy_of_courland
         icon = GFX_take_courland
         x = 26
         y = 1
         cost = 10
-        prerequisite = { focus = POL_The_Great_Sejm }
+        prerequisite = { focus = POL_the_great_sejm }
         ai_will_do = { factor = 1 }
         completion_reward = {
             add_manpower = 5000
