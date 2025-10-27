@@ -455,12 +455,34 @@ focus_tree = {
         }
     }
 	focus = {
+        id = VND_elect_soldier
+        icon = GFX_SOV_an_adaptable_army_ccp_2d_sov_compatibility
+        prerequisite = { focus = VND_lafayette_path }
+        x = 4
+        y = 8
+        cost = 8
+		completion_reward = {
+		 swap_ideas = { remove_idea = army_collapse_stage_9 add_idea = army_collapse_stage_8 }
+        }
+    }
+	focus = {
+        id = VND_citizen_soldier
+        icon = GFX_focus_SOV_builder_of_the_red_army
+        prerequisite = { focus = VND_elect_soldier }
+        x = 5
+        y = 9
+        cost = 8
+		completion_reward = {
+		 swap_ideas = { remove_idea = army_collapse_stage_8 add_idea = army_collapse_stage_7 }
+        }
+    }
+	focus = {
         id = VND_fete_lafayette
         icon = GFX_goal_fete_lafayette
         prerequisite = { focus = VND_lafayette_path }
         x = 2
         y = 7
-        cost = 5
+        cost = 10
 		completion_reward = {
 		 country_event = { id = vendee.11 days = 1 }
         }
@@ -471,9 +493,34 @@ focus_tree = {
         prerequisite = { focus = VND_fete_lafayette }
         x = 2
         y = 8
-        cost = 10
+        cost = 7
 		completion_reward = {
 		 swap_ideas = { remove_idea = political_collapse_stage_8 add_idea = political_collapse_stage_7 }
+        }
+    }
+	focus = {
+        id = VND_expand_voting_right
+        icon = GFX_focus_usa_voter_registration_act
+		mutually_exclusive = { focus = VND_girl_education }
+        prerequisite = { focus = VND_modernize_divorce }
+        x = 1
+        y = 9
+        cost = 7
+		completion_reward = {
+		 swap_ideas = { remove_idea = political_collapse_stage_7 add_idea = political_collapse_stage_6 }
+        }
+    }
+	focus = {
+        id = VND_girl_education
+        icon = GFX_focus_AFG_education_reform
+		mutually_exclusive = { focus = VND_expand_voting_right }
+        prerequisite = { focus = VND_modernize_divorce }
+        x = 3
+        y = 9
+        cost = 7
+		completion_reward = {
+		 swap_ideas = { remove_idea = political_collapse_stage_7 add_idea = political_collapse_stage_6 }
+		 custom_effect_tooltip = girl_get_school
         }
     }
 	focus = {
@@ -492,7 +539,7 @@ focus_tree = {
     }
 	focus = {
         id = VND_equal_tax
-        icon = GFX_goal_fete_lafayette
+        icon = GFX_focus_RAJ_war_taxes
         prerequisite = { focus = VND_lafayette_path }
         x = -1
         y = 7
