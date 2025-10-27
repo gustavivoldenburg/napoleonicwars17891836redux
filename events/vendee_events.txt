@@ -360,6 +360,7 @@ country_event = {
     name = vendee.3.d
 	add_stability = -0.10
     add_war_support = -0.10
+	set_country_flag = VND_women_soldier
   }
 }
 country_event = {

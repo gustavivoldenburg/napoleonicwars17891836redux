@@ -10,7 +10,7 @@ focus_tree = {
 	}
 
 
-    continuous_focus_position = { x = 3000 y = 3000 }
+    continuous_focus_position = { x = 3500 y = 3000 }
 
     focus = {
         id = VND_counter_revolution
@@ -402,9 +402,23 @@ focus_tree = {
         y = 6
         cost = 10
         completion_reward = {
-		    federalist_patience_mission = {
-                days_remove = 30
-			}	
+		    custom_effect_tooltip = VND_federalist_promise_tt	
+        }
+    }
+	focus = {
+        id = VND_increase_autonomy
+        icon = GFX_goal_federalist_wait
+		available =  { 
+            always = yes
+		}
+        prerequisite = { 
+		        focus = VND_federalist_promise
+		}
+        x = 6
+        y = 7
+        cost = 6
+        completion_reward = {
+		    add_days_mission_timeout  = { mission = federalist_patience_mission days = 30 }	
         }
     }
 	# ===========================
@@ -415,7 +429,7 @@ focus_tree = {
         id = VND_lafayette_path
         icon = GFX_goal_lafayette_path1
         prerequisite = { focus = VND_what_next }
-        x = 3
+        x = 2
         y = 6
         cost = 8
         available = { 
@@ -451,5 +465,71 @@ focus_tree = {
 		 country_event = { id = vendee.11 days = 1 }
         }
     }
-
+	focus = {
+        id = VND_modernize_divorce
+        icon = GFX_goal_fete_lafayette
+        prerequisite = { focus = VND_fete_lafayette }
+        x = 2
+        y = 8
+        cost = 10
+		completion_reward = {
+		 swap_ideas = { remove_idea = political_collapse_stage_8 add_idea = political_collapse_stage_7 }
+        }
+    }
+	focus = {
+        id = VND_army_acedemy_girl
+        icon = GFX_goal_fete_lafayette
+        prerequisite = { focus = VND_lafayette_path }
+		available =  { 
+            has_country_flag = VND_women_soldier
+		}
+        x = 0
+        y = 8
+        cost = 5
+		completion_reward = {
+		 swap_ideas = { remove_idea = VND_women_royal_warriors_idea add_idea = VND_women_royal_warriors_idea_2 }
+        }
+    }
+	focus = {
+        id = VND_equal_tax
+        icon = GFX_goal_fete_lafayette
+        prerequisite = { focus = VND_lafayette_path }
+        x = -1
+        y = 7
+        cost = 8
+		completion_reward = {
+		 swap_ideas = { remove_idea = econ_crisis_stage_10 add_idea = econ_crisis_stage_9 }
+        }
+    }
+	focus = {
+        id = VND_local_council
+        icon = GFX_goal_fete_lafayette
+        prerequisite = { focus = VND_equal_tax }
+        x = -2
+        y = 8
+        cost = 8
+		completion_reward = {
+		if = {
+            limit = { has_active_mission = federalist_patience_mission }
+			add_days_mission_timeout  = { mission = federalist_patience_mission days = 65 }
+        }				
+		 swap_ideas = { remove_idea = econ_crisis_stage_9 add_idea = econ_crisis_stage_8 }
+        }
+    }
+	focus = {
+        id = VND_national_market
+        icon = GFX_goal_fete_lafayette
+        prerequisite = { 
+		    focus = VND_equal_tax      
+	    }
+		prerequisite = { 
+			focus = VND_local_council      
+	    }
+        x = -1
+        y = 9
+        cost = 8
+		completion_reward = {
+		    swap_ideas = { remove_idea = econ_crisis_stage_8 add_idea = econ_crisis_stage_7 }
+	    }	
+    }
 }

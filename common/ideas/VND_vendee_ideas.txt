@@ -33,8 +33,17 @@ ideas = {
         picture = woman_warrior
         modifier = {
             recruitable_population_factor = 0.02
-            division_attack_factor = 0.02
+            army_attack_factor = 0.02
             planning_speed = 0.05
+        }
+    }
+	VND_women_royal_warriors_idea_2 = {
+        allowed = { original_tag = VND }
+        picture = woman_warrior
+        modifier = {
+            recruitable_population_factor = 0.04
+            army_attack_factor = 0.03
+            planning_speed = 0.10
         }
     }
 	
