@@ -391,7 +391,7 @@ focus_tree = {
     }
 	focus = {
         id = VND_federalist_promise
-        icon = GFX_goal_unknown
+        icon = GFX_SOV_claims_in_baltic_ccp_2d_sov_compatibility
 		available =  { 
             always = no
 		}
@@ -428,7 +428,7 @@ focus_tree = {
     }
 	focus = {
         id = VND_national_guard
-        icon = GFX_goal_lafayette_path1
+        icon = GFX_SOV_depoliticize_the_military_ccp_2d_sov_compatibility
         prerequisite = { focus = VND_lafayette_path }
         x = 4
         y = 7
