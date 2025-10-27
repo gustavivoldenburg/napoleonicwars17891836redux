@@ -637,7 +637,7 @@ allow_branch = { has_start_date > 1789.1.1
 		}
 
 		bypass = {
-
+			POL={has_country_flag=POL_polish_prussian_alliance}
 		}
 
 		cancel_if_invalid = yes
