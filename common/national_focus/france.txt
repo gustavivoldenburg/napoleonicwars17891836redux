@@ -10927,13 +10927,14 @@ date > 1792.1.1
 		932 = { add_claim_by = root }
 		960 = { add_claim_by = root }
 		
-					VND={
-		transfer_state = 932
-		transfer_state = 960
+		VND={
+		    transfer_state = 932
+		    transfer_state = 960
 		}
-			VND = {
-    change_tag_from = FRA
-}
+		VND = {
+            change_tag_from = FRA
+        }
+		add_ideas = FRA_lose_idea
 		hidden_effect ={
 			VND={country_event = fra_1789_event.171}
 									932 = {

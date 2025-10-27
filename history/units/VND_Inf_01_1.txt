@@ -61,6 +61,24 @@ units = {
 		start_experience_factor = 0.3
 	}
 }
+units = {
+	#Vendean Army
+	division = {
+		name = "Vendean Division"
+		location = 485
+		division_template = "Vendean Division"
+		start_experience_factor = 0.3
+	}
+}
+units = {
+	#Vendean Army
+	division = {
+		name = "Vendean Division"
+		location = 11563
+		division_template = "Vendean Division"
+		start_experience_factor = 0.3
+	}
+}
 ### Starting Equipment ###
 instant_effect = {
 	add_equipment_production = {

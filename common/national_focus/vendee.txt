@@ -88,6 +88,10 @@ focus_tree = {
         cost = 3
         completion_reward = {
             load_oob =  VND_Inf_02
+			VND={
+		        transfer_state = 22
+		        transfer_state = 21
+		    }
 			country_event = { id = vendee.5 days = 1 }
         }
     }
