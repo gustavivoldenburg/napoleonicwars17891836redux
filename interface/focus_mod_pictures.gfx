@@ -83,4 +83,12 @@ spriteTypes = {
 		name = "GFX_goal_fete_lafayette"
 		texturefile = "gfx/interface/goals/VND/GFX_fete_lafayette.dds"
 	}
+	spriteType = {
+		name = "GFX_goal_modernize_divorce"
+		texturefile = "gfx/interface/goals/VND/GFX_modernize_divorce.dds"
+	}
+		spriteType = {
+		name = "GFX_goal_local_council"
+		texturefile = "gfx/interface/goals/VND/GFX_local_council.dds"
+	}
 }

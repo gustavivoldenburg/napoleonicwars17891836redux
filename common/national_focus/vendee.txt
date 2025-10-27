@@ -467,7 +467,7 @@ focus_tree = {
     }
 	focus = {
         id = VND_modernize_divorce
-        icon = GFX_goal_fete_lafayette
+        icon = GFX_goal_modernize_divorce
         prerequisite = { focus = VND_fete_lafayette }
         x = 2
         y = 8
@@ -503,7 +503,7 @@ focus_tree = {
     }
 	focus = {
         id = VND_local_council
-        icon = GFX_goal_fete_lafayette
+        icon = GFX_goal_local_council
         prerequisite = { focus = VND_equal_tax }
         x = -2
         y = 8
