@@ -360,6 +360,7 @@ country_event = {
     name = vendee.3.d
 	add_stability = -0.10
     add_war_support = -0.10
+	set_country_flag = VND_women_soldier
   }
 }
 country_event = {
@@ -532,6 +533,7 @@ country_event = {
     trigger = { 
 	    tag = VND
 	    has_country_flag = next_focus
+		has_country_flag = vendee_federalist_alliance
     }
 
     option = {

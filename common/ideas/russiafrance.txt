@@ -283,7 +283,7 @@ war_support_factor = 0.1
 			removal_cost = -1
 			
 			modifier = {
-stability_factor = 0.05
+                stability_factor = 0.05
 			}
 		}
 										fra_napoleon_stability= {
@@ -643,7 +643,12 @@ war_of_survival_fra= {
 			modifier = {
 army_core_attack_factor = 0.3
 army_core_defence_factor = 0.3
-}
+}  
+        targeted_modifier = {
+            tag = VND
+            attack_bonus_against = 0.3
+            defense_bonus_against = 0.3
+        }
 		}
 battleofkaransebes= {
 			picture = russian_flag_paris

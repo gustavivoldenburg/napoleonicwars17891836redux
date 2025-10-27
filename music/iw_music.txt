@@ -90,15 +90,6 @@ music = {
 	}
 }
 music = {
-	song = "La Marseillaise(maria version)"
-	chance = {
-		factor = 0
-		modifier = {
-			factor = 100
-		}
-	}
-}
-music = {
 	song = "La Marche du Sacre de Napoléon"
 	chance = {
 		factor = 0
@@ -118,15 +109,6 @@ music = {
 }
 music = {
 	song = "Kong Christian Stod Ved Højen Mast"
-	chance = {
-		factor = 0
-		modifier = {
-			factor = 100
-		}
-	}
-}
-music = {
-	song = "Hymno Patriótico"
 	chance = {
 		factor = 0
 		modifier = {
@@ -163,15 +145,6 @@ music = {
 }
 music = {
 	song = "God save the King"
-	chance = {
-		factor = 0
-		modifier = {
-			factor = 100
-		}
-	}
-}
-music = {
-	song = "Fantaisie sur l'Hymne National Russe"
 	chance = {
 		factor = 0
 		modifier = {

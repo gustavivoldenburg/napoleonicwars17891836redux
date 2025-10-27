@@ -15,6 +15,7 @@ focus_tree = {
 
     focus = {
         id = POL_the_great_sejm
+		name = "The great sejm"
         icon = GFX_the_great_sejm
         x = 20
         y = 0
@@ -82,7 +83,7 @@ focus_tree = {
         }
     }
     focus = {
-        id = POL_restructuring_of_the_voivodeships
+        id = POL_reorganization_of_the_voivodeships
         icon = GFX_borguois_path
         x = 30
         y = 2
