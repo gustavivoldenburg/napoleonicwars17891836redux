@@ -15,6 +15,7 @@ focus_tree = {
 
     focus = {
         id = POL_the_great_sejm
+		name = "The great sejm"
         icon = GFX_the_great_sejm
         x = 20
         y = 0
