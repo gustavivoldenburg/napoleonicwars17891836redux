@@ -212,7 +212,7 @@ focus_tree = {
         ai_will_do = { factor = 1 }
         completion_reward = {
             add_popularity = { ideology = democratic popularity = 0.1 }
-            add_opinion_modifier = { FRA = POL modifier = large_increase }
+            FRA = {add_opinion_modifier = { FRA = POL modifier = large_increase }}
             add_opinion_modifier = { target = FRA modifier = large_increase }
             add_war_support_factor = 0.1
         }
@@ -229,6 +229,62 @@ focus_tree = {
         completion_reward = {
             add_manpower = 5000
             annex_country = { target = COU transfer_troops = yes }
+        }
+
+    }
+	focus = {
+        id = POL_create_the_first_independent_military_factory
+        icon = GFX_take_courland
+        x = 30
+        y = 3
+        cost = 7
+        prerequisite = { focus = POL_reorganization_of_the_voivodeships }
+        ai_will_do = { factor = 1 }
+        completion_reward = {
+            90 = {
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = arms_factory
+                    level = 2
+                    instant_build = yes
+                }
+            }
+        }
+
+    }
+    focus = {
+        id = POL_polish_prussian_alliance
+        icon = GFX_POL_university
+        x = 10
+        y = 0
+        cost = 5
+        available = {
+            date > 1790.03.29
+        }
+        
+        bypass = {
+            any_neighbor_country = {
+                has_guaranteed = POL
+            }
+        }
+        ai_will_do = { factor = 1 }
+        completion_reward = {
+            guarantee_country = PRE
+            add_political_power = 25
+        }
+
+    }
+    focus = {
+        id = POL_revitalize_the_ships
+        icon = GFX_expand_port_palanga
+        x = 46
+        y = 2
+        cost = 3
+        prerequisite = { focus = POL_expansion_of_port_palanga }
+        ai_will_do = { factor = 1 }
+        completion_reward = {
+            navy_experience = 50
+            add_war_support_factor = 0.05
         }
 
     }
