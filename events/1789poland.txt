@@ -1,1 +1,55 @@
-add_namespace = POL_1789_events
+add_namespace = pol_event_1789
+
+
+country_event = {
+	id = pol_event_1789.1
+	title = "Polish-Prussian Alliance"
+	desc = pol_event_1789.1.d
+	picture = GFX_idi_amin_india
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "Great!"
+		ai_chance = { factor = 100 } 
+		POL={set_country_flag=POL_polish_prussian_alliance}
+			POL = {
+				add_opinion_modifier = {
+					target = PRE
+					modifier = polish_prussian_alliance
+				}
+			}
+			PRE = {
+				add_opinion_modifier = {
+					target = POL
+					modifier = polish_prussian_alliance
+				}
+			}
+PRE={add_political_power=25}
+POL={add_political_power=25}
+PRE={
+give_guarantee = POL
+}
+POL={
+give_guarantee = PRE
+}
+}
+}
+country_event = {
+	id = pol_event_1789.2
+	title = "Poland invites us into a alliance!"
+	desc = pol_event_1789.2.d
+	picture = GFX_idi_amin_india
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "This could possibly strenghten us!"
+		ai_chance = { factor = 100 } 
+		PRE={add_political_power=25}
+		POL={country_event = pol_event_1789.1}
+	}
+		option = { 
+		name = "We have goals for poland..."
+		ai_chance = { factor = 0 }
+		PRE={add_political_power=-25} 
+	}
+}
