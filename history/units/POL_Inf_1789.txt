@@ -1,7 +1,7 @@
 ﻿division_template = {
 	name = "Polish Division"
 
-	division_names_group = POL_Inf_01
+	division_names_group = POL_Inf_1789
 
 regiments = {
         infantry = { x = 0 y = 0 }
@@ -29,7 +29,7 @@ units = {
 	#Polish Army
 	division = {
 		name = "Polish Division"
-		location = 9508
+		location = 3544
 		division_template = "Polish Division"
 		start_experience_factor = 0.3
 	}
@@ -38,7 +38,7 @@ units = {
 	#Polish Army
 	division = {
 		name = "Polish Division"
-		location = 3230
+		location = 362
 		division_template = "Polish Division"
 		start_experience_factor = 0.3
 	}
@@ -47,7 +47,7 @@ units = {
 	#Polish Army
 	division = {
 		name = "Polish Division"
-		location = 9439
+		location = 11370
 		division_template = "Polish Division"
 		start_experience_factor = 0.3
 	}
@@ -56,7 +56,7 @@ units = {
 	#Polish Army
 	division = {
 		name = "Polish Division"
-		location = 11274
+		location = 11370
 		division_template = "Polish Division"
 		start_experience_factor = 0.3
 	}
@@ -65,7 +65,7 @@ units = {
 	#Polish Army
 	division = {
 		name = "Polish Division"
-		location = 6407
+		location = 11370
 		division_template = "Polish Division"
 		start_experience_factor = 0.3
 	}
@@ -74,7 +74,7 @@ units = {
 	#Polish Army
 	division = {
 		name = "Polish Division"
-		location = 6407
+		location = 6558
 		division_template = "Polish Division"
 		start_experience_factor = 0.3
 	}
@@ -83,7 +83,7 @@ units = {
 	#Polish Army
 	division = {
 		name = "Polish Division"
-		location = 14383
+		location = 6558
 		division_template = "Polish Division"
 		start_experience_factor = 0.3
 	}
@@ -92,7 +92,7 @@ units = {
 	#Polish Army
 	division = {
 		name = "Polish Division"
-		location = 14383
+		location = 6558
 		division_template = "Polish Division"
 		start_experience_factor = 0.3
 	}
@@ -101,7 +101,7 @@ units = {
 	#Polish Army
 	division = {
 		name = "Polish Division"
-		location = 3272
+		location = 9427
 		division_template = "Polish Division"
 		start_experience_factor = 0.3
 	}
@@ -110,7 +110,7 @@ units = {
 	#Polish Army
 	division = {
 		name = "Polish Division"
-		location = 3272
+		location = 9427
 		division_template = "Polish Division"
 		start_experience_factor = 0.3
 	}
@@ -119,34 +119,7 @@ units = {
 	#Polish Army
 	division = {
 		name = "Polish Division"
-		location = 14380
-		division_template = "Polish Division"
-		start_experience_factor = 0.3
-	}
-}
-units = {
-	#Polish Army
-	division = {
-		name = "Polish Division"
-		location = 14380
-		division_template = "Polish Division"
-		start_experience_factor = 0.3
-	}
-}
-units = {
-	#Polish Army
-	division = {
-		name = "Polish Division"
-		location = 6281
-		division_template = "Polish Division"
-		start_experience_factor = 0.3
-	}
-}
-units = {
-	#Polish Army
-	division = {
-		name = "Polish Division"
-		location = 6281
+		location = 9427
 		division_template = "Polish Division"
 		start_experience_factor = 0.3
 	}
@@ -158,7 +131,7 @@ instant_effect = {
 			type = infantry_equipment_0
 			creator = "POL"
 		}
-		requested_factories = 1
+		requested_factories = 4
 		progress = 0.28
 		efficiency = 100
 	}

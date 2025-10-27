@@ -1,5 +1,6 @@
 capital = 10
 1789.1.1 = {
+  set_oob = POL_Inf_1789
   recruit_character = POL_stanislaw
   promote_character = POL_stanislaw
 }

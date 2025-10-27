@@ -532,6 +532,7 @@ country_event = {
     trigger = { 
 	    tag = VND
 	    has_country_flag = next_focus
+		has_country_flag = vendee_federalist_alliance
     }
 
     option = {
