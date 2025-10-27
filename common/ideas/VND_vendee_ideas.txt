@@ -94,8 +94,8 @@ ideas = {
 
         targeted_modifier = {
             tag = FRA
-            attack_bonus_against = 0.10
-            defense_bonus_against = 0.10
+            attack_bonus_against = 0.25
+            defense_bonus_against = 0.25
         }
 
         removal_cost = -1
@@ -105,14 +105,14 @@ ideas = {
         picture = generic_mountain_warfare
 
         modifier = {
-            supply_consumption_factor = 0.06
-			recon_factor = -0.10
+            supply_consumption_factor = 0.15
+			recon_factor = -0.20
 		}	
 
         targeted_modifier = {
             tag = VND
-            attack_bonus_against = -0.15
-            defense_bonus_against = -0.15
+            attack_bonus_against = -0.30
+            defense_bonus_against = -0.30
         }
 
         removal_cost = -1
