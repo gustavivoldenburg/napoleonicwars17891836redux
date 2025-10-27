@@ -407,7 +407,7 @@ focus_tree = {
     }
 	focus = {
         id = VND_increase_autonomy
-        icon = GFX_goal_federalist_wait
+        icon = GFX_SOV_offer_autonomy_to_former_soviet_republics_ccp_2d_sov_compatibility
 		available =  { 
             always = yes
 		}
@@ -478,7 +478,7 @@ focus_tree = {
     }
 	focus = {
         id = VND_army_acedemy_girl
-        icon = GFX_goal_fete_lafayette
+        icon = GFX_focus_SOV_women_in_aviation
         prerequisite = { focus = VND_lafayette_path }
 		available =  { 
             has_country_flag = VND_women_soldier
