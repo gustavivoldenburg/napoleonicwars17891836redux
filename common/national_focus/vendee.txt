@@ -402,6 +402,9 @@ focus_tree = {
         y = 6
         cost = 10
         completion_reward = {
+		    federalist_patience_mission = {
+                days_remove = 30
+			}	
         }
     }
 	# ===========================
