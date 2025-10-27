@@ -197,7 +197,7 @@ ideas = {
                 always = no
             }
 			allowed_civil_war = {
-				always = yes
+				always = no
 			}
 
             removal_cost = -1
@@ -216,7 +216,7 @@ ideas = {
                 always = no
             }
 			allowed_civil_war = {
-				always = yes
+				always = no
 			}
 
             removal_cost = -1
@@ -312,6 +312,23 @@ ideas = {
             modifier = {
                 production_speed_dockyard_factor = 0.15
                 industrial_capacity_dockyard = 0.15
+            }
+        }
+        POR_the_kingdom_divided = {
+            
+            allowed = {
+                always = no
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            picture = generic_king_handled
+
+            modifier = {
+                stability_factor = -0.2
+                war_support_factor = -0.2
             }
         }
     }

@@ -378,7 +378,7 @@ default = no
         icon = GFX_focus_research2
         relative_position_id = POR_rebuild_lisbon
         x = 5
-        y = 5
+        y = 4
         prerequisite = {
             focus = POR_modernise_education
         }
@@ -576,6 +576,39 @@ default = no
 
         completion_reward = {
 
+        }
+    }
+    focus = {
+        id = POR_a_kingdom_divided
+        icon = GFX_focus_por_the_kingdom_reunited
+        relative_position_id = POR_the_secret_societies
+        x = -1
+        y = 1
+        prerequisite = {
+            focus = POR_discredit_absolutism
+        }
+        prerequisite = {
+            focus = POR_the_secret_societies
+        }
+
+        cost = 4.3
+
+        ai_will_do = {
+            factor = 1
+        }
+
+        available = {
+            NOT = {
+                has_idea = POR_the_kingdom_divided
+            }
+        }
+
+        bypass = {
+            has_idea = POR_the_kingdom_divided
+        }
+
+        completion_reward = {
+            add_ideas = POR_the_kingdom_divided
         }
     }
 }
