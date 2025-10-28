@@ -556,3 +556,54 @@ country_event = {
 		swap_ideas = { remove_idea = political_collapse_stage_9 add_idea = political_collapse_stage_8 }
     }
 }
+country_event = {
+  id = vendee.12
+  title = vendee.12.a
+  desc = vendee.12.b
+  picture = GFX_lafayette_oath_event_image
+  fire_only_once = yes
+  is_triggered_only = yes
+
+    option = {
+        name = vendee.12.c
+		add_days_mission_timeout  = { mission = federalist_patience_mission days = 80 }
+        21 = {
+            add_compliance = -30
+        }
+        20 = {
+            add_compliance = -30
+        }
+        19 = {
+            add_compliance = -30
+        }
+        22 = {
+            add_compliance = -30
+        }	
+	    14 = {
+            add_compliance = -30
+        }		
+    }
+	option = {
+        name = vendee.12.d
+		add_days_mission_timeout  = { mission = federalist_patience_mission days = 10 }	
+    }
+	option = {
+        name = vendee.12.e
+		add_days_mission_timeout  = { mission = federalist_patience_mission days = -60 }
+        21 = {
+            add_compliance = 20
+        }
+        20 = {
+            add_compliance = 20
+        }
+        19 = {
+            add_compliance = 20
+        }
+        22 = {
+            add_compliance = 20
+        }	
+	    14 = {
+            add_compliance = 20
+        }		
+    }
+}

@@ -25,8 +25,8 @@ country_event = {
 		ENG = { transfer_state = 694 }
 		ENG = { transfer_state = 1176 }
 		ENG = { transfer_state = 1104 }
-        BEL = { transfer_state = 986 }
-        BEL = { transfer_state = 969 }
+        LUX = { transfer_state = 986 }
+        LUX = { transfer_state = 969 }
         AUS = { transfer_state = 28 }
 		AUS = { transfer_state = 1234 }
         SPR = { transfer_state = 1105 }
@@ -35,6 +35,8 @@ country_event = {
 		HOL = { transfer_state = 310 }
 		PRE = { transfer_state = 1112 }
 		POR = { transfer_state = 958 }
+		SPM = { transfer_state = 981 }
+		SPM = { transfer_state = 735 }
 
         VND = {
           transfer_state = 32
@@ -58,10 +60,29 @@ country_event = {
           transfer_state = 18
           transfer_state = 27
         }
-		every_state = {
-            limit = { is_controlled_by = FRA }
-            add_core_of = VND
-        }
 	}
 	option = { name = treaty.85.a }
 }	
+country_event = {
+  id = treaty.2
+  title = treaty.2.t
+  desc  = treaty.2.d
+  picture = GFX_report_event_generic
+
+  mean_time_to_happen = { days = 1 }
+
+  trigger = {
+    tag = VND
+    has_war = yes
+    NOT = { 
+	    has_capitulated = yes
+		has_country_flag = french_surrender_done
+	}
+    surrender_progress > 0.80
+  }
+    immediate = {
+	 FRA = { annex_country = { target = VND transfer_troops = no } }
+	} 
+
+	option = { name = treaty.86.a }
+}

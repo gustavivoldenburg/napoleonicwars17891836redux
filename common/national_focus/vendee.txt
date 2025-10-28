@@ -421,6 +421,22 @@ focus_tree = {
 		    add_days_mission_timeout  = { mission = federalist_patience_mission days = 30 }	
         }
     }
+	focus = {
+        id = VND_question_of_department
+        icon = GFX_SOV_offer_autonomy_to_former_soviet_republics_ccp_2d_sov_compatibility
+		available =  { 
+            always = yes
+		}
+        prerequisite = { 
+		        focus = VND_federalist_promise
+		}
+        x = 8
+        y = 7
+        cost = 6
+        completion_reward = {
+		    country_event = { id = vendee.12 days = 1 }	
+        }
+    }
 	# ===========================
     # Lafayette path
     # ===========================
