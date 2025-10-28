@@ -581,11 +581,13 @@ country_event = {
         }	
 	    14 = {
             add_compliance = -30
-        }		
+        }
+        add_popularity: { ideology = democratic popularity: 0.20 }		
     }
 	option = {
         name = vendee.12.d
 		add_days_mission_timeout  = { mission = federalist_patience_mission days = 10 }	
+		add_popularity: { ideology = democratic popularity: 0.05 }	
     }
 	option = {
         name = vendee.12.e
@@ -604,6 +606,7 @@ country_event = {
         }	
 	    14 = {
             add_compliance = 20
-        }		
+        }
+        add_popularity: { ideology = democratic popularity: -0.10 }		
     }
 }
