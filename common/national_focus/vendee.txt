@@ -544,7 +544,7 @@ focus_tree = {
     }
 	focus = {
         id = VND_citizen_soldier
-        icon = GFX_focus_SOV_builder_of_the_red_army
+        icon = GFX_goal_citizen_soldier_doctrine
         prerequisite = { focus = VND_elect_soldier }
         x = 5
         y = 9
@@ -617,7 +617,7 @@ focus_tree = {
     }
 	focus = {
         id = VND_girl_education
-        icon = GFX_focus_AFG_education_reform
+        icon = GFX_goal_girl_education
 		mutually_exclusive = { focus = VND_expand_voting_right }
         prerequisite = { focus = VND_modernize_divorce }
         x = 3

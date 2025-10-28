@@ -87,8 +87,16 @@ spriteTypes = {
 		name = "GFX_goal_modernize_divorce"
 		texturefile = "gfx/interface/goals/VND/GFX_modernize_divorce.dds"
 	}
-		spriteType = {
+	spriteType = {
 		name = "GFX_goal_local_council"
 		texturefile = "gfx/interface/goals/VND/GFX_local_council.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_citizen_soldier_doctrine"
+		texturefile = "gfx/interface/goals/VND/GFX_citizen_soldier_doctrine.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_girl_education"
+		texturefile = "gfx/interface/goals/VND/GFX_girl_education.dds"
 	}
 }
