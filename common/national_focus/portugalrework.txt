@@ -30,9 +30,7 @@ default = no
         }
 
         available = {
-            NOT = {
                 has_idea = POR_recovering_from_lisbon_earthquake
-            }
         }
         
         bypass = {
@@ -62,9 +60,7 @@ default = no
         }
 
         available = {
-            NOT = {
                 has_idea = POR_recovering_from_lisbon_earthquake
-            }
         }
         
         bypass = {
@@ -144,7 +140,7 @@ default = no
         }
     }
     focus = {
-        id = POR_reform_the_royal_army
+        id = POR_reform_the_royal_academy
         icon = GFX_focus_generic_military_academy
         relative_position_id = POR_rebuild_lisbon
         x = 1
@@ -153,7 +149,7 @@ default = no
             focus = POR_modernise_education
         }
 
-        cost = 4.3
+        cost = 10
 
         ai_will_do = {
             factor = 1
@@ -427,7 +423,7 @@ default = no
         }
 
         completion_reward = {
-
+            add_stability = -0.05
         }
     }
     focus = {
@@ -483,7 +479,11 @@ default = no
         }
 
         completion_reward = {
-
+            set_party_name = {
+                ideology = democratic
+                long_name = POR_partido_frances_long
+                name = POR_partido_frances 
+            }
         }
     }
     focus = {
@@ -575,7 +575,10 @@ default = no
         }
 
         completion_reward = {
-
+            add_popularity = {
+                ideology = democratic
+                popularity = 0.05
+            }
         }
     }
     focus = {
@@ -608,7 +611,147 @@ default = no
         }
 
         completion_reward = {
+            add_popularity = {
+                ideology = democratic 
+                popularity = 0.1
+            }
             add_ideas = POR_the_kingdom_divided
+        }
+    }
+    focus = {
+        id = POR_recruitment_of_enlightened_officers
+        icon = GFX_goal_continunous_research
+        relative_position_id = POR_the_secret_societies
+        x = 1
+        y = 1
+        prerequisite = {
+            focus = POR_the_secret_societies
+        }
+        prerequisite = {
+            focus = POR_critique_of_the_throne
+        }
+
+        cost = 4.3
+
+        ai_will_do = {
+            factor = 1
+        }
+
+        available = {
+            NOT = {
+                has_government = democratic
+            }
+        }
+
+        bypass = {
+            has_government = democratic
+        }
+
+        completion_reward = {
+
+        }
+    }
+    focus = {
+        id = POR_the_lisbon_manifesto
+        icon = GFX_focus_focus_fra_revolution_utmust
+        relative_position_id = POR_a_kingdom_divided
+        x = -1
+        y = 1
+        prerequisite = {
+            focus = POR_a_kingdom_divided
+        }
+
+        cost = 4.3
+
+        ai_will_do = {
+            factor = 1
+        }
+
+        available = {
+            NOT = {
+                has_government = democratic
+            }
+        }
+
+        bypass = {
+            has_government = democratic
+        }
+
+        completion_reward = {
+            stability_factor = 0.05
+            damage_building = {
+                type = infrastructure
+                state = 112
+                damage = 1
+            }
+        }
+    }
+    focus = {
+        id = POR_the_spark_in_porto
+        icon = GFX_focus_spr_crush_the_revolution
+        relative_position_id = POR_a_kingdom_divided
+        x = 1
+        y = 1
+        prerequisite = {
+            focus = POR_a_kingdom_divided
+        }
+
+        cost = 4.3
+
+        ai_will_do = {
+            factor = 1
+        }
+
+        available = {
+            NOT = {
+                has_government = democratic
+            }
+        }
+
+        bypass = {
+            has_government = democratic
+        }
+
+        completion_reward = {
+            stability_factor = -0.05
+            damage_building = {
+                type = infrastructure
+                state = 180
+                damage = 1
+            }
+        }
+    }
+    focus = {
+        id = POR_form_the_revolutionary_junta
+        icon = GFX_focus_SWL_helvetic_junta
+        relative_position_id = POR_the_lisbon_manifesto
+        x = 1
+        y = 1
+        prerequisite = {
+            focus = POR_the_lisbon_manifesto
+        }
+        prerequisite = {
+            focus = POR_the_spark_in_porto
+        }
+
+        cost = 4.3
+
+        ai_will_do = {
+            factor = 1
+        }
+
+        available = {
+            NOT = {
+                has_government = democratic
+            }
+        }
+
+        bypass = {
+            has_government = democratic
+        }
+
+        completion_reward = {
+            
         }
     }
 }
