@@ -327,6 +327,7 @@ focus_tree = {
             add_ideas = VND_women_royal_warriors_idea
             add_stability = -0.08
 			set_country_flag = vendee_women
+			add_ideas = extensive_conscription
         }
     }
 
@@ -436,6 +437,65 @@ focus_tree = {
         cost = 6
         completion_reward = {
 		    country_event = { id = vendee.12 days = 1 }	
+        }
+    }
+	focus = {
+        id = VND_build_fac_federalist
+        icon = GFX_SOV_offer_autonomy_to_former_soviet_republics_ccp_2d_sov_compatibility
+		available =  { 
+            always = yes
+		}
+        prerequisite = { 
+		        focus = VND_question_of_department
+		}
+		prerequisite = { 
+		        focus = VND_increase_autonomy
+		}
+        x = 7
+        y = 8
+        cost = 5
+        completion_reward = {
+		    20 = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }
+            }
+			14 = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }
+            }
+			19 = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }
+            }
+			22 = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = arms_factory
+                    level = 1
+                    instant_build = yes
+                }
+            }
+			21 = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = arms_factory
+                    level = 1
+                    instant_build = yes
+                }
+            }
+		    add_days_mission_timeout  = { mission = federalist_patience_mission days = 20 }		
         }
     }
 	# ===========================
@@ -643,7 +703,7 @@ focus_tree = {
     }
 	focus = {
         id = VND_grain_tax
-        icon = GFX_goal_fete_lafayette
+        icon = GFX_SOV_planned_economy_ccp_2d_sov_compatibility
 		prerequisite = { 
 			focus = VND_national_market      
 	    }
@@ -652,6 +712,48 @@ focus_tree = {
         cost = 8
 		completion_reward = {
 		    swap_ideas = { remove_idea = econ_crisis_stage_7 add_idea = econ_crisis_stage_6 }
+	    }	
+    }
+	focus = {
+        id = VND_free_labor
+        icon = GFX_focus_RAJ_give_me_blood_and_i_will_grant_you_freedom
+		prerequisite = { 
+			focus = VND_grain_tax     
+	    }
+        x = -2
+        y = 11
+        cost = 20
+		completion_reward = {
+		    swap_ideas = { remove_idea = econ_crisis_stage_6 add_idea = econ_crisis_stage_5 }
+	    }	
+    }
+	focus = {
+        id = VND_prepare_war
+        icon = GFX_SOV_superior_war_machines_ccp_2d_sov_compatibility
+		prerequisite = { 
+			focus = VND_grain_tax     
+	    }
+        x = 0
+        y = 11
+        cost = 10
+		completion_reward = {
+		    add_ideas = war_economy
+	    }	
+    }
+	focus = {
+        id = VND_fiscal_transparency
+        icon = GFX_SOV_superior_war_machines_ccp_2d_sov_compatibility
+		prerequisite = { 
+			focus = VND_prepare_war    
+	    }
+		prerequisite = { 
+			focus = VND_free_labor    
+	    }
+        x = -1
+        y = 12
+        cost = 10
+		completion_reward = {
+		    swap_ideas = { remove_idea = econ_crisis_stage_5 add_idea = econ_crisis_stage_4 }
 	    }	
     }
 }
