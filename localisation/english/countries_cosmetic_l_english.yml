@@ -24,7 +24,7 @@
  AUS_HREGN:0 "Holy Roman Empire of the German Nation"
  AUS_HREGN_DEF:0 "the Holy Roman Empire of the German Nation"
 
-  ANH_duchy_fascism:0 "Duchy of Anhalt-Dessau"
+ ANH_duchy_fascism:0 "Duchy of Anhalt-Dessau"
  ANH_duchy_fascism_DEF:0 "the Duchy of Anhalt-Dessau"
  ANH_duchy_democratic:0 "Republic of Anhalt-Dessau"
  ANH_duchy_democratic_DEF:0 "the Republic of Anhalt-Dessau"
@@ -40,7 +40,7 @@
  ANH_duchy_DEF:0 "Anhalt-Dessau"
  ANH_duchy_ADJ:0 "Anhalt-Dessauer"
 
-  ANH_unified_fascism:0 "Duchy of Anhalt"
+ ANH_unified_fascism:0 "Duchy of Anhalt"
  ANH_unified_fascism_DEF:0 "the Duchy of Anhalt"
  ANH_unified_democratic:0 "Republic of Anhalt"
  ANH_unified_democratic_DEF:0 "the Republic of Anhalt"
@@ -72,7 +72,7 @@
  COB_gotha_DEF:0 "Saxe-Coburg and Gotha"
  COB_gotha_ADJ:0 "Saxe-Coburg and Gotha"
 
-  SCH_principality_fascism:0 "Principality of Schaumburg-Lippe"
+ SCH_principality_fascism:0 "Principality of Schaumburg-Lippe"
  SCH_principality_fascism_DEF:0 "the Principality of Schaumburg-Lippe"
  SCH_principality_democratic:0 "Republic of SSchaumburg-Lippe"
  SCH_principality_democratic_DEF:0 "the Republic of Schaumburg-Lippe"
@@ -88,7 +88,7 @@
  SCH_principality_DEF:0 "Schaumburg-Lippe"
  SCH_principality_ADJ:0 "Schaumburg-Lippe"
 
-  LIP_principality_fascism:0 "Principality of Lippe"
+ LIP_principality_fascism:0 "Principality of Lippe"
  LIP_principality_fascism_DEF:0 "the Principality of Lippe"
  LIP_principality_democratic:0 "Republic of Lippe"
  LIP_principality_democratic_DEF:0 "the Republic of Lippe"
@@ -184,7 +184,7 @@
  TAM_DEF:0 "The Maghreb"
  TAM_ADJ:0 "Maghrebi"
 
-  POR_BRA_ALG_fascism:0 "United Kingdom of Portugal, Brazil and the Algarves"
+ POR_BRA_ALG_fascism:0 "United Kingdom of Portugal, Brazil and the Algarves"
  POR_BRA_ALG_fascism_DEF:0 "the United Kingdom of Portugal, Brazil and the Algarves"
  POR_BRA_ALG_democratic:0 "United Kingdom of Portugal, Brazil and the Algarves"
  POR_BRA_ALG_democratic_DEF:0 "the United Kingdom of Portugal, Brazil and the Algarves"
@@ -242,7 +242,7 @@
  INS_DEI_neutrality:0 "Dutch East Indies"
  INS_DEI_neutrality_DEF:0 "the Dutch East Indies"
 
-  HAN_DEI_democratic:0 "Dutch-Hanoverian East Indies"
+ HAN_DEI_democratic:0 "Dutch-Hanoverian East Indies"
  HAN_DEI_democratic_DEF:0 "the Dutch-Hanoverian East Indies"
  HAN_DEI_neutrality:0 "Dutch-Hanoverian East Indies"
  HAN_DEI_neutrality_DEF:0 "the Dutch-Hanoverian East Indies"
@@ -363,7 +363,7 @@
  DAG_one_communism_ADJ:0 "North Caucasian"
  DAG_one_neutrality_ADJ:0 "North Caucasian"
 
-  DAG_TAR_RUS_fascism:0 "Shamkhalate of Tarki"
+ DAG_TAR_RUS_fascism:0 "Shamkhalate of Tarki"
  DAG_TAR_RUS_fascism_DEF:0 "the Shamkhalate of Tarki"
  DAG_TAR_RUS_democratic:0 "Shamkhalate of Tarki"
  DAG_TAR_RUS_democratic_DEF:0 "the Shamkhalate of Tarki"
@@ -405,7 +405,7 @@
  RAJ_EIC_DEF:0 "India"
  RAJ_EIC_ADJ:0 "Indian"
 
-  HAN_RAJ_fascism:0 "East India Company"
+ HAN_RAJ_fascism:0 "East India Company"
  HAN_RAJ_fascism_DEF:0 "the East India Company"
  HAN_RAJ_democratic:0 "East India Company"
  HAN_RAJ_democratic_DEF:0 "the East India Company"

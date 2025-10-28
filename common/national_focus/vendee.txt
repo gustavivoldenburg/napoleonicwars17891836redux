@@ -581,7 +581,7 @@ focus_tree = {
         cost = 7
 		completion_reward = {
 		 swap_ideas = { remove_idea = political_collapse_stage_6 add_idea = political_collapse_stage_5 }
-		 set_cosmetic_tag = VND_tricolor
+		 set_cosmetic_tag = FRA_republic_one
         }
     }
 	focus = {
