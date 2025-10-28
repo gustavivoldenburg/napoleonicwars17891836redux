@@ -121,5 +121,84 @@ characters={
 			expire="1805.1.1"
 		}
     }
+	VND_francois_amede_doppet={
+		name = "François Amédée Doppet"
+		portraits={
+			army={
+				large="gfx/leaders/VND/VND_francois_amede_doppet.dds"
+			}
+		}
+		field_marshal = {
+            traits = { 
+	            old_guard 
+				cautious
+	        }
+            skill = 4
+            attack_skill = 1
+            defense_skill = 2
+            planning_skill = 2
+            logistics_skill = 1
+        }
+    }
+	VND_jean_francois_auguste_moulin={
+		name = "Jean-François-Auguste Moulin"
+		portraits={
+			army={
+				large="gfx/leaders/VND/VND_jean_francois_auguste_moulin.dds"
+			}
+		}
+		field_marshal = {
+            traits = { 
+	            organizer 
+				charismatic 
+				infantry_leader
+	        }
+            skill = 4
+            attack_skill = 3
+            defense_skill = 3
+            planning_skill = 4
+            logistics_skill = 3
+        }
+    }
+	VND_edouard_jean_baptiste_milhaud={
+		name = "Édouard Jean-Baptiste Milhaud"
+		portraits={
+			army={
+				large="gfx/leaders/VND/VND_edouard_jean_baptiste_milhaud.dds"
+			}
+		}
+		field_marshal = {
+            traits = { 
+	            cavalry_leader 
+				aggressive_assaulter 
+				organizer
+	        }
+            skill = 4
+            attack_skill = 4
+            defense_skill = 3
+            planning_skill = 3
+            logistics_skill = 3
+        }
+    }
+	VND_charles_francois_dumouriez={
+		name = "Charles François Dumouriez"
+		portraits={
+			army={
+				large="gfx/leaders/VND/VND_charles_francois_dumouriez.dds"
+			}
+		}
+		field_marshal = {
+            traits = { 
+	            organizer 
+				infantry_leader 
+				charismatic
+	        }
+            skill = 4
+            attack_skill = 4
+            defense_skill = 3
+            planning_skill = 4
+            logistics_skill = 3
+        }
+    }
 }	
 

@@ -610,3 +610,23 @@ country_event = {
         add_popularity: { ideology = democratic popularity: -0.10 }		
     }
 }
+country_event = {
+  id = vendee.13
+  title = vendee.13.a
+  desc = vendee.13.b
+  picture = GFX_lafayette_regent_event_image
+  fire_only_once = yes
+    trigger = { 
+	    tag = VND
+	    has_country_flag = lafayette_women_soldier
+    }
+
+    option = {
+        name = vendee.13.c
+		custom_effect_tooltip = vendee_conservative_angry_tt
+		add_timed_idea = {
+            idea = VND_conservative_opposite
+            days = 700
+        }
+    }
+}

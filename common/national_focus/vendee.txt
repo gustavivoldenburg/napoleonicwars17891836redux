@@ -91,6 +91,7 @@ focus_tree = {
 			VND={
 		        transfer_state = 22
 		        transfer_state = 21
+				transfer_state = 20
 		    }
 			country_event = { id = vendee.5 days = 1 }
         }
@@ -493,6 +494,34 @@ focus_tree = {
         }
     }
 	focus = {
+        id = VND_civilian_oversight
+        icon = GFX_focus_SOV_builder_of_the_red_army
+        prerequisite = { focus = VND_citizen_soldier }
+        x = 6
+        y = 10
+        cost = 8
+		completion_reward = {
+		 swap_ideas = { remove_idea = army_collapse_stage_7 add_idea = army_collapse_stage_6 }
+        }
+    }
+	focus = {
+        id = VND_pardon_jacobin_officer
+        icon = GFX_focus_SOV_builder_of_the_red_army
+        prerequisite = { 
+            focus = VND_citizen_soldier		
+		}
+        x = 4
+        y = 10
+        cost = 15
+		completion_reward = {
+		 recruit_character = VND_francois_amede_doppet
+		 recruit_character = VND_jean_francois_auguste_moulin
+		 recruit_character = VND_edouard_jean_baptiste_milhaud
+		 recruit_character = VND_charles_francois_dumouriez
+		 custom_effect_tooltip = VND_pardon_jacobin_soldier_tt
+        }
+    }
+	focus = {
         id = VND_fete_lafayette
         icon = GFX_goal_fete_lafayette
         prerequisite = { focus = VND_lafayette_path }
@@ -540,6 +569,22 @@ focus_tree = {
         }
     }
 	focus = {
+        id = VND_readopt_tricolor
+        icon = GFX_focus_AFG_education_reform
+		mutually_exclusive = { focus = VND_expand_voting_right }
+        prerequisite = { 
+		    focus = VND_girl_education 
+			focus = VND_expand_voting_right 
+		}
+        x = 2
+        y = 10
+        cost = 7
+		completion_reward = {
+		 swap_ideas = { remove_idea = political_collapse_stage_6 add_idea = political_collapse_stage_5 }
+		 set_cosmetic_tag = VND_tricolor
+        }
+    }
+	focus = {
         id = VND_army_acedemy_girl
         icon = GFX_focus_SOV_women_in_aviation
         prerequisite = { focus = VND_lafayette_path }
@@ -551,6 +596,7 @@ focus_tree = {
         cost = 5
 		completion_reward = {
 		 swap_ideas = { remove_idea = VND_women_royal_warriors_idea add_idea = VND_women_royal_warriors_idea_2 }
+		 set_country_flag = lafayette_women_soldier
         }
     }
 	focus = {
@@ -593,6 +639,19 @@ focus_tree = {
         cost = 8
 		completion_reward = {
 		    swap_ideas = { remove_idea = econ_crisis_stage_8 add_idea = econ_crisis_stage_7 }
+	    }	
+    }
+	focus = {
+        id = VND_grain_tax
+        icon = GFX_goal_fete_lafayette
+		prerequisite = { 
+			focus = VND_national_market      
+	    }
+        x = -1
+        y = 10
+        cost = 8
+		completion_reward = {
+		    swap_ideas = { remove_idea = econ_crisis_stage_7 add_idea = econ_crisis_stage_6 }
 	    }	
     }
 }

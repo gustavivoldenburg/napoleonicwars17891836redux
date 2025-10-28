@@ -126,6 +126,19 @@ ideas = {
 
         removal_cost = -1
     }
+	VND_conservative_opposite = {
+        allowed = { original_tag = VND }
+        picture = chi_war_of_resistance2
+
+        modifier = {
+            org_loss_when_moving = 0.08 
+            planning_speed = -0.10
+			max_planning = -0.05
+			stability_factor = -0.10 
+	        war_support_weekly = -0.20
+		}
+
+    }
 
 		econ_crisis_stage_10 = {
 		    picture = economy_dead
