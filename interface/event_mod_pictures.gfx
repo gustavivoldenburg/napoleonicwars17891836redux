@@ -3610,4 +3610,8 @@ spriteTypes = {
 		name = "GFX_lafayette_oath_event_image"
 		texturefile = "gfx/event_pictures/report_event_lafayette_oath.dds"
 	}
+	spriteType = {
+		name = "GFX_vnd_department_event_image"
+		texturefile = "gfx/event_pictures/report_event_vnd_department.dds"
+	}
 }
