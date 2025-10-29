@@ -13,4 +13,21 @@ characters={
 			expire="1800.1.1"
 		}
     }
+	POL_charles_de_bonchamps = {
+    name = "Charles de Bonchamps"
+        portraits = { army = { large = "gfx/leaders/VND/VND_Bonchamps.dds" } }
+	
+	    field_marshal = {
+          traits = { 
+	        organizer
+            defensive_doctrine
+            cavalry_leader
+	      }
+          skill = 4
+          attack_skill = 4
+          defense_skill = 2
+          planning_skill = 2
+          logistics_skill = 1
+        }
+  }
 }	
