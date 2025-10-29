@@ -200,5 +200,108 @@ characters={
             logistics_skill = 3
         }
     }
+
+  VND_jean_baptiste_say = {
+        name = "Jean-Baptiste Say"
+        country = VND
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/VND/VND_jean_baptiste_say.dds"
+			}
+		}
+    advisor = {
+      slot = political_advisor
+      idea_token = VND_jean_baptiste_say_advisor
+      cost = 150
+      traits = { financial_expert }
+      available = { has_country_flag = VND_invite_bussinessmen }
+    }
+  }
+
+  VND_etienne_claviere = {
+    name = "Étienne Clavière"
+    country = VND
+	portraits={
+			civilian={
+				small="gfx/interface/ideas/VND/VND_etienne_claviere.dds"
+			}
+	}
+    advisor = {
+      slot = political_advisor
+      idea_token = VND_etienne_claviere_advisor
+      cost = 150
+      traits = { financial_expert }
+      available = { has_country_flag = VND_invite_bussinessmen }
+    }
+  }
+
+  VND_claude_perier = {
+    name = "Claude Périer"
+    country = VND
+	portraits={
+			civilian={
+				small="gfx/interface/ideas/VND/VND_claude_perier.dds"
+			}
+	}
+    advisor = {
+      slot = political_advisor
+      idea_token = VND_claude_perier_advisor
+      cost = 150
+      traits = { captain_of_industry }
+      available = { has_country_flag = VND_invite_bussinessmen }
+    }
+  }
+
+  VND_francois_cabarrus = {
+    name = "François Cabarrus"
+    country = VND
+	portraits={
+			civilian={
+				small="gfx/interface/ideas/VND/VND_francois_cabarrus.dds"
+			}
+	}
+    advisor = {
+      slot = political_advisor
+      idea_token = VND_francois_cabarrus_advisor
+      cost = 150
+      traits = { financial_expert }
+      available = { has_country_flag = VND_invite_bussinessmen }
+    }
+  }
+
+  VND_jean_antoine_chaptal = {
+    name = "Jean-Antoine Chaptal"
+    country = VND
+	portraits={
+			civilian={
+				small="gfx/interface/ideas/VND/VND_jean_antoine_chaptal.dds"
+			}
+	}
+    advisor = {
+      slot = political_advisor
+      idea_token = VND_jean_antoine_chaptal_advisor
+      cost = 150
+      traits = { captain_of_industry }
+      available = { has_country_flag = VND_invite_bussinessmen }
+    }
+  }
+
+  VND_pierre_samuel_dupont = {
+    name = "Pierre-Samuel du Pont de Nemours"
+    country = VND
+	portraits={
+			civilian={
+				small="gfx/interface/ideas/VND/VND_pierre_samuel_dupont.dds"
+			}
+	}
+    advisor = {
+      slot = political_advisor
+      idea_token = VND_pierre_samuel_dupont
+      cost = 150
+      traits = { war_industrialist }
+      available = { has_country_flag = VND_invite_bussinessmen }
+    }
+  }
+	
 }	
 

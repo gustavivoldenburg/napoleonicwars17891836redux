@@ -9,6 +9,12 @@ recruit_character = VND_Cathelineau
 recruit_character = VND_charles_de_bonchamps
 recruit_character = VND_lafayette
 promote_character = VND_lafayette
+recruit_character = VND_jean_baptiste_say
+recruit_character = VND_etienne_claviere
+recruit_character = VND_claude_perier
+recruit_character = VND_francois_cabarrus
+recruit_character = VND_jean_antoine_chaptal
+recruit_character = VND_pierre_samuel_dupont
 }
 # Starting tech
 set_technology = {

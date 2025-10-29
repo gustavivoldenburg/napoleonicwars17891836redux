@@ -409,7 +409,7 @@ focus_tree = {
     }
 	focus = {
         id = VND_increase_autonomy
-        icon = GFX_SOV_offer_autonomy_to_former_soviet_republics_ccp_2d_sov_compatibility
+        icon = GFX_focus_NORDIC_com_institution_2
 		available =  { 
             always = yes
 		}
@@ -441,7 +441,7 @@ focus_tree = {
     }
 	focus = {
         id = VND_build_fac_federalist
-        icon = GFX_SOV_offer_autonomy_to_former_soviet_republics_ccp_2d_sov_compatibility
+        icon = GFX_goal_generic_construct_mil_factory
 		available =  { 
             always = yes
 		}
@@ -496,6 +496,43 @@ focus_tree = {
                 }
             }
 		    add_days_mission_timeout  = { mission = federalist_patience_mission days = 20 }		
+        }
+    }
+	focus = {
+        id = VND_local_liberty
+        icon = GFX_focus_focus_fra_liberte_egalite_solidarite
+		available =  { 
+            always = yes
+		}
+        prerequisite = { 
+		        focus = VND_build_fac_federalist
+		}
+        x = 7
+        y = 9
+        cost = 5
+        completion_reward = {
+		    add_days_mission_timeout  = { mission = federalist_patience_mission days = 45 }
+            add_timed_idea = {
+                idea = VND_local_liberty
+                days = 50	
+            }				
+        }
+    }
+	focus = {
+        id = VND_one_kingdom_many_autonomy
+        icon = GFX_focus_fra_french_union
+		available =  { 
+            always = yes
+		}
+        prerequisite = { 
+		        focus = VND_local_liberty
+		}
+        x = 8
+        y = 10
+        cost = 7
+        completion_reward = {
+            set_country_flag = federalist_done	
+            custom_effect_tooltip = federalist_done_tt			
         }
     }
 	# ===========================
@@ -630,8 +667,7 @@ focus_tree = {
     }
 	focus = {
         id = VND_readopt_tricolor
-        icon = GFX_focus_AFG_education_reform
-		mutually_exclusive = { focus = VND_expand_voting_right }
+        icon = GFX_focus_chi_reach_out_to_france
         prerequisite = { 
 		    focus = VND_girl_education 
 			focus = VND_expand_voting_right 
@@ -754,6 +790,22 @@ focus_tree = {
         cost = 10
 		completion_reward = {
 		    swap_ideas = { remove_idea = econ_crisis_stage_5 add_idea = econ_crisis_stage_4 }
+	    }	
+    }
+	focus = {
+        id = VND_invite_bussinessmen
+        icon = GFX_SOV_superior_war_machines_ccp_2d_sov_compatibility
+		prerequisite = { 
+			focus = VND_prepare_war    
+	    }
+		prerequisite = { 
+			focus = VND_free_labor    
+	    }
+        x = -1
+        y = 13
+        cost = 8
+		completion_reward = {
+		    set_country_flag = VND_invite_bussinessmen
 	    }	
     }
 }

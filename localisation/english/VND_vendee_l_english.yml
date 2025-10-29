@@ -99,6 +99,7 @@
   vendee.13.c: "Careful regent"
   vendee_conservative_angry_tt: "§RThe Conservative Are Furious§!"
   VND_conservative_opposite: "§RConservative Opposite§!"
+  VND_invite_bussinessmen: "§YYou Invite the Bussinessmen to goverment§!"
   
   VND_federalist_promise_tt: "§RYou initiate the process of decentralization.§!"
   VND_federalist_decision: "Honor the promise we made to the Federalists"
@@ -112,6 +113,10 @@
   VND_equal_tax: "Equal taxation"
   VND_equal_tax_desc: "One of the reasons why the revolution started in France was due to the economic ruin that devastated our country during the reign of Louis XVI. One of the biggest factors in the economic decline was the massive taxation of the peasants and bourgeoisie, while the nobles laughed at the poor from their palaces. It will not be repeated again and the State will offer the same right to every man regardless of his social status."
   VND_elect_soldier: "Elected Junior Officers"
+  federalist_done_tt: "§OYou finished to decentralize the kingdom§!"
+  VND_one_kingdom_many_autonomy: "One Kingdom,Many state"
+  VND_local_liberty: "Guarantee Local Liberty"
+  VND_build_fac_federalist: "Lyon Program"
   VND_citizen_soldier: "Citizen-Soldier Doctrine"
   VND_citizen_soldier_desc: "What is a citizen who enjoys our rights but who does not serve his country?It is not one, a citizen applies his usefulness in society while defending it and dying for it, we must remember the duty of each citizen so as not to become a weak society when our authority was forged from war between brothers, especially in times where the tension of war is always present around us.They will fight for king and nation."
   VND_question_of_department: "Fate of Department"

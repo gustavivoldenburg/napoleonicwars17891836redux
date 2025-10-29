@@ -128,7 +128,7 @@ ideas = {
     }
 	VND_conservative_opposite = {
         allowed = { original_tag = VND }
-        picture = chi_war_of_resistance2
+        picture = ICE_general_strike
 
         modifier = {
             org_loss_when_moving = 0.08 
@@ -136,6 +136,16 @@ ideas = {
 			max_planning = -0.05
 			stability_factor = -0.10 
 	        war_support_weekly = -0.20
+		}
+
+    }
+	
+	VND_local_liberty = {
+        allowed = { original_tag = VND }
+        picture = RAJ_independence_movement
+
+        modifier = {
+			stability_factor = 0.05		
 		}
 
     }
