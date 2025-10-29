@@ -630,3 +630,46 @@ country_event = {
         }
     }
 }
+country_event = {
+  id = vendee.14
+  title = vendee.14.a
+  desc = vendee.14.b
+  picture = GFX_salt_tax_event_image
+  fire_only_once = yes
+    trigger = { 
+	    tag = VND
+	    has_country_flag = VND_salt_tax
+    }
+
+    option = {
+        name = vendee.14.c
+        
+    }
+}
+country_event = {
+  id = vendee.15
+  title = vendee.15.a
+  desc = vendee.15.b
+  picture = GFX_to_arm_event_image
+  fire_only_once = yes
+    trigger = { 
+	    tag = VND
+	    has_country_flag = VND_liberal_con
+    }
+
+    option = {
+        name = vendee.15.c
+        
+    }
+	option = {
+        name = vendee.15.d
+        
+    }
+	option = {
+        name = vendee.15.e
+		play_song = "la_marseillaise"
+		add_stability = -0.10
+        add_war_support = 0.15
+        
+    }
+}

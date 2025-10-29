@@ -603,7 +603,7 @@ focus_tree = {
     }
 	focus = {
         id = VND_pardon_jacobin_officer
-        icon = GFX_focus_SOV_builder_of_the_red_army
+        icon = GFX_SOV_leader_of_the_party_and_the_people_ccp_2d_sov_compatibility
         prerequisite = { 
             focus = VND_citizen_soldier		
 		}
@@ -616,6 +616,17 @@ focus_tree = {
 		 recruit_character = VND_edouard_jean_baptiste_milhaud
 		 recruit_character = VND_charles_francois_dumouriez
 		 custom_effect_tooltip = VND_pardon_jacobin_soldier_tt
+        }
+    }
+	focus = {
+        id = VND_rule_of_engatement
+        icon = GFX_focus_SOV_builder_of_the_red_army
+        prerequisite = { focus = VND_citizen_soldier }
+        x = 6
+        y = 10
+        cost = 8
+		completion_reward = {
+		 swap_ideas = { remove_idea = army_collapse_stage_7 add_idea = army_collapse_stage_6 }
         }
     }
 	focus = {
@@ -678,6 +689,46 @@ focus_tree = {
 		completion_reward = {
 		 swap_ideas = { remove_idea = political_collapse_stage_6 add_idea = political_collapse_stage_5 }
 		 set_cosmetic_tag = FRA_republic_one
+        }
+    }
+	focus = {
+        id = VND_abolish_slave
+        icon = GFX_focus_chi_reach_out_to_france
+        prerequisite = { 
+		    focus = VND_readopt_tricolor 
+		}
+        x = 2
+        y = 11
+        cost = 7
+		completion_reward = {
+		 swap_ideas = { remove_idea = political_collapse_stage_5 add_idea = political_collapse_stage_4 }
+        }
+    }
+	focus = {
+        id = VND_property_right
+        icon = GFX_focus_ARG_banco_central_de_la_republica_argentina
+        prerequisite = { 
+		    focus = VND_abolish_slave 
+		}
+        x = 2
+        y = 13
+        cost = 7
+		completion_reward = {
+		 swap_ideas = { remove_idea = political_collapse_stage_4 add_idea = political_collapse_stage_3 }
+        }
+    }
+	focus = {
+        id = VND_finish_constitution
+        icon = GFX_focus_POL_complete_april_constitution
+        prerequisite = { 
+		    focus = VND_property_right 
+		}
+        x = 2
+        y = 14
+        cost = 11
+		completion_reward = {
+		 swap_ideas = { remove_idea = political_collapse_stage_3 add_idea = lafyette_constitution }
+		 set_country_flag = VND_liberal_con
         }
     }
 	focus = {
@@ -793,19 +844,57 @@ focus_tree = {
 	    }	
     }
 	focus = {
-        id = VND_invite_bussinessmen
-        icon = GFX_SOV_superior_war_machines_ccp_2d_sov_compatibility
+        id = VND_feudal_dues_abolition
+        icon = GFX_SOV_increase_state_reserves_ccp_2d_sov_compatibility
 		prerequisite = { 
-			focus = VND_prepare_war    
-	    }
-		prerequisite = { 
-			focus = VND_free_labor    
+			focus = VND_fiscal_transparency    
 	    }
         x = -1
         y = 13
-        cost = 8
+        cost = 5
+		completion_reward = {
+		    swap_ideas = { remove_idea = econ_crisis_stage_4 add_idea = econ_crisis_stage_3 }
+	    }	
+    }
+	focus = {
+        id = VND_invite_bussinessmen_focus
+        icon = GFX_focus_RAJ_just_good_business
+		prerequisite = { 
+			focus = VND_prepare_war    
+	    }
+        x = 1
+        y = 12
+        cost = 5
 		completion_reward = {
 		    set_country_flag = VND_invite_bussinessmen
+			custom_effect_tooltip = VND_bussinessmen
+	    }	
+    }
+	focus = {
+        id = VND_abolish_salt_tax
+        icon = GFX_focus_RAJ_just_good_business
+		prerequisite = { 
+			focus = VND_prepare_war    
+	    }
+        x = -1
+        y = 14
+        cost = 5
+		completion_reward = {
+		    swap_ideas = { remove_idea = econ_crisis_stage_3 add_idea = econ_crisis_stage_2 }
+			set_country_flag = VND_salt_tax
+	    }	
+    }
+	focus = {
+        id = VND_france_eco
+        icon = GFX_focus_RAJ_just_good_business
+		prerequisite = { 
+			focus = VND_prepare_war    
+	    }
+        x = -1
+        y = 15
+        cost = 11
+		completion_reward = {
+		    swap_ideas = { remove_idea = econ_crisis_stage_3 add_idea = econ_boost_balanced }
 	    }	
     }
 }
