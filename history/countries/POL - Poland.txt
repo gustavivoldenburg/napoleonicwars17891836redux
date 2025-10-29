@@ -1,7 +1,7 @@
 capital = 10
 1789.1.1 = {
   set_oob = POL_Inf_1789
-  set_cosmetic_tag = MSV_POL_LIT
+  set_cosmetic_tag = POL_LIT
   recruit_character = POL_stanislaw
   promote_character = POL_stanislaw
 }

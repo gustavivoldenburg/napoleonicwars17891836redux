@@ -124,6 +124,132 @@ units = {
 		start_experience_factor = 0.3
 	}
 }
+units = {
+	#Polish Army
+	division = {
+		name = "Polish Division"
+		location = 6593
+		division_template = "Polish Division"
+		start_experience_factor = 0.3
+	}
+}
+units = {
+	#Polish Army
+	division = {
+		name = "Polish Division"
+		location = 6593
+		division_template = "Polish Division"
+		start_experience_factor = 0.3
+	}
+}
+units = {
+	#Polish Army
+	division = {
+		name = "Polish Division"
+		location = 6593
+		division_template = "Polish Division"
+		start_experience_factor = 0.3
+	}
+}
+units = {
+	#Polish Army
+	division = {
+		name = "Polish Division"
+		location = 6593
+		division_template = "Polish Division"
+		start_experience_factor = 0.3
+	}
+}
+units = {
+	#Polish Army
+	division = {
+		name = "Polish Division"
+		location = 6593
+		division_template = "Polish Division"
+		start_experience_factor = 0.3
+	}
+}
+units = {
+	#Polish Army
+	division = {
+		name = "Polish Division"
+		location = 6593
+		division_template = "Polish Division"
+		start_experience_factor = 0.3
+	}
+}
+units = {
+	#Polish Army
+	division = {
+		name = "Polish Division"
+		location = 6593
+		division_template = "Polish Division"
+		start_experience_factor = 0.3
+	}
+}
+units = {
+	#Polish Army
+	division = {
+		name = "Polish Division"
+		location = 6593
+		division_template = "Polish Division"
+		start_experience_factor = 0.3
+	}
+}
+units = {
+	#Polish Army
+	division = {
+		name = "Polish Division"
+		location = 6593
+		division_template = "Polish Division"
+		start_experience_factor = 0.3
+	}
+}
+units = {
+	#Polish Army
+	division = {
+		name = "Polish Division"
+		location = 9508
+		division_template = "Polish Division"
+		start_experience_factor = 0.3
+	}
+}
+units = {
+	#Polish Army
+	division = {
+		name = "Polish Division"
+		location = 9508
+		division_template = "Polish Division"
+		start_experience_factor = 0.3
+	}
+}
+units = {
+	#Polish Army
+	division = {
+		name = "Polish Division"
+		location = 9508
+		division_template = "Polish Division"
+		start_experience_factor = 0.3
+	}
+}
+units = {
+	#Polish Army
+	division = {
+		name = "Polish Division"
+		location = 3757
+		division_template = "Polish Division"
+		start_experience_factor = 0.3
+	}
+}
+units = {
+	#Polish Army
+	division = {
+		name = "Polish Division"
+		location = 3757
+		division_template = "Polish Division"
+		start_experience_factor = 0.3
+	}
+}
 ### Starting Equipment ###
 instant_effect = {
 	add_equipment_production = {
