@@ -3603,6 +3603,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/VND/louis_xvii.dds"
 	}
 	spriteType = {
+		name = "GFX_idea_french_eco"
+		texturefile = "gfx/interface/ideas/VND/french_eco.dds"
+	}
+	spriteType = {
 		name = "GFX_lafayette_regent_event_image"
 		texturefile = "gfx/event_pictures/report_event_lafayette_regent.dds"
 	}
@@ -3613,5 +3617,13 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_vnd_department_event_image"
 		texturefile = "gfx/event_pictures/report_event_vnd_department.dds"
+	}
+	spriteType = {
+		name = "GFX_salt_tax_event_image"
+		texturefile = "gfx/event_pictures/report_event_salt_tax.dds"
+	}
+	spriteType = {
+		name = "GFX_to_arm_event_image"
+		texturefile = "gfx/event_pictures/report_event_to_arm.dds"
 	}
 }

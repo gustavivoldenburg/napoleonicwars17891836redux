@@ -312,6 +312,7 @@ ideas = {
 		}
 		
 		econ_boost_balanced = {
+		    picture = french_eco
 			removal_cost = -1
 			modifier = {
 				# modest, safe boosts
