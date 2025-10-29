@@ -21,7 +21,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=despotism
+			ideology=absolute_monarchy
 			traits={Aisin-Goro}
 			desc = QIN_QIANLONG_DESC
 			expire="1797.1.1"

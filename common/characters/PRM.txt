@@ -7,7 +7,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=despotism
+			ideology=enlightened_absolutism
 			traits={Bourbon-Parma}
 			desc = PRM_FERDINANDI_DESC
 			expire="1797.1.1"
