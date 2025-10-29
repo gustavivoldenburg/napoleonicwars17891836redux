@@ -661,7 +661,7 @@ focus_tree = {
     }
 	focus = {
         id = VND_equal_tax
-        icon = GFX_focus_RAJ_war_taxes
+        icon = GFX_goal_equal_taxation
         prerequisite = { focus = VND_lafayette_path }
         x = -1
         y = 7

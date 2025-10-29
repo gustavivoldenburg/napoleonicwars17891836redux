@@ -99,4 +99,8 @@ spriteTypes = {
 		name = "GFX_goal_girl_education"
 		texturefile = "gfx/interface/goals/VND/GFX_girl_education.dds"
 	}
+	spriteType = {
+		name = "GFX_goal_equal_taxation"
+		texturefile = "gfx/interface/goals/VND/GFX_equal_taxation.dds"
+	}
 }
