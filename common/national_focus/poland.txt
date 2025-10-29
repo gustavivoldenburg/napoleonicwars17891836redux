@@ -229,7 +229,7 @@ focus_tree = {
         ai_will_do = { factor = 10 }
         completion_reward = {
             add_manpower = 5000
-            annex_country = { target = COU transfer_troops = yes }
+            annex_country = { target = LAT transfer_troops = yes }
         }
 
     }
@@ -242,7 +242,7 @@ focus_tree = {
         prerequisite = { focus = POL_reorganization_of_the_voivodeships }
         ai_will_do = { factor = 1 }
         completion_reward = {
-            90 = {
+            87 = {
                 add_extra_state_shared_building_slots = 2
                 add_building_construction = {
                     type = arms_factory
@@ -292,7 +292,57 @@ focus_tree = {
         }
 
     }
-    
+    focus = {
+        id = POL_modernize_the_lithuanian_regions
+        icon = GFX_focus_ARG_develop_the_electricity_sector
+        x = 28
+        y = 3
+        cost = 10
+        prerequisite = { focus = POL_create_the_city_of_lodz }
+        ai_will_do = { factor = 1 }
+        completion_reward = {
+            784 = {
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 2
+                    instant_build  = yes
+                }
+                    add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                    instant_build  = yes
+                    }
+                
+            }
+            815 = {
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 2
+                    instant_build  = yes
+                }
+                add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                    instant_build  = yes
+                    }
+            }
+             96 = {
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 2
+                    instant_build  = yes
+                }
+                add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                    instant_build  = yes
+                    }
+                }
+            }
+            
+
+    }
 }
- 
- 
