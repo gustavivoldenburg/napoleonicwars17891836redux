@@ -468,7 +468,7 @@ spriteTypes = {
 	
 	spriteType = {
         	name = "GFX_goal_citizen_soldier_doctrine_shine"
-        	texturefile = "gfx/interface/goals/VND/GFX_goal_citizen_soldier_doctrine.dds"
+        	texturefile = "gfx/interface/goals/VND/GFX_citizen_soldier_doctrine.dds"
 				effectfile = "gfx/FX/buttonstate.lua"	
 		animation = {
 			animationmaskfile = "gfx/interface/goals/VND/GFX_goal_citizen_soldier_doctrine.dds"
@@ -483,7 +483,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/VND/GFX_goal_citizen_soldier_doctrine.dds"
+			animationmaskfile = "gfx/interface/goals/VND/GFX_citizen_soldier_doctrine.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -499,10 +499,10 @@ spriteTypes = {
 	
 	spriteType = {
         	name = "GFX_goal_girl_education_shine"
-        	texturefile = "gfx/interface/goals/VND/GFX_goal_girl_education.dds"
+        	texturefile = "gfx/interface/goals/VND/GFX_girl_education.dds"
 				effectfile = "gfx/FX/buttonstate.lua"	
 		animation = {
-			animationmaskfile = "gfx/interface/goals/VND/GFX_goal_girl_education.dds"
+			animationmaskfile = "gfx/interface/goals/VND/GFX_girl_education.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -514,7 +514,7 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/VND/GFX_goal_girl_education.dds"
+			animationmaskfile = "gfx/interface/goals/VND/GFX_girl_education.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
