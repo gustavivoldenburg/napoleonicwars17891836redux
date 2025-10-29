@@ -220,6 +220,11 @@ set_oob = "POL_1919"
 set_oob = "POL_1789_1815"
 }
 }
+add_ideas = {
+	POL_rada_nieustajaca
+	POL_economy_stuck_in_17th_century1
+	POL_disorganized_army1
+} 
 1936.1.1 = {
 oob = "POL_1936"
 if = {
@@ -333,6 +338,8 @@ if = {
 		has_dlc = "Poland: United and Ready"
 	}
 	add_ideas = {
+		
+		
 		uncontrolled_exports
 		POL_april_constitution_1
 		POL_looming_peasants_strike
@@ -633,10 +640,10 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	democratic = 32
-	fascism = 11
-	communism = 19
-	neutrality = 38
+	democratic = 15
+	fascism = 0
+	communism = 0
+	neutrality = 85
 }
 }
 set_politics = {

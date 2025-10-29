@@ -1,6 +1,6 @@
 ideas = {
 	country = {
-		POL_liberum_veto = {
+		POL_rada_nieustajaca = {
 
             allowed = {
                 always = no
@@ -54,6 +54,31 @@ ideas = {
                 consumer_goods_factor = 0.3
 				production_speed_buildings_factor = -0.2
 				production_factory_efficiency_gain_factor = -0.1
+            }
+
+		}
+		POL_disorganized_army1 = {
+			allowed = {
+                always = no
+            }
+			allowed_civil_war = {
+				always = yes
+			}
+
+            removal_cost = -1
+
+            picture = russian_flag_paris
+
+            modifier = {
+                offence = -0.5
+				
+				defence = -0.3
+				
+				speed = -0.2
+				army_org = -10.0
+				experience_gain_army_unit = -0.2
+				breakthrough = -0.2
+				dig_in_speed = 10
             }
 
 		}
