@@ -1,7 +1,7 @@
 ﻿division_template = {
 	name = "Polish Division"
 
-	division_names_group = POL_Inf_1789
+	division_names_group = POL_Inf_01
 
 regiments = {
         infantry = { x = 0 y = 0 }
@@ -29,186 +29,6 @@ units = {
 	#Polish Army
 	division = {
 		name = "Polish Division"
-		location = 3544
-		division_template = "Polish Division"
-		start_experience_factor = 0.3
-	}
-}
-units = {
-	#Polish Army
-	division = {
-		name = "Polish Division"
-		location = 362
-		division_template = "Polish Division"
-		start_experience_factor = 0.3
-	}
-}
-units = {
-	#Polish Army
-	division = {
-		name = "Polish Division"
-		location = 11370
-		division_template = "Polish Division"
-		start_experience_factor = 0.3
-	}
-}
-units = {
-	#Polish Army
-	division = {
-		name = "Polish Division"
-		location = 11370
-		division_template = "Polish Division"
-		start_experience_factor = 0.3
-	}
-}
-units = {
-	#Polish Army
-	division = {
-		name = "Polish Division"
-		location = 11370
-		division_template = "Polish Division"
-		start_experience_factor = 0.3
-	}
-}
-units = {
-	#Polish Army
-	division = {
-		name = "Polish Division"
-		location = 6558
-		division_template = "Polish Division"
-		start_experience_factor = 0.3
-	}
-}
-units = {
-	#Polish Army
-	division = {
-		name = "Polish Division"
-		location = 6558
-		division_template = "Polish Division"
-		start_experience_factor = 0.3
-	}
-}
-units = {
-	#Polish Army
-	division = {
-		name = "Polish Division"
-		location = 6558
-		division_template = "Polish Division"
-		start_experience_factor = 0.3
-	}
-}
-units = {
-	#Polish Army
-	division = {
-		name = "Polish Division"
-		location = 9427
-		division_template = "Polish Division"
-		start_experience_factor = 0.3
-	}
-}
-units = {
-	#Polish Army
-	division = {
-		name = "Polish Division"
-		location = 9427
-		division_template = "Polish Division"
-		start_experience_factor = 0.3
-	}
-}
-units = {
-	#Polish Army
-	division = {
-		name = "Polish Division"
-		location = 9427
-		division_template = "Polish Division"
-		start_experience_factor = 0.3
-	}
-}
-units = {
-	#Polish Army
-	division = {
-		name = "Polish Division"
-		location = 6593
-		division_template = "Polish Division"
-		start_experience_factor = 0.3
-	}
-}
-units = {
-	#Polish Army
-	division = {
-		name = "Polish Division"
-		location = 6593
-		division_template = "Polish Division"
-		start_experience_factor = 0.3
-	}
-}
-units = {
-	#Polish Army
-	division = {
-		name = "Polish Division"
-		location = 6593
-		division_template = "Polish Division"
-		start_experience_factor = 0.3
-	}
-}
-units = {
-	#Polish Army
-	division = {
-		name = "Polish Division"
-		location = 6593
-		division_template = "Polish Division"
-		start_experience_factor = 0.3
-	}
-}
-units = {
-	#Polish Army
-	division = {
-		name = "Polish Division"
-		location = 6593
-		division_template = "Polish Division"
-		start_experience_factor = 0.3
-	}
-}
-units = {
-	#Polish Army
-	division = {
-		name = "Polish Division"
-		location = 6593
-		division_template = "Polish Division"
-		start_experience_factor = 0.3
-	}
-}
-units = {
-	#Polish Army
-	division = {
-		name = "Polish Division"
-		location = 6593
-		division_template = "Polish Division"
-		start_experience_factor = 0.3
-	}
-}
-units = {
-	#Polish Army
-	division = {
-		name = "Polish Division"
-		location = 6593
-		division_template = "Polish Division"
-		start_experience_factor = 0.3
-	}
-}
-units = {
-	#Polish Army
-	division = {
-		name = "Polish Division"
-		location = 6593
-		division_template = "Polish Division"
-		start_experience_factor = 0.3
-	}
-}
-units = {
-	#Polish Army
-	division = {
-		name = "Polish Division"
 		location = 9508
 		division_template = "Polish Division"
 		start_experience_factor = 0.3
@@ -218,7 +38,7 @@ units = {
 	#Polish Army
 	division = {
 		name = "Polish Division"
-		location = 9508
+		location = 3230
 		division_template = "Polish Division"
 		start_experience_factor = 0.3
 	}
@@ -227,7 +47,7 @@ units = {
 	#Polish Army
 	division = {
 		name = "Polish Division"
-		location = 9508
+		location = 9439
 		division_template = "Polish Division"
 		start_experience_factor = 0.3
 	}
@@ -236,7 +56,7 @@ units = {
 	#Polish Army
 	division = {
 		name = "Polish Division"
-		location = 3757
+		location = 11274
 		division_template = "Polish Division"
 		start_experience_factor = 0.3
 	}
@@ -245,7 +65,88 @@ units = {
 	#Polish Army
 	division = {
 		name = "Polish Division"
-		location = 3757
+		location = 6407
+		division_template = "Polish Division"
+		start_experience_factor = 0.3
+	}
+}
+units = {
+	#Polish Army
+	division = {
+		name = "Polish Division"
+		location = 6407
+		division_template = "Polish Division"
+		start_experience_factor = 0.3
+	}
+}
+units = {
+	#Polish Army
+	division = {
+		name = "Polish Division"
+		location = 14383
+		division_template = "Polish Division"
+		start_experience_factor = 0.3
+	}
+}
+units = {
+	#Polish Army
+	division = {
+		name = "Polish Division"
+		location = 14383
+		division_template = "Polish Division"
+		start_experience_factor = 0.3
+	}
+}
+units = {
+	#Polish Army
+	division = {
+		name = "Polish Division"
+		location = 3272
+		division_template = "Polish Division"
+		start_experience_factor = 0.3
+	}
+}
+units = {
+	#Polish Army
+	division = {
+		name = "Polish Division"
+		location = 3272
+		division_template = "Polish Division"
+		start_experience_factor = 0.3
+	}
+}
+units = {
+	#Polish Army
+	division = {
+		name = "Polish Division"
+		location = 14380
+		division_template = "Polish Division"
+		start_experience_factor = 0.3
+	}
+}
+units = {
+	#Polish Army
+	division = {
+		name = "Polish Division"
+		location = 14380
+		division_template = "Polish Division"
+		start_experience_factor = 0.3
+	}
+}
+units = {
+	#Polish Army
+	division = {
+		name = "Polish Division"
+		location = 6281
+		division_template = "Polish Division"
+		start_experience_factor = 0.3
+	}
+}
+units = {
+	#Polish Army
+	division = {
+		name = "Polish Division"
+		location = 6281
 		division_template = "Polish Division"
 		start_experience_factor = 0.3
 	}
@@ -257,7 +158,7 @@ instant_effect = {
 			type = infantry_equipment_0
 			creator = "POL"
 		}
-		requested_factories = 4
+		requested_factories = 1
 		progress = 0.28
 		efficiency = 100
 	}
