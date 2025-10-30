@@ -308,3 +308,51 @@
   political_collapse_stage_3:0 "Thin Authority"
   political_collapse_stage_2:0 "Tentative Order"
   political_collapse_stage_1:0 "Wobbly Calm"
+  
+  VND_economy: "Kingdom Of france Economic"
+
+  VND_engineering_corps_schools_1794:0 "Found Engineering Schools"
+  VND_engineering_corps_schools_1794_desc:0 "Establish a central school for state engineers to standardize surveying, fortifications, and industrial know-how.\nEffect: §YResearch Speed§! +2%, §YStability§! +1%."
+
+  VND_enact_metric_system_1795:0 "Enact the Metric System"
+  VND_enact_metric_system_1795_desc:0 "Adopt decimal measures to unify trade, taxation, and construction standards.\nEffect: §YResearch Speed§! +2%, §YStability§! +2%."
+
+  VND_liquidate_biens_nationaux_1796:0 "Liquidate National Properties"
+  VND_liquidate_biens_nationaux_1796_desc:0 "Sell state lands and assets to raise capital and restart industry.\nEffect: §YCivilian Factories (off-map)§! +2, §YPolitical Power§! +50, §YStability§! −3%."
+
+  VND_window_door_tax_1798:0 "Window and Door Tax"
+  VND_window_door_tax_1798_desc:0 "A blunt but steady revenue stream based on openings in façades.\nEffect: §YPolitical Power§! +25, §YStability§! −1%."
+
+  VND_found_national_bank_1800:0 "Found a National Bank"
+  VND_found_national_bank_1800_desc:0 "Create a lender of last resort to stabilize currency and state finances.\nEffect: §YStability§! +3%, §YPolitical Power§! +50, §YResearch Speed§! +1%."
+
+  VND_upgrade_canal_du_centre:0 "Upgrade the Canal du Centre"
+  VND_upgrade_canal_du_centre_desc:0 "Improve the Burgundy coal-and-iron corridor for barge traffic and supply.\nTargets: §YSaône-et-Loire§!, §YNièvre§!, §YCôte-d’Or§!.\nEffect on target: §YInfrastructure§! +1, §YSupply Node§! added."
+
+  VND_expand_le_creusot_foundry:0 "Expand Le Creusot Foundry"
+  VND_expand_le_creusot_foundry_desc:0 "Scale up iron casting and artillery works at Le Creusot.\nEffect on target: §YMilitary Factory§! +1, §YSteel§! +8."
+
+  VND_expand_mas_saint_etienne:0 "Expand Saint-Étienne Arms Manufacture"
+  VND_expand_mas_saint_etienne_desc:0 "Rationalize small-arms lines and tooling in the Loire basin.\nEffect on target: §YMilitary Factory§! +1."
+
+  VND_rebuild_toulon_arsenal:0 "Rebuild the Toulon Arsenal"
+  VND_rebuild_toulon_arsenal_desc:0 "Restore docks and slips to restart Mediterranean naval construction.\nEffect on target: §YDockyard§! +1, §YNaval Base§! +1."
+
+  VND_resume_cherbourg_breakwater:0 "Resume the Cherbourg Breakwater"
+  VND_resume_cherbourg_breakwater_desc:0 "Continue the Channel bastion to shelter fleets and convoys.\nEffect on target: §YNaval Base§! +1, §YDockyard§! +1."
+
+  VND_integrate_mulhouse_textile_1798:0 "Integrate Mulhouse Textile"
+  VND_integrate_mulhouse_textile_1798_desc:0 "Fold the Alsatian textile hub into the national system after annexation.\nEffect on target: §YCivilian Factory§! +1, §YPolitical Power§! +15."
+
+  
+  VND_engineer_cadre_boost:0 "Engineer Cadre Schools"
+  VND_engineer_cadre_boost_desc:0 "Founded in 1794 to train state engineers and high-level officials, the new republican schools professionalize public works and armament design."
+
+  VND_metric_standardization_idea:0 "Metric Standardization"
+  VND_metric_standardization_idea_desc:0 "The decree of 18 Germinal Year III mandates decimal weights and measures, streamlining trade, logistics, and technical education across France."
+
+  VND_biens_nationaux_liquidation:0 "Liquidation of National Properties"
+  VND_biens_nationaux_liquidation_desc:0 "State lands are sold to shore up the treasury and stabilize paper money. Revenues rise, but social tensions simmer."
+
+  VND_window_door_tax_1798:0 "Door & Window Tax"
+  VND_window_door_tax_1798_desc:0 "A property tax based on openings in façades provides steady revenue, at the cost of public grumbling and bricked-up windows."
