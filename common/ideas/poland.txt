@@ -112,7 +112,7 @@ ideas = {
             picture = russian_flag_paris
 
             modifier = {
-                recruitable_population_factor = 0.5
+                recruitable_population_factor = 0.02
 				weekly_manpower = 200
             }
 		}
