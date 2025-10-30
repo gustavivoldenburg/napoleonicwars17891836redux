@@ -162,8 +162,6 @@ retire_character=POL_feliks
 
 
 
-
-
 1764.1.1 = {
 recruit_character=POL_stanislawiiaugust
 promote_character=POL_stanislawiiaugust
