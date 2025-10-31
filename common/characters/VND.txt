@@ -133,6 +133,32 @@ characters={
             ai_will_do = { factor = 1 }
         }
     }
+	VND_louisxviii={
+		name = "Louis XVIII"
+		portraits={
+			civilian={
+				large="gfx/leaders/VND/VND_louisxviii.dds"
+				small="gfx/interface/ideas/VND/VND_louisxviii_advisor.dds"
+			}
+		}
+		country_leader={
+			ideology=constitution_monarchy
+			traits={VND_regent}
+			desc = VND_LOUISXVIII_DESC
+			expire="1805.1.1"
+		}
+		
+		advisor = {
+            slot = political_advisor
+            idea_token = VND_louisxviii
+            allowed = { original_tag = VND }
+            available = { has_global_flag = french_surrender_done }
+            traits = { compassionate_gentleman }
+            cost = 120
+            ai_will_do = { factor = 1 }
+        }
+    }
+	
 	VND_francois_amede_doppet={
 		name = "François Amédée Doppet"
 		portraits={
@@ -314,6 +340,23 @@ characters={
       available = { has_country_flag = VND_invite_bussinessmen }
     }
   }
-	
+  VND_jean_nicolas_stofflet = {
+    name = "Jean-Nicolas Stofflet"
+    portraits = {
+      army = { large = "gfx/leaders/VND/VND_Stofflet.dds" }
+    }
+
+    field_marshal = {
+      traits = {
+        ranger
+        guerrilla_fighter
+      }
+      skill           = 4
+      attack_skill    = 4
+      defense_skill   = 3
+      planning_skill  = 3
+      logistics_skill = 2
+    }
+  }	
 }	
 

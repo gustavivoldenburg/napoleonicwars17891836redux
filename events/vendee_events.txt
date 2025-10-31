@@ -21,8 +21,8 @@ country_event = {
         name = vendee.100.c   # Refuse
         add_war_support = 0.02
         add_stability = -0.02
-		set_country_flag = orlean_path
-		custom_effect_tooltip = VND_louis_orlean_tt
+		set_country_flag = louisxviii_path
+		custom_effect_tooltip = VND_louis_xviii_tt
     }
 }
 
@@ -73,15 +73,10 @@ country_event = {
         set_global_flag = FR_Lafayette_executed
     }
     option = {
-        name = vendee.200.b  # Exile
+        name = vendee.200.b  # Pardon
         add_stability = 0.01
-        set_global_flag = FR_Lafayette_exiled
-    }
-    option = {
-        name = vendee.200.c  # Pardon
-        add_stability = 0.03
-        add_political_power = 50
-        set_global_flag = FR_Lafayette_pardoned
+        set_country_flag = louisxviii_path
+		custom_effect_tooltip = VND_louis_xviii_tt
     }
 }
 
@@ -626,7 +621,7 @@ country_event = {
 		custom_effect_tooltip = vendee_conservative_angry_tt
 		add_timed_idea = {
             idea = VND_conservative_opposite
-            days = 700
+            days = 750
         }
     }
 }
@@ -687,6 +682,19 @@ country_event = {
 
     option = {
         name = vendee.16.c
+        
+    }
+}
+country_event = {
+  id = vendee.17
+  title = vendee.17.a
+  desc = vendee.17.b
+  picture = GFX_noble_argue_event_image
+  fire_only_once = yes
+  is_triggered_only = yes
+
+    option = {
+        name = vendee.17.c
         
     }
 }

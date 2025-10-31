@@ -3603,6 +3603,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/VND/louis_xvii.dds"
 	}
 	spriteType = {
+		name = "GFX_idea_louis_xvii_absolute"
+		texturefile = "gfx/interface/ideas/VND/louis_xvii_absolute.dds"
+	}
+	spriteType = {
 		name = "GFX_idea_french_eco"
 		texturefile = "gfx/interface/ideas/VND/french_eco.dds"
 	}

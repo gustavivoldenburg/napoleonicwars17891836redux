@@ -159,6 +159,16 @@ ideas = {
 		}
 
     }
+	VND_louis_xvii_absolute_idea = {
+        allowed = { original_tag = VND }
+        picture = louis_xvii_absolute
+
+        modifier = {
+			stability_factor = 0.05
+            war_support_weekly = 0.05		
+		}
+
+    }
 
 		econ_crisis_stage_10 = {
 		    picture = economy_dead
