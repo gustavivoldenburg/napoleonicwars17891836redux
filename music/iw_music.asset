@@ -82,3 +82,7 @@ music = {
 	name = "Chant du Départ"
 	file = "Chant du Départ.ogg"
 }
+music = {
+	name = "La Marseillaise des Blancs"
+	file = "La Marseillaise des Blancs.ogg"
+}
