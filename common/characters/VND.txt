@@ -112,6 +112,7 @@ characters={
 		portraits={
 			civilian={
 				large="gfx/leaders/VND/VND_lafayette.dds"
+				small="gfx/interface/ideas/VND/VND_lafayette.dds"
 			}
 		}
 		country_leader={
@@ -120,6 +121,17 @@ characters={
 			desc = VND_LAFAYETTE_DESC
 			expire="1805.1.1"
 		}
+		
+		advisor = {
+            slot = high_command
+            ledger = army
+            idea_token = VND_lafayette_hc
+            allowed = { original_tag = VND }
+            available = { has_country_flag = appoint_lafayette }
+            traits = { war_hero }
+            cost = 150
+            ai_will_do = { factor = 1 }
+        }
     }
 	VND_francois_amede_doppet={
 		name = "François Amédée Doppet"

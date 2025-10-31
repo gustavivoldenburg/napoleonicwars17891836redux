@@ -3626,4 +3626,8 @@ spriteTypes = {
 		name = "GFX_to_arm_event_image"
 		texturefile = "gfx/event_pictures/report_event_to_arm.dds"
 	}
+	spriteType = {
+		name = "GFX_noble_argue_event_image"
+		texturefile = "gfx/event_pictures/report_event_noble_argue.dds"
+	}
 }

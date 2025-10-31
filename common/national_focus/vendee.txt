@@ -389,6 +389,7 @@ focus_tree = {
         cost = 3
         completion_reward = {
 		 country_event = { id = vendee.8 days = 1 }
+		 set_capital = 988
         }
     }
 	focus = {

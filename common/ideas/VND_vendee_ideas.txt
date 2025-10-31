@@ -154,8 +154,8 @@ ideas = {
         picture = generic_constitutional_guarantees
 
         modifier = {
-			stability_factor = 0.15
-            war_support_weekly = 0.10			
+			stability_factor = 0.02
+            war_support_weekly = 0.02			
 		}
 
     }
@@ -318,7 +318,7 @@ ideas = {
 				# modest, safe boosts
 				production_speed_buildings_factor = 0.15
 				industrial_capacity_factory       = 0.15
-				industrial_capacity_dockyard      = 0.15
+				industrial_capacity_dockyard      = 0.05
 				production_factory_efficiency_gain_factor = 0.15
 				production_factory_start_efficiency_factor = 0.05
 				local_resources_factor            = 0.10
@@ -355,7 +355,7 @@ ideas = {
             modifier = {
               political_power_factor = 0.10
               stability_factor = -0.03
-              consumer_goods_factor = 0.05      # ภาระผู้บริโภคเพิ่มเล็กน้อย
+              consumer_goods_factor = 0.05
             }
 		}	
 
