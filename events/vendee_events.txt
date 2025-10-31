@@ -695,6 +695,22 @@ country_event = {
 
     option = {
         name = vendee.17.c
+		set_country_flag = VND_election_lafayette
+        
+    }
+}
+country_event = {
+  id = vendee.18
+  title = vendee.18.a
+  desc = vendee.18.b
+  picture = GFX_noble_argue_event_image
+  fire_only_once = yes
+    trigger = { 
+	    tag = VND
+	    has_country_flag = VND_election_lafayette
+    }
+    option = {
+        name = vendee.18.c
         
     }
 }
