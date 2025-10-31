@@ -1,0 +1,9 @@
+ideas = {
+    country = {
+    emperor_kokaku = {
+        allowed = { original_tag = JAP }
+        picture = emperor_kokaku
+        modifier = { stability_factor = 0.02 political_power_gain = 0.05 }
+    }
+	}
+}	

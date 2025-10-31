@@ -3635,7 +3635,7 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/report_event_noble_argue.dds"
 	}
 	spriteType = {
-		name = "GFX_news_coalition_first_win"
-		texturefile = "gfx/event_pictures/news_event_coalition_first_win.dds"
+		name = "GFX_idea_emperor_kokaku"
+		texturefile = "gfx/interface/ideas/JAP/emperor_kokaku.dds"
 	}
 }
