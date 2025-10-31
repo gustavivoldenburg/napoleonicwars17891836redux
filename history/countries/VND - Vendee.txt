@@ -17,6 +17,10 @@ recruit_character = VND_jean_antoine_chaptal
 recruit_character = VND_pierre_samuel_dupont
 recruit_character = VND_jean_nicolas_stofflet
 recruit_character = VND_louisxviii
+recruit_character = VND_gouvion_saint_cyr_hc
+recruit_character = VND_macdonald_hc
+recruit_character = VND_oudinot_hc
+recruit_character = VND_victor_hc
 }
 # Starting tech
 set_technology = {
