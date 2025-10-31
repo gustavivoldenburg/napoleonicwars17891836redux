@@ -952,7 +952,7 @@ focus_tree = {
 
     focus = {
         id = VND_louis_xviii_path
-        icon = GFX_goal_lafayette_path1
+        icon = GFX_goal_louisxviii_regent
         prerequisite = { focus = VND_what_next }
         x = 14
         y = 6

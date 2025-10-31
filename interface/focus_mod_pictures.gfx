@@ -103,4 +103,8 @@ spriteTypes = {
 		name = "GFX_goal_equal_taxation"
 		texturefile = "gfx/interface/goals/VND/GFX_equal_taxation.dds"
 	}
+	spriteType = {
+		name = "GFX_goal_louisxviii_regent"
+		texturefile = "gfx/interface/goals/VND/GFX_louisxviii_regent.dds"
+	}
 }
