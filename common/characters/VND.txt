@@ -128,7 +128,7 @@ characters={
             idea_token = VND_lafayette_hc
             allowed = { original_tag = VND }
             available = { has_country_flag = appoint_lafayette }
-            traits = { war_hero }
+            traits = { charismatic }
             cost = 150
             ai_will_do = { factor = 1 }
         }
@@ -358,5 +358,60 @@ characters={
       logistics_skill = 2
     }
   }	
+VND_gouvion_saint_cyr_hc = {
+    name = "Laurent de Gouvion Saint-Cyr"
+    portraits = { civilian = { small = "gfx/interface/ideas/VND/VND_saint_cyr.dds" } }
+    advisor = {
+        slot = high_command
+        idea_token = VND_gouvion_saint_cyr_hc
+        cost = 150
+        allowed = { original_tag = VND }
+        available = { has_country_flag = VND_louisxviii_appoint }
+        traits = { army_regrouping }
+        ai_will_do = { factor = 1 }
+    }
+}
+
+VND_macdonald_hc = {
+    name = "Étienne Macdonald"
+    portraits = { civilian = { large = "gfx/interface/ideas/VND/VND_macdonald.dds" } }
+    advisor = {
+        slot = high_command
+        idea_token = VND_macdonald_hc
+        cost = 150
+        allowed = { original_tag = VND }
+        available = { has_country_flag = VND_louisxviii_appoint }
+        traits = { infantry_expert }
+        ai_will_do = { factor = 1 }
+    }
+}
+
+VND_oudinot_hc = {
+    name = "Nicolas Oudinot"
+    portraits = { civilian = { large = "gfx/interface/ideas/VND/VND_oudinot.dds" } }
+    advisor = {
+        slot = high_command
+        idea_token = VND_oudinot_hc
+        cost = 150
+        allowed = { original_tag = VND }
+        available = { has_country_flag = VND_louisxviii_appoint }
+        traits = { infantry_expert }
+        ai_will_do = { factor = 1 }
+    }
+}
+
+VND_victor_hc = {
+    name = "Claude-Victor Perrin, Duc de Belluno"
+    portraits = { civilian = { large = "gfx/interface/ideas/VND/VND_victor.dds" } }
+    advisor = {
+        slot = high_command
+        idea_token = VND_victor_hc
+        cost = 150
+        allowed = { original_tag = VND }
+        available = { has_country_flag = VND_louisxviii_appoint }
+        traits = { army_logistics }
+        ai_will_do = { factor = 1 }
+    }
+}
 }	
 

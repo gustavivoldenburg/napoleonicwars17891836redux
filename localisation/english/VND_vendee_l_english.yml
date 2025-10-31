@@ -227,6 +227,8 @@
   VND_prepare_war_desc: "Our nation has survived history while others have perished and drowned before the waves of time, they have become another page of history. But France and the king will continue to last until the end of time as long as we continue to defend it,Our nation has lived since time immemorial and will be protected to last forever, because God protects France."
   VND_free_labor: "Free Labor"
   VND_fiscal_transparency: "Fiscal Transparency"
+  VND_conscript_louis: "Saint-Cyr Conscription Law"
+  VND_reinforce_corp: "Reforge the Officer Corps"
   
   VND_raise_vendee_army: "Raise the Vendée Army"
   VND_raise_vendee_army_desc: "Rifles, rosaries, and rough terrain. We know how to fight at home."
@@ -235,6 +237,7 @@
   VND_call_first_coalition: "Appeal to the First Coalition"
   VND_call_first_coalition_desc: "If Europe wants the Revolution stopped, they can start by helping us."
   appoint_lafayette: "§BYou Appointed Lafayette As Military High command§!"
+  VND_louisxvii_loyalist_tt: "§WYou Appointed Royalist As Military High command§!"
 
   # Ideas
   VND_vendee_maquis_idea:0 "Vendée Maquis"

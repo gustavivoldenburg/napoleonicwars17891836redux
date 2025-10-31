@@ -1001,4 +1001,49 @@ focus_tree = {
          }
         }
     }
+	focus = {
+        id = VND_disband_republic_officer
+        icon = GFX_goal_lafayette_path1
+        prerequisite = { focus = VND_reinforce_corp }
+        x = 12
+        y = 9
+        cost = 8
+        available = { 
+		    always = yes
+		}
+		completion_reward = {
+		 swap_ideas = { remove_idea = army_collapse_stage_8 add_idea = army_collapse_stage_7 }
+		 max_planning = -0.05
+        }
+    }
+	focus = {
+        id = VND_appoint_loyalist
+        icon = GFX_goal_lafayette_path1
+        prerequisite = { focus = VND_reinforce_corp }
+        x = 9
+        y = 9
+        cost = 15
+        available = { 
+		    always = yes
+		}
+		completion_reward = {
+		 set_country_flag = VND_louisxviii_appoint
+		 custom_effect_tooltip = VND_louisxvii_loyalist_tt
+		 max_planning = -0.05
+        }
+    }
+	focus = {
+        id = VND_garde_royal
+        icon = GFX_goal_lafayette_path1
+        prerequisite = { focus = VND_disband_republic_officer }
+        x = 13
+        y = 10
+        cost = 8
+        available = { 
+		    always = yes
+		}
+		completion_reward = {
+		 swap_ideas = { remove_idea = army_collapse_stage_7 add_idea = army_collapse_stage_6 }
+        }
+    }
 }
