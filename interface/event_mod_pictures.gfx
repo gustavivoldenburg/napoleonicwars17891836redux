@@ -3638,4 +3638,8 @@ spriteTypes = {
 		name = "GFX_idea_emperor_kokaku"
 		texturefile = "gfx/interface/ideas/JAP/emperor_kokaku.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_outside_europe"
+		texturefile = "gfx/interface/ideas/ENG/force_outside_europe.dds"
+	}
 }

@@ -364,7 +364,7 @@ industrial_capacity_factory = -0.01
 			}
 		}
 			ENG_focus_outside_of_europe= {
-			picture = russian_flag_paris
+			picture = outside_europe
 			
 			allowed = {
 				always = no
