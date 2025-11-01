@@ -1674,7 +1674,7 @@ production_speed_buildings_factor = -0.05
 									}
 		}
 americanpatriotism={
-			picture = russian_flag_paris
+			picture = america_patriot
 			
 			allowed = {
 				always = no

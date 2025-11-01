@@ -3642,4 +3642,8 @@ spriteTypes = {
 		name = "GFX_idea_outside_europe"
 		texturefile = "gfx/interface/ideas/ENG/force_outside_europe.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_america_patriot"
+		texturefile = "gfx/interface/ideas/USA/america_patriot.dds"
+	}
 }
