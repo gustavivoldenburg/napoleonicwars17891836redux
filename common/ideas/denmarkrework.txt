@@ -1,0 +1,48 @@
+ideas = {
+
+    country = {
+        DEN_norwegian_land_forces = {
+
+            allowed = {
+                always = no
+            }
+
+            removal_cost = -1
+
+            picture = generic_central_management
+
+            modifier = {
+                <unit type>_defence_factor =
+            }
+        }
+        DEN_haeren = {
+
+            allowed = {
+                always = no
+            }
+
+            removal_cost = -1
+
+            picture = Idea_DEN_resistance
+
+            modifier = {
+                supply_consumption_factor = 0.05
+            }
+        }
+        DEN_haeren_2 = {
+
+            allowed = {
+                always = no
+            }
+
+            removal_cost = -1
+
+            picture = Idea_DEN_resistance
+
+            modifier = {
+                supply_consumption_factor = 0.05
+                training_time_army_factor = -0.1
+            }
+        }
+    }
+}
