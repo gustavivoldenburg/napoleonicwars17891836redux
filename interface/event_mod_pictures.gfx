@@ -3654,4 +3654,8 @@ spriteTypes = {
 		name = "GFX_idea_counter_revolution"
 		texturefile = "gfx/interface/ideas/VND/GFX_counter_revolution.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_poland_bad_army"
+		texturefile = "gfx/interface/ideas/POL/GFX_poland_bad_army.dds"
+	}
 }
