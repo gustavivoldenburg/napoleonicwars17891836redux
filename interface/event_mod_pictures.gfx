@@ -3646,4 +3646,8 @@ spriteTypes = {
 		name = "GFX_idea_america_patriot"
 		texturefile = "gfx/interface/ideas/USA/america_patriot.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_america_revolution"
+		texturefile = "gfx/interface/ideas/USA/america_1776.dds"
+	}
 }

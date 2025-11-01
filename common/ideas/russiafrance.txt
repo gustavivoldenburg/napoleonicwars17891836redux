@@ -1288,7 +1288,7 @@ mezzogiornotwo={
 									}
 		}
 																												spiritoftheamericanrevolution={
-			picture = russian_flag_paris
+			picture = america_revolution
 			
 			allowed = {
 				always = no
