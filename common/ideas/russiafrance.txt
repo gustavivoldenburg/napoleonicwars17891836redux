@@ -323,7 +323,7 @@ surrender_limit = 0.5
 			}
 		}
 														the_counter_revolution= {
-			picture = russian_flag_paris
+			picture = counter_revolution
 			
 			allowed = {
 				always = no
@@ -1369,7 +1369,7 @@ production_speed_buildings_factor = 0.02
 									}
 		}
 					minorcounterrevolution={
-			picture = counter_revolution
+			picture = russian_flag_paris
 			
 			allowed = {
 				always = no
