@@ -1,0 +1,20 @@
+add_namespace = vendee_new
+
+	news_event = {
+	    id = vendee_new.1
+	    title = vendee_new.1.a
+	    desc = vendee_new.1.b
+	    picture = GFX_news_coalition_first_win
+		fire_only_once = yes
+	
+	    major = yes
+
+	    fire_for_sender = no
+	    trigger = { 
+	        has_global_flag = french_surrender_done 
+        }
+	
+	    option = {
+		    name = "VIVE LE ROI!"
+		}
+	}

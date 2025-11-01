@@ -1,6 +1,6 @@
 ideas = {
 	country = {
-		POL_liberum_veto = {
+		POL_rada_nieustajaca = {
 
             allowed = {
                 always = no
@@ -57,6 +57,31 @@ ideas = {
             }
 
 		}
+		POL_disorganized_army1 = {
+			allowed = {
+                always = no
+            }
+			allowed_civil_war = {
+				always = yes
+			}
+
+            removal_cost = -1
+
+            picture = russian_flag_paris
+
+            modifier = {
+                offence = -0.5
+				
+				defence = -0.3
+				
+				speed = -0.2
+				army_org = -10.0
+				experience_gain_army_unit = -0.2
+				breakthrough = -0.2
+				dig_in_speed = 10
+            }
+
+		}
 		POL_the_great_sejm_continues = {
 			allowed = {
                 always = no
@@ -87,8 +112,8 @@ ideas = {
             picture = russian_flag_paris
 
             modifier = {
-                recruitable_population_factor = 0.5
-				weekly_manpower = 200
+                recruitable_population_factor = 0.05
+				weekly_manpower = 50
             }
 		}
 	}

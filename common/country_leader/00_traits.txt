@@ -15558,4 +15558,48 @@ ambassador_to_russia = {
 		stability_factor = 0.05
 		political_power_factor = -0.10
 	}
+
+  VND_economic_liberal = {
+    icon = GFX_goal_generic_construct_civ_factory
+    modifier = {
+      consumer_goods_factor = -0.02
+      political_power_gain = 0.05
+      research_speed_factor = 0.02
+    }
+  }
+
+  VND_finance_minister = {
+    icon = GFX_goal_generic_political_pressure
+    modifier = {
+      political_power_gain = 0.05
+      stability_factor = 0.02
+      consumer_goods_factor = -0.01
+    }
+  }
+
+  VND_industrial_magnate = {
+    icon = GFX_goal_generic_construct_mil_factory
+    modifier = {
+      industrial_capacity_factor = 0.05
+      production_speed_industrial_complex_factor = 0.10
+      production_speed_infrastructure_factor = 0.05
+    }
+  }
+
+  VND_banker_international = {
+    icon = GFX_goal_generic_trade
+    modifier = {
+      political_power_gain = 0.05
+      stability_factor = 0.01
+      research_speed_factor = 0.01
+    }
+  }
+
+  VND_chemist_industrialist = {
+    modifier = {
+      research_speed_factor = 0.03
+      production_speed_synthetic_refinery_factor = 0.10
+      production_speed_industrial_complex_factor = 0.05
+    }
+  }	
 }

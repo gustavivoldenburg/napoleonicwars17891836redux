@@ -1,0 +1,110 @@
+add_namespace = VND_cap
+
+country_event = {
+  id = VND_cap.1
+  title = VND_cap.1.t
+  desc  = VND_cap.1.d
+  picture = GFX_report_event_generic
+  fire_only_once = yes
+
+  trigger = {
+    tag = VND
+    has_war_with = FRA
+    controls_state = 23
+  }
+
+  mean_time_to_happen = { days = 1 }
+
+  option = {
+    name = VND_cap.1.a
+
+    add_equipment_to_stockpile = { type = infantry_equipment amount = 500 }
+    add_manpower = 1000
+
+    FRA = {
+      add_stability   = -0.05
+      add_war_support = -0.05
+    }
+  }
+}
+country_event = {
+  id = VND_cap.2
+  title = VND_cap.2.t
+  desc  = VND_cap.2.d
+  picture = GFX_report_event_generic
+  fire_only_once = yes
+
+  trigger = {
+    tag = VND
+    has_war_with = FRA
+    controls_state = 33
+  }
+
+  mean_time_to_happen = { days = 1 }
+
+  option = {
+    name = VND_cap.1.a
+
+    add_equipment_to_stockpile = { type = infantry_equipment amount = 1000 }
+    add_manpower = 2000
+
+    FRA = {
+      add_stability   = -0.1
+      add_war_support = -0.1
+    }
+  }
+}
+country_event = {
+  id = VND_cap.4
+  title = VND_cap.4.t
+  desc  = VND_cap.4.d
+  picture = GFX_report_event_generic
+  fire_only_once = yes
+
+  trigger = {
+    tag = VND
+    has_war_with = FRA
+    controls_state = 14
+  }
+
+  mean_time_to_happen = { days = 1 }
+
+  option = {
+    name = VND_cap.1.a
+
+    add_equipment_to_stockpile = { type = infantry_equipment amount = 1000 }
+    add_manpower = 1500
+
+    FRA = {
+      add_stability   = -0.15
+      add_war_support = -0.15
+    }
+  }
+}
+country_event = {
+  id = VND_cap.3
+  title = VND_cap.3.t
+  desc  = VND_cap.3.d
+  picture = GFX_report_event_generic
+  fire_only_once = yes
+
+  trigger = {
+    tag = VND
+    has_war_with = FRA
+    controls_state = 16
+  }
+
+  mean_time_to_happen = { days = 1 }
+
+  option = {
+    name = VND_cap.1.a
+
+    add_equipment_to_stockpile = { type = infantry_equipment amount = 5000 }
+    add_manpower = 10000
+
+    FRA = {
+      add_stability   = -0.6
+      add_war_support = -0.6
+    }
+  }
+}

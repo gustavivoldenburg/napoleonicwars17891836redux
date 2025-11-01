@@ -1,0 +1,154 @@
+ideas = {
+    country = {
+    QNG_regency_council = {
+        allowed = { original_tag = CHI }
+        picture = political_reform
+        modifier = { stability_factor = 0.02 political_power_gain = 0.1 }
+    }
+    QNG_anti_corruption_drive = {
+        allowed = { original_tag = CHI }
+        picture = anti_corruption
+        modifier = { consumer_goods_expected_value = -0.02 stability_factor = 0.01 }
+    }
+    QNG_entrenched_corruption = {
+        allowed = { original_tag = CHI }
+        picture = political_crisis
+        modifier = { political_power_gain = -0.15 stability_factor = -0.03 }
+    }
+    QNG_internal_security_bureau = {
+        allowed = { original_tag = CHI }
+        picture = secret_police
+        modifier = { resistance_target_on_our_occupied_states = -0.05 suppression_factor = 0.1 }
+    }
+    QNG_meritocratic_exams = {
+        allowed = { original_tag = CHI }
+        picture = academy
+        modifier = { political_power_gain = 0.1 weekly_manpower = 1500 }
+    }
+    QNG_sinecure_offices = {
+        allowed = { original_tag = CHI }
+        picture = political_crisis
+        modifier = { political_power_gain = -0.1 }
+    }
+    QNG_provincial_councils_ns = {
+        allowed = { original_tag = CHI }
+        picture = cabinet
+        modifier = { stability_factor = 0.01 research_speed_factor = 0.01 }
+    }
+    QNG_fiscal_transparency_ns = {
+        allowed = { original_tag = CHI }
+        picture = industry
+        modifier = { consumer_goods_expected_value = -0.01 production_efficiency_cap_factor = 0.03 }
+    }
+    QNG_salt_reform_ns = {
+        allowed = { original_tag = CHI }
+        picture = resource
+        modifier = { consumer_goods_expected_value = -0.01 civ_to_mil_factory_ratio = -0.05 }
+    }
+    QNG_grain_logistics_ns = {
+        allowed = { original_tag = CHI }
+        picture = construction_civ
+        modifier = { supply_node_range = 0.1 infrastructure_speed = 0.1 }
+    }
+    QNG_silver_orthodoxy_ns = {
+        allowed = { original_tag = CHI }
+        picture = scales
+        modifier = { stability_factor = 0.02 consumer_goods_expected_value = 0.0 }
+    }
+    QNG_bimetallic_ns = {
+        allowed = { original_tag = CHI }
+        picture = money
+        modifier = { production_speed_industrial_complex_factor = 0.05 research_speed_factor = 0.01 }
+    }
+    QNG_early_manufactories_ns = {
+        allowed = { original_tag = CHI }
+        picture = industry_research
+        modifier = { industrial_capacity_factory = 0.05 production_factory_max_efficiency_factor = 0.05 }
+    }
+    QNG_canton_reform_ns = {
+        allowed = { original_tag = CHI }
+        picture = trade
+        modifier = { trade_opinion_factor = 0.15 civilian_factory_use = -0.02 }
+    }
+    QNG_open_ports_ns = {
+        allowed = { original_tag = CHI }
+        picture = navy_doctrine
+        modifier = { trade_opinion_factor = 0.25 dockyard_output = 0.05 convoy_escort_efficiency = 0.05 }
+    }
+    QNG_green_standard_reform_ns = {
+        allowed = { original_tag = CHI }
+        picture = army_doctrine
+        modifier = { division_training_time_factor = -0.1 army_org_factor = 0.05 }
+    }
+    QNG_banner_drill_ns = {
+        allowed = { original_tag = CHI }
+        picture = military_academy
+        modifier = { army_morale = 0.05 land_doctrine_cost_factor = -0.1 }
+    }
+    QNG_militias_ns = {
+        allowed = { original_tag = CHI }
+        picture = militia
+        modifier = { recruitable_population_factor = 0.03 division_org = -0.02 }
+    }
+    QNG_river_flotilla_ns = {
+        allowed = { original_tag = CHI }
+        picture = navy_built
+        modifier = { naval_base_speed = 0.15 naval_coordination = 0.05 }
+    }
+    QNG_anti_piracy_ns = {
+        allowed = { original_tag = CHI }
+        picture = destroyer
+        modifier = { convoy_raiding_efficiency = 0.1 naval_enemy_fleet_size_ratio = 0.05 }
+    }
+    QNG_border_settlement_ns = {
+        allowed = { original_tag = CHI }
+        picture = improve_relations
+        modifier = { justify_war_goal_time = -0.1 stability_factor = 0.01 }
+    }
+    QNG_granaries_ns = {
+        allowed = { original_tag = CHI }
+        picture = food
+        modifier = { stability_factor = 0.02 weekly_manpower = 2000 }
+    }
+    QNG_schools_ns = {
+        allowed = { original_tag = CHI }
+        picture = education
+        modifier = { research_speed_factor = 0.02 }
+    }
+    QNG_science_academy_ns = {
+        allowed = { original_tag = CHI }
+        picture = science
+        modifier = { research_speed_factor = 0.02 electronics_research_speed = 0.1 } # adjust to your tech tree
+    }
+    QNG_frontier_settlement_ns = {
+        allowed = { original_tag = CHI }
+        picture = population
+        modifier = { recruitable_population = 0.02 construction_speed_factor = 0.03 }
+    }
+    QNG_pirate_crackdown_ns = {
+        allowed = { original_tag = CHI }
+        picture = navy_raiding
+        modifier = { naval_speed_factor = 0.05 spotting_chance = 0.05 }
+    }
+    QNG_privateering_charters_ns = {
+        allowed = { original_tag = CHI }
+        picture = dockyard
+        modifier = { convoy_raiding_efficiency = 0.15 trade_opinion_factor = -0.05 }
+    }
+    QNG_secure_seas_ns = {
+        allowed = { original_tag = CHI }
+        picture = sea_fort
+        modifier = { naval_strike_targetting = 0.05 escort_efficiency = 0.05 }
+    }
+    QNG_renewal_1810_ns = {
+        allowed = { original_tag = CHI }
+        picture = national_unity
+        modifier = { research_speed_factor = 0.02 stability_factor = 0.03 }
+    }
+    QNG_power_of_governors_ns = {
+        allowed = { original_tag = CHI }
+        picture = anti_revolution
+        modifier = { stability_factor = -0.02 division_recruitment_time = -0.1 local_resources = 0.05 }
+    }
+}
+}

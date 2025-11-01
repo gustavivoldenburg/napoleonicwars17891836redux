@@ -10926,6 +10926,7 @@ date > 1792.1.1
 		completion_reward = {
 		932 = { add_claim_by = root }
 		960 = { add_claim_by = root }
+		AUS = { add_to_faction = VND }
 		
 		VND={
 		    transfer_state = 932
@@ -10934,7 +10935,7 @@ date > 1792.1.1
 		VND = {
             change_tag_from = FRA
         }
-		add_ideas = FRA_lose_idea
+		add_ideas = FRA_vendee
 		hidden_effect ={
 			VND={country_event = fra_1789_event.171}
 									932 = {

@@ -645,7 +645,7 @@ characters={
 			}
 		}
 		advisor={
-                        can_be_fired = no
+            can_be_fired = no
 			slot = political_advisor
 			idea_token = FRA_jacquesnecker
 			allowed  = {

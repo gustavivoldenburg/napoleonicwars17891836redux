@@ -27,6 +27,15 @@ ideas = {
             supply_consumption_factor = -0.03
         }
     }
+	VND_national_guard_idea = {
+        allowed = { original_tag = VND }
+        picture = AFG_adopt_nufus
+        modifier = {
+		    army_core_attack_factor = 0.05
+            army_core_defence_factor = 0.05
+            planning_speed = -0.1
+        }
+    }
 
     VND_women_royal_warriors_idea = {
         allowed = { original_tag = VND }
@@ -109,22 +118,103 @@ ideas = {
 
         removal_cost = -1
     }
-	FRA_lose_idea = {
+	FRA_vendee = {
         allowed = { original_tag = FRA }
         picture = generic_mountain_warfare
 
         modifier = {
             supply_consumption_factor = 0.15
 			recon_factor = -0.20
+			planning_speed = -0.20
+			army_attack_factor = -0.15
+			army_defence_factor = -0.15
+			consumer_goods_factor = 0.25
+		    production_speed_buildings_factor = -0.6
+		    industrial_capacity_factory = -0.5
+			industrial_capacity_dockyard = -0.5
+			production_factory_efficiency_gain_factor = -0.5
+			production_factory_start_efficiency_factor = -0.4
 		}	
 
         targeted_modifier = {
             tag = VND
-            attack_bonus_against = -0.30
+            attack_bonus_against = -0.40
             defense_bonus_against = -0.30
         }
 
         removal_cost = -1
+    }
+	VND_ancien_vendee = {
+        allowed = { original_tag = VND }
+        picture = generic_mountain_warfare
+
+        modifier = {
+            supply_consumption_factor = -0.05
+			recon_factor = 0.02
+			army_attack_factor = 0.05
+			army_defence_factor = 0.05
+		}	
+
+        targeted_modifier = {
+            tag = FRA
+            attack_bonus_against = 0.10
+            defense_bonus_against = 0.10
+        }
+
+        removal_cost = -1
+    }
+	VND_conservative_opposite = {
+        allowed = { original_tag = VND }
+        picture = ICE_general_strike
+
+        modifier = {
+            org_loss_when_moving = 0.08 
+            planning_speed = -0.10
+			max_planning = -0.05
+			stability_factor = -0.10 
+	        war_support_weekly = -0.20
+		}
+
+    }
+	
+	VND_local_liberty = {
+        allowed = { original_tag = VND }
+        picture = RAJ_independence_movement
+
+        modifier = {
+			stability_factor = 0.05		
+		}
+
+    }
+	lafyette_constitution = {
+        allowed = { original_tag = VND }
+        picture = generic_constitutional_guarantees
+
+        modifier = {
+			stability_factor = 0.02
+            war_support_weekly = 0.02			
+		}
+
+    }
+	centrist_con = {
+        allowed = { original_tag = VND }
+        picture = generic_constitutional_guarantees
+
+        modifier = {
+			stability_factor = 0.02
+            war_support_weekly = 0.02			
+		}
+
+    }
+	VND_louis_xvii_absolute_idea = {
+        allowed = { original_tag = VND }
+        picture = louis_xvii_absolute
+
+        modifier = {
+			stability_factor = 0.05
+            war_support_weekly = 0.05		
+		}
+
     }
 
 		econ_crisis_stage_10 = {
@@ -277,6 +367,54 @@ ideas = {
 				stability_factor = -0.015
 			}
 		}
+		
+		econ_boost_balanced = {
+		    picture = french_eco
+			removal_cost = -1
+			modifier = {
+				# modest, safe boosts
+				production_speed_buildings_factor = 0.15
+				industrial_capacity_factory       = 0.15
+				industrial_capacity_dockyard      = 0.05
+				production_factory_efficiency_gain_factor = 0.15
+				production_factory_start_efficiency_factor = 0.05
+				local_resources_factor            = 0.10
+				research_speed_factor             = 0.10
+				consumer_goods_factor             = -0.20
+			}
+		}
+		
+		VND_engineer_cadre_boost = {
+            allowed = { original_tag = VND }
+            removal_cost = -1
+            modifier = {
+              research_speed_factor = 0.02
+              production_speed_industrial_complex_factor = 0.05
+              production_speed_arms_factory_factor = 0.05
+            }
+            ai_will_do = { factor = 1.0 }
+        }
+		
+		VND_metric_standardization_idea = {
+            allowed = { original_tag = VND }
+            removal_cost = -1
+            modifier = {
+              research_speed_factor = 0.02
+              consumer_goods_factor = -0.01
+              production_speed_industrial_complex_factor = 0.03
+            }
+            ai_will_do = { factor = 1.0 }
+        }
+		
+		VND_window_door_tax_1798 = {
+            allowed = { original_tag = VND }
+            removal_cost = -1
+            modifier = {
+              political_power_factor = 0.10
+              stability_factor = -0.03
+              consumer_goods_factor = 0.05
+            }
+		}	
 
 		army_collapse_stage_10 = {
 		    picture = army_destoryed
@@ -446,6 +584,24 @@ ideas = {
 				army_speed_factor = -0.02
 				supply_consumption_factor = 0.03
 				experience_gain_army_factor = -0.03
+			}
+		}
+		army_boost_balanced = {
+		    picture = NORDIC_army_communist
+			removal_cost = -1
+			modifier = {
+				# modest, safe land buffs
+				army_attack_factor   = 0.06 
+				army_defence_factor  = 0.06
+				army_org_factor      = 0.05
+				army_morale_factor   = 0.05
+				planning_speed       = 0.05
+				max_planning         = 0.05
+				land_reinforce_rate  = 0.05
+				army_speed_factor    = 0.03
+				supply_consumption_factor = -0.05
+				training_time_army_factor  = -0.10
+				experience_gain_army_factor = 0.10
 			}
 		}
 

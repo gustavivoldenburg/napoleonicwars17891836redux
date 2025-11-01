@@ -161,3 +161,12 @@ music = {
 		}
 	}
 }
+music = {
+	song = "La Marseillaise des Blancs"
+	chance = {
+		factor = 0
+		modifier = {
+			factor = 100
+		}
+	}
+}

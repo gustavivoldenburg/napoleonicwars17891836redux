@@ -323,7 +323,7 @@ surrender_limit = 0.5
 			}
 		}
 														the_counter_revolution= {
-			picture = russian_flag_paris
+			picture = counter_revolution
 			
 			allowed = {
 				always = no
@@ -364,7 +364,7 @@ industrial_capacity_factory = -0.01
 			}
 		}
 			ENG_focus_outside_of_europe= {
-			picture = russian_flag_paris
+			picture = outside_europe
 			
 			allowed = {
 				always = no
@@ -1288,7 +1288,7 @@ mezzogiornotwo={
 									}
 		}
 																												spiritoftheamericanrevolution={
-			picture = russian_flag_paris
+			picture = america_revolution
 			
 			allowed = {
 				always = no
@@ -1674,7 +1674,7 @@ production_speed_buildings_factor = -0.05
 									}
 		}
 americanpatriotism={
-			picture = russian_flag_paris
+			picture = america_patriot
 			
 			allowed = {
 				always = no

@@ -151,7 +151,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=despotism
+			ideology=absolute_monarchy
 			traits={Savoy}
 			desc = SPM_VICTORAMADEUSIII_DESC
 			expire="1797.1.1"

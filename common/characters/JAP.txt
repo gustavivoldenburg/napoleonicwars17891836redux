@@ -1,0 +1,13 @@
+characters={
+	JAP_tokugawa_ienari={
+		name="Tokugawa Ienari"
+		portraits = {
+            civilian = { large = "gfx/leaders/JAP/JAP_tokugawa_ienari.dds" }
+        }
+		country_leader={
+			ideology=despotism
+			desc = JAP_tokugawa_ienari_DESC
+			expire="1797.1.1"
+		}
+    }
+}	

@@ -19,4 +19,8 @@ spriteTypes = {
 		name = "GFX_ideology_liberal_monarchy"
 		texturefile = "gfx/interface/ideologies/liberal_monarchy.dds"
     }
+	SpriteType = {
+		name = "GFX_ideology_despotism"
+		texturefile = "gfx/interface/ideologies/despotism.dds"
+    }
 }

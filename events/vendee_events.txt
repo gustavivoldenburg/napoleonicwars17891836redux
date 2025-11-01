@@ -21,8 +21,8 @@ country_event = {
         name = vendee.100.c   # Refuse
         add_war_support = 0.02
         add_stability = -0.02
-		set_country_flag = orlean_path
-		custom_effect_tooltip = VND_louis_orlean_tt
+		set_country_flag = louisxviii_path
+		custom_effect_tooltip = VND_louis_xviii_tt
     }
 }
 
@@ -73,15 +73,10 @@ country_event = {
         set_global_flag = FR_Lafayette_executed
     }
     option = {
-        name = vendee.200.b  # Exile
+        name = vendee.200.b  # Pardon
         add_stability = 0.01
-        set_global_flag = FR_Lafayette_exiled
-    }
-    option = {
-        name = vendee.200.c  # Pardon
-        add_stability = 0.03
-        add_political_power = 50
-        set_global_flag = FR_Lafayette_pardoned
+        set_country_flag = louisxviii_path
+		custom_effect_tooltip = VND_louis_xviii_tt
     }
 }
 
@@ -509,6 +504,8 @@ country_event = {
 			VND_compromise_charter_idea
 			the_counter_revolution
 			VND_clerical_support_idea
+			VND_vendee_maquis_idea
+			VND_ancien_vendee
         }
     }
 }
@@ -555,4 +552,196 @@ country_event = {
         name = vendee.11.c
 		swap_ideas = { remove_idea = political_collapse_stage_9 add_idea = political_collapse_stage_8 }
     }
+}
+country_event = {
+  id = vendee.12
+  title = vendee.12.a
+  desc = vendee.12.b
+  picture = GFX_vnd_department_event_image
+  fire_only_once = yes
+  is_triggered_only = yes
+
+    option = {
+        name = vendee.12.c
+		add_days_mission_timeout  = { mission = federalist_patience_mission days = 80 }
+        21 = {
+            add_compliance = -30
+        }
+        20 = {
+            add_compliance = -30
+        }
+        19 = {
+            add_compliance = -30
+        }
+        22 = {
+            add_compliance = -30
+        }	
+	    14 = {
+            add_compliance = -30
+        }
+        add_popularity: { ideology = democratic popularity: 0.20 }		
+    }
+	option = {
+        name = vendee.12.d
+		add_days_mission_timeout  = { mission = federalist_patience_mission days = 10 }	
+		add_popularity: { ideology = democratic popularity: 0.05 }	
+    }
+	option = {
+        name = vendee.12.e
+		add_days_mission_timeout  = { mission = federalist_patience_mission days = -60 }
+        21 = {
+            add_compliance = 20
+        }
+        20 = {
+            add_compliance = 20
+        }
+        19 = {
+            add_compliance = 20
+        }
+        22 = {
+            add_compliance = 20
+        }	
+	    14 = {
+            add_compliance = 20
+        }
+        add_popularity: { ideology = democratic popularity: -0.10 }		
+    }
+}
+country_event = {
+  id = vendee.13
+  title = vendee.13.a
+  desc = vendee.13.b
+  picture = GFX_lafayette_regent_event_image
+  fire_only_once = yes
+    trigger = { 
+	    tag = VND
+	    has_country_flag = lafayette_women_soldier
+    }
+
+    option = {
+        name = vendee.13.c
+		custom_effect_tooltip = vendee_conservative_angry_tt
+		add_timed_idea = {
+            idea = VND_conservative_opposite
+            days = 750
+        }
+    }
+}
+country_event = {
+  id = vendee.14
+  title = vendee.14.a
+  desc = vendee.14.b
+  picture = GFX_salt_tax_event_image
+  fire_only_once = yes
+    trigger = { 
+	    tag = VND
+	    has_country_flag = VND_salt_tax
+    }
+
+    option = {
+        name = vendee.14.c
+        
+    }
+}
+country_event = {
+  id = vendee.15
+  title = vendee.15.a
+  desc = vendee.15.b
+  picture = GFX_to_arm_event_image
+  fire_only_once = yes
+    trigger = { 
+	    tag = VND
+	    has_country_flag = VND_liberal_con
+    }
+
+    option = {
+        name = vendee.15.c
+        
+    }
+	option = {
+        name = vendee.15.d
+        
+    }
+	option = {
+        name = vendee.15.e
+		play_song = "la_marseillaise"
+		add_stability = -0.10
+        add_war_support = 0.15
+		set_country_flag = la_anthem
+        
+    }
+}
+country_event = {
+  id = vendee.16
+  title = vendee.16.a
+  desc = vendee.16.b
+  picture = GFX_noble_argue_event_image
+  fire_only_once = yes
+    trigger = { 
+	    tag = VND
+	    has_country_flag = la_anthem
+    }
+
+    option = {
+        name = vendee.16.c
+        
+    }
+}
+country_event = {
+  id = vendee.17
+  title = vendee.17.a
+  desc = vendee.17.b
+  picture = GFX_noble_argue_event_image
+  fire_only_once = yes
+  is_triggered_only = yes
+
+    option = {
+        name = vendee.17.c
+		set_country_flag = VND_election_lafayette
+        
+    }
+}
+country_event = {
+  id = vendee.18
+  title = vendee.18.a
+  desc = vendee.18.b
+  picture = GFX_noble_argue_event_image
+  fire_only_once = yes
+    trigger = { 
+	    tag = VND
+	    has_country_flag = VND_election_lafayette
+    }
+    option = {
+        name = vendee.18.c
+        
+    }
+}
+country_event = {
+  id = vendee.19
+  title = vendee.19.a
+  desc = vendee.19.b
+  picture = GFX_noble_argue_event_image
+  fire_only_once = yes
+    trigger = { 
+	    tag = VND
+	    has_country_flag = VND_1814_charter
+    }
+    option = {
+        name = vendee.19.c
+		set_country_flag = lafayette_form_liberal    
+    }
+}	
+country_event = {
+  id = vendee.20
+  title = vendee.20.a
+  desc = vendee.20.b
+  picture = GFX_lafayette_event_image
+  fire_only_once = yes
+    trigger = { 
+	    tag = VND
+	    has_country_flag = lafayette_form_liberal
+    }
+    option = {
+        name = vendee.20.c   
+    }	
 }
