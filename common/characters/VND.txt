@@ -374,7 +374,7 @@ VND_gouvion_saint_cyr_hc = {
 
 VND_macdonald_hc = {
     name = "Étienne Macdonald"
-    portraits = { civilian = { large = "gfx/interface/ideas/VND/VND_macdonald.dds" } }
+    portraits = { civilian = { small = "gfx/interface/ideas/VND/VND_macdonald.dds" } }
     advisor = {
         slot = high_command
         idea_token = VND_macdonald_hc
@@ -388,7 +388,7 @@ VND_macdonald_hc = {
 
 VND_oudinot_hc = {
     name = "Nicolas Oudinot"
-    portraits = { civilian = { large = "gfx/interface/ideas/VND/VND_oudinot.dds" } }
+    portraits = { civilian = { small = "gfx/interface/ideas/VND/VND_oudinot.dds" } }
     advisor = {
         slot = high_command
         idea_token = VND_oudinot_hc
@@ -402,14 +402,14 @@ VND_oudinot_hc = {
 
 VND_victor_hc = {
     name = "Claude-Victor Perrin, Duc de Belluno"
-    portraits = { civilian = { large = "gfx/interface/ideas/VND/VND_victor.dds" } }
+    portraits = { civilian = { small = "gfx/interface/ideas/VND/VND_victor.dds" } }
     advisor = {
         slot = high_command
         idea_token = VND_victor_hc
         cost = 150
         allowed = { original_tag = VND }
         available = { has_country_flag = VND_louisxviii_appoint }
-        traits = { army_logistics }
+        traits = { army_regrouping }
         ai_will_do = { factor = 1 }
     }
 }
