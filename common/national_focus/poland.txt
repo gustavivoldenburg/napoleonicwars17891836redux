@@ -70,7 +70,7 @@ focus_tree = {
     focus = {
         id = POL_let_magnates_in_charge
         mutually_exclusive = { focus = POL_let_bourgeoisie_in_charge }
-        icon = GFX_borguois_path
+        icon = GFX_magnate_path
         x = 17
         y = 1
         cost = 10
@@ -170,7 +170,7 @@ focus_tree = {
     }
     focus = {
         id = POL_increase_the_rights_of_bourgeoisie
-        icon = GFX_borguois_path
+        icon = GFX_magnate_path
         x = 17
         y = 2
         cost = 5
