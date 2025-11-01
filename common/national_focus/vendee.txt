@@ -162,7 +162,7 @@ focus_tree = {
 
     focus = {
         id = VND_try_lafayette
-        icon = GFX_goal_generic_demand_territory
+        icon = GFX_goal_lafayette_trial
         prerequisite = { focus = VND_restore_ancient_regime }
         x = 23
         y = 3
