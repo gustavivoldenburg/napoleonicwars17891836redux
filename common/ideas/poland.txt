@@ -67,7 +67,7 @@ ideas = {
 
             removal_cost = -1
 
-            picture = russian_flag_paris
+            picture = poland_bad_army
 
             modifier = {
                 offence = -0.5
