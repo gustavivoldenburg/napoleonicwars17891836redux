@@ -21,6 +21,8 @@ recruit_character = VND_gouvion_saint_cyr_hc
 recruit_character = VND_macdonald_hc
 recruit_character = VND_oudinot_hc
 recruit_character = VND_victor_hc
+recruit_character = VND_elie
+recruit_character = VND_armand
 }
 # Starting tech
 set_technology = {
