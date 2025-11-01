@@ -129,6 +129,9 @@ characters={
             allowed = { original_tag = VND }
             available = { has_country_flag = appoint_lafayette }
             traits = { charismatic }
+			modifier = {
+		    supply_consumption_factor = -0.06
+		    }
             cost = 150
             ai_will_do = { factor = 1 }
         }
@@ -368,6 +371,9 @@ VND_gouvion_saint_cyr_hc = {
         allowed = { original_tag = VND }
         available = { has_country_flag = VND_louisxviii_appoint }
         traits = { army_regrouping }
+		modifier = {
+		    supply_consumption_factor = -0.06
+		}
         ai_will_do = { factor = 1 }
     }
 }
@@ -382,6 +388,11 @@ VND_macdonald_hc = {
         allowed = { original_tag = VND }
         available = { has_country_flag = VND_louisxviii_appoint }
         traits = { infantry_expert }
+		modifier = {
+		    army_infantry_attack_factor  = 0.05
+            army_infantry_defence_factor = 0.05
+            max_planning = 0.10
+		}	
         ai_will_do = { factor = 1 }
     }
 }
@@ -396,6 +407,11 @@ VND_oudinot_hc = {
         allowed = { original_tag = VND }
         available = { has_country_flag = VND_louisxviii_appoint }
         traits = { infantry_expert }
+		modifier = {
+		    army_infantry_attack_factor  = 0.05
+            army_infantry_defence_factor = 0.05
+            max_planning = 0.10
+		}
         ai_will_do = { factor = 1 }
     }
 }
@@ -410,6 +426,12 @@ VND_victor_hc = {
         allowed = { original_tag = VND }
         available = { has_country_flag = VND_louisxviii_appoint }
         traits = { army_regrouping }
+		modifier = {
+            planning_speed = 0.1
+            urban = {
+                movement = 0.1
+            }
+        }
         ai_will_do = { factor = 1 }
     }
 }
