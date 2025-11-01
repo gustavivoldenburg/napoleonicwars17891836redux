@@ -1,0 +1,450 @@
+focus_tree = {
+    id = QNG_focus
+    country = { factor = 0 modifier = { add = 100 tag = CHI } }
+	continuous_focus_position = { x = 3500 y = 3000 }
+
+    default = no
+
+    # ---------- ROOT LINE (1789) ----------
+    focus = {
+        id = QNG_stabilize_the_court
+        icon = GFX_focus_generic_political_reform
+        x = 10 y = 0
+        cost = 7 # ~35 days
+        search_filters = { FOCUS_FILTER_POLITICAL }
+        available = { date > 1789.1.1 }
+        completion_reward = {
+            add_stability = 0.05
+            add_political_power = 75
+            set_country_flag = qng_root_started
+        }
+    }
+
+    focus = {
+        id = QNG_transition_of_reign
+        icon = GFX_focus_generic_political_pressure
+        prerequisite = { focus = QNG_stabilize_the_court }
+        x = 10 y = 1
+        cost = 7
+        completion_reward = {
+            add_stability = 0.03
+            add_war_support = 0.02
+            add_ideas = QNG_regency_council
+        }
+    }
+
+    focus = {
+        id = QNG_audit_heshen
+        icon = GFX_focus_generic_anti_corruption
+        prerequisite = { focus = QNG_transition_of_reign }
+        x = 9 y = 2
+        cost = 7
+        completion_reward = {
+            add_political_power = 100
+            add_stability = 0.03
+            add_ideas = QNG_anti_corruption_drive
+            remove_ideas = QNG_entrenched_corruption
+            set_country_flag = qng_heshen_audited
+        }
+    }
+
+    focus = {
+        id = QNG_white_lotus_intelligence
+        icon = GFX_focus_generic_secret_weapons
+        prerequisite = { focus = QNG_transition_of_reign }
+        x = 11 y = 2
+        cost = 7
+        completion_reward = {
+            add_war_support = 0.03
+            add_ideas = QNG_internal_security_bureau
+            add_political_power = 50
+        }
+    }
+
+    # ---------- ADMIN/STATE BRANCH ----------
+    focus = {
+        id = QNG_examination_cleanse
+        icon = GFX_focus_generic_academy
+        prerequisite = { focus = QNG_audit_heshen }
+        x = 7 y = 3
+        cost = 7
+        completion_reward = {
+            add_stability = 0.03
+            add_political_power = 50
+            add_ideas = QNG_meritocratic_exams
+            remove_ideas = QNG_sinecure_offices
+        }
+    }
+
+    focus = {
+        id = QNG_provincial_councils
+        icon = GFX_focus_generic_cabinet
+        prerequisite = { focus = QNG_examination_cleanse }
+        x = 6 y = 4
+        cost = 7
+        completion_reward = {
+            add_political_power = 50
+            add_ideas = QNG_provincial_councils_ns
+            add_stability = 0.02
+        }
+    }
+
+    focus = {
+        id = QNG_fiscal_transparency
+        icon = GFX_focus_generic_industry
+        prerequisite = { focus = QNG_examination_cleanse }
+        x = 8 y = 4
+        cost = 7
+        completion_reward = {
+            add_ideas = QNG_fiscal_transparency_ns
+            add_political_power = 50
+        }
+    }
+
+    # ---------- ECONOMY/FINANCE BRANCH ----------
+    focus = {
+        id = QNG_salt_monopoly_reform
+        icon = GFX_focus_generic_resource
+        prerequisite = { focus = QNG_white_lotus_intelligence }
+        x = 13 y = 3
+        cost = 7
+        completion_reward = {
+            add_ideas = QNG_salt_reform_ns
+            add_political_power = 50
+            add_stability = 0.02
+        }
+    }
+
+    focus = {
+        id = QNG_grand_canal_dredging
+        icon = GFX_focus_generic_construct_civ_factory
+        prerequisite = { focus = QNG_salt_monopoly_reform }
+        x = 13 y = 4
+        cost = 7
+        completion_reward = {
+            add_ideas = QNG_grain_logistics_ns
+            add_building_construction = {
+                type = infrastructure level = 1 instant_build = yes
+                province = 12345 # placeholder; replace with canal provinces in your modmap
+            }
+            add_political_power = 25
+        }
+    }
+
+    focus = {
+        id = QNG_silver_policy_debate
+        icon = GFX_focus_generic_scales
+        prerequisite = { focus = QNG_grand_canal_dredging }
+        x = 12 y = 5
+        cost = 7
+        mutually_exclusive = { focus = QNG_bimetallic_experiment }
+        completion_reward = {
+            add_ideas = QNG_silver_orthodoxy_ns
+        }
+    }
+
+    focus = {
+        id = QNG_bimetallic_experiment
+        icon = GFX_focus_generic_money
+        prerequisite = { focus = QNG_grand_canal_dredging }
+        x = 14 y = 5
+        cost = 7
+        mutually_exclusive = { focus = QNG_silver_policy_debate }
+        completion_reward = {
+            add_ideas = QNG_bimetallic_ns
+            add_stability = -0.01
+            add_war_support = 0.01
+            add_political_power = 50
+        }
+    }
+
+    focus = {
+        id = QNG_manufactory_push
+        icon = GFX_focus_generic_industry_research
+        prerequisite = { focus = QNG_silver_policy_debate focus = QNG_bimetallic_experiment }
+        x = 13 y = 6
+        cost = 7
+        completion_reward = {
+            add_ideas = QNG_early_manufactories_ns
+            add_research_slot = 1
+        }
+    }
+
+    # ---------- MARITIME OPENING VS CLOSED COAST (ALT PATH) ----------
+    focus = {
+        id = QNG_canton_system_rebalance
+        icon = GFX_focus_generic_trade
+        prerequisite = { focus = QNG_manufactory_push }
+        x = 15 y = 7
+        cost = 7
+        mutually_exclusive = { focus = QNG_multiple_ports_experiment }
+        completion_reward = {
+            add_ideas = QNG_canton_reform_ns
+            add_political_power = 50
+        }
+    }
+
+    focus = {
+        id = QNG_multiple_ports_experiment
+        icon = GFX_focus_generic_navy_doctrine
+        prerequisite = { focus = QNG_manufactory_push }
+        x = 11 y = 7
+        cost = 7
+        mutually_exclusive = { focus = QNG_canton_system_rebalance }
+        completion_reward = {
+            add_ideas = QNG_open_ports_ns
+            set_country_flag = qng_open_seas_path
+            add_war_support = -0.01
+            add_political_power = 75
+        }
+    }
+
+    # ---------- MILITARY / NAVY BRANCH ----------
+    focus = {
+        id = QNG_green_standard_reform
+        icon = GFX_focus_generic_army_doctrine
+        prerequisite = { focus = QNG_white_lotus_intelligence }
+        x = 4 y = 3
+        cost = 7
+        completion_reward = {
+            add_ideas = QNG_green_standard_reform_ns
+            add_army_experience = 10
+        }
+    }
+
+    focus = {
+        id = QNG_eight_banners_drill
+        icon = GFX_focus_generic_military_academy
+        prerequisite = { focus = QNG_green_standard_reform }
+        x = 3 y = 4
+        cost = 7
+        completion_reward = {
+            add_ideas = QNG_banner_drill_ns
+            add_army_experience = 15
+        }
+    }
+
+    focus = {
+        id = QNG_provincial_militia
+        icon = GFX_focus_generic_militia
+        prerequisite = { focus = QNG_green_standard_reform }
+        x = 5 y = 4
+        cost = 7
+        completion_reward = {
+            add_ideas = QNG_militias_ns
+            add_manpower = 50000
+        }
+    }
+
+    focus = {
+        id = QNG_standardize_arms
+        icon = GFX_focus_generic_small_arms
+        prerequisite = { focus = QNG_eight_banners_drill focus = QNG_provincial_militia }
+        x = 4 y = 5
+        cost = 7
+        completion_reward = {
+            add_tech_bonus = {
+                name = QNG_arms_standard_bonus
+                bonus = 0.5
+                uses = 1
+                category = infantry_weapons
+            }
+            add_military_factory = 1
+        }
+    }
+
+    focus = {
+        id = QNG_river_flotilla
+        icon = GFX_focus_generic_navy_built
+        prerequisite = { focus = QNG_standardize_arms }
+        x = 4 y = 6
+        cost = 7
+        completion_reward = {
+            add_ideas = QNG_river_flotilla_ns
+            add_navy_experience = 10
+        }
+    }
+
+    focus = {
+        id = QNG_anti_piracy_fleet
+        icon = GFX_focus_generic_destroyer
+        prerequisite = { focus = QNG_river_flotilla }
+        x = 4 y = 7
+        cost = 7
+        completion_reward = {
+            add_ideas = QNG_anti_piracy_ns
+            add_naval_dockyard = 1
+        }
+    }
+
+    # ---------- FOREIGN POLICY: VIETNAM BRANCH (1790s) ----------
+    focus = {
+        id = QNG_restore_order_annam
+        icon = GFX_focus_generic_war_with_X
+        prerequisite = { focus = QNG_standardize_arms focus = QNG_canton_system_rebalance focus = QNG_multiple_ports_experiment }
+        x = 8 y = 7
+        cost = 7
+        completion_reward = {
+            add_war_support = 0.03
+            set_country_flag = qng_vietnam_campaign
+            add_army_experience = 10
+        }
+    }
+
+    focus = {
+        id = QNG_accept_tayson_reality
+        icon = GFX_focus_generic_improve_relations
+        prerequisite = { focus = QNG_restore_order_annam }
+        x = 7 y = 8
+        cost = 7
+        mutually_exclusive = { focus = QNG_install_protectorate_annam }
+        completion_reward = {
+            add_opinion_modifier = { target = VNM modifier = positive_opinion }
+            add_ideas = QNG_border_settlement_ns
+            set_country_flag = qng_vietnam_compromise
+            add_stability = 0.02
+        }
+    }
+
+    focus = {
+        id = QNG_install_protectorate_annam
+        icon = GFX_focus_generic_territory_or_war
+        prerequisite = { focus = QNG_restore_order_annam }
+        x = 9 y = 8
+        cost = 7
+        mutually_exclusive = { focus = QNG_accept_tayson_reality }
+        completion_reward = {
+            add_war_support = 0.03
+            add_country_leader_trait = ruthless # optional if you have a leader
+            add_political_power = 50
+            set_country_flag = qng_vietnam_vassal_plan
+        }
+    }
+
+    # ---------- SOCIAL / EDUCATION / WELFARE ----------
+    focus = {
+        id = QNG_granary_network
+        icon = GFX_focus_generic_food
+        prerequisite = { focus = QNG_fiscal_transparency }
+        x = 6 y = 5
+        cost = 7
+        completion_reward = {
+            add_ideas = QNG_granaries_ns
+            add_stability = 0.02
+        }
+    }
+
+    focus = {
+        id = QNG_community_schools
+        icon = GFX_focus_generic_education
+        prerequisite = { focus = QNG_granary_network }
+        x = 6 y = 6
+        cost = 7
+        completion_reward = {
+            add_ideas = QNG_schools_ns
+            add_research_speed = 0.02
+        }
+    }
+
+    focus = {
+        id = QNG_math_and_astronomy_academy
+        icon = GFX_focus_generic_science
+        prerequisite = { focus = QNG_community_schools }
+        x = 6 y = 7
+        cost = 7
+        completion_reward = {
+            add_research_speed = 0.02
+            add_ideas = QNG_science_academy_ns
+        }
+    }
+
+    focus = {
+        id = QNG_land_settlement_manchuria
+        icon = GFX_focus_generic_population
+        prerequisite = { focus = QNG_granary_network }
+        x = 5 y = 6
+        cost = 7
+        completion_reward = {
+            add_manpower = 80000
+            add_ideas = QNG_frontier_settlement_ns
+        }
+    }
+
+    # ---------- LATE GAME (1808–1810): PIRATES & OUTCOME ----------
+    focus = {
+        id = QNG_confront_pirate_confederation
+        icon = GFX_focus_generic_navy_raiding
+        prerequisite = { focus = QNG_anti_piracy_fleet focus = QNG_multiple_ports_experiment focus = QNG_canton_system_rebalance }
+        x = 12 y = 8
+        cost = 7
+        available = { date > 1807.12.31 }
+        completion_reward = {
+            add_navy_experience = 25
+            add_ideas = QNG_pirate_crackdown_ns
+        }
+    }
+
+    focus = {
+        id = QNG_coopt_the_pirates
+        icon = GFX_focus_generic_dockyard
+        prerequisite = { focus = QNG_confront_pirate_confederation }
+        x = 11 y = 9
+        cost = 7
+        mutually_exclusive = { focus = QNG_crush_the_pirates }
+        completion_reward = {
+            add_ideas = QNG_privateering_charters_ns
+            add_naval_dockyard = 1
+            add_political_power = 50
+        }
+    }
+
+    focus = {
+        id = QNG_crush_the_pirates
+        icon = GFX_focus_generic_sea_fort
+        prerequisite = { focus = QNG_confront_pirate_confederation }
+        x = 13 y = 9
+        cost = 7
+        mutually_exclusive = { focus = QNG_coopt_the_pirates }
+        completion_reward = {
+            add_navy_experience = 25
+            remove_ideas = QNG_anti_piracy_ns
+            add_ideas = QNG_secure_seas_ns
+        }
+    }
+
+    # ---------- GRAND RESOLUTION 1810 ----------
+    focus = {
+        id = QNG_great_renewal_1810
+        icon = GFX_focus_generic_national_unity
+        prerequisite = { focus = QNG_math_and_astronomy_academy focus = QNG_crush_the_pirates focus = QNG_coopt_the_pirates }
+        x = 10 y = 10
+        cost = 7
+        available = { date > 1809.12.31 }
+        completion_reward = {
+            add_stability = 0.05
+            add_research_speed = 0.02
+            add_ideas = QNG_renewal_1810_ns
+            if = {
+                limit = { has_country_flag = qng_open_seas_path }
+                add_political_power = 100
+                add_naval_dockyard = 1
+            }
+        }
+    }
+
+    focus = {
+        id = QNG_warlord_governors
+        icon = GFX_focus_generic_anti_revolution
+        prerequisite = { focus = QNG_provincial_councils focus = QNG_provincial_militia }
+        x = 2 y = 9
+        cost = 7
+        available = { date > 1809.12.31 }
+        mutually_exclusive = { focus = QNG_great_renewal_1810 }
+        completion_reward = {
+            add_stability = -0.05
+            add_war_support = 0.03
+            add_ideas = QNG_power_of_governors_ns
+            set_country_flag = qng_fragment_risk
+        }
+    }
+}
