@@ -59,6 +59,10 @@ spriteTypes = {
         name = "GFX_expand_port_palanga"
         texturefile = "gfx/interface/goals/POL/expand_port_palanga.dds"
     }
+	spriteType = {
+        name = "GFX_magnate_path"
+        texturefile = "gfx/interface/goals/POL/bomboklat.png"
+    }
     spriteType = {
 		name = "GFX_federalist_rebel"
 		texturefile = "gfx/interface/goals/VND/GFX_federalist_rebel.dds"
