@@ -27,6 +27,15 @@ ideas = {
             supply_consumption_factor = -0.03
         }
     }
+	VND_national_guard_idea = {
+        allowed = { original_tag = VND }
+        picture = AFG_adopt_nufus
+        modifier = {
+		    army_core_attack_factor = 0.05
+            army_core_defence_factor = 0.05
+            planning_speed = -0.1
+        }
+    }
 
     VND_women_royal_warriors_idea = {
         allowed = { original_tag = VND }

@@ -238,6 +238,7 @@
   VND_call_first_coalition_desc: "If Europe wants the Revolution stopped, they can start by helping us."
   appoint_lafayette: "§BYou Appointed Lafayette As Military High command§!"
   VND_louisxvii_loyalist_tt: "§WYou Appointed Royalist As Military High command§!"
+  VND_national_guard_idea: "National Guard"
 
   # Ideas
   VND_vendee_maquis_idea:0 "Vendée Maquis"
