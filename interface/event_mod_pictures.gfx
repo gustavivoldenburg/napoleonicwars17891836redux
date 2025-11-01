@@ -3652,6 +3652,6 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_idea_counter_revolution"
-		texturefile = "gfx/interface/ideas/USA/GFX_counter_revolution.dds"
+		texturefile = "gfx/interface/ideas/VND/GFX_counter_revolution.dds"
 	}
 }
