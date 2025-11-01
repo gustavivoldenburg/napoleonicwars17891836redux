@@ -10926,6 +10926,7 @@ date > 1792.1.1
 		completion_reward = {
 		932 = { add_claim_by = root }
 		960 = { add_claim_by = root }
+		AUS = { add_to_faction = VND }
 		
 		VND={
 		    transfer_state = 932

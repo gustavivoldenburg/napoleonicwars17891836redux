@@ -504,6 +504,8 @@ country_event = {
 			VND_compromise_charter_idea
 			the_counter_revolution
 			VND_clerical_support_idea
+			VND_vendee_maquis_idea
+			VND_ancien_vendee
         }
     }
 }
