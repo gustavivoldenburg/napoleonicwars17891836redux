@@ -1091,7 +1091,7 @@ characters = {
 			}
 		}
 		country_leader={
-			ideology=despotism
+			ideology=enlightened_absolutism
 			traits={Poniatowski}
 			desc = POL_STANISLAWIIAUGUST_DESC
 			expire="1797.1.1"
