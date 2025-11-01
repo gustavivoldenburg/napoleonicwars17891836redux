@@ -343,6 +343,39 @@ characters={
       available = { has_country_flag = VND_invite_bussinessmen }
     }
   }
+  
+  VND_elie = {
+    name = "Élie, Duke of Decazes"
+    country = VND
+	portraits={
+			civilian={
+				small="gfx/interface/ideas/VND/VND_elie.dds"
+			}
+	}
+    advisor = {
+      slot = political_advisor
+      idea_token = VND_elie
+      cost = 150
+      traits = { smooth_talking_charmer }
+      available = { has_country_flag = VND_center_gov }
+    }
+  }
+  VND_armand = {
+    name = "Armand-Emmanuel du Plessis"
+    country = VND
+	portraits={
+			civilian={
+				small="gfx/interface/ideas/VND/VND_armand_emmanuel.dds"
+			}
+	}
+    advisor = {
+      slot = political_advisor
+      idea_token = VND_armand
+      cost = 150
+      traits = { silent_workhorse }
+      available = { has_country_flag = VND_center_gov }
+    }
+  }
   VND_jean_nicolas_stofflet = {
     name = "Jean-Nicolas Stofflet"
     portraits = {

@@ -139,6 +139,8 @@
   VND_citizen_soldier_desc: "What is a citizen who enjoys our rights but who does not serve his country?It is not one, a citizen applies his usefulness in society while defending it and dying for it, we must remember the duty of each citizen so as not to become a weak society when our authority was forged from war between brothers, especially in times where the tension of war is always present around us.They will fight for king and nation."
   VND_question_of_department: "Fate of Department"
   VND_pardon_jacobin_soldier_tt: "§RUnlock Jacobin officer.§!"
+  VND_center_gov_tt: "§YUnlock Jacobin Advisor.§!"
+  VND_center_gov: "§YYou appointed moderate Minister.§!"
   VND_pardon_jacobin_officer: "Pardon jacobin officer"
   VND_pardon_jacobin_officer_desc: "No matter how radical Robespierre's liberal Jacobins were, we cannot send everyone to the guillotine for what they did, some will be forgiven depending on how we can take advantage of them, the Jacobin officers will serve the king despite their extremist ideas."
   VND_civilian_oversight: "Military Under Civilian Oversight"

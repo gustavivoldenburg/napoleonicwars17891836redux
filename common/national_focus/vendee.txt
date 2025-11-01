@@ -1011,6 +1011,8 @@ focus_tree = {
         cost = 7
 		completion_reward = {
 		 swap_ideas = { remove_idea = political_collapse_stage_8 add_idea = political_collapse_stage_6 }
+		 add_country_flag = VND_center_gov
+		 custom_effect_tooltip = VND_center_gov_tt
 		}
         
     }
