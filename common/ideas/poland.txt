@@ -19,6 +19,24 @@ ideas = {
 				stability_factor = -0.3
             }
         }
+		POL_temporary_removal_of_liberum_veto = {
+
+            allowed = {
+                always = no
+            }
+			allowed_civil_war = {
+				always = yes
+			}
+
+            removal_cost = -1
+
+            picture = russian_flag_paris
+
+            modifier = {
+                surrender_limit = -1
+				stability_factor = -0.5
+            }
+        }
 		POL_economy_stuck_in_17th_century1 = {
 			allowed = {
                 always = no
@@ -57,6 +75,62 @@ ideas = {
             }
 
 		}
+		POL_economy_stuck_in_17th_century3 = {
+			allowed = {
+                always = no
+            }
+			allowed_civil_war = {
+				always = yes
+			}
+
+            removal_cost = -1
+
+            picture = russian_flag_paris
+
+            modifier = {
+                consumer_goods_factor = 0.1
+				production_speed_buildings_factor = -0.2
+            }
+
+		}
+		POL_revived_economy = {
+			allowed = {
+                always = no
+            }
+			allowed_civil_war = {
+				always = yes
+			}
+
+            removal_cost = -1
+
+            picture = russian_flag_paris
+
+            modifier = {
+                consumer_goods_factor = -0.2
+				production_speed_buildings_factor = 0.3
+				production_factory_efficiency_gain_factor = 0.2
+				cic_construction_boost = 0.2
+				
+            }
+
+		}
+		POL_reformed_taxation = {
+			allowed = {
+                always = no
+            }
+			allowed_civil_war = {
+				always = yes
+			}
+
+            removal_cost = -1
+
+            picture = russian_flag_paris
+
+            modifier = {
+                consumer_goods_factor = -0.3
+            }
+
+		}
 		POL_disorganized_army1 = {
 			allowed = {
                 always = no
@@ -67,7 +141,7 @@ ideas = {
 
             removal_cost = -1
 
-            picture = poland_bad_army
+            picture = russian_flag_paris
 
             modifier = {
                 offence = -0.5
@@ -114,6 +188,42 @@ ideas = {
             modifier = {
                 recruitable_population_factor = 0.05
 				weekly_manpower = 50
+            }
+		}
+		POL_strenghten_the_kings_power = {
+			allowed = {
+                always = no
+            }
+			allowed_civil_war = {
+				always = yes
+			}
+
+            removal_cost = -1
+
+            picture = russian_flag_paris
+
+            modifier = {
+                political_power_gain = 0.25
+				production_speed_buildings_factor = 0.3
+				improve_relations_maintain_cost_factor = 0.3
+            }
+		}
+		POL_limit_the_royal_power = {
+			allowed = {
+                always = no
+            }
+			allowed_civil_war = {
+				always = yes
+			}
+
+            removal_cost = -1
+
+            picture = russian_flag_paris
+
+            modifier = {
+                stability_factor = 0.1
+				political_advisor_cost_factor = 0.5
+				production_factory_max_efficiency_factor = 0.2
             }
 		}
 	}
