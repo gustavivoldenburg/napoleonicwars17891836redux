@@ -118,19 +118,47 @@ ideas = {
 
         removal_cost = -1
     }
-	FRA_lose_idea = {
+	FRA_vendee = {
         allowed = { original_tag = FRA }
         picture = generic_mountain_warfare
 
         modifier = {
             supply_consumption_factor = 0.15
 			recon_factor = -0.20
+			planning_speed = -0.20
+			army_attack_factor = -0.15
+			army_defence_factor = -0.15
+			consumer_goods_factor = 0.25
+		    production_speed_buildings_factor = -0.6
+		    industrial_capacity_factory = -0.5
+			industrial_capacity_dockyard = -0.5
+			production_factory_efficiency_gain_factor = -0.5
+			production_factory_start_efficiency_factor = -0.4
 		}	
 
         targeted_modifier = {
             tag = VND
-            attack_bonus_against = -0.30
+            attack_bonus_against = -0.40
             defense_bonus_against = -0.30
+        }
+
+        removal_cost = -1
+    }
+	VND_ancien_vendee = {
+        allowed = { original_tag = VND }
+        picture = generic_mountain_warfare
+
+        modifier = {
+            supply_consumption_factor = -0.05
+			recon_factor = 0.02
+			army_attack_factor = 0.05
+			army_defence_factor = 0.05
+		}	
+
+        targeted_modifier = {
+            tag = FRA
+            attack_bonus_against = 0.10
+            defense_bonus_against = 0.10
         }
 
         removal_cost = -1
@@ -159,6 +187,16 @@ ideas = {
 
     }
 	lafyette_constitution = {
+        allowed = { original_tag = VND }
+        picture = generic_constitutional_guarantees
+
+        modifier = {
+			stability_factor = 0.02
+            war_support_weekly = 0.02			
+		}
+
+    }
+	centrist_con = {
         allowed = { original_tag = VND }
         picture = generic_constitutional_guarantees
 

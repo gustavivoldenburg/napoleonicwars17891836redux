@@ -156,6 +156,7 @@ focus_tree = {
             set_country_flag = VND_ancient_regime_restoration
             add_stability = 0.05
             add_war_support = 0.03
+			add_ideas = VND_ancien_vendee
         }
     }
 
@@ -981,9 +982,100 @@ focus_tree = {
 			has_country_flag = louisxviii_path
 		}
 		completion_reward = {
-		 set_country_flag = 1814_charter
+		 set_country_flag = VND_1814_charter
 		 swap_ideas = { remove_idea = political_collapse_stage_10 add_idea = political_collapse_stage_9 }
         }
+    }
+	focus = {
+        id = VND_free_press
+        icon = GFX_goal_louisxviii_regent
+        prerequisite = { focus = VND_1814_con }
+        x = 14
+        y = 8
+        cost = 8
+        available = { 
+		    has_country_flag = next_focus
+			has_country_flag = louisxviii_path
+		}
+		completion_reward = {
+		 swap_ideas = { remove_idea = political_collapse_stage_9 add_idea = political_collapse_stage_8 }
+		} 
+        
+    }
+	focus = {
+        id = VND_appoint_centrist
+        icon = GFX_goal_louisxviii_regent
+        prerequisite = { focus = VND_free_press }
+        x = 14
+        y = 9
+        cost = 7
+		completion_reward = {
+		 swap_ideas = { remove_idea = political_collapse_stage_8 add_idea = political_collapse_stage_6 }
+		}
+        
+    }
+	focus = {
+        id = VND_limit_amnesty
+        icon = GFX_goal_louisxviii_regent
+        prerequisite = { focus = VND_appoint_centrist }
+        x = 14
+        y = 10
+        cost = 6
+		completion_reward = {
+		 swap_ideas = { remove_idea = political_collapse_stage_6 add_idea = political_collapse_stage_5 }
+		}
+        
+    }
+	focus = {
+        id = VND_expand_vote
+        icon = GFX_goal_louisxviii_regent
+        prerequisite = { focus = VND_limit_amnesty }
+		mutually_exclusive = { focus = VND_expand_parliament }
+        x = 13
+        y = 11
+        cost = 6
+		completion_reward = {
+		 swap_ideas = { remove_idea = political_collapse_stage_5 add_idea = political_collapse_stage_4 }
+		}
+        
+    }
+	focus = {
+        id = VND_expand_parliament
+        icon = GFX_goal_louisxviii_regent
+        prerequisite = { focus = VND_limit_amnesty }
+		mutually_exclusive = { focus = VND_expand_vote }
+        x = 15
+        y = 11
+        cost = 6
+		completion_reward = {
+		 swap_ideas = { remove_idea = political_collapse_stage_5 add_idea = political_collapse_stage_4 }
+		}
+        
+    }
+	focus = {
+        id = VND_keep_civil_code
+        icon = GFX_goal_louisxviii_regent
+        prerequisite = { focus = VND_expand_parliament }
+		prerequisite = { focus = VND_expand_vote }
+        x = 14
+        y = 12
+        cost = 5
+		completion_reward = {
+		 swap_ideas = { remove_idea = political_collapse_stage_4 add_idea = political_collapse_stage_2 }
+		}
+        
+    }
+	focus = {
+        id = VND_centrist_con
+        icon = GFX_goal_louisxviii_regent
+        prerequisite = { focus = VND_keep_civil_code }
+        x = 14
+        y = 14
+        cost = 14
+		completion_reward = {
+		 swap_ideas = { remove_idea = political_collapse_stage_2 add_idea = centrist_con }
+		}
+        
     }
 	focus = {
         id = VND_conscript_louis

@@ -10934,7 +10934,7 @@ date > 1792.1.1
 		VND = {
             change_tag_from = FRA
         }
-		add_ideas = FRA_lose_idea
+		add_ideas = FRA_vendee
 		hidden_effect ={
 			VND={country_event = fra_1789_event.171}
 									932 = {
