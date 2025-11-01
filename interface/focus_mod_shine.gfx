@@ -344,7 +344,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}	
 	spriteType = {
-        	name = "GFX_magnates_path"
+        	name = "GFX_magnates_path_shine"
         	texturefile = "gfx/interface/goals/PO/bomboklat.png"
 				effectfile = "gfx/FX/buttonstate.lua"	
 		animation = {
