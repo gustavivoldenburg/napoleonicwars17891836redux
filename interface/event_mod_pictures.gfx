@@ -3650,4 +3650,8 @@ spriteTypes = {
 		name = "GFX_idea_america_revolution"
 		texturefile = "gfx/interface/ideas/USA/america_1776.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_counter_revolution"
+		texturefile = "gfx/interface/ideas/USA/GFX_counter_revolution.dds"
+	}
 }
