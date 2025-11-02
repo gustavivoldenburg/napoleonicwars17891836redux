@@ -115,4 +115,12 @@ spriteTypes = {
 		name = "GFX_goal_lafayette_trial"
 		texturefile = "gfx/interface/goals/VND/GFX_lafayette_trial.dds"
 	}
+	spriteType = {
+		name = "GFX_goal_abolish_slave"
+		texturefile = "gfx/interface/goals/VND/GFX_abolish_slave.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_liberal_constitution"
+		texturefile = "gfx/interface/goals/VND/GFX_liberal_constitution.dds"
+	}
 }

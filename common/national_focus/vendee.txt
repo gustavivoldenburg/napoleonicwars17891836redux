@@ -743,7 +743,7 @@ focus_tree = {
     }
 	focus = {
         id = VND_abolish_slave
-        icon = GFX_focus_chi_reach_out_to_france
+        icon = GFX_goal_abolish_slave
         prerequisite = { 
 		    focus = VND_readopt_tricolor 
 		}
@@ -769,7 +769,7 @@ focus_tree = {
     }
 	focus = {
         id = VND_finish_constitution
-        icon = GFX_focus_POL_complete_april_constitution
+        icon = GFX_goal_liberal_constitution
         prerequisite = { 
 		    focus = VND_property_right 
 		}
