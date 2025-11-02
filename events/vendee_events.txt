@@ -684,6 +684,7 @@ country_event = {
 
     option = {
         name = vendee.16.c
+		set_country_flag = VND_election_lafayette
         
     }
 }
@@ -697,7 +698,6 @@ country_event = {
 
     option = {
         name = vendee.17.c
-		set_country_flag = VND_election_lafayette
         
     }
 }

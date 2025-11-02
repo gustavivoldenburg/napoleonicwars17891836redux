@@ -8,8 +8,7 @@ add_namespace = vendee_new
 		fire_only_once = yes
 	
 	    major = yes
-
-	    fire_for_sender = no
+		fire_for_sender = yes
 	    trigger = { 
 	        has_global_flag = french_surrender_done 
         }
