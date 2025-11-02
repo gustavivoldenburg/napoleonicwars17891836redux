@@ -3658,4 +3658,8 @@ spriteTypes = {
 		name = "GFX_idea_poland_bad_army"
 		texturefile = "gfx/interface/ideas/POL/GFX_poland_bad_army.dds"
 	}
+	spriteType = {
+		name = "GFX_news_coalition_first_win"
+		texturefile = "gfx/event_pictures/news_event_coalition_first_win.dds"
+	}
 }
