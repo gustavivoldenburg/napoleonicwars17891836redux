@@ -2,6 +2,13 @@
 1789.1.1 = {
 recruit_character=DEN_michael
 }
+add_ideas = {
+	DEN_norwegian_land_forces
+	DEN_haeren
+	DEN_social_reforms
+	DEN_agricultural_economy
+	DEN_the_theatre_war
+}
 1846.1.1 = {
 retire_character=DEN_michael
 }
