@@ -253,6 +253,7 @@
   VND_national_guard_idea: "National Guard"
   VND_ancien_vendee: "Ancien regime"
   FRA_vendee: "Vendee spy"
+  VND_keep_national_guard: "Keep National Guard"
 
   # Ideas
   VND_vendee_maquis_idea:0 "Vendée Maquis"

@@ -670,7 +670,7 @@ focus_tree = {
     }
 	focus = {
         id = VND_french_lafayette_army
-        icon = GFX_focus_NORDIC_dem_army
+        icon = GFX_goal_lafayette_french_army
         prerequisite = { focus = VND_soldier_tricolor }
         x = 4
         y = 14
@@ -1325,7 +1325,7 @@ focus_tree = {
     }
 	focus = {
         id = VND_keep_national_guard
-        icon = GFX_goal_lafayette_path1
+        icon = GFX_goal_keep_national_guard
         prerequisite = { focus = VND_swiss_guard }
 		mutually_exclusive = { focus = VND_disband_national_guard }
         x = 12
@@ -1340,7 +1340,7 @@ focus_tree = {
         }
     }
 	focus = {
-        id = VND_keep_national_guard
+        id = VND_louis_army
         icon = GFX_goal_lafayette_path1
         prerequisite = { 
 		    focus = VND_keep_national_guard
