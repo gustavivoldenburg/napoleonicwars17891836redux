@@ -374,6 +374,7 @@ country_event = {
 	
 	add_stability = 0.05
     add_war_support = 0.05
+	news_event = vendee_new.1
   }
 }
 country_event = {
@@ -656,10 +657,12 @@ country_event = {
 
     option = {
         name = vendee.15.c
+		set_country_flag = VND_election_lafayette
         
     }
 	option = {
         name = vendee.15.d
+		set_country_flag = VND_election_lafayette
         
     }
 	option = {
@@ -684,6 +687,7 @@ country_event = {
 
     option = {
         name = vendee.16.c
+		set_country_flag = VND_election_lafayette
         
     }
 }
@@ -697,7 +701,6 @@ country_event = {
 
     option = {
         name = vendee.17.c
-		set_country_flag = VND_election_lafayette
         
     }
 }
@@ -735,7 +738,7 @@ country_event = {
   id = vendee.20
   title = vendee.20.a
   desc = vendee.20.b
-  picture = GFX_lafayette_event_image
+  picture = GFX_lafayette_liberal_event_image
   fire_only_once = yes
     trigger = { 
 	    tag = VND
@@ -743,5 +746,19 @@ country_event = {
     }
     option = {
         name = vendee.20.c   
+    }	
+}
+country_event = {
+  id = vendee.21
+  title = vendee.21.a
+  desc = vendee.21.b
+  picture = GFX_return_palace_event_image
+  fire_only_once = yes
+    trigger = { 
+	    tag = VND
+	    has_country_flag = VND_1816_law
+    }
+    option = {
+        name = vendee.21.c   
     }	
 }

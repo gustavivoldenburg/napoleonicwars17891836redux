@@ -170,3 +170,21 @@ music = {
 		}
 	}
 }
+music = {
+	song = "La catholique"
+	chance = {
+		factor = 0
+		modifier = {
+			factor = 100
+		}
+	}
+}
+music = {
+	song = "Hino da Carta"
+	chance = {
+		factor = 0
+		modifier = {
+			factor = 100
+		}
+	}
+}
