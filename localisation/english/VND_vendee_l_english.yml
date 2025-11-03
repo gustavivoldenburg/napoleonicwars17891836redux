@@ -254,6 +254,7 @@
   VND_ancien_vendee: "Ancien regime"
   FRA_vendee: "Vendee spy"
   VND_keep_national_guard: "Keep National Guard"
+  VND_swiss_guard: "Swiss Elite Reinstated"
 
   # Ideas
   VND_vendee_maquis_idea:0 "Vendée Maquis"

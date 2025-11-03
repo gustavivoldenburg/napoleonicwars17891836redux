@@ -131,4 +131,13 @@ spriteTypes = {
 		name = "GFX_goal_keep_national_guard"
 		texturefile = "gfx/interface/goals/VND/GFX_keep_national_guard.dds"
 	}
+	spriteType = {
+		name = "GFX_goal_swiss_guard"
+		texturefile = "gfx/interface/goals/VND/GFX_swiss_guard.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_prepare_for_war"
+		texturefile = "gfx/interface/goals/VND/GFX_prepare_for_war.dds"
+	}
+	
 }

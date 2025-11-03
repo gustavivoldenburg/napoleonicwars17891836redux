@@ -1,7 +1,7 @@
 ﻿division_template = {
-	name = "Legion Division"
+	name = "Swiss Division"
 
-	division_names_group = VND_legion
+	division_names_group = VND_swiss
 
 regiments = {
         infantry = { x = 0 y = 0 }
@@ -17,20 +17,20 @@ regiments = {
 	priority = 2
 }
 units = {
-	#Legion Army
+	#Swiss Army
 	division = {
-		name = "Legion Division"
+		name = "Swiss Division"
 		location = 13334
-		division_template = "Legion Division"
+		division_template = "Swiss Division"
 		start_experience_factor = 0.3
 	}
 }
 units = {
-	#Legion Army
+	#Swiss Army
 	division = {
-		name = "Legion Division"
+		name = "Swiss Division"
 		location = 13334
-		division_template = "Legion Division"
+		division_template = "Swiss Division"
 		start_experience_factor = 0.3
 	}
 }
