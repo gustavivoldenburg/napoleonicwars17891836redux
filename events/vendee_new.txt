@@ -9,9 +9,7 @@ add_namespace = vendee_new
 	
 	    major = yes
 		fire_for_sender = yes
-	    trigger = { 
-	        has_global_flag = french_surrender_done 
-        }
+	    is_triggered_only = yes
 	
 	    option = {
 		    name = "VIVE LE ROI!"

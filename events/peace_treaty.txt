@@ -15,7 +15,7 @@ country_event = {
 	    has_capitulated = yes
 		has_country_flag = french_surrender_done_nah
 	}
-    surrender_progress > 0.80
+    surrender_progress > 0.75
   }
    immediate = {
      set_global_flag = french_surrender_done
