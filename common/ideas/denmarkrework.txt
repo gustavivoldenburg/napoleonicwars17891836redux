@@ -9,7 +9,7 @@ ideas = {
 
             removal_cost = -1
 
-            picture = generic_central_management
+            picture = SWE_save_norway
 
             modifier = {
                 army_core_defence_factor = 0.1
@@ -212,24 +212,7 @@ ideas = {
                 army_morale_factor = 0.15
             }
         }
-        DEN_social_reforms = {
-
-            allowed = {
-                always = yes
-            }
-
-            allowed_civil_war = {
-                always = yes
-            }
-
-            picture = generic_agrarian_reform
-
-            modifier = {
-                stability_factor = 0.1
-                political_power_factor = 0.1
-            }
-        }
-        DEN_social_reforms_2 = {
+        DEN_social_reforms_1 = {
 
             allowed = {
                 always = yes
@@ -246,7 +229,7 @@ ideas = {
                 political_power_factor = 0.03
             }
         }
-        DEN_social_reforms_3 = {
+        DEN_social_reforms_2 = {
 
             allowed = {
                 always = yes
@@ -265,7 +248,7 @@ ideas = {
                 democratic_acceptance = 0.5
             }
         }
-        DEN_social_reforms_4 = {
+        DEN_social_reforms_3 = {
 
             allowed = {
                 always = yes
@@ -284,7 +267,7 @@ ideas = {
                 democratic_acceptance = 0.5
             }
         }
-        DEN_social_reforms_5 = {
+        DEN_social_reforms_4 = {
 
             allowed = {
                 always = yes
@@ -303,7 +286,7 @@ ideas = {
                 democratic_acceptance = 0.5
             }
         }
-        DEN_social_reforms_6 = {
+        DEN_social_reforms_5 = {
 
             allowed = {
                 always = yes
@@ -323,7 +306,7 @@ ideas = {
                 democratic_acceptance = 0.5
             }
         }
-        DEN_social_reforms_7 = {
+        DEN_social_reforms_6 = {
 
             allowed = {
                 always = yes
@@ -344,7 +327,7 @@ ideas = {
                 production_factory_max_efficiency_factor = 0.1
             }
         }
-        DEN_social_reforms_8 = {
+        DEN_social_reforms_7 = {
 
             allowed = {
                 always = yes
@@ -365,7 +348,7 @@ ideas = {
                 production_factory_efficiency_gain_factor = 0.05
             }
         }
-        DEN_social_reforms_9 = {
+        DEN_social_reforms_8 = {
 
             allowed = {
                 always = yes
@@ -385,7 +368,7 @@ ideas = {
                 democratic_acceptance = 0.5
             }
         }
-        DEN_social_reforms_10 = {
+        DEN_social_reforms_9 = {
 
             allowed = {
                 always = yes
