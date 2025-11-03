@@ -179,3 +179,12 @@ music = {
 		}
 	}
 }
+music = {
+	song = "Hino da Carta"
+	chance = {
+		factor = 0
+		modifier = {
+			factor = 100
+		}
+	}
+}

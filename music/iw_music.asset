@@ -90,3 +90,7 @@ music = {
 	name = "La catholique"
 	file = "La catholique.ogg"
 }
+music = {
+	name = "Hino da Carta"
+	file = "Hino da Carta.ogg"
+}
