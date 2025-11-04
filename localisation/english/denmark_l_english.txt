@@ -1,5 +1,0 @@
-l_english:
-
- DEN_norwegian_land_forces:0 "Norwegian Land Forces"
- DEN_haeren:0 "Hæren"
- 
