@@ -759,6 +759,23 @@ country_event = {
 	    has_country_flag = VND_1816_law
     }
     option = {
-        name = vendee.21.c   
+        name = vendee.21.c  
+        set_country_flag = VND_lafayette_speech		
+    }	
+}
+country_event = {
+  id = vendee.22
+  title = vendee.22.a
+  desc = vendee.22.b
+  picture = GFX_lafayette_speech_event_image
+  fire_only_once = yes
+    trigger = { 
+	    tag = VND
+	    has_country_flag = VND_1816_law
+    }
+    option = {
+        name = vendee.22.c 
+        add_stability = -0.10
+        add_war_support = -0.10
     }	
 }

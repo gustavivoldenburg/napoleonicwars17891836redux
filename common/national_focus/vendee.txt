@@ -859,7 +859,7 @@ focus_tree = {
 	    }
         x = -2
         y = 11
-        cost = 20
+        cost = 17
 		completion_reward = {
 		    swap_ideas = { remove_idea = econ_crisis_stage_6 add_idea = econ_crisis_stage_5 }
 	    }	
@@ -1065,7 +1065,7 @@ focus_tree = {
         }
     }
 	focus = {
-        id = VND_london_way
+        id = VND_louis_done_eco
         icon = GFX_goal_louisxviii_regent
         prerequisite = { 
 		    focus = VND_london_way 

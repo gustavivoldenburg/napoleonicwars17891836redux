@@ -3666,4 +3666,8 @@ spriteTypes = {
 		name = "GFX_news_coalition_first_win"
 		texturefile = "gfx/event_pictures/news_event_coalition_first_win.dds"
 	}
+	spriteType = {
+		name = "GFX_lafayette_speech_event_image"
+		texturefile = "gfx/event_pictures/report_event_lafayette_speech.dds"
+	}
 }
