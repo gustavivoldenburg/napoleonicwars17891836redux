@@ -1,0 +1,208 @@
+characters={
+						TTS_rothschildiiii={
+		name=TTS_CHARACTER_ROTHSCHILDIIII
+		portraits={
+                        army={
+				small="GFX_idea_tts_rothschildiiii_small"
+			}
+			civilian = {
+				large = GFX_portrait_tts_rothschildiiii_large
+			}
+		}
+		advisor={
+                        can_be_fired = no
+			slot = political_advisor
+			idea_token = TTS_rothschildiiii
+			allowed  = {
+				original_tag  = TTS
+			}
+			available  = {
+		        }
+			traits  = {
+				rothschild_banker
+			}
+			on_add  = {
+			}
+			do_effect  = {
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+	}
+			TTS_luigidemedici={
+		name=TTS_CHARACTER_LUIGIDEMEDICI
+		portraits={
+                        army={
+				small="GFX_idea_tts_luigidemedici_small"
+			}
+			civilian = {
+				large = GFX_portrait_tts_luigidemedici_large
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = TTS_luigidemedici
+			allowed  = {
+				original_tag  = TTS
+			}
+			available  = {
+		        }
+			traits  = {
+				member_of_the_house_of_medici
+			}
+			on_add  = {
+			}
+			do_effect  = {
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}	
+	}
+	TTS_ferdinandi={
+		name=TTS_CHARACTER_FERDINANDI
+		portraits={
+			civilian={
+				large="GFX_portrait_tts_ferdinandi_large"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={Bourbon-Two-Sicilies}
+			desc = TTS_FERDINANDI_DESC
+			expire="1797.1.1"
+		}
+}
+	TTS_francisi={
+		name=TTS_CHARACTER_FRANCISI
+		portraits={
+			civilian={
+				large="GFX_portrait_tts_francisi_large"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={Bourbon-Two-Sicilies}
+			desc = TTS_FRANCISI_DESC
+			expire="1797.1.1"
+		}
+}
+	TTS_ferdinandii={
+		name=TTS_CHARACTER_FERDINANDII
+		portraits={
+			civilian={
+				large="GFX_portrait_tts_ferdinandii_large"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={Bourbon-Two-Sicilies}
+			desc = TTS_FERDINANDII_DESC
+			expire="1797.1.1"
+		}
+}
+
+
+
+TTS_antonio={
+		name=TTS_CHARACTER_ANTONIO
+		portraits={
+                        army={
+				small="GFX_idea_tts_antonio_small"
+			}
+			civilian = {
+				large = GFX_portrait_tts_antonio_large
+			}
+		}
+		advisor={
+                        can_be_fired = no
+			slot = political_advisor
+			idea_token = TTS_antonio
+			allowed  = {
+				original_tag  = TTS
+			}
+			available  = {
+		        }
+			traits  = {
+				economic_philosopher
+			}
+			on_add  = {
+			}
+			do_effect  = {
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+			}
+		}
+	
+
+
+TTS_gaetano={
+		name=TTS_CHARACTER_GAETANO
+		portraits={
+                        army={
+				small="GFX_idea_tts_gaetano_small"
+			}
+			civilian = {
+				large = GFX_portrait_tts_gaetano_large
+			}
+		}
+		advisor={
+                        can_be_fired = no
+			slot = political_advisor
+			idea_token = TTS_geatano
+			allowed  = {
+				original_tag  = TTS
+			}
+			available  = {
+		        }
+			traits  = {
+				italian_philosopher
+			}
+			on_add  = {
+			}
+			do_effect  = {
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+			}
+		}
+	
+	
+
+	TTS_maria={
+		name=TTS_CHARACTER_MARIA
+		portraits={
+                        army={
+				small="GFX_idea_tts_maria2_small"
+			}
+			civilian = {
+				large = GFX_portrait_tts_maria2_large
+			}
+		}
+		advisor={
+                        can_be_fired = no
+			slot = political_advisor
+			idea_token = TTS_maria
+			allowed  = {
+				original_tag  = TTS
+			}
+			available  = {
+		        }
+			traits  = {
+				queen_maria
+			}
+			on_add  = {
+			}
+			do_effect  = {
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+			}
+		}
+	}
+	
