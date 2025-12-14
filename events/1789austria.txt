@@ -9,7 +9,7 @@ country_event = {
 	id = aus_1789_event.1
 	title = "Form the Austrian Empire"
 	desc = aus_1789_event.1.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -24,7 +24,7 @@ country_event = {
 	id = aus_1789_event.2
 	title = "Austrian Annexation of Bohemia"
 	desc = aus_1789_event.2.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -32,11 +32,11 @@ fire_only_once = yes
 		ai_chance = { factor = 100 } 
 every_state = { #vichy north africa
                     limit = {
-                        is_core_of = BOH
+                        is_core_of = CZE
                     }
                     add_core_of = AUS
                 }
-AUS={annex_country = { target = BOH transfer_troops = yes }}
+AUS={annex_country = { target = CZE transfer_troops = yes }}
 	}
 	option = { # 
 		name = "Tasteless and Futile Resistance"
@@ -47,7 +47,7 @@ country_event = {
 	id = aus_1789_event.3
 	title = "Austrian Annexation of Galicia-Lodomeria"
 	desc = aus_1789_event.3.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -64,7 +64,7 @@ country_event = {
 	id = aus_1789_event.4
 	title = "Austrian Annexation of Bukovina"
 	desc = aus_1789_event.4.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -81,7 +81,7 @@ country_event = {
 	id = aus_1789_event.5
 	title = "Austrian Annexation of Hungary"
 	desc = aus_1789_event.5.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -104,7 +104,7 @@ country_event = {
 	id = aus_1789_event.6
 	title = "Austrian Annexation of Venice"
 	desc = aus_1789_event.6.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -122,7 +122,7 @@ country_event = {
 	id = aus_1789_event.7
 	title = "Death of Joseph II"
 	desc = aus_1789_event.7.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 	trigger = {
     date > 1790.2.20 date < 1791.1.1 
@@ -141,13 +141,13 @@ fire_only_once = yes
     hidden_effect={
 	GLL={promote_character=GLL_leopoldiigll}
 	BKV={promote_character=BKV_leopoldiibkv}
-	BOH={promote_character=BOH_leopoldiiboh}
+	CZE={promote_character=CZE_leopoldiicze}
 	HUN={promote_character=HUN_leopoldiihun}
 	MTU={promote_character=MTU_leopoldiimtu}
 	LBV={promote_character=LBV_leopoldiilbv}
 	GLL={retire_character=GLL_josephiigll}
 	BKV={retire_character=BKV_josephiibkv}
-	BOH={retire_character=BOH_josephiiboh}
+	CZE={retire_character=CZE_josephiicze}
 	HUN={retire_character=HUN_josephiihun}
 	MTU={retire_character=MTU_josephiimtu}
 	LBV={retire_character=LBV_josephiilbv}
@@ -159,7 +159,7 @@ country_event = {
 	id = aus_1789_event.8
 	title = "Death of Leopold II"
 	desc = aus_1789_event.8.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 	trigger = {
     date > 1792.3.1 date < 1794.1.1 
@@ -177,13 +177,13 @@ fire_only_once = yes
     hidden_effect={
 	GLL={promote_character=GLL_francisiigll}
 	BKV={promote_character=BKV_francisiibkv}
-	BOH={promote_character=BOH_francisiiboh}
+	CZE={promote_character=CZE_francisiicze}
 	HUN={promote_character=HUN_francisiihun}
 	MTU={promote_character=MTU_francisiimtu}
 	LBV={promote_character=LBV_francisiilbv}
 	GLL={retire_character=GLL_leopoldiigll}
 	BKV={retire_character=BKV_leopoldiibkv}
-	BOH={retire_character=BOH_leopoldiiboh}
+	CZE={retire_character=CZE_leopoldiicze}
 	HUN={retire_character=HUN_leopoldiihun}
 	MTU={retire_character=MTU_leopoldiimtu}
 	LBV={retire_character=LBV_leopoldiilbv}
@@ -195,7 +195,7 @@ country_event = {
 	id = aus_1789_event.9
 	title = "Death of Francis II"
 	desc = aus_1789_event.9.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 	trigger = {
     date > 1835.3.2 date < 1836.1.1 
@@ -213,13 +213,13 @@ fire_only_once = yes
     hidden_effect={
 	GLL={promote_character=GLL_ferdinandigll}
 	BKV={promote_character=BKV_ferdinandibkv}
-	BOH={promote_character=BOH_ferdinandiboh}
+	CZE={promote_character=CZE_ferdinandicze}
 	HUN={promote_character=HUN_ferdinandihun}
 	MTU={promote_character=MTU_ferdinandimtu}
 	LBV={promote_character=LBV_ferdinandilbv}
 	GLL={retire_character=GLL_francisiigll}
 	BKV={retire_character=BKV_francisiibkv}
-	BOH={retire_character=BOH_francisiiboh}
+	CZE={retire_character=CZE_francisiicze}
 	HUN={retire_character=HUN_francisiihun}
 	MTU={retire_character=MTU_francisiimtu}
 	LBV={retire_character=LBV_francisiilbv}
@@ -231,7 +231,7 @@ country_event = {
 	id = aus_1789_event.10
 	title = "Tyrolean Rebellion"
 	desc = aus_1789_event.10.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {
 date > 1809.4.1 date < 1812.6.1 
@@ -279,7 +279,7 @@ country_event = {
 	id = aus_1789_event.11
 	title = "Reduction of Hungarian Greatness"
 	desc = aus_1789_event.11.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -344,7 +344,7 @@ country_event = {
 	id = aus_1789_event.12
 	title = "Austrian Temporary Ownership of the Rhine and Belgium"
 	desc = aus_1789_event.12.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -408,12 +408,13 @@ country_event = {
 	id = aus_1789_event.13
 	title = "Tyrolean Rebellion"
 	desc = aus_1789_event.13.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
 		name = "Tyrolean Rebellion"
 		ai_chance = { factor = 100 } 
+	AUS={set_country_flag=tyrol_reb_has_happened}
 	TYR={add_manpower = 50000 load_oob = "TYR_1808"}
 			TYR = {
 	declare_war_on = {
@@ -421,12 +422,34 @@ fire_only_once = yes
 		type = annex_everything
 	}
 	}
-			TYR = {
-	declare_war_on = {
-		target = FRA
-		type = annex_everything
 	}
-	}
+}
+country_event = {
+	id = aus_1789_event.14
+	title = "Tyrolean Rebellion"
+	desc = aus_1789_event.14.d
+	picture = GFX_news_event_france_empire_1
+	#is_triggered_only = yes
+	trigger = {
+AUS={has_country_flag=tyrol_reb_has_happened}
+original_tag=FRA
+or={
+TYR = {surrender_progress > 0.75 }
+NOT={country_exists=TYR}
+NOT={has_war_with=TYR}
+}
+}
+fire_only_once = yes
+	option = { # 
+		name = "The end of the Tyrolean Rebellion"
+		ai_chance = { factor = 100 } 
+every_state={
+limit={
+is_core_of=TYR
+}
+transfer_state_to=BAY
+remove_core_of=TYR
+}
 	}
 }
 

@@ -20,6 +20,9 @@ ENG_CHARACTER_GREY:0 "The Earl Grey"
 ENG_CHARACTER_MELBOURNE:0 "The Viscount Melbourne"
 ENG_CHARACTER_PEEL:0 "Robert Peel"
 
+BAY_CHARACTER_DRUMPFII:0 "Johannes Drumpf"
+BAY_CHARACTER_DRUMPFI:0 "Johann Paul Drumpf"
+
 GRE_CHARACTER_ALEXANDROS:0 "Alexandros Mavrokordatos"
 GRE_CHARACTER_PETROBEY:0 "Petrobey Mavromichalis"
 GRE_CHARACTER_GEORGIOS:0 "Georgios Kountouriotis"
@@ -110,8 +113,8 @@ DEN_CHARACTER_MICHAEL:0 "Michael Johannes Petronius Bille" #general
 SWE_CHARACTER_JOHANN:0 "Johann Diedrich Longé" #general
 AUS_CHARACTER_JOZSEF:0 "Alvinczi József" #general
 AUS_CHARACTER_LEIBERICH:0 "Karl Freiherr Mack von Leiberich" #general
-MOD_CHARACTER_KARL:0 "Ferdinand Karl, Archduke of Austria-Este"
-MOD_CHARACTER_MARIA:0 "Maria Theresa of Austria-Este, Queen of Sardinia"
+ITA_CHARACTER_KARL:0 "Ferdinand Karl, Archduke of Austria-Este"
+ITA_CHARACTER_MARIA:0 "Maria Theresa of Austria-Este, Queen of Sardinia"
 SER_CHARACTER_SKOPLJAK:0 "Sulejman Pasha Skopljak"
 SER_CHARACTER_HADJI:0 "Hadji Mustafa Pasha"
 PRE_CHARACTER_GERHARD:0 "Gerhard von Scharnhorst"
@@ -206,7 +209,7 @@ UTH_CHARACTER_JOSEPHSMITH:0 "Joseph Smith"
 UTH_CHARACTER_JOSEPHSMITHSR:0 "Joseph Smith Sr."
 
 RUS_CHARACTER_GRIGORY_POTEMKIN:0 "Grigory Potemkin"
-WAL_CHARACTER_GRIGORY_POTEMKIN:0 "Grigory Potemkin"
+ROM_CHARACTER_GRIGORY_POTEMKIN:0 "Grigory Potemkin"
 HUN_CHARACTER_MIKHAIL:0 "Mikhail Pavlovich"
 
 PRE_CHARACTER_AUGUSGENERAL:0 "Prince Augustus of Prussia"
@@ -368,6 +371,41 @@ RUS_CHARACTER_LAZAREV:0 "Ivan Lazarevich Lazarev"
 RUS_CHARACTER_MADATOV:0 "Valerian Grigoryevich Madatov"
 RUS_CHARACTER_ARAKCHEYEV:0 "Aleksey Arakcheyev"
 
+PRE_CHARACTER_MARX:0 "Karl Marx"
+TTS_CHARACTER_MARZIO:0 "Marzio Mastrilli"
+POR_CHARACTER_NORONHA:0 "António José Severim de Noronha"
+ENG_CHARACTER_CORNWALLIS:0 "Charles Cornwallis"
+SPR_CHARACTER_AZARA:0 "José Nicolás de Azara"
+NAP_CHARACTER_LAUBERG:0 "Carlo Lauberg"
+NAP_CHARACTER_CIAIA:0 "Ignazio Ciaia"
+TTS_CHARACTER_CADOUDAL:0 "Georges Cadoudal"
+TTS_CHARACTER_PICHEGRU:0 "Jean-Charles Pichegru"
+HOL_CHARACTER_PHILIPS:0 "Lion Philips"
+FRA_CHARACTER_JOSEPHDAVIDSINZHEIM:0 "Joseph David Sinzheim"
+
+POR_CHARACTER_JOSESESEABRADASILVA:0 "José de Seabra da Silva" #advisor
+POR_CHARACTER_RODRIGOCOUTINHO:0 "Rodrigo de Sousa Coutinho" #advisor
+POR_CHARACTER_DOMINGOCOUTINHO:0 "Domingos António de Sousa Coutinho" #advisor
+POR_CHARACTER_LUISCOUTINHO:0 "Luís Pinto de Sousa Coutinho" #advisor
+POR_CHARACTER_BRAGANCA:0 "João Carlos de Bragança" #advisor
+
+POR_CHARACTER_FORJAZ:0 "Miguel Pereira Forjaz" #advisor
+POR_CHARACTER_BERESFORD:0 "William Beresford" #advisor
+POR_CHARACTER_FRANCISCODEDASILVEIRA:0 "Francisco da Silveira" #advisor
+POR_CHARACTER_GAMA:0 "António de Saldanha da Gama" #advisor
+POR_CHARACTER_LORENA:0 "Bernardo José Maria de Lorena e Silveira" #advisor
+
+POR_CHARACTER_AZEVEDO:0 "António de Araújo e Azevedo" #advisor
+POR_CHARACTER_STOCKLER:0 "Francisco de Borja Garção Stockler" #advisor
+POR_CHARACTER_TABORDA:0 "José da Cunha Taborda" #advisor
+
+POR_CHARACTER_FREIRE:0 "Cipriano Ribeiro Freire" #advisor
+
+POR_CHARACTER_NAPIER:0 "Charles Napier" #navy
+POR_CHARACTER_GUEDES:0 "Luís Vaz Pereira Pinto Guedes" #general
+POR_CHARACTER_SAMPAIO:0 "Manuel Gregório de Sousa Pereira de Sampaio" #general
+POR_CHARACTER_POVOAS:0 "Álvaro Xavier da Fonseca Coutinho e Póvoas" #general
+
 
 POR_CHARACTER_PEDROGENERAL:0 "Pedro de Almeida Portugal"
 POR_CHARACTER_LIMAGENERAL:0 "The Viscount of Geraz do Lima"
@@ -474,44 +512,44 @@ TUN_CHARACTER_MUSTAFA:0 "Mustafa ibn Mahmud"
 TUN_MUSTAFA_DESC:0 "Mustafa I was the ninth leader of the Husainid Dynasty and the ruler of Tunisia from 1835 until his death in 1837."
 
 
-WAL_CHARACTER_NICHOLAS:0 "Nicholas Mavrogenes"
-WAL_NICHOLAS_DESC:0 "Nicholas Mavrogenes anian was a Phanariote Prince of Wallachia (reigned 1786–1789). He was the great-uncle of Manto Mavrogenous, a heroine of the Greek War of Independence."
+ROM_CHARACTER_NICHOLAS:0 "Nicholas Mavrogenes"
+ROM_NICHOLAS_DESC:0 "Nicholas Mavrogenes anian was a Phanariote Prince of Wallachia (reigned 1786–1789). He was the great-uncle of Manto Mavrogenous, a heroine of the Greek War of Independence."
 
-WAL_CHARACTER_ALEXANDER:0 "Alexander Mourouzis"
-WAL_ALEXANDER_DESC:0 "Alexander Mourouzis was a Grand Dragoman of the Ottoman Empire who served as Prince of Moldavia and Prince of Wallachia. Open to Enlightenment ideas, and noted for his interest in hydrological engineering, Mourouzis was forced to deal with the intrusions of Osman Pazvantoğlu's rebellious troops. In a rare gesture for his period, he renounced the throne in Wallachia, and his second rule in Moldavia was cut short by the intrigues of French diplomat Horace Sébastiani."
+ROM_CHARACTER_ALEXANDER:0 "Alexander Mourouzis"
+ROM_ALEXANDER_DESC:0 "Alexander Mourouzis was a Grand Dragoman of the Ottoman Empire who served as Prince of Moldavia and Prince of Wallachia. Open to Enlightenment ideas, and noted for his interest in hydrological engineering, Mourouzis was forced to deal with the intrusions of Osman Pazvantoğlu's rebellious troops. In a rare gesture for his period, he renounced the throne in Wallachia, and his second rule in Moldavia was cut short by the intrigues of French diplomat Horace Sébastiani."
 
-WAL_CHARACTER_MICHAEL:0 "Michael Drakos Soutzos"
-WAL_MICHAEL_DESC:0 "Michael Drakos Soutzos was a Prince of Moldavia between 1792 and 1795. A member of the Soutzos family of Phanariotes (descended from the Drakos family), he was the grandfather of Michael Soutzos, himself a ruler of Moldavia between 1819 and 1821."
+ROM_CHARACTER_MICHAEL:0 "Michael Drakos Soutzos"
+ROM_MICHAEL_DESC:0 "Michael Drakos Soutzos was a Prince of Moldavia between 1792 and 1795. A member of the Soutzos family of Phanariotes (descended from the Drakos family), he was the grandfather of Michael Soutzos, himself a ruler of Moldavia between 1819 and 1821."
 
-WAL_CHARACTER_CONSTANTINEHANGERLI:0 "Constantine Hangerli"
-WAL_CONSTANTINEHANGERLI_DESC:0 "Constantine Hangerli was a Prince of Wallachia between 1797 and the time of his death. He was the brother of Alexander Hangerli, who served as Prince of Moldavia in 1807."
+ROM_CHARACTER_CONSTANTINEHANGERLI:0 "Constantine Hangerli"
+ROM_CONSTANTINEHANGERLI_DESC:0 "Constantine Hangerli was a Prince of Wallachia between 1797 and the time of his death. He was the brother of Alexander Hangerli, who served as Prince of Moldavia in 1807."
 
-WAL_CHARACTER_CONSTANTINE:0 "Constantine Ypsilantis"
-WAL_CONSTANTINE_DESC:0 "Constantine Ypsilantis was the son of Alexander Ypsilantis, a key member of an important Phanariote family, Grand Dragoman of the Porte (1796–1799), hospodar of Moldavia (1799–1802) and Walachia (1802–1806), and a Prince through marriage to the daughter of Alexandru Callimachi."
+ROM_CHARACTER_CONSTANTINE:0 "Constantine Ypsilantis"
+ROM_CONSTANTINE_DESC:0 "Constantine Ypsilantis was the son of Alexander Ypsilantis, a key member of an important Phanariote family, Grand Dragoman of the Porte (1796–1799), hospodar of Moldavia (1799–1802) and Walachia (1802–1806), and a Prince through marriage to the daughter of Alexandru Callimachi."
 
-WAL_CHARACTER_ALEXANDROS:0 "Alexandros Soutzos"
-WAL_ALEXANDROS_DESC:0 "Alexandros Soutzos was a Phanariote Greek who ruled as Prince of Moldavia (July 10, 1801 – October 1, 1802 and Prince of Wallachia (July 2, 1802 – August 30, 1802; August 24, 1806 – October 15, 1806; December 1806; November 17, 1818 – January 19, 1821). Born in Constantinople, he had earlier been Grand Dragoman of the Ottoman Empire."
+ROM_CHARACTER_ALEXANDROS:0 "Alexandros Soutzos"
+ROM_ALEXANDROS_DESC:0 "Alexandros Soutzos was a Phanariote Greek who ruled as Prince of Moldavia (July 10, 1801 – October 1, 1802 and Prince of Wallachia (July 2, 1802 – August 30, 1802; August 24, 1806 – October 15, 1806; December 1806; November 17, 1818 – January 19, 1821). Born in Constantinople, he had earlier been Grand Dragoman of the Ottoman Empire."
 
-WAL_CHARACTER_SCARLAT:0 "Scarlat Callimachi"
-WAL_SCARLAT_DESC:0 "Scarlat Callimachi was Grand Dragoman of the Sublime Porte 1801–1806, Prince of Moldavia between August 24, 1806 – October 26, 1806, August 4, 1807 – June 13, 1810, September 17, 1812 – June 1819 and Prince of Wallachia between February 1821 – June 1821."
+ROM_CHARACTER_SCARLAT:0 "Scarlat Callimachi"
+ROM_SCARLAT_DESC:0 "Scarlat Callimachi was Grand Dragoman of the Sublime Porte 1801–1806, Prince of Moldavia between August 24, 1806 – October 26, 1806, August 4, 1807 – June 13, 1810, September 17, 1812 – June 1819 and Prince of Wallachia between February 1821 – June 1821."
 
-WAL_CHARACTER_JOHN:0 "John George Caradja"
-WAL_JOHN_DESC:0 "John George Caradja was a Phanariote Greek Prince of Wallachia, who reigned between August 1812 and September 1818. He was the second, and last, member of the Karatzas or Caradja family to ascend to the Wallachian throne, but one of several to have also held office as Great Dragoman of the Ottoman Empire. Caradja, whose life is relatively obscure up to that point, held two terms as Dragoman (1807–1808, 7–27 August 1812). Before 1800, he also embarked on a literary career, participating in the spread of Enlightenment literature throughout the Rum Millet, and becoming noted for his translations from Carlo Goldoni. His progeny included Rallou Karatza-Argyropoulos, who was famous in her own right as a pioneer of modern Greek theater."
+ROM_CHARACTER_JOHN:0 "John George Caradja"
+ROM_JOHN_DESC:0 "John George Caradja was a Phanariote Greek Prince of Wallachia, who reigned between August 1812 and September 1818. He was the second, and last, member of the Karatzas or Caradja family to ascend to the Wallachian throne, but one of several to have also held office as Great Dragoman of the Ottoman Empire. Caradja, whose life is relatively obscure up to that point, held two terms as Dragoman (1807–1808, 7–27 August 1812). Before 1800, he also embarked on a literary career, participating in the spread of Enlightenment literature throughout the Rum Millet, and becoming noted for his translations from Carlo Goldoni. His progeny included Rallou Karatza-Argyropoulos, who was famous in her own right as a pioneer of modern Greek theater."
 
-WAL_CHARACTER_GRIGORE:0 "Grigore Brâncoveanu"
-WAL_GRIGORE_DESC:0 "Grigore Brâncoveanu was a Caimacam and ruler of Wallachia in 1818."
+ROM_CHARACTER_GRIGORE:0 "Grigore Brâncoveanu"
+ROM_GRIGORE_DESC:0 "Grigore Brâncoveanu was a Caimacam and ruler of Wallachia in 1818."
 
-WAL_CHARACTER_YPSILANTIS:0 "Alexander Ypsilantis"
-WAL_YPSILANTIS_DESC:0 "Alexander Ypsilantis was a Greek Voivode of Wallachia from 1774 to 1782, and again from 1796 to 1797, and also Voivode of Moldavia from 1786 to 1788. He bears the same name as, but should not be confused with, his grandson, the Greek War of Independence hero of the early 19th century. The Ypsilantis were a prominent family of Phanariotes."
+ROM_CHARACTER_YPSILANTIS:0 "Alexander Ypsilantis"
+ROM_YPSILANTIS_DESC:0 "Alexander Ypsilantis was a Greek Voivode of Wallachia from 1774 to 1782, and again from 1796 to 1797, and also Voivode of Moldavia from 1786 to 1788. He bears the same name as, but should not be confused with, his grandson, the Greek War of Independence hero of the early 19th century. The Ypsilantis were a prominent family of Phanariotes."
 
-WAL_CHARACTER_TUDOR:0 "Tudor Vladimirescu"
-WAL_TUDOR_DESC:0 "Tudor Vladimirescu was a Romanian revolutionary hero, the leader of the Wallachian uprising of 1821 and of the Pandur militia."
+ROM_CHARACTER_TUDOR:0 "Tudor Vladimirescu"
+ROM_TUDOR_DESC:0 "Tudor Vladimirescu was a Romanian revolutionary hero, the leader of the Wallachian uprising of 1821 and of the Pandur militia."
 
-WAL_CHARACTER_GHICA:0 "Grigore IV Ghica"
-WAL_GHICA_DESC:0 "Grigore IV Ghica was Prince of Wallachia between 1822 and 1828. A member of the Albanian Ghica family, Grigore IV was the brother of Alexandru II Ghica and the uncle of Dora d'Istria."
+ROM_CHARACTER_GHICA:0 "Grigore IV Ghica"
+ROM_GHICA_DESC:0 "Grigore IV Ghica was Prince of Wallachia between 1822 and 1828. A member of the Albanian Ghica family, Grigore IV was the brother of Alexandru II Ghica and the uncle of Dora d'Istria."
 
-WAL_CHARACTER_ALEXANDRU:0 "Alexandru II Ghica"
-WAL_ALEXANDRU_DESC:0 "Alexandru Dimitrie Ghica was Prince of Wallachia from April 1834 to 7 October 1842 and later caimacam from July 1856 to October 1858."
+ROM_CHARACTER_ALEXANDRU:0 "Alexandru II Ghica"
+ROM_ALEXANDRU_DESC:0 "Alexandru Dimitrie Ghica was Prince of Wallachia from April 1834 to 7 October 1842 and later caimacam from July 1856 to October 1858."
 
 
 
@@ -692,11 +730,11 @@ PRM_FERDINANDI_DESC:0 "Ferdinand I was Duke of Parma, Piacenza and Guastalla fro
 PRM_CHARACTER_MARIE:0 "Marie Louise"
 PRM_MARIE_DESC:0 "Marie Louise was an Austrian archduchess who reigned as Duchess of Parma from 11 April 1814 until her death in 1847. She was Napoleon's second wife and as such Empress of the French and Queen of Italy from their marriage on 1 April 1810 until his abdication on 6 April 1814."
 
-MOD_CHARACTER_ERCOLE:0 "Ercole III d'Este"
-MOD_ERCOLE_DESC:0 "He was born in Modena, the son of Duke Francesco III d'Este, Duke of Modena and Charlotte Aglaé d'Orléans, daughter of Philippe d'Orléans, Duke of Orléans and Regent of France. He was the couple's fourth child and had an older sister Maria Teresa and two brothers who died before his birth."
+ITA_CHARACTER_ERCOLE:0 "Ercole III d'Este"
+ITA_ERCOLE_DESC:0 "He was born in Modena, the son of Duke Francesco III d'Este, Duke of Modena and Charlotte Aglaé d'Orléans, daughter of Philippe d'Orléans, Duke of Orléans and Regent of France. He was the couple's fourth child and had an older sister Maria Teresa and two brothers who died before his birth."
 
-MOD_CHARACTER_FRANCISIV:0 "Francis IV"
-MOD_FRANCISIV_DESC:0 "Francis IV was Duke of Modena, Reggio, and Mirandola (from 1815), Duke of Massa and Prince of Carrara (from 1829), Archduke of Austria-Este, Royal Prince of Hungary and Bohemia, Knight of the Order of the Golden Fleece."
+ITA_CHARACTER_FRANCISIV:0 "Francis IV"
+ITA_FRANCISIV_DESC:0 "Francis IV was Duke of Modena, Reggio, and Mirandola (from 1815), Duke of Massa and Prince of Carrara (from 1829), Archduke of Austria-Este, Royal Prince of Hungary and Bohemia, Knight of the Order of the Golden Fleece."
 
 LUC_CHARACTER_FERDINANDI:0 "Ferdinand I"
 LUC_FERDINANDI_DESC:0 "Ferdinand I was Duke of Parma, Piacenza and Guastalla from his father's death on 18 July 1765 until he ceded the duchy to France by the Treaty of Aranjuez on 20 March 1801. He was a member of the Spanish House of Bourbon."
@@ -893,11 +931,45 @@ TOS_CHARACTER_FRANCESCODEMEDICI:0 "Francesco de' Medici di Ottajano"
 TOS_CHARACTER_LUIGIDEMEDICI:0 "Luigi de' Medici"
 TTS_CHARACTER_LUIGIDEMEDICI:0 "Luigi de' Medici"
 
+TTS_CHARACTER_ANTONIO:0 "Antonio Genoves"
+TTS_CHARACTER_GAETANO:0 "Gaetano Filangier"
+TTS_CHARACTER_MARIA2:0 "Queen Maria Carolina"
+RUS_CHARACTER_IGELSTROM:0 "Iosif Igelström"
+RUS_CHARACTER_POTOCKI:0 "Stanisław Szczęsny Potocki"
+
+FRA_CHARACTER_LOUIS:0 "Louis Hercule Timoléon de Cossé, 8th Duke of Brissac"
+FRA_CHARACTER_NAPOLEON_CHEIF:0 "Napoleon Bonaparte"
+FRA_CHARACTER_NAPOLEON_COMMAND:0 "Napoleon Bonaparte"
+FRA_CHARACTER_NICOLAS:0 "Nicolas Luckner"
+
+TTS_CHARACTER_VITO:0 "Vito Nunziante" #general
+TTS_CHARACTER_CARRACOSA:0 "Michele Carrascosa" #general
+TTS_CHARACTER_PEPE:0 "Guglielmo Pepe" #general
+TTS_CHARACTER_COLLETTA:0 "Pietro Colletta" #general
+TTS_CHARACTER_POZ:0 "Carlo Andrea Pozzo di Borgo" #general
+TTS_CHARACTER_DIAVOLO:0 "Michele Pezza" #general
+
+TTS_CHARACTER_DAMAS:0 "Roger de Damas"
+TTS_CHARACTER_LEOPOLDSALERNO:0 "Leopold, Prince of Salerno"
+TTS_CHARACTER_CHETTA:0 "Nicola Chetta"
+TTS_CHARACTER_PAOLI:0 "Pasquale Paoli"
+TTS_CHARACTER_BENTINCK:0 "Lord William Bentinck"
+TTS_CHARACTER_RAFFO:0 "Giuseppe Raffo"
+TTS_CHARACTER_RUFFO:0 "Fabrizio Dionigi Ruffo"
+TTS_CHARACTER_ROSSI:0 "Carlo Rossi"
+TTS_CHARACTER_RUSCA:0 "Luigi Rusca"
+TTS_CHARACTER_RINALDI:0 "Antonio Rinaldi"
+FRA_CHARACTER_LUCIENBONAPARTE:0 "Lucien Bonaparte"
+POR_CHARACTER_LUCIENBONAPARTE:0 "Lucien Bonaparte"
+AGE_CHARACTER_GODOY:0 "Manuel Godoy"
+
 TOS_CHARACTER_LOUISI:0 "Louis I"
 TOS_LOUISI_DESC:0 "Louis I was the first of the two kings of Etruria. Louis was the son of Ferdinand, Duke of Parma, and Maria Amalia of Austria. He was born in 1773, when his great-grandfather, King Louis XV of France, was still alive."
 
 TOS_CHARACTER_CHARLESII:0 "Charles Louis"
 TOS_CHARLESII_DESC:0 "Charles Louis was King of Etruria (1803–1807; reigned as Louis II), Duke of Lucca (1824–1847; reigned as Charles Louis), and Duke of Parma (1847–1849; reigned as Charles II)."
+LST_CHARACTER_CHARLESII:0 "Charles Louis"
+LST_CHARLESII_DESC:0 "Charles Louis was King of Etruria (1803–1807; reigned as Louis II), Duke of Lucca (1824–1847; reigned as Charles Louis), and Duke of Parma (1847–1849; reigned as Charles II)."
 
 COR_CHARACTER_GILBERT:0 "The Earl of Minto"
 COR_GILBERT_DESC:0 "Gilbert Elliot-Murray-Kynynmound, 1st Earl of Minto, was a British diplomat and politician who sat in the House of Commons between 1776 and 1795. He was viceroy of the short-lived Anglo-Corsican Kingdom from 1794 to 1796 and went on to become Governor-General of India between July 1807 and 1813."
@@ -1201,8 +1273,8 @@ NOR_CHARLESXIII_DESC:0 "Charles XIII was King of Sweden from 1809 and King of No
 NOR_CHARACTER_CHARLESXIVJOHN:0 "Charles XIV John"
 NOR_CHARLESXIVJOHN_DESC:0 "Charles XIV John was King of Sweden and Norway from 1818 until his death in 1844 and the first monarch of the Bernadotte dynasty. During the Napoleonic Wars, he participated in several battles as a Marshal of France."
 
-COU_CHARACTER_PETERVONBIRON:0 "Peter von Biron"
-COU_PETERVONBIRON_DESC:0 "Peter von Biron was the last Duke of Courland and Semigallia, from 1769 to 1795."
+LAT_CHARACTER_PETERVONBIRON:0 "Peter von Biron"
+LAT_PETERVONBIRON_DESC:0 "Peter von Biron was the last Duke of Courland and Semigallia, from 1769 to 1795."
 
 DEN_CHARACTER_CHRISTIANVII:0 "Christian VII"
 DEN_CHRISTIANVII_DESC:0 "Christian VII was King of Denmark and Norway and Duke of Schleswig and Holstein from 1766 until his death in 1808. His motto was Glory through love of the fatherland."
@@ -1280,17 +1352,17 @@ HUN_FRANCISIIHUN_DESC:0 "Francis II and I was the last Holy Roman Emperor as Fra
 HUN_CHARACTER_FERDINANDIHUN:0 "Ferdinand I"
 HUN_FERDINANDIHUN_DESC:0 "Ferdinand I was Emperor of Austria from March 1835 until his abdication in December 1848. He was also King of Hungary, Croatia and Bohemia (as Ferdinand V), King of Lombardy–Venetia and holder of many other lesser titles (see grand title of the Emperor of Austria). Due to his passive but well-intentioned character, he gained the sobriquet The Benign."
 
-BOH_CHARACTER_JOSEPHIIBOH:0 "Joseph II"
-BOH_JOSEPHIIBOH_DESC:0 "Joseph II was Holy Roman Emperor from 18 August 1765 and sole ruler of the Habsburg-Lorraine monarchy from 29 November 1780 until his death. He was the eldest son of Empress Maria Theresa and her husband, Emperor Francis I, and the brother of Marie Antoinette, Leopold II, Maria Carolina of Austria and Maria Amalia, Duchess of Parma. He was thus the first ruler in the Austrian dominions of the union of the Houses of Habsburg and Lorraine, styled Habsburg-Lorraine."
+CZE_CHARACTER_JOSEPHIICZE:0 "Joseph II"
+CZE_JOSEPHIICZE_DESC:0 "Joseph II was Holy Roman Emperor from 18 August 1765 and sole ruler of the Habsburg-Lorraine monarchy from 29 November 1780 until his death. He was the eldest son of Empress Maria Theresa and her husband, Emperor Francis I, and the brother of Marie Antoinette, Leopold II, Maria Carolina of Austria and Maria Amalia, Duchess of Parma. He was thus the first ruler in the Austrian dominions of the union of the Houses of Habsburg and Lorraine, styled Habsburg-Lorraine."
 
-BOH_CHARACTER_LEOPOLDIIBOH:0 "Leopold II"
-BOH_LEOPOLDIIBOH_DESC:0 "Leopold II was the 44th Holy Roman Emperor, King of Hungary, Croatia and Bohemia, and Archduke of Austria from 1790 to 1792, and Grand Duke of Tuscany from 1765 to 1790. He was a son of Empress Maria Theresa and Emperor Francis I, and the brother of Queen Marie Antoinette of France, Queen Maria Carolina, Duchess Maria Amalia of Parma, and Emperor Joseph II. Leopold was a moderate proponent of enlightened absolutism. He granted the Academy of Georgofili his protection. Unusually for his time, he opposed the death penalty and torture and abolished it in Tuscany on 30 November 1786 during his rule there, making it the first nation in modern history to do so. This act has been commemorated since 2000 by a regional custom known as the Feast of Tuscany, held every 30 November. Despite his brief reign, he is highly regarded. The historian Paul W. Schroeder called him "one of the most shrewd and sensible monarchs ever to wear a crown"."
+CZE_CHARACTER_LEOPOLDIICZE:0 "Leopold II"
+CZE_LEOPOLDIICZE_DESC:0 "Leopold II was the 44th Holy Roman Emperor, King of Hungary, Croatia and Bohemia, and Archduke of Austria from 1790 to 1792, and Grand Duke of Tuscany from 1765 to 1790. He was a son of Empress Maria Theresa and Emperor Francis I, and the brother of Queen Marie Antoinette of France, Queen Maria Carolina, Duchess Maria Amalia of Parma, and Emperor Joseph II. Leopold was a moderate proponent of enlightened absolutism. He granted the Academy of Georgofili his protection. Unusually for his time, he opposed the death penalty and torture and abolished it in Tuscany on 30 November 1786 during his rule there, making it the first nation in modern history to do so. This act has been commemorated since 2000 by a regional custom known as the Feast of Tuscany, held every 30 November. Despite his brief reign, he is highly regarded. The historian Paul W. Schroeder called him "one of the most shrewd and sensible monarchs ever to wear a crown"."
 
-BOH_CHARACTER_FRANCISIIBOH:0 "Francis II"
-BOH_FRANCISIIBOH_DESC:0 "Francis II and I was the last Holy Roman Emperor as Francis II from 1792 to 1806, and the first Emperor of Austria as Francis I from 1804 to 1835. He was also King of Hungary, Croatia and Bohemia, and served as the first president of the German Confederation following its establishment in 1815."
+CZE_CHARACTER_FRANCISIICZE:0 "Francis II"
+CZE_FRANCISIICZE_DESC:0 "Francis II and I was the last Holy Roman Emperor as Francis II from 1792 to 1806, and the first Emperor of Austria as Francis I from 1804 to 1835. He was also King of Hungary, Croatia and Bohemia, and served as the first president of the German Confederation following its establishment in 1815."
 
-BOH_CHARACTER_FERDINANDIBOH:0 "Ferdinand I"
-BOH_FERDINANDIBOH_DESC:0 "Ferdinand I was Emperor of Austria from March 1835 until his abdication in December 1848. He was also King of Hungary, Croatia and Bohemia (as Ferdinand V), King of Lombardy–Venetia and holder of many other lesser titles (see grand title of the Emperor of Austria). Due to his passive but well-intentioned character, he gained the sobriquet The Benign."
+CZE_CHARACTER_FERDINANDICZE:0 "Ferdinand I"
+CZE_FERDINANDICZE_DESC:0 "Ferdinand I was Emperor of Austria from March 1835 until his abdication in December 1848. He was also King of Hungary, Croatia and Bohemia (as Ferdinand V), King of Lombardy–Venetia and holder of many other lesser titles (see grand title of the Emperor of Austria). Due to his passive but well-intentioned character, he gained the sobriquet The Benign."
 
 MTU_CHARACTER_JOSEPHIIMTU:0 "Joseph II"
 MTU_JOSEPHIIMTU_DESC:0 "Joseph II was Holy Roman Emperor from 18 August 1765 and sole ruler of the Habsburg-Lorraine monarchy from 29 November 1780 until his death. He was the eldest son of Empress Maria Theresa and her husband, Emperor Francis I, and the brother of Marie Antoinette, Leopold II, Maria Carolina of Austria and Maria Amalia, Duchess of Parma. He was thus the first ruler in the Austrian dominions of the union of the Houses of Habsburg and Lorraine, styled Habsburg-Lorraine."
@@ -1570,8 +1642,8 @@ VND_LOUISXVII_DESC:0 ""
 LIT_CHARACTER_FREDERICKAUGUSTUSI:0 "Frederick Augustus I"
 LIT_FREDERICKAUGUSTUSI_DESC:0 "Frederick Augustus I was a member of the House of Wettin who reigned as the last Elector of Saxony from 1763 to 1806 and as the first King of Saxony from 1806 to 1827.He was also Duke of Warsaw from 1807 to 1815."
 
-COU_CHARACTER_FREDERICKAUGUSTUSI:0 "Frederick Augustus I"
-COU_FREDERICKAUGUSTUSI_DESC:0 "Frederick Augustus I was a member of the House of Wettin who reigned as the last Elector of Saxony from 1763 to 1806 and as the first King of Saxony from 1806 to 1827.He was also Duke of Warsaw from 1807 to 1815."
+LAT_CHARACTER_FREDERICKAUGUSTUSI:0 "Frederick Augustus I"
+LAT_FREDERICKAUGUSTUSI_DESC:0 "Frederick Augustus I was a member of the House of Wettin who reigned as the last Elector of Saxony from 1763 to 1806 and as the first King of Saxony from 1806 to 1827.He was also Duke of Warsaw from 1807 to 1815."
 
 SAX_CHARACTER_FREDERICKAUGUSTUSI:0 "Frederick Augustus I"
 SAX_FREDERICKAUGUSTUSI_DESC:0 "Frederick Augustus I was a member of the House of Wettin who reigned as the last Elector of Saxony from 1763 to 1806 and as the first King of Saxony from 1806 to 1827.He was also Duke of Warsaw from 1807 to 1815."

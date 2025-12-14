@@ -8,31 +8,42 @@ state={
 
 	history={
 		owner = POR
-		victory_points = {
-			9869 1 
+				1808.1.1 = {
+	    owner=FRA
+		}
+		1809.1.1 = {
+	    owner=POR
 		}
 		victory_points = {
-			924 1 
-		}
-		victory_points = {
-			970 1 
+			9869 2 
 		}
 		victory_points = {
 			6933 1 
 		}
+				buildings = {
+		6884 = {bunker = 2}
+        }
+				buildings = {
+		9819 = {bunker = 2}
+        }
+				buildings = {
+		13282 = {bunker = 2}
+        }
+				buildings = {
+		3886 = {bunker = 2}
+        }
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
-
 		}
 		add_core_of = POR
 
 	}
 
 	provinces={
-		844 924 970 980 3846 3866 3886 3926 6884 6933 6986 9765 9819 9869 11768 13280 13281 13282 13283 13284 13286 13287 
+		844 3846 3866 3886 6884 6933 6986 9765 9819 9869 11768 13280 13282 13283 13284 13286
 	}
-	manpower=1000000
+	manpower=800000
 	buildings_max_level_factor=1.000
 	state_category=town
 	local_supplies=0.000

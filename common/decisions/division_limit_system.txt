@@ -4,7 +4,7 @@ cost = 100
 		icon = ger_reichskommissariats
 				
 		available = {
-has_war=yes
+
 		has_capitulated = no
 has_equipment = { infantry_equipment > 9599}
 has_manpower > 100000
@@ -14,6 +14,36 @@ not={has_army_manpower = { size > 95000 }}
 						tag = AUS
 					}
 					AUS={has_country_flag=unlock_aus_train_new_divisions}
+				}
+				if = {
+					limit = {
+						tag = RUS
+					}
+					date > 1800.1.1
+				}
+				if = {
+					limit = {
+						tag = WUR
+					WUR={has_country_flag=has_become_a_german_major}
+					}
+				}
+								if = {
+					limit = {
+						tag = BAY
+					BAY={has_country_flag=has_become_a_german_major}
+					}
+				}
+								if = {
+					limit = {
+						tag = SAX
+					SAX={has_country_flag=has_become_a_german_major}
+					}
+				}
+								if = {
+					limit = {
+						tag = HAN
+					HAN={has_country_flag=has_become_a_german_major}
+					}
 				}
 				if = {
 					limit = {
@@ -43,7 +73,7 @@ not={has_army_manpower = { size > 95000 }}
 					limit = {
 					or={
 						tag = HUN 
-						tag = BOH 
+						tag = CZE 
 						tag = GLL 
 						tag = BKV
 					}
@@ -56,14 +86,7 @@ not={has_army_manpower = { size > 95000 }}
 					}
 					NOT={tag = PEN}
 				}
-				if = {
-					limit = {
-					or={
-						tag = FRA
-					}
-					}
-					NOT = {has_country_flag=fontainebleau_flag}
-				}
+
 				if = {
 					limit = {
 					or={
@@ -110,7 +133,7 @@ cost = 100
 		icon = ger_reichskommissariats
 				
 		available = {
-has_war=yes
+
 		has_capitulated = no
 has_equipment = { infantry_equipment > 9599}
 has_manpower > 100000
@@ -122,7 +145,36 @@ has_army_manpower = { size > 95000 }
 					}
 					AUS={has_country_flag=unlock_aus_train_new_divisions}
 				}
-
+				if = {
+					limit = {
+						tag = RUS
+					}
+					date > 1800.1.1
+				}
+				if = {
+					limit = {
+						tag = WUR
+					WUR={has_country_flag=has_become_a_german_major}
+					}
+				}
+								if = {
+					limit = {
+						tag = BAY
+					BAY={has_country_flag=has_become_a_german_major}
+					}
+				}
+								if = {
+					limit = {
+						tag = SAX
+					SAX={has_country_flag=has_become_a_german_major}
+					}
+				}
+								if = {
+					limit = {
+						tag = HAN
+					HAN={has_country_flag=has_become_a_german_major}
+					}
+				}
 				if = {
 					limit = {
 						tag = ENG
@@ -151,7 +203,7 @@ has_army_manpower = { size > 95000 }
 					limit = {
 					or={
 						tag = HUN 
-						tag = BOH 
+						tag = CZE 
 						tag = GLL 
 						tag = BKV
 					}
@@ -164,14 +216,7 @@ has_army_manpower = { size > 95000 }
 					}
 					NOT={tag = PEN}
 				}
-				if = {
-					limit = {
-					or={
-						tag = FRA
-					}
-					}
-					NOT = {has_country_flag=fontainebleau_flag}
-				}
+
 				if = {
 					limit = {
 					or={
@@ -227,7 +272,7 @@ cost = 100
 		icon = ger_reichskommissariats
 				
 		available = {
-has_war=yes
+
 		has_capitulated = no
 has_equipment = { infantry_equipment > 9599}
 has_manpower > 100000
@@ -238,6 +283,36 @@ has_army_manpower = { size > 191000 }
 						tag = AUS
 					}
 					AUS={has_country_flag=unlock_aus_train_new_divisions}
+				}
+				if = {
+					limit = {
+						tag = RUS
+					}
+					date > 1800.1.1
+				}
+				if = {
+					limit = {
+						tag = WUR
+					WUR={has_country_flag=has_become_a_german_major}
+					}
+				}
+								if = {
+					limit = {
+						tag = BAY
+					BAY={has_country_flag=has_become_a_german_major}
+					}
+				}
+								if = {
+					limit = {
+						tag = SAX
+					SAX={has_country_flag=has_become_a_german_major}
+					}
+				}
+								if = {
+					limit = {
+						tag = HAN
+					HAN={has_country_flag=has_become_a_german_major}
+					}
 				}
 				if = {
 					limit = {
@@ -273,7 +348,7 @@ has_army_manpower = { size > 191000 }
 					limit = {
 					or={
 						tag = HUN 
-						tag = BOH 
+						tag = CZE 
 						tag = GLL 
 						tag = BKV
 					}
@@ -286,14 +361,7 @@ has_army_manpower = { size > 191000 }
 					}
 					NOT={tag = PEN}
 				}
-				if = {
-					limit = {
-					or={
-						tag = FRA
-					}
-					}
-					NOT = {has_country_flag=fontainebleau_flag}
-				}
+
 				if = {
 					limit = {
 					or={
@@ -351,7 +419,7 @@ cost = 100
 		icon = ger_reichskommissariats
 				
 		available = {
-has_war=yes
+
 		has_capitulated = no
 has_equipment = { infantry_equipment > 9599}
 has_manpower > 100000
@@ -362,6 +430,36 @@ has_army_manpower = { size > 287000 }
 						tag = AUS
 					}
 					AUS={has_country_flag=unlock_aus_train_new_divisions}
+				}
+				if = {
+					limit = {
+						tag = RUS
+					}
+					date > 1800.1.1
+				}
+				if = {
+					limit = {
+						tag = WUR
+					WUR={has_country_flag=has_become_a_german_major}
+					}
+				}
+								if = {
+					limit = {
+						tag = BAY
+					BAY={has_country_flag=has_become_a_german_major}
+					}
+				}
+								if = {
+					limit = {
+						tag = SAX
+					SAX={has_country_flag=has_become_a_german_major}
+					}
+				}
+								if = {
+					limit = {
+						tag = HAN
+					HAN={has_country_flag=has_become_a_german_major}
+					}
 				}
 				if = {
 					limit = {
@@ -404,7 +502,7 @@ has_army_manpower = { size > 287000 }
 					limit = {
 					or={
 						tag = HUN 
-						tag = BOH 
+						tag = CZE 
 						tag = GLL 
 						tag = BKV
 					}
@@ -417,14 +515,7 @@ has_army_manpower = { size > 287000 }
 					}
 					NOT={tag = PEN}
 				}
-				if = {
-					limit = {
-					or={
-						tag = FRA
-					}
-					}
-					NOT = {has_country_flag=fontainebleau_flag}
-				}
+
 				if = {
 					limit = {
 					or={
@@ -480,11 +571,10 @@ cost = 100
 		icon = ger_reichskommissariats
 				
 		available = {
-has_war=yes
+
 		has_capitulated = no
 has_equipment = { infantry_equipment > 9599}
 has_manpower > 100000
-date > 1800.1.1
 not={has_army_manpower = { size > 479000 }}
 has_army_manpower = { size > 383000 }
 				if = {
@@ -492,6 +582,36 @@ has_army_manpower = { size > 383000 }
 						tag = AUS
 					}
 					AUS={has_country_flag=unlock_aus_train_new_divisions}
+				}
+				if = {
+					limit = {
+						tag = RUS
+					}
+					date > 1800.1.1
+				}
+				if = {
+					limit = {
+						tag = WUR
+					WUR={has_country_flag=has_become_a_german_major}
+					}
+				}
+								if = {
+					limit = {
+						tag = BAY
+					BAY={has_country_flag=has_become_a_german_major}
+					}
+				}
+								if = {
+					limit = {
+						tag = SAX
+					SAX={has_country_flag=has_become_a_german_major}
+					}
+				}
+								if = {
+					limit = {
+						tag = HAN
+					HAN={has_country_flag=has_become_a_german_major}
+					}
 				}
 				if = {
 					limit = {
@@ -522,7 +642,7 @@ has_army_manpower = { size > 383000 }
 					limit = {
 					or={
 						tag = HUN 
-						tag = BOH 
+						tag = CZE 
 						tag = GLL 
 						tag = BKV
 					}
@@ -535,14 +655,7 @@ has_army_manpower = { size > 383000 }
 					}
 					NOT={tag = PEN}
 				}
-				if = {
-					limit = {
-					or={
-						tag = FRA
-					}
-					}
-					NOT = {has_country_flag=fontainebleau_flag}
-				}
+
 				if = {
 					limit = {
 					or={
@@ -599,11 +712,10 @@ cost = 100
 		icon = ger_reichskommissariats
 				
 		available = {
-has_war=yes
+
 		has_capitulated = no
 has_equipment = { infantry_equipment > 9599}
 has_manpower > 100000
-date > 1800.1.1
 not={has_army_manpower = { size > 575000 }}
 has_army_manpower = { size > 479000 }
 				if = {
@@ -611,6 +723,36 @@ has_army_manpower = { size > 479000 }
 						tag = AUS
 					}
 					AUS={has_country_flag=unlock_aus_train_new_divisions}
+				}
+				if = {
+					limit = {
+						tag = RUS
+					}
+					date > 1800.1.1
+				}
+				if = {
+					limit = {
+						tag = WUR
+					WUR={has_country_flag=has_become_a_german_major}
+					}
+				}
+								if = {
+					limit = {
+						tag = BAY
+					BAY={has_country_flag=has_become_a_german_major}
+					}
+				}
+								if = {
+					limit = {
+						tag = SAX
+					SAX={has_country_flag=has_become_a_german_major}
+					}
+				}
+								if = {
+					limit = {
+						tag = HAN
+					HAN={has_country_flag=has_become_a_german_major}
+					}
 				}
 				if = {
 					limit = {
@@ -641,7 +783,7 @@ has_army_manpower = { size > 479000 }
 					limit = {
 					or={
 						tag = HUN 
-						tag = BOH 
+						tag = CZE 
 						tag = GLL 
 						tag = BKV
 					}
@@ -654,14 +796,7 @@ has_army_manpower = { size > 479000 }
 					}
 					NOT={tag = PEN}
 				}
-				if = {
-					limit = {
-					or={
-						tag = FRA
-					}
-					}
-					NOT = {has_country_flag=fontainebleau_flag}
-				}
+
 				if = {
 					limit = {
 					or={
@@ -718,18 +853,53 @@ cost = 100
 		icon = ger_reichskommissariats
 				
 		available = {
-has_war=yes
+
 		has_capitulated = no
 has_equipment = { infantry_equipment > 9599}
 has_manpower > 100000
-date > 1805.1.1
 not={has_army_manpower = { size > 671000 }}
 has_army_manpower = { size > 575000 }
+				if = {
+					limit = {
+						tag = RUS
+					}
+					RUS={has_country_flag=rus_has_completed_great_patriotic_army_reform}
+				}
 				if = {
 					limit = {
 						tag = AUS
 					}
 					AUS={has_country_flag=unlock_aus_train_new_divisions}
+				}
+				if = {
+					limit = {
+						tag = RUS
+					}
+					date > 1800.1.1
+				}
+				if = {
+					limit = {
+						tag = WUR
+					WUR={has_country_flag=has_become_a_german_major}
+					}
+				}
+								if = {
+					limit = {
+						tag = BAY
+					BAY={has_country_flag=has_become_a_german_major}
+					}
+				}
+								if = {
+					limit = {
+						tag = SAX
+					SAX={has_country_flag=has_become_a_german_major}
+					}
+				}
+								if = {
+					limit = {
+						tag = HAN
+					HAN={has_country_flag=has_become_a_german_major}
+					}
 				}
 				if = {
 					limit = {
@@ -760,7 +930,7 @@ has_army_manpower = { size > 575000 }
 					limit = {
 					or={
 						tag = HUN 
-						tag = BOH 
+						tag = CZE 
 						tag = GLL 
 						tag = BKV
 					}
@@ -773,14 +943,7 @@ has_army_manpower = { size > 575000 }
 					}
 					NOT={tag = PEN}
 				}
-				if = {
-					limit = {
-					or={
-						tag = FRA
-					}
-					}
-					NOT = {has_country_flag=fontainebleau_flag}
-				}
+
 				if = {
 					limit = {
 					or={
@@ -837,18 +1000,53 @@ cost = 100
 		icon = ger_reichskommissariats
 				
 		available = {
-has_war=yes
+
 		has_capitulated = no
 has_equipment = { infantry_equipment > 9599}
 has_manpower > 100000
-date > 1805.1.1
 not={has_army_manpower = { size > 767000 }}
 has_army_manpower = { size > 671000 }
+				if = {
+					limit = {
+						tag = RUS
+					}
+					RUS={has_country_flag=rus_has_completed_great_patriotic_army_reform}
+				}
 				if = {
 					limit = {
 						tag = AUS
 					}
 					AUS={has_country_flag=unlock_aus_train_new_divisions}
+				}
+				if = {
+					limit = {
+						tag = RUS
+					}
+					date > 1800.1.1
+				}
+				if = {
+					limit = {
+						tag = WUR
+					WUR={has_country_flag=has_become_a_german_major}
+					}
+				}
+								if = {
+					limit = {
+						tag = BAY
+					BAY={has_country_flag=has_become_a_german_major}
+					}
+				}
+								if = {
+					limit = {
+						tag = SAX
+					SAX={has_country_flag=has_become_a_german_major}
+					}
+				}
+								if = {
+					limit = {
+						tag = HAN
+					HAN={has_country_flag=has_become_a_german_major}
+					}
 				}
 				if = {
 					limit = {
@@ -879,7 +1077,7 @@ has_army_manpower = { size > 671000 }
 					limit = {
 					or={
 						tag = HUN 
-						tag = BOH 
+						tag = CZE 
 						tag = GLL 
 						tag = BKV
 					}
@@ -892,14 +1090,7 @@ has_army_manpower = { size > 671000 }
 					}
 					NOT={tag = PEN}
 				}
-				if = {
-					limit = {
-					or={
-						tag = FRA
-					}
-					}
-					NOT = {has_country_flag=fontainebleau_flag}
-				}
+
 				if = {
 					limit = {
 					or={
@@ -956,18 +1147,53 @@ cost = 100
 		icon = ger_reichskommissariats
 				
 		available = {
-has_war=yes
+
 		has_capitulated = no
 has_equipment = { infantry_equipment > 9599}
 has_manpower > 100000
-date > 1810.1.1
 not={has_army_manpower = { size > 863000 }}
 has_army_manpower = { size > 767000 }
+				if = {
+					limit = {
+						tag = RUS
+					}
+					RUS={has_country_flag=rus_has_completed_great_patriotic_army_reform}
+				}
 				if = {
 					limit = {
 						tag = AUS
 					}
 					AUS={has_country_flag=unlock_aus_train_new_divisions}
+				}
+				if = {
+					limit = {
+						tag = RUS
+					}
+					date > 1800.1.1
+				}
+				if = {
+					limit = {
+						tag = WUR
+					WUR={has_country_flag=has_become_a_german_major}
+					}
+				}
+								if = {
+					limit = {
+						tag = BAY
+					BAY={has_country_flag=has_become_a_german_major}
+					}
+				}
+								if = {
+					limit = {
+						tag = SAX
+					SAX={has_country_flag=has_become_a_german_major}
+					}
+				}
+								if = {
+					limit = {
+						tag = HAN
+					HAN={has_country_flag=has_become_a_german_major}
+					}
 				}
 				if = {
 					limit = {
@@ -997,7 +1223,7 @@ has_army_manpower = { size > 767000 }
 					limit = {
 					or={
 						tag = HUN 
-						tag = BOH 
+						tag = CZE 
 						tag = GLL 
 						tag = BKV
 					}
@@ -1010,14 +1236,7 @@ has_army_manpower = { size > 767000 }
 					}
 					NOT={tag = PEN}
 				}
-				if = {
-					limit = {
-					or={
-						tag = FRA
-					}
-					}
-					NOT = {has_country_flag=fontainebleau_flag}
-				}
+
 				if = {
 					limit = {
 					or={
@@ -1073,18 +1292,53 @@ cost = 100
 		icon = ger_reichskommissariats
 				
 		available = {
-has_war=yes
+
 		has_capitulated = no
 has_equipment = { infantry_equipment > 9599}
 has_manpower > 100000
-date > 1810.1.1
-not={has_army_manpower = { size > 959000 }}
+not={has_army_manpower = { size > 899000 }}
 has_army_manpower = { size > 863000 }
+				if = {
+					limit = {
+						tag = RUS
+					}
+					RUS={has_country_flag=rus_has_completed_great_patriotic_army_reform}
+				}
 				if = {
 					limit = {
 						tag = AUS
 					}
 					AUS={has_country_flag=unlock_aus_train_new_divisions}
+				}
+				if = {
+					limit = {
+						tag = RUS
+					}
+					date > 1800.1.1
+				}
+				if = {
+					limit = {
+						tag = WUR
+					WUR={has_country_flag=has_become_a_german_major}
+					}
+				}
+								if = {
+					limit = {
+						tag = BAY
+					BAY={has_country_flag=has_become_a_german_major}
+					}
+				}
+								if = {
+					limit = {
+						tag = SAX
+					SAX={has_country_flag=has_become_a_german_major}
+					}
+				}
+								if = {
+					limit = {
+						tag = HAN
+					HAN={has_country_flag=has_become_a_german_major}
+					}
 				}
 				if = {
 					limit = {
@@ -1115,7 +1369,7 @@ has_army_manpower = { size > 863000 }
 					limit = {
 					or={
 						tag = HUN 
-						tag = BOH 
+						tag = CZE 
 						tag = GLL 
 						tag = BKV
 					}
@@ -1128,14 +1382,7 @@ has_army_manpower = { size > 863000 }
 					}
 					NOT={tag = PEN}
 				}
-				if = {
-					limit = {
-					or={
-						tag = FRA
-					}
-					}
-					NOT = {has_country_flag=fontainebleau_flag}
-				}
+
 				if = {
 					limit = {
 					or={

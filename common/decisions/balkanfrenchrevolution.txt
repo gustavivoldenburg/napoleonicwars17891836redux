@@ -4,16 +4,16 @@ balkan_frenchrevolution = {
 		icon = ger_reichskommissariats
 
 		available = {
-		NOT={WAL={has_country_flag=WAL_dacia_romania_has_been_formed_flag}}
+		NOT={ROM={has_country_flag=ROM_dacia_romania_has_been_formed_flag}}
 			date > 1789.1.1 date < 1900.1.1 
 		or={
 		and={
-		original_tag=WAL
-		MOL={is_subject_of = WAL}
+		original_tag=ROM
+		MOL={is_subject_of = ROM}
 		}
 		and={
 		original_tag=MOL
-		WAL={is_subject_of = MOL}
+		ROM={is_subject_of = MOL}
 		}
 		and={
 		owns_state=46
@@ -22,7 +22,7 @@ balkan_frenchrevolution = {
 		}
 		}
 		or={
-		original_tag=WAL
+		original_tag=ROM
 		original_tag=MOL
 		}
 		}
@@ -38,7 +38,7 @@ balkan_frenchrevolution = {
 		visible = {
 			date > 1789.1.1 date < 1900.1.1 
 				or={
-		original_tag=WAL
+		original_tag=ROM
 		original_tag=MOL
 		}
 			NOT = { has_global_flag = romania_formed_first_flag }
@@ -46,11 +46,11 @@ balkan_frenchrevolution = {
 
 		complete_effect = {
 		ROOT={set_country_flag=romania_has_been_formed_flag}
-		set_cosmetic_tag = WAL_MOL_TRA_romania
+		set_cosmetic_tag = ROM_MOL_TRA_romania
 		every_state={
 		limit={
 		or={
-		is_core_of=WAL
+		is_core_of=ROM
 		is_core_of=MOL
 		}
 		}
@@ -59,14 +59,14 @@ balkan_frenchrevolution = {
 	    every_country={
 		limit={
 				original_tag=MOL
-		WAL={is_subject_of = MOL}
+		ROM={is_subject_of = MOL}
 		}
-		annex_country = { target = WAL transfer_troops = yes }
+		annex_country = { target = ROM transfer_troops = yes }
 		}
 		 every_country={
 		limit={
-				original_tag=WAL
-		MOL={is_subject_of = WAL}
+				original_tag=ROM
+		MOL={is_subject_of = ROM}
 		}
 		annex_country = { target = MOL transfer_troops = yes }
 		}
@@ -92,12 +92,12 @@ balkan_frenchrevolution = {
 			date > 1789.1.1 date < 1900.1.1 
 		or={
 		has_country_flag=romania_has_been_formed_flag	
-		WAL={has_country_flag=WAL_dacia_romania_has_been_formed_flag}
+		ROM={has_country_flag=ROM_dacia_romania_has_been_formed_flag}
 		}	
 		or={
 		and={
-		original_tag=WAL
-		BUL={is_subject_of = WAL}
+		original_tag=ROM
+		BUL={is_subject_of = ROM}
 		}
 		and={
 		original_tag=MOL
@@ -111,7 +111,7 @@ balkan_frenchrevolution = {
 		}
 		}
 		or={
-		original_tag=WAL
+		original_tag=ROM
 		original_tag=MOL
 		}
 		}
@@ -127,7 +127,7 @@ balkan_frenchrevolution = {
 		visible = {
 			date > 1789.1.1 date < 1900.1.1 
 				or={
-		original_tag=WAL
+		original_tag=ROM
 		original_tag=MOL
 		}
 			NOT = { has_global_flag = bulgaria_romania_formed_first_flag }
@@ -151,8 +151,8 @@ balkan_frenchrevolution = {
 		}
 		 every_country={
 		limit={
-				original_tag=WAL
-		BUL={is_subject_of = WAL}
+				original_tag=ROM
+		BUL={is_subject_of = ROM}
 		}
 		annex_country = { target = BUL transfer_troops = yes }
 		}

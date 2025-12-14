@@ -5,12 +5,21 @@ state={
 
 	history={
 		owner = POR
+				1808.1.1 = {
+	    owner=FRA
+		}
+		1809.1.1 = {
+	    owner=POR
+		}
 		victory_points = {
 			3790 1 
 		}
 		victory_points = {
 			6880 1 
 		}
+						buildings = {
+		13279 = {bunker = 2}
+        }
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
@@ -29,6 +38,6 @@ state={
 	}
 	manpower=372707
 	buildings_max_level_factor=1.000
-	state_category=pastoral
+	state_category=rural
 	local_supplies=0.000
 }

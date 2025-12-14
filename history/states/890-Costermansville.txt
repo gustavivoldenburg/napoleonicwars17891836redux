@@ -28,7 +28,7 @@ state={
 			dockyard = 1
 
 		}
-		add_core_of = WAL
+		add_core_of = ROM
 
 	}
 

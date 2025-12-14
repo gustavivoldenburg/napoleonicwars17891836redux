@@ -1,5 +1,5 @@
 ﻿focus_tree = {
-	id = sardinian_focus
+	id = naples_focus
 	
 	country = {
 		factor = 0
@@ -21,8 +21,7 @@ continuous_focus_position = { x = 7000 y = 0000 }
 
 		x = 2
 		y = 1
-allow_branch = { has_start_date > 1789.1.1
-    has_start_date < 1837.1.1 }
+
 		cost = 10
 
 		ai_will_do = {
@@ -50,8 +49,7 @@ allow_branch = { has_start_date > 1789.1.1
 		focus = {
 		id = naplesrework_1789_1815_first_100_focus_2
 		icon = GFX_goal_generic_neutrality_focus
-allow_branch = { has_start_date > 1789.1.1
-    has_start_date < 1837.1.1 }
+
 		x = 4
 		y = 1
 
@@ -81,12 +79,7 @@ allow_branch = { has_start_date > 1789.1.1
 		focus = {
 		id = naplesrework_1789_1815_first_100_focus_3
 		icon = GFX_goal_generic_neutrality_focus
-allow_branch = { has_start_date > 1789.1.1
-    has_start_date < 1837.1.1 }
-			prerequisite = {
-		focus =	naplesrework_1789_1815_first_100_focus_1
-		focus =	naplesrework_1789_1815_first_100_focus_2
-		}
+
 		x = 6
 		y = 1
 
@@ -116,8 +109,7 @@ allow_branch = { has_start_date > 1789.1.1
 		focus = {
 		id = naplesrework_1789_1815_first_100_focus_4
 		icon = GFX_goal_generic_neutrality_focus
-allow_branch = { has_start_date > 1789.1.1
-    has_start_date < 1837.1.1 }
+
 		x = 8
 		y = 1
 
@@ -147,8 +139,7 @@ allow_branch = { has_start_date > 1789.1.1
 		focus = {
 		id = naplesrework_1789_1815_first_100_focus_5
 		icon = GFX_goal_generic_neutrality_focus
-allow_branch = { has_start_date > 1789.1.1
-    has_start_date < 1837.1.1 }
+
 		x = 10
 		y = 1
 
@@ -178,8 +169,7 @@ allow_branch = { has_start_date > 1789.1.1
 		focus = {
 		id = naplesrework_1789_1815_first_100_focus_6
 		icon = GFX_goal_generic_neutrality_focus
-allow_branch = { has_start_date > 1789.1.1
-    has_start_date < 1837.1.1 }
+
 		x = 12
 		y = 1
 		cost = 10
@@ -208,8 +198,7 @@ allow_branch = { has_start_date > 1789.1.1
 		focus = {
 		id = naplesrework_1789_1815_first_100_focus_7
 		icon = GFX_goal_generic_neutrality_focus
-allow_branch = { has_start_date > 1789.1.1
-    has_start_date < 1837.1.1 }
+
 		x = 14
 		y = 1
 
@@ -240,8 +229,7 @@ allow_branch = { has_start_date > 1789.1.1
 		focus = {
 		id = naplesrework_1789_1815_first_100_focus_8
 		icon = GFX_goal_generic_neutrality_focus
-allow_branch = { has_start_date > 1789.1.1
-    has_start_date < 1837.1.1 }
+
 		x = 16
 		y = 1
 
@@ -271,8 +259,7 @@ allow_branch = { has_start_date > 1789.1.1
 		focus = {
 		id = naplesrework_1789_1815_first_100_focus_9
 		icon = GFX_goal_generic_neutrality_focus
-allow_branch = { has_start_date > 1789.1.1
-    has_start_date < 1837.1.1 }
+
 		x = 18
 		y = 1
 
@@ -303,8 +290,7 @@ allow_branch = { has_start_date > 1789.1.1
 		focus = {
 		id = naplesrework_1789_1815_first_100_focus_10
 		icon = GFX_goal_generic_neutrality_focus
-allow_branch = { has_start_date > 1789.1.1
-    has_start_date < 1837.1.1 }
+
 		x = 20
 		y = 1
 
@@ -3047,4 +3033,2049 @@ focus = {
 		completion_reward = {
 		}
 	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		focus = {
+		id = naplesrework_1789_1815_first_100_focus_101
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 2
+		y = 11
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		
+		}
+	}
+		focus = {
+		id = naplesrework_1789_1815_first_100_focus_102
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 4
+		y = 11
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = naplesrework_1789_1815_first_100_focus_103
+		icon = GFX_goal_generic_neutrality_focus
+		x = 6
+		y = 11
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = naplesrework_1789_1815_first_100_focus_104
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 8
+		y = 11
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = naplesrework_1789_1815_first_100_focus_105
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 10
+		y = 11
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = naplesrework_1789_1815_first_100_focus_106
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 12
+		y = 11
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = naplesrework_1789_1815_first_100_focus_107
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 14
+		y = 11
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = naplesrework_1789_1815_first_100_focus_108
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 16
+		y = 11
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = naplesrework_1789_1815_first_100_focus_109
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 18
+		y = 11
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = naplesrework_1789_1815_first_100_focus_110
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 20
+		y = 11
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = naplesrework_1789_1815_first_100_focus_111
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 2
+		y = 12
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = naplesrework_1789_1815_first_100_focus_112
+		icon = GFX_goal_generic_neutrality_focus
+		x = 4
+		y = 12
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = naplesrework_1789_1815_first_100_focus_113
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 6
+		y = 12
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = naplesrework_1789_1815_first_100_focus_114
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 8
+		y = 12
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = naplesrework_1789_1815_first_100_focus_115
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 10
+		y = 12
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = naplesrework_1789_1815_first_100_focus_116
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 12
+		y = 12
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = naplesrework_1789_1815_first_100_focus_117
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 14
+		y = 12
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = naplesrework_1789_1815_first_100_focus_118
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 16
+		y = 12
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = naplesrework_1789_1815_first_100_focus_119
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 18
+		y = 12
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = naplesrework_1789_1815_first_100_focus_120
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 20
+		y = 12
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = naplesrework_1789_1815_first_100_focus_121
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 2
+		y = 13
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = naplesrework_1789_1815_first_100_focus_122
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 4
+		y = 13
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		
+		completion_reward = {
+	}
+		}
+		focus = {
+		id = naplesrework_1789_1815_first_100_focus_123
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 6
+		y = 13
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = naplesrework_1789_1815_first_100_focus_124
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 8
+		y = 13
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = naplesrework_1789_1815_first_100_focus_125
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 10
+		y = 13
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = naplesrework_1789_1815_first_100_focus_126
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 12
+		y = 13
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = naplesrework_1789_1815_first_100_focus_127
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 14
+		y = 13
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = naplesrework_1789_1815_first_100_focus_128
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 16
+		y = 13
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = naplesrework_1789_1815_first_100_focus_129
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 18
+		y = 13
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = naplesrework_1789_1815_first_100_focus_130
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 20
+		y = 13
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = naplesrework_1789_1815_first_100_focus_131
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 2
+		y = 14
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = naplesrework_1789_1815_first_100_focus_132
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 4
+		y = 14
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = naplesrework_1789_1815_first_100_focus_133
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 6
+		y = 14
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = naplesrework_1789_1815_first_100_focus_134
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 8
+		y = 14
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = naplesrework_1789_1815_first_100_focus_135
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 10
+		y = 14
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = naplesrework_1789_1815_first_100_focus_136
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 12
+		y = 14
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = naplesrework_1789_1815_first_100_focus_137
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 14
+		y = 14
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = naplesrework_1789_1815_first_100_focus_138
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 16
+		y = 14
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = naplesrework_1789_1815_first_100_focus_139
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 18
+		y = 14
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = naplesrework_1789_1815_first_100_focus_140
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 20
+		y = 14
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = naplesrework_1789_1815_first_100_focus_141
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 2
+		y = 15
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = naplesrework_1789_1815_first_100_focus_142
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 4
+		y = 15
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = naplesrework_1789_1815_first_100_focus_143
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 6
+		y = 15
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = naplesrework_1789_1815_first_100_focus_144
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 8
+		y = 15
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = naplesrework_1789_1815_first_100_focus_145
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 10
+		y = 15
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {	
+		}
+	}
+		focus = {
+		id = naplesrework_1789_1815_first_100_focus_146
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 12
+		y = 15
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = naplesrework_1789_1815_first_100_focus_147
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 14
+		y = 15
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = naplesrework_1789_1815_first_100_focus_148
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 16
+		y = 15
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = naplesrework_1789_1815_first_100_focus_149
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 18
+		y = 15
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = naplesrework_1789_1815_first_100_focus_150
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 20
+		y = 15
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+focus = {
+		id = naplesrework_1789_1815_first_100_focus_151
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 2
+		y = 16
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = naplesrework_1789_1815_first_100_focus_152
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 4
+		y = 16
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = naplesrework_1789_1815_first_100_focus_153
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 6
+		y = 16
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = naplesrework_1789_1815_first_100_focus_154
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 8
+		y = 16
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = naplesrework_1789_1815_first_100_focus_155
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 10
+		y = 16
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {	
+		}
+	}
+		focus = {
+		id = naplesrework_1789_1815_first_100_focus_156
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 12
+		y = 16
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = naplesrework_1789_1815_first_100_focus_157
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 14
+		y = 16
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = naplesrework_1789_1815_first_100_focus_158
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 16
+		y = 16
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = naplesrework_1789_1815_first_100_focus_159
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 18
+		y = 16
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = naplesrework_1789_1815_first_100_focus_160
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 20
+		y = 16
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+focus = {
+		id = naplesrework_1789_1815_first_100_focus_161
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 2
+		y = 17
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = naplesrework_1789_1815_first_100_focus_162
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 4
+		y = 17
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = naplesrework_1789_1815_first_100_focus_163
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 6
+		y = 17
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = naplesrework_1789_1815_first_100_focus_164
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 8
+		y = 17
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = naplesrework_1789_1815_first_100_focus_165
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 10
+		y = 17
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {	
+		}
+	}
+		focus = {
+		id = naplesrework_1789_1815_first_100_focus_166
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 12
+		y = 17
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {	
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

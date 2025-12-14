@@ -22,7 +22,7 @@ focus = {
 		x = -11
 		y = 2
 allow_branch = { has_start_date > 1789.1.1
-    has_start_date < 1836.1.1 }
+    has_start_date < 1821.1.1 }
 		cost = 10
 				mutually_exclusive = { 
 		focus = prussianrework_1789_1815_first_100_focus_3
@@ -58,7 +58,7 @@ allow_branch = { has_start_date > 1789.1.1
 		x = 4
 		y = 18
 
-		cost = 4.3
+		cost = 4.28571428571428571428
 				mutually_exclusive = { 
 		focus = prussianrework_1793_1836_focus_44
 		focus = prussianrework_althistory_8
@@ -99,7 +99,7 @@ allow_branch = { has_start_date > 1789.1.1
 		x = 2
 		y = 18
 
-		cost = 4.3
+		cost = 4.28571428571428571428
 				mutually_exclusive = { 
 		focus = prussianrework_1793_1836_focus_44
 		focus = prussianrework_althistory_7
@@ -140,7 +140,7 @@ allow_branch = { has_start_date > 1789.1.1
 		x = 0
 		y = 18
 
-		cost = 4.3
+		cost = 4.28571428571428571428
 				mutually_exclusive = { 
 		focus = prussianrework_1793_1836_focus_44
 		focus = prussianrework_althistory_7
@@ -181,7 +181,7 @@ allow_branch = { has_start_date > 1789.1.1
 		x = -2
 		y = 18
 
-		cost = 4.3
+		cost = 4.28571428571428571428
 				mutually_exclusive = { 
 		focus = prussianrework_1793_1836_focus_44
 		focus = prussianrework_althistory_7
@@ -220,7 +220,7 @@ focus = {
 		x = 4
 		y = 17
 
-		cost = 4.3
+		cost = 4.28571428571428571428
 				mutually_exclusive = { 
 		focus = prussianrework_1793_1836_focus_42
 		focus = prussianrework_althistory_12
@@ -257,7 +257,7 @@ focus = {
 		x = 2
 		y = 17
 
-		cost = 4.3
+		cost = 4.28571428571428571428
 				mutually_exclusive = { 
 		focus = prussianrework_1793_1836_focus_42
 		focus = prussianrework_althistory_11
@@ -294,7 +294,7 @@ focus = {
 		x = 0
 		y = 17
 
-		cost = 4.3
+		cost = 4.28571428571428571428
 				mutually_exclusive = { 
 		focus = prussianrework_1793_1836_focus_42
 		focus = prussianrework_althistory_11
@@ -331,7 +331,7 @@ focus = {
 		x = -2
 		y = 17
 
-		cost = 4.3
+		cost = 4.28571428571428571428
 				mutually_exclusive = { 
 		focus = prussianrework_1793_1836_focus_42
 		focus = prussianrework_althistory_11
@@ -368,7 +368,7 @@ focus = {
 		x = 35
 		y = 18
 
-		cost = 4.3
+		cost = 4.28571428571428571428
 				mutually_exclusive = { 
 		focus = prussianrework_1793_1836_focus_52
 		focus = prussianrework_althistory_16
@@ -404,7 +404,7 @@ focus = {
 		x = 37
 		y = 18
 
-		cost = 4.3
+		cost = 4.28571428571428571428
 				mutually_exclusive = { 
 		focus = prussianrework_1793_1836_focus_52
 		focus = prussianrework_althistory_15
@@ -440,7 +440,7 @@ focus = {
 		x = 0
 		y = 4
 
-		cost = 4.3
+		cost = 4.28571428571428571428
 		prerequisite = {
 		focus =	prussianrework_1789_1815_first_100_focus_49
 		}
@@ -476,7 +476,7 @@ focus = {
 		x = -10
 		y = 0
 allow_branch = { has_start_date > 1789.1.1
-    has_start_date < 1836.1.1 }
+    has_start_date < 1821.1.1 }
 		cost = 10
 
 		ai_will_do = {
@@ -507,7 +507,7 @@ allow_branch = { has_start_date > 1789.1.1
 		id = prussianrework_1789_1815_first_100_focus_2
 		icon = GFX_focus_renounce_the_treaty_of_trianon
 allow_branch = { has_start_date > 1789.1.1
-    has_start_date < 1836.1.1 }
+    has_start_date < 1821.1.1 }
 		x = -10
 		y = 1
 		prerequisite = {
@@ -543,7 +543,7 @@ allow_branch = { has_start_date > 1789.1.1
 		id = prussianrework_1789_1815_first_100_focus_3
 		icon = GFX_focus_chi_british_cooperation
 allow_branch = { has_start_date > 1789.1.1
-    has_start_date < 1836.1.1 }
+    has_start_date < 1821.1.1 }
 		x = -9
 		y = 2
 		mutually_exclusive = { 
@@ -582,7 +582,7 @@ allow_branch = { has_start_date > 1789.1.1
 		id = prussianrework_1789_1815_first_100_focus_4
 		icon = GFX_focus_renounce_the_treaty_of_trianon
 allow_branch = { has_start_date > 1789.1.1
-    has_start_date < 1836.1.1 }
+    has_start_date < 1821.1.1 }
 		x = -10
 		y = 3
 		prerequisite = {
@@ -618,7 +618,7 @@ allow_branch = { has_start_date > 1789.1.1
 		id = prussianrework_1789_1815_first_100_focus_5
 		icon = GFX_focus_generic_polish_deal
 allow_branch = { has_start_date > 1789.1.1
-    has_start_date < 1836.1.1 }
+    has_start_date < 1821.1.1 }
 		x = -11
 		y = 4
 		prerequisite = {
@@ -637,7 +637,7 @@ allow_branch = { has_start_date > 1789.1.1
 		}
 
 		bypass = {
-			POL={has_country_flag=POL_polish_prussian_alliance}
+
 		}
 
 		cancel_if_invalid = yes
@@ -654,7 +654,7 @@ allow_branch = { has_start_date > 1789.1.1
 		id = prussianrework_1789_1815_first_100_focus_6
 		icon = GFX_focus_renounce_the_treaty_of_trianon
 allow_branch = { has_start_date > 1789.1.1
-    has_start_date < 1836.1.1 }
+    has_start_date < 1821.1.1 }
 		x = -2
 		y = 3
 		cost = 10
@@ -697,7 +697,7 @@ allow_branch = { has_start_date > 1789.1.1
 		id = prussianrework_1789_1815_first_100_focus_7
 		icon = GFX_focus_generic_treaty
 allow_branch = { has_start_date > 1789.1.1
-    has_start_date < 1836.1.1 }
+    has_start_date < 1821.1.1 }
 		x = -3
 		y = 4
 		prerequisite = {
@@ -733,7 +733,7 @@ allow_branch = { has_start_date > 1789.1.1
 		id = prussianrework_1789_1815_first_100_focus_8
 		icon = GFX_focus_renounce_the_treaty_of_trianon
 allow_branch = { has_start_date > 1789.1.1
-    has_start_date < 1836.1.1 }
+    has_start_date < 1821.1.1 }
 		x = -9
 		y = 4
 		prerequisite = {
@@ -769,7 +769,7 @@ allow_branch = { has_start_date > 1789.1.1
 		id = prussianrework_1789_1815_first_100_focus_9
 		icon = GFX_goal_generic_consumer_goods
 allow_branch = { has_start_date > 1789.1.1
-    has_start_date < 1836.1.1 }
+    has_start_date < 1821.1.1 }
 		x = -21
 		y = 1
 		prerequisite = {
@@ -806,7 +806,7 @@ allow_branch = { has_start_date > 1789.1.1
 		id = prussianrework_1789_1815_first_100_focus_10
 		icon = GFX_goal_generic_scientific_exchange
 allow_branch = { has_start_date > 1789.1.1
-    has_start_date < 1836.1.1 }
+    has_start_date < 1821.1.1 }
 		x = -24
 		y = 2
 		cost = 10
@@ -1792,7 +1792,7 @@ owns_state=1248
 		id = prussianrework_1789_1815_first_100_focus_39
 		icon = GFX_goal_generic_allies_build_infantry
 allow_branch = { has_start_date > 1789.1.1
-    has_start_date < 1836.1.1 }
+    has_start_date < 1821.1.1 }
 		x = 25
 		y = 1
 		cost = 10
@@ -5141,7 +5141,7 @@ PRE={has_country_flag=century_of_prussia_flag}
 	}
 		focus = {
 		id = prussianrework_1793_1836_focus_19
-		icon = GFX_goal_generic_neutrality_focus
+		icon = GFX_focus_chi_reach_out_to_france
         
 		x = 11
 		y = 7
@@ -5156,7 +5156,7 @@ PRE={has_country_flag=century_of_prussia_flag}
 			factor = 1
 		}
 		available = {
-
+        PRE={has_country_flag=treatiesoftilsit}
 		}
 
 		bypass = {
@@ -5170,6 +5170,7 @@ PRE={has_country_flag=century_of_prussia_flag}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		
 		completion_reward = {
+		FRA={country_event = pre_1789_event.129}
 		}
 	}
 		focus = {
@@ -5190,7 +5191,7 @@ PRE={has_country_flag=century_of_prussia_flag}
 		}
 
 		available = {
-
+        PRE={has_country_flag=treatiesoftilsit}
 		}
 
 		bypass = {
@@ -5208,7 +5209,7 @@ PRE={has_country_flag=century_of_prussia_flag}
 	}
 		focus = {
 		id = prussianrework_1793_1836_focus_21
-		icon = GFX_goal_generic_neutrality_focus
+		icon = GFX_focus_focus_fra_revolution_utmost
         
 		x = 12
 		y = 8
@@ -5216,6 +5217,38 @@ PRE={has_country_flag=century_of_prussia_flag}
 		focus =	prussianrework_1793_1836_focus_19
 		focus =	prussianrework_1793_1836_focus_20
 		}
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = prussianrework_1793_1836_focus_22
+		icon = GFX_focus_focus_fra_revolution_utmost
+        		prerequisite = {
+		focus =	prussianrework_1793_1836_focus_21
+		}
+		allow_branch = { has_start_date > 1789.1.1
+    has_start_date < 1821.1.1 }
+		x = 11
+		y = 9
 		cost = 10
 
 		ai_will_do = {
@@ -5237,46 +5270,14 @@ PRE={has_country_flag=century_of_prussia_flag}
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		
+		
 		completion_reward = {
 		PRE={country_event = pre_1789_event.37}
-		}
-	}
-		focus = {
-		id = prussianrework_1793_1836_focus_22
-		icon = GFX_goal_generic_neutrality_focus
-        		prerequisite = {
-		focus =	prussianrework_1793_1836_focus_21
-		}
-		allow_branch = { has_start_date > 1789.1.1
-    has_start_date < 1836.1.1 }
-		x = 11
-		y = 9
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		
-		
-		completion_reward = {
 	}
 		}
 		focus = {
 		id = prussianrework_1793_1836_focus_23
-		icon = GFX_goal_generic_neutrality_focus
+		icon = GFX_focus_focus_fra_revolution_utmost
         
 		x = 13
 		y = 9
@@ -5316,7 +5317,7 @@ PRE={has_country_flag=century_of_prussia_flag}
 		} 
 		x = 12
 		y = 10
-		cost = 4.3
+		cost = 10
 
 		ai_will_do = {
 			factor = 1
@@ -5351,7 +5352,7 @@ PRE={has_country_flag=century_of_prussia_flag}
 		prerequisite = {
 		focus =	prussianrework_1793_1836_focus_24
 		}
-		cost = 4.3
+		cost = 10
 
 		ai_will_do = {
 			factor = 1
@@ -5384,7 +5385,7 @@ PRE={has_country_flag=century_of_prussia_flag}
 		prerequisite = {
 		focus =	prussianrework_1793_1836_focus_25
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -5417,7 +5418,7 @@ PRE={has_country_flag=century_of_prussia_flag}
 		prerequisite = {
 		focus =	prussianrework_1793_1836_focus_26
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -5450,7 +5451,7 @@ PRE={has_country_flag=century_of_prussia_flag}
 		prerequisite = {
 		focus =	prussianrework_1793_1836_focus_26
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -5483,7 +5484,7 @@ PRE={has_country_flag=century_of_prussia_flag}
 		prerequisite = {
 		focus =	prussianrework_1793_1836_focus_26
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -5513,7 +5514,7 @@ PRE={has_country_flag=century_of_prussia_flag}
         relative_position_id = prussianrework_1793_1836_focus_24
 		x = 0
 		y = 4
-		cost = 4.3
+		cost = 4.28571428571428571428
 		prerequisite = {
 		focus =	prussianrework_1793_1836_focus_28
 		}
@@ -5547,7 +5548,7 @@ PRE={has_country_flag=century_of_prussia_flag}
 		prerequisite = {
 		focus =	prussianrework_1793_1836_focus_26
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -5590,7 +5591,7 @@ PRE={has_country_flag=century_of_prussia_flag}
 		prerequisite = {
 		focus =	prussianrework_1793_1836_focus_29
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -5623,7 +5624,7 @@ PRE={has_country_flag=century_of_prussia_flag}
 		prerequisite = {
 		focus =	prussianrework_1793_1836_focus_27
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -5656,7 +5657,7 @@ PRE={has_country_flag=century_of_prussia_flag}
 		prerequisite = {
 		focus =	prussianrework_1793_1836_focus_30
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -5676,6 +5677,7 @@ PRE={has_country_flag=century_of_prussia_flag}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		
 		completion_reward = {
+		PRE={set_country_flag=the_german_states_have_turned_to_our_side}
 		PRE={country_event = pre_1789_event.38}
 		}
 	}
@@ -5688,13 +5690,14 @@ PRE={has_country_flag=century_of_prussia_flag}
 		prerequisite = {
 		focus =	prussianrework_1793_1836_focus_30
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
 		}
 
 		available = {
+		PRE={has_country_flag=the_german_states_have_turned_to_our_side}
 		country_exists = WTF
 		or={
         WTF={has_capitulated = yes}
@@ -5727,7 +5730,7 @@ PRE={has_country_flag=century_of_prussia_flag}
 		focus =	prussianrework_1793_1836_focus_34
 		focus =	prussianrework_1793_1836_focus_35
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -5760,7 +5763,7 @@ PRE={has_country_flag=century_of_prussia_flag}
 		prerequisite = {
 		focus =	prussianrework_1793_1836_focus_36
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -5795,7 +5798,7 @@ PRE={has_country_flag=century_of_prussia_flag}
 		prerequisite = {
 		focus =	prussianrework_1793_1836_focus_36
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -5827,7 +5830,7 @@ PRE={has_country_flag=century_of_prussia_flag}
 		prerequisite = {
 		focus =	prussianrework_1793_1836_focus_36
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -5865,7 +5868,7 @@ PRE={has_country_flag=century_of_prussia_flag}
 		prerequisite = {
 		focus =	prussianrework_1793_1836_focus_37
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -5931,7 +5934,7 @@ PRE={has_country_flag=century_of_prussia_flag}
 		prerequisite = {
 		focus =	prussianrework_1793_1836_focus_37
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -5965,7 +5968,7 @@ PRE={has_country_flag=century_of_prussia_flag}
 		prerequisite = {
 		focus =	prussianrework_1793_1836_focus_36
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 				mutually_exclusive = { 
 		focus = prussianrework_althistory_11
 		focus = prussianrework_althistory_12
@@ -6002,7 +6005,7 @@ PRE={has_country_flag=century_of_prussia_flag}
 		prerequisite = {
 		focus =	prussianrework_1793_1836_focus_37
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -6045,7 +6048,7 @@ PRE={has_country_flag=PRE_louse_has_died}
 		focus = prussianrework_althistory_9
 		focus = prussianrework_althistory_10
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -6076,7 +6079,7 @@ PRE={has_country_flag=PRE_louse_has_died}
 		prerequisite = {
 		focus =	prussianrework_1793_1836_focus_36
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -6113,7 +6116,7 @@ PRE={has_country_flag=PRE_louse_has_died}
 		prerequisite = {
 		focus =	prussianrework_1793_1836_focus_45
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -6146,7 +6149,7 @@ PRE={has_country_flag=PRE_louse_has_died}
 		prerequisite = {
 		focus =	prussianrework_1793_1836_focus_45
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -6179,7 +6182,7 @@ PRE={has_country_flag=PRE_louse_has_died}
 		prerequisite = {
 		focus =	prussianrework_1793_1836_focus_45
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -6214,7 +6217,7 @@ PRE={has_country_flag=PRE_louse_has_died}
 		focus =	prussianrework_1793_1836_focus_41
 		focus =	prussianrework_1793_1836_focus_43
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -6248,7 +6251,7 @@ PRE={has_country_flag=PRE_louse_has_died}
 		focus =	prussianrework_1793_1836_focus_41
 		focus =	prussianrework_1793_1836_focus_43
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -6375,7 +6378,7 @@ focus = {
 		prerequisite = {
 		focus =	prussianrework_1793_1836_focus_36
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -6413,7 +6416,7 @@ focus = {
 		focus = prussianrework_althistory_15
 		focus = prussianrework_althistory_16
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -6450,7 +6453,7 @@ focus = {
 		focus = prussianrework_althistory_9
 		focus = prussianrework_althistory_10
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -6483,7 +6486,7 @@ focus = {
 		prerequisite = {
 		focus =	prussianrework_1793_1836_focus_36
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -6527,7 +6530,7 @@ focus = {
 		prerequisite = {
 		focus =	prussianrework_1793_1836_focus_45
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -6560,7 +6563,7 @@ focus = {
 		prerequisite = {
 		focus =	prussianrework_1793_1836_focus_45
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -6593,7 +6596,7 @@ focus = {
 		prerequisite = {
 		focus =	prussianrework_1793_1836_focus_36
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -6626,7 +6629,7 @@ focus = {
 		prerequisite = {
 		focus =	prussianrework_1793_1836_focus_36
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -6658,7 +6661,7 @@ focus = {
 		prerequisite = { 
 		focus = prussianrework_1793_1836_focus_53
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -6690,7 +6693,7 @@ focus = {
 		prerequisite = { 
 		focus = prussianrework_1793_1836_focus_53
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -6724,7 +6727,7 @@ focus = {
 		prerequisite = {
 		focus =	prussianrework_1793_1836_focus_58
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -6759,7 +6762,7 @@ focus = {
 		prerequisite = {
 		focus =	prussianrework_1793_1836_focus_36
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -6781,7 +6784,7 @@ focus = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		
 		completion_reward = {
-		PRE={country_event = pre_1789_event.113}
+		PRE={country_event = pre_1789_event.114}
 		}
 	}
 		focus = {
@@ -6793,7 +6796,7 @@ focus = {
 		prerequisite = {
 		focus =	prussianrework_1793_1836_focus_36
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -6816,7 +6819,7 @@ focus = {
 		
 		
 		completion_reward = {
-		PRE={country_event = pre_1789_event.114}
+		PRE={country_event = pre_1789_event.113}
 		}
 	}
 		focus = {
@@ -6828,7 +6831,7 @@ focus = {
 		prerequisite = {
 		focus =	prussianrework_1793_1836_focus_58
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -6859,7 +6862,7 @@ focus = {
 		prerequisite = {
 		focus =	prussianrework_1793_1836_focus_36
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -6891,7 +6894,7 @@ focus = {
 		prerequisite = {
 		focus =	prussianrework_1793_1836_focus_65
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -6924,7 +6927,7 @@ focus = {
 		prerequisite = {
 		focus =	prussianrework_1793_1836_focus_65
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -6956,7 +6959,7 @@ focus = {
 		prerequisite = {
 		focus =	prussianrework_1793_1836_focus_65
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -6988,7 +6991,7 @@ focus = {
 		prerequisite = {
 		focus =	prussianrework_1793_1836_focus_58
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -7020,7 +7023,7 @@ focus = {
 		prerequisite = {
 		focus =	prussianrework_1793_1836_focus_57
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -7077,7 +7080,7 @@ focus = {
 		prerequisite = {
 		focus =	prussianrework_1793_1836_focus_58
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -7112,7 +7115,7 @@ focus = {
 		prerequisite = {
 		focus =	prussianrework_1793_1836_focus_54
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -7146,7 +7149,7 @@ focus = {
 		prerequisite = {
 		focus =	prussianrework_1793_1836_focus_39
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -7180,7 +7183,7 @@ focus = {
 		prerequisite = {
 		focus =	prussianrework_1793_1836_focus_65
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -7211,7 +7214,7 @@ focus = {
 		prerequisite = {
 		focus =	prussianrework_1793_1836_focus_69
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1

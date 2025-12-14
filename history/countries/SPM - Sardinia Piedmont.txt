@@ -5,7 +5,7 @@
 TOS={
 give_military_access = SPM
 }
-MOD={
+ITA={
 give_military_access = SPM
 }
 MAS={
@@ -67,20 +67,8 @@ retire_character=SPM_charlesalbert
 	}
 1789.1.1 = {
 		if = {
-		limit = { has_start_date < 1790.1.1 }
+		limit = { has_start_date < 1821.1.1 }
 set_oob = "SPM_1789"
-}
-}
-1800.1.1 = {
-		if = {
-		limit = { has_start_date < 1801.1.1 }
-set_oob = "SPM_1800"
-}
-}
-1812.1.1 = {
-		if = {
-		limit = { has_start_date < 1815.1.1 }
-set_oob = "SPM_1812"
 }
 }
 1821.1.1 = {

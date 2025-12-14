@@ -56,60 +56,6 @@ units = {
 	#Sicilian-Neapolitan Army
 	division = {
 		name = "Sicilian-Neapolitan Division"
-		location = 13698
-		division_template = "Sicilian-Neapolitan Division"
-		start_experience_factor = 0.3
-	}
-}
-units = {
-	#Sicilian-Neapolitan Army
-	division = {
-		name = "Sicilian-Neapolitan Division"
-		location = 13698
-		division_template = "Sicilian-Neapolitan Division"
-		start_experience_factor = 0.3
-	}
-}
-units = {
-	#Sicilian-Neapolitan Army
-	division = {
-		name = "Sicilian-Neapolitan Division"
-		location = 13707
-		division_template = "Sicilian-Neapolitan Division"
-		start_experience_factor = 0.3
-	}
-}
-units = {
-	#Sicilian-Neapolitan Army
-	division = {
-		name = "Sicilian-Neapolitan Division"
-		location = 13707
-		division_template = "Sicilian-Neapolitan Division"
-		start_experience_factor = 0.3
-	}
-}
-units = {
-	#Sicilian-Neapolitan Army
-	division = {
-		name = "Sicilian-Neapolitan Division"
-		location = 13707
-		division_template = "Sicilian-Neapolitan Division"
-		start_experience_factor = 0.3
-	}
-}
-units = {
-	#Sicilian-Neapolitan Army
-	division = {
-		name = "Sicilian-Neapolitan Division"
-		location = 3923
-		division_template = "Sicilian-Neapolitan Division"
-		start_experience_factor = 0.3
-	}
-}
-units = {
-	#Sicilian-Neapolitan Army
-	division = {
-		name = "Sicilian-Neapolitan Division"
 		location = 9826
 		division_template = "Sicilian-Neapolitan Division"
 		start_experience_factor = 0.3

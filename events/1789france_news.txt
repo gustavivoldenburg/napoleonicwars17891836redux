@@ -8,7 +8,7 @@ add_namespace = fra_1789_news
 	id = fra_1789_news.1
 	title = "The French Revolution"
 	desc = fra_1789_news.1.d
-	picture = GFX_idi_amin_uganda
+	picture = GFX_news_event_france_empire_1
 	
 	major = yes
 
@@ -16,17 +16,17 @@ add_namespace = fra_1789_news
 	is_triggered_only = yes
 	
 	option = {
-		name = "Ok"
+		name = "This is good for france"
 			}
 		option = {
-		name = "Ok"
+		name = "Think of the Capetians"
 			}
 		}
 		news_event = {
 	id = fra_1789_news.2
 	title = "The Liège Revolution"
 	desc = fra_1789_news.2.d
-	picture = GFX_idi_amin_uganda
+	picture = GFX_news_event_france_empire_1
 	
 	major = yes
 
@@ -34,17 +34,17 @@ add_namespace = fra_1789_news
 	is_triggered_only = yes
 	
 	option = {
-		name = "Ok"
+		name = "Seems peaceful"
 			}
 		option = {
-		name = "Ok"
+		name = "The Prince-Bishop wont be happy to hear this"
 			}
 		}
 		news_event = {
 	id = fra_1789_news.3
 	title = "The Brabantian Revolution"
 	desc = fra_1789_news.3.d
-	picture = GFX_idi_amin_uganda
+	picture = GFX_news_event_france_empire_1
 	
 	major = yes
 
@@ -52,17 +52,17 @@ add_namespace = fra_1789_news
 	is_triggered_only = yes
 	
 	option = {
-		name = "Ok"
+		name = "Belgium is already french isn't it?"
 			}
 		option = {
-		name = "Ok"
+		name = "They are Dutch?"
 			}
 		}
 				news_event = {
 	id = fra_1789_news.4
 	title = "The Storming of the Bastille"
 	desc = fra_1789_news.4.d
-	picture = GFX_idi_amin_uganda
+	picture = GFX_news_event_france_empire_1
 	
 	major = yes
 
@@ -79,7 +79,7 @@ add_namespace = fra_1789_news
 	id = fra_1789_news.5
 	title = "The Storming of the Bastille"
 	desc = fra_1789_news.5.d
-	picture = GFX_idi_amin_uganda
+	picture = GFX_news_event_france_empire_1
 	
 	major = yes
 
@@ -90,5 +90,218 @@ add_namespace = fra_1789_news
 			}
 		option = {
 		name = "ok"
+			}
+		}
+								news_event = {
+	id = fra_1789_news.148
+	title = "The Death of Louis XVII"
+	desc = fra_1789_news.148.d
+	picture = GFX_news_event_france_empire_1
+	
+	major = yes
+
+	fire_for_sender = yes
+	is_triggered_only = yes
+	option = {
+		name = "I bet this was murder"
+			}
+		option = {
+		name = "Too soon"
+			}
+		}
+								news_event = {
+	id = fra_1789_news.149
+	title = "The Execution of Marie Antoinette"
+	desc = fra_1789_news.149.d
+	picture = GFX_news_event_france_empire_1
+	
+	major = yes
+
+	fire_for_sender = yes
+	is_triggered_only = yes
+	option = {
+		name = "This is Extreme"
+			}
+		option = {
+		name = "Unfortunate"
+			}
+		}
+								news_event = {
+	id = fra_1789_news.150
+	title = "The Execution of Louis XVI"
+	desc = fra_1789_news.150.d
+	picture = GFX_news_event_france_empire_1
+	
+	major = yes
+
+	fire_for_sender = yes
+	is_triggered_only = yes
+	option = {
+		name = "This is Radical"
+			}
+		option = {
+		name = "This is the End of the Kingdom of France"
+			}
+		}
+				news_event = {
+	id = fra_1789_news.250
+	title = "The Reign of Terror"
+	desc = fra_1789_news.250.d
+	picture = GFX_news_event_france_empire_1
+	
+	major = yes
+
+	fire_for_sender = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = "Didn't this start with the murder of Louis XVI?"
+			}
+		option = {
+		name = "The Revolution is becoming unruly"
+			}
+		}
+				news_event = {
+	id = fra_1789_news.251
+	title = "The End of The Reign of Terror"
+	desc = fra_1789_news.251.d
+	picture = GFX_news_event_france_empire_1
+	
+	major = yes
+
+	fire_for_sender = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = "It's the same Regime"
+			}
+		option = {
+		name = "Things are getting better"
+			}
+		}
+						news_event = {
+	id = fra_1789_news.289
+	title = "Britain renounces Claim to the French Throne"
+	desc = fra_1789_news.289.d
+	picture = GFX_news_event_france_empire_1
+	
+	major = yes
+
+	fire_for_sender = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = "It's rightfully theirs"
+			}
+		option = {
+		name = "Their Claim hasn't been serious since 1560"
+			}
+		}
+				news_event = {
+	id = fra_1789_news.304
+	title = "Switzerland Declares Neutrality"
+	desc = fra_1789_news.304.d
+	picture = GFX_news_event_france_empire_1
+	
+	major = yes
+
+	fire_for_sender = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = "Good for Balance"
+			}
+		option = {
+		name = "Switzerland is a pimple on Europe"
+			}
+		}
+				news_event = {
+	id = fra_1789_news.317
+	title = "The Establishment of Proto Communism"
+	desc = fra_1789_news.317.d
+	picture = GFX_news_event_france_empire_1
+	
+	major = yes
+
+	fire_for_sender = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = "Seems niche"
+			}
+		option = {
+		name = "It will become relevant by 1850"
+			}
+		}
+				news_event = {
+	id = fra_1789_news.333
+	title = "The Establishment of the Bavarian Empire"
+	desc = fra_1789_news.333.d
+	picture = GFX_news_event_france_empire_1
+	
+	major = yes
+
+	fire_for_sender = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = "Hopefully France treats us the same way"
+			}
+		option = {
+		name = "The French are going to betray Bavaria"
+			}
+		}
+				news_event = {
+	id = fra_1789_news.335
+	title = "The Establishment of the United Kingdom of Great Britain and Ireland"
+	desc = fra_1789_news.335.d
+	picture = GFX_news_event_france_empire_1
+	
+	major = yes
+
+	fire_for_sender = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = "This will not end up well for the Irish"
+			}
+		option = {
+		name = "The Protestants of Ulster want the best for Ireland"
+			}
+		}
+				news_event = {
+	id = fra_1789_news.336
+	title = "French Hegemony in Italy"
+	desc = fra_1789_news.336.d
+	picture = GFX_news_event_france_empire_1
+	
+	major = yes
+
+	fire_for_sender = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = "Seems you forgot Malta"
+			}
+		option = {
+		name = "Tuscany is right there"
+			}
+		}
+				news_event = {
+	id = fra_1789_news.337
+	title = "French Hegemony in Belgium the & Rhine"
+	desc = fra_1789_news.337.d
+	picture = GFX_news_event_france_empire_1
+	
+	major = yes
+
+	fire_for_sender = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = "These areas are relatively Liberal"
+			}
+		option = {
+		name = "The Flemish aren't to keen on this"
 			}
 		}

@@ -9,7 +9,7 @@ country_event = {
 	id = ger_1789_event.1
 	title = "The Mediatisation of Wismar"
 	desc = ger_1789_event.1.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {	
 date > 1803.1.1 date < 1804.1.1 
@@ -35,7 +35,7 @@ country_event = {
 	id = ger_1789_event.2
 	title = "The Mediatisation of the Palatinate"
 	desc = ger_1789_event.2.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {	
 date > 1803.4.27 date < 1804.1.1 
@@ -62,7 +62,7 @@ country_event = {
 	id = ger_1789_event.3
 	title = "The Mediatisation of Fürstenberg"
 	desc = ger_1789_event.3.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {	
 date > 1806.7.1 date < 1807.1.1 
@@ -89,7 +89,7 @@ country_event = {
 	id = ger_1789_event.4
 	title = "The Mediatisation of Constance"
 	desc = ger_1789_event.4.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {	
 date > 1802.9.16 date < 1803.1.1 
@@ -116,7 +116,7 @@ country_event = {
 	id = ger_1789_event.5
 	title = "The Mediatisation of Buchau"
 	desc = ger_1789_event.5.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {	
 date > 1803.1.1 date < 1804.1.1 
@@ -143,7 +143,7 @@ country_event = {
 	id = ger_1789_event.6
 	title = "The Mediatisation of Ulm"
 	desc = ger_1789_event.6.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {	
 date > 1803.1.1 date < 1804.1.1 
@@ -170,7 +170,7 @@ country_event = {
 	id = ger_1789_event.7
 	title = "The Mediatisation of Jever"
 	desc = ger_1789_event.7.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {	
 date > 1818.1.1 date < 1819.1.1 
@@ -186,7 +186,7 @@ country_event = {
 	id = ger_1789_event.8
 	title = "The Mediatisation of Ulm"
 	desc = ger_1789_event.8.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {	
 date > 1809.1.1 date < 1810.1.1 
@@ -212,7 +212,7 @@ country_event = {
 	id = ger_1789_event.9
 	title = "The Electorate of Baden"
 	desc = ger_1789_event.9.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {	
 date > 1803.1.1 date < 1804.1.1 
@@ -231,7 +231,7 @@ country_event = {
 	id = ger_1789_event.10
 	title = "The Grand Duchy of Baden"
 	desc = ger_1789_event.10.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {	
 date > 1806.10.24 date < 1807.1.1 
@@ -250,7 +250,7 @@ country_event = {
 	id = ger_1789_event.11
 	title = "The Grand Duchy of Oldenburg"
 	desc = ger_1789_event.11.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {	
 date > 1814.9.1 date < 1815.1.1 
@@ -269,7 +269,7 @@ country_event = {
 	id = ger_1789_event.12
 	title = "The Mediatisation of Further Austria"
 	desc = ger_1789_event.12.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -291,7 +291,7 @@ country_event = {
 	id = ger_1789_event.13
 	title = "The Electorate of Salzburg"
 	desc = ger_1789_event.13.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {	
 date > 1803.4.27 date < 1804.1.1 
@@ -312,7 +312,7 @@ country_event = {
 	id = ger_1789_event.14
 	title = "The Electorate of Würzburg"
 	desc = ger_1789_event.14.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {	
 date > 1806.1.1 date < 1807.1.1 
@@ -333,7 +333,7 @@ country_event = {
 	id = ger_1789_event.15
 	title = "The Grand Duchy of Hesse"
 	desc = ger_1789_event.15.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {	
 date > 1806.8.13 date < 1807.1.1 
@@ -352,7 +352,7 @@ country_event = {
 	id = ger_1789_event.16
 	title = "The Grand Duchy of Hesse and by Rhine"
 	desc = ger_1789_event.16.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {	
 HES={owns_state=1182}
@@ -372,7 +372,7 @@ country_event = {
 	id = ger_1789_event.17
 	title = "The Extinction of the House of Este"
 	desc = ger_1789_event.17.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {	
 date > 1803.10.14 date < 1804.1.1 
@@ -383,17 +383,17 @@ fire_only_once = yes
 		name = "Are Modena and Massa really ours now?"
 		ai_chance = { factor = 100 } 
 news_event = ger_1789_news.17
-MOD={add_war_support=-0.5
+ITA={add_war_support=-0.5
 add_political_power=-150
-promote_character=MOD_francisiv
-retire_character=MOD_ercole
+promote_character=ITA_francisiv
+retire_character=ITA_ercole
 }
 MAS={add_war_support=-0.5
 add_political_power=-150
 promote_character=MAS_francisiv
 retire_character=MAS_ercole
 }
-MOD={set_party_name = { ideology = neutrality long_name = MOD_LOR_neutrality_party_long name = MOD_LOR_neutrality_party }}
+ITA={set_party_name = { ideology = neutrality long_name = ITA_LOR_neutrality_party_long name = ITA_LOR_neutrality_party }}
 MAS={set_party_name = { ideology = neutrality long_name = MAS_LOR_neutrality_party_long name = MAS_LOR_neutrality_party }}	
 }
 }
@@ -401,7 +401,7 @@ country_event = {
 	id = ger_1789_event.18
 	title = "The Mediatisation of Berchtesgaden"
 	desc = ger_1789_event.18.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {	
 date > 1803.4.27 date < 1804.1.1 
@@ -428,7 +428,7 @@ country_event = {
 	id = ger_1789_event.19
 	title = "Austria leaves the Continental System"
 	desc = ger_1789_event.19.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {	
 date > 1813.3.1 date < 1813.6.1 
@@ -454,7 +454,7 @@ country_event = {
 	id = ger_1789_event.20
 	title = "Austria joins the Coalition"
 	desc = ger_1789_event.20.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {	
 date > 1813.8.12 date < 1814.1.1 
@@ -481,7 +481,7 @@ country_event = {
 	id = ger_1789_event.21
 	title = "The Kingdom of Bavaria"
 	desc = ger_1789_event.21.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {	
 date > 1806.1.1 date < 1807.1.1 
@@ -500,7 +500,7 @@ country_event = {
 	id = ger_1789_event.22
 	title = "The Mediatisation of Salzburg"
 	desc = ger_1789_event.22.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -534,7 +534,7 @@ country_event = {
 	id = ger_1789_event.23
 	title = "The Mediatisation of Trent"
 	desc = ger_1789_event.23.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {	
 date > 1803.2.1 date < 1803.3.1 
@@ -561,7 +561,7 @@ country_event = {
 	id = ger_1789_event.24
 	title = "The Formation of the Duchy of Saxe-Coburg and Gotha"
 	desc = ger_1789_event.24.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {	
 date > 1826.11.12 date < 1827.1.1 
@@ -591,7 +591,7 @@ country_event = {
 	id = ger_1789_event.25
 	title = "The Formation of the Duchy of Saxe-Weimar-Eisenach"
 	desc = ger_1789_event.25.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {	
 date > 1809.9.20 date < 1810.1.1 
@@ -621,7 +621,7 @@ country_event = {
 	id = ger_1789_event.26
 	title = "The Formation of the Grand Duchy of Saxe-Weimar-Eisenach"
 	desc = ger_1789_event.26.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {	
 date > 1815.10.1 date < 1816.1.1 
@@ -640,14 +640,14 @@ country_event = {
 	id = ger_1789_event.27
 	title = "The Formation of the Austrian Empire"
 	desc = ger_1789_event.27.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {	
 date > 1804.8.11 date < 1805.1.1 
 tag = AUS	
 HUN={is_subject_of=AUS}
 GLL={is_subject_of=AUS}
-BOH={is_subject_of=AUS}
+CZE={is_subject_of=AUS}
 BKV={is_subject_of=AUS}
 }
 fire_only_once = yes
@@ -656,7 +656,7 @@ fire_only_once = yes
 		ai_chance = { factor = 100 } 
 			AUS={set_cosmetic_tag = AUS_empire}
 	AUS={
-	annex_country = { target = BOH transfer_troops = yes }
+	annex_country = { target = CZE transfer_troops = yes }
 	annex_country = { target = BKV transfer_troops = yes }
 	annex_country = { target = GLL transfer_troops = yes }
 	annex_country = { target = HUN transfer_troops = yes }
@@ -670,7 +670,7 @@ fire_only_once = yes
 		every_state={
 	limit={
 	or={
-	is_core_of=BOH
+	is_core_of=CZE
 	is_core_of=HUN
 	}
 	}
@@ -682,7 +682,7 @@ country_event = {
 	id = ger_1789_event.28
 	title = "The successor to King Stanisław II"
 	desc = ger_1789_event.28.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {	
 date > 1791.6.24 date < 1792.1.1 
@@ -700,7 +700,7 @@ country_event = {
 	id = ger_1789_event.29
 	title = "The successor to King Stanisław II"
 	desc = ger_1789_event.29.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -721,7 +721,7 @@ country_event = {
 	id = ger_1789_event.30
 	title = "The Saxon Peasants' Revolt"
 	desc = ger_1789_event.30.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {	
 date > 1790.1.1 date < 1791.1.1 
@@ -738,7 +738,7 @@ country_event = {
 	id = ger_1789_event.31
 	title = "The Saxon Peasants' Revolt"
 	desc = ger_1789_event.31.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {	
 date > 1790.9.1 date < 1791.1.1 

@@ -47,7 +47,34 @@ units = {
 	#Portuguese Army
 	division = {
 		name = "Portuguese Division"
-		location = 6880
+		location = 11805
+		division_template = "Portuguese Division"
+		start_experience_factor = 0.3
+	}
+}
+units = {
+	#Portuguese Army
+	division = {
+		name = "Portuguese Division"
+		location = 11805
+		division_template = "Portuguese Division"
+		start_experience_factor = 0.3
+	}
+}
+units = {
+	#Portuguese Army
+	division = {
+		name = "Portuguese Division"
+		location = 11805
+		division_template = "Portuguese Division"
+		start_experience_factor = 0.3
+	}
+}
+units = {
+	#Portuguese Army
+	division = {
+		name = "Portuguese Division"
+		location = 11805
 		division_template = "Portuguese Division"
 		start_experience_factor = 0.3
 	}
@@ -74,7 +101,7 @@ units = {
 	#Portuguese Army
 	division = {
 		name = "Portuguese Division"
-		location = 9817
+		location = 6880
 		division_template = "Portuguese Division"
 		start_experience_factor = 0.3
 	}
@@ -83,7 +110,7 @@ units = {
 	#Portuguese Army
 	division = {
 		name = "Portuguese Division"
-		location = 9817
+		location = 6880
 		division_template = "Portuguese Division"
 		start_experience_factor = 0.3
 	}
@@ -92,34 +119,7 @@ units = {
 	#Portuguese Army
 	division = {
 		name = "Portuguese Division"
-		location = 9817
-		division_template = "Portuguese Division"
-		start_experience_factor = 0.3
-	}
-}
-units = {
-	#Portuguese Army
-	division = {
-		name = "Portuguese Division"
-		location = 11673
-		division_template = "Portuguese Division"
-		start_experience_factor = 0.3
-	}
-}
-units = {
-	#Portuguese Army
-	division = {
-		name = "Portuguese Division"
-		location = 11673
-		division_template = "Portuguese Division"
-		start_experience_factor = 0.3
-	}
-}
-units = {
-	#Portuguese Army
-	division = {
-		name = "Portuguese Division"
-		location = 11673
+		location = 6880
 		division_template = "Portuguese Division"
 		start_experience_factor = 0.3
 	}

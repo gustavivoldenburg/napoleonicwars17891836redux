@@ -6,6 +6,14 @@ is_potentially_communist_china = {
 		original_tag = SHX
 		original_tag = XSM
 		original_tag = SIK
+		original_tag = GDC
+		original_tag = XIC
+		original_tag = SND
+		original_tag = KHM
+		original_tag = NXM
+		original_tag = SIC
+		original_tag = GSM
+		original_tag = HBC
 	}
 }
 
@@ -29,11 +37,6 @@ PRC_can_increase_infiltration_in_state = {
 PRC_uprising_is_available = {
 	custom_trigger_tooltip = {
 		tooltip = PRC_uprising_is_available
-		event_target:WTT_current_china_leader = {
-			any_controlled_state = {
-				PRC_is_infiltrated_by_ROOT = yes
-			}
-		}
 	}
 }
 
@@ -88,8 +91,7 @@ has_any_PRC_infiltration_flag = {
 }
 
 ROOT_any_state_infiltration_detected = {
-	any_state = {
-		is_controlled_by = ROOT
+	any_controlled_state = {
 		has_state_flag = {
 			flag = discovered_infiltration
 			value > 0
@@ -147,8 +149,7 @@ PRC_has_low_popular_support = {
 }
 
 #State scope
-PRC_infiltration_uprising_PREV_will_spawn_troops_in_state = {
-	is_controlled_by = event_target:WTT_current_china_leader			
+PRC_infiltration_uprising_PREV_will_spawn_troops_in_state = {		
 	has_state_flag = {
 		flag = PRC_infiltration_@PREV
 		value > 2
@@ -157,7 +158,6 @@ PRC_infiltration_uprising_PREV_will_spawn_troops_in_state = {
 
 #State scope
 PRC_infiltration_uprising_PREV_will_sabotage_state = {
-	is_controlled_by = event_target:WTT_current_china_leader	
 	OR = {
 		has_state_flag = {
 			flag = PRC_infiltration_@PREV
@@ -270,5 +270,56 @@ PRC_japanese_state_available_for_infiltration_trigger = {
 			}
 		}
 		PRC_is_infiltrated_by_PREV = yes
+	}
+}
+
+ ## ###  ##  
+#   #   #  # 
+ #  ##  #### 
+  # #   #  # 
+##  ### #  # 
+
+PRC_state_is_infiltrated = {
+	custom_trigger_tooltip = {
+		tooltip = PRC_has_been_infiltrated_tt
+		OR = {
+			has_dynamic_modifier = { modifier = PRC_infiltrated_state_1 scope = PRC }
+			has_dynamic_modifier = { modifier = PRC_infiltrated_state_2 scope = PRC }
+			has_dynamic_modifier = { modifier = PRC_infiltrated_state_3 scope = PRC }
+		}
+	}
+}
+
+PRC_state_is_fully_infiltrated = {
+	custom_trigger_tooltip = {
+		tooltip = PRC_has_been_infiltrated_tt
+		has_dynamic_modifier = { modifier = PRC_infiltrated_state_3 scope = PRC }
+	}
+}
+
+PRC_neighboring_SOV = {
+	custom_trigger_tooltip = {
+		tooltip = PRC_neighboring_SOV_tt
+		any_neighbor_country = {
+			OR = {
+				original_tag = SOV
+				AND = {
+					is_in_faction_with = SOV
+					is_neighbor_of = SOV
+				}
+				AND = {
+					is_in_faction_with = ROOT
+					any_neighbor_country = {
+						OR = {
+							original_tag = SOV
+							AND = {
+								is_in_faction_with = SOV
+								is_neighbor_of = SOV
+							}
+						}
+					}
+				}
+			}
+		}
 	}
 }

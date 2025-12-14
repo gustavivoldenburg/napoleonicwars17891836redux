@@ -286,60 +286,6 @@ units = {
 		start_experience_factor = 0.3
 	}
 }
-units = {
-	#Austrian Army
-	division = {
-		name = "Austrian Division"
-		location = 14223
-		division_template = "Austrian Division"
-		start_experience_factor = 0.3
-	}
-}
-units = {
-	#Austrian Army
-	division = {
-		name = "Austrian Division"
-		location = 11581
-		division_template = "Austrian Division"
-		start_experience_factor = 0.3
-	}
-}
-units = {
-	#Austrian Army
-	division = {
-		name = "Austrian Division"
-		location = 9660
-		division_template = "Austrian Division"
-		start_experience_factor = 0.3
-	}
-}
-units = {
-	#Austrian Army
-	division = {
-		name = "Austrian Division"
-		location = 11542
-		division_template = "Austrian Division"
-		start_experience_factor = 0.3
-	}
-}
-units = {
-	#Austrian Army
-	division = {
-		name = "Austrian Division"
-		location = 3569
-		division_template = "Austrian Division"
-		start_experience_factor = 0.3
-	}
-}
-units = {
-	#Austrian Army
-	division = {
-		name = "Austrian Division"
-		location = 619
-		division_template = "Austrian Division"
-		start_experience_factor = 0.3
-	}
-}
 ### Starting Equipment ###
 instant_effect = {
 	add_equipment_production = {

@@ -1,5 +1,68 @@
 characters={
-							BAY_montgelas={
+							BAY_drumpfi={
+		name=BAY_CHARACTER_DRUMPFI
+		portraits={
+                        army={
+				small="GFX_idea_bay_drumpfi_small"
+			}
+			civilian = {
+				large = GFX_portrait_bay_drumpfi_large
+			}
+		}
+		advisor={
+                        can_be_fired = no
+			slot = political_advisor
+			idea_token = BAY_drumpfi
+			allowed  = {
+				original_tag  = BAY
+			}
+			available  = {
+		        }
+			traits  = {
+				BAY_winemaker
+			}
+			on_add  = {
+			}
+			do_effect  = {
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+	}
+							BAY_drumpfii={
+		name=BAY_CHARACTER_DRUMPFII
+		portraits={
+                        army={
+				small="GFX_idea_bay_drumpfii_small"
+			}
+			civilian = {
+				large = GFX_portrait_bay_drumpfii_large
+			}
+		}
+		advisor={
+                        can_be_fired = no
+			slot = political_advisor
+			idea_token = BAY_drumpfii
+			allowed  = {
+				original_tag  = BAY
+			}
+			available  = {
+			BAY={has_country_flag=BAY_trump_has_turned_one_eight}
+		        }
+			traits  = {
+				BAY_winemaker
+			}
+			on_add  = {
+			}
+			do_effect  = {
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+	}
+								BAY_montgelas={
 		name=BAY_CHARACTER_MONTGELAS
 		portraits={
                         army={

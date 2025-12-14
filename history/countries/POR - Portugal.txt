@@ -1,4 +1,134 @@
 ﻿capital = 112
+1765.1.1 = {
+recruit_character=POR_lucienbonaparte
+}
+1841.1.1 = {
+retire_character=POR_lucienbonaparte
+}
+
+1765.1.1 = {
+recruit_character=POR_sampaio
+}
+1845.1.1 = {
+retire_character=POR_sampaio
+}
+1765.1.1 = {
+recruit_character=POR_guedes
+}
+1841.1.1 = {
+retire_character=POR_guedes
+}
+1765.1.1 = {
+recruit_character=POR_napier
+}
+1861.1.1 = {
+retire_character=POR_napier
+}
+1765.1.1 = {
+recruit_character=POR_povoas
+}
+1853.1.1 = {
+retire_character=POR_povoas
+}
+
+1789.1.1 = {
+recruit_character=POR_noronha
+}
+1860.1.1 = {
+retire_character=POR_noronha
+}
+
+1765.1.1 = {
+recruit_character=POR_joseseseabradasilva
+}
+1814.1.1 = {
+retire_character=POR_joseseseabradasilva
+}
+1765.1.1 = {
+recruit_character=POR_rodrigocoutinho
+}
+1812.1.1 = {
+retire_character=POR_rodrigocoutinho
+}
+1765.1.1 = {
+recruit_character=POR_domingocoutinho
+}
+1834.1.1 = {
+retire_character=POR_domingocoutinho
+}
+1765.1.1 = {
+recruit_character=POR_luiscoutinho
+}
+1805.1.1 = {
+retire_character=POR_luiscoutinho
+}
+1765.1.1 = {
+recruit_character=POR_braganca
+}
+1807.1.1 = {
+retire_character=POR_braganca
+}
+1765.1.1 = {
+recruit_character=POR_forjaz
+}
+1828.1.1 = {
+retire_character=POR_forjaz
+}
+1765.1.1 = {
+recruit_character=POR_beresford
+}
+1855.1.1 = {
+retire_character=POR_beresford
+}
+1765.1.1 = {
+recruit_character=POR_franciscodedasilveira
+}
+1840.1.1 = {
+retire_character=POR_franciscodedasilveira
+}
+1765.1.1 = {
+recruit_character=POR_gama
+}
+1822.1.1 = {
+retire_character=POR_gama
+}
+1765.1.1 = {
+recruit_character=POR_lorena
+}
+1819.1.1 = {
+retire_character=POR_lorena
+}
+1765.1.1 = {
+recruit_character=POR_azevedo
+}
+1818.1.1 = {
+retire_character=POR_azevedo
+}
+1765.1.1 = {
+recruit_character=POR_stockler
+}
+1830.1.1 = {
+retire_character=POR_stockler
+}
+1765.1.1 = {
+recruit_character=POR_taborda
+}
+1837.1.1 = {
+retire_character=POR_taborda
+}
+1765.1.1 = {
+recruit_character=POR_freire
+}
+1825.1.1 = {
+retire_character=POR_freire
+}
+
+
+
+
+
+
+
 1789.1.1 = {
 recruit_character=POR_pedrogeneral
 recruit_character=POR_limageneral

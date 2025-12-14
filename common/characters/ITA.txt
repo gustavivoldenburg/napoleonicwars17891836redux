@@ -35,6 +35,62 @@ characters = {
 			expire="1797.1.1"
 		}
 }
+	ITA_ercole={
+		name=ITA_CHARACTER_ERCOLE
+		portraits={
+			civilian={
+				large="GFX_portrait_ita_ercole_large"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={Este}
+			desc = ITA_ERCOLE_DESC
+			expire="1797.1.1"
+		}
+}
+	ITA_francisiv={
+		name=ITA_CHARACTER_FRANCISIV
+		portraits={
+			civilian={
+				large="GFX_portrait_ita_francisiv_large"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={Habsburg-Lorraine-Este}
+			desc = ITA_FRANCISIV_DESC
+			expire="1797.1.1"
+		}
+}
+	ITA_maria={
+		name=ITA_CHARACTER_MARIA
+		portraits={
+			civilian={
+				large="GFX_portrait_ita_maria_large"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={Habsburg-Lorraine-Este}
+			desc = ITA_MARIA_DESC
+			expire="1797.1.1"
+		}
+}
+	ITA_karl={
+		name=ITA_CHARACTER_KARL
+		portraits={
+			civilian={
+				large="GFX_portrait_ita_karl_large"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={Habsburg-Lorraine-Este}
+			desc = ITA_KARL_DESC
+			expire="1797.1.1"
+		}
+}
 
 	ITA_benito_mussolini = {
 		name = ITA_benito_mussolini

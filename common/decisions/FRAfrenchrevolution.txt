@@ -34,6 +34,38 @@ FRA_frenchrevolution = {
 		}
 	}
 }
+FRA_frenchrevolution = {
+	FRA_cal_decree = {
+
+		icon = ger_reichskommissariats
+
+		available = {
+			has_completed_focus = france_1793_1799_focus_3
+		date > 1793.10.24
+		has_start_date < 1800.1.1
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				add = 1
+			}
+		}
+
+		visible = {
+			original_tag=FRA
+		has_start_date < 1800.1.1
+			NOT = { has_global_flag = decree_italian_gambit_lef_flag }
+		}
+
+		complete_effect = {
+FRA={set_country_flag=cal_decree}
+FRA={add_ideas=republican_cal_FRA}
+		hidden_effect={set_global_flag = decree_italian_gambit_lef_flag}
+		}
+	}
+}
 FRA_naturalborder = {
 	FRA_naturalborderpuppetrhine = {
 
@@ -41,17 +73,86 @@ FRA_naturalborder = {
 
 		available = {
 			has_country_flag=has_signed_a_seperate_peace_pre
-			
-        controls_state = 1182 
-        controls_state = 880  
-        controls_state = 1237
-        controls_state = 873 
-        controls_state = 1239
-        controls_state = 690 
-        controls_state = 42 
-        controls_state = 843  
-        controls_state = 51 
-        controls_state = 466  
+										any_country={
+	or={
+	is_ally_with = FRA
+	is_subject_of = FRA
+	original_tag=FRA
+	}
+	controls_state = 1182
+	}
+										any_country={
+	or={
+	is_ally_with = FRA
+	is_subject_of = FRA
+	original_tag=FRA
+	}
+	controls_state = 880
+	}
+										any_country={
+	or={
+	is_ally_with = FRA
+	is_subject_of = FRA
+	original_tag=FRA
+	}
+	controls_state = 1237
+	}
+										any_country={
+	or={
+	is_ally_with = FRA
+	is_subject_of = FRA
+	original_tag=FRA
+	}
+	controls_state = 873
+	}
+										any_country={
+	or={
+	is_ally_with = FRA
+	is_subject_of = FRA
+	original_tag=FRA
+	}
+	controls_state = 1239
+	}
+										any_country={
+	or={
+	is_ally_with = FRA
+	is_subject_of = FRA
+	original_tag=FRA
+	}
+	controls_state = 690
+	}
+										any_country={
+	or={
+	is_ally_with = FRA
+	is_subject_of = FRA
+	original_tag=FRA
+	}
+	controls_state = 42
+	}
+										any_country={
+	or={
+	is_ally_with = FRA
+	is_subject_of = FRA
+	original_tag=FRA
+	}
+	controls_state = 843
+	}
+										any_country={
+	or={
+	is_ally_with = FRA
+	is_subject_of = FRA
+	original_tag=FRA
+	}
+	controls_state = 51
+	}
+										any_country={
+	or={
+	is_ally_with = FRA
+	is_subject_of = FRA
+	original_tag=FRA
+	}
+	controls_state = 466
+	}		
 		}
 
 		cost = 0
@@ -137,15 +238,46 @@ FRA_naturalborder = {
 
 		available = {
 			has_country_flag=has_signed_a_seperate_peace_pre
-			
-        controls_state = 8
-        controls_state = 851 
-        controls_state = 970
-        controls_state = 6
-        controls_state = 1171
-        controls_state = 973
-        controls_state = 1243
-        controls_state = 34  
+									any_country={
+	or={
+	is_ally_with = FRA
+	is_subject_of = FRA
+	original_tag=FRA
+	}
+	controls_state = 6
+	}
+								any_country={
+	or={
+	is_ally_with = FRA
+	is_subject_of = FRA
+	original_tag=FRA
+	}
+	controls_state = 1171
+	}
+								any_country={
+	or={
+	is_ally_with = FRA
+	is_subject_of = FRA
+	original_tag=FRA
+	}
+	controls_state = 1243
+	}
+								any_country={
+	or={
+	is_ally_with = FRA
+	is_subject_of = FRA
+	original_tag=FRA
+	}
+	controls_state = 34
+	}
+								any_country={
+	or={
+	is_ally_with = FRA
+	is_subject_of = FRA
+	original_tag=FRA
+	}
+	controls_state = 973
+	}	 
 		}
 
 		cost = 0
@@ -170,7 +302,6 @@ BEL={set_cosmetic_tag=BEL_FRA}
 limit={
 or={
 state=8
-state=851
 state=970
 state=6
 state=1171
@@ -214,8 +345,30 @@ FRA_naturalborder = {
 		available = {
 			has_country_flag=has_signed_a_seperate_peace_pre
 			
-        controls_state = 979
-        controls_state = 980 
+									any_country={
+	or={
+	is_ally_with = FRA
+	is_subject_of = FRA
+	original_tag=FRA
+	}
+	controls_state = 979
+	}
+										any_country={
+	or={
+	is_ally_with = FRA
+	is_subject_of = FRA
+	original_tag=FRA
+	}
+	controls_state = 980
+	}
+											any_country={
+	or={
+	is_ally_with = FRA
+	is_subject_of = FRA
+	original_tag=FRA
+	}
+	controls_state = 851
+	}
 		}
 
 		cost = 0
@@ -243,10 +396,19 @@ FRA_naturalborder = {
         autonomous_state = autonomy_dominion
         freedom_level = 0.35
 	}
+			STA={set_cosmetic_tag=STA_FRA}
+		white_peace = STA
+        FRA={
+	    set_autonomy = {
+        target = STA
+        autonomous_state = autonomy_dominion
+        freedom_level = 0.35
+	}
 		}
 		hidden_effect={set_global_flag = fra_puppet_liege_flag}
 		}
 	}
+}
 }
 FRA_naturalborder = {
 	FRA_corerhine = {
@@ -280,6 +442,7 @@ FRA_naturalborder = {
 		}
 
 		complete_effect = {
+		FRA={set_country_flag=has_integrated_southrhine}
 1239 = { add_core_of = ROOT }
 873 = { add_core_of = ROOT }
 880 = { add_core_of = ROOT }
@@ -298,7 +461,6 @@ FRA_naturalborder = {
 			has_country_flag=has_signed_a_seperate_peace_pre
 			
         owns_state = 8
-        owns_state = 851 
         owns_state = 970
         owns_state = 6
         owns_state = 1171
@@ -324,8 +486,8 @@ FRA_naturalborder = {
 		}
 
 		complete_effect = {
+		FRA={set_country_flag=has_integrated_belgium}
 8 = { add_core_of = ROOT }
-851 = { add_core_of = ROOT }
 970 = { add_core_of = ROOT }
 6 = { add_core_of = ROOT }
 1171 = { add_core_of = ROOT }
@@ -346,6 +508,7 @@ FRA_naturalborder = {
 			
         owns_state = 979
         owns_state = 980 
+		owns_state = 851
 		}
 
 		cost = 0
@@ -365,8 +528,10 @@ FRA_naturalborder = {
 		}
 
 		complete_effect = {
+		FRA={set_country_flag=has_integrated_liege}
 979 = { add_core_of = ROOT }
 980 = { add_core_of = ROOT }
+851 = { add_core_of = ROOT }
 		hidden_effect={set_global_flag = fra_core_liege_flag}
 		}
 	}
@@ -400,6 +565,7 @@ FRA_naturalborder = {
 		}
 
 		complete_effect = {
+		FRA={set_country_flag=has_integrated_netherlands}
 984 = { add_core_of = ROOT }
 985 = { add_core_of = ROOT }
 		hidden_effect={set_global_flag = fra_core_limburg_flag}
@@ -441,6 +607,7 @@ FRA_naturalborder = {
 		}
 
 		complete_effect = {
+		FRA={set_country_flag=has_integrated_basel}
 transfer_state=864
 864 = { add_core_of = ROOT }
 		hidden_effect={set_global_flag = fra_core_basel_flag}
@@ -576,13 +743,13 @@ FRA_italiangambit = {
 		complete_effect = {
 		FRA={set_country_flag=has_invaded_prm_mod_mas}
 		hidden_effect={set_global_flag = italian_gambit_pope_flag AUS = {
-                        add_to_faction = PRM add_to_faction = MOD add_to_faction = MAS add_to_faction = PAP}}
+                        add_to_faction = PRM add_to_faction = ITA add_to_faction = MAS add_to_faction = PAP}}
 		declare_war_on = {
 		target = PRM
 		type = puppet_wargoal_focus
 	    }
 		declare_war_on = {
-		target = MOD
+		target = ITA
 		type = puppet_wargoal_focus
 	    }
 		declare_war_on = {
@@ -646,7 +813,7 @@ FRA_italiangambit = {
 
 		available = {
 			FRA={has_country_flag=italian_gambit_i_supposed}
-			
+			FRA={has_country_flag=campoformio_prelude_give_access_to_new_focus}
 			date > 1798.11.1 date < 1800.1.1 
 		}
 
@@ -664,7 +831,7 @@ FRA_italiangambit = {
 		}
 
 		complete_effect = {
-		hidden_effect={set_global_flag = italian_gambit_sicily_flag AUS = {
+		hidden_effect={set_global_flag = italian_gambit_sicily_flag ENG = {
                         add_to_faction = TTS}}
 		declare_war_on = {
 		target = SIC
@@ -680,7 +847,7 @@ FRA_italiangambit = {
 
 		available = {
 			FRA={has_country_flag=italian_gambit_i_supposed}
-			
+		FRA={has_country_flag=campoformio_prelude_give_access_to_new_focus}
 			date > 1798.6.10 date < 1800.1.1 
 		}
 
@@ -698,96 +865,12 @@ FRA_italiangambit = {
 		}
 
 		complete_effect = {
-		hidden_effect={set_global_flag = italian_gambit_malta_flag AUS = {
+		hidden_effect={set_global_flag = italian_gambit_malta_flag ENG = {
                         add_to_faction = MLT}}
 		declare_war_on = {
 		target = MLT
 		type = puppet_wargoal_focus
 	    }
-		}
-	}
-}
-FRA_italiangambit = {
-	FRA_integrate_parma = {
-
-		icon = ger_reichskommissariats
-
-		available = {
-			any_country={
-	or={
-	is_ally_with = FRA
-	is_subject_of = FRA
-	original_tag=FRA
-	}
-	controls_state = 990
-	}
-		original_tag=FRA
-        has_country_flag=unlock_parma_etruria_integration
-		}
-
-		cost = 0
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				add = 1
-			}
-		}
-
-		visible = {
-		original_tag=FRA
-		has_country_flag=unlock_parma_etruria_integration
-			NOT = { has_global_flag = italian_gambit_parma}
-		}
-
-		complete_effect = {
-		FRA={country_event = fra_1789_event.131}
-		hidden_effect={set_global_flag = italian_gambit_parma}
-		}
-	}
-}
-FRA_italiangambit = {
-	FRA_integrate_etruria = {
-
-		icon = ger_reichskommissariats
-
-		available = {
-			any_country={
-	or={
-	is_ally_with = FRA
-	is_subject_of = FRA
-	original_tag=FRA
-	}
-	controls_state = 162
-	}
-		any_country={
-	or={
-	is_ally_with = FRA
-	is_subject_of = FRA
-	original_tag=FRA
-	}
-	controls_state = 1101
-	}
-		original_tag=FRA
-        has_country_flag=unlock_parma_etruria_integration
-		}
-
-		cost = 0
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				add = 1
-			}
-		}
-
-		visible = {
-		original_tag=FRA
-		has_country_flag=unlock_parma_etruria_integration
-			NOT = { has_global_flag = italian_gambit_etruria}
-		}
-
-		complete_effect = {
-		FRA={country_event = fra_1789_event.132}
-		hidden_effect={set_global_flag = italian_gambit_etruria}
 		}
 	}
 }

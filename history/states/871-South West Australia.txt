@@ -7,8 +7,8 @@ state={
 		owner = SIL
 		add_core_of = SIL
 		1748.1.1 = {
-			owner = BOH
-                add_core_of = BOH
+			owner = CZE
+                add_core_of = CZE
                 remove_core_of = SIL
 		}
 		1804.1.1 = {
@@ -37,7 +37,7 @@ state={
 			controller = POL
             add_core_of = POL
             remove_core_of = CZE
-            remove_core_of = BOH
+            remove_core_of = CZE
             remove_core_of = AUS
 		}
 

@@ -2,6 +2,8 @@
 WTT_should_show_state_decision = {
 	has_variable = state_political_support_value
 	CONTROLLER = {
+		OR = {
+		}
 	}
 }
 
@@ -20,6 +22,8 @@ WTT_can_ROOT_select_state_support_decision_state = {
 	custom_trigger_tooltip = {
 		tooltip = WTT_china_pol_struggle_state_controlled_by_leader
 		CONTROLLER = {
+			OR = {
+			}
 		}
 		CONTROLLER = { NOT = { has_war_with = ROOT } }
 	}
@@ -104,6 +108,9 @@ WTT_has_politcal_support_points_30 = {
 
 #Country scope
 WTT_is_ROOT_current_leader_of_china = {
+	custom_trigger_tooltip = {
+		tooltip = is_current_leader_of_china
+	}
 }
 
 #Country scope
@@ -139,6 +146,10 @@ WTT_not_china_leader_refused_to_give_up_national_leadership = {
 #State scope
 WTT_is_active_political_struggle_state = {
 	WTT_is_potential_political_struggle_state = yes
+	OR = {
+		#Own state points
+		CONTROLLER = { has_country_flag = wtt_political_struggle }
+	}
 }
 
 #Country sope
@@ -149,6 +160,14 @@ WTT_is_chinese_warlord = {
 		original_tag = XSM
 		original_tag = SIK
 		original_tag = SHX
+		original_tag = GDC
+		original_tag = XIC
+		original_tag = SND
+		original_tag = SIC
+		original_tag = KHM
+		original_tag = NXM
+		original_tag = GSM
+		original_tag = HBC
 	}
 }
 

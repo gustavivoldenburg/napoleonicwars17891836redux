@@ -31,9 +31,9 @@ state={
 			add_core_of = RUS
         remove_core_of = NAK
 		remove_core_of = TAL
-		remove_core_of = BAK
+		
 		remove_core_of = KRB
-		remove_core_of = ERV
+		
 		}
 		victory_points = {
 			4473 1 

@@ -24,7 +24,7 @@ state={
 			add_core_of = SAX
 			remove_core_of = AUS
 			remove_core_of = CZE
-			remove_core_of = BOH
+			remove_core_of = CZE
 			remove_core_of = LUS
 
 		}

@@ -4,7 +4,7 @@
 		limit = { has_start_date < 1815.1.1 }
 	set_autonomy = {
         target = SIC
-        autonomous_state = autonomy_protectorate
+        autonomous_state = autonomy_dominion
         freedom_level = 0.4
 	}
 }
@@ -47,6 +47,156 @@ recruit_character=TTS_luigidemedici
 1826.1.1 = {
 retire_character=TTS_luigidemedici
 }
+1789.1.1 = {
+recruit_character=TTS_rossi
+}
+1850.1.1 = {
+retire_character=TTS_rossi
+}
+1789.1.1 = {
+recruit_character=TTS_rusca
+}
+1823.1.1 = {
+retire_character=TTS_rusca
+}
+1789.1.1 = {
+recruit_character=TTS_rinaldi
+}
+1795.1.1 = {
+retire_character=TTS_rinaldi
+}
+
+
+
+
+
+
+
+
+1789.1.1 = {
+recruit_character=TTS_maria2
+}
+1815.1.1 = {
+retire_character=TTS_maria2
+}
+1789.1.1 = {
+recruit_character=TTS_pichegru
+}
+1805.1.1 = {
+retire_character=TTS_pichegru
+}
+1789.1.1 = {
+recruit_character=TTS_cadoudal
+}
+1805.1.1 = {
+retire_character=TTS_cadoudal
+}
+1789.1.1 = {
+recruit_character=TTS_marzio
+}
+1834.1.1 = {
+retire_character=TTS_marzio
+}
+1788.1.1 = {
+recruit_character=TTS_antonio
+}
+1789.1.1 = {
+retire_character=TTS_antonio
+}
+1788.1.1 = {
+recruit_character=TTS_gaetano
+}
+1789.1.1 = {
+retire_character=TTS_gaetano
+}
+
+1789.1.1 = {
+recruit_character=TTS_vito
+}
+1837.1.1 = {
+retire_character=TTS_vito
+}
+1789.1.1 = {
+recruit_character=TTS_carracosa
+}
+1854.1.1 = {
+retire_character=TTS_carracosa
+}
+1789.1.1 = {
+recruit_character=TTS_pepe
+}
+1856.1.1 = {
+retire_character=TTS_pepe
+}
+1789.1.1 = {
+recruit_character=TTS_colletta
+}
+1832.1.1 = {
+retire_character=TTS_colletta
+}
+1789.1.1 = {
+recruit_character=TTS_damas
+}
+1824.1.1 = {
+retire_character=TTS_damas
+}
+1789.1.1 = {
+recruit_character=TTS_leopoldsalerno
+}
+1852.1.1 = {
+retire_character=TTS_leopoldsalerno
+}
+1789.1.1 = {
+recruit_character=TTS_chetta
+}
+1804.1.1 = {
+retire_character=TTS_chetta
+}
+1789.1.1 = {
+recruit_character=TTS_paoli
+}
+1808.1.1 = {
+retire_character=TTS_paoli
+}
+1789.1.1 = {
+recruit_character=TTS_poz
+}
+1843.1.1 = {
+retire_character=TTS_poz
+}
+1789.1.1 = {
+recruit_character=TTS_bentinck
+}
+1840.1.1 = {
+retire_character=TTS_bentinck
+}
+1789.1.1 = {
+recruit_character=TTS_raffo
+}
+1863.1.1 = {
+retire_character=TTS_raffo
+}
+1789.1.1 = {
+recruit_character=TTS_ruffo
+}
+1828.1.1 = {
+retire_character=TTS_ruffo
+}
+1789.1.1 = {
+recruit_character=TTS_diavolo
+}
+1807.1.1 = {
+retire_character=TTS_diavolo
+}
+
+
+
+
+
+
+
+
+
 1789.1.1 = {
 		if = {
 		limit = { has_start_date < 1808.1.1 }

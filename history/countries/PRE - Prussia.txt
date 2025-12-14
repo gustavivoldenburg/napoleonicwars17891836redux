@@ -5,6 +5,12 @@ recruit_character=PRE_hardenberg
 1824.1.1 = {
 retire_character=PRE_hardenberg
 }
+1750.1.1 = {
+recruit_character=PRE_marx
+}
+1884.1.1 = {
+retire_character=PRE_marx
+}
 1789.1.1 = {
 recruit_character=PRE_johann
 }
@@ -472,6 +478,7 @@ unlock_national_focus =prussianrework_1793_1836_focus_19
 unlock_national_focus =prussianrework_1793_1836_focus_20
 
 unlock_national_focus =prussianrework_1793_1836_focus_21
+unlock_national_focus =prussianrework_1793_1836_focus_22
 }
 }
 
@@ -735,6 +742,7 @@ retire_character=PRE_oppenheim
 1789.1.1 = {
 		if = {
 		limit = { has_start_date < 1799.1.1 }
+PRE={add_ideas=pre_customs_war}
 set_oob = "PRE_1789"
 }
 }
@@ -765,6 +773,7 @@ set_oob = "PRE_1821"
 1836.1.1 = {
 		if = {
 		limit = { has_start_date < 1837.1.1 }
+  PRE={set_country_flag=proto_communism_has_happened}
 set_oob = "PRE_1836"
 }
 }
@@ -899,7 +908,7 @@ set_stability = 0.75
 		electronic_mechanical_engineering = 1
 		radio = 1
 		radio_detection = 1
-		decimetric_radar = 1
+		
 		mechanical_computing = 1
 		computing_machine = 1
 		basic_encryption = 1

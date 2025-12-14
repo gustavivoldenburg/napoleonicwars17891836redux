@@ -1,4 +1,67 @@
 characters={
+		RUS_igelstrom={
+		name=RUS_CHARACTER_IGELSTROM
+		portraits={
+                        army={
+				small="GFX_idea_rus_igelstrom_small"
+			}
+			civilian = {
+				large = GFX_portrait_rus_igelstrom_large
+			}
+		}
+		advisor={
+                        can_be_fired = no
+			slot = political_advisor
+			idea_token = RUS_igelstrom
+			allowed  = {
+				original_tag  = RUS
+			}
+			available  = {
+		        }
+			traits  = {
+				anti_polish_rus
+			}
+			on_add  = {
+			}
+			do_effect  = {
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}	
+	}
+			RUS_potocki={
+		name=RUS_CHARACTER_POTOCKI
+		portraits={
+                        army={
+				small="GFX_idea_rus_potocki_small"
+			}
+			civilian = {
+				large = GFX_portrait_rus_potocki_large
+			}
+		}
+		advisor={
+                        can_be_fired = no
+			slot = political_advisor
+			idea_token = RUS_potocki
+			allowed  = {
+				original_tag  = RUS
+			}
+			available  = {
+			RUS={has_country_flag=potocki_has_been_hired}
+		        }
+			traits  = {
+				pro_russian_pole
+			}
+			on_add  = {
+			}
+			do_effect  = {
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}	
+	}
 	RUS_betskoy={
 		name=RUS_CHARACTER_BETSKOY
 		portraits={
@@ -443,7 +506,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=absolute_monarchy
+			ideology=despotism
             traits={Ascania catherine_the_great_leader_generous}
 			desc = RUS_CATHERINEII_DESC
 			expire="1797.1.1"

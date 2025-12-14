@@ -9,7 +9,7 @@ country_event = {
 	id = bay_1789_event.1
 	title = "The Mediatisation of Memmingen"
 	desc = bay_1789_event.1.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {	
 date > 1802.1.1 date < 1803.1.1 
@@ -36,7 +36,7 @@ country_event = {
 	id = bay_1789_event.2
 	title = "The Mediatisation of Augsburg"
 	desc = bay_1789_event.2.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {	
 date > 1806.3.4 date < 1807.1.1 
@@ -63,7 +63,7 @@ country_event = {
 	id = bay_1789_event.3
 	title = "The Mediatisation of Passau"
 	desc = bay_1789_event.3.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {	
 date > 1803.1.1 date < 1804.1.1 
@@ -90,7 +90,7 @@ country_event = {
 	id = bay_1789_event.4
 	title = "The Mediatisation of Regensburg"
 	desc = bay_1789_event.4.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {	
 date > 1810.6.30 date < 1811.1.1 
@@ -117,7 +117,7 @@ country_event = {
 	id = bay_1789_event.5
 	title = "The Mediatisation of Rothenburg"
 	desc = bay_1789_event.5.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {	
 date > 1802.1.1 date < 1803.1.1 
@@ -144,7 +144,7 @@ country_event = {
 	id = bay_1789_event.6
 	title = "The Mediatisation of Nurnberg"
 	desc = bay_1789_event.6.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {	
 date > 1806.9.15 date < 1807.1.1 
@@ -171,7 +171,7 @@ country_event = {
 	id = bay_1789_event.7
 	title = "The Mediatisation of Bamberg"
 	desc = bay_1789_event.7.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {	
 date > 1802.1.1 date < 1803.1.1 
@@ -198,7 +198,7 @@ country_event = {
 	id = bay_1789_event.8
 	title = "The Mediatisation of Wurzburg"
 	desc = bay_1789_event.8.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {	
 date > 1814.6.3 date < 1815.1.1 
@@ -225,7 +225,7 @@ country_event = {
 	id = bay_1789_event.9
 	title = "The Mediatisation of Ansbach"
 	desc = bay_1789_event.9.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {	
 date > 1805.12.15 date < 1806.1.1 
@@ -251,7 +251,7 @@ country_event = {
 	id = bay_1789_event.10
 	title = "The Mediatisation of Bayreuth"
 	desc = bay_1789_event.10.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {	
 date > 1810.6.30 date < 1811.1.1 
@@ -271,5 +271,22 @@ hidden_effect={
         remove_core_of=PRE
         } 
 	}
+	}
+}
+country_event = {
+	id = bay_1789_event.11
+	title = "Drumpf Turns 18"
+	desc = bay_1789_event.11.d
+	picture = GFX_news_event_france_empire_1
+	#is_triggered_only = yes
+trigger = {	
+date > 1807.1.1 date < 1808.1.1 
+tag = BAY	
+}
+fire_only_once = yes
+	option = { # 
+		name = "It's ours now"
+		ai_chance = { factor = 100 } 
+BAY={set_country_flag=BAY_trump_has_turned_one_eight}
 	}
 }

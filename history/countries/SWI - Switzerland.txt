@@ -460,11 +460,20 @@ if = { #########   By Blood Alone Stuff
 		fuel_refining = 1
 	}
 }
+1789.1.1 = {
+set_cosmetic_tag = SWI_one # swiss confederation
+}
 1800.1.1 = {
 set_cosmetic_tag = SWI_helvetic # Swiss republic
 }
 1803.1.1 = {
-set_cosmetic_tag = SWI # swiss confederation
+set_cosmetic_tag = SWI_two # swiss confederation
+}
+1814.1.1 = {
+set_cosmetic_tag = SWI_pro # swiss confederation
+}
+1815.1.1 = {
+set_cosmetic_tag = SWI_three # swiss confederation
 }
 1836.1.1 = {
 set_politics = {

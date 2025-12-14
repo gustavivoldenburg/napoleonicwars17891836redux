@@ -1,0 +1,61 @@
+﻿division_template = {
+	name = "Vilnius Kaunas & Grodno Partisans"
+
+	division_names_group = BLR_Inf_01
+
+regiments = {
+        infantry = { x = 0 y = 0 }
+        infantry = { x = 1 y = 0 }
+        infantry = { x = 2 y = 0 }
+        infantry = { x = 0 y = 1 }
+    }
+	priority = 2
+}
+units = {
+	#Polish Army
+	division = {
+		name = "Vilnius Kaunas & Grodno Partisans"
+		location = 6296
+		division_template = "Vilnius Kaunas & Grodno Partisans"
+		start_experience_factor = 0.3
+	}
+}
+units = {
+	#Polish Army
+	division = {
+		name = "Vilnius Kaunas & Grodno Partisans"
+		location = 3320
+		division_template = "Vilnius Kaunas & Grodno Partisans"
+		start_experience_factor = 0.3
+	}
+}
+units = {
+	#Polish Army
+	division = {
+		name = "Vilnius Kaunas & Grodno Partisans"
+		location = 3393
+		division_template = "Vilnius Kaunas & Grodno Partisans"
+		start_experience_factor = 0.3
+	}
+}
+units = {
+	#Polish Army
+	division = {
+		name = "Vilnius Kaunas & Grodno Partisans"
+		location = 3366
+		division_template = "Vilnius Kaunas & Grodno Partisans"
+		start_experience_factor = 0.3
+	}
+}
+### Starting Equipment ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "BLR"
+		}
+		requested_factories = 1
+		progress = 0.28
+		efficiency = 100
+	}
+}

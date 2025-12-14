@@ -86,6 +86,37 @@ characters={
 			}
 		}
 	}
+						ENG_cornwallis={
+		name=ENG_CHARACTER_CORNWALLIS
+		portraits={
+                        army={
+				small="GFX_idea_eng_cornwallis_small"
+			}
+			civilian = {
+				large = GFX_portrait_eng_cornwallis_large
+			}
+		}
+		advisor={
+                        can_be_fired = no
+			slot = political_advisor
+			idea_token = ENG_cornwallis
+			allowed  = {
+				original_tag  = ENG
+			}
+			available  = {
+		        }
+			traits  = {
+				viceroy_of_india
+			}
+			on_add  = {
+			}
+			do_effect  = {
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+	}
 						ENG_edwardjenner={
 		name=ENG_CHARACTER_EDWARDJENNER
 		portraits={
@@ -1025,7 +1056,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=constitution_monarchy
+			ideology=despotism
 			traits={Hanover}
 			desc = ENG_GEORGEIIIENG_DESC
 			expire="1797.1.1"

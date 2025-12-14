@@ -86,7 +86,7 @@ BAL={set_cosmetic_tag=BAL_QAJ}
 			if = {
 		limit = { has_start_date < 1830.1.1 }
 	TAL={set_cosmetic_tag=TAL_QAJ}
-	ERV={set_cosmetic_tag=ERV_QAJ}
+	ARM={set_cosmetic_tag=ERV_QAJ}
 	NAK={set_cosmetic_tag=NAK_QAJ}
 	set_autonomy = {
         target = NAK
@@ -94,7 +94,7 @@ BAL={set_cosmetic_tag=BAL_QAJ}
         freedom_level = 0.4
 	}
 	set_autonomy = {
-        target = ERV
+        target = ARM
         autonomous_state = autonomy_protectorate
         freedom_level = 0.4
 	}
@@ -108,9 +108,9 @@ BAL={set_cosmetic_tag=BAL_QAJ}
 1800.1.1 = {
 			if = {
 		limit = { has_start_date < 1813.1.1 }
-	BAK={set_cosmetic_tag=BAK_QAJ}
+	AZR={set_cosmetic_tag=BAK_QAJ}
 	TAL={set_cosmetic_tag=TAL_QAJ}
-	ERV={set_cosmetic_tag=ERV_QAJ}
+	ARM={set_cosmetic_tag=ERV_QAJ}
 	KRB={set_cosmetic_tag=KRB_QAJ}
 	GAN={set_cosmetic_tag=GAN_QAJ}
 	NAK={set_cosmetic_tag=NAK_QAJ}
@@ -120,7 +120,7 @@ BAL={set_cosmetic_tag=BAL_QAJ}
         freedom_level = 0.4
 	}
 	set_autonomy = {
-        target = ERV
+        target = ARM
         autonomous_state = autonomy_protectorate
         freedom_level = 0.4
 	}
@@ -135,7 +135,7 @@ BAL={set_cosmetic_tag=BAL_QAJ}
         freedom_level = 0.4
 	}
 	set_autonomy = {
-        target = BAK
+        target = AZR
         autonomous_state = autonomy_protectorate
         freedom_level = 0.4
 	}

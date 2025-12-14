@@ -9,6 +9,12 @@ state={
 
 	history={
 		owner = SWI
+		1814.1.1 = {
+owner = AUS
+}
+		1815.1.1 = {
+owner = SWI
+}
 		1936.1.1 = {
 			buildings = {
 				infrastructure = 3

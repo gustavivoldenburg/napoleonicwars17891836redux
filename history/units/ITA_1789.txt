@@ -1,5 +1,5 @@
 ﻿division_template = {
-	name = "Italian Division"
+	name = "Modena Division"
 
 	division_names_group = ITA_Inf_01
 
@@ -17,50 +17,15 @@ regiments = {
 	priority = 2
 }
 units = {
-	#Italian Army
+	#Modena Army
 	division = {
-		name = "Italian Division"
-		location = 3780
-		division_template = "Italian Division"
+		name = "Modena Division"
+		location = 13875
+		division_template = "Modena Division"
 		start_experience_factor = 0.3
 	}
 }
-units = {
-	#Italian Army
-	division = {
-		name = "Italian Division"
-		location = 3780
-		division_template = "Italian Division"
-		start_experience_factor = 0.3
-	}
-}
-units = {
-	#Italian Army
-	division = {
-		name = "Italian Division"
-		location = 3780
-		division_template = "Italian Division"
-		start_experience_factor = 0.3
-	}
-}
-units = {
-	#Italian Army
-	division = {
-		name = "Italian Division"
-		location = 3780
-		division_template = "Italian Division"
-		start_experience_factor = 0.3
-	}
-}
-units = {
-	#Italian Army
-	division = {
-		name = "Italian Division"
-		location = 3780
-		division_template = "Italian Division"
-		start_experience_factor = 0.3
-	}
-}
+
 ### Starting Equipment ###
 instant_effect = {
 	add_equipment_production = {

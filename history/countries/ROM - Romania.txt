@@ -1,4 +1,68 @@
 ﻿capital = 46
+1789.1.1 = {
+recruit_character=ROM_nicholas
+promote_character=ROM_nicholas
+recruit_character=ROM_michael
+recruit_character=ROM_alexander
+recruit_character=ROM_ypsilantis
+recruit_character=ROM_constantinehangerli
+recruit_character=ROM_alexandros
+recruit_character=ROM_constantine
+recruit_character=ROM_john
+recruit_character=ROM_grigore
+recruit_character=ROM_tudor
+recruit_character=ROM_scarlat
+recruit_character=ROM_ghica
+recruit_character=ROM_alexandru
+recruit_character=ROM_grigory_potemkin
+}
+1800.1.1 = {
+promote_character=ROM_alexander
+retire_character=ROM_grigory_potemkin
+}
+1812.1.1 = {
+promote_character=ROM_john
+}
+1836.1.1 = {
+promote_character=ROM_alexandru
+}
+1900.1.1 = {
+retire_character=ROM_nicholas
+retire_character=ROM_michael
+retire_character=ROM_alexander
+retire_character=ROM_ypsilantis
+retire_character=ROM_constantinehangerli
+retire_character=ROM_alexandros
+retire_character=ROM_constantine
+retire_character=ROM_john
+retire_character=ROM_grigore
+retire_character=ROM_tudor
+retire_character=ROM_scarlat
+retire_character=ROM_ghica
+retire_character=ROM_alexandru
+}
+1789.1.1 = {
+		if = {
+		limit = { has_start_date < 1837.1.1 }
+set_oob = "ROM_1789"
+}
+}
+set_technology = {
+	infantry_weapons = 1
+	transport = 1
+	early_submarine = 1
+        gw_artillery = 1 basic_train = 1
+}
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1789.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 50
+	neutrality = 50
+}
 1936.1.1 = {
 if = {
 	limit = {
@@ -37,7 +101,6 @@ if = {
 		}
 	}
 }
-}
 set_research_slots = 0
 set_stability = 0.6
 set_war_support = 0.6
@@ -68,7 +131,7 @@ recruit_character = ROM_mihail_sturdza
 recruit_character = ROM_gheorghe_argeseanu
 recruit_character = ROM_king_michael
 recruit_character = ROM_octavian_goga
-
+}
 # Starting tech
 1936.1.1 = {
 	set_technology = {
@@ -83,12 +146,6 @@ recruit_character = ROM_octavian_goga
 	interwar_antiair = 1
 	basic_train = 1
 }
-}
-set_technology = {
-	infantry_weapons = 1
-	transport = 1
-	early_submarine = 1
-        gw_artillery = 1 basic_train = 1
 }
 1936.1.1 = {
 if = {
@@ -195,8 +252,8 @@ if = {
 		modifier = BFTB_balkan_pact_enemy
 	}
 }
-}
 set_convoys = 10
+}
 1939.1.1 = {
 	
 	remove_ideas = neutrality_idea
@@ -352,62 +409,6 @@ set_convoys = 10
 		}
 	}
 }
-
-set_politics = {
-	ruling_party = democratic
-	last_election = "1933.12.20"
-	election_frequency = 48
-	elections_allowed = no
-}
-set_popularities = {
-	democratic = 60
-	fascism = 18
-	communism = 2
-	neutrality = 20
-}
-
-1939.1.1 = {
-	set_politics = {
-		ruling_party = neutrality
-		last_election = "1939.7.15"
-		election_frequency = 48
-		elections_allowed = no
-	}
-	set_popularities = {
-		democratic = 20
-		fascism = 35
-		communism = 2
-		neutrality = 43
-	}
-}
-1950.1.1 = {
-set_politics = {
-	ruling_party = communism
-	last_election = "1935.9.8"
-	election_frequency = 48
-	elections_allowed = no
-}
-set_popularities = {
-	democratic = 41
-	fascism = 6
-	communism = 45
-	neutrality = 8
-}
-}
-1993.1.1 = {
-set_politics = {
-	ruling_party = democratic
-	last_election = "1993.9.8"
-	election_frequency = 48
-	elections_allowed = no
-}
-set_popularities = {
-	democratic = 79
-	fascism = 7
-	communism = 7
-	neutrality = 7
-}
-}
 ### VARIANTS ###
 # 1936 Start #
 1936.1.1 = {
@@ -488,14 +489,4 @@ if = {
 		}
 	}
 }
-}
-# 1939 Start #
-1939.1.1 = {
-	if = {
-		limit = { not = { has_dlc = "Man the Guns" } }
-		# Ship variants #
-	}
-	if = {
-		limit = { has_dlc = "Man the Guns" }
-	}
 }

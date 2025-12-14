@@ -5,57 +5,10 @@ state={
 
 	history={
 		add_core_of = ARM
-		add_core_of = QAR
-		owner = QAR
-		1600.1.1 = {
-			owner = ERV
-			add_core_of = ERV
-			remove_core_of = QAR
-
-		}
-		1700.1.1 = {
-			owner = ERV
-			add_core_of = ERV
-			remove_core_of = SHI
-
-		}
-						1800.1.1 = {
-			remove_core_of = PER
-		}
+		owner = ARM
 		1836.1.1 = {
 			owner = RUS
 			add_core_of = RUS
-			remove_core_of = NAK
-			remove_core_of = TAL
-			remove_core_of = BAK
-			remove_core_of = KRB
-			remove_core_of = ERV
-
-		}
-		1919.1.1 = {
-			remove_core_of = PER
-
-		}
-		1919.1.1 = {
-			add_core_of = ARM
-			owner = ARM
-			remove_core_of = RUS
-			remove_core_of = PER
-
-		}
-		1836.1.1 = {
-			owner = RUS
-			add_core_of = RUS
-
-		}
-		1936.1.1 = {
-			buildings = {
-				infrastructure = 2
-				industrial_complex = 1
-				air_base = 2
-
-			}
-
 		}
 		victory_points = {
 			12320 10 
@@ -66,26 +19,8 @@ state={
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
-
 		}
-
-		1993.1.1 = {
-			owner = ARM
-			controller = ARM
-			add_core_of = ARM
-			remove_core_of = SOV
-
-		}
-		1939.1.1 = {
-			buildings = {
-				industrial_complex = 3
-
-			}
-
-		}
-
 	}
-
 	provinces={
 		3564 6642 6991 11708 12320 12441 13123 14029 14030 14033 14041 14048 
 	}

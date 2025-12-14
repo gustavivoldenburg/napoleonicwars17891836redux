@@ -1,0 +1,16 @@
+characters={
+	AGE_godoy={
+		name=AGE_CHARACTER_GODOY
+		portraits={
+			civilian={
+				large="GFX_portrait_age_godoy_large"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			desc = AGE_GODOY_DESC
+			expire="1797.1.1"
+		}
+}
+}
+

@@ -61,11 +61,11 @@ autonomy_state = {
 		}
 	}
 
-	can_lose_level = {
-		if = {
-			limit = {
+	can_take_level = {
+		always = no
+	}
 
-			}
-		}
+	can_lose_level = {
+		always = no
 	}
 }

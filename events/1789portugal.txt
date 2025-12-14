@@ -9,7 +9,7 @@ country_event = {
 	id = por_1789_event.1
 	title = "The United Kingdom of Portugal, Brazil and the Algarves"
 	desc = por_1789_event.1.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {	
 date > 1815.12.16 has_start_date < 1816.1.1 
@@ -28,7 +28,7 @@ country_event = {
 	id = por_1789_event.2
 	title = "Miguelist Portugal"
 	desc = por_1789_event.2.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {	
 date > 1826.5.2 has_start_date < 1836.1.1 
@@ -47,7 +47,7 @@ country_event = {
 	id = por_1789_event.3
 	title = "Liberal Portugal"
 	desc = por_1789_event.3.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {	
 date > 1834.5.16 has_start_date < 1836.1.1 

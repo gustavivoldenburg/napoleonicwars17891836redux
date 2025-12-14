@@ -9,7 +9,7 @@ state={
 		1601.1.1 = {
 		owner = FRA
 		add_core_of = FRA
-		remove_core_of = SAV
+		remove_core_of = SPM
 		}
 		buildings = {
 			infrastructure = 2
@@ -20,7 +20,7 @@ state={
 	}
 
 	provinces={
-		641 3650 6639 6668 9590 14568 14575 
+		641 3650 6639 6668 9590 14568 14575
 	}
 	manpower=500000
 	buildings_max_level_factor=1.000

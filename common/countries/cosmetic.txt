@@ -15,6 +15,30 @@ IRE_jacobite = {
 	color_ui = rgb { 66 48 102 }
 }
 
+ERV = {
+	color = rgb { 49 142 54 }
+	color_ui = rgb { 49 142 54 }
+}
+BAK = {
+	color = rgb { 112 198 95 }
+	color_ui = rgb { 112 198 95 }
+}
+MOD = {
+	color = rgb { 15 71 175 }
+	color_ui = rgb { 15 71 175 } 
+}
+BOH = {
+	color = rgb { 170 100 50 }
+	color_ui = rgb { 170 100 50 } 
+}
+WAL = {
+	color = rgb { 5 150 150 }
+	color_ui = rgb { 5 150 150 }
+}
+ITA = {
+	color = rgb { 124 89 143 }
+	color_ui = rgb { 124 89 143 }
+}
 
 GEO_ARM = {
 	color = rgb { 255  150  100 }
@@ -69,6 +93,14 @@ CMT_VND = {
 	color_ui = rgb { 150 200 200 }
 }
 PRS_VND = {
+	color = rgb { 150 200 200 }
+	color_ui = rgb { 150 200 200 }
+}
+PRV_VND = {
+	color = rgb { 150 200 200 }
+	color_ui = rgb { 150 200 200 }
+}
+FLA_VND = {
 	color = rgb { 150 200 200 }
 	color_ui = rgb { 150 200 200 }
 }
@@ -129,11 +161,11 @@ TTS_exile = {
 	color_ui = rgb { 255 155 65 }
 }
 HAN_PRE = {
-	color = rgb { 39 35 71 }
+	color = rgb { 160 160 160 }
 	color_ui = rgb { 160  160  160 }
 }
 SXL_PRE = {
-	color = rgb { 39 35 71 }
+	color = rgb { 160 160 160 }
 	color_ui = rgb { 160  160  160 }
 }
 TAM = {
@@ -149,40 +181,40 @@ TAM_nazbol = {
 	color_ui = rgb { 0 162 234 }
 }
 NEU_PRE = {
-	color = rgb { 39 35 71 }
+	color = rgb { 160 160 160 }
 	color_ui = rgb { 160  160  160 }
 }
 STR_PRE = {
-	color = rgb { 39 35 71 }
+	color = rgb { 160 160 160 }
 	color_ui = rgb { 160  160  160 }
 }
 HOH_PRE = {
-	color = rgb { 39 35 71 }
+	color = rgb { 160 160 160 }
 	color_ui = rgb { 160  160  160 }
 }
 ANS_PRE = {
-	color = rgb { 39 35 71 }
+	color = rgb { 160 160 160 }
 	color_ui = rgb { 160  160  160 }
 }
 BYR_PRE = {
-	color = rgb { 39 35 71 }
+	color = rgb { 160 160 160 }
 	color_ui = rgb { 160  160  160 }
 }
 NOR_DEN = {
-	color = rgb { 140 40 40 }
-	color_ui = rgb { 140 40 40 }
+	color = rgb { 200 40 40 }
+	color_ui = rgb { 200 40 40 }
 }
 SXL_DEN = {
-	color = rgb { 140 40 40 }
-	color_ui = rgb { 140 40 40 }
+	color = rgb { 200 40 40 }
+	color_ui = rgb { 200 40 40 }
 }
 HLS_DEN = {
-	color = rgb { 140 40 40 }
-	color_ui = rgb { 140 40 40 }
+	color = rgb { 200 40 40 }
+	color_ui = rgb { 200 40 40 }
 }
 SHL_DEN = {
-	color = rgb { 140 40 40 }
-	color_ui = rgb { 140 40 40 }
+	color = rgb { 200 40 40 }
+	color_ui = rgb { 200 40 40 }
 }
 SGC = {
 	color = rgb { 0 152 212 }
@@ -212,7 +244,7 @@ bulgaria_romania = {
 	color = rgb { 120 196 72 }
 	color_ui = rgb { 255 255 120 }
 }
-WAL_MOL_TRA_romania = {
+ROM_MOL_TRA_romania = {
 	color = rgb { 215 196 72 }
 	color_ui = rgb { 255 255 120 }
 }
@@ -304,7 +336,7 @@ POL_SWE = {
 	color = rgb { 0 106 168 }
 	color_ui = rgb { 0 106 168 }
 }
-COU_SWE = {
+ITA_SWE = {
 	color = rgb { 0 106 168 }
 	color_ui = rgb { 0 106 168 }
 }
@@ -324,7 +356,7 @@ LIT_POL = {
 	color = rgb { 214 102 139 }
 	color_ui = rgb { 255 120 138 }
 }
-COU_POL = {
+ITA_POL = {
 	color = rgb { 214 102 139 }
 	color_ui = rgb { 255 120 138 }
 }
@@ -409,6 +441,10 @@ USA_ENG = {
 	color_ui = rgb { 150 0 0 }
 }
 PAP_FRA_napoleon = {
+	color = rgb { 0 85 164 }
+	color_ui = rgb { 74 147 255 }
+}
+NEU_FRA = {
 	color = rgb { 0 85 164 }
 	color_ui = rgb { 74 147 255 }
 }
@@ -608,6 +644,10 @@ GEO_RUS = {
 	color = rgb { 23 103 46 }
 	color_ui = rgb { 23 103 46 }
 }
+BLR_partisans = {
+	color = rgb { 23 203 46 }
+	color_ui = rgb { 23 203 46 }
+}
 BSK_RUS_autonomy = {
 	color = rgb { 23 103 46 }
 	color_ui = rgb { 23 103 46 }
@@ -648,7 +688,7 @@ UKR_RUS = {
 	color = rgb { 23 103 46 }
 	color_ui = rgb { 23 103 46 }
 }
-COU_RUS = {
+LAT_RUS = {
 	color = rgb { 23 103 46 }
 	color_ui = rgb { 23 103 46 }
 }
@@ -781,6 +821,14 @@ LOU_SPR = {
 	color_ui = rgb { 255 255 122 }
 }
 BRA_POR = {
+	color = rgb { 39 116 70 }
+	color_ui = rgb { 51 151 91 }
+}
+GLC_POR_leon = {
+	color = rgb { 39 116 70 }
+	color_ui = rgb { 51 151 91 }
+}
+ADU_POR_gibraltar = {
 	color = rgb { 39 116 70 }
 	color_ui = rgb { 51 151 91 }
 }

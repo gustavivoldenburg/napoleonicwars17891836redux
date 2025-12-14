@@ -9,7 +9,7 @@ country_event = {
 	id = ottomanempire_1789_event.1
 	title = "Death of Muhammad ibn Abd al-Wahhab"
 	desc = ottomanempire_1789_event.1.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {
 date > 1792.1.1 date < 1792.2.2

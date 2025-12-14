@@ -9,7 +9,7 @@ country_event = {
 	id = russianempire_1789_1812.1
 	title = "The Annexation of Kartli-Kakheti"
 	desc = russianempire_1789_1812.1.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 
 fire_only_once = yes
@@ -46,7 +46,7 @@ fire_only_once = yes
 	id = russianempire_1789_1812.3
 	title = "Kartli Kakheti"
 	desc = russianempire_1789_1812.3.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 
 fire_only_once = yes
@@ -73,7 +73,7 @@ fire_only_once = yes
 	id = russianempire_1789_1812.5
 	title = "Kartli Kahkheti"
 	desc = russianempire_1789_1812.5.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 
 fire_only_once = yes
@@ -98,7 +98,7 @@ fire_only_once = yes
 	id = russianempire_1789_1812.6
 	title = "The Treaty of Gulistan"
 	desc = russianempire_1789_1812.6.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {
 tag = RUS
@@ -187,16 +187,16 @@ is_owned_by=RUS
 add_core_of=RUS
 }
 		RUS={
-		BAK = {
+		AZR = {
 			every_unit_leader = {
 				set_nationality = RUS
 			}
 		}
-		annex_country = { target = BAK transfer_troops = yes }
+		annex_country = { target = AZR transfer_troops = yes }
 	}
 every_state={
 limit={
-is_core_of=BAK
+is_core_of=AZR
 is_owned_by=RUS
 }
 add_core_of=RUS
@@ -207,7 +207,7 @@ add_core_of=RUS
 	id = russianempire_1789_1812.7
 	title = "The treaty of Sistova"
 	desc = russianempire_1789_1812.7.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -230,7 +230,7 @@ tag = AUS
 	id = russianempire_1789_1812.15
 	title = "The treaty of Sistova"
 	desc = russianempire_1789_1812.15.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {
 tag = AUS
@@ -265,7 +265,7 @@ tag = AUS
 	id = russianempire_1789_1812.16
 	title = "The treaty of Jassy"
 	desc = russianempire_1789_1812.16.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {
 tag = RUS
@@ -312,7 +312,7 @@ tag = SER
 	id = russianempire_1789_1812.17
 	title = "The treaty of Jassy"
 	desc = russianempire_1789_1812.17.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {
 tag = RUS
@@ -365,9 +365,9 @@ tag = SER
 	}
 				country_event = {
 	id = russianempire_1789_1812.8
-	title = "2nd Partion of Poland"
+	title = "2nd Partition of Poland"
 	desc = russianempire_1789_1812.8.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {
 tag = RUS
@@ -381,7 +381,7 @@ or = {
 }
 fire_only_once = yes
 	option = { # 
-		name = "2nd Partion of Poland"
+		name = "2nd Partition of Poland"
 		ai_chance = { factor = 100 } 
 RUS={
 	    set_autonomy = {
@@ -392,7 +392,7 @@ RUS={
 }
 RUS={
 	    set_autonomy = {
-        target = COU
+        target = LAT
         autonomous_state = autonomy_protectorate
         freedom_level = 0.2
 	}
@@ -413,26 +413,29 @@ every_country = {
 	id = russianempire_1789_1812.9
 	title = "3rd partion of Poland"
 	desc = russianempire_1789_1812.9.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {
 tag = RUS
-has_war_with = MSV
 RUS={has_country_flag=MSV_war_POL_war_RUS}
 or={
 and={
     date > 1794.1.1 date < 1794.11.16 
 	MSV = {surrender_progress > 0.2 }
+has_war_with = MSV
 }
 and={
 date > 1794.11.16 date < 1800.1.1
-NOT={MSV={controls_state=90}}
+has_war_with = MSV
+}
+and={
+date > 1794.11.16 date < 1800.1.1
 }
 }
 }
 fire_only_once = yes
 	option = { # 
-		name = "3rd Partion of Poland"
+		name = "3rd Partition of Poland"
 		ai_chance = { factor = 100 } 
 hidden_effect = {
 POL={annex_country = { target = MSV transfer_troops = no}}
@@ -462,7 +465,7 @@ every_country = {
 	id = russianempire_1789_1812.10
 	title = "Peace Between Sweden and Denmark"
 	desc = russianempire_1789_1812.10.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {
 tag = DEN
@@ -492,7 +495,7 @@ every_country = {
 	id = russianempire_1789_1812.14
 	title = "Peace Between Sweden and Denmark"
 	desc = russianempire_1789_1812.14.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {
 tag = DEN
@@ -521,7 +524,7 @@ every_country = {
 	id = russianempire_1789_1812.11
 	title = "Annexation of Courland into the Russian Empire"
 	desc = russianempire_1789_1812.11.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -531,19 +534,19 @@ fire_only_once = yes
     add_state_core = 190
 	add_state_core = 809
 	}
-	COU={
+	LAT={
     remove_state_core = 190
 	remove_state_core = 809
 	}
-	RUS={annex_country = { target = COU transfer_troops = yes }}
+	RUS={annex_country = { target = LAT transfer_troops = yes }}
 	}
 		option = { # 
 		name = "Don't Accept Russian Annexation of Courland"
 		ai_chance = { factor = 0 } 
-		COU={set_cosmetic_tag=COU}
+		LAT={set_cosmetic_tag=LAT}
 		RUS={
 	set_autonomy = {
-        target = COU
+        target = LAT
         autonomous_state = autonomy_free
         freedom_level = 0.4
 	}
@@ -555,7 +558,7 @@ fire_only_once = yes
 	id = russianempire_1789_1812.12
 	title = "Sweden sues for Peace"
 	desc = russianempire_1789_1812.12.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {
 tag = RUS
@@ -582,7 +585,7 @@ every_country = {
 	id = russianempire_1789_1812.13
 	title = "Sweden sues for Peace"
 	desc = russianempire_1789_1812.13.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {
 tag = RUS
@@ -615,21 +618,22 @@ every_country = {
 	id = russianempire_1789_1812.18
 	title = "Peace out with Wallachia and Moldavia"
 	desc = russianempire_1789_1812.18.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {
+NOT={RUS={has_country_flag=russia_has_peace_wal_mol_before_war}}
 tag = RUS
 country_exists=MOL
-country_exists=WAL
+country_exists=ROM
 country_exists=TUR
     date > 1789.1.1 date < 1800.1.1
 	has_war_with = TUR
 	has_war_with = MOL
-	has_war_with = WAL
+	has_war_with = ROM
 	or={
-	WAL = {surrender_progress > 0.1 }
+	ROM = {surrender_progress > 0.1 }
 	MOL = {surrender_progress > 0.1 }
-WAL={
+ROM={
 	casualties_inflicted_by = {
     opponent = RUS
     thousands > 10
@@ -647,10 +651,11 @@ fire_only_once = yes
 	option = { # 
 		name = "Negiotable Peace"
 		ai_chance = { factor = 100 } 
+RUS={set_country_flag=russia_has_peace_wal_mol_before_war}
 every_country = {
   limit = {
 or={
-  tag=WAL
+  tag=ROM
   tag=MOL
   }
   }
@@ -663,7 +668,7 @@ or={
 	id = russianempire_1789_1812.19
 	title = "The Kościuszko Uprising"
 	desc = russianempire_1789_1812.19.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {
     date > 1794.3.24 date < 1795.1.1 
@@ -701,7 +706,7 @@ fire_only_once = yes
 	id = russianempire_1789_1812.20
 	title = "The Kościuszko Uprising"
 	desc = russianempire_1789_1812.20.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -727,7 +732,7 @@ declare_war_on = {
 	id = russianempire_1789_1812.21
 	title = "The Kościuszko Uprising"
 	desc = russianempire_1789_1812.21.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {
     date > 1789.1.1 date < 1795.1.1 
@@ -754,7 +759,7 @@ MSV={add_manpower = 50000 load_oob = "MSV_1789"}
 	id = russianempire_1789_1812.22
 	title = "Surrender of the Serbian Uprising"
 	desc = russianempire_1789_1812.22.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -779,7 +784,7 @@ white_peace = SER
 	id = russianempire_1789_1812.23
 	title = "The Death of Catherine the Great"
 	desc = russianempire_1789_1812.23.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {
     date > 1796.11.17 date < 1797.1.1 
@@ -802,7 +807,7 @@ fire_only_once = yes
 	id = russianempire_1789_1812.24
 	title = "Restoration of the House of Holstein-Gottorp Oldenburg in Sweden"
 	desc = russianempire_1789_1812.24.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {
 tag=RUS
@@ -852,7 +857,7 @@ fire_only_once = yes
 	id = russianempire_1789_1812.25
 	title = "The Modest Success of the Greek Plan"
 	desc = russianempire_1789_1812.25.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {
 tag=RUS
@@ -871,7 +876,7 @@ TUR = {surrender_progress > 0.5 }
 fire_only_once = yes
 	option = { # 
 	RUS={set_country_flag=RUS_has_won_the_greek_plan_flag}
-	WAL={set_cosmetic_tag=WAL_RUS}
+	ROM={set_cosmetic_tag=WAL_RUS}
 	MOL={set_cosmetic_tag=MOL_RUS}
 	RUS={set_country_flag=won_the_greek_plan_war}
 		name = "The Treaty of Athens"
@@ -883,7 +888,7 @@ fire_only_once = yes
         freedom_level = 0.2
 	}
 				    set_autonomy = {
-        target = WAL
+        target = ROM
         autonomous_state = autonomy_protectorate
         freedom_level = 0.2
 	}
@@ -899,7 +904,7 @@ fire_only_once = yes
 		transfer_state = 1204
 		transfer_state = 1228
 		}
-		WAL={
+		ROM={
 		transfer_state = 890
 		}
 		MOL={
@@ -932,7 +937,7 @@ white_peace = RUS
 }
 	option = { # 
 	RUS={set_country_flag=RUS_has_won_the_greek_plan_flag}
-	WAL={set_cosmetic_tag=WAL_RUS}
+	ROM={set_cosmetic_tag=WAL_RUS}
 	MOL={set_cosmetic_tag=MOL_RUS}
 		name = "The Treaty of Salonika"
 		ai_chance = { factor = 25 } 
@@ -943,7 +948,7 @@ white_peace = RUS
         freedom_level = 0.2
 	}
 				    set_autonomy = {
-        target = WAL
+        target = ROM
         autonomous_state = autonomy_protectorate
         freedom_level = 0.2
 	}
@@ -959,7 +964,7 @@ white_peace = RUS
 		transfer_state = 1204
 		transfer_state = 1228
 		}
-		WAL={
+		ROM={
 		transfer_state = 890
 		}
 		MOL={
@@ -992,7 +997,7 @@ white_peace = RUS
 }
 	option = { # 
 	RUS={set_country_flag=RUS_has_won_the_greek_plan_flag}
-	WAL={set_cosmetic_tag=WAL_RUS}
+	ROM={set_cosmetic_tag=WAL_RUS}
 	MOL={set_cosmetic_tag=MOL_RUS}
 		name = "The Treaty of Trebizond"
 		ai_chance = { factor = 25 } 
@@ -1003,7 +1008,7 @@ white_peace = RUS
         freedom_level = 0.2
 	}
 				    set_autonomy = {
-        target = WAL
+        target = ROM
         autonomous_state = autonomy_protectorate
         freedom_level = 0.2
 	}
@@ -1019,7 +1024,7 @@ white_peace = RUS
 		transfer_state = 1204
 		transfer_state = 1228
 		}
-		WAL={
+		ROM={
 		transfer_state = 890
 		}
 		MOL={
@@ -1052,7 +1057,7 @@ white_peace = RUS
 }
 	option = { # 
 	RUS={set_country_flag=RUS_has_won_the_greek_plan_flag}
-	WAL={set_cosmetic_tag=WAL_RUS}
+	ROM={set_cosmetic_tag=WAL_RUS}
 	MOL={set_cosmetic_tag=MOL_RUS}
 		name = "The Treaty of Constantinople"
 		RUS={add_political_power=-150}
@@ -1064,7 +1069,7 @@ white_peace = RUS
         freedom_level = 0.2
 	}
 				    set_autonomy = {
-        target = WAL
+        target = ROM
         autonomous_state = autonomy_protectorate
         freedom_level = 0.2
 	}
@@ -1080,7 +1085,7 @@ white_peace = RUS
 		transfer_state = 1204
 		transfer_state = 1228
 		}
-		WAL={
+		ROM={
 		transfer_state = 890
 		}
 		MOL={
@@ -1124,7 +1129,7 @@ white_peace = RUS
 	id = russianempire_1789_1812.26
 	title = "Peace with Circassia"
 	desc = russianempire_1789_1812.26.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {
 tag = RUS
@@ -1155,7 +1160,7 @@ every_country = {
 	id = russianempire_1789_1812.27
 	title = "Fire of Moscow"
 	desc = russianempire_1789_1812.27.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {
 tag = RUS
@@ -1191,7 +1196,7 @@ fire_only_once = yes
 	id = russianempire_1789_1812.28
 	title = "Annexation of Bratslav"
 	desc = russianempire_1789_1812.28.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -1211,7 +1216,7 @@ fire_only_once = yes
 	id = russianempire_1789_1812.29
 	title = "Annexation of Kiev"
 	desc = russianempire_1789_1812.29.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -1231,7 +1236,7 @@ fire_only_once = yes
 	id = russianempire_1789_1812.30
 	title = "Annexation of Caucasia"
 	desc = russianempire_1789_1812.30.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -1253,7 +1258,7 @@ fire_only_once = yes
 	id = russianempire_1789_1812.31
 	title = "Annexation of Ufa"
 	desc = russianempire_1789_1812.31.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -1266,7 +1271,7 @@ fire_only_once = yes
 	id = russianempire_1789_1812.32
 	title = "Peace with Iran"
 	desc = russianempire_1789_1812.32.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -1291,7 +1296,7 @@ QAJ={
 	id = russianempire_1789_1812.33
 	title = "The Critics of Catherine the Great"
 	desc = russianempire_1789_1812.31.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -1303,7 +1308,7 @@ fire_only_once = yes
 	id = russianempire_1789_1812.34
 	title = "Integration of Orenburg"
 	desc = russianempire_1789_1812.34.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -1326,7 +1331,7 @@ RUS={transfer_state=652}
 	id = russianempire_1789_1812.35
 	title = "Jacobite Exiles in Russia"
 	desc = russianempire_1789_1812.35.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -1342,7 +1347,7 @@ fire_only_once = yes
 	id = russianempire_1789_1812.36
 	title = "Russian support of Jacobites"
 	desc = russianempire_1789_1812.36.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -1372,7 +1377,7 @@ fire_only_once = yes
 	id = russianempire_1789_1812.37
 	title = "The Greek Plan"
 	desc = russianempire_1789_1812.37.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -1398,7 +1403,7 @@ fire_only_once = yes
 	id = russianempire_1789_1812.38
 	title = "The Polish–Russian War of 1792"
 	desc = russianempire_1789_1812.38.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -1415,7 +1420,7 @@ declare_war_on = {
 	id = russianempire_1789_1812.39
 	title = "Proclaim a Successor"
 	desc = russianempire_1789_1812.39.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -1438,7 +1443,7 @@ set_country_flag=zubov_successor_flag
 	id = russianempire_1789_1812.40
 	title = "the Kościuszko Uprising"
 	desc = russianempire_1789_1812.40.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -1457,7 +1462,7 @@ declare_war_on = {
 	id = russianempire_1789_1812.41
 	title = "Greater Poland uprising of 1806"
 	desc = russianempire_1789_1812.41.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {
 tag = PRE
@@ -1483,7 +1488,7 @@ declare_war_on = {
 	id = russianempire_1789_1812.42
 	title = "Greater Poland uprising of 1806"
 	desc = russianempire_1789_1812.42.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -1521,7 +1526,7 @@ set_province_controller = 11558
 	id = russianempire_1789_1812.43
 	title = "The Anapa Campaign"
 	desc = russianempire_1789_1812.43.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -1551,7 +1556,7 @@ fire_only_once = yes
 	id = russianempire_1789_1812.44
 	title = "Strategy to take Odessa"
 	desc = russianempire_1789_1812.44.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -1567,7 +1572,7 @@ fire_only_once = yes
 	id = russianempire_1789_1812.45
 	title = "The Russian Merchants"
 	desc = russianempire_1789_1812.45.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -1591,7 +1596,7 @@ random_owned_controlled_state={
 	id = russianempire_1789_1812.46
 	title = "Crushing of the Sheikh Mansur Movement"
 	desc = russianempire_1789_1812.46.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -1611,7 +1616,7 @@ every_country = {
 	id = russianempire_1789_1812.47
 	title = "Greek Emigration to Russia"
 	desc = russianempire_1789_1812.47.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -1714,7 +1719,7 @@ fire_only_once = yes
 	id = russianempire_1789_1812.48
 	title = "Settlement of Germans in the Volga Region"
 	desc = russianempire_1789_1812.48.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -1882,7 +1887,7 @@ fire_only_once = yes
 	id = russianempire_1789_1812.49
 	title = "Rewarding the Cossacks"
 	desc = russianempire_1789_1812.49.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -1903,7 +1908,7 @@ fire_only_once = yes
 	id = russianempire_1789_1812.50
 	title = "Abolishment of all the Institutions of the Crimean Khanate"
 	desc = russianempire_1789_1812.50.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -1917,7 +1922,7 @@ fire_only_once = yes
 	id = russianempire_1789_1812.51
 	title = "Establishment of the Pale of Settlement"
 	desc = russianempire_1789_1812.51.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -1949,7 +1954,7 @@ random_owned_controlled_state = {
 	id = russianempire_1789_1812.52
 	title = "Strengthening the Russian Navy"
 	desc = russianempire_1789_1812.52.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -1972,7 +1977,7 @@ add_war_support=0.05
 	id = russianempire_1789_1812.53
 	title = "Russian Integration of Yedisan"
 	desc = russianempire_1789_1812.53.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -2018,7 +2023,7 @@ fire_only_once = yes
 	id = russianempire_1789_1812.54
 	title = "The Armenians of Rostov"
 	desc = russianempire_1789_1812.54.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -2042,7 +2047,7 @@ ARM={add_war_support=0.01}
 	id = russianempire_1789_1812.55
 	title = "The War Between Sweden and Russia"
 	desc = russianempire_1789_1812.55.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -2058,27 +2063,27 @@ fire_only_once = yes
 	id = russianempire_1789_1812.56
 	title = "Establishment of the Kingdom of Dacia"
 	desc = russianempire_1789_1812.56.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
 		name = "Potemkin's own Domain"
 		ai_chance = { factor = 100 } 
-	WAL={set_country_flag=WAL_dacia_romania_has_been_formed_flag}
-    WAL={set_cosmetic_tag=kingdom_of_dacia}
-	WAL={promote_character=WAL_grigory_potemkin}
-	WAL={set_party_name = { ideology = neutrality long_name = WAL_POT_neutrality_party_long name = WAL_POT_neutrality_party }}
-	WAL={annex_country = { target = MOL transfer_troops = yes }}
+	ROM={set_country_flag=ROM_dacia_romania_has_been_formed_flag}
+    ROM={set_cosmetic_tag=kingdom_of_dacia}
+	ROM={promote_character=ROM_grigory_potemkin}
+	ROM={set_party_name = { ideology = neutrality long_name = ROM_POT_neutrality_party_long name = ROM_POT_neutrality_party }}
+	ROM={annex_country = { target = MOL transfer_troops = yes }}
     every_state={
 	limit={
 	NOT={is_owned_by=BKV}
 	or={
-	is_core_of=WAL
+	is_core_of=ROM
 	is_core_of=MOL
 	}
 	}
-	transfer_state_to = WAL
-	add_core_of=WAL
+	transfer_state_to = ROM
+	add_core_of=ROM
 	}
 	    every_state={
 	limit={
@@ -2093,7 +2098,7 @@ fire_only_once = yes
 	id = russianempire_1789_1812.57
 	title = "Greek War of Independence"
 	desc = russianempire_1789_1812.57.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -2105,7 +2110,7 @@ fire_only_once = yes
 	id = russianempire_1789_1812.58
 	title = "The 2nd Greek Plan"
 	desc = russianempire_1789_1812.58.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -2352,7 +2357,7 @@ fire_only_once = yes
 	id = russianempire_1789_1812.59
 	title = "The Orenburg Muslim Spiritual Assembly"
 	desc = russianempire_1789_1812.59.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -2364,7 +2369,7 @@ fire_only_once = yes
 	id = russianempire_1789_1812.60
 	title = "The Assasination of Paul I"
 	desc = russianempire_1789_1812.60.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {
 tag = RUS
@@ -2393,7 +2398,7 @@ fire_only_once = yes
 	id = russianempire_1789_1812.61
 	title = "Greek War of Independence"
 	desc = russianempire_1789_1812.61.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -2405,7 +2410,7 @@ fire_only_once = yes
 	id = russianempire_1789_1812.62
 	title = "Greek War of Independence"
 	desc = russianempire_1789_1812.62.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -2417,7 +2422,7 @@ fire_only_once = yes
 	id = russianempire_1789_1812.63
 	title = "Greek Revolts"
 	desc = russianempire_1789_1812.63.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -2451,7 +2456,7 @@ fire_only_once = yes
 	id = russianempire_1789_1812.64
 	title = "End of the Pashalik of Yanina"
 	desc = russianempire_1789_1812.64.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {
 GRE={has_country_flag=greek_war_of_independence_flag}
@@ -2477,7 +2482,7 @@ fire_only_once = yes
 	id = russianempire_1789_1812.65
 	title = "Treaty of Adrianople"
 	desc = russianempire_1789_1812.65.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {
 GRE={has_country_flag=greek_war_of_independence_flag}
@@ -2531,7 +2536,7 @@ if = {
 	GRE={transfer_state=47}
 	GRE={transfer_state=947}
 	GRE={transfer_state=971}
-    WAL={set_cosmetic_tag=WAL_RUS}
+    ROM={set_cosmetic_tag=WAL_RUS}
 	MOL={set_cosmetic_tag=MOL_RUS}
 	RUS={
 	    set_autonomy = {
@@ -2542,7 +2547,7 @@ if = {
 }
 RUS={
 	    set_autonomy = {
-        target = WAL
+        target = ROM
         autonomous_state = autonomy_protectorate
         freedom_level = 0.2
 	}
@@ -2579,7 +2584,7 @@ if = {
 	GRE={transfer_state=47}
 	GRE={transfer_state=947}
 	GRE={transfer_state=971}
-    WAL={set_cosmetic_tag=WAL_RUS}
+    ROM={set_cosmetic_tag=WAL_RUS}
 	MOL={set_cosmetic_tag=MOL_RUS}
 	RUS={
 	    set_autonomy = {
@@ -2590,7 +2595,7 @@ if = {
 }
 RUS={
 	    set_autonomy = {
-        target = WAL
+        target = ROM
         autonomous_state = autonomy_protectorate
         freedom_level = 0.2
 	}
@@ -2602,7 +2607,7 @@ RUS={
 	id = russianempire_1789_1812.66
 	title = "Annexation of Yanina?"
 	desc = russianempire_1789_1812.66.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -2637,7 +2642,7 @@ fire_only_once = yes
 	id = russianempire_1789_1812.67
 	title = "The Imperial Philanthropic Society"
 	desc = russianempire_1789_1812.67.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 	trigger = {
 tag = RUS
@@ -2656,7 +2661,7 @@ fire_only_once = yes
 	id = russianempire_1789_1812.68
 	title = "The Great Podil fire"
 	desc = russianempire_1789_1812.68.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 	trigger = {
 tag = RUS
@@ -2690,7 +2695,7 @@ fire_only_once = yes
 	id = russianempire_1789_1812.69
 	title = "Annexation of Yanina?"
 	desc = russianempire_1789_1812.69.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -2702,7 +2707,7 @@ fire_only_once = yes
 	id = russianempire_1789_1812.70
 	title = "Annexation of Yanina?"
 	desc = russianempire_1789_1812.70.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -2714,7 +2719,7 @@ fire_only_once = yes
 	id = russianempire_1789_1812.71
 	title = "Annexation of Yanina?"
 	desc = russianempire_1789_1812.71.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -2726,7 +2731,7 @@ fire_only_once = yes
 	id = russianempire_1789_1812.72
 	title = "Nicholas I Marriage"
 	desc = russianempire_1789_1812.72.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 	trigger = {
 tag = RUS
@@ -2744,18 +2749,18 @@ fire_only_once = yes
 	id = russianempire_1789_1812.73
 	title = "Fate of Courland?"
 	desc = russianempire_1789_1812.73.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
 		name = "Annex it"
 		ai_chance = { factor = 100 }	
 	POL={add_political_power=-25}
-	COU={add_political_power=-25}
-	COU={set_cosmetic_tag=COU_RUS}
+	LAT={add_political_power=-25}
+	LAT={set_cosmetic_tag=LAT_RUS}
 	RUS={
 		    set_autonomy = {
-        target = COU
+        target = LAT
         autonomous_state = autonomy_protectorate
         freedom_level = 0.2
 	}
@@ -2765,11 +2770,11 @@ fire_only_once = yes
 		name = "Puppet it"
 		ai_chance = { factor = 0 }	
 	POL={add_political_power=-50}
-	COU={add_political_power=-50}
-	COU={set_cosmetic_tag=COU_RUS}
+	LAT={add_political_power=-50}
+	LAT={set_cosmetic_tag=LAT_RUS}
 		RUS={
 		    set_autonomy = {
-        target = COU
+        target = LAT
         autonomous_state = autonomy_protectorate
         freedom_level = 0.2
 	}
@@ -2781,7 +2786,7 @@ fire_only_once = yes
 	id = russianempire_1789_1812.74
 	title = "Russian Claim on the Pacific Coast"
 	desc = russianempire_1789_1812.74.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -2817,7 +2822,7 @@ add_state_claim = 892
 	id = russianempire_1789_1812.75
 	title = "Courland Reject's Russian Ambition"
 	desc = russianempire_1789_1812.75.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -2825,7 +2830,7 @@ fire_only_once = yes
 		ai_chance = { factor = 100 }	
 	RUS = {
 	declare_war_on = {
-		target = COU
+		target = LAT
 		type = annex_everything
 	}
 	}
@@ -2836,7 +2841,7 @@ fire_only_once = yes
 	id = russianempire_1789_1812.76
 	title = "Completion of the Tauride Palace"
 	desc = russianempire_1789_1812.76.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -2875,7 +2880,7 @@ fire_only_once = yes
 	id = russianempire_1789_1812.77
 	title = "Completion of the St. Vladimir's Cathedral"
 	desc = russianempire_1789_1812.77.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -2917,7 +2922,7 @@ fire_only_once = yes
 	id = russianempire_1789_1812.78
 	title = "Ioannis Varvakis Seafood Business"
 	desc = russianempire_1789_1812.78.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {
 tag = RUS
@@ -2972,7 +2977,7 @@ fire_only_once = yes
 	id = russianempire_1789_1812.79
 	title = "Seperation of Finland from Sweden?"
 	desc = russianempire_1789_1812.79.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -2992,7 +2997,7 @@ fire_only_once = yes
 	id = russianempire_1789_1812.80
 	title = "The Journey from St. Petersburg to Moscow"
 	desc = russianempire_1789_1812.80.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {
 tag = RUS
@@ -3012,7 +3017,7 @@ fire_only_once = yes
 	id = russianempire_1789_1812.81
 	title = "The Fate of Aleksander Nikolayevich Radishchev"
 	desc = russianempire_1789_1812.81.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -3032,7 +3037,7 @@ fire_only_once = yes
 	id = russianempire_1789_1812.82
 	title = "The Quite Liberal situation in Russia today"
 	desc = russianempire_1789_1812.82.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -3045,7 +3050,7 @@ fire_only_once = yes
 	id = russianempire_1789_1812.83
 	title = "The Quite Liberal situation in Russia today"
 	desc = russianempire_1789_1812.83.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -3057,7 +3062,7 @@ fire_only_once = yes
 	id = russianempire_1789_1812.84
 	title = "The Quite Liberal situation in Russia today"
 	desc = russianempire_1789_1812.84.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -3069,7 +3074,7 @@ fire_only_once = yes
 	id = russianempire_1789_1812.85
 	title = "The Russian Empire's Ambitions in Sakhalin"
 	desc = russianempire_1789_1812.85.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -3092,7 +3097,7 @@ fire_only_once = yes
 	id = russianempire_1789_1812.86
 	title = "Further American Ambition"
 	desc = russianempire_1789_1812.86.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -3104,7 +3109,7 @@ fire_only_once = yes
 	id = russianempire_1789_1812.87
 	title = "The Russian Greek Plan"
 	desc = russianempire_1789_1812.87.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {
 RUS={has_country_flag=greek_plan_althistory_flag}
@@ -3142,7 +3147,7 @@ fire_only_once = yes
 	id = russianempire_1789_1812.88
 	title = "British Intervention in the Ottoman Empire"
 	desc = russianempire_1789_1812.88.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
     is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -3156,7 +3161,7 @@ fire_only_once = yes
 	id = russianempire_1789_1812.89
 	title = "Russian Annexation of Sakhalin"
 	desc = russianempire_1789_1812.89.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
     is_triggered_only = yes
 fire_only_once = no
 	option = { # 
@@ -3169,7 +3174,7 @@ fire_only_once = no
 	id = russianempire_1789_1812.90
 	title = "Securing the Ural River"
 	desc = russianempire_1789_1812.90.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
     is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -3214,7 +3219,7 @@ remove_dynamic_modifier = { modifier = khiva_slavetrade_russia }
 	id = russianempire_1789_1812.91
 	title = "Morean Revolt"
 	desc = russianempire_1789_1812.91.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
     is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -3251,7 +3256,7 @@ GRE_greek_war_of_independence
 	id = russianempire_1789_1812.92
 	title = "Ferdinand von Hompesch zu Bolheim Letters to Austria and Russia"
 	desc = russianempire_1789_1812.92.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {
 tag = MLT
@@ -3269,7 +3274,7 @@ fire_only_once = yes
 	id = russianempire_1789_1812.93
 	title = "Ferdinand von Hompesch zu Bolheim Letters to Austria"
 	desc = russianempire_1789_1812.93.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -3295,7 +3300,7 @@ fire_only_once = yes
 	id = russianempire_1789_1812.94
 	title = "Abdication of Ferdinand von Hompesch zu"
 	desc = russianempire_1789_1812.94.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -3309,7 +3314,7 @@ fire_only_once = yes
 	id = russianempire_1789_1812.95
 	title = "Death of Emmanuel de Rohan-Polduc"
 	desc = russianempire_1789_1812.95.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {
 tag = MLT
@@ -3331,7 +3336,7 @@ fire_only_once = yes
 	id = russianempire_1789_1812.96
 	title = "Russian Empire Demands the Nootka Territory"
 	desc = russianempire_1789_1812.96.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -3360,7 +3365,7 @@ fire_only_once = yes
 	id = russianempire_1789_1812.97
 	title = "Nikolay Kmicykevich's Galician Article"
 	desc = russianempire_1789_1812.97.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {
 tag = RUS
@@ -3391,7 +3396,7 @@ fire_only_once = yes
 	id = russianempire_1789_1812.98
 	title = "The Death of Alexander I"
 	desc = russianempire_1789_1812.98.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {
 tag = RUS
@@ -3413,7 +3418,7 @@ fire_only_once = yes
 	id = russianempire_1789_1812.99
 	title = "The Manifesto of three-day corvee"
 	desc = russianempire_1789_1812.99.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -3430,7 +3435,7 @@ fire_only_once = yes
 	id = russianempire_1789_1812.100
 	title = "The Manifesto of three-day corvee"
 	desc = russianempire_1789_1812.100.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -3442,7 +3447,7 @@ fire_only_once = yes
 	id = russianempire_1789_1812.101
 	title = "The Manifesto of three-day corvee"
 	desc = russianempire_1789_1812.101.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -3454,7 +3459,7 @@ fire_only_once = yes
 	id = russianempire_1789_1812.102
 	title = "Paul I becomes Grandmaster of Malta"
 	desc = russianempire_1789_1812.102.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -3475,7 +3480,7 @@ fire_only_once = yes
 	id = russianempire_1789_1812.103
 	title = "Ukraine is now fully ours!"
 	desc = russianempire_1789_1812.103.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {
 tag = RUS
@@ -3533,7 +3538,7 @@ remove_core_of=UKR
 	id = russianempire_1789_1812.104
 	title = "Hosting Lotf Ali Zand"
 	desc = russianempire_1789_1812.104.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -3554,7 +3559,7 @@ news_event = per_1789_news.2
 	id = russianempire_1789_1812.105
 	title = "The Zands Emigrating to Russia"
 	desc = russianempire_1789_1812.105.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -3573,7 +3578,7 @@ fire_only_once = yes
 	id = russianempire_1789_1812.106
 	title = "Hosting Lotf Ali Zand"
 	desc = russianempire_1789_1812.106.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -3597,7 +3602,7 @@ fire_only_once = yes
 	id = russianempire_1789_1812.112
 	title = "Supressing the Freemasons"
 	desc = russianempire_1789_1812.112.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -3612,7 +3617,7 @@ fire_only_once = yes
 	id = russianempire_1789_1812.115
 	title = "Russian Ambition Regarding Bukovina"
 	desc = russianempire_1789_1812.115.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -3625,7 +3630,7 @@ fire_only_once = yes
 	id = russianempire_1789_1812.116
 	title = "Russian Ambition Regarding Bukovina"
 	desc = russianempire_1789_1812.116.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -3651,7 +3656,7 @@ fire_only_once = yes
 	id = russianempire_1789_1812.121
 	title = "The treaty of Kiel"
 	desc = russianempire_1789_1812.121.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {
 tag = DEN
@@ -3661,6 +3666,8 @@ fire_only_once = yes
 	option = { # 
 		name = "The Treaty of Kiel"
 		ai_chance = { factor = 100 }
+NOR={leave_faction=yes}
+DEN={leave_faction=yes}
 	DEN={
 	set_autonomy = {
         target = NOR
@@ -3683,9 +3690,8 @@ every_country = {
   }
   white_peace = NOR
 }
-NOR={leave_faction=yes}
-DEN={leave_faction=yes}
 }
+ENG={add_to_faction=DEN}
 	}
 
 	}
@@ -3693,7 +3699,7 @@ DEN={leave_faction=yes}
 	id = russianempire_1789_1812.122
 	title = "Russian Ambition Regarding Bukovina Failing" 
 	desc = russianempire_1789_1812.122.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -3705,7 +3711,7 @@ fire_only_once = yes
 	id = russianempire_1789_1812.123
 	title = "Austria Hands over Bukovina"
 	desc = russianempire_1789_1812.123.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -3730,7 +3736,7 @@ BKV={set_cosmetic_tag=BKV_RUS}
 	id = russianempire_1789_1812.124
 	title = "Formation of the Bourbon Papal Federation"
 	desc = russianempire_1789_1812.124.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -3783,7 +3789,7 @@ add_core_of=TTS
 	id = russianempire_1789_1812.125
 	title = "The Storming of Izmail"
 	desc = russianempire_1789_1812.125.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {
 tag = RUS
@@ -3813,7 +3819,7 @@ fire_only_once = yes
 	id = russianempire_1789_1812.126
 	title = "The Storming of Izmail"
 	desc = russianempire_1789_1812.126.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -3833,7 +3839,7 @@ fire_only_once = yes
 	id = russianempire_1789_1812.127
 	title = "The failure of the Greek Plan"
 	desc = russianempire_1789_1812.127.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {
 tag=RUS
@@ -3865,7 +3871,7 @@ white_peace = RUS
 	id = russianempire_1789_1812.128
 	title = "Independence of Yanina"
 	desc = russianempire_1789_1812.128.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -3912,7 +3918,7 @@ add_core_of=ALB
 	id = russianempire_1789_1812.129
 	title = "The Union of Georgia and Armenia"
 	desc = russianempire_1789_1812.129.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -3933,7 +3939,7 @@ add_core_of=GEO
 	id = russianempire_1789_1812.130
 	title = "The return of the Serbian Empire"
 	desc = russianempire_1789_1812.130.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -3982,7 +3988,7 @@ add_core_of=SER
 	id = russianempire_1789_1812.131
 	title = "The Bosnian uprising of 1831"
 	desc = russianempire_1789_1812.131.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {
     date > 1831.1.20 date < 1831.3.1 
@@ -4007,7 +4013,7 @@ BOS={set_cosmetic_tag=BOS_islam}
 	id = russianempire_1789_1812.132
 	title = "The Bosnian uprising of 1831"
 	desc = russianempire_1789_1812.132.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -4027,7 +4033,7 @@ BOS={add_manpower = 30000 load_oob = "BOS_1836"}
 	id = russianempire_1789_1812.133
 	title = "The Treaty of San Stefano"
 	desc = russianempire_1789_1812.133.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -4036,11 +4042,11 @@ fire_only_once = yes
 RUS={country_event = russianempire_1789_1812.134}
 every_state={
 limit={
-WAL={owns_state=46}
+ROM={owns_state=46}
 state=890
 }
-add_core_of=WAL
-transfer_state_to=WAL
+add_core_of=ROM
+transfer_state_to=ROM
 } 
 every_state={
 limit={
@@ -4131,11 +4137,11 @@ RUS={country_event = russianempire_1789_1812.135}
 	BUL={set_cosmetic_tag=san_stefano_bulgaria}
 every_state={
 limit={
-WAL={owns_state=46}
+ROM={owns_state=46}
 state=890
 }
-add_core_of=WAL
-transfer_state_to=WAL
+add_core_of=ROM
+transfer_state_to=ROM
 } 
 every_state={
 limit={
@@ -4222,7 +4228,7 @@ transfer_state_to=BUL
 	id = russianempire_1789_1812.134
 	title = "The Congress of Berlin"
 	desc = russianempire_1789_1812.134.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -4292,11 +4298,11 @@ transfer_state_to=SER
 } 
 	every_state={
 limit={
-WAL={owns_state=890}
+ROM={owns_state=890}
 state=974
 }
-add_core_of=WAL
-transfer_state_to=WAL
+add_core_of=ROM
+transfer_state_to=ROM
 } 
 every_state={
 limit={
@@ -4333,7 +4339,7 @@ transfer_state_to=RUS
 	id = russianempire_1789_1812.135
 	title = "The Congress of Berlin"
 	desc = russianempire_1789_1812.135.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -4403,11 +4409,11 @@ transfer_state_to=SER
 } 
 	every_state={
 limit={
-WAL={owns_state=890}
+ROM={owns_state=890}
 state=974
 }
-add_core_of=WAL
-transfer_state_to=WAL
+add_core_of=ROM
+transfer_state_to=ROM
 } 
 every_state={
 limit={
@@ -4467,7 +4473,7 @@ add_core_of=SER
 	id = russianempire_1789_1812.136
 	title = "Restore Autonomy to the Khanates?"
 	desc = russianempire_1789_1812.136.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -4584,7 +4590,7 @@ RUS={
 	id = russianempire_1789_1812.137
 	title = "the Second League of Armed Neutrality"
 	desc = russianempire_1789_1812.137.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -4599,7 +4605,7 @@ fire_only_once = yes
 	id = russianempire_1789_1812.138
 	title = "the Second League of Armed Neutrality"
 	desc = russianempire_1789_1812.138.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -4617,7 +4623,7 @@ DEN={set_country_flag=league_of_armed_neutrality_no}
 	id = russianempire_1789_1812.139
 	title = "the Second League of Armed Neutrality"
 	desc = russianempire_1789_1812.139.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -4635,7 +4641,7 @@ SWE={set_country_flag=league_of_armed_neutrality_no}
 	id = russianempire_1789_1812.140
 	title = "the Second League of Armed Neutrality"
 	desc = russianempire_1789_1812.140.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -4655,7 +4661,7 @@ PRE={set_country_flag=league_of_armed_neutrality_no}
 	id = russianempire_1789_1812.141
 	title = "The Succesful Second League of Armed Neutrality"
 	desc = russianempire_1789_1812.141.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {
 tag=RUS
@@ -4722,7 +4728,7 @@ give_guarantee = SWE
 	id = russianempire_1789_1812.142
 	title = "The Failure of the Second League of Armed Neutrality"
 	desc = russianempire_1789_1812.142.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {
 tag=RUS
@@ -4742,7 +4748,7 @@ fire_only_once = yes
 	id = russianempire_1789_1812.143
 	title = "Joining the 2nd Coalition"
 	desc = russianempire_1789_1812.143.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -4754,24 +4760,14 @@ fire_only_once = yes
 		type = annex_everything
 	}
 	}
-every_country = {
-  limit = {
-has_war_with=FRA
-is_faction_leader=yes
-  or={
-tag=AUS
-tag=ENG
-  }
-  }
-PREV={add_to_faction=RUS}
-}
+ENG={add_to_faction=RUS}
 	}
 	}
 								country_event = {
 	id = russianempire_1789_1812.144
 	title = "The Kutaisi-Tblisi Accords"
 	desc = russianempire_1789_1812.144.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -4784,7 +4780,7 @@ TUR={country_event = russianempire_1789_1812.145}
 	id = russianempire_1789_1812.145
 	title = "The Kutaisi-Tblisi Accords"
 	desc = russianempire_1789_1812.145.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -4802,7 +4798,7 @@ RUS={country_event = russianempire_1789_1812.147}
 	id = russianempire_1789_1812.146
 	title = "The Kutaisi-Tblisi Accords"
 	desc = russianempire_1789_1812.146.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -4875,7 +4871,7 @@ TUR={give_military_access = GEO}
 	id = russianempire_1789_1812.147
 	title = "The Kutaisi-Tblisi Accords fail"
 	desc = russianempire_1789_1812.147.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -4887,7 +4883,7 @@ country_event = {
 	id = russianempire_1789_1812.148
 	title = "The Annexation of Kartli-Kakheti"
 	desc = russianempire_1789_1812.148.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 
 fire_only_once = yes
@@ -4916,7 +4912,7 @@ country_event = {
 	id = russianempire_1789_1812.149
 	title = "The Annexation of Imereti"
 	desc = russianempire_1789_1812.149.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 
 fire_only_once = yes
@@ -4944,7 +4940,7 @@ add_core_of=RUS
 	id = russianempire_1789_1812.150
 	title = "The Annexation of Guria"
 	desc = russianempire_1789_1812.150.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 
 fire_only_once = yes
@@ -4973,7 +4969,7 @@ add_core_of=RUS
 	id = russianempire_1789_1812.151
 	title = "The Annexation of Svaneti"
 	desc = russianempire_1789_1812.151.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 
 fire_only_once = yes
@@ -5001,7 +4997,7 @@ add_core_of=RUS
 	id = russianempire_1789_1812.152
 	title = "The Annexation of Abkhazia"
 	desc = russianempire_1789_1812.152.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 
 fire_only_once = yes
@@ -5029,7 +5025,7 @@ add_core_of=RUS
 	id = russianempire_1789_1812.153
 	title = "The Annexation of Mingrelia"
 	desc = russianempire_1789_1812.153.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 
 fire_only_once = yes
@@ -5057,7 +5053,7 @@ add_core_of=RUS
 	id = russianempire_1789_1812.154
 	title = "The Western Georgian States"
 	desc = russianempire_1789_1812.154.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -5077,7 +5073,7 @@ RUS={set_country_flag=rus_wants_to_integrate_west_georgia}
 	id = russianempire_1789_1812.155
 	title = "The Treaty of Turkmenchay"
 	desc = russianempire_1789_1812.155.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {
 tag = RUS
@@ -5107,16 +5103,16 @@ every_country = {
   white_peace = QAJ
 }
 		RUS={
-		ERV = {
+		ARM = {
 			every_unit_leader = {
 				set_nationality = RUS
 			}
 		}
-		annex_country = { target = ERV transfer_troops = yes }
+		annex_country = { target = ARM transfer_troops = yes }
 	}
 every_state={
 limit={
-is_core_of=ERV
+is_core_of=ARM
 is_owned_by=RUS
 }
 add_core_of=RUS
@@ -5157,7 +5153,7 @@ add_core_of=RUS
 	id = russianempire_1789_1812.156
 	title = "The Creation of the Septinsular Republic"
 	desc = russianempire_1789_1812.156.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 
 fire_only_once = yes
@@ -5184,7 +5180,7 @@ fire_only_once = yes
 	id = russianempire_1789_1812.157
 	title = "The Swedish-Russian War"
 	desc = russianempire_1789_1812.157.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 
 fire_only_once = yes
@@ -5204,7 +5200,7 @@ RUS={set_country_flag=we_need_to_take_finland_treaty_of_hamina}
 	id = russianempire_1789_1812.158
 	title = "The Swedish-Russian War"
 	desc = russianempire_1789_1812.158.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {
 tag = RUS
@@ -5271,7 +5267,7 @@ RUS={
 	id = russianempire_1789_1812.159
 	title = "Seizing Wallachia and Moldavia"
 	desc = russianempire_1789_1812.159.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -5281,7 +5277,7 @@ TUR={country_event = russianempire_1789_1812.160}
 RUS={set_country_flag=russo_turkish_war_yes}
 RUS={
 	set_autonomy = {
-        target = WAL
+        target = ROM
         autonomous_state = autonomy_dominion
         freedom_level = 0.35
 	}
@@ -5293,7 +5289,7 @@ RUS={
 	}
 766={transfer_state_to=MOL}
 1147={transfer_state_to=MOL} 
-WAL={set_cosmetic_tag=WAL_RUS}
+ROM={set_cosmetic_tag=WAL_RUS}
 MOL={set_cosmetic_tag=MOL_RUS}
 	}
 	}
@@ -5301,7 +5297,7 @@ MOL={set_cosmetic_tag=MOL_RUS}
 	id = russianempire_1789_1812.160
 	title = "Russia seized Wallachia and Moldavia"
 	desc = russianempire_1789_1812.160.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -5319,7 +5315,7 @@ fire_only_once = yes
 	id = russianempire_1789_1812.161
 	title = "The Treaty of Bucharest"
 	desc = russianempire_1789_1812.161.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {
 tag = RUS
@@ -5376,7 +5372,7 @@ white_peace=TUR
 }
 TUR={
 	set_autonomy = {
-        target = WAL
+        target = ROM
         autonomous_state = autonomy_protectorate
         freedom_level = 0.35
 	}
@@ -5386,15 +5382,18 @@ TUR={
         freedom_level = 0.35
 	}
 	}
-WAL={set_cosmetic_tag=WAL_TUR}
+ROM={set_cosmetic_tag=WAL_TUR}
 MOL={set_cosmetic_tag=MOL_TUR}
+79={set_demilitarized_zone = yes}
+81={set_demilitarized_zone = yes}
+46={set_demilitarized_zone = yes}
 	}
 	}
 country_event = {
 	id = russianempire_1789_1812.162
 	title = "Joining the French Sphere"
 	desc = russianempire_1789_1812.162.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {
 PRE={has_cosmetic_tag=greater_poland_uprising_has_happened}
@@ -5414,7 +5413,7 @@ country_event = {
 	id = russianempire_1789_1812.163
 	title = "Poland Joining the French Sphere?"
 	desc = russianempire_1789_1812.163.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -5431,7 +5430,7 @@ country_event = {
 	id = russianempire_1789_1812.164
 	title = "Collapse of the Second League of Armed Neutrality"
 	desc = russianempire_1789_1812.164.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {
 RUS={has_country_leader = { character = RUS_alexanderi }}
@@ -5521,7 +5520,7 @@ country_event = {
 	id = russianempire_1789_1812.165
 	title = "The Swedish–Norwegian War"
 	desc = russianempire_1789_1812.165.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {
 country_exists=NOR
@@ -5545,7 +5544,7 @@ country_event = {
 	id = russianempire_1789_1812.166
 	title = "The Convention of Moss with Norway"
 	desc = russianempire_1789_1812.166.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {
 country_exists=NOR
@@ -5579,3 +5578,207 @@ NOR={set_cosmetic_tag=NOR_SWE}
 NOR={set_party_name = { ideology = neutrality long_name = NOR_HOG_neutrality_party_long name = NOR_HOG_neutrality_party }}
 	}
 }
+					country_event = {
+	id = russianempire_1789_1812.167
+	title = "The Partisans of Lithuania"
+	desc = russianempire_1789_1812.167.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "They have our support"
+		ai_chance = { factor = 100 }
+BLR={add_manpower = 20000 load_oob = "BLR_1812"
+	add_equipment_to_stockpile = {
+                    type = infantry_equipment
+                    amount = 20000
+                    producer = BLR
+                }
+}
+	}
+	}
+					country_event = {
+	id = russianempire_1789_1812.168
+	title = "The Annexation of Napoleonic Courland"
+	desc = russianempire_1789_1812.168.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "Courland is Russian"
+		ai_chance = { factor = 100 }
+RUS={annex_country = { target = LAT transfer_troops = no }}
+hidden_effect={
+every_state={
+limit={
+is_core_of=LAT
+}
+remove_core_of=LAT
+}
+}
+	}
+	}
+					country_event = {
+	id = russianempire_1789_1812.169
+	title = "The Annexation of Napoleonic Lithuania"
+	desc = russianempire_1789_1812.169.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "Rightfully Russian BTW"
+		ai_chance = { factor = 100 }
+RUS={annex_country = { target = LIT transfer_troops = no }}
+hidden_effect={
+every_state={
+limit={
+is_core_of=LIT
+}
+remove_core_of=LIT
+}
+}
+	}
+	}
+					country_event = {
+	id = russianempire_1789_1812.170
+	title = "Russia occupies Poland"
+	desc = russianempire_1789_1812.170.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "Seems Poland has calmed down for now"
+		ai_chance = { factor = 100 }
+POL={set_cosmetic_tag=POL_RUS_only}
+POL={promote_character=POL_konstantinpavlovich}
+POL={set_party_name = { ideology = neutrality long_name = POL_ROS_neutrality_party_long name = POL_ROS_neutrality_party }}
+POL={leave_faction=yes}
+every_country={
+limit={
+has_war_with=POL
+}
+white_peace=POL
+}
+RUS={
+	    set_autonomy = {
+        target = POL
+        autonomous_state = autonomy_dominion
+        freedom_level = 0.2
+	}
+}
+	}
+	}
+					country_event = {
+	id = russianempire_1789_1812.171
+	title = "Return of Russian control in Vilnius Kaunas & Grodno"
+	desc = russianempire_1789_1812.171.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "That was the right thing to do"
+		ai_chance = { factor = 100 }
+RUS={annex_country = { target = BLR transfer_troops = no }}
+hidden_effect={
+every_state={
+limit={
+is_core_of=BLR
+}
+remove_core_of=BLR
+}
+}
+	}
+	}
+			country_event = {
+	id = russianempire_1789_1812.172
+	title = "The finalization of the Partitions of Poland"
+	desc = russianempire_1789_1812.172.d
+	picture = GFX_news_event_france_empire_1
+	#is_triggered_only = yes
+trigger = {
+tag = RUS
+date > 1797.1.26
+date < 1800.1.1
+}
+fire_only_once = yes
+	option = { # 
+		name = "Mr. Poniatowski still needs a pension"
+		ai_chance = { factor = 100 } 
+RUS={add_stability=0.05}
+AUS={country_event = russianempire_1789_1812.173}
+PRE={country_event = russianempire_1789_1812.174}
+POL={country_event = russianempire_1789_1812.175}
+	}
+	}
+			country_event = {
+	id = russianempire_1789_1812.173
+	title = "The finalization of the Partitions of Poland"
+	desc = russianempire_1789_1812.173.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "We shall defend our borders"
+		ai_chance = { factor = 100 } 
+AUS={add_stability=0.05}
+	}
+	}
+			country_event = {
+	id = russianempire_1789_1812.174
+	title = "The finalization of the Partitions of Poland"
+	desc = russianempire_1789_1812.174.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "Some of them can be Germanized"
+		ai_chance = { factor = 100 } 
+PRE={add_stability=0.05}
+	}
+	}
+			country_event = {
+	id = russianempire_1789_1812.175
+	title = "The finalization of the Partitions of Poland"
+	desc = russianempire_1789_1812.175.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "We will return from our exile in Saxony"
+		ai_chance = { factor = 100 } 
+POL={add_stability=0.05}
+	}
+	}
+			country_event = {
+	id = russianempire_1789_1812.176
+	title = "Stanisław Szczęsny Potocki Enters Russian Service"
+	desc = russianempire_1789_1812.176.d
+	picture = GFX_news_event_france_empire_1re_1
+	#is_triggered_only = yes
+trigger = {
+tag = RUS
+date > 1797.11.17
+date < 1800.1.1
+}
+fire_only_once = yes
+	option = { # 
+		name = "Poland has to be part of Russia or it will die off"
+		ai_chance = { factor = 100 } 
+RUS={set_country_flag=potocki_has_been_hired}
+	}
+	}
+			country_event = {
+	id = russianempire_1789_1812.177
+	title = "The Dawn of the Second League of Armed Neutrality"
+	desc = russianempire_1789_1812.177.d
+	picture = GFX_news_event_france_empire_1re_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "We Can't let the French cross the Elbe"
+		ai_chance = { factor = 100 } 
+	RUS={
+create_faction = RUS_form_faction_iykyk
+	}
+	}
+	}

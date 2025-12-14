@@ -2,38 +2,33 @@ state={
 	id=1038
 	name="STATE_1038"
 	history={
-		1899.1.1 = {
-		victory_points = {
-			1891 2 
+    owner=POR
+	add_core_of=POR
+		1808.1.1 = {
+	    owner=FRA
+		}
+		1809.1.1 = {
+	    owner=POR
+		}
+			victory_points = {
+			3798 1 
 		}
 		victory_points = {
-			4972 1 
+			6924 1 
 		}
-                }
-               owner = ZZZ
-		1900.1.1 = {
-		owner = SOK
-		add_core_of = SOK
-                }
-		1903.1.1 = {
-			owner = ENG
-			controller = ENG
-            add_core_of = NGA
+				victory_points = {
+			924 1 
 		}
-												1961.1.1 = {
-                owner = NGA
-		add_core_of = NGA
-                }
 		buildings = {
 			infrastructure = 0
 		}
 	}
 
 	provinces={
-		1891 1969 4938 4972  
+	 799 924 3798 3861 6924 13287 13292 13296
 	}
-	manpower=5000000
+	manpower=1000000
 	buildings_max_level_factor=1.000
-	state_category=pastoral
+	state_category=town
 	local_supplies=0.000
 }

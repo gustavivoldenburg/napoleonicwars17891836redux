@@ -4,6 +4,7 @@ recruit_character=MUN_maximilianfrancis
 promote_character=MUN_maximilianfrancis
 }
 1802.1.1 = {
+MUN={set_cosmetic_tag = MUN_ARE}
 recruit_character=MUN_antonvictor
 promote_character=MUN_antonvictor
 retire_character=MUN_maximilianfrancis

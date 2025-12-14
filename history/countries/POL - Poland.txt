@@ -162,6 +162,8 @@ retire_character=POL_feliks
 
 
 
+
+
 1764.1.1 = {
 recruit_character=POL_stanislawiiaugust
 promote_character=POL_stanislawiiaugust
@@ -214,15 +216,23 @@ set_oob = "POL_1919"
 }
 1789.1.1 = {
 		if = {
+		limit = { has_start_date < 1800.1.1 }
+POL={add_ideas=pol_customs_war}
+set_oob = "POL_1789"
+}
+}
+1808.1.1 = {
+		if = {
+		limit = { has_start_date < 1809.1.1 }
+set_oob = "POL_1808"
+}
+}
+1812.1.1 = {
+		if = {
 		limit = { has_start_date < 1813.1.1 }
-set_oob = "POL_1789_1815"
+set_oob = "POL_1812"
 }
 }
-add_ideas = {
-	POL_rada_nieustajaca
-	POL_economy_stuck_in_17th_century1
-	POL_disorganized_army1
-} 
 1936.1.1 = {
 oob = "POL_1936"
 if = {
@@ -336,8 +346,6 @@ if = {
 		has_dlc = "Poland: United and Ready"
 	}
 	add_ideas = {
-		
-		
 		uncontrolled_exports
 		POL_april_constitution_1
 		POL_looming_peasants_strike

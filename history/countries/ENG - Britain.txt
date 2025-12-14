@@ -6,6 +6,12 @@ recruit_character=ENG_rothschildiii
 retire_character=ENG_rothschildiii
 }
 1789.1.1 = {
+recruit_character=ENG_cornwallis
+}
+1806.1.1 = {
+retire_character=ENG_cornwallis
+}
+1789.1.1 = {
 recruit_character=ENG_henrybenedict
 recruit_character=ENG_fitzjames
 }
@@ -27,7 +33,7 @@ retire_character=ENG_fitzjames
 }
 1789.1.1 = {
 			if = {
-		limit = { has_start_date < 1837.1.1 }
+		limit = { has_start_date < 1799.1.1 }
 		add_ideas=ENG_focus_outside_of_europe
 }
 }
@@ -839,7 +845,7 @@ if = {
 		electronic_mechanical_engineering = 1
 		radio = 1
 		radio_detection = 1
-		decimetric_radar = 1
+		
 		mechanical_computing = 1
 		computing_machine = 1
 		basic_encryption = 1
@@ -894,8 +900,8 @@ if = {
 			basic_submarine = 1
 			improved_submarine = 1
 			improved_destroyer = 1
-			basic_light_cruiser = 1
-			improved_light_cruiser = 1
+			
+			
 			basic_battleship = 1
 			basic_carrier = 1
 			improved_carrier = 1

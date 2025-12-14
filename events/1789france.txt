@@ -9,11 +9,12 @@ country_event = {
 	id = fra_1789_event.1
 	title = "The French Revolution"
 	desc = fra_1789_event.1.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {
 tag=FRA
 has_completed_focus = france_1789_1815_first_50_focus_4
+date < 1793.1.1 
 }
 fire_only_once = yes
 	option = { # 
@@ -27,11 +28,11 @@ country_event = {
 	id = fra_1789_event.2
 	title = "The Happy Revolution"
 	desc = fra_1789_event.2.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {
 				
-		date > 1789.8.18 has_start_date < 1800.1.1 
+		date > 1789.8.18 date < 1795.1.1 
 					tag = LIE
 					FRA={has_completed_focus = france_1789_1815_first_50_focus_4}}
 fire_only_once = yes
@@ -92,11 +93,11 @@ country_event = {
 	id = fra_1789_event.3
 	title = "The Brabantian Revolution"
 	desc = fra_1789_event.3.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {
 				
-		date > 1789.10.24 has_start_date < 1789.11.1 
+		date > 1789.10.24 date < 1795.1.1 
 		            tag = BEL
 					FRA={has_completed_focus = france_1789_1815_first_50_focus_4}
 					}
@@ -177,11 +178,11 @@ country_event = {
 	id = fra_1789_event.4
 	title = "Storming of the Bastille"
 	desc = fra_1789_event.4.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {
 				
-		date > 1789.7.14 has_start_date < 1800.1.1 
+		date > 1789.7.14 date < 1790.1.1 
 		tag = FRA
 					has_completed_focus = france_1789_1815_first_50_focus_4}
 fire_only_once = yes
@@ -201,7 +202,7 @@ country_event = {
 	id = fra_1789_event.5
 	title = "Helping out the 1st Coalition"
 	desc = fra_1789_event.5.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -213,8 +214,8 @@ country_event = {
 	id = fra_1789_event.6
 	title = "Expel dissidents"
 	desc = fra_1789_event.6.d
-	picture = GFX_idi_amin_india
-	#is_triggered_only = yes
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
 fire_only_once = yes
 	option = { # deport
 		name = "Haiti"
@@ -329,7 +330,7 @@ country_event = {
 	id = fra_1789_event.7
 	title = "Armistice of Cherasco"
 	desc = fra_1789_event.7.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -361,12 +362,12 @@ country_event = {
 	id = fra_1789_event.12
 	title = "The Armistice with Sardinia-Piedmont"
 	desc = fra_1789_event.12.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {
 tag = FRA
 NOT={FRA={has_country_flag = cherasco_flag}}
-    date > 1789.1.1 has_start_date < 1800.1.1
+    date > 1789.1.1 date < 1800.1.1
 	has_war_with = SPM
 	SPM = {surrender_progress > 0.5 }
 or={
@@ -382,7 +383,16 @@ fire_only_once = yes
 FRA={set_country_flag=armistice_with_sardinia_piedmont_so_you_can_invade_italy} 
 SPM={leave_faction=yes}
 every_country = {
-  white_peace = SPM
+limit={
+has_war_with=SPM
+}
+white_peace = SPM
+}
+SPM={
+give_military_access = FRA
+}
+FRA={
+give_military_access = SPM
 }
 }
 }
@@ -390,7 +400,7 @@ country_event = {
 	id = fra_1789_event.8
 	title = "The Peace before Campo Formio"
 	desc = fra_1789_event.8.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {
 tag = FRA
@@ -410,7 +420,7 @@ country_event = {
 	id = fra_1789_event.13
 	title = "Treaty of Campo Formio"
 	desc = fra_1789_event.13.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {
 tag = FRA
@@ -431,13 +441,21 @@ country_event = {
 	id = fra_1789_event.9
 	title = "The Bordeaux Counter-revolutionaries"
 	desc = fra_1789_event.9.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
 		name = "Cooperate with Regionalists"
 		ai_chance = { factor = 100 } 
-PRS={add_manpower = 50000 load_oob = "PRS_1793"}
+PRS={
+add_manpower = 40000 
+load_oob = "PRS_1793"
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 40000
+					producer = PRS
+				}
+}
 		PRS={
 			declare_war_on = {
 		target = FRA
@@ -450,7 +468,7 @@ country_event = {
 	id = fra_1789_event.10
 	title = "The War in the Vendée"
 	desc = fra_1789_event.10.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -468,8 +486,8 @@ country_event = {
 	id = fra_1789_event.11
 	title = "The Seizure of Counter-Revolutionairy Property"
 	desc = fra_1789_event.11.d
-	picture = GFX_idi_amin_india
-	#is_triggered_only = yes
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
 		name = "Seize Emigree Property"
@@ -496,7 +514,7 @@ country_event = {
 	id = fra_1789_event.14
 	title = "Peace Between France and Prussia"
 	desc = fra_1789_event.14.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -522,7 +540,7 @@ country_event = {
 	id = fra_1789_event.15
 	title = "The Peace of Basel"
 	desc = fra_1789_event.15.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -543,7 +561,7 @@ country_event = {
 	id = fra_1789_event.16
 	title = "The Haitian Revolution"
 	desc = fra_1789_event.16.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 	trigger = {
     date > 1791.8.21 date < 1792.1.1 
@@ -564,7 +582,7 @@ country_event = {
 	id = fra_1789_event.17
 	title = "The Haitian Revolution"
 	desc = fra_1789_event.17.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -587,7 +605,7 @@ country_event = {
 	id = fra_1789_event.18
 	title = "Ventôse Decrees"
 	desc = fra_1789_event.18.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -622,7 +640,7 @@ country_event = {
 	id = fra_1789_event.19
 	title = "Premptive Strike on the Conspirators"
 	desc = fra_1789_event.19.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 	trigger = {
 FRA={has_completed_focus = france_1793_1799_focus_87}
@@ -640,7 +658,7 @@ country_event = {
 	id = fra_1789_event.20
 	title = "Failed Assassination Attempt on Napoleon Bonaparte!"
 	desc = fra_1789_event.20.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 	trigger = {
 FRA={NOT={has_completed_focus = france_1793_1799_focus_87}}
@@ -660,7 +678,7 @@ country_event = {
 	id = fra_1789_event.21
 	title = "The Public's Dismay with the Reign of Terror"
 	desc = fra_1789_event.21.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -674,7 +692,7 @@ country_event = {
 	id = fra_1789_event.22
 	title = "Rough Earthquake in Brittany and Poitvou"
 	desc = fra_1789_event.22.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 	trigger = {
 tag=FRA
@@ -1110,7 +1128,7 @@ country_event = {
 	id = fra_1789_event.23
 	title = "The Departments of Cher and Indre rise up"
 	desc = fra_1789_event.23.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 	trigger = {
 tag=FRA
@@ -1125,9 +1143,6 @@ fire_only_once = yes
 		BER={
 		add_state_core = 33
 		}
-		VND={
-		add_state_claim = 33
-		}
 		BER={
 		transfer_state = 33
 		}
@@ -1139,7 +1154,7 @@ country_event = {
 	id = fra_1789_event.24
 	title = "The Departments of Cher and Indre rise up"
 	desc = fra_1789_event.24.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -1147,7 +1162,13 @@ fire_only_once = yes
 		ai_chance = { factor = 100 } 
 		BER={set_country_flag=ber_has_been_established_not_by_player}
                hidden_effect={
-                BER={add_manpower = 25000 load_oob = "BER_1793"}
+                BER={add_manpower = 25000 load_oob = "BER_1793"
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 25000
+					producer = BER
+				}
+}
 BER={
 				declare_war_on = {
 		target = FRA
@@ -1161,7 +1182,7 @@ country_event = {
 	id = fra_1789_event.25
 	title = "Declaration of the Rights of Man and of the Citizen"
 	desc = fra_1789_event.25.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -1175,7 +1196,7 @@ country_event = {
 	id = fra_1789_event.26
 	title = "The Treaties of Tilsit"
 	desc = fra_1789_event.26.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {
 tag = PRE
@@ -1183,7 +1204,10 @@ date > 1806.1.1
 PRE={has_country_flag=prussia_fourth_coalition}
 has_war_with = FRA
 or={
+and={
 date > 1807.7.7
+date < 1808.1.1
+}
 PRE = {surrender_progress > 0.95 }
 }
 }
@@ -1193,6 +1217,7 @@ fire_only_once = yes
 		ai_chance = { factor = 100 } 
 FRA={country_event = fra_1789_event.240}
     FRA={set_country_flag=treatiesoftilsit}
+	PRE={set_country_flag=treatiesoftilsit}
 PRE={leave_faction=yes}
 SAX={leave_faction=yes}
 HSE={leave_faction=yes}
@@ -1214,18 +1239,21 @@ white_peace=HSE
 white_peace=BRU
 }
 FRA={
-add_to_faction=PRE
 add_to_faction=SAX
 add_to_faction=HSE
 add_to_faction=BRU
 }
+PRE={
+give_military_access = FRA
+}
+PRE={set_country_flag=prussia_has_happened_tilsit_is_slave_of_france}
 	}
 }
 country_event = {
 	id = fra_1789_event.27
 	title = "Peace Between France and Naples"
 	desc = fra_1789_event.27.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -1241,7 +1269,7 @@ country_event = {
 	id = fra_1789_event.28
 	title = "Taking Advantage of the Papal States Economy"
 	desc = fra_1789_event.28.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -1267,7 +1295,7 @@ country_event = {
 	id = fra_1789_event.29
 	title = "The royal Flight to Varennes"
 	desc = fra_1789_event.29.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -1287,27 +1315,38 @@ country_event = {
 	id = fra_1789_event.30
 	title = "The Treaties of Tilsit"
 	desc = fra_1789_event.30.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
 		name = "Vassalize Poland"
 		ai_chance = { factor = 100 } 
+POL={promote_character=POL_frederickaugustusipol
+set_party_name = { ideology = neutrality long_name = POL_WET_neutrality_party_long name = POL_WET_neutrality_party }
+}
 POL={set_cosmetic_tag=POL_duchy_of_warsaw}
 every_state = {
 limit = {
+or={
+state=1248
+state=1194
 and={
 NOT={state=85}
 is_core_of = POL
 is_owned_by=PRE
 }
 }
-transfer_state_to = POL
 }
+transfer_state_to = POL
+remove_core_of=PRE
+add_core_of=POL
+}
+FRA={
 		set_autonomy = {
         target = POL
         autonomous_state = autonomy_dominion
         freedom_level = 0.4
+		}
 	}	
 	}
 }
@@ -1315,7 +1354,7 @@ country_event = {
 	id = fra_1789_event.31
 	title = "The Treaties of Tilsit"
 	desc = fra_1789_event.31.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -1330,11 +1369,19 @@ is_owned_by=PRE
 }
 transfer_state_to = HAN
 }
-HAN={set_cosmetic_tag=HAN_FRA}
-FRA={
+HAN={set_cosmetic_tag=HAN}
+FKF={
 		set_autonomy = {
         target = HAN
-        autonomous_state = autonomy_puppet
+        autonomous_state = autonomy_confederationoftherhine
+        freedom_level = 0.4
+	}	
+}
+SXL={set_cosmetic_tag=SXL}
+FKF={
+		set_autonomy = {
+        target = SXL
+        autonomous_state = autonomy_confederationoftherhine
         freedom_level = 0.4
 	}	
 }
@@ -1344,7 +1391,7 @@ country_event = {
 	id = fra_1789_event.32
 	title = "The Treaties of Tilsit"
 	desc = fra_1789_event.32.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -1369,7 +1416,7 @@ country_event = {
 	id = fra_1789_event.33
 	title = "The Treaties of Tilsit"
 	desc = fra_1789_event.33.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -1398,13 +1445,6 @@ PRE={remove_state_core=1200}
 BDB={remove_state_core=867}
 BDB={remove_state_core=1200}
 }
-FRA={
-		set_autonomy = {
-        target = WTF
-        autonomous_state = autonomy_dominion
-        freedom_level = 0.4
-	}
-	}
 	}
 	option = { # 
 		name = "Give Magdeburg-Anhalt to Saxony"
@@ -1438,12 +1478,13 @@ country_event = {
 	id = fra_1789_event.34
 	title = "The Treaties of Tilsit"
 	desc = fra_1789_event.34.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
 		name = "Ionian Islands for Bialystok"
 		ai_chance = { factor = 100 } 
+SEP={set_cosmetic_tag=SEP_FRA}
 every_state = {
 limit = {
 state=97
@@ -1475,14 +1516,15 @@ add_political_power=50
 }
 country_event = {
 	id = fra_1789_event.35
-	title = "The Treaty of Tilsit"
+	title = "The Treaty of Posen"
 	desc = fra_1789_event.35.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
 		name = "Becoming a French Vassal can't be too bad..."
 		ai_chance = { factor = 100 } 
+FRA={country_event = fra_1789_event.293}
 SAX={set_cosmetic_tag = SAX_kingdom}
 every_state = {
 limit = {
@@ -1492,10 +1534,10 @@ transfer_state_to = SAX
 SAX={add_state_core=891}
 PRE={remove_state_core=891}
 }
-FRA={
+FKF={
 		set_autonomy = {
         target = SAX
-        autonomous_state = autonomy_protectorate
+        autonomous_state = autonomy_confederationoftherhine
         freedom_level = 0.4
 	}
 	}	
@@ -1505,7 +1547,7 @@ country_event = {
 	id = fra_1789_event.36
 	title = "Choose Thugborea's Political Leader"
 	desc = fra_1789_event.36.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -1577,7 +1619,7 @@ country_event = {
 	id = fra_1789_event.37
 	title = "Day of Daggers"
 	desc = fra_1789_event.37.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -1597,11 +1639,11 @@ country_event = {
 	id = fra_1789_event.38
 	title = "Louis Philippe II, Duke of Orléans Votes for the Death of the King"
 	desc = fra_1789_event.38.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
-		name = "Does he not know hes next on the choping block?"
+		name = "Does he not know hes next on the chopping block?"
 		ai_chance = { factor = 100 } 
 		add_political_power=150	
 		VND={add_war_support=-0.05 add_popularity = { ideology = democratic popularity = -0.1 }}
@@ -1611,7 +1653,7 @@ country_event = {
 	id = fra_1789_event.39
 	title = "The Armistice of Bologna"
 	desc = fra_1789_event.39.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {
 tag = FRA
@@ -1639,7 +1681,7 @@ country_event = {
 	id = fra_1789_event.40
 	title = "The 19th Century"
 	desc = fra_1789_event.40.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {
 tag = ZZZ
@@ -1671,7 +1713,7 @@ country_event = {
 	id = fra_1789_event.41
 	title = "Heavy flooding of the Seine"
 	desc = fra_1789_event.41.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 	trigger = {
 tag=FRA
@@ -1887,10 +1929,10 @@ country_event = {
 	id = fra_1789_event.42
 	title = "Irish Rebellion of 1798"
 	desc = fra_1789_event.42.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 	trigger = {
-tag=ZZZ
+tag=ENG
 date > 1798.5.1 date < 1799.1.1 
 	}
 fire_only_once = yes
@@ -1909,7 +1951,7 @@ country_event = {
 	id = fra_1789_event.43
 	title = "Irish Rebellion of 1798"
 	desc = fra_1789_event.43.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 	trigger = {
 tag=IRE
@@ -1934,7 +1976,7 @@ country_event = {
 	id = fra_1789_event.44
 	title = "The Women's March on Versailles"
 	desc = fra_1789_event.44.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -1959,7 +2001,7 @@ country_event = {
 	id = fra_1789_event.45
 	title = "Equal Citizenship for Coloured Folk"
 	desc = fra_1789_event.45.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -1978,7 +2020,7 @@ country_event = {
 	id = fra_1789_event.46
 	title = "Influence in the HRE"
 	desc = fra_1789_event.46.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -1996,7 +2038,7 @@ country_event = {
 	id = fra_1789_event.47
 	title = "Delusional Ambition between 1689-1789"
 	desc = fra_1789_event.47.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -2009,7 +2051,7 @@ country_event = {
 	id = fra_1789_event.48
 	title = "Strike the United States slightly"
 	desc = fra_1789_event.48.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -2040,12 +2082,11 @@ country_event = {
 	id = fra_1789_event.49
 	title = "The French Nation is at war will you arm yourself and fight for Her?"
 	desc = fra_1789_event.49.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 	trigger = {
 tag=FRA
 FRA={has_war = yes}
-has_country_flag = fra_republic_path
 date > 1789.1.1 date < 1800.1.1 
 	}
 fire_only_once = yes
@@ -2189,7 +2230,7 @@ country_event = {
 	id = fra_1789_event.50
 	title = "Surrender of Austrian Luxemburg"
 	desc = fra_1789_event.50.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 	trigger = {
 tag=FRA
@@ -2264,9 +2305,9 @@ AUS={add_manpower=-5000}
 
 country_event = {
 	id = fra_1789_event.51
-	title = "Partion of Poland"
+	title = "Partition of Poland"
 	desc = fra_1789_event.51.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -2322,7 +2363,7 @@ country_event = {
 	id = fra_1789_event.52
 	title = "Fate of Silesia"
 	desc = fra_1789_event.52.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -2376,10 +2417,10 @@ remove_core_of = PRE
 remove_core_of = BDB
 transfer_state_to = SIL
 }
-FRA={
+FKF={
 		set_autonomy = {
         target = SIL
-        autonomous_state = autonomy_dominion
+        autonomous_state = autonomy_confederationoftherhine
         freedom_level = 0.4
 	}
 }
@@ -2389,7 +2430,7 @@ country_event = {
 	id = fra_1789_event.53
 	title = "French Splitting Prussia in Half"
 	desc = fra_1789_event.53.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -2453,11 +2494,79 @@ country_event = {
 	id = fra_1789_event.54
 	title = "Fate of Prussian Exclaves"
 	desc = fra_1789_event.54.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
 		name = "Give Ansbach and Bayreuth to Bavaria take East Frisia"
+FKF={
+		set_autonomy = {
+        target = WTF
+        autonomous_state = autonomy_confederationoftherhine
+        freedom_level = 0.4
+	}
+	}
+WTF={
+annex_country = { target = HSE transfer_troops = no }
+annex_country = { target = BRU transfer_troops = no }
+annex_country = { target = RIE transfer_troops = no }
+}
+every_state={
+limit={
+or={
+state=972
+state=870
+state=703
+state=1189
+state=1161
+state=914
+state=1158
+state=849
+state=1246
+}
+}
+transfer_state_to=WTF
+add_core_of=WTF
+remove_core_of=PRE
+remove_core_of=HAN
+remove_core_of=BRU
+remove_core_of=HSE
+remove_core_of=NDH
+remove_core_of=RIE
+}
+every_state={
+limit={
+or={
+state=1281
+}
+}
+transfer_state_to=ERF
+add_core_of=ERF
+remove_core_of=PRE
+remove_core_of=HAN
+remove_core_of=BRU
+remove_core_of=HSE
+remove_core_of=NDH
+remove_core_of=RIE
+}
+FKF={
+		set_autonomy = {
+        target = ERF
+        autonomous_state = autonomy_confederationoftherhine
+        freedom_level = 0.4
+	}	
+}
+NEU={set_cosmetic_tag=NEU_FRA
+promote_character=NEU_berthier
+set_party_name = { ideology = neutrality long_name = NEU_BER_neutrality_party_long name = NEU_BER_neutrality_party }
+}
+FRA={
+		set_autonomy = {
+        target = NEU
+        autonomous_state = autonomy_puppet
+        freedom_level = 0.4
+	}	
+}
 every_state = {
 limit = {
 or={
@@ -2500,6 +2609,7 @@ or={
 state=1155
 state=978
 state=1165
+state=872
 }
 }
 remove_core_of = PRE
@@ -2515,7 +2625,7 @@ country_event = {
 	id = fra_1789_event.55
 	title = "Austrian Annexation of West Prussia"
 	desc = fra_1789_event.55.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -2604,7 +2714,7 @@ country_event = {
 	id = fra_1789_event.56
 	title = "The Treaty of Aranjuez"
 	desc = fra_1789_event.56.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -2646,7 +2756,7 @@ country_event = {
 	id = fra_1789_event.57
 	title = "The Integration of Corsica"
 	desc = fra_1789_event.57.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -2660,7 +2770,7 @@ country_event = {
 	id = fra_1789_event.58
 	title = "Third Treaty of San Ildefonso"
 	desc = fra_1789_event.58.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -2715,7 +2825,7 @@ country_event = {
 	id = fra_1789_event.59
 	title = "The Treaty of Mortefontaine"
 	desc = fra_1789_event.59.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -2745,7 +2855,7 @@ country_event = {
 	id = fra_1789_event.60
 	title = "The Treaty of Amiens"
 	desc = fra_1789_event.60.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -2765,7 +2875,7 @@ country_event = {
 	id = fra_1789_event.61
 	title = "Piedmontese Annexation into France"
 	desc = fra_1789_event.61.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -2779,7 +2889,7 @@ country_event = {
 	id = fra_1789_event.62
 	title = "Genoan Annexation into France"
 	desc = fra_1789_event.62.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -2793,7 +2903,7 @@ country_event = {
 	id = fra_1789_event.63
 	title = "The Treaty of Amiens"
 	desc = fra_1789_event.63.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -2835,7 +2945,7 @@ country_event = {
 	id = fra_1789_event.64
 	title = "End the French invasion of Egypt and Syria"
 	desc = fra_1789_event.64.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {
 tag=FRA
@@ -2893,7 +3003,7 @@ country_event = {
 	id = fra_1789_event.65
 	title = "Death of Jean-Baptiste Kléber in Cairo Egypt"
 	desc = fra_1789_event.65.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {
 tag=FRA
@@ -2912,16 +3022,16 @@ country_event = {
 	id = fra_1789_event.66
 	title = "Vassalization by France"
 	desc = fra_1789_event.66.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
 	ai_chance = { factor = 100 } 
 	name = "Vassalization by France"
-		FRA={
+		FKF={
 		set_autonomy = {
         target = STR
-        autonomous_state = autonomy_dominion
+        autonomous_state = autonomy_confederationoftherhine
         freedom_level = 0.4
 	    }
 		}
@@ -2931,16 +3041,16 @@ country_event = {
 	id = fra_1789_event.67
 	title = "Vassalization by France"
 	desc = fra_1789_event.67.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
 	ai_chance = { factor = 100 } 
 	name = "Vassalization by France"
-		FRA={
+		FKF={
 		set_autonomy = {
         target = OLD
-        autonomous_state = autonomy_dominion
+        autonomous_state = autonomy_confederationoftherhine
         freedom_level = 0.4
 	    }
 		}
@@ -2950,16 +3060,16 @@ country_event = {
 	id = fra_1789_event.68
 	title = "Vassalization by France"
 	desc = fra_1789_event.68.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
 	ai_chance = { factor = 100 } 
 	name = "Vassalization by France"
-		FRA={
+		FKF={
 		set_autonomy = {
-        target = SXL
-        autonomous_state = autonomy_dominion
+        target = BRN
+        autonomous_state = autonomy_confederationoftherhine
         freedom_level = 0.4
 	    }
 		}
@@ -2969,16 +3079,16 @@ country_event = {
 	id = fra_1789_event.69
 	title = "Vassalization by France"
 	desc = fra_1789_event.69.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
 	ai_chance = { factor = 100 } 
 	name = "Vassalization by France"
-		FRA={
+		FKF={
 		set_autonomy = {
         target = HBG
-        autonomous_state = autonomy_dominion
+        autonomous_state = autonomy_confederationoftherhine
         freedom_level = 0.4
 	    }
 		}
@@ -2988,16 +3098,16 @@ country_event = {
 	id = fra_1789_event.70
 	title = "Vassalization by France"
 	desc = fra_1789_event.70.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
 	ai_chance = { factor = 100 } 
 	name = "Vassalization by France"
-		FRA={
+		FKF={
 		set_autonomy = {
         target = LBK
-        autonomous_state = autonomy_dominion
+        autonomous_state = autonomy_confederationoftherhine
         freedom_level = 0.4
 	    }
 		}
@@ -3007,7 +3117,7 @@ country_event = {
 	id = fra_1789_event.71
 	title = "Peace Between France and Britain"
 	desc = fra_1789_event.71.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -3019,7 +3129,7 @@ country_event = {
 	id = fra_1789_event.72
 	title = "Annexation of Marche"
 	desc = fra_1789_event.72.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -3035,7 +3145,7 @@ country_event = {
 	id = fra_1789_event.73
 	title = "The The Louisiana Purchase"
 	desc = fra_1789_event.73.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -3055,7 +3165,7 @@ country_event = {
 	id = fra_1789_event.74
 	title = "Annexation of Trent"
 	desc = fra_1789_event.74.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -3071,7 +3181,7 @@ country_event = {
 	id = fra_1789_event.75
 	title = "Kidnapping and Execution of Louis Antoine the Duke of Enghien"
 	desc = fra_1789_event.75.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -3085,7 +3195,7 @@ country_event = {
 	id = fra_1789_event.76
 	title = "Defeat of the Vendee"
 	desc = fra_1789_event.76.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger={
 tag=FRA
@@ -3114,7 +3224,7 @@ country_event = {
 	id = fra_1789_event.77
 	title = "Arrest of the Pope"
 	desc = fra_1789_event.77.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -3130,12 +3240,25 @@ country_event = {
 	id = fra_1789_event.78
 	title = "Defeat of Berry"
 	desc = fra_1789_event.78.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger={
 tag=FRA
+BER={has_country_flag=ber_has_been_established_not_by_player}
+or={
+AND={
 BER={surrender_progress > 0.75 }
 FRA={has_war_with=BER}
+}
+AND={
+BER={owns_state=33}
+NOT={FRA={has_war_with=BER}}
+}
+AND={
+33={is_core_of=BER}
+33={is_owned_by=FRA}
+}
+}
 }
 fire_only_once = yes
 	option = { # 
@@ -3144,13 +3267,14 @@ fire_only_once = yes
 	FRA={annex_country = { target = BER transfer_troops = no }}
 	add_stability=-0.01
 	add_war_support=-0.01
+33={remove_core_of=BER}
 }
 }
 country_event = {
 	id = fra_1789_event.79
 	title = "Peace between the Protectorates and France"
 	desc = fra_1789_event.79.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -3168,7 +3292,7 @@ country_event = {
 	id = fra_1789_event.80
 	title = "Trier Remnants Right of the Rhine"
 	desc = fra_1789_event.80.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger={
 tag=AUS
@@ -3178,6 +3302,7 @@ TRR={is_subject_of=FRA}
 fire_only_once = yes
 	option = { # 
 	ai_chance = { factor = 100 } 
+1237={transfer_state_to=ZWE}
 	name = "Peace between the HRE and France"
 	TRR={set_cosmetic_tag=TRR}
 			TRR={add_popularity = { ideology = neutrality popularity = 0.5 }}
@@ -3206,7 +3331,7 @@ country_event = {
 	id = fra_1789_event.81
 	title = "National Congress of Belgium"
 	desc = fra_1789_event.81.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -3244,7 +3369,7 @@ country_event = {
 	id = fra_1789_event.82
 	title = "The Decadary Cult"
 	desc = fra_1789_event.82.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -3257,7 +3382,7 @@ country_event = {
 	id = fra_1789_event.83
 	title = "Tax on Doors and Windows"
 	desc = fra_1789_event.83.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -3271,7 +3396,7 @@ country_event = {
 	id = fra_1789_event.84
 	title = "The Second Congress of Rastatt"
 	desc = fra_1789_event.84.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -3284,12 +3409,12 @@ country_event = {
 	id = fra_1789_event.85
 	title = "The founding of the Company Peugeot"
 	desc = fra_1789_event.85.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {	
 tag=FRA
 date > 1810.9.26
-has_start_date < 1811.1.1
+date < 1811.1.1
 }
 fire_only_once = yes
 	option = { # 
@@ -3321,12 +3446,12 @@ country_event = {
 	id = fra_1789_event.86
 	title = "The founding of the Company Debacq & Cie"
 	desc = fra_1789_event.86.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {	
 tag=FRA
 date > 1812.9.26
-has_start_date < 1813.1.1
+date < 1813.1.1
 }
 fire_only_once = yes
 	option = { # 
@@ -3358,12 +3483,12 @@ country_event = {
 	id = fra_1789_event.87
 	title = "The founding of the Company Axa"
 	desc = fra_1789_event.87.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {	
 tag=FRA
 date > 1817.9.26
-has_start_date < 1818.1.1
+date < 1818.1.1
 }
 fire_only_once = yes
 	option = { # 
@@ -3395,12 +3520,12 @@ country_event = {
 	id = fra_1789_event.88
 	title = "The founding of the Company Bolloré"
 	desc = fra_1789_event.88.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {	
 tag=FRA
 date > 1822.9.26
-has_start_date < 1823.1.1
+date < 1823.1.1
 }
 fire_only_once = yes
 	option = { # 
@@ -3432,12 +3557,12 @@ country_event = {
 	id = fra_1789_event.89
 	title = "The founding of the Company Hachette"
 	desc = fra_1789_event.89.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {	
 tag=FRA
 date > 1826.9.26
-has_start_date < 1827.1.1
+date < 1827.1.1
 }
 fire_only_once = yes
 	option = { # 
@@ -3469,12 +3594,12 @@ country_event = {
 	id = fra_1789_event.90
 	title = "The founding of the Company Hachette Filipacchi Médias"
 	desc = fra_1789_event.90.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {	
 tag=FRA
 date > 1826.10.26
-has_start_date < 1827.1.1
+date < 1827.1.1
 }
 fire_only_once = yes
 	option = { # 
@@ -3506,12 +3631,12 @@ country_event = {
 	id = fra_1789_event.91
 	title = "The founding of the Company Lafarge"
 	desc = fra_1789_event.91.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {	
 tag=FRA
 date > 1833.9.26
-has_start_date < 1834.1.1
+date < 1834.1.1
 }
 fire_only_once = yes
 	option = { # 
@@ -3543,7 +3668,7 @@ country_event = {
 	id = fra_1789_event.92
 	title = "The Nancy Affair"
 	desc = fra_1789_event.92.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -3556,7 +3681,7 @@ country_event = {
 	id = fra_1789_event.93
 	title = "Abolishment of Feudalism"
 	desc = fra_1789_event.93.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -3598,7 +3723,7 @@ country_event = {
 	id = fra_1789_event.94
 	title = "Removal of Aristocratic Privileges"
 	desc = fra_1789_event.94.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -3620,14 +3745,23 @@ country_event = {
 	id = fra_1789_event.95
 	title = "Defeat of the Bordeaux Lyon and Marseilles Counter-Revolutionaries"
 	desc = fra_1789_event.95.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger={
 tag=FRA
-country_exists=PRS
 or={
+AND={
 PRS={surrender_progress > 0.75 }
+country_exists=PRS
+}
+AND={
 NOT={has_war_with=PRS}
+country_exists=PRS
+}
+AND={
+FRA={owns_state=21}
+21={is_core_of=PRS}
+}
 }
 }
 fire_only_once = yes
@@ -3637,13 +3771,19 @@ fire_only_once = yes
 	FRA={annex_country = { target = PRS transfer_troops = no }}
 	add_stability=-0.01
 	add_war_support=-0.01
+every_state={
+limit={
+is_core_of=PRS
+}
+remove_core_of=PRS
+}
 }
 }
 country_event = {
 	id = fra_1789_event.96
 	title = "Peace Between France and Hesse"
 	desc = fra_1789_event.96.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -3659,7 +3799,7 @@ country_event = {
 	id = fra_1789_event.97
 	title = "Trial of Louis XVI"
 	desc = fra_1789_event.97.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -3671,7 +3811,7 @@ country_event = {
 	id = fra_1789_event.98
 	title = "Trial of Marie Antoinette"
 	desc = fra_1789_event.98.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -3684,7 +3824,7 @@ country_event = {
 	id = fra_1789_event.99
 	title = "The Swiss Confederacy's end"
 	desc = fra_1789_event.99.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger={
 tag=FRA
@@ -3713,7 +3853,7 @@ country_event = {
 	id = fra_1789_event.100
 	title = "Treaty of Finckenstein between Iran and France"
 	desc = fra_1789_event.100.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -3764,7 +3904,7 @@ country_event = {
 	id = fra_1789_event.101
 	title = "Stance on Ethnic and/or Linguistic Minorities"
 	desc = fra_1789_event.101.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -3779,13 +3919,15 @@ country_event = {
 	id = fra_1789_event.102
 	title = "The Lithuanian Provisional Governing Commission"
 	desc = fra_1789_event.102.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
 	ai_chance = { factor = 100 } 
 	name = "Establish the Lithuanian Provisional Governing Commission"
-        LIT={transfer_state=11}
+     LIT={promote_character=LIT_frederickaugustusi
+set_party_name = { ideology = neutrality long_name = LIT_WET_neutrality_party_long name = LIT_WET_neutrality_party }  }
+	    LIT={transfer_state=11}
 		LIT={transfer_state=189}
 		LIT={transfer_state=815}
 		LIT={transfer_state=94}
@@ -3838,18 +3980,20 @@ country_event = {
 	id = fra_1789_event.103
 	title = "Vassalization of Courland"
 	desc = fra_1789_event.103.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
 	ai_chance = { factor = 100 } 
 	name = "The Daugava is the border of our Empires not the Vistula"
-COU={set_cosmetic_tag=COU}
-        COU={transfer_state=190 transfer_state=809}
-		COU={add_state_core=190 add_state_core=809}
+LAT={promote_character=LAT_frederickaugustusi
+set_party_name = { ideology = neutrality long_name = LAT_WET_neutrality_party_long name = LAT_WET_neutrality_party }  }
+LAT={set_cosmetic_tag=COU}
+        LAT={transfer_state=190 transfer_state=809}
+		LAT={add_state_core=190 add_state_core=809}
 		FRA={
 						set_autonomy = {
-				target = COU
+				target = LAT
                 autonomous_state = autonomy_dominion
                 freedom_level = 0.35
 	            }
@@ -3860,7 +4004,7 @@ country_event = {
 	id = fra_1789_event.104
 	title = "The Treaty of the Hague"
 	desc = fra_1789_event.104.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -3904,7 +4048,7 @@ country_event = {
 	id = fra_1789_event.105
 	title = "Spanish Declaration of War"
 	desc = fra_1789_event.105.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -3925,7 +4069,7 @@ country_event = {
 	id = fra_1789_event.106
 	title = "British Declaration of War"
 	desc = fra_1789_event.106.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -3946,7 +4090,7 @@ country_event = {
 	id = fra_1789_event.107
 	title = "The Coup of 18 Brumaire"
 	desc = fra_1789_event.107.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -3964,7 +4108,7 @@ country_event = {
 	id = fra_1789_event.108
 	title = "Remove the Council of Five Hundred"
 	desc = fra_1789_event.108.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -3981,7 +4125,7 @@ country_event = {
 	id = fra_1789_event.109
 	title = "The Establishment of the Council of Five Hundred"
 	desc = fra_1789_event.109.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -4014,7 +4158,7 @@ country_event = {
 	id = fra_1789_event.110
 	title = "The End of the 1788 Winter famine in France"
 	desc = fra_1789_event.110.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger={
 tag=FRA
@@ -4032,7 +4176,7 @@ country_event = {
 	id = fra_1789_event.111
 	title = "Ties with France?"
 	desc = fra_1789_event.111.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -4052,7 +4196,7 @@ country_event = {
 	id = fra_1789_event.112
 	title = "The Establishment of the National Convention"
 	desc = fra_1789_event.112.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -4069,7 +4213,7 @@ country_event = {
 	id = fra_1789_event.113
 	title = "Guillaume Brune in the French Army"
 	desc = fra_1789_event.113.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger={
 tag=FRA
@@ -4088,7 +4232,7 @@ country_event = {
 	id = fra_1789_event.114
 	title = "Guillaume Brune Former Marshal of the Empire Murdered"
 	desc = fra_1789_event.114.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger={
 tag=FRA
@@ -4125,7 +4269,7 @@ country_event = {
 	id = fra_1789_event.115
 	title = "Michley Ney's Execution"
 	desc = fra_1789_event.115.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger={
 tag=FRA
@@ -4144,7 +4288,7 @@ country_event = {
 	id = fra_1789_event.116
 	title = "Death of Napoleon Bonaparte"
 	desc = fra_1789_event.116.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger={
 tag=FRA
@@ -4170,7 +4314,7 @@ country_event = {
 	id = fra_1789_event.117
 	title = "The National Guard"
 	desc = fra_1789_event.117.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger={
 tag=FRA
@@ -4196,7 +4340,7 @@ country_event = {
 	id = fra_1789_event.118
 	title = "The French Provisional Government"
 	desc = fra_1789_event.118.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -4211,31 +4355,29 @@ promote_character=FRA_napoleonii
 }
 country_event = {
 	id = fra_1789_event.119
-	title = "Defeat of Berry"
+	title = "Clashes in Rennes"
 	desc = fra_1789_event.119.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 	trigger = {
 tag=FRA
-NOT={has_war_with=BER}
-FRA={owns_state=23} 
-BER={owns_state=33} 
-BER={has_country_flag=ber_has_been_established_not_by_player}
+date > 1789.1.27 date < 1790.1.1 
 	}
 fire_only_once = yes
 	option = { # 
-		name = "The Centre of France is now going to be way more stable"
+		name = "We need to stabilize Brittany"
 		ai_chance = { factor = 100 } 
-	FRA={annex_country = { target = BER transfer_troops = no }}
-	add_stability=-0.01
-	add_war_support=-0.01
+FRA={
+add_manpower=-3
+add_stability=-0.01
+}
 	}
 }
 country_event = {
 	id = fra_1789_event.120
 	title = "The Pro Habsburg-Lorraine Luxemburg"
 	desc = fra_1789_event.120.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -4253,12 +4395,14 @@ country_event = {
 	id = fra_1789_event.121
 	title = "The Bonapartist Kingdom of Spain"
 	desc = fra_1789_event.121.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
 		name = "Spain is too unreliable"
 		ai_chance = { factor = 100 } 
+FRA={set_country_flag=peninsular_was_happened_spr}
+SPR={delete_unit = {}}
 every_state={
 limit={
 is_owned_by=SPR
@@ -4280,11 +4424,21 @@ state=176
 state=171
 state=790
 state=793
+state=1079
 }
 }
 add_core_of=CAT
 transfer_state_to=CAT
 set_demilitarized_zone = yes
+}
+every_state={
+limit={
+AND={
+is_owned_by=SPR
+is_core_of=POR
+}
+}
+transfer_state_to=FRA
 }
 CAT={set_cosmetic_tag=CAT_FRA}
 CAT={set_capital = { state = 41 }}
@@ -4309,7 +4463,7 @@ country_event = {
 	id = fra_1789_event.122
 	title = "The Guerrilla War"
 	desc = fra_1789_event.122.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -4332,13 +4486,14 @@ CAT={
 		type = puppet_wargoal_focus
 	}
 }
+ENG={country_event = fra_1789_event.270}
 	}
 }
 country_event = {
 	id = fra_1789_event.123
 	title = "Joining the 1st Coalition"
 	desc = fra_1789_event.123.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -4358,7 +4513,7 @@ country_event = {
 	id = fra_1789_event.124
 	title = "The Annexation of Parma"
 	desc = fra_1789_event.124.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -4371,7 +4526,7 @@ country_event = {
 	id = fra_1789_event.125
 	title = "The Annexation of Etruria"
 	desc = fra_1789_event.125.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -4384,7 +4539,7 @@ country_event = {
 	id = fra_1789_event.126
 	title = "The Treaty of Campo Formio"
 	desc = fra_1789_event.126.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -4397,7 +4552,7 @@ country_event = {
 	id = fra_1789_event.127
 	title = "Becoming faction leader of the 1st Coalition"
 	desc = fra_1789_event.127.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -4415,7 +4570,7 @@ country_event = {
 	id = fra_1789_event.128
 	title = "The Treaty of Tolentino"
 	desc = fra_1789_event.128.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -4448,7 +4603,7 @@ country_event = {
 	id = fra_1789_event.129
 	title = "The Lille talks with Batavia"
 	desc = fra_1789_event.129.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -4474,7 +4629,7 @@ country_event = {
 	id = fra_1789_event.130
 	title = "Belgian Volunteers"
 	desc = fra_1789_event.130.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 	trigger = {
 tag=FRA
@@ -4506,7 +4661,7 @@ country_event = {
 	id = fra_1789_event.131
 	title = "The Integration of Parma"
 	desc = fra_1789_event.131.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -4519,7 +4674,7 @@ country_event = {
 	id = fra_1789_event.132
 	title = "Defeat of Berry"
 	desc = fra_1789_event.132.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -4532,16 +4687,18 @@ country_event = {
 	id = fra_1789_event.133
 	title = "The white peace of 1800 with Russia"
 	desc = fra_1789_event.133.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger={
 tag=FRA
 or={
 and={
+date > 1800.3.1
 has_start_date > 1799.1.1 has_start_date < 1801.1.1 
 }
 and={
 date > 1800.3.1
+date < 1801.1.1
 not={has_start_date > 1799.1.1}
 FRA={has_country_flag=treaty_of_campo_formio_has_happened}
 }
@@ -4553,6 +4710,7 @@ fire_only_once = yes
 	option = { # 
 	ai_chance = { factor = 100 } 
 	name = "Russia is too far away at this point in time"
+FRA={set_country_flag=eight_before_treaty_of_paris_rus}
 RUS={leave_faction = yes}
 	every_country = {
 limit={
@@ -4569,7 +4727,7 @@ country_event = {
 	id = fra_1789_event.134
 	title = "Defeat of Berry"
 	desc = fra_1789_event.134.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -4584,7 +4742,7 @@ country_event = {
 	id = fra_1789_event.135
 	title = "Defeat of Berry"
 	desc = fra_1789_event.135.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -4599,7 +4757,7 @@ country_event = {
 	id = fra_1789_event.136
 	title = "Vassalization of the Swiss"
 	desc = fra_1789_event.136.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -4623,7 +4781,7 @@ country_event = {
 	id = fra_1789_event.137
 	title = "Defeat of Berry"
 	desc = fra_1789_event.137.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -4638,7 +4796,7 @@ country_event = {
 	id = fra_1789_event.138
 	title = "Peace with France"
 	desc = fra_1789_event.138.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -4671,16 +4829,8 @@ country_event = {
 	id = fra_1789_event.139
 	title = "The liberation of Parma"
 	desc = fra_1789_event.139.d
-	picture = GFX_idi_amin_india
-#is_triggered_only = yes
-trigger={
-tag=AUS
-date > 1796.1.1 date < 1800.1.1 
-has_war_with=FRA
-AUS={controls_state=990}
-PRM={is_subject_of=FRA}
-ENG={is_faction_leader=yes}
-}
+	picture = GFX_news_event_france_empire_1
+is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
 		name = "Italy is becoming ours again"
@@ -4710,69 +4860,216 @@ FRA={
 }
 country_event = {
 	id = fra_1789_event.140
-	title = "Defeat of Berry"
+	title = "Toulose Revolts"
 	desc = fra_1789_event.140.d
-	picture = GFX_idi_amin_india
-is_triggered_only = yes
+	picture = GFX_news_event_france_empire_1
+#is_triggered_only = yes
+trigger = {
+NOT={FRA={has_country_flag=toulose_war_fra}}
+date > 1799.8.1 date < 1800.1.1 
+tag = FRA
+}
 fire_only_once = yes
 	option = { # 
-		name = "The Centre of France is now going to be way more stable"
+		name = "The people of Toulose are truly unruly"
 		ai_chance = { factor = 100 } 
-	FRA={annex_country = { target = BER transfer_troops = no }}
-	add_stability=-0.01
-	add_war_support=-0.01
+OCC={set_cosmetic_tag=OCC_VND}
+		OCC={
+		add_state_core = 31
+		}
+		OCC={
+		transfer_state = 31
+		}
+OCC={country_event = fra_1789_event.141}
 	}
 }
 country_event = {
 	id = fra_1789_event.141
-	title = "Defeat of Berry"
+	title = "Toulose Revolts"
 	desc = fra_1789_event.141.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
-		name = "The Centre of France is now going to be way more stable"
+		name = "Toulose needs to be French"
 		ai_chance = { factor = 100 } 
-	FRA={annex_country = { target = BER transfer_troops = no }}
-	add_stability=-0.01
-	add_war_support=-0.01
+FRA={set_country_flag=toulose_war_fra}
+                OCC={add_manpower = 32000 load_oob = "OCC_1789"
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 32000
+					producer = OCC
+				}
+				}
+OCC={
+				declare_war_on = {
+		target = FRA
+		type = puppet_wargoal_focus
+	}
+}
+FRA={
+set_province_controller = 625
+set_province_controller = 752
+set_province_controller = 755
+set_province_controller = 929
+set_province_controller = 943
+set_province_controller = 3598
+set_province_controller = 3740
+set_province_controller = 3749
+set_province_controller = 3751
+set_province_controller = 3915
+set_province_controller = 3948
+set_province_controller = 6759
+set_province_controller = 6775
+set_province_controller = 6792
+set_province_controller = 6931
+set_province_controller = 6962
+set_province_controller = 9717
+set_province_controller = 9723
+set_province_controller = 9734
+set_province_controller = 9751
+set_province_controller = 9824
+set_province_controller = 9882
+set_province_controller = 9884
+set_province_controller = 11697
+set_province_controller = 11699
+set_province_controller = 11702
+set_province_controller = 11709
+set_province_controller = 11718
+set_province_controller = 11720
+set_province_controller = 11869
+set_province_controller = 12169
+set_province_controller = 13623
+set_province_controller = 13624
+set_province_controller = 13625
+set_province_controller = 13626
+set_province_controller = 13628
+set_province_controller = 13629
+set_province_controller = 14096
+set_province_controller = 14495
+set_province_controller = 14506
+set_province_controller = 14510
+set_province_controller = 14511
+set_province_controller = 14516
+set_province_controller = 14523
+set_province_controller = 14524
+set_province_controller = 14527
+set_province_controller = 14528
+set_province_controller = 14531
+set_province_controller = 14532
+set_province_controller = 14539
+set_province_controller = 14546
+set_province_controller = 14556
+set_province_controller = 14567
+}
 	}
 }
 country_event = {
 	id = fra_1789_event.142
-	title = "Defeat of Berry"
+	title = "Defeat of the Toulose Counter-Revolution"
 	desc = fra_1789_event.142.d
-	picture = GFX_idi_amin_india
-is_triggered_only = yes
+	picture = GFX_news_event_france_empire_1
+#is_triggered_only = yes
+trigger = {
+tag = FRA
+FRA={has_country_flag=toulose_war_fra}
+or={
+AND={
+OCC = {surrender_progress > 0.9 }
+date > 1799.9.1
+}
+AND={
+NOT={FRA={has_war_with=OCC}}
+OCC={owns_state=31}
+}
+AND={
+FRA={owns_state=31}
+31={is_core_of=OCC}
+}
+}
+}
 fire_only_once = yes
 	option = { # 
-		name = "The Centre of France is now going to be way more stable"
+		name = "Hopefully theres no more Counter-Revolutions"
 		ai_chance = { factor = 100 } 
-	FRA={annex_country = { target = BER transfer_troops = no }}
-	add_stability=-0.01
-	add_war_support=-0.01
+FRA={annex_country = { target = OCC transfer_troops = no }}
+31={transfer_state_to=FRA}
+31={remove_core_of=OCC}
 	}
 }
 country_event = {
 	id = fra_1789_event.143
-	title = "Defeat of Berry"
+	title = "The Confederation of the Rhine"
 	desc = fra_1789_event.143.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
-		name = "The Centre of France is now going to be way more stable"
+		name = "Germany is firmly ours"
 		ai_chance = { factor = 100 } 
-	FRA={annex_country = { target = BER transfer_troops = no }}
-	add_stability=-0.01
-	add_war_support=-0.01
+FRA={
+add_to_faction = FKF
+		}
+HOH={set_cosmetic_tag=HOH}
+FKF={
+		set_autonomy = {
+        target = BAY
+        autonomous_state = autonomy_confederationoftherhine
+        freedom_level = 0.4
+	}
+			set_autonomy = {
+        target = WUR
+        autonomous_state = autonomy_confederationoftherhine
+        freedom_level = 0.4
+	}
+			set_autonomy = {
+        target = BAD
+        autonomous_state = autonomy_confederationoftherhine
+        freedom_level = 0.4
+	}
+			set_autonomy = {
+        target = NAS
+        autonomous_state = autonomy_confederationoftherhine
+        freedom_level = 0.4
+	}
+			set_autonomy = {
+        target = LCT
+        autonomous_state = autonomy_confederationoftherhine
+        freedom_level = 0.4
+	}
+			set_autonomy = {
+        target = MUN
+        autonomous_state = autonomy_confederationoftherhine
+        freedom_level = 0.4
+	}
+			set_autonomy = {
+        target = HOH
+        autonomous_state = autonomy_confederationoftherhine
+        freedom_level = 0.4
+	}
+			set_autonomy = {
+        target = REG
+        autonomous_state = autonomy_confederationoftherhine
+        freedom_level = 0.4
+	}
+			set_autonomy = {
+        target = BRG
+        autonomous_state = autonomy_confederationoftherhine
+        freedom_level = 0.4
+	}
+			set_autonomy = {
+        target = HES
+        autonomous_state = autonomy_confederationoftherhine
+        freedom_level = 0.4
+	}
+	}
 	}
 }
 country_event = {
 	id = fra_1789_event.144
 	title = "Alliance with France?"
 	desc = fra_1789_event.144.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -4785,7 +5082,7 @@ country_event = {
 	id = fra_1789_event.145
 	title = "Alliance with France?"
 	desc = fra_1789_event.145.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -4798,7 +5095,7 @@ country_event = {
 	id = fra_1789_event.146
 	title = "Alliance with France?"
 	desc = fra_1789_event.146.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -4811,12 +5108,15 @@ country_event = {
 	id = fra_1789_event.147
 	title = "The Treaty of Campo Formio"
 	desc = fra_1789_event.147.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
 		name = "At least we gained most of Venice right?"
 		ai_chance = { factor = 100 } 
+        ITA={transfer_state=1110}
+        ITA={add_state_core=1110}
+		VNT={remove_state_core=1110}
 FRA={set_country_flag=treaty_of_campo_formio_has_happened}
 VNT={set_cosmetic_tag=VNT_AUS}
 VNT={promote_character=VNT_francisiivnt}
@@ -4837,25 +5137,13 @@ AUS={
 }
 FRA={transfer_state=964}
 FRA={set_country_flag = campoformio_flag}
-every_state={
-limit={
-159={is_owned_by=ITA}
-}
-        ITA={transfer_state=1111 transfer_state=1110}
-		ITA={add_state_core=1111 add_state_core=1110}
-		SWI={add_state_core=906}
-1111={remove_core_of=GRI}
-906={remove_core_of=GRI}
-1111={add_core_of=VNT}
-SWI={annex_country = { target = GRI transfer_troops = no }}
-}
 }
 }
 country_event = {
 	id = fra_1789_event.148
 	title = "Defeat of Berry"
 	desc = fra_1789_event.148.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -4870,7 +5158,7 @@ country_event = {
 	id = fra_1789_event.149
 	title = "Defeat of Berry"
 	desc = fra_1789_event.149.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -4885,7 +5173,7 @@ country_event = {
 	id = fra_1789_event.150
 	title = "Defeat of Berry"
 	desc = fra_1789_event.150.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -4900,7 +5188,7 @@ country_event = {
 	id = fra_1789_event.151
 	title = "Bavaria Accepts Alliance"
 	desc = fra_1789_event.151.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -4913,7 +5201,7 @@ country_event = {
 	id = fra_1789_event.152
 	title = "Baden Accepts Alliance"
 	desc = fra_1789_event.152.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -4926,7 +5214,7 @@ country_event = {
 	id = fra_1789_event.153
 	title = "Wurtemberg Accepts Alliance"
 	desc = fra_1789_event.153.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -4937,54 +5225,97 @@ fire_only_once = yes
 }
 country_event = {
 	id = fra_1789_event.154
-	title = "Defeat of Berry"
+	title = "Flanders Revolts"
 	desc = fra_1789_event.154.d
-	picture = GFX_idi_amin_india
-is_triggered_only = yes
+	picture = GFX_news_event_france_empire_1
+#is_triggered_only = yes
+trigger = {
+NOT={FRA={has_country_flag=flanders_war_fra}}
+date > 1798.10.12 date < 1800.1.1 
+tag = FRA
+}
 fire_only_once = yes
 	option = { # 
-		name = "The Centre of France is now going to be way more stable"
+		name = "The Flemish are truly unruly"
 		ai_chance = { factor = 100 } 
-	FRA={annex_country = { target = BER transfer_troops = no }}
-	add_stability=-0.01
-	add_war_support=-0.01
+		FLA={
+		add_state_core = 973
+		}
+		FLA={
+		transfer_state = 973
+		}
+FLA={country_event = fra_1789_event.155}
 	}
 }
 country_event = {
 	id = fra_1789_event.155
-	title = "Defeat of Berry"
+	title = "Flanders Revolts"
 	desc = fra_1789_event.155.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
-		name = "The Centre of France is now going to be way more stable"
+		name = "Flanders needs to be German"
 		ai_chance = { factor = 100 } 
-	FRA={annex_country = { target = BER transfer_troops = no }}
-	add_stability=-0.01
-	add_war_support=-0.01
+FRA={set_country_flag=flanders_war_fra}
+                FLA={add_manpower = 32000 load_oob = "FLA_1798"
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 32000
+					producer = FLA
+				}
+				}
+FLA={
+				declare_war_on = {
+		target = FRA
+		type = puppet_wargoal_focus
+	}
+}
 	}
 }
 country_event = {
 	id = fra_1789_event.156
-	title = "Defeat of Berry"
+	title = "Defeat of the Flemish Peasants"
 	desc = fra_1789_event.156.d
-	picture = GFX_idi_amin_india
-is_triggered_only = yes
+	picture = GFX_news_event_france_empire_1
+#is_triggered_only = yes
+trigger = {
+tag = FRA
+FRA={has_country_flag=flanders_war_fra}
+or={
+AND={
+FLA = {surrender_progress > 0.9 }
+date > 1798.10.12 
+}
+AND={
+NOT={FRA={has_war_with=FLA}}
+FLA={owns_state=973}
+}
+AND={
+FRA={owns_state=973}
+973={is_core_of=FLA}
+}
+}
+}
 fire_only_once = yes
 	option = { # 
-		name = "The Centre of France is now going to be way more stable"
+		name = "Hopefully theres no more Counter-Revolutions"
 		ai_chance = { factor = 100 } 
-	FRA={annex_country = { target = BER transfer_troops = no }}
-	add_stability=-0.01
-	add_war_support=-0.01
+every_country={
+limit={
+owns_state=6
+}
+PREV={annex_country = { target = FLA transfer_troops = no }}
+973={transfer_state_to=PREV}
+}
+973={remove_core_of=FLA}
 	}
 }
 country_event = {
 	id = fra_1789_event.157
 	title = "The Usurping of Parma"
 	desc = fra_1789_event.157.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -5009,7 +5340,7 @@ country_event = {
 	id = fra_1789_event.158
 	title = "The Usurping of Etruria"
 	desc = fra_1789_event.158.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -5034,7 +5365,7 @@ country_event = {
 	id = fra_1789_event.159
 	title = "The Defence of Erfurt"
 	desc = fra_1789_event.159.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 #is_triggered_only = yes
 trigger = {
 date > 1813.7.10 date < 1814.1.1 
@@ -5061,7 +5392,7 @@ country_event = {
 	id = fra_1789_event.160
 	title = "The End of the Confederation of the Rhine"
 	desc = fra_1789_event.160.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 #is_triggered_only = yes
 trigger = {
 date > 1813.11.4 date < 1814.1.1 
@@ -5087,7 +5418,7 @@ country_event = {
 	id = fra_1789_event.161
 	title = "Abolishing all Banknotes"
 	desc = fra_1789_event.161.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -5177,12 +5508,15 @@ country_event = {
 	id = fra_1789_event.162
 	title = "The Bourbon Neapolitan Government in Exile"
 	desc = fra_1789_event.162.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
 		name = "We will hold Sicily"
 		ai_chance = { factor = 100 } 
+hidden_effect={
+TTS={add_manpower=10000}
+}
 	TTS={set_cosmetic_tag = TTS_exile}
     TTS={
 	add_stability=-0.1
@@ -5204,7 +5538,7 @@ fire_only_once = yes
 		TTS={
 			set_autonomy = {
         target = SIC
-        autonomous_state = autonomy_protectorate
+        autonomous_state = autonomy_dominion
         freedom_level = 0.4
 	}
 	}
@@ -5214,10 +5548,10 @@ country_event = {
 	id = fra_1789_event.163
 	title = "The Expedition to Ireland"
 	desc = fra_1789_event.163.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 #is_triggered_only = yes
 trigger = {
-date > 1798.6.1 has_start_date < 1799.1.1 
+date > 1798.6.1 date < 1799.1.1 
 tag = FRA
 }
 fire_only_once = yes
@@ -5245,10 +5579,10 @@ country_event = {
 	id = fra_1789_event.164
 	title = "The Rhine Freezes over"
 	desc = fra_1789_event.164.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 #is_triggered_only = yes
 trigger = {
-date > 1795.1.1 has_start_date < 1796.1.1 
+date > 1795.1.1 date < 1796.1.1 
 tag = FRA
 }
 fire_only_once = yes
@@ -5263,7 +5597,7 @@ country_event = {
 	id = fra_1789_event.165
 	title = "Mass Inflation and counterfeit banknotes"
 	desc = fra_1789_event.165.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 #is_triggered_only = yes
 trigger = {
 date > 1796.1.1 has_start_date < 1797.1.1 
@@ -5283,7 +5617,7 @@ country_event = {
 	id = fra_1789_event.166
 	title = "Egypt is as good as ours"
 	desc = fra_1789_event.166.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -5296,7 +5630,7 @@ country_event = {
 	id = fra_1789_event.167
 	title = "Austria leaves the Coalition"
 	desc = fra_1789_event.167.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -5322,7 +5656,7 @@ country_event = {
 	id = fra_1789_event.168
 	title = "Austria leaves the Coalition"
 	desc = fra_1789_event.168.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -5343,7 +5677,7 @@ country_event = {
 	id = fra_1789_event.169
 	title = "The Annexation of Valais into Switzerland"
 	desc = fra_1789_event.169.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -5362,7 +5696,7 @@ country_event = {
 	id = fra_1789_event.170
 	title = "Peace with the Papal States"
 	desc = fra_1789_event.170.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger={
 tag=FRA
@@ -5388,13 +5722,19 @@ country_event = {
 	id = fra_1789_event.171
 	title = "The Vendee"
 	desc = fra_1789_event.171.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
 	ai_chance = { factor = 100 } 
 	name = "We need to liberate Poitou"
-hidden_effect={VND={add_manpower = 50000 load_oob = "VND_1793"}}
+hidden_effect={VND={add_manpower = 50000 load_oob = "VND_1793"}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 50000
+					producer = VND
+				}
+}
 VND={
 				declare_war_on = {
 		target = FRA
@@ -5407,7 +5747,7 @@ country_event = {
 	id = fra_1789_event.172
 	title = "The Establishment of a Jewish State"
 	desc = fra_1789_event.172.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -5445,7 +5785,7 @@ country_event = {
 	id = fra_1789_event.173
 	title = "A Condominium in Jerusalem?"
 	desc = fra_1789_event.173.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -5466,7 +5806,7 @@ remove_core_of = TUR
 	id = fra_1789_event.174
 	title = "Murat of Naples switches sides"
 	desc = fra_1789_event.174.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {
 tag = NAP
@@ -5477,6 +5817,7 @@ fire_only_once = yes
 	option = { # 
 		name = "We are joining the Allies"
 		ai_chance = { factor = 100 }
+NAP={add_ideas={napoleonic_naples_is_not_loyal}}
 	FRA={
 	set_autonomy = {
         target = NAP
@@ -5513,23 +5854,13 @@ ENG={add_to_faction=NAP}
 	id = fra_1789_event.175
 	title = "The Treaty of Valençay"
 	desc = fra_1789_event.175.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {
 tag = SPR
 country_exists=CAT
-or={
-and={
-CAT = {surrender_progress > 0.5 }
-date > 1808.1.1 date < 1813.12.8
-}
-and={
 CAT = {surrender_progress > 0.2 }
-date > 1813.12.8 date < 1814.1.1
-}
-NOT={CAT={is_subject_of=FRA}}
-}
-    
+date > 1813.12.8 date < 1814.1.1  
 }
 fire_only_once = yes
 	option = { # 
@@ -5549,16 +5880,18 @@ transfer_state_to=SPR
 	id = fra_1789_event.176
 	title = "The prelude to the Treaty of Lunéville"
 	desc = fra_1789_event.176.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {
 tag = FRA
 has_war_with=AUS
 AUS={has_country_flag=AUS_steyr_lune_focus_in_the_old_focus_tree}
 or={
-date > 1800.12.25 date < 1801.1.1
 and={
-AUS = {surrender_progress > 0.5 }
+date > 1800.12.25 date < 1802.1.1
+}
+and={
+AUS = {surrender_progress > 0.4 }
 date < 1800.12.25
 }
 }
@@ -5570,6 +5903,7 @@ fire_only_once = yes
 FRA={set_country_flag=the_armistice_of_steyr_has_happened_flag}
 AUS={leave_faction = yes}
 hidden_effect={
+TOS={set_cosmetic_tag=TOS}
 	every_country = {
 limit={
 or={
@@ -5578,6 +5912,16 @@ is_subject_of=AUS
 }
 }
   white_peace = FRA
+}
+	every_country = {
+limit={
+or={
+	is_ally_with = FRA
+	is_subject_of = FRA
+	tag=FRA
+}
+}
+  white_peace = AUS
 }
 }
 every_country={
@@ -5612,7 +5956,7 @@ FRA={
 	id = fra_1789_event.177
 	title = "The Treaty of La Jaunaye"
 	desc = fra_1789_event.177.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -5624,7 +5968,7 @@ fire_only_once = yes
 	id = fra_1789_event.178
 	title = "The Convention of El Arish"
 	desc = fra_1789_event.178.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -5636,7 +5980,7 @@ fire_only_once = yes
 	id = fra_1789_event.179
 	title = "The Bank of France"
 	desc = fra_1789_event.179.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -5648,7 +5992,7 @@ fire_only_once = yes
 	id = fra_1789_event.180
 	title = "Peace with France"
 	desc = fra_1789_event.180.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -5664,7 +6008,7 @@ every_country = {
 	id = fra_1789_event.181
 	title = "Portugal bends the knee"
 	desc = fra_1789_event.181.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -5676,7 +6020,7 @@ country_event = {
 	id = fra_1789_event.182
 	title = "Portuguese Declaration of War"
 	desc = fra_1789_event.182.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -5697,7 +6041,7 @@ fire_only_once = yes
 	id = fra_1789_event.183
 	title = "Monitoring the press"
 	desc = fra_1789_event.183.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -5709,7 +6053,7 @@ fire_only_once = yes
 	id = fra_1789_event.184
 	title = "The Coup of 18 Fructidor"
 	desc = fra_1789_event.184.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -5721,7 +6065,7 @@ fire_only_once = yes
 	id = fra_1789_event.185
 	title = "The Growing Conservatism in France"
 	desc = fra_1789_event.185.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -5733,7 +6077,7 @@ fire_only_once = yes
 	id = fra_1789_event.186
 	title = "The Coup of 22 Floréal"
 	desc = fra_1789_event.186.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -5745,7 +6089,7 @@ fire_only_once = yes
 	id = fra_1789_event.187
 	title = "The Annexation of Geneva"
 	desc = fra_1789_event.187.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -5764,7 +6108,7 @@ add_core_of=FRA
 	id = fra_1789_event.188
 	title = "The Belgian Opportunity"
 	desc = fra_1789_event.188.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -5776,7 +6120,7 @@ fire_only_once = yes
 	id = fra_1789_event.189
 	title = "The Cult of the Supreme Being"
 	desc = fra_1789_event.189.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -5788,7 +6132,7 @@ fire_only_once = yes
 	id = fra_1789_event.190
 	title = "The Cult of Reason"
 	desc = fra_1789_event.190.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -5800,7 +6144,7 @@ fire_only_once = yes
 	id = fra_1789_event.191
 	title = "Improving our relations with the Pope"
 	desc = fra_1789_event.191.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -5812,18 +6156,18 @@ fire_only_once = yes
 	id = fra_1789_event.192
 	title = "The Cisalpine Army?"
 	desc = fra_1789_event.192.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
 		name = "The Cisalpine Army"
 		ai_chance = { factor = 100 }
-ITA={add_manpower = 35000 load_oob = "ITA_1789"}
+ITA={add_manpower = 35000 load_oob = "ITA_1790"}
 	}
 	option = { # 
 		name = "Just integrate it"
 		ai_chance = { factor = 0 }
-FRA={add_manpower = 35000 load_oob = "ITA_1789"}
+FRA={add_manpower = 35000 load_oob = "ITA_1790"}
 ITA={add_manpower = -35000}
 FRA={add_stability=-0.05}
 	}
@@ -5834,7 +6178,7 @@ FRA={add_stability=-0.05}
 	id = fra_1789_event.193
 	title = "Improving our relations with the Pope"
 	desc = fra_1789_event.193.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -5844,21 +6188,45 @@ fire_only_once = yes
 }
 					country_event = {
 	id = fra_1789_event.194
-	title = "Improving our relations with the Pope"
+	title = "The Treaty of Badajoz"
 	desc = fra_1789_event.194.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
-		name = "Improving our relations with the Pope"
+		name = "We don't want to anger France"
 		ai_chance = { factor = 100 }
+	every_country={
+	limit={
+	POR={is_in_faction=yes}
+	}
+	POR={leave_faction=yes}
+	}
+	every_country={
+	limit={
+	has_war_with=POR
+	}
+	white_peace=POR
+	}
+	every_state={
+	limit={
+	state=1079
+	}
+	add_core_of=SPR
+	remove_core_of=POR
+	transfer_state_to=SPR
+	}
+	}
+	option = { # 
+		name = "We refuse to give Olivenca"
+		ai_chance = { factor = 0 }
 	}
 }
 					country_event = {
 	id = fra_1789_event.195
 	title = "Improving our relations with the Pope"
 	desc = fra_1789_event.195.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -5870,7 +6238,7 @@ fire_only_once = yes
 	id = fra_1789_event.196
 	title = "Improving our relations with the Pope"
 	desc = fra_1789_event.196.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -5882,7 +6250,7 @@ fire_only_once = yes
 	id = fra_1789_event.197
 	title = "Improving our relations with the Pope"
 	desc = fra_1789_event.197.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -5894,7 +6262,7 @@ fire_only_once = yes
 	id = fra_1789_event.198
 	title = "Improving our relations with the Pope"
 	desc = fra_1789_event.198.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -5906,7 +6274,7 @@ fire_only_once = yes
 	id = fra_1789_event.199
 	title = "Improving our relations with the Pope"
 	desc = fra_1789_event.199.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -5918,7 +6286,7 @@ fire_only_once = yes
 	id = fra_1789_event.200
 	title = "The Treaty of Pressburg"
 	desc = fra_1789_event.200.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -5970,7 +6338,7 @@ white_peace = FRA
 	id = fra_1789_event.201
 	title = "The Battle of Austerlitz"
 	desc = fra_1789_event.201.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -5982,7 +6350,7 @@ fire_only_once = yes
 	id = fra_1789_event.202
 	title = "The 2nd Vendée Uprising"
 	desc = fra_1789_event.202.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -5994,7 +6362,7 @@ fire_only_once = yes
 	id = fra_1789_event.203
 	title = "Final Pacification of the Vendée by General Hoche"
 	desc = fra_1789_event.203.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -6006,7 +6374,7 @@ fire_only_once = yes
 	id = fra_1789_event.204
 	title = "15,000 German Volunteers"
 	desc = fra_1789_event.204.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {
 tag = FRA
@@ -6035,7 +6403,7 @@ FRA={add_manpower=15000}
 	id = fra_1789_event.205
 	title = "150 Years After Westphalia"
 	desc = fra_1789_event.205.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {
 tag = FRA
@@ -6056,7 +6424,7 @@ add_stability=0.03
 	id = fra_1789_event.206
 	title = "The 2nd Vendée Uprising"
 	desc = fra_1789_event.206.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -6068,7 +6436,7 @@ fire_only_once = yes
 	id = fra_1789_event.207
 	title = "The Defeat of the Vendée Rebellion (1799)"
 	desc = fra_1789_event.207.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -6080,7 +6448,7 @@ fire_only_once = yes
 	id = fra_1789_event.208
 	title = "A Conservative tide"
 	desc = fra_1789_event.208.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -6092,7 +6460,7 @@ fire_only_once = yes
 	id = fra_1789_event.209
 	title = "Conservatives win the 1797 Election"
 	desc = fra_1789_event.209.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -6104,7 +6472,7 @@ fire_only_once = yes
 	id = fra_1789_event.210
 	title = "The Ministry of Police"
 	desc = fra_1789_event.210.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {
 tag = FRA
@@ -6121,7 +6489,7 @@ fire_only_once = yes
 	id = fra_1789_event.211
 	title = "The Italian Campaign"
 	desc = fra_1789_event.211.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -6134,7 +6502,7 @@ FRA={add_war_support=0.1}
 	id = fra_1789_event.212
 	title = "The Sardinian-Piedmontese invasion of France"
 	desc = fra_1789_event.212.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {
 tag = SPM
@@ -6160,7 +6528,7 @@ FRA={add_war_support=0.05}
 	id = fra_1789_event.213
 	title = "The retaking of Corsica"
 	desc = fra_1789_event.213.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {
 tag = FRA
@@ -6181,26 +6549,46 @@ FRA={add_war_support=-0.05}
 	id = fra_1789_event.214
 	title = "The Treaty of Fontainebleau"
 	desc = fra_1789_event.214.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
 		name = "Let's not honour the Treaty"
 		ai_chance = { factor = 100 }
+FRA={country_event = fra_1789_event.282}
 FRA={add_war_support=0.1}
 SPR={add_war_support=-0.1}
+179={transfer_state_to=SPR}
+180={transfer_state_to=SPR}
+795={transfer_state_to=SPR}
+1036={transfer_state_to=FRA}
+1037={transfer_state_to=FRA}
+1038={transfer_state_to=FRA}
+181={transfer_state_to=FRA}
+112={transfer_state_to=FRA}
+hidden_effect={1079={transfer_state_to=SPR}}
 	}
 	option = { # 
 		name = "Let's make this happen"
 		ai_chance = { factor = 0 }
+FRA={country_event = fra_1789_event.282}
 FRA={country_event = fra_1789_event.215}
+179={transfer_state_to=SPR}
+180={transfer_state_to=SPR}
+795={transfer_state_to=SPR}
+1036={transfer_state_to=FRA}
+1037={transfer_state_to=FRA}
+1038={transfer_state_to=FRA}
+181={transfer_state_to=FRA}
+112={transfer_state_to=FRA}
+hidden_effect={1079={transfer_state_to=SPR}}
 	}
 }
 					country_event = {
 	id = fra_1789_event.215
 	title = "The Treaty of Fontainebleau"
 	desc = fra_1789_event.215.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -6209,11 +6597,16 @@ fire_only_once = yes
 	FRA={
 	transfer_state=181
 	transfer_state=112
+	transfer_state=1036
+	transfer_state=1037
+	transfer_state=1038
 	}
-	SPR={
-	transfer_state=179
-	transfer_state=180
-	transfer_state=795
+	every_state={
+	limit={
+	state=180
+	}
+	add_core_of=LST
+	transfer_state_to=LST
 	}
 	}
 }
@@ -6221,7 +6614,7 @@ fire_only_once = yes
 	id = fra_1789_event.216
 	title = "The War of the 1st Coalition in Venice"
 	desc = fra_1789_event.216.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -6234,7 +6627,7 @@ fire_only_once = yes
 	id = fra_1789_event.218
 	title = "Our army is now prepared to strike"
 	desc = fra_1789_event.218.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {
 tag = FRA
@@ -6256,11 +6649,11 @@ country_event = {
 	id = fra_1789_event.219
 	title = "The Avignon Revolution"
 	desc = fra_1789_event.219.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {
 tag = FRA
-    date < 1800.1.1
+    date < 1791.1.1
 date > 1790.6.12
 }
 fire_only_once = yes
@@ -6281,14 +6674,20 @@ country_event = {
 	id = fra_1789_event.220
 	title = "The Bordeaux Counter-revolutionaries"
 	desc = fra_1789_event.220.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
 		name = "The Army is ready"
 		ai_chance = { factor = 100 } 
 FRA={add_manpower=6000}
-AVI={add_manpower = 16000 load_oob = "AVI_1789"}
+AVI={add_manpower = 16000 load_oob = "AVI_1789"
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 16000
+					producer = AVI
+				}
+}
 		AVI={
 			declare_war_on = {
 		target = PAP
@@ -6301,7 +6700,7 @@ country_event = {
 	id = fra_1789_event.221
 	title = "The Annexation of Avignon"
 	desc = fra_1789_event.221.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -6321,7 +6720,7 @@ country_event = {
 	id = fra_1789_event.223
 	title = "The Annexation of Ragusa"
 	desc = fra_1789_event.223.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -6337,7 +6736,7 @@ ITA={
 	id = fra_1789_event.226
 	title = "The War on Bavaria"
 	desc = fra_1789_event.226.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -6371,7 +6770,7 @@ ENG={add_to_faction=MEM}
 	id = fra_1789_event.227
 	title = "The Anglo-Corsican Kingdom"
 	desc = fra_1789_event.227.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {
 tag = ENG
@@ -6402,7 +6801,7 @@ ENG={
 	id = fra_1789_event.228
 	title = "The Treaty of Florence with Naples"
 	desc = fra_1789_event.228.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {
 tag = FRA
@@ -6437,7 +6836,7 @@ country_event = {
 	id = fra_1789_event.230
 	title = "the Bordeaux Lyon and Marseilles Counter-Revolutionaries"
 	desc = fra_1789_event.230.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger={
 tag=FRA
@@ -6451,9 +6850,12 @@ PRS={country_event = fra_1789_event.9}
 every_state={
 limit={
 or={
+state=17
 state=19
 state=20
 state=21
+state=22
+state=1103
 }
 }
 transfer_state_to=PRS
@@ -6465,7 +6867,7 @@ country_event = {
 	id = fra_1789_event.233
 	title = "The Failure of the Brabantian Revolution"
 	desc = fra_1789_event.233.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {	
 date > 1790.3.12 has_start_date < 1800.1.1 
@@ -6491,7 +6893,7 @@ country_event = {
 	id = fra_1789_event.234
 	title = "The Divorce of Napoleon and Joséphine"
 	desc = fra_1789_event.234.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 #is_triggered_only = yes
 trigger = {
 date > 1809.12.10 date < 1810.1.1 
@@ -6507,7 +6909,7 @@ country_event = {
 	id = fra_1789_event.235
 	title = "The Marriage of Napoleon and Joséphine"
 	desc = fra_1789_event.235.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 #is_triggered_only = yes
 trigger = {
 date > 1796.3.9 date < 1797.1.1 
@@ -6524,7 +6926,7 @@ country_event = {
 	id = fra_1789_event.236
 	title = "The Pacification of the Vendee"
 	desc = fra_1789_event.236.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 #is_triggered_only = yes
 trigger = {
 date > 1796.2.1 has_start_date < 1800.1.1 
@@ -6545,7 +6947,7 @@ fire_only_once = yes
 	id = fra_1789_event.237
 	title = "Venice stays Neutral"
 	desc = fra_1789_event.237.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -6569,7 +6971,7 @@ country_event = {
 	id = fra_1789_event.238
 	title = "Peace Between France and Spain"
 	desc = fra_1789_event.238.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger={
 date > 1789.1.1 date < 1800.1.1 
@@ -6600,10 +7002,11 @@ country_event = {
 	id = fra_1789_event.239
 	title = "De-facto peace with Haiti"
 	desc = fra_1789_event.239.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {
 tag = FRA
+HAI={has_country_flag=haiti_revolution}
 has_start_date < 1800.1.1 
 or={
 date > 1796.8.21
@@ -6616,6 +7019,7 @@ fire_only_once = yes
 	option = { # 
 		name = "We cant bother with this let the Poles deal with them"
 		ai_chance = { factor = 100 }
+HAI={set_country_flag=hai_war_has_hap}
 hidden_effect={
 FRA={
 		set_autonomy = {
@@ -6641,7 +7045,7 @@ country_event = {
 	id = fra_1789_event.240
 	title = "The Treaty of Tilsit"
 	desc = fra_1789_event.240.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -6649,18 +7053,14 @@ fire_only_once = yes
 		ai_chance = { factor = 100 }
 FRA={country_event = fra_1789_event.30}
 FRA={country_event = fra_1789_event.31}
-FRA={country_event = fra_1789_event.32}
-FRA={country_event = fra_1789_event.33}
 FRA={country_event = fra_1789_event.34}
-FRA={country_event = fra_1789_event.35}
-FRA={country_event = fra_1789_event.54}
 	}
 }
 country_event = {
 	id = fra_1789_event.241
 	title = "The Danish-French Alliance"
 	desc = fra_1789_event.241.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -6678,7 +7078,7 @@ country_event = {
 	id = fra_1789_event.242
 	title = "The 3rd Coalition"
 	desc = fra_1789_event.242.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {
 FRA={has_country_flag=the_armistice_of_steyr_has_happened_flag}
@@ -6706,7 +7106,7 @@ AUS={set_country_flag=the_third_coalition_has_happened_flag}
 	id = fra_1789_event.243
 	title = "The Treaty of Pressburg"
 	desc = fra_1789_event.243.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {
 AUS={has_country_flag=the_third_coalition_has_happened_flag}
@@ -6714,7 +7114,7 @@ tag = FRA
 has_war_with=AUS
 or={
 and={
-date < 1806.1.1 
+date < 1810.1.1 
 date > 1805.12.26 
 }
 and={
@@ -6727,6 +7127,7 @@ fire_only_once = yes
 	option = { # 
 		name = "Italy is now fully ours"
 		ai_chance = { factor = 100 }
+		FRA={set_country_flag=FRA_pressburg_treaty_has_happened_so_take_cotr}
 AUS={country_event = fra_1789_event.245}
 AUS={leave_faction=yes} 
 hidden_effect={
@@ -6736,11 +7137,10 @@ hidden_effect={
 every_country = {
 limit={
 or={
-tag=AUS
-is_subject_of=AUS
+has_war_with=AUS
 }
 }
-white_peace = FRA
+white_peace = AUS
 }
 	every_state={
 	limit={
@@ -6778,7 +7178,7 @@ country_event = {
 	id = fra_1789_event.244
 	title = "Austria joins The 3rd Coalition"
 	desc = fra_1789_event.244.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -6791,7 +7191,7 @@ country_event = {
 	id = fra_1789_event.245
 	title = "The Treaty of Pressburg"
 	desc = fra_1789_event.245.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -6808,7 +7208,7 @@ country_event = {
 	id = fra_1789_event.246
 	title = "The 5th Coalition"
 	desc = fra_1789_event.246.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {
 AUS={has_country_flag=the_third_coalition_has_happened_flag}
@@ -6836,7 +7236,7 @@ AUS={set_country_flag=the_fifth_coalition_has_happened_flag}
 	id = fra_1789_event.247
 	title = "The Treaty of The Treaty of Schönbrunn"
 	desc = fra_1789_event.247.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {
 AUS={has_country_flag=the_fifth_coalition_has_happened_flag}
@@ -6867,6 +7267,16 @@ is_subject_of=AUS
 }
 }
 white_peace = FRA
+}
+every_country = {
+limit={
+or={
+	is_ally_with = FRA
+	is_subject_of = FRA
+	tag=FRA
+}
+}
+white_peace = AUS
 }
 	every_state={
 	limit={
@@ -6921,13 +7331,14 @@ is_owned_by=FRA
 remove_core_of=ITA
 }
 }
+FRA={add_to_faction=AUS}
 	}
 }
 country_event = {
 	id = fra_1789_event.248
 	title = "Austria joins The 5th Coalition"
 	desc = fra_1789_event.248.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -6940,11 +7351,2620 @@ country_event = {
 	id = fra_1789_event.249
 	title = "The Treaty of The Treaty of Schönbrunn"
 	desc = fra_1789_event.249.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
 		name = "We lost Salzburg and Northern Galicia"
 		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = fra_1789_event.250
+	title = "The Reign of Terror"
+	desc = fra_1789_event.250.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "The French Revolution"
+		ai_chance = { factor = 100 } 
+		news_event = fra_1789_news.250
+
+	}
+}
+country_event = {
+	id = fra_1789_event.251
+	title = "The End of the Reign of Terror"
+	desc = fra_1789_event.251.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "The French Revolution"
+		ai_chance = { factor = 100 } 
+		news_event = fra_1789_news.251
+
+	}
+}
+country_event = {
+	id = fra_1789_event.252
+	title = "Saxony joins the Coalition"
+	desc = fra_1789_event.252.d
+	picture = GFX_news_event_france_empire_1
+	#is_triggered_only = yes
+trigger = {
+tag = SAX
+country_exists=SAX
+SAX={is_ally_with=FKF}
+    date > 1813.10.19 date < 1820.1.1
+}
+fire_only_once = yes
+	option = { # 
+		name = "We ought to declare war on France"
+		ai_chance = { factor = 100 }
+	FKF={
+	set_autonomy = {
+        target = SAX
+        autonomous_state = autonomy_free
+        freedom_level = 0.4
+	}
+	}
+	SAX={leave_faction=yes}
+hidden_effect = {
+every_country = {
+  limit = {
+  has_war_with = SAX
+  }
+  white_peace = SAX
+}
+ENG={add_to_faction=SAX}
+		random_other_country={
+		limit={
+		tag=SAX
+		NOT={has_war_with=FRA}
+		}
+		SAX={
+			declare_war_on = {
+		target = FRA
+		type = annex_everything
+	}
+		}
+	}
+}
+	}
+}
+country_event = {
+	id = fra_1789_event.253
+	title = "Bavaria joins the Coalition"
+	desc = fra_1789_event.253.d
+	picture = GFX_news_event_france_empire_1
+	#is_triggered_only = yes
+trigger = {
+tag = BAY
+country_exists=BAY
+BAY={is_ally_with=FKF}
+    date > 1813.10.14 date < 1820.1.1
+}
+fire_only_once = yes
+	option = { # 
+		name = "The Treaty of Ried is optimal"
+		ai_chance = { factor = 100 }
+	FKF={
+	set_autonomy = {
+        target = BAY
+        autonomous_state = autonomy_free
+        freedom_level = 0.4
+	}
+	}
+	BAY={leave_faction=yes}
+hidden_effect = {
+every_country = {
+  limit = {
+  has_war_with = BAY
+  }
+  white_peace = BAY
+}
+ENG={add_to_faction=BAY}
+		random_other_country={
+		limit={
+		tag=BAY
+		NOT={has_war_with=FRA}
+		}
+		BAY={
+			declare_war_on = {
+		target = FRA
+		type = annex_everything
+	}
+		}
+	}
+}
+	}
+}
+country_event = {
+	id = fra_1789_event.254
+	title = "The Downfall of Napoleonic France"
+	desc = fra_1789_event.254.d
+	picture = GFX_news_event_france_empire_1
+	#is_triggered_only = yes
+trigger = {
+tag = FRA
+    date > 1813.1.1 has_start_date < 1814.1.1
+}
+fire_only_once = yes
+	option = { # 
+		name = "We will fight to the end"
+		ai_chance = { factor = 100 }
+FRA={
+add_ideas = {
+FRA_france_is_in_decline
+}
+}
+	}
+}
+country_event = {
+	id = fra_1789_event.255
+	title = "The Treaty of Munich 1816"
+	desc = fra_1789_event.255.d
+	picture = GFX_news_event_france_empire_1
+	#is_triggered_only = yes
+trigger = {
+tag = BAY
+    date > 1816.4.14 has_start_date < 1817.1.1
+}
+fire_only_once = yes
+	option = { # 
+		name = "Baden is ours or atleast Ost-Pfalz"
+		ai_chance = { factor = 100 }
+AUS={country_event = fra_1789_event.256}
+	}
+}
+country_event = {
+	id = fra_1789_event.256
+	title = "The Treaty of 16 April 1816"
+	desc = fra_1789_event.256.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "We can't have a powerful Bavaria they might ally with France or Russia"
+		ai_chance = { factor = 100 }
+	}
+	option = { # 
+		name = "Anything for a loyal Bavaria"
+		ai_chance = { factor = 0 }
+BAY={annex_country = { target = BAD transfer_troops = yes }}
+every_state = {
+limit = {
+is_core_of=BAD
+}
+add_core_of=BAY
+remove_core_of=BAD
+}
+	}
+}
+country_event = {
+	id = fra_1789_event.257
+	title = "The Napoleonic Wars Redux"
+	desc = fra_1789_event.257.d
+	picture = GFX_napoleonpfp
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "I want to stick with my Country"
+		ai_chance = { factor = 100 }
+	}
+	option = { # 
+		name = "Let's Switch to France 1789-1799/1814-1815 (100% finished) 1800-1813(50% finished)"
+		ai_chance = { factor = 0 }
+				FRA = {
+    change_tag_from = ROOT
+}
+	}
+	option = { # 
+		name = "Let's Switch to Russia (1789-1800 playable)"
+		ai_chance = { factor = 0 }
+				RUS = {
+    change_tag_from = ROOT
+}
+	}
+	option = { # 
+		name = "Let's Switch to Prussia (50% finished)"
+		ai_chance = { factor = 0 }
+				PRE = {
+    change_tag_from = ROOT
+}
+	}
+}
+country_event = {
+	id = fra_1789_event.258
+	title = "The Annexation of Bentheim"
+	desc = fra_1789_event.258.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "We don't want turmoil"
+		ai_chance = { factor = 100 } 
+BRG={annex_country = { target = BTH transfer_troops = yes }}
+BRG={
+transfer_state = 847
+        add_state_core = 847
+} 
+        BTH={
+        remove_state_core = 847
+        }
+	}
+}
+country_event = {
+	id = fra_1789_event.259
+	title = "Schamburg-Lippe joining the Confederation of the Rhine"
+	desc = fra_1789_event.259.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "The Vassalization of Schaumburg-Lippe"
+		ai_chance = { factor = 100 } 
+FKF={
+		set_autonomy = {
+        target = SCH
+        autonomous_state = autonomy_confederationoftherhine
+        freedom_level = 0.4
+	}	
+}
+	}
+}
+country_event = {
+	id = fra_1789_event.260
+	title = "Lippe joining the Confederation of the Rhine"
+	desc = fra_1789_event.260.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "The Vassalization of Lippe"
+		ai_chance = { factor = 100 } 
+FKF={
+		set_autonomy = {
+        target = LIP
+        autonomous_state = autonomy_confederationoftherhine
+        freedom_level = 0.4
+	}	
+}
+	}
+}
+country_event = {
+	id = fra_1789_event.261
+	title = "Waldeck-Pyrmont joining the Confederation of the Rhine"
+	desc = fra_1789_event.261.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "The Vassalization of Waldeck-Pyrmont"
+		ai_chance = { factor = 100 } 
+FKF={
+		set_autonomy = {
+        target = WLD
+        autonomous_state = autonomy_confederationoftherhine
+        freedom_level = 0.4
+	}	
+}
+	}
+}
+country_event = {
+	id = fra_1789_event.262
+	title = "Anhalt joining the Confederation of the Rhine"
+	desc = fra_1789_event.262.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "The Vassalization of Anhalt"
+		ai_chance = { factor = 100 } 
+FKF={
+		set_autonomy = {
+        target = ANH
+        autonomous_state = autonomy_confederationoftherhine
+        freedom_level = 0.4
+	}	
+}
+	}
+}
+country_event = {
+	id = fra_1789_event.263
+	title = "Mecklenburg joining the Confederation of the Rhine"
+	desc = fra_1789_event.263.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "The Vassalization of Mecklenburg"
+		ai_chance = { factor = 100 } 
+FKF={
+		set_autonomy = {
+        target = MEK
+        autonomous_state = autonomy_confederationoftherhine
+        freedom_level = 0.4
+	}	
+}
+	}
+}
+country_event = {
+	id = fra_1789_event.264
+	title = "The Monopoly of the Post Office"
+	desc = fra_1789_event.264.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "The Post Office is Critical"
+		ai_chance = { factor = 100 } 
+FRA={
+						random_owned_state = {
+                        add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+				}
+}
+	}
+}
+country_event = {
+	id = fra_1789_event.265
+	title = "The Treaty of Madrid with Portugal"
+	desc = fra_1789_event.265.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "They need to give some land in Portuguese Guyana"
+		ai_chance = { factor = 100 } 
+FRA={add_political_power=100}
+POR={add_political_power=-100}
+	}
+}
+country_event = {
+	id = fra_1789_event.266
+	title = "Russia requests to join the Coalition"
+	desc = fra_1789_event.266.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "Russia is crucial"
+		ai_chance = { factor = 100 }
+RUS={country_event = fra_1789_event.267}
+	}
+	option = { # 
+		name = "Russia is irrelevant"
+		ai_chance = { factor = 0 }
+	}
+}
+country_event = {
+	id = fra_1789_event.267
+	title = "Russia joins the Coaliton"
+	desc = fra_1789_event.267.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "We need the money right now"
+		ai_chance = { factor = 100 }
+ENG={add_to_faction=RUS}
+	}
+}
+country_event = {
+	id = fra_1789_event.268
+	title = "Portugal requests to join the Coalition"
+	desc = fra_1789_event.268.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "Portugal is crucial"
+		ai_chance = { factor = 100 }
+POR={country_event = fra_1789_event.269}
+	}
+	option = { # 
+		name = "Portugal is irrelevant"
+		ai_chance = { factor = 0 }
+	}
+}
+country_event = {
+	id = fra_1789_event.269
+	title = "Portugal joins the Coaliton"
+	desc = fra_1789_event.269.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "We need the money right now"
+		ai_chance = { factor = 100 }
+ENG={add_to_faction=POR}
+	}
+}
+country_event = {
+	id = fra_1789_event.270
+	title = "Spain requests to join the Coalition"
+	desc = fra_1789_event.270.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "Spain is crucial"
+		ai_chance = { factor = 100 }
+SPR={country_event = fra_1789_event.271}
+	}
+	option = { # 
+		name = "Spain is irrelevant"
+		ai_chance = { factor = 0 }
+	}
+}
+country_event = {
+	id = fra_1789_event.271
+	title = "Spain joins the Coaliton"
+	desc = fra_1789_event.271.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "We need the money right now"
+		ai_chance = { factor = 100 }
+ENG={add_to_faction=SPR}
+	}
+}
+country_event = {
+	id = fra_1789_event.272
+	title = "The Annexation of Napoleonic Spain"
+	desc = fra_1789_event.272.d
+	picture = GFX_news_event_france_empire_1
+	#is_triggered_only = yes
+trigger={
+tag=SPR
+country_exists=CAT
+NOT={CAT={is_subject_of=FRA}}
+}
+fire_only_once = yes
+	option = { # 
+		name = "We need to annex them..."
+		ai_chance = { factor = 100 }
+SPR={annex_country = { target = CAT transfer_troops = no }}
+every_state={
+limit={
+is_core_of=CAT
+}
+remove_core_of=CAT
+add_core_of=SPR
+}
+	}
+}
+country_event = {
+	id = fra_1789_event.273
+	title = "The Invasion of England"
+	desc = fra_1789_event.273.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "We need to annex them..."
+		ai_chance = { factor = 100 }
+FRA={add_timed_idea = { idea = FRA_invasion_of_england days = 365 }}
+	}
+}
+country_event = {
+	id = fra_1789_event.274
+	title = "Healing the financial crisis of 1806"
+	desc = fra_1789_event.274.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "We need to annex them..."
+		ai_chance = { factor = 100 }
+FRA={add_timed_idea = { idea = heal_financial_crisis days = 365 }}
+	}
+}
+country_event = {
+	id = fra_1789_event.275
+	title = "Establish the Continental System"
+	desc = fra_1789_event.275.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "We need to annex them..."
+		ai_chance = { factor = 100 }
+FRA={add_political_power=50}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+country_event = {
+	id = fra_1789_event.276
+	title = "The Return of the Kingdom of León"
+	desc = fra_1789_event.276.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "Spain is manmade"
+		ai_chance = { factor = 100 } 
+	every_state={
+	limit={
+	state=1079
+	}
+	add_core_of=POR
+	remove_core_of=SPR
+	transfer_state_to=POR
+	}
+GLC={set_cosmetic_tag=GLC_POR_leon
+set_party_name = { ideology = neutrality long_name = POR_GLC_neutrality_party_long name = POR_GLC_neutrality_party }
+}
+every_state={
+limit={
+or={
+state=790
+state=170
+state=171
+state=174
+}
+}
+transfer_state_to=GLC
+add_core_of=GLC
+}
+POR={
+		set_autonomy = {
+        target = GLC
+        autonomous_state = autonomy_dominion
+        freedom_level = 0.4
+	}
+	}
+	}
+}
+country_event = {
+	id = fra_1789_event.277
+	title = "Portugal and France sign the secret Treaty of Évora"
+	desc = fra_1789_event.277.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "Spain's days are numbered"
+		ai_chance = { factor = 100 } 
+	every_state={
+	limit={
+	state=1079
+	}
+	add_core_of=POR
+	remove_core_of=SPR
+	transfer_state_to=POR
+	}
+every_state={
+limit={
+or={
+state=165
+state=177
+state=172
+state=792
+}
+}
+transfer_state_to=FRA
+}
+every_state={
+limit={
+or={
+state=790
+state=170
+state=171
+state=174
+state=788
+state=791
+state=178
+state=297
+}
+}
+transfer_state_to=POR
+}
+every_state={
+limit={
+or={
+state=300
+state=301
+state=510
+}
+}
+transfer_state_to=POR
+add_core_of=BRA
+remove_core_of=ARG
+remove_core_of=PAR
+remove_core_of=URG
+}
+	}
+}
+country_event = {
+	id = fra_1789_event.278
+	title = "The Duchy of Gibraltar"
+	desc = fra_1789_event.278.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "Spain is manmade"
+		ai_chance = { factor = 100 } 
+ADU={set_cosmetic_tag=ADU_POR_gibraltar
+set_party_name = { ideology = neutrality long_name = POR_ADU_neutrality_party_long name = POR_ADU_neutrality_party }
+		set_capital = {
+        state = 118
+        remember_old_capital = no
+        }
+}
+every_state={
+limit={
+or={
+state=118
+}
+}
+transfer_state_to=ADU
+add_core_of=ADU
+}
+POR={
+		set_autonomy = {
+        target = ADU
+        autonomous_state = autonomy_dominion
+        freedom_level = 0.4
+	}
+	}
+	}
+}
+country_event = {
+	id = fra_1789_event.279
+	title = "The French Occupation of Portugal"
+	desc = fra_1789_event.279.d
+	picture = GFX_news_event_france_empire_1
+	#is_triggered_only = yes
+trigger={
+tag=POR
+FRA={has_country_flag=has_started_peninsular_war_with_portugal_fra}
+	any_country={
+	or={
+	is_ally_with = FRA
+	is_subject_of = FRA
+	tag=FRA
+	}
+	controls_state = 112
+	}
+}
+fire_only_once = yes
+	option = { # 
+	ai_chance = { factor = 100 } 
+	name = "Let's move the capital to Brazil..."
+FRA={country_event = fra_1789_event.214}
+POR={
+		set_capital = {
+        state = 500
+        remember_old_capital = no
+        }
+}
+}
+	option = { # 
+	ai_chance = { factor = 0 } 
+	name = "The Tagus is the biggest river in Iberia"
+FRA={country_event = fra_1789_event.214}
+POR={
+		set_capital = {
+        state = 500
+        remember_old_capital = no
+        }
+}
+}
+}
+country_event = {
+	id = fra_1789_event.280
+	title = "The Question of Bavarian Expansion"
+	desc = fra_1789_event.280.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+	ai_chance = { factor = 100 } 
+	name = "Let's compensate them albeit not make them stronger"
+}
+	option = { # 
+	ai_chance = { factor = 0 } 
+	name = "Bavaria is our equal We are Pragmatic in France"
+FRA={set_country_flag=fra_has_respected_bavaria}
+}
+}
+country_event = {
+	id = fra_1789_event.281
+	title = "The Annexation of Dortmund by Berg"
+	desc = fra_1789_event.281.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "We have to give it up..."
+		ai_chance = { factor = 100 } 
+BRG={
+transfer_state = 57
+        add_state_core = 57
+} 
+        NAS={
+        remove_state_core = 57
+        }
+	}
+}
+country_event = {
+	id = fra_1789_event.282
+	title = "The offer to the Portuguese Monarchy & Britain"
+	desc = fra_1789_event.282.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "We want Gibraltar, Trinidad, and other colonies captured by the English"
+		ai_chance = { factor = 100 } 
+POR={country_event = fra_1789_event.283}
+ENG={country_event = fra_1789_event.284}
+	}
+}
+country_event = {
+	id = fra_1789_event.283
+	title = "The offer to the Portuguese Monarchy & Britain"
+	desc = fra_1789_event.283.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "The French want Gibraltar, Trinidad, and other colonies captured by the English"
+		ai_chance = { factor = 100 } 
+	}
+	option = { # 
+		name = "We agree to the terms"
+		ai_chance = { factor = 100 } 
+POR={set_country_flag=por_accept_trinidad}
+	}
+}
+country_event = {
+	id = fra_1789_event.284
+	title = "The offer to the Portuguese Monarchy & Britain"
+	desc = fra_1789_event.284.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "The French want Gibraltar, Trinidad, and other colonies captured by the English"
+		ai_chance = { factor = 100 } 
+	}
+	option = { # 
+		name = "We agree to the terms"
+		ai_chance = { factor = 0 } 
+ENG={set_country_flag=por_accept_trinidad}
+	}
+}
+
+
+country_event = {
+	id = fra_1789_event.286
+	title = "The Napoleonic Kingdom of Portugal"
+	desc = fra_1789_event.286.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "Vassalize Portugal"
+		ai_chance = { factor = 100 } 
+POR={leave_faction = yes}
+every_country={
+limit={
+has_war_with=POR
+}
+white_peace=POR
+}
+POR={promote_character=POR_lucienbonaparte
+set_party_name = { ideology = neutrality long_name = POR_BON_neutrality_party_long name = POR_BON_neutrality_party }
+}
+FRA={
+		set_autonomy = {
+        target = POR
+        autonomous_state = autonomy_dominion
+        freedom_level = 0.4
+		}
+	}	
+	}
+}
+country_event = {
+	id = fra_1789_event.287
+	title = "France demands we join the French Sphere"
+	desc = fra_1789_event.287.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+	ai_chance = { factor = 100 } 
+	name = "We have to"
+FRA={country_event = fra_1789_event.288}
+}
+}
+country_event = {
+	id = fra_1789_event.288
+	title = "Andorra joins the French Sphere"
+	desc = fra_1789_event.288.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+	ai_chance = { factor = 100 } 
+	name = "We have to"
+		FRA={
+						set_autonomy = {
+				target = ADO
+                autonomous_state = autonomy_dominion
+                freedom_level = 0.35
+	            }
+		}
+}
+}
+country_event = {
+	id = fra_1789_event.289
+	title = "Renouncing our Dynastic claims on France."
+	desc = fra_1789_event.289.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+	ai_chance = { factor = 100 } 
+	name = "We have to"
+news_event = fra_1789_news.289
+every_state={
+limit={
+or={
+is_core_of=FRA
+is_core_of=VND
+is_owned_by=FRA
+}
+}
+remove_claim_by=ENG
+}
+}
+}
+country_event = {
+	id = fra_1789_event.290
+	title = "Britain Renouncing their Dynastic claims on France"
+	desc = fra_1789_event.290.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+	ai_chance = { factor = 100 } 
+	name = "We can't have them Claiming France"
+FRA={add_stability=0.1}
+ENG={country_event = fra_1789_event.289}
+}
+}
+country_event = {
+	id = fra_1789_event.291
+	title = "The British Defeat at Alexandria"
+	desc = fra_1789_event.291.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+	ai_chance = { factor = 100 } 
+	name = "Jokes on them we stole & sunk their ships"
+FRA = {
+    add_equipment_to_stockpile = {
+        type = convoy
+        amount = -100
+    }
+}
+}
+}
+country_event = {
+	id = fra_1789_event.292
+	title = "The British Defeat at Alexandria"
+	desc = fra_1789_event.292.d
+	picture = GFX_news_event_france_empire_1
+	#is_triggered_only = yes
+trigger = {
+original_tag=FRA
+date > 1799.8.1 date < 1800.1.1
+NOT={ENG={controls_province = 4076}}
+}
+fire_only_once = yes
+	option = { # 
+	ai_chance = { factor = 100 } 
+	name = "They should give up in Egypt"
+FRA={
+add_stability=0.05
+add_war_support=0.05
+}
+ENG={country_event = fra_1789_event.291}
+}
+}
+country_event = {
+	id = fra_1789_event.293
+	title = "The Thuringians join the Confederation of the Rhine"
+	desc = fra_1789_event.293.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+	ai_chance = { factor = 100 } 
+	name = "They are ours"
+GTH={country_event = fra_1789_event.294}
+COB={country_event = fra_1789_event.295}
+WEI={country_event = fra_1789_event.296}
+EIS={country_event = fra_1789_event.297}
+THU={country_event = fra_1789_event.298}
+}
+}
+country_event = {
+	id = fra_1789_event.294
+	title = "Saxe-Gotha Joining the Confederation of the Rhine"
+	desc = fra_1789_event.294.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "We need to be protected from Prussia"
+		ai_chance = { factor = 100 }
+FKF={
+		set_autonomy = {
+        target = GTH
+        autonomous_state = autonomy_confederationoftherhine
+        freedom_level = 0.4
+	}	
+}
+	}
+}
+country_event = {
+	id = fra_1789_event.295
+	title = "Saxe-Coburg Joining the Confederation of the Rhine"
+	desc = fra_1789_event.295.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "We need to be protected from Prussia"
+		ai_chance = { factor = 100 }
+FKF={
+		set_autonomy = {
+        target = COB
+        autonomous_state = autonomy_confederationoftherhine
+        freedom_level = 0.4
+	}	
+}
+	}
+}
+country_event = {
+	id = fra_1789_event.296
+	title = "Saxe-Weimar Joining the Confederation of the Rhine"
+	desc = fra_1789_event.296.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "We need to be protected from Prussia"
+		ai_chance = { factor = 100 }
+FKF={
+		set_autonomy = {
+        target = WEI
+        autonomous_state = autonomy_confederationoftherhine
+        freedom_level = 0.4
+	}	
+}
+	}
+}
+country_event = {
+	id = fra_1789_event.297
+	title = "Saxe-Eisenach Joining the Confederation of the Rhine"
+	desc = fra_1789_event.297.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "We need to be protected from Prussia"
+		ai_chance = { factor = 100 }
+FKF={
+		set_autonomy = {
+        target = EIS
+        autonomous_state = autonomy_confederationoftherhine
+        freedom_level = 0.4
+	}	
+}
+	}
+}
+country_event = {
+	id = fra_1789_event.298
+	title = "Thuringia Joining the Confederation of the Rhine"
+	desc = fra_1789_event.298.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "We need to be protected from Prussia"
+		ai_chance = { factor = 100 }
+FKF={
+		set_autonomy = {
+        target = THU
+        autonomous_state = autonomy_confederationoftherhine
+        freedom_level = 0.4
+	}	
+}
+	}
+}
+country_event = {
+	id = fra_1789_event.299
+	title = "The Federal Treaty"
+	desc = fra_1789_event.299.d
+	picture = GFX_news_event_france_empire_1
+	#is_triggered_only = yes
+trigger = {
+date > 1815.8.7
+tag = SWI
+SWI={has_country_flag=swi_neutral_yes_sixth} 
+}
+fire_only_once = yes
+	option = { # 
+	ai_chance = { factor = 100 } 
+	name = "We wont have a civilwar"
+SWI={
+set_cosmetic_tag=SWI_three
+add_stability=0.1
+add_war_support=0.01
+}
+}
+}
+country_event = {
+	id = fra_1789_event.300
+	title = "The 1803 Act of Swiss Mediation"
+	desc = fra_1789_event.300.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+	ai_chance = { factor = 100 } 
+	name = "We need to prevent the Swiss revolting"
+SWI={
+set_cosmetic_tag=SWI_two
+add_stability=0.1
+add_war_support=0.01
+}
+}
+}
+country_event = {
+	id = fra_1789_event.301
+	title = "Coalition Liberation of the Papal States"
+	desc = fra_1789_event.301.d
+	picture = GFX_news_event_france_empire_1
+	#is_triggered_only = yes
+trigger = {
+tag = AUS
+ITA={is_subject_of=FRA}
+ITA={owns_state=159}
+NOT={ITA={controls_state=159}}
+AUS={has_country_flag=AUS_steyr_lune_focus_in_the_old_focus_tree} #2ndcoalition
+NOT={AUS={has_country_flag=AUS_steyr_lune_focus_in_the_old_focus_tree}} #steyr
+}
+fire_only_once = yes
+	option = { # 
+	ai_chance = { factor = 100 } 
+	name = "We have to expand the Army"
+	FRA={
+	set_autonomy = {
+        target = PAP
+        autonomous_state = autonomy_free
+        freedom_level = 0.4
+	}
+	}
+	PAP={leave_faction=yes}
+every_country = {
+  limit = {
+  has_war_with = PAP
+  }
+  white_peace = PAP
+}
+PAP={set_cosmetic_tag=PAP}
+PAP={add_popularity = { ideology = neutrality popularity = 0.5 }}
+PAP={set_politics = { ruling_party = neutrality elections_allowed = no}}
+}
+}
+country_event = {
+	id = fra_1789_event.302
+	title = "Coalition Liberation of Naples"
+	desc = fra_1789_event.302.d
+	picture = GFX_news_event_france_empire_1
+    #is_triggered_only = yes
+trigger = {
+tag = TTS
+NAP={is_subject_of=FRA}
+or={
+NAP={surrender_progress > 0.5 }
+AND={
+NAP={owns_state=117}
+NOT={NAP={controls_state=117}}
+}
+}
+AUS={has_country_flag=AUS_steyr_lune_focus_in_the_old_focus_tree} #2ndcoalition
+NOT={AUS={has_country_flag=AUS_steyr_lune_focus_in_the_old_focus_tree}} #steyr
+}
+fire_only_once = yes
+	option = { # 
+	ai_chance = { factor = 100 } 
+	name = "We defeated the Revolution"
+TTS={annex_country = { target = NAP transfer_troops = no }}
+every_state = {
+limit = {
+is_core_of=NAP
+}
+add_core_of=TTS
+remove_core_of=NAP
+}
+}
+}
+country_event = {
+	id = fra_1789_event.303
+	title = "Mobilisation of 200k men"
+	desc = fra_1789_event.303.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+	ai_chance = { factor = 100 } 
+	name = "We have to expand the Army"
+FRA={
+add_stability=-0.2
+        add_war_support=-0.2
+        add_manpower=200000
+}
+}
+}
+country_event = {
+	id = fra_1789_event.304
+	title = "Switzerland Declares Neutrality"
+	desc = fra_1789_event.304.d
+	picture = GFX_news_event_france_empire_1
+	#is_triggered_only = yes
+trigger = {
+any_state={
+is_owned_by=SWI
+NOT={is_controlled_by=SWI}
+}
+tag = AUS
+NOT={AUS={owns_state=3}}
+NOT={FRA={has_country_flag=fontainebleau_has_happened}}
+date > 1814.1.1 date < 1820.1.1
+}
+fire_only_once = yes
+	option = { # 
+		name = "This will strengthen us for the imminent war"
+		ai_chance = { factor = 100 }
+SWI={set_country_flag=swi_neutral_yes_sixth} 
+SWI={set_cosmetic_tag=SWI_pro}
+news_event = fra_1789_news.304
+FRA={
+		set_autonomy = {
+        target = SWI
+        autonomous_state = autonomy_free
+        freedom_level = 0.4
+	}
+	}
+SWI={leave_faction=yes}
+every_country={
+limit={
+has_war_with=SWI
+}
+white_peace=SWI
+}
+3={transfer_state_to=AUS}
+	}
+}
+country_event = {
+	id = fra_1789_event.305
+	title = "The 1798 Austrian Army Reforms"
+	desc = fra_1789_event.305.d
+	picture = GFX_news_event_france_empire_1
+	#is_triggered_only = yes
+trigger = {
+tag = AUS
+    date > 1798.1.1 date < 1799.1.1
+}
+fire_only_once = yes
+	option = { # 
+		name = "This will strengthen us for the imminent war"
+		ai_chance = { factor = 100 }
+AUS={add_manpower=220000}
+	}
+}
+country_event = {
+	id = fra_1789_event.306
+	title = "The 1805 Austrian Army Reforms"
+	desc = fra_1789_event.306.d
+	picture = GFX_news_event_france_empire_1
+	#is_triggered_only = yes
+trigger = {
+tag = AUS
+    date > 1805.1.1 date < 1806.1.1
+}
+fire_only_once = yes
+	option = { # 
+		name = "This will strengthen us for the imminent war"
+		ai_chance = { factor = 100 }
+AUS={add_manpower=220000}
+	}
+}
+country_event = {
+	id = fra_1789_event.307
+	title = "The 1809 Austrian Army Reforms"
+	desc = fra_1789_event.307.d
+	picture = GFX_news_event_france_empire_1
+	#is_triggered_only = yes
+trigger = {
+tag = AUS
+    date > 1809.1.1 date < 1810.1.1
+}
+fire_only_once = yes
+	option = { # 
+		name = "This will strengthen us for the imminent war"
+		ai_chance = { factor = 100 }
+AUS={add_manpower=220000}
+	}
+}
+country_event = {
+	id = fra_1789_event.308
+	title = "The 1813 Austrian Army Reforms"
+	desc = fra_1789_event.308.d
+	picture = GFX_news_event_france_empire_1
+	#is_triggered_only = yes
+trigger = {
+tag = AUS
+    date > 1813.1.1 date < 1814.1.1
+}
+fire_only_once = yes
+	option = { # 
+		name = "This will strengthen us for the imminent war"
+		ai_chance = { factor = 100 }
+AUS={add_manpower=220000}
+	}
+}
+country_event = {
+	id = fra_1789_event.309
+	title = "The Capture of Milan"
+	desc = fra_1789_event.309.d
+	picture = GFX_news_event_france_empire_1
+	#is_triggered_only = yes
+trigger = {
+tag = AUS
+ITA={is_subject_of=FRA}
+ITA={owns_state=159}
+NOT={ITA={controls_state=159}}
+AUS={has_country_flag=AUS_steyr_lune_focus_in_the_old_focus_tree} #2ndcoalition
+NOT={AUS={has_country_flag=AUS_steyr_lune_focus_in_the_old_focus_tree}} #steyr
+}
+fire_only_once = yes
+	option = { # 
+		name = "The French lost"
+		ai_chance = { factor = 100 }
+AUS={
+country_event = fra_1789_event.310 #ITA
+country_event = fra_1789_event.311 #LUC
+country_event = fra_1789_event.312 #PRM
+country_event = fra_1789_event.313 #SAV
+}
+	}
+}
+country_event = {
+	id = fra_1789_event.310
+	title = "Italy Switches Sides"
+	desc = fra_1789_event.310.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "The French lost"
+		ai_chance = { factor = 100 }
+every_country={
+limit={
+has_war_with=ITA
+}
+white_peace=ITA
+}
+AUS={
+		set_autonomy = {
+        target = ITA
+        autonomous_state = autonomy_dominion
+        freedom_level = 0.4
+	}	
+}
+	}
+}
+country_event = {
+	id = fra_1789_event.311
+	title = "Lucca Switches Sides"
+	desc = fra_1789_event.311.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "The French lost"
+		ai_chance = { factor = 100 }
+every_country={
+limit={
+has_war_with=LUC
+}
+white_peace=LUC
+}
+AUS={
+		set_autonomy = {
+        target = LUC
+        autonomous_state = autonomy_dominion
+        freedom_level = 0.4
+	}	
+}
+	}
+}
+country_event = {
+	id = fra_1789_event.312
+	title = "Parma Switches Sides"
+	desc = fra_1789_event.312.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "The French lost"
+		ai_chance = { factor = 100 }
+every_country={
+limit={
+has_war_with=PRM
+}
+white_peace=PRM
+}
+AUS={
+		set_autonomy = {
+        target = PRM
+        autonomous_state = autonomy_dominion
+        freedom_level = 0.4
+	}	
+}
+	}
+}
+country_event = {
+	id = fra_1789_event.313
+	title = "Piedmont Switches Sides"
+	desc = fra_1789_event.313.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "The French lost"
+		ai_chance = { factor = 100 }
+every_country={
+limit={
+has_war_with=SAV
+}
+white_peace=SAV
+}
+AUS={
+		set_autonomy = {
+        target = SAV
+        autonomous_state = autonomy_dominion
+        freedom_level = 0.4
+	}	
+}
+	}
+}
+country_event = {
+	id = fra_1789_event.314
+	title = "The Annexation of the Netherlands"
+	desc = fra_1789_event.314.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "The coast is ours"
+		ai_chance = { factor = 100 }
+HOL={set_cosmetic_tag=HOL_FRA_annex}
+FRA={
+		set_autonomy = {
+        target = HOL
+        autonomous_state = autonomy_integrated_puppet
+        freedom_level = 0.4
+	}	
+}
+	}
+}
+country_event = {
+	id = fra_1789_event.315
+	title = "The Annexation of the German Coast"
+	desc = fra_1789_event.315.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "The coast is ours"
+		ai_chance = { factor = 100 }
+FRA={
+annex_country = { target = MUN transfer_troops = no }
+annex_country = { target = HAN transfer_troops = no }
+annex_country = { target = SXL transfer_troops = no }
+annex_country = { target = HBG transfer_troops = no }
+annex_country = { target = LBK transfer_troops = no }
+annex_country = { target = BRN transfer_troops = no }
+}
+every_state={
+limit={
+or={
+state=59
+state=1160
+}
+}
+transfer_state_to=WTF
+add_core_of=WTF
+}
+every_state={
+limit={
+or={
+state=872
+state=978
+state=847
+state=1155
+state=1189
+state=1165
+}
+}
+transfer_state_to=FRA
+}
+	}
+}
+country_event = {
+	id = fra_1789_event.316
+	title = "The Annexation of Oldenburg"
+	desc = fra_1789_event.316.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "The coast is ours"
+		ai_chance = { factor = 100 }
+FRA={annex_country = { target = OLD transfer_troops = no }}
+	}
+}
+country_event = {
+	id = fra_1789_event.317
+	title = "The Establishment of Proto Communism"
+	desc = fra_1789_event.317.d
+	picture = GFX_news_event_france_empire_1
+	#is_triggered_only = yes
+trigger = {
+tag = PRE
+    date > 1835.5.5 date < 1836.1.1
+}
+fire_only_once = yes
+	option = { # 
+		name = "This is a bit too Socialist"
+		ai_chance = { factor = 100 }
+	  PRE={set_country_flag=proto_communism_has_happened}
+news_event = fra_1789_news.317
+	}
+}
+country_event = {
+	id = fra_1789_event.318
+	title = "Lion Phillips Tobacco Company"
+	desc = fra_1789_event.318.d
+	picture = GFX_news_event_france_empire_1
+	#is_triggered_only = yes
+trigger = {
+tag = HOL
+    date > 1815.1.1 date < 1816.1.1
+}
+fire_only_once = yes
+	option = { # 
+		name = "Growth of the Dutch Economy"
+		ai_chance = { factor = 100 }
+HOL={set_country_flag=phil_company_has_happened}
+HOL={
+						random_owned_state = {
+                        add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+				}
+}
+	}
+}
+country_event = {
+	id = fra_1789_event.319
+	title = "The Bavarian Annexation of Baden"
+	desc = fra_1789_event.319.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "Growth of the Bavarian State"
+		ai_chance = { factor = 100 }
+BAY={annex_country = { target = BAD transfer_troops = yes }}
+every_state={
+limit={
+is_core_of=BAD
+}
+remove_core_of=BAD
+add_core_of=BAY
+}
+	}
+}
+country_event = {
+	id = fra_1789_event.320
+	title = "The Bavarian Annexation of Wurzberg"
+	desc = fra_1789_event.320.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "Growth of the Bavarian State"
+		ai_chance = { factor = 100 }
+BAY={annex_country = { target = WRZ transfer_troops = yes }}
+every_state={
+limit={
+is_core_of=WRZ
+}
+remove_core_of=WRZ
+add_core_of=BAY
+}
+	}
+}
+country_event = {
+	id = fra_1789_event.321
+	title = "The Bavarian Annexation of Ulm"
+	desc = fra_1789_event.321.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "Growth of the Bavarian State"
+		ai_chance = { factor = 100 }
+every_state={
+limit={
+state=841
+}
+remove_core_of=WUR
+add_core_of=BAY
+transfer_state_to=BAY
+}
+	}
+}
+country_event = {
+	id = fra_1789_event.322
+	title = "The Bavarian Annexation of the Illyrian Provinces"
+	desc = fra_1789_event.322.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "Growth of the Bavarian State"
+		ai_chance = { factor = 100 }
+	every_state={
+	limit={
+	or={
+	state=950
+	state=959
+	state=103
+	state=163
+	state=1115
+	state=930
+	state=956
+	state=963
+	state=736
+	state=1190
+	state=857
+	state=940
+	state=884
+	state=102
+	}
+	}
+	transfer_state_to=BAY
+	add_core_of=BAY
+	}
+	}
+}
+country_event = {
+	id = fra_1789_event.323
+	title = "The Wittelsbach Propeties in Julich & Berg"
+	desc = fra_1789_event.323.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "Growth of the Bavarian State"
+		ai_chance = { factor = 100 }
+BAY={
+add_political_power=-25
+						random_owned_state = {
+                        add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+				}
+}
+	}
+}
+country_event = {
+	id = fra_1789_event.324
+	title = "The Bavarian Annexation of Trentino"
+	desc = fra_1789_event.324.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "Growth of the Bavarian State"
+		ai_chance = { factor = 100 }
+every_state={
+limit={
+state=855
+}
+remove_core_of=ITA
+add_core_of=BAY
+transfer_state_to=BAY
+}
+	}
+}
+country_event = {
+	id = fra_1789_event.325
+	title = "The Bavarian Annexation of Berg"
+	desc = fra_1789_event.325.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "Growth of the Bavarian State"
+		ai_chance = { factor = 100 }
+BAY={annex_country = { target = BRG transfer_troops = yes }}
+every_state={
+limit={
+is_core_of=BRG
+}
+remove_core_of=BRG
+add_core_of=BAY
+}
+	}
+}
+country_event = {
+	id = fra_1789_event.326
+	title = "The Partition of the Grisons"
+	desc = fra_1789_event.326.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "Napoleonic Switzerland has to be strenthened..."
+		ai_chance = { factor = 100 }
+every_state={
+        ITA={transfer_state=1111}
+        ITA={add_state_core=1111}
+        SWI={add_state_core=906}
+1111={remove_core_of=GRI}
+906={remove_core_of=GRI}
+SWI={annex_country = { target = GRI transfer_troops = no }}
+}
+	}
+}
+country_event = {
+	id = fra_1789_event.327
+	title = "Wurzburg Joining the Confederation of the Rhine"
+	desc = fra_1789_event.327.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "We need to be protected from Bavaria"
+		ai_chance = { factor = 100 }
+FKF={
+		set_autonomy = {
+        target = WRZ
+        autonomous_state = autonomy_confederationoftherhine
+        freedom_level = 0.4
+	}	
+}
+	}
+}
+country_event = {
+	id = fra_1789_event.328
+	title = "The 1806 Vaccination Decree"
+	desc = fra_1789_event.328.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "Vaccination is neccesary to make the population healthy"
+		ai_chance = { factor = 100 }
+FRA={remove_ideas=smallpox_epidemic_fra}
+FRA={add_timed_idea = { idea = FRA_VAX_DEC days = 900 }}
+	}
+}
+country_event = {
+	id = fra_1789_event.329
+	title = "Abandoning the Republican Calendar?"
+	desc = fra_1789_event.329.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "8 days of work every 10 days thats too much"
+		ai_chance = { factor = 100 }
+	FRA={remove_ideas={republican_cal_FRA}}
+	FRA={add_timed_idea = { idea = republican_cal_FRA_dead days = 900 }}
+	}
+}
+country_event = {
+	id = fra_1789_event.330
+	title = "The Jewish Community of France"
+	desc = fra_1789_event.330.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "We want this to end well"
+		ai_chance = { factor = 100 }
+FRA={country_event = fra_1789_event.331}
+	}
+}
+country_event = {
+	id = fra_1789_event.331
+	title = "The Jews of France respond"
+	desc = fra_1789_event.331.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "These responses are satisfactory!"
+		ai_chance = { factor = 100 }
+	add_stability=0.05
+	}
+	option = { # 
+		name = "This is too Orthodox"
+		ai_chance = { factor = 0 }
+	add_stability=-0.05
+	}
+}
+country_event = {
+	id = fra_1789_event.332
+	title = "Napoleon gains further power"
+	desc = fra_1789_event.332.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "Hopefully this should calm things down"
+		ai_chance = { factor = 100 }
+FRA={add_ideas={napoleon_directory_caos}}
+	}
+}
+country_event = {
+	id = fra_1789_event.333
+	title = "The Formation of the Bavarian Empire"
+	desc = fra_1789_event.333.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "Growth of the Bavarian Empire"
+		ai_chance = { factor = 100 }
+news_event = fra_1789_news.333
+BAY={set_cosmetic_tag=BAY_empire
+add_war_support=0.1
+add_stability=0.1
+}
+	}
+}
+country_event = {
+	id = fra_1789_event.334
+	title = "Victory over the Irish Catholics"
+	desc = fra_1789_event.334.d
+	picture = GFX_news_event_france_empire_1
+	#is_triggered_only = yes
+trigger = {
+tag = ENG
+    date > 1798.10.12 date < 1800.1.1
+ENG={has_country_flag=ire_eng_war_omg}
+}
+fire_only_once = yes
+	option = { # 
+		name = "The Orange Lodge has to expand"
+		ai_chance = { factor = 100 }
+119={transfer_state_to=NIR}
+NIR={annex_country = { target = IRE transfer_troops = no }}
+ENG={
+		set_autonomy = {
+        target = NIR
+        autonomous_state = autonomy_protectorate
+        freedom_level = 0.4
+	}
+	}
+	}
+}
+country_event = {
+	id = fra_1789_event.335
+	title = "The Formation of the United Kingdom of Great Britain and Ireland"
+	desc = fra_1789_event.335.d
+	picture = GFX_news_event_france_empire_1
+	#is_triggered_only = yes
+trigger = {
+tag = ENG
+    date > 1801.1.1 date < 1802.1.1
+}
+fire_only_once = yes
+	option = { # 
+		name = "Ireland is ours"
+		ai_chance = { factor = 100 }
+news_event = fra_1789_news.335
+ENG={set_cosmetic_tag = ENG_britain_newflag}
+ENG={annex_country = { target = NIR transfer_troops = no }}
+every_state={
+limit={
+is_core_of=IRE
+}
+add_core_of=ENG
+}
+
+	}
+}
+country_event = {
+	id = fra_1789_event.336
+	title = "Hegemony in Italy"
+	desc = fra_1789_event.336.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "Italy is ours"
+		ai_chance = { factor = 100 }
+news_event = fra_1789_news.336
+add_timed_idea = { idea = FRA_italian_hegemony_army days = 365 }
+	}
+}
+country_event = {
+	id = fra_1789_event.337
+	title = "Hegemony in Belgium the Rhine & Netherlands"
+	desc = fra_1789_event.337.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "Belgium is ours"
+		ai_chance = { factor = 100 }
+news_event = fra_1789_news.337
+add_timed_idea = { idea = FRA_belgium_hegemony_army days = 365 }
+	}
+}
+country_event = {
+	id = fra_1789_event.338
+	title = "The 1805 Smallpox epidemic in France"
+	desc = fra_1789_event.338.d
+	picture = GFX_news_event_france_empire_1
+	#is_triggered_only = yes
+trigger = {
+tag = FRA
+    date > 1805.6.1 date < 1806.1.1
+}
+fire_only_once = yes
+	option = { # 
+		name = "We need to vaccinate ourselves soon"
+		ai_chance = { factor = 100 }
+FRA={set_country_flag=small_pox_epidemic_has_happened}
+FRA={add_ideas=smallpox_epidemic_fra}
+	}
+}
+country_event = {
+	id = fra_1789_event.339
+	title = "The Peninsular War in Spain"
+	desc = fra_1789_event.339.d
+	picture = GFX_news_event_france_empire_1
+	#is_triggered_only = yes
+trigger = {
+tag = SPR
+    date > 1808.6.1 date < 1809.1.1
+or={
+and={
+has_start_date < 1810.1.1 
+has_start_date > 1808.1.1 
+}
+FRA={has_country_flag=peninsular_was_happened_spr}
+}
+}
+fire_only_once = yes
+	option = { # 
+		name = "Spain will be ours again"
+		ai_chance = { factor = 100 }
+every_state={
+limit={
+is_owned_by=CAT
+NOT={state=41}
+NOT={state=176}
+NOT={state=172}
+NOT={state=792}
+}
+set_state_controller_to = SPR
+}
+						CAT = {
+				set_province_controller = 9764
+			}
+SPR={
+add_manpower = 40000 
+load_oob = "SPR_1809"
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 40000
+					producer = SPR
+				}
+}
+	}
+}
+country_event = {
+	id = fra_1789_event.340
+	title = "Sweden and Denmark agree to peace"
+	desc = fra_1789_event.340.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "We need the money right now"
+		ai_chance = { factor = 100 }
+DEN={add_ideas=den_swe_never_war}
+SWE={add_ideas=den_swe_never_war}
+	}
+}
+country_event = {
+	id = fra_1789_event.341
+	title = "Sweden annexes Western Pomerania"
+	desc = fra_1789_event.341.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "We need the money right now"
+		ai_chance = { factor = 100 }
+every_state={
+limit={
+is_core_of=SWE
+or={
+is_owned_by=FRA
+is_owned_by=VND
+}
+}
+transfer_state_to=SWE
+}
+	}
+}
+country_event = {
+	id = fra_1789_event.342
+	title = "Sweden requests to join the Coalition"
+	desc = fra_1789_event.342.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "Sweden is crucial"
+		ai_chance = { factor = 100 }
+SWE={country_event = fra_1789_event.343}
+	}
+	option = { # 
+		name = "Sweden is irrelevant"
+		ai_chance = { factor = 0 }
+	}
+}
+country_event = {
+	id = fra_1789_event.343
+	title = "Sweden joins the Coaliton"
+	desc = fra_1789_event.343.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "We need the money right now"
+		ai_chance = { factor = 100 }
+FRA={country_event = fra_1789_event.352}
+DEN={country_event = fra_1789_event.340}
+SWE={
+	country_event = fra_1789_event.341
+
+			declare_war_on = {
+		target = FRA
+		type = annex_everything
+	}
+	}
+ENG={add_to_faction=SWE}
+	}
+}
+
+country_event = {
+	id = fra_1789_event.344
+	title = "Compulsory Borrowing on the Rich"
+	desc = fra_1789_event.344.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "We need the money right now"
+		ai_chance = { factor = 100 }
+FRA={add_timed_idea = { idea = compulsory_borrowing days = 365 }}
+FRA={country_event = fra_1789_event.345}
+	}
+}
+country_event = {
+	id = fra_1789_event.345
+	title = "The Upper-Class Resistance"
+	desc = fra_1789_event.345.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "They arent being too devious"
+		ai_chance = { factor = 100 }
+FRA={add_timed_idea = { idea = upper_class_resistance days = 180 }}
+	}
+}
+country_event = {
+	id = fra_1789_event.346
+	title = "Netherlands Offers Military Access"
+	desc = fra_1789_event.346.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "Hopefully our army wont get encircled"
+		ai_chance = { factor = 100 }
+HOL={
+give_military_access = AUS
+give_military_access = PRE
+}
+	}
+}
+country_event = {
+	id = fra_1789_event.347
+	title = "Berg Returns to the Kingdom of Bavaria"
+	desc = fra_1789_event.347.d
+	picture = GFX_news_event_france_empire_1
+	#is_triggered_only = yes
+trigger = {
+PRE={has_country_flag=prussia_has_joined_six_coalition_now_can_liberate}
+original_tag = BAY
+has_war_with=FRA
+BRG={
+owns_state=878
+NOT={
+BRG={
+controls_state = 878
+}
+}
+}
+}
+fire_only_once = yes
+	option = { # 
+		name = "The French stole Berg from us"
+		ai_chance = { factor = 100 }
+PRE={country_event = fra_1789_event.348}
+every_country={
+limit={
+has_war_with=BRG
+}
+white_peace=BRG
+}
+BAY={
+		set_autonomy = {
+        target = BRG
+        autonomous_state = autonomy_dominion
+        freedom_level = 0.4
+	}
+	}
+BRG={
+set_party_name = { ideology = neutrality long_name = BRG_WIT_neutrality_party_long name = BRG_WIT_neutrality_party }
+promote_character=BRG_maximilianijoseph
+}
+	}
+}
+country_event = {
+	id = fra_1789_event.348
+	title = "Prussia Occupies Berg"
+	desc = fra_1789_event.348.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "Berg is ours"
+		ai_chance = { factor = 100 }
+PRE={
+		set_autonomy = {
+        target = BRG
+        autonomous_state = autonomy_dominion
+        freedom_level = 0.4
+	}
+	}
+	}
+	option = { # 
+		name = "The Bavarians can have it"
+		ai_chance = { factor = 0 }
+	}
+}
+country_event = {
+	id = fra_1789_event.349
+	title = "The Napoleonic Kingdom of Naples"
+	desc = fra_1789_event.349.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "The Bourbon Monarchy needs to be destroyed"
+		ai_chance = { factor = 100 }
+	TTS={set_cosmetic_tag = TTS_exile}
+    TTS={
+	add_stability=-0.1
+	add_war_support=-0.1
+	}
+			every_state={
+		limit={
+		state=1286
+		}
+		add_core_of=TTS
+		remove_core_of=SIC
+		}
+			every_state={
+		limit={
+		is_core_of=NAP
+		}
+		remove_core_of=TTS
+		}
+		TTS={
+			set_autonomy = {
+        target = SIC
+        autonomous_state = autonomy_dominion
+        freedom_level = 0.4
+	}
+	}
+FRA={
+		set_autonomy = {
+        target = NAP
+        autonomous_state = autonomy_dominion
+        freedom_level = 0.4
+	}
+	}
+NAP={
+add_popularity = { ideology = neutrality popularity = 0.25 }	
+set_politics = { ruling_party = neutrality elections_allowed = no}
+set_cosmetic_tag=NAP_FRA_kingdom_one
+}
+
+	}
+}
+country_event = {
+	id = fra_1789_event.350
+	title = "The Napoleonic Murat Kingdom of Naples"
+	desc = fra_1789_event.350.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "The Bourbon Monarchy needs to be destroyed"
+		ai_chance = { factor = 100 }
+NAP={
+add_popularity = { ideology = neutrality popularity = 0.25 }	
+set_politics = { ruling_party = neutrality elections_allowed = no}
+set_cosmetic_tag=NAP_FRA_kingdom_two
+set_party_name = { ideology = neutrality long_name = NAP_MUR_neutrality_party_long name = NAP_MUR_neutrality_party}
+promote_character=NAP_joachimmurat
+}
+
+	}
+}
+country_event = {
+	id = fra_1789_event.351
+	title = "Reforming the Napoleonic Murat Kingdom of Naples"
+	desc = fra_1789_event.351.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "The Bourbon Monarchy needs to be destroyed"
+		ai_chance = { factor = 100 }
+add_stability=0.1
+add_war_support=0.1
+NAP={
+add_stability=0.1
+add_war_support=0.1
+add_popularity = { ideology = neutrality popularity = 0.25 }	
+set_politics = { ruling_party = neutrality elections_allowed = no}
+set_cosmetic_tag=NAP_FRA_kingdom
+}
+
+	}
+}
+country_event = {
+	id = fra_1789_event.352
+	title = "Bernadotte leaves France for Sweden"
+	desc = fra_1789_event.352.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "The Oldenburg Monarchy was overthrown"
+		ai_chance = { factor = 100 }
+FRA={set_country_flag=bernadotte_has_left_for_sweden}
+SWE={country_event = fra_1789_event.353}
+	}
+}
+country_event = {
+	id = fra_1789_event.353
+	title = "Bernadotte joins the Swedish Army"
+	desc = fra_1789_event.353.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "We can take advantage of this"
+		ai_chance = { factor = 100 }
+SWE={add_timed_idea = { idea = bernadotte_army_swe days = 730 }}
+	}
+}
+country_event = {
+	id = fra_1789_event.354
+	title = "Naples leaves the Coalition"
+	desc = fra_1789_event.354.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "We need to take back France's Empire"
+		ai_chance = { factor = 100 }
+NAP={leave_faction=yes}
+NAP={country_event = fra_1789_event.355}
+	}
+}
+country_event = {
+	id = fra_1789_event.355
+	title = "Naples Occupies Marche & Romagna"
+	desc = fra_1789_event.355.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "We need to take back France"
+		ai_chance = { factor = 100 }
+161={transfer_state_to=NAP}
+1109={transfer_state_to=NAP}
+920={transfer_state_to=NAP}
+NAP={
+add_manpower=80000
+}
+	}
+}
+country_event = {
+	id = fra_1789_event.356
+	title = "The Rimini Declaration"
+	desc = fra_1789_event.356.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "We need to take back France"
+		ai_chance = { factor = 100 }
+NAP={
+add_war_support=0.1
+add_stability=0.1
+}
+NAP={country_event = fra_1789_event.357}
+	}
+}
+country_event = {
+	id = fra_1789_event.357
+	title = "Murat Declares War on the Coaltion"
+	desc = fra_1789_event.357.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "We need to take back France"
+		ai_chance = { factor = 100 }
+ENG={
+add_to_faction=TTS
+add_to_faction=TOS
+add_to_faction=AUS
+}
+TTS={
+			declare_war_on = {
+		target = NAP
+		type = annex_everything
+	}
+}
+SIC={
+			declare_war_on = {
+		target = NAP
+		type = annex_everything
+	}
+}
+TOS={
+			declare_war_on = {
+		target = NAP
+		type = annex_everything
+	}
+}
+AUS={
+			declare_war_on = {
+		target = NAP
+		type = annex_everything
+	}
+}
+MTU={
+			declare_war_on = {
+		target = NAP
+		type = annex_everything
+	}
+}
+VNT={
+			declare_war_on = {
+		target = NAP
+		type = annex_everything
+	}
+}
+LBV={
+			declare_war_on = {
+		target = NAP
+		type = annex_everything
+	}
+}
+TTS={set_country_flag=murat_tts_aus_tos_war}
+TTS={add_ideas=murat_war}
+TOS={add_ideas=murat_war}
+AUS={add_ideas=murat_war}
+SIC={add_ideas=murat_war}
+LBV={add_ideas=murat_war}
+MTU={add_ideas=murat_war}
+VNT={add_ideas=murat_war}
+	}
+}
+country_event = {
+	id = fra_1789_event.358
+	title = "Murat loses the Neapolitan War"
+	desc = fra_1789_event.358.d
+	picture = GFX_news_event_france_empire_1
+	#is_triggered_only = yes
+trigger={
+tag=TTS
+TTS={has_country_flag=murat_tts_aus_tos_war}
+or={
+NOT={NAP={controls_state=117}}
+NAP={surrender_progress > 0.5 }
+}
+}
+fire_only_once = yes
+	option = { # 
+		name = "We will return to Naples"
+		ai_chance = { factor = 100 }
+TTS={annex_country = { target = NAP transfer_troops = no }}
+every_state={
+limit={
+is_core_of=NAP
+}
+remove_core_of=NAP
+add_core_of=TTS
+}
+161={transfer_state_to=PAP}
+1109={transfer_state_to=PAP}
+920={transfer_state_to=PAP}
+	}
+}
+country_event = {
+	id = fra_1789_event.359
+	title = "Bonaparte lands in Provence"
+	desc = fra_1789_event.359.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "We need to take back France"
+		ai_chance = { factor = 100 }
+21={transfer_state_to=FRA}
+FRA={
+		set_capital = {
+        state = 21
+        remember_old_capital = no
+        }
+}
+1={set_demilitarized_zone = yes}
+	}
+}
+country_event = {
+	id = fra_1789_event.360
+	title = "Pardoning the Royalists"
+	desc = fra_1789_event.360.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "We need to take back France"
+		ai_chance = { factor = 100 }
+FRA={
+add_ideas=napoleon_pardons_royalists
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 5000
+					producer = FRA
+				}
+add_manpower = 15000
+add_stability = 0.05
+add_war_support = 0.03
+add_political_power = 25
+}
+	}
+}
+country_event = {
+	id = fra_1789_event.361
+	title = "Bonaparte invades the Coalition"
+	desc = fra_1789_event.361.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "We need to take back France"
+		ai_chance = { factor = 100 }
+
+RUS={add_timed_idea = { idea = hundred_days_delayed_mobilization days = 90}}
+SPM={add_timed_idea = { idea = hundred_days_delayed_mobilization days = 90}}
+SWI={add_timed_idea = { idea = hundred_days_delayed_mobilization days = 90}}
+SPR={add_timed_idea = { idea = hundred_days_delayed_mobilization days = 90}}
+		FRA={
+			declare_war_on = {
+		target = HOL
+		type = annex_everything
+	}
+				declare_war_on = {
+		target = PRE
+		type = annex_everything
+	}
+				declare_war_on = {
+		target = AUS
+		type = annex_everything
+	}
+				declare_war_on = {
+		target = ENG
+		type = annex_everything
+	}
+	}
+	}
+}
+country_event = {
+	id = fra_1789_event.362
+	title = "Bonaparte invades the Kingdom of France"
+	desc = fra_1789_event.362.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "We need to take back France"
+		ai_chance = { factor = 100 }
+		FRA={
+		load_oob = "divisions"
+			declare_war_on = {
+		target = VND
+		type = annex_everything
+	}
+	}
+	}
+}
+country_event = {
+	id = fra_1789_event.363
+	title = "The 1815 Vendee Counter-Revolution"
+	desc = fra_1789_event.363.d
+	picture = GFX_news_event_france_empire_1
+	#is_triggered_only = yes
+trigger={
+tag=VND
+FRA={has_country_flag=fontainebleau_has_happened}
+or={
+VND={surrender_progress > 0.5}
+FRA={controls_state=16}
+}
+}
+fire_only_once = yes
+	option = { # 
+		name = "We need to take back France"
+		ai_chance = { factor = 100 }
+14={transfer_state_to=BRI}
+14={add_core_of=BRI}
+VND={
+		set_autonomy = {
+        target = BRI
+        autonomous_state = autonomy_dominion
+        freedom_level = 0.4
+	}
+	}
+VND={country_event = fra_1789_event.365}
+VND={
+add_manpower = 80000 
+load_oob = "VND_1815"
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 80000
+					producer = VND
+				}
+}
+	}
+}
+country_event = {
+	id = fra_1789_event.364
+	title = "The Return of the French Empire"
+	desc = fra_1789_event.364.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "We need to take back France"
+		ai_chance = { factor = 100 }
+FRA={set_cosmetic_tag=FRA_empire}
+FRA={
+		set_capital = {
+        state = 16
+        remember_old_capital = no
+        }
+}
+every_state={
+limit={
+is_core_of=FRA
+is_owned_by=VND
+NOT={state=932}
+NOT={state=960}
+}
+transfer_state_to=FRA
+}
+	}
+}
+country_event = {
+	id = fra_1789_event.365
+	title = "The Brittany Counter-Revolution"
+	desc = fra_1789_event.365.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "Brittany is loyal to the King"
+		ai_chance = { factor = 100 }
+BRI={
+add_manpower = 40000 
+load_oob = "BRI_1815"
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 40000
+					producer = BRI
+				}
+}
+	}
+}
+country_event = {
+	id = fra_1789_event.366
+	title = "The imminent invasion by the Coalition"
+	desc = fra_1789_event.366.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "They will invade us by 1816"
+		ai_chance = { factor = 100 }
+FRA={add_ideas=fear_of_the_coalition}
 	}
 }

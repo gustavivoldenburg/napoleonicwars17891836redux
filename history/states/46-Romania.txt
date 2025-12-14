@@ -7,7 +7,7 @@ state={
 	}
 
 	history={
-		owner = WAL
+		owner = ROM
 
 		1459.1.1 = {
 		victory_points = {
@@ -40,7 +40,7 @@ state={
 			infrastructure = 3
 			arms_factory = 6
 		}
-		add_core_of = WAL
+		add_core_of = ROM
 
 	}
 

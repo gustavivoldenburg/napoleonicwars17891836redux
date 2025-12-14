@@ -1,0 +1,17 @@
+characters={
+	LST_charlesii={
+		name=LST_CHARACTER_CHARLESII
+		portraits={
+			civilian={
+				large="GFX_portrait_lst_charlesii_large"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={Bourbon-Parma}
+			desc = LST_CHARLESII_DESC
+			expire="1797.1.1"
+		}
+}
+}
+

@@ -1,7 +1,86 @@
 spriteTypes = {
+
+	        spriteType = {
+		name = "GFX_give_ulm"
+		texturefile = "gfx/interface/goals/give_ulm.dds"
+	}
+		        spriteType = {
+		name = "GFX_give_trentino"
+		texturefile = "gfx/interface/goals/give_trentino.dds"
+	}
+		        spriteType = {
+		name = "GFX_give_wurzburg"
+		texturefile = "gfx/interface/goals/give_wurzburg.dds"
+	}
+		        spriteType = {
+		name = "GFX_support_bavaria_in_the_succesion_of_baden"
+		texturefile = "gfx/interface/goals/support_bavaria_in_the_succesion_of_baden.dds"
+	}
+		        spriteType = {
+		name = "GFX_form_bavarian_empire"
+		texturefile = "gfx/interface/goals/form_bavarian_empire.dds"
+	}
+		        spriteType = {
+		name = "GFX_give_berg"
+		texturefile = "gfx/interface/goals/give_berg.dds"
+	}
+		        spriteType = {
+		name = "GFX_give_illyrian"
+		texturefile = "gfx/interface/goals/give_illyrian.dds"
+	}
+		        spriteType = {
+		name = "GFX_give_julish"
+		texturefile = "gfx/interface/goals/give_julish.dds"
+	}
+		        spriteType = {
+		name = "GFX_muslim_sicily"
+		texturefile = "gfx/interface/goals/muslim_sicily.dds"
+	}
+
+
+
+
+
+
+
+
+
+
         spriteType = {
+		name = "GFX_goal_department_france_revolution"
+		texturefile = "gfx/interface/goals/goal_department_france_revolution.dds"
+	}
+	        spriteType = {
+		name = "GFX_goal_bordeaux"
+		texturefile = "gfx/interface/goals/goal_bordeaux.dds"
+	}
+	        spriteType = {
+		name = "GFX_goal_lyon"
+		texturefile = "gfx/interface/goals/goal_lyon.dds"
+	}
+	        spriteType = {
+		name = "GFX_goal_nantes"
+		texturefile = "gfx/interface/goals/goal_nantes.dds"
+	}
+	        spriteType = {
+		name = "GFX_goal_aproved"
+		texturefile = "gfx/interface/goals/goal_aproved.dds"
+	}
+	        spriteType = {
 		name = "GFX_goal_napoleon_horse"
 		texturefile = "gfx/interface/goals/goal_napoleon_horse.dds"
+	}
+        spriteType = {
+		name = "GFX_goal_FRA_rhine_end"
+		texturefile = "gfx/interface/goals/goal_FRA_rhine_end.dds"
+	}
+        spriteType = {
+		name = "GFX_goal_FRA_italy_end"
+		texturefile = "gfx/interface/goals/goal_FRA_italy_end.dds"
+	}
+        spriteType = {
+		name = "GFX_goal_FRA_iberia_end"
+		texturefile = "gfx/interface/goals/goal_FRA_iberia_end.dds"
 	}
         spriteType = {
 		name = "GFX_goal_napoleon_egypt"
@@ -20,10 +99,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/goal_brandenburg.dds"
 	}
         spriteType = {
-		name = "GFX_goal_jews_enslaving_ukraine"
-		texturefile = "gfx/interface/goals/goal_jews_enslaving_ukraine.dds"
-	}
-        spriteType = {
 		name = "GFX_goal_yanina"
 		texturefile = "gfx/interface/goals/goal_yanina.dds"
 	}
@@ -35,109 +110,4 @@ spriteTypes = {
 		name = "GFX_goal_polandwarrussia"
 		texturefile = "gfx/interface/goals/goal_polandwarrussia.dds"
 	}
-	spriteType = {
-        name = "GFX_the_great_sejm"
-        texturefile = "gfx/interface/goals/POL/the_great_sejm.dds"
-    }
-		spriteType = {
-        name = "GFX_peasant_safety_act"
-        texturefile = "gfx/interface/goals/POL/peasant_safety_act.dds"
-    }
-	spriteType = {
-        name = "GFX_borguois_path"
-        texturefile = "gfx/interface/goals/POL/borguois_path.dds"
-    }
-	spriteType = {
-        name = "GFX_take_courland"
-        texturefile = "gfx/interface/goals/POL/take_courland.dds"
-    }
-	spriteType = {
-        name = "GFX_POL_university"
-        texturefile = "gfx/interface/goals/POL/POL_university.dds"
-    }
-	spriteType = {
-        name = "GFX_expand_port_palanga"
-        texturefile = "gfx/interface/goals/POL/expand_port_palanga.dds"
-    }
-	spriteType = {
-        name = "GFX_magnate_path"
-        texturefile = "gfx/interface/goals/POL/bomboklat.png"
-    }
-    spriteType = {
-		name = "GFX_federalist_rebel"
-		texturefile = "gfx/interface/goals/VND/GFX_federalist_rebel.dds"
-	}
-	spriteType = {
-		name = "GFX_goal_vive_king"
-		texturefile = "gfx/interface/goals/VND/vive_king.dds"
-	}
-	spriteType = {
-		name = "GFX_goal_lafayette_path1"
-		texturefile = "gfx/interface/goals/VND/GFX_lafayette_path1.dds"
-	}
-	spriteType = {
-		name = "GFX_goal_help_coalition"
-		texturefile = "gfx/interface/goals/VND/GFX_help_coalition.dds"
-	}
-	spriteType = {
-		name = "GFX_goal_federalist_wait"
-		texturefile = "gfx/interface/goals/VND/GFX_federalist_wait.dds"
-	}
-	spriteType = {
-		name = "GFX_goal_fete_lafayette"
-		texturefile = "gfx/interface/goals/VND/GFX_fete_lafayette.dds"
-	}
-	spriteType = {
-		name = "GFX_goal_modernize_divorce"
-		texturefile = "gfx/interface/goals/VND/GFX_modernize_divorce.dds"
-	}
-	spriteType = {
-		name = "GFX_goal_local_council"
-		texturefile = "gfx/interface/goals/VND/GFX_local_council.dds"
-	}
-	spriteType = {
-		name = "GFX_goal_citizen_soldier_doctrine"
-		texturefile = "gfx/interface/goals/VND/GFX_citizen_soldier_doctrine.dds"
-	}
-	spriteType = {
-		name = "GFX_goal_girl_education"
-		texturefile = "gfx/interface/goals/VND/GFX_girl_education.dds"
-	}
-	spriteType = {
-		name = "GFX_goal_equal_taxation"
-		texturefile = "gfx/interface/goals/VND/GFX_equal_taxation.dds"
-	}
-	spriteType = {
-		name = "GFX_goal_louisxviii_regent"
-		texturefile = "gfx/interface/goals/VND/GFX_louisxviii_regent.dds"
-	}
-	spriteType = {
-		name = "GFX_goal_lafayette_trial"
-		texturefile = "gfx/interface/goals/VND/GFX_lafayette_trial.dds"
-	}
-	spriteType = {
-		name = "GFX_goal_abolish_slave"
-		texturefile = "gfx/interface/goals/VND/GFX_abolish_slave.dds"
-	}
-	spriteType = {
-		name = "GFX_goal_liberal_constitution"
-		texturefile = "gfx/interface/goals/VND/GFX_liberal_constitution.dds"
-	}
-	spriteType = {
-		name = "GFX_goal_lafayette_french_army"
-		texturefile = "gfx/interface/goals/VND/GFX_lafayette_french_army.dds"
-	}
-	spriteType = {
-		name = "GFX_goal_keep_national_guard"
-		texturefile = "gfx/interface/goals/VND/GFX_keep_national_guard.dds"
-	}
-	spriteType = {
-		name = "GFX_goal_swiss_guard"
-		texturefile = "gfx/interface/goals/VND/GFX_swiss_guard.dds"
-	}
-	spriteType = {
-		name = "GFX_goal_prepare_for_war"
-		texturefile = "gfx/interface/goals/VND/GFX_prepare_for_war.dds"
-	}
-	
 }

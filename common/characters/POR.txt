@@ -1,4 +1,504 @@
 characters = {
+							POR_joseseseabradasilva={
+		name=POR_CHARACTER_JOSESESEABRADASILVA
+		portraits={
+                        army={
+				small="GFX_idea_por_joseseseabradasilva_small"
+			}
+			civilian = {
+				large = GFX_portrait_por_joseseseabradasilva_large
+			}
+		}
+		advisor={
+                        can_be_fired = no
+			slot = political_advisor
+			idea_token = POR_joseseseabradasilva
+			allowed  = {
+				original_tag  = POR
+			}
+			available  = {
+		        }
+			traits  = {
+				rothschild_banker
+			}
+			on_add  = {
+			}
+			do_effect  = {
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+	}
+							POR_rodrigocoutinho={
+		name=POR_CHARACTER_RODRIGOCOUTINHO
+		portraits={
+                        army={
+				small="GFX_idea_por_rodrigocoutinho_small"
+			}
+			civilian = {
+				large = GFX_portrait_por_rodrigocoutinho_large
+			}
+		}
+		advisor={
+                        can_be_fired = no
+			slot = political_advisor
+			idea_token = POR_rodrigocoutinho
+			allowed  = {
+				original_tag  = POR
+			}
+			available  = {
+		        }
+			traits  = {
+				rothschild_banker
+			}
+			on_add  = {
+			}
+			do_effect  = {
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+	}
+							POR_domingocoutinho={
+		name=POR_CHARACTER_DOMINGOCOUTINHO
+		portraits={
+                        army={
+				small="GFX_idea_por_domingocoutinho_small"
+			}
+			civilian = {
+				large = GFX_portrait_por_domingocoutinho_large
+			}
+		}
+		advisor={
+                        can_be_fired = no
+			slot = political_advisor
+			idea_token = POR_domingocoutinho
+			allowed  = {
+				original_tag  = POR
+			}
+			available  = {
+		        }
+			traits  = {
+				rothschild_banker
+			}
+			on_add  = {
+			}
+			do_effect  = {
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+	}
+							POR_luiscoutinho={
+		name=POR_CHARACTER_LUISCOUTINHO
+		portraits={
+                        army={
+				small="GFX_idea_por_luiscoutinho_small"
+			}
+			civilian = {
+				large = GFX_portrait_por_luiscoutinho_large
+			}
+		}
+		advisor={
+                        can_be_fired = no
+			slot = political_advisor
+			idea_token = POR_luiscoutinho
+			allowed  = {
+				original_tag  = POR
+			}
+			available  = {
+		        }
+			traits  = {
+				rothschild_banker
+			}
+			on_add  = {
+			}
+			do_effect  = {
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+	}
+							POR_braganca={
+		name=POR_CHARACTER_BRAGANCA
+		portraits={
+                        army={
+				small="GFX_idea_por_braganca_small"
+			}
+			civilian = {
+				large = GFX_portrait_por_braganca_large
+			}
+		}
+		advisor={
+                        can_be_fired = no
+			slot = political_advisor
+			idea_token = POR_braganca
+			allowed  = {
+				original_tag  = POR
+			}
+			available  = {
+		        }
+			traits  = {
+				rothschild_banker
+			}
+			on_add  = {
+			}
+			do_effect  = {
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+	}
+							POR_forjaz={
+		name=POR_CHARACTER_FORJAZ
+		portraits={
+                        army={
+				small="GFX_idea_por_forjaz_small"
+			}
+			civilian = {
+				large = GFX_portrait_por_forjaz_large
+			}
+		}
+		advisor={
+                        can_be_fired = no
+			slot = political_advisor
+			idea_token = POR_forjaz
+			allowed  = {
+				original_tag  = POR
+			}
+			available  = {
+		        }
+			traits  = {
+				rothschild_banker
+			}
+			on_add  = {
+			}
+			do_effect  = {
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+	}
+							POR_beresford={
+		name=POR_CHARACTER_BERESFORD
+		portraits={
+                        army={
+				small="GFX_idea_por_beresford_small"
+			}
+			civilian = {
+				large = GFX_portrait_por_beresford_large
+			}
+		}
+		advisor={
+                        can_be_fired = no
+			slot = political_advisor
+			idea_token = POR_beresford
+			allowed  = {
+				original_tag  = POR
+			}
+			available  = {
+		        }
+			traits  = {
+				rothschild_banker
+			}
+			on_add  = {
+			}
+			do_effect  = {
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+	}
+							POR_noronha={
+		name=POR_CHARACTER_NORONHA
+		portraits={
+                        army={
+				small="GFX_idea_por_noronha_small"
+			}
+			civilian = {
+				large = GFX_portrait_por_noronha_large
+			}
+		}
+		advisor={
+                        can_be_fired = no
+			slot = political_advisor
+			idea_token = POR_noronha
+			allowed  = {
+				original_tag  = POR
+			}
+			available  = {
+		        }
+			traits  = {
+				liberal_por
+			}
+			on_add  = {
+			}
+			do_effect  = {
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+	}
+							POR_franciscodedasilveira={
+		name=POR_CHARACTER_FRANCISCODEDASILVEIRA
+		portraits={
+                        army={
+				small="GFX_idea_por_franciscodedasilveira_small"
+			}
+			civilian = {
+				large = GFX_portrait_por_franciscodedasilveira_large
+			}
+		}
+		advisor={
+                        can_be_fired = no
+			slot = political_advisor
+			idea_token = POR_franciscodedasilveira
+			allowed  = {
+				original_tag  = POR
+			}
+			available  = {
+		        }
+			traits  = {
+				rothschild_banker
+			}
+			on_add  = {
+			}
+			do_effect  = {
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+	}
+							POR_gama={
+		name=POR_CHARACTER_GAMA
+		portraits={
+                        army={
+				small="GFX_idea_por_gama_small"
+			}
+			civilian = {
+				large = GFX_portrait_por_gama_large
+			}
+		}
+		advisor={
+                        can_be_fired = no
+			slot = political_advisor
+			idea_token = POR_gama
+			allowed  = {
+				original_tag  = POR
+			}
+			available  = {
+		        }
+			traits  = {
+				rothschild_banker
+			}
+			on_add  = {
+			}
+			do_effect  = {
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+	}
+							POR_lorena={
+		name=POR_CHARACTER_LORENA
+		portraits={
+                        army={
+				small="GFX_idea_por_lorena_small"
+			}
+			civilian = {
+				large = GFX_portrait_por_lorena_large
+			}
+		}
+		advisor={
+                        can_be_fired = no
+			slot = political_advisor
+			idea_token = POR_lorena
+			allowed  = {
+				original_tag  = POR
+			}
+			available  = {
+		        }
+			traits  = {
+				rothschild_banker
+			}
+			on_add  = {
+			}
+			do_effect  = {
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+	}
+							POR_azevedo={
+		name=POR_CHARACTER_AZEVEDO
+		portraits={
+                        army={
+				small="GFX_idea_por_azevedo_small"
+			}
+			civilian = {
+				large = GFX_portrait_por_azevedo_large
+			}
+		}
+		advisor={
+                        can_be_fired = no
+			slot = political_advisor
+			idea_token = POR_azevedo
+			allowed  = {
+				original_tag  = POR
+			}
+			available  = {
+		        }
+			traits  = {
+				rothschild_banker
+			}
+			on_add  = {
+			}
+			do_effect  = {
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+	}
+							POR_stockler={
+		name=POR_CHARACTER_STOCKLER
+		portraits={
+                        army={
+				small="GFX_idea_por_stockler_small"
+			}
+			civilian = {
+				large = GFX_portrait_por_stockler_large
+			}
+		}
+		advisor={
+                        can_be_fired = no
+			slot = political_advisor
+			idea_token = POR_stockler
+			allowed  = {
+				original_tag  = POR
+			}
+			available  = {
+		        }
+			traits  = {
+				rothschild_banker
+			}
+			on_add  = {
+			}
+			do_effect  = {
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+	}
+							POR_taborda={
+		name=POR_CHARACTER_TABORDA
+		portraits={
+                        army={
+				small="GFX_idea_por_taborda_small"
+			}
+			civilian = {
+				large = GFX_portrait_por_taborda_large
+			}
+		}
+		advisor={
+                        can_be_fired = no
+			slot = political_advisor
+			idea_token = POR_taborda
+			allowed  = {
+				original_tag  = POR
+			}
+			available  = {
+		        }
+			traits  = {
+				rothschild_banker
+			}
+			on_add  = {
+			}
+			do_effect  = {
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+	}
+							POR_freire={
+		name=POR_CHARACTER_FREIRE
+		portraits={
+                        army={
+				small="GFX_idea_por_freire_small"
+			}
+			civilian = {
+				large = GFX_portrait_por_freire_large
+			}
+		}
+		advisor={
+                        can_be_fired = no
+			slot = political_advisor
+			idea_token = POR_freire
+			allowed  = {
+				original_tag  = POR
+			}
+			available  = {
+		        }
+			traits  = {
+				rothschild_banker
+			}
+			on_add  = {
+			}
+			do_effect  = {
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 		POR_pedrogeneral={
 		name=POR_CHARACTER_PEDROGENERAL
 		portraits={
@@ -221,7 +721,74 @@ characters = {
 		}
 	}
 
-
+			POR_sampaio={
+		name=POR_CHARACTER_SAMPAIO
+		portraits={
+			army={
+				large=GFX_portrait_por_sampaio_large
+				small=GFX_portrait_por_sampaio_small
+			}
+		}
+		corps_commander={
+			skill=1
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=0
+		}
+	}
+				POR_guedes={
+		name=POR_CHARACTER_GUEDES
+		portraits={
+			army={
+				large=GFX_portrait_por_guedes_large
+				small=GFX_portrait_por_guedes_small
+			}
+		}
+		corps_commander={
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=0
+		}
+	}
+				POR_napier={
+		name=POR_CHARACTER_NAPIER
+		portraits={
+			army={
+				large=GFX_portrait_por_napier_large
+				small=GFX_portrait_por_napier_small
+			}
+		}
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=0
+		}
+	}
+				POR_povoas={
+		name=POR_CHARACTER_POVOAS
+		portraits={
+			army={
+				large=GFX_portrait_por_povoas_large
+				small=GFX_portrait_por_povoas_small
+			}
+		}
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=0
+		}
+	}
 
 
 
@@ -235,8 +802,22 @@ characters = {
 			}
 		}
 		country_leader={
-			ideology=enlightened_absolutism
+			ideology=despotism
 			desc = POR_MARIAII_DESC
+			expire="1797.1.1"
+		}
+}
+	POR_lucienbonaparte={
+		name=POR_CHARACTER_LUCIENBONAPARTE
+		portraits={
+			civilian={
+				large="GFX_portrait_por_lucienbonaparte_large"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={Bonaparte}
+			desc = POR_LUCIENBONAPARTE_DESC
 			expire="1797.1.1"
 		}
 }
@@ -248,7 +829,7 @@ characters = {
 			}
 		}
 		country_leader={
-			ideology=absolute_monarchy
+			ideology=despotism
 			traits={Braganza}
 			desc = POR_MARIAI_DESC
 			expire="1797.1.1"

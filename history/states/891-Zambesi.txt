@@ -23,7 +23,7 @@ state={
 			owner = BDB
 			add_core_of = BDB
 			remove_core_of = PRE
-			remove_core_of = BOH
+			remove_core_of = CZE
 			remove_core_of = ULU
 
 		}

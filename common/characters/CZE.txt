@@ -1,0 +1,58 @@
+characters={
+	CZE_josephiicze={
+		name=CZE_CHARACTER_JOSEPHIICZE
+		portraits={
+			civilian={
+				large="GFX_portrait_cze_josephiicze_large"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={Habsburg-Lorraine}
+			desc = CZE_JOSEPHIICZE_DESC
+			expire="1797.1.1"
+		}
+}
+	CZE_leopoldiicze={
+		name=CZE_CHARACTER_LEOPOLDIICZE
+		portraits={
+			civilian={
+				large="GFX_portrait_cze_leopoldiicze_large"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={Habsburg-Lorraine}
+			desc = CZE_LEOPOLDIICZE_DESC
+			expire="1797.1.1"
+		}
+}
+	CZE_francisiicze={
+		name=CZE_CHARACTER_FRANCISIICZE
+		portraits={
+			civilian={
+				large="GFX_portrait_cze_francisiicze_large"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={Habsburg-Lorraine}
+			desc = CZE_FRANCISIICZE_DESC
+			expire="1797.1.1"
+		}
+}
+	CZE_ferdinandicze={
+		name=CZE_CHARACTER_FERDINANDICZE
+		portraits={
+			civilian={
+				large="GFX_portrait_cze_ferdinandicze_large"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={Habsburg-Lorraine}
+			desc = CZE_FERDINANDICZE_DESC
+			expire="1797.1.1"
+		}
+}
+}

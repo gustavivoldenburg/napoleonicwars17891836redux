@@ -4,10 +4,17 @@ state={
 	name="STATE_181"
 	resources={
 		tungsten=150.000
+                coal = 1 #initial distribution
 	}
 
 	history={
 		owner = POR
+				1808.1.1 = {
+	    owner=FRA
+		}
+		1809.1.1 = {
+	    owner=POR
+		}
 		victory_points = {
 			9787 1 
 		}

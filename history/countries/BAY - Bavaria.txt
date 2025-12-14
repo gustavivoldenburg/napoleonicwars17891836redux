@@ -36,6 +36,21 @@ recruit_character=BAY_montgelas
 1839.1.1 = {
 retire_character=BAY_montgelas
 }
+1789.1.1 = {
+recruit_character=BAY_drumpfi
+}
+1792.1.1 = {
+retire_character=BAY_drumpfi
+}
+1789.1.1 = {
+recruit_character=BAY_drumpfii
+}
+1807.1.1 = {
+BAY={set_country_flag=BAY_trump_has_turned_one_eight}
+}
+1836.1.1 = {
+retire_character=BAY_drumpfii
+}
 1812.1.1 = {
 retire_character=BAY_zweibgeneral
 }
@@ -231,7 +246,7 @@ set_stability = 0.75
 		electronic_mechanical_engineering = 1
 		radio = 1
 		radio_detection = 1
-		decimetric_radar = 1
+		
 		mechanical_computing = 1
 		computing_machine = 1
 		basic_encryption = 1

@@ -1,4 +1,293 @@
 ﻿capital = 55
+1808.1.1 = {
+		if = {
+		limit = { has_start_date < 1809.1.1 }
+FKF={
+		set_autonomy = {
+        target = BAY
+        autonomous_state = autonomy_confederationoftherhine
+        freedom_level = 0.4
+	}
+			set_autonomy = {
+        target = WUR
+        autonomous_state = autonomy_confederationoftherhine
+        freedom_level = 0.4
+	}
+			set_autonomy = {
+        target = BAD
+        autonomous_state = autonomy_confederationoftherhine
+        freedom_level = 0.4
+	}
+			set_autonomy = {
+        target = NAS
+        autonomous_state = autonomy_confederationoftherhine
+        freedom_level = 0.4
+	}
+			set_autonomy = {
+        target = LCT
+        autonomous_state = autonomy_confederationoftherhine
+        freedom_level = 0.4
+	}
+			set_autonomy = {
+        target = MUN
+        autonomous_state = autonomy_confederationoftherhine
+        freedom_level = 0.4
+	}
+			set_autonomy = {
+        target = HOH
+        autonomous_state = autonomy_confederationoftherhine
+        freedom_level = 0.4
+	}
+			set_autonomy = {
+        target = REG
+        autonomous_state = autonomy_confederationoftherhine
+        freedom_level = 0.4
+	}
+			set_autonomy = {
+        target = BRG
+        autonomous_state = autonomy_confederationoftherhine
+        freedom_level = 0.4
+	}
+			set_autonomy = {
+        target = HES
+        autonomous_state = autonomy_confederationoftherhine
+        freedom_level = 0.4
+	}
+			set_autonomy = {
+        target = SAX
+        autonomous_state = autonomy_confederationoftherhine
+        freedom_level = 0.4
+	}
+				set_autonomy = {
+        target = MEK
+        autonomous_state = autonomy_confederationoftherhine
+        freedom_level = 0.4
+	}
+				set_autonomy = {
+        target = STR
+        autonomous_state = autonomy_confederationoftherhine
+        freedom_level = 0.4
+	}
+				set_autonomy = {
+        target = ANH
+        autonomous_state = autonomy_confederationoftherhine
+        freedom_level = 0.4
+	}
+				set_autonomy = {
+        target = THU
+        autonomous_state = autonomy_confederationoftherhine
+        freedom_level = 0.4
+	}
+				set_autonomy = {
+        target = WRZ
+        autonomous_state = autonomy_confederationoftherhine
+        freedom_level = 0.4
+	}
+				set_autonomy = {
+        target = WTF
+        autonomous_state = autonomy_confederationoftherhine
+        freedom_level = 0.4
+	}
+				set_autonomy = {
+        target = COB
+        autonomous_state = autonomy_confederationoftherhine
+        freedom_level = 0.4
+	}
+				set_autonomy = {
+        target = GTH
+        autonomous_state = autonomy_confederationoftherhine
+        freedom_level = 0.4
+	}
+				set_autonomy = {
+        target = ERF
+        autonomous_state = autonomy_confederationoftherhine
+        freedom_level = 0.4
+	}
+				set_autonomy = {
+        target = WEI
+        autonomous_state = autonomy_confederationoftherhine
+        freedom_level = 0.4
+	}
+				set_autonomy = {
+        target = WLD
+        autonomous_state = autonomy_confederationoftherhine
+        freedom_level = 0.4
+	}
+				set_autonomy = {
+        target = LIP
+        autonomous_state = autonomy_confederationoftherhine
+        freedom_level = 0.4
+	}
+				set_autonomy = {
+        target = SCH
+        autonomous_state = autonomy_confederationoftherhine
+        freedom_level = 0.4
+	}
+				set_autonomy = {
+        target = SLM
+        autonomous_state = autonomy_confederationoftherhine
+        freedom_level = 0.4
+	}
+				set_autonomy = {
+        target = HAN
+        autonomous_state = autonomy_confederationoftherhine
+        freedom_level = 0.4
+	}
+				set_autonomy = {
+        target = SXL
+        autonomous_state = autonomy_confederationoftherhine
+        freedom_level = 0.4
+	}
+				set_autonomy = {
+        target = EIS
+        autonomous_state = autonomy_confederationoftherhine
+        freedom_level = 0.4
+	}
+				set_autonomy = {
+        target = HBG
+        autonomous_state = autonomy_confederationoftherhine
+        freedom_level = 0.4
+	}
+					set_autonomy = {
+        target = LBK
+        autonomous_state = autonomy_confederationoftherhine
+        freedom_level = 0.4
+	}
+				set_autonomy = {
+        target = BRN
+        autonomous_state = autonomy_confederationoftherhine
+        freedom_level = 0.4
+	}
+}
+		}
+}
+1811.1.1 = {
+		if = {
+		limit = { has_start_date < 1813.1.1 }
+FKF={
+		set_autonomy = {
+        target = BAY
+        autonomous_state = autonomy_confederationoftherhine
+        freedom_level = 0.4
+	}
+			set_autonomy = {
+        target = WUR
+        autonomous_state = autonomy_confederationoftherhine
+        freedom_level = 0.4
+	}
+			set_autonomy = {
+        target = BAD
+        autonomous_state = autonomy_confederationoftherhine
+        freedom_level = 0.4
+	}
+			set_autonomy = {
+        target = NAS
+        autonomous_state = autonomy_confederationoftherhine
+        freedom_level = 0.4
+	}
+			set_autonomy = {
+        target = LCT
+        autonomous_state = autonomy_confederationoftherhine
+        freedom_level = 0.4
+	}
+			set_autonomy = {
+        target = MUN
+        autonomous_state = autonomy_confederationoftherhine
+        freedom_level = 0.4
+	}
+			set_autonomy = {
+        target = HOH
+        autonomous_state = autonomy_confederationoftherhine
+        freedom_level = 0.4
+	}
+			set_autonomy = {
+        target = REG
+        autonomous_state = autonomy_confederationoftherhine
+        freedom_level = 0.4
+	}
+			set_autonomy = {
+        target = BRG
+        autonomous_state = autonomy_confederationoftherhine
+        freedom_level = 0.4
+	}
+			set_autonomy = {
+        target = HES
+        autonomous_state = autonomy_confederationoftherhine
+        freedom_level = 0.4
+	}
+			set_autonomy = {
+        target = SAX
+        autonomous_state = autonomy_confederationoftherhine
+        freedom_level = 0.4
+	}
+				set_autonomy = {
+        target = MEK
+        autonomous_state = autonomy_confederationoftherhine
+        freedom_level = 0.4
+	}
+				set_autonomy = {
+        target = STR
+        autonomous_state = autonomy_confederationoftherhine
+        freedom_level = 0.4
+	}
+				set_autonomy = {
+        target = ANH
+        autonomous_state = autonomy_confederationoftherhine
+        freedom_level = 0.4
+	}
+				set_autonomy = {
+        target = THU
+        autonomous_state = autonomy_confederationoftherhine
+        freedom_level = 0.4
+	}
+				set_autonomy = {
+        target = WRZ
+        autonomous_state = autonomy_confederationoftherhine
+        freedom_level = 0.4
+	}
+				set_autonomy = {
+        target = WTF
+        autonomous_state = autonomy_confederationoftherhine
+        freedom_level = 0.4
+	}
+				set_autonomy = {
+        target = COB
+        autonomous_state = autonomy_confederationoftherhine
+        freedom_level = 0.4
+	}
+				set_autonomy = {
+        target = GTH
+        autonomous_state = autonomy_confederationoftherhine
+        freedom_level = 0.4
+	}
+				set_autonomy = {
+        target = ERF
+        autonomous_state = autonomy_confederationoftherhine
+        freedom_level = 0.4
+	}
+				set_autonomy = {
+        target = WEI
+        autonomous_state = autonomy_confederationoftherhine
+        freedom_level = 0.4
+	}
+				set_autonomy = {
+        target = WLD
+        autonomous_state = autonomy_confederationoftherhine
+        freedom_level = 0.4
+	}
+				set_autonomy = {
+        target = LIP
+        autonomous_state = autonomy_confederationoftherhine
+        freedom_level = 0.4
+	}
+				set_autonomy = {
+        target = SCH
+        autonomous_state = autonomy_confederationoftherhine
+        freedom_level = 0.4
+	}
+}
+		}
+}
 1745.1.1 = {
 recruit_character=FKF_karl
 promote_character=FKF_karl

@@ -62,6 +62,38 @@ characters={
 
 
 
+					FRA_lucienbonaparte={
+		name=FRA_CHARACTER_LUCIENBONAPARTE
+		portraits={
+                        army={
+				small="GFX_idea_fra_lucienbonaparte_small"
+			}
+			civilian = {
+				large = GFX_portrait_fra_lucienbonaparte_large
+			}
+		}
+		advisor={
+                        can_be_fired = no
+			slot = political_advisor
+			idea_token = FRA_lucienbonaparte
+			allowed  = {
+				original_tag  = FRA
+			}
+			available  = {
+			FRA={has_country_flag=the_coup_of_napoleon_has_happened}
+		        }
+			traits  = {
+				Minister_of_the_Interior
+			}
+			on_add  = {
+			}
+			do_effect  = {
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+	}
 
 					FRA_barthelemy={
 		name=FRA_CHARACTER_BARTHELEMY
@@ -283,6 +315,7 @@ characters={
 			}
 		}
 		field_marshal={
+		visible={NOT={FRA={has_country_flag=bernadotte_has_left_for_sweden}}}
 			skill=3
 			attack_skill=2
 			defense_skill=1
@@ -634,6 +667,38 @@ characters={
 			}
 		}	
 	}	
+	FRA_josephdavidsinzheim={
+		name=FRA_CHARACTER_JOSEPHDAVIDSINZHEIM
+		portraits={
+                        army={
+				small="GFX_idea_fra_josephdavidsinzheim_small"
+			}
+			civilian = {
+				large = GFX_portrait_fra_josephdavidsinzheim_large
+			}
+		}
+		advisor={
+                        can_be_fired = no
+			slot = political_advisor
+			idea_token = FRA_josephdavidsinzheim
+			allowed  = {
+				original_tag  = FRA
+			}
+			available  = {
+                        FRA={has_country_flag=josephdavidsinzheim_hired}
+		        }
+			traits  = {
+				josephdavidsinzheim_is_employed_by_france
+			}
+			on_add  = {
+			}
+			do_effect  = {
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}	
+	}	
 		FRA_jacquesnecker={
 		name=FRA_CHARACTER_JACQUESNECKER
 		portraits={
@@ -645,7 +710,7 @@ characters={
 			}
 		}
 		advisor={
-            can_be_fired = no
+                        can_be_fired = no
 			slot = political_advisor
 			idea_token = FRA_jacquesnecker
 			allowed  = {
@@ -708,7 +773,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=absolute_monarchy
+			ideology=despotism
 			traits={Bourbon}
 			desc = FRA_LOUISXVI_DESC
 			expire="1797.1.1"
@@ -2541,6 +2606,159 @@ characters={
 			}
 			traits  = {
 				head_of_intelligence 
+			}
+		}
+	}
+					FRA_nicolas={
+		name=FRA_CHARACTER_NICOLAS
+		portraits={
+                        army={
+				small="GFX_idea_fra_nicolas_small"
+			}
+			civilian = {
+				large = GFX_portrait_fra_nicolas_large
+			}
+		}
+		advisor={
+                        can_be_fired = no
+			slot = army_chief
+			idea_token = FRA_nicolas
+			allowed  = {
+				original_tag  = FRA
+			}
+			available  = {
+		        }
+			traits  = {
+				forced_attacker
+			}
+			on_add  = {
+			} 
+			do_effect  = {
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+	}
+
+
+
+					FRA_louis={
+		name=FRA_CHARACTER_LOUIS
+		portraits={
+                        army={
+				small="GFX_idea_fra_louis_small"
+			}
+			civilian = {
+				large = GFX_portrait_fra_louis_large
+			}
+		}
+		advisor={
+                        can_be_fired = no
+			slot = army_chief
+			idea_token = FRA_louis
+			allowed  = {
+				original_tag  = FRA
+			}
+			available  = {
+		        }
+			traits  = {
+				royal_guard_commander
+			}
+			on_add  = {
+			} 
+			do_effect  = {
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+	}
+
+
+					FRA_napoleon_cheif={
+		name=FRA_CHARACTER_NAPOLEON_CHEIF
+		portraits={
+                        army={
+				small="GFX_idea_fra_napoleon_cheif_small"
+			}
+			civilian = {
+				large = GFX_portrait_fra_napoleon_cheif_large
+			}
+		}
+		advisor={
+                        can_be_fired = no
+			slot = army_chief
+			idea_token = FRA_napoleon_cheif
+			allowed  = {
+				original_tag  = FRA
+			}
+			available  = {
+            or = {
+                has_country_leader = {
+                character = FRA_napoleon
+                ruling_only = yes
+                }
+
+                has_country_leader = {
+                character = FRA_napoleoni
+                ruling_only = yes
+                }
+            }
+        }   
+			traits  = {
+				napoleon_cheif
+			}
+			on_add  = {
+			} 
+			do_effect  = {
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+	}
+
+
+					FRA_napoleon_command={
+		name=FRA_CHARACTER_NAPOLEON_COMMAND
+		portraits={
+                        army={
+				small="GFX_idea_fra_napoleon_command_small"
+			}
+			civilian = {
+				large = GFX_portrait_fra_napoleon_cheif_command
+			}
+		}
+		advisor={
+                        can_be_fired = no
+			slot = high_command
+			idea_token = FRA_napoleon_command
+			allowed  = {
+				original_tag  = FRA
+			}
+			available  = {
+            or = {
+                has_country_leader = {
+                character = FRA_napoleon
+                ruling_only = yes
+                }
+
+                has_country_leader = {
+                character = FRA_napoleoni
+                ruling_only = yes
+                }
+            }
+       }      
+			traits  = {
+				napoleon_command
+			}
+			on_add  = {
+			} 
+			do_effect  = {
+			}
+			ai_will_do  = {
+				factor  = 1.000
 			}
 		}
 	}

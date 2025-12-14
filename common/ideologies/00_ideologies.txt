@@ -9,10 +9,7 @@ ideologies = {
 
 			liberalism = {
 			}
-			
-			liberal_monarchy = {
-            }
-			
+
 			socialism = {
 			}
 
@@ -152,6 +149,10 @@ ideologies = {
 
 			rexism = {
 			}
+
+						emperor_fascism = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+			}
 		}
 
 		dynamic_faction_names = {
@@ -198,19 +199,7 @@ ideologies = {
 
 			despotism  = {
 			}
-			
-			absolute_monarchy  = {
-			}
-			
-			constitution_monarchy  = {
-			}
-			
-			enlightened_absolutism  = {
-			}
-			
-			theocracy  = {
-			}
-			
+
 			oligarchism  = {
 			}
 
@@ -222,6 +211,9 @@ ideologies = {
 			}
 
 			centrism = {
+			}
+						japan_militarism_ideology = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
 			}
 
 			capet = {

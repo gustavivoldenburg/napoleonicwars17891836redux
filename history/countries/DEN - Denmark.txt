@@ -2,17 +2,6 @@
 1789.1.1 = {
 recruit_character=DEN_michael
 }
-add_ideas = {
-	DEN_norwegian_land_forces
-	DEN_haeren
-	DEN_social_reforms_1
-	DEN_agricultural_economy
-	DEN_the_theatre_war
-}
-add_equipment_to_stockpile = {
-	type = infantry_equipment_0
-	amount = -2000
-}
 1846.1.1 = {
 retire_character=DEN_michael
 }
@@ -162,12 +151,12 @@ set_cosmetic_tag = DEN # Denmark
 set_oob = "DEN_1789_1815"
 }
 }
+1936.1.1 = {
 if = {
 	limit = { has_dlc = "Arms Against Tyranny" }
 	set_country_flag = DEN_danish_election_flag
 }
 
-1936.1.1 = {
 oob = "DEN_1936"
 if = {
 	limit = { has_dlc = "Man the Guns" }
@@ -188,7 +177,6 @@ if = {
 		}
 	}
 }
-}
 # Diplomacy
 IF = {
 	limit = {
@@ -206,7 +194,7 @@ IF = {
 		puppet = ICE
 	}
 }
-
+}
 #### COUNTRY LEADERS ####
 1936.1.1 = {
 recruit_character = DEN_thorvald_stauning
@@ -338,7 +326,6 @@ set_technology = {
 	gw_artillery = 1
 	interwar_antiair = 1
 	basic_train = 1
-}
 }
 #### AAT SET UP ####
 if = {
@@ -554,7 +541,7 @@ if = {
 		mtg_transport = 1
 	}
 }
-
+}
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1444.11.11"
@@ -731,7 +718,7 @@ neutrality = 50
 
 
 set_convoys = 55
-
+1936.1.1 = {
 ### VARIANTS ###
 # 1936 Start #
 if = {
@@ -796,7 +783,7 @@ add_equipment_to_stockpile = {
 	type = train_equipment_1
 	amount = 7
 }
-
+}
 # 1939 Start #
 1939.1.1 = {
 	if = {

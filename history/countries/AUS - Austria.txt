@@ -136,7 +136,7 @@ NDH={give_military_access = AUS}
 THU={give_military_access = AUS}
 BEL={give_military_access = AUS}
 LUX={give_military_access = AUS}
-BOH={give_military_access = AUS}
+CZE={give_military_access = AUS}
 SWE={give_military_access = AUS}
 STA={give_military_access = AUS}
 			}
@@ -168,7 +168,7 @@ retire_character=AUS_jozsef
 1789.1.1 = {
 			if = {
 		limit = { has_start_date < 1790.1.1 }
-AUS={create_faction=FirstCoalition}
+AUS={create_faction=TheCoalition}
 	set_autonomy = {
         target = SER
         autonomous_state = autonomy_protectorate
@@ -360,7 +360,7 @@ if = {
         freedom_level = 0.2
 	}
         set_autonomy = {
-        target = MOD
+        target = ITA
         autonomous_state = autonomy_personal_union
         freedom_level = 0.2
 	}
@@ -395,7 +395,7 @@ if = {
         freedom_level = 0.2
 	}
     set_autonomy = {
-        target = BOH
+        target = CZE
         autonomous_state = autonomy_personal_union
         freedom_level = 0.2
 	}

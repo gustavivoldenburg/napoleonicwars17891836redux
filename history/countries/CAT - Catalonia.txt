@@ -5,7 +5,7 @@
 FRA={
 	set_autonomy = {
         target = CAT
-        autonomous_state = autonomy_protectorate
+        autonomous_state = autonomy_dominion
         freedom_level = 0.4
 	}
 }

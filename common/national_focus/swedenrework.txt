@@ -30,7 +30,7 @@ focus = {
 		y = 1
 allow_branch = { has_start_date > 1789.1.1
     has_start_date < 1800.1.1 }
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -62,7 +62,7 @@ allow_branch = { has_start_date > 1789.1.1
 		x = -8
 		y = 1
 
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -96,7 +96,7 @@ allow_branch = { has_start_date > 1789.1.1
 		x = -6
 		y = 1
 
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -135,7 +135,7 @@ allow_branch = { has_start_date > 1789.1.1
 		prerequisite = {
 		focus =	sweden_1789_1815_first_100_focus_3
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -174,7 +174,7 @@ allow_branch = { has_start_date > 1789.1.1
 		prerequisite = {
 		focus =	sweden_1789_1815_first_100_focus_3
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -204,7 +204,7 @@ allow_branch = { has_start_date > 1789.1.1
     has_start_date < 1800.1.1 }
 		x = -6
 		y = 2
-		cost = 4.3
+		cost = 4.28571428571428571428
 		prerequisite = {
 		focus =	sweden_1789_1815_first_100_focus_1
 		}
@@ -251,7 +251,7 @@ allow_branch = { has_start_date > 1789.1.1
         prerequisite = {
         focus =    sweden_1789_1815_first_100_focus_6
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -291,7 +291,7 @@ allow_branch = { has_start_date > 1789.1.1
         prerequisite = {
         focus =    sweden_1789_1815_first_100_focus_6
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -330,7 +330,7 @@ allow_branch = { has_start_date > 1789.1.1
         prerequisite = {
         focus =    sweden_1789_1815_first_100_focus_6
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -372,7 +372,7 @@ allow_branch = { has_start_date > 1789.1.1
 		prerequisite = {
 		focus =	sweden_1789_1815_first_100_focus_9
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -415,7 +415,7 @@ allow_branch = { has_start_date > 1789.1.1
 		focus =	sweden_1789_1815_first_100_focus_9
 		}
 		mutually_exclusive = { focus = sweden_1789_1815_first_100_focus_10 focus = sweden_althistory_2 }
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 0
@@ -458,7 +458,7 @@ allow_branch = { has_start_date > 1789.1.1
 		focus =	sweden_1789_1815_first_100_focus_9
 		}
 		mutually_exclusive = { focus = sweden_1789_1815_first_100_focus_10 focus = sweden_althistory_1 }
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 0
@@ -495,7 +495,7 @@ allow_branch = { has_start_date > 1789.1.1
 		icon = GFX_goal_generic_neutrality_focus
 		x = 0
 		y = 16
-		cost = 4.3
+		cost = 4.28571428571428571428
 		prerequisite = {
 		focus =	sweden_1789_1815_first_100_focus_73
 		}
@@ -538,7 +538,7 @@ allow_branch = { has_start_date > 1789.1.1
 		icon = GFX_goal_generic_neutrality_focus
 		x = 2
 		y = 16
-		cost = 4.3
+		cost = 4.28571428571428571428
 		prerequisite = {
 		focus =	sweden_1789_1815_first_100_focus_73
 		}
@@ -581,7 +581,7 @@ allow_branch = { has_start_date > 1789.1.1
 		icon = GFX_goal_generic_neutrality_focus
 		x = 4
 		y = 16
-		cost = 4.3
+		cost = 4.28571428571428571428
 		prerequisite = {
 		focus =	sweden_1789_1815_first_100_focus_73
 		}
@@ -624,7 +624,7 @@ allow_branch = { has_start_date > 1789.1.1
 		icon = GFX_goal_generic_neutrality_focus
 		x = 6
 		y = 16
-		cost = 4.3
+		cost = 4.28571428571428571428
 		prerequisite = {
 		focus =	sweden_1789_1815_first_100_focus_73
 		}
@@ -657,7 +657,7 @@ allow_branch = { has_start_date > 1789.1.1
 		icon = GFX_goal_generic_neutrality_focus
 		x = 8
 		y = 16
-		cost = 4.3
+		cost = 4.28571428571428571428
 		prerequisite = {
 		focus =	sweden_1789_1815_first_100_focus_73
 		}
@@ -690,7 +690,7 @@ allow_branch = { has_start_date > 1789.1.1
 		icon = GFX_goal_generic_neutrality_focus
 		x = 10
 		y = 16
-		cost = 4.3
+		cost = 4.28571428571428571428
 		prerequisite = {
 		focus =	sweden_1789_1815_first_100_focus_73
 		}
@@ -723,7 +723,7 @@ allow_branch = { has_start_date > 1789.1.1
 		icon = GFX_goal_generic_neutrality_focus
 		x = 12
 		y = 16
-		cost = 4.3
+		cost = 4.28571428571428571428
 		prerequisite = {
 		focus =	sweden_1789_1815_first_100_focus_73
 		}
@@ -756,7 +756,7 @@ allow_branch = { has_start_date > 1789.1.1
 		icon = GFX_goal_generic_neutrality_focus
 		x = 11
 		y = 17
-		cost = 4.3
+		cost = 4.28571428571428571428
 		prerequisite = {
 		focus =	sweden_althistory_9
 		}
@@ -792,7 +792,7 @@ allow_branch = { has_start_date > 1789.1.1
 		icon = GFX_goal_generic_neutrality_focus
 		x = 16
 		y = 16
-		cost = 4.3
+		cost = 4.28571428571428571428
 		mutually_exclusive = { focus = sweden_althistory_12 }
 		prerequisite = {
 		focus =	sweden_1789_1815_first_100_focus_73
@@ -826,7 +826,7 @@ allow_branch = { has_start_date > 1789.1.1
 		icon = GFX_goal_generic_neutrality_focus
 		x = 18
 		y = 16
-		cost = 4.3
+		cost = 4.28571428571428571428
 		mutually_exclusive = { focus = sweden_althistory_11 }
 		prerequisite = {
 		focus =	sweden_1789_1815_first_100_focus_73
@@ -861,7 +861,7 @@ allow_branch = { has_start_date > 1789.1.1
 		icon = GFX_goal_generic_neutrality_focus
 		x = 20
 		y = 16
-		cost = 4.3
+		cost = 4.28571428571428571428
 		prerequisite = {
 		focus =	sweden_1789_1815_first_100_focus_73
 		}
@@ -894,7 +894,7 @@ allow_branch = { has_start_date > 1789.1.1
 		icon = GFX_goal_generic_neutrality_focus
 		x = 22
 		y = 16
-		cost = 4.3
+		cost = 4.28571428571428571428
 		prerequisite = {
 		focus =	sweden_1789_1815_first_100_focus_73
 		}
@@ -927,7 +927,7 @@ allow_branch = { has_start_date > 1789.1.1
 		icon = GFX_goal_generic_neutrality_focus
 		x = 24
 		y = 16
-		cost = 4.3
+		cost = 4.28571428571428571428
 		prerequisite = {
 		focus =	sweden_1789_1815_first_100_focus_73
 		}
@@ -960,7 +960,7 @@ allow_branch = { has_start_date > 1789.1.1
 		icon = GFX_goal_generic_neutrality_focus
 		x = 26
 		y = 16
-		cost = 4.3
+		cost = 4.28571428571428571428
 		prerequisite = {
 		focus =	sweden_1789_1815_first_100_focus_73
 		}
@@ -993,7 +993,7 @@ allow_branch = { has_start_date > 1789.1.1
 		icon = GFX_goal_generic_neutrality_focus
 		x = 28
 		y = 16
-		cost = 4.3
+		cost = 4.28571428571428571428
 		prerequisite = {
 		focus =	sweden_1789_1815_first_100_focus_73
 		}
@@ -1026,7 +1026,7 @@ allow_branch = { has_start_date > 1789.1.1
 		icon = GFX_goal_generic_neutrality_focus
 		x = 30
 		y = 16
-		cost = 4.3
+		cost = 4.28571428571428571428
 		prerequisite = {
 		focus =	sweden_1789_1815_first_100_focus_73
 		}
@@ -1059,7 +1059,7 @@ allow_branch = { has_start_date > 1789.1.1
 		icon = GFX_goal_generic_neutrality_focus
 		x = 32
 		y = 16
-		cost = 4.3
+		cost = 4.28571428571428571428
 		prerequisite = {
 		focus =	sweden_1789_1815_first_100_focus_73
 		}
@@ -1092,7 +1092,7 @@ allow_branch = { has_start_date > 1789.1.1
 		icon = GFX_goal_generic_neutrality_focus
 		x = 34
 		y = 16
-		cost = 4.3
+		cost = 4.28571428571428571428
 		prerequisite = {
 		focus =	sweden_1789_1815_first_100_focus_73
 		}
@@ -1125,7 +1125,7 @@ allow_branch = { has_start_date > 1789.1.1
 		icon = GFX_goal_generic_neutrality_focus
 		x = 36
 		y = 16
-		cost = 4.3
+		cost = 4.28571428571428571428
 		prerequisite = {
 		focus =	sweden_1789_1815_first_100_focus_73
 		}
@@ -1158,7 +1158,7 @@ allow_branch = { has_start_date > 1789.1.1
 		icon = GFX_goal_generic_neutrality_focus
 		x = 38
 		y = 16
-		cost = 4.3
+		cost = 4.28571428571428571428
 		prerequisite = {
 		focus =	sweden_1789_1815_first_100_focus_73
 		}
@@ -1191,7 +1191,7 @@ allow_branch = { has_start_date > 1789.1.1
 		icon = GFX_goal_generic_neutrality_focus
 		x = 40
 		y = 16
-		cost = 4.3
+		cost = 4.28571428571428571428
 		prerequisite = {
 		focus =	sweden_1789_1815_first_100_focus_73
 		}
@@ -1224,7 +1224,7 @@ allow_branch = { has_start_date > 1789.1.1
 		icon = GFX_goal_generic_neutrality_focus
 		x = 42
 		y = 16
-		cost = 4.3
+		cost = 4.28571428571428571428
 		prerequisite = {
 		focus =	sweden_1789_1815_first_100_focus_73
 		}
@@ -1257,7 +1257,7 @@ allow_branch = { has_start_date > 1789.1.1
 		icon = GFX_goal_generic_neutrality_focus
 		x = 44
 		y = 16
-		cost = 4.3
+		cost = 4.28571428571428571428
 		prerequisite = {
 		focus =	sweden_1789_1815_first_100_focus_73
 		}
@@ -1295,7 +1295,7 @@ allow_branch = { has_start_date > 1789.1.1
 		prerequisite = {
 		focus =	sweden_1789_1815_first_100_focus_11
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 0
@@ -1328,7 +1328,7 @@ allow_branch = { has_start_date > 1789.1.1
 		prerequisite = {
 		focus =	sweden_1789_1815_first_100_focus_54
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 0
@@ -1396,7 +1396,7 @@ allow_branch = { has_start_date > 1789.1.1
 		prerequisite = {
 		focus =	sweden_1789_1815_first_100_focus_10 focus = sweden_althistory_1 focus = sweden_althistory_2
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -1430,7 +1430,7 @@ allow_branch = { has_start_date > 1789.1.1
 		prerequisite = {
 		focus =	sweden_1789_1815_first_100_focus_10 focus = sweden_althistory_1 focus = sweden_althistory_2
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -1464,7 +1464,7 @@ allow_branch = { has_start_date > 1789.1.1
 		prerequisite = {
 		focus =	sweden_1789_1815_first_100_focus_12
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -1503,7 +1503,7 @@ allow_branch = { has_start_date > 1789.1.1
 		prerequisite = {
 		focus =	sweden_1789_1815_first_100_focus_10 focus = sweden_althistory_1 focus = sweden_althistory_2
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -1537,7 +1537,7 @@ allow_branch = { has_start_date > 1789.1.1
 		prerequisite = {
 		focus =	sweden_1789_1815_first_100_focus_14 
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -1570,7 +1570,7 @@ allow_branch = { has_start_date > 1789.1.1
 		prerequisite = {
 		focus =	sweden_1789_1815_first_100_focus_10 focus = sweden_althistory_1 focus = sweden_althistory_2
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -1605,7 +1605,7 @@ allow_branch = { has_start_date > 1789.1.1
 		prerequisite = {
 		focus =	sweden_1789_1815_first_100_focus_10 focus = sweden_althistory_1 focus = sweden_althistory_2
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -1639,7 +1639,7 @@ allow_branch = { has_start_date > 1789.1.1
 		prerequisite = {
 		focus =	sweden_1789_1815_first_100_focus_16 
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -1674,7 +1674,7 @@ allow_branch = { has_start_date > 1789.1.1
 		prerequisite = {
 		focus =	sweden_1789_1815_first_100_focus_10 focus = sweden_althistory_1 focus = sweden_althistory_2
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -1707,7 +1707,7 @@ allow_branch = { has_start_date > 1789.1.1
 		prerequisite = {
 		focus =	sweden_1789_1815_first_100_focus_19 
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -1739,7 +1739,7 @@ allow_branch = { has_start_date > 1789.1.1
 		prerequisite = {
 		focus =	sweden_1789_1815_first_100_focus_18
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -1772,7 +1772,7 @@ allow_branch = { has_start_date > 1789.1.1
 		prerequisite = {
 		focus =	sweden_1789_1815_first_100_focus_10 focus = sweden_althistory_1 focus = sweden_althistory_2
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -1803,7 +1803,7 @@ allow_branch = { has_start_date > 1789.1.1
 		x = -3
 		y = 7
 
-		cost = 4.3
+		cost = 4.28571428571428571428
 		prerequisite = {
 		focus =	sweden_1789_1815_first_100_focus_17
 		}
@@ -1837,7 +1837,7 @@ allow_branch = { has_start_date > 1789.1.1
 		prerequisite = {
 		focus =	sweden_1789_1815_first_100_focus_22
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -1870,7 +1870,7 @@ allow_branch = { has_start_date > 1789.1.1
 		prerequisite = {
 		focus =	sweden_1789_1815_first_100_focus_24
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -1899,7 +1899,7 @@ allow_branch = { has_start_date > 1789.1.1
 
 		x = -8
 		y = 7
-		cost = 4.3
+		cost = 4.28571428571428571428
 		prerequisite = {
 		focus =	sweden_1789_1815_first_100_focus_13 focus =	sweden_1789_1815_first_100_focus_15 
 		}
@@ -1936,7 +1936,7 @@ allow_branch = { has_start_date > 1789.1.1
 				prerequisite = {
 		focus =	sweden_1789_1815_first_100_focus_25
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -1980,7 +1980,7 @@ allow_branch = { has_start_date > 1789.1.1
 				prerequisite = {
 		focus =	sweden_1789_1815_first_100_focus_25
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -2023,7 +2023,7 @@ allow_branch = { has_start_date > 1789.1.1
 				prerequisite = {
 		focus =	sweden_1789_1815_first_100_focus_25
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -2065,7 +2065,7 @@ allow_branch = { has_start_date > 1789.1.1
 		}		prerequisite = {
 		focus =	sweden_1789_1815_first_100_focus_25
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -2105,7 +2105,7 @@ allow_branch = { has_start_date > 1789.1.1
 		prerequisite = {
 		focus =	sweden_1789_1815_first_100_focus_27 focus =	sweden_1789_1815_first_100_focus_28 focus =	sweden_1789_1815_first_100_focus_29 focus =	sweden_1789_1815_first_100_focus_30
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -2147,7 +2147,7 @@ allow_branch = { has_start_date > 1789.1.1
 		prerequisite = {
 		focus =	sweden_1789_1815_first_100_focus_27 focus =	sweden_1789_1815_first_100_focus_28 focus =	sweden_1789_1815_first_100_focus_29 focus =	sweden_1789_1815_first_100_focus_30
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -2187,7 +2187,7 @@ allow_branch = { has_start_date > 1789.1.1
 		prerequisite = {
 		focus =	sweden_1789_1815_first_100_focus_27 focus =	sweden_1789_1815_first_100_focus_28 focus =	sweden_1789_1815_first_100_focus_29 focus =	sweden_1789_1815_first_100_focus_30
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -2228,7 +2228,7 @@ allow_branch = { has_start_date > 1789.1.1
 		prerequisite = {
 		focus =	sweden_1789_1815_first_100_focus_27 focus =	sweden_1789_1815_first_100_focus_28 focus =	sweden_1789_1815_first_100_focus_29 focus =	sweden_1789_1815_first_100_focus_30
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -2268,7 +2268,7 @@ allow_branch = { has_start_date > 1789.1.1
 		prerequisite = {
 		focus =	sweden_1789_1815_first_100_focus_31 focus =	sweden_1789_1815_first_100_focus_32 focus =	sweden_1789_1815_first_100_focus_33 focus =	sweden_1789_1815_first_100_focus_34
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -2308,7 +2308,7 @@ allow_branch = { has_start_date > 1789.1.1
 		prerequisite = {
 		focus =	sweden_1789_1815_first_100_focus_31 focus =	sweden_1789_1815_first_100_focus_32 focus =	sweden_1789_1815_first_100_focus_33 focus =	sweden_1789_1815_first_100_focus_34
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -2349,7 +2349,7 @@ allow_branch = { has_start_date > 1789.1.1
 		focus =	sweden_1789_1815_first_100_focus_26
 		}
 
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -2382,7 +2382,7 @@ allow_branch = { has_start_date > 1789.1.1
 		focus =	sweden_1789_1815_first_100_focus_37
 		}
 
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -2415,7 +2415,7 @@ allow_branch = { has_start_date > 1789.1.1
 		focus =	sweden_1789_1815_first_100_focus_26
 		}
 
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -2452,7 +2452,7 @@ allow_branch = { has_start_date > 1789.1.1
 		focus =	sweden_1789_1815_first_100_focus_26
 		}
 
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -2485,7 +2485,7 @@ allow_branch = { has_start_date > 1789.1.1
 		prerequisite = {
 		focus =	sweden_1789_1815_first_100_focus_40
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -2518,7 +2518,7 @@ allow_branch = { has_start_date > 1789.1.1
 		prerequisite = {
 		focus =	sweden_1789_1815_first_100_focus_40
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -2550,7 +2550,7 @@ allow_branch = { has_start_date > 1789.1.1
 		prerequisite = {
 		focus =	sweden_1789_1815_first_100_focus_42
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -2582,7 +2582,7 @@ allow_branch = { has_start_date > 1789.1.1
 		prerequisite = {
 		focus =	sweden_1789_1815_first_100_focus_41
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -2614,7 +2614,7 @@ allow_branch = { has_start_date > 1789.1.1
 		prerequisite = {
 		focus =	sweden_1789_1815_first_100_focus_42
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -2647,7 +2647,7 @@ allow_branch = { has_start_date > 1789.1.1
 		prerequisite = {
 		focus =	sweden_1789_1815_first_100_focus_26
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -2681,7 +2681,7 @@ allow_branch = { has_start_date > 1789.1.1
 		prerequisite = {
 		focus =	sweden_1789_1815_first_100_focus_26
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -2713,7 +2713,7 @@ allow_branch = { has_start_date > 1789.1.1
 		prerequisite = {
 		focus =	sweden_1789_1815_first_100_focus_47
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -2745,7 +2745,7 @@ allow_branch = { has_start_date > 1789.1.1
 		prerequisite = {
 		focus =	sweden_1789_1815_first_100_focus_43 focus =	sweden_1789_1815_first_100_focus_44 focus =	sweden_1789_1815_first_100_focus_45
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -2777,7 +2777,7 @@ allow_branch = { has_start_date > 1789.1.1
 		prerequisite = {
 		focus =	sweden_1789_1815_first_100_focus_48
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -2809,7 +2809,7 @@ focus = {
 		prerequisite = {
 		focus =	sweden_1789_1815_first_100_focus_50
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -2841,7 +2841,7 @@ focus = {
 		prerequisite = {
 		focus =	sweden_1789_1815_first_100_focus_26
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -2873,7 +2873,7 @@ focus = {
 		prerequisite = {
 		focus =	sweden_1789_1815_first_100_focus_52
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -2905,7 +2905,7 @@ focus = {
 		prerequisite = {
 		focus =	sweden_1789_1815_first_100_focus_49
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -2938,7 +2938,7 @@ focus = {
 		prerequisite = {
 		focus =	sweden_1789_1815_first_100_focus_49
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -2970,7 +2970,7 @@ focus = {
 		prerequisite = {
 		focus =	sweden_1789_1815_first_100_focus_49
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -3003,7 +3003,7 @@ focus = {
 		prerequisite = {
 		focus =	sweden_1789_1815_first_100_focus_49
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -3038,7 +3038,7 @@ focus = {
 				prerequisite = {
 		focus =	sweden_1789_1815_first_100_focus_36
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -3096,7 +3096,7 @@ focus = {
 		focus =	sweden_1789_1815_first_100_focus_26
 		}
 
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -3137,7 +3137,7 @@ focus = {
 		focus =	sweden_1789_1815_first_100_focus_61
 		}
 
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -3174,7 +3174,7 @@ focus = {
 
 		x = -13
 		y = 11
-		cost = 4.3
+		cost = 4.28571428571428571428
 		prerequisite = {
 		focus =	sweden_1789_1815_first_100_focus_43
 		}
@@ -3209,7 +3209,7 @@ focus = {
 		focus =	sweden_1789_1815_first_100_focus_62
 		}
 
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -3250,7 +3250,7 @@ focus = {
 		focus =	sweden_1789_1815_first_100_focus_58
 		}
 
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -3289,7 +3289,7 @@ focus = {
 		prerequisite = {
 		focus =	sweden_1789_1815_first_100_focus_51
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -3325,7 +3325,7 @@ focus = {
 		prerequisite = {
 		focus =	sweden_1789_1815_first_100_focus_34
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -3359,7 +3359,7 @@ focus = {
 		focus =	sweden_1789_1815_first_100_focus_43 focus =	sweden_1789_1815_first_100_focus_44 focus =	sweden_1789_1815_first_100_focus_45
 		}
 
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -3393,7 +3393,7 @@ focus = {
 		focus =	sweden_1789_1815_first_100_focus_43 focus =	sweden_1789_1815_first_100_focus_44 focus =	sweden_1789_1815_first_100_focus_45
 		}
 
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -3426,7 +3426,7 @@ focus = {
 		prerequisite = {
 		focus =	sweden_1789_1815_first_100_focus_68
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -3458,7 +3458,7 @@ focus = {
 		prerequisite = {
 		focus =	sweden_1789_1815_first_100_focus_26
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -3490,7 +3490,7 @@ focus = {
 		prerequisite = {
 		focus =	sweden_1789_1815_first_100_focus_68
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1

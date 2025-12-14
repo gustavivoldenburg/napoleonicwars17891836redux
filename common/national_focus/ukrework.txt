@@ -1,0 +1,7782 @@
+### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_RESEARCH}
+### search_filters = {FOCUS_FILTER_INDUSTRY}
+### search_filters = {FOCUS_FILTER_STABILITY}
+### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+### search_filters = {FOCUS_FILTER_MANPOWER}
+### search_filters = {FOCUS_FILTER_ANNEXATION}
+
+focus_tree = {
+	id = british_focus
+	continuous_focus_position = { x = 1200 y = 3000 }
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 100
+			tag = ENG
+		}
+	}
+	default = no
+focus = {
+		id = britain_1789_1815_first_100_focus_1
+		icon = GFX_focus_generic_home_defense
+
+		x = 2
+		y = 1
+allow_branch = { has_start_date > 1789.1.1
+    has_start_date < 1800.1.1 }
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		add_stability=-0.1
+		add_war_support=-0.1
+		add_political_power=-150
+		ENG={country_event=britain_1789_1812.4}
+		}
+	}
+		focus = {
+		id = britain_1789_1815_first_100_focus_2
+		icon = GFX_goal_generic_neutrality_focus
+allow_branch = { has_start_date > 1789.1.1
+    has_start_date < 1800.1.1 }
+		x = 4
+		y = 1
+
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = britain_1789_1815_first_100_focus_3
+		icon = GFX_goal_generic_neutrality_focus
+allow_branch = { has_start_date > 1789.1.1
+    has_start_date < 1800.1.1 }
+		x = 6
+		y = 1
+
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = britain_1789_1815_first_100_focus_4
+		icon = GFX_goal_generic_neutrality_focus
+allow_branch = { has_start_date > 1789.1.1
+    has_start_date < 1800.1.1 }
+		x = 8
+		y = 1
+
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = britain_1789_1815_first_100_focus_5
+		icon = GFX_goal_generic_neutrality_focus
+allow_branch = { has_start_date > 1789.1.1
+    has_start_date < 1800.1.1 }
+		x = 10
+		y = 1
+
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = britain_1789_1815_first_100_focus_6
+		icon = GFX_goal_generic_neutrality_focus
+allow_branch = { has_start_date > 1789.1.1
+    has_start_date < 1800.1.1 }
+		x = 12
+		y = 1
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		ENG={country_event=britain_1789_1812.14}
+		}
+	}
+		focus = {
+		id = britain_1789_1815_first_100_focus_7
+		icon = GFX_goal_generic_neutrality_focus
+allow_branch = { has_start_date > 1789.1.1
+    has_start_date < 1800.1.1 }
+		x = 14
+		y = 1
+
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		
+		completion_reward = {
+											122 = {
+                        add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+				}
+				add_resource = {
+				type = steel
+				amount = 5
+				state = 122
+			}
+		}
+	}
+		focus = {
+		id = britain_1789_1815_first_100_focus_8
+		icon = GFX_goal_generic_neutrality_focus
+allow_branch = { has_start_date > 1789.1.1
+    has_start_date < 1800.1.1 }
+		x = 16
+		y = 1
+
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = britain_1789_1815_first_100_focus_9
+		icon = GFX_goal_generic_position_armies
+allow_branch = { has_start_date > 1789.1.1
+    has_start_date < 1800.1.1 }
+		x = 18
+		y = 1
+
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		
+		completion_reward = {
+		ENG={country_event=britain_1789_1812.8}
+		}
+	}
+		focus = {
+		id = britain_1789_1815_first_100_focus_10
+		icon = GFX_goal_generic_occupy_states_coastal
+allow_branch = { has_start_date > 1789.1.1
+    has_start_date < 1800.1.1 }
+		x = 20
+		y = 1
+
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = britain_1789_1815_first_100_focus_11
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 2
+		y = 2
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_1
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_2
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_3
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_4
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_5
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_6
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_7
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_8
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_9
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_10
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		
+		completion_reward = {
+		ENG={country_event=britain_1789_1812.33}
+		}
+	}
+		focus = {
+		id = britain_1789_1815_first_100_focus_12
+		icon = GFX_goal_generic_forceful_treaty
+		x = 4
+		y = 2
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_1
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_2
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_3
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_4
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_5
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_6
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_7
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_8
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_9
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_10
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+				add_political_power=-100
+		127={
+		add_building_construction = {
+		type = infrastructure
+		level = 1
+		instant_build = yes
+		}
+		}
+		127={
+		add_extra_state_shared_building_slots = 1
+		add_building_construction = {
+		type = industrial_complex
+		level = 1
+		instant_build = yes
+		}
+		}
+		127={
+		add_extra_state_shared_building_slots = 1
+		add_building_construction = {
+		type = dockyard
+		level = 1
+		instant_build = yes
+		}
+		}
+		}
+	}
+		focus = {
+		id = britain_1789_1815_first_100_focus_13
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 6
+		y = 2
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_1
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_2
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_3
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_4
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_5
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_6
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_7
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_8
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_9
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_10
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = britain_1789_1815_first_100_focus_14
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 8
+		y = 2
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_1
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_2
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_3
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_4
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_5
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_6
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_7
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_8
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_9
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_10
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		ENG={country_event=britain_1789_1812.34}
+		}
+	}
+		focus = {
+		id = britain_1789_1815_first_100_focus_15
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 10
+		y = 2
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_1
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_2
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_3
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_4
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_5
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_6
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_7
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_8
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_9
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_10
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = britain_1789_1815_first_100_focus_16
+		icon = GFX_goal_generic_forceful_treaty
+
+		x = 12
+		y = 2
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_1
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_2
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_3
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_4
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_5
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_6
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_7
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_8
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_9
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_10
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		ENG={country_event=britain_1789_1812.5}
+		add_war_support=0.05
+		}
+	}
+		focus = {
+		id = britain_1789_1815_first_100_focus_17
+		icon = GFX_goal_generic_occupy_states_coastal
+
+		x = 14
+		y = 2
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_1
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_2
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_3
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_4
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_5
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_6
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_7
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_8
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_9
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_10
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+        owns_state=122
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		122 = {
+                    add_building_construction = {
+                        type = naval_base
+                        level = 2
+                        instant_build = yes
+                        province = 14172
+                    }
+                }
+		}
+	}
+		focus = {
+		id = britain_1789_1815_first_100_focus_18
+		icon = GFX_focus_attack_germany
+
+		x = 16
+		y = 2
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_1
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_2
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_3
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_4
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_5
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_6
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_7
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_8
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_9
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_10
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		ENG={country_event = britain_1789_1812.1}	
+		}
+	}
+		focus = {
+		id = britain_1789_1815_first_100_focus_19
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 18
+		y = 2
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_1
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_2
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_3
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_4
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_5
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_6
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_7
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_8
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_9
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_10
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = britain_1789_1815_first_100_focus_20
+		icon = GFX_goal_generic_occupy_states_coastal
+
+		x = 20
+		y = 2
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_1
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_2
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_3
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_4
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_5
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_6
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_7
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_8
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_9
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_10
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = britain_1789_1815_first_100_focus_21
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 2
+		y = 3
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_11
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_12
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_13
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_14
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_15
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_16
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_17
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_18
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_19
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_20
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = britain_1789_1815_first_100_focus_22
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 4
+		y = 3
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_11
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_12
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_13
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_14
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_15
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_16
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_17
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_18
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_19
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_20
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		
+		completion_reward = {
+		ENG={country_event=britain_1789_1812.2}
+	}
+		}
+		focus = {
+		id = britain_1789_1815_first_100_focus_23
+		icon = GFX_goal_generic_forceful_treaty
+
+		x = 6
+		y = 3
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_11
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_12
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_13
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_14
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_15
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_16
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_17
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_18
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_19
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_20
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		add_political_power=25
+		126={
+		add_building_construction = {
+		type = infrastructure
+		level = 1
+		instant_build = yes
+		}
+		}
+		random_list={
+		20={
+		127={
+		add_building_construction = {
+		type = infrastructure
+		level = 1
+		instant_build = yes
+		}
+		}	
+		}
+		80={
+		}
+		}
+		}
+	}
+		focus = {
+		id = britain_1789_1815_first_100_focus_24
+		icon = GFX_focus_attack_germany
+
+		x = 8
+		y = 3
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_11
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_12
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_13
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_14
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_15
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_16
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_17
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_18
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_19
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_20
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+        has_country_flag=eng_signed_treaty_of_reichenbach
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		
+		completion_reward = {
+		ENG={country_event=britain_1789_1812.3}
+		hidden_effect={ENG={country_event=britain_1789_1812.20}}
+		}
+	}
+		focus = {
+		id = britain_1789_1815_first_100_focus_25
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 10
+		y = 3
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_11
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_12
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_13
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_14
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_15
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_16
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_17
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_18
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_19
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_20
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		ENG={country_event=britain_1789_1812.32}
+		}
+	}
+		focus = {
+		id = britain_1789_1815_first_100_focus_26
+		icon = GFX_goal_generic_forceful_treaty
+
+		x = 12
+		y = 3
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_11
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_12
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_13
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_14
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_15
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_16
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_17
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_18
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_19
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_20
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		ENG={country_event=britain_1789_1812.6}
+		}
+	}
+		focus = {
+		id = britain_1789_1815_first_100_focus_27
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 14
+		y = 3
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_11
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_12
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_13
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_14
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_15
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_16
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_17
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_18
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_19
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_20
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = britain_1789_1815_first_100_focus_28
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 16
+		y = 3
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_11
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_12
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_13
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_14
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_15
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_16
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_17
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_18
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_19
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_20
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = britain_1789_1815_first_100_focus_29
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 18
+		y = 3
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_11
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_12
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_13
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_14
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_15
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_16
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_17
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_18
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_19
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_20
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = britain_1789_1815_first_100_focus_30
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 20
+		y = 3
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_11
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_12
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_13
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_14
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_15
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_16
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_17
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_18
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_19
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_20
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = britain_1789_1815_first_100_focus_31
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 2
+		y = 4
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_21
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_22
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_23
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_24
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_25
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_26
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_27
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_28
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_29
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_30
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		
+		
+		completion_reward = {
+		ENG={country_event=britain_1789_1812.28}
+		}
+	}
+		focus = {
+		id = britain_1789_1815_first_100_focus_32
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 4
+		y = 4
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_21
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_22
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_23
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_24
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_25
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_26
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_27
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_28
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_29
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_30
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		hidden_effect={ENG={country_event=britain_1789_1812.18}}
+											123 = {
+                        add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+				}
+				add_resource = {
+				type = steel
+				amount = 10
+				state = 123
+			}
+		}
+	}
+		focus = {
+		id = britain_1789_1815_first_100_focus_33
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+
+		x = 6
+		y = 4
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_21
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_22
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_23
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_24
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_25
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_26
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_27
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_28
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_29
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_30
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = britain_1789_1815_first_100_focus_34
+		icon = GFX_goal_generic_forceful_treaty
+
+		x = 8
+		y = 4
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_21
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_22
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_23
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_24
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_25
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_26
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_27
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_28
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_29
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_30
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		random_list={
+		10={
+		122={
+		add_extra_state_shared_building_slots = 1
+		add_building_construction = {
+		type = industrial_complex
+		level = 1
+		instant_build = yes
+		}
+		}
+		}
+		90={
+		add_political_power=25
+		}
+		}
+		hidden_effect={ENG={country_event=britain_1789_1812.7}}
+		}
+	}
+		focus = {
+		id = britain_1789_1815_first_100_focus_35
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 10
+		y = 4
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_21
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_22
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_23
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_24
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_25
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_26
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_27
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_28
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_29
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_30
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		ENG={country_event=britain_1789_1812.22}
+		}
+	}
+		focus = {
+		id = britain_1789_1815_first_100_focus_36
+		icon = GFX_goal_generic_forceful_treaty
+
+		x = 12
+		y = 4
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_21
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_22
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_23
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_24
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_25
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_26
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_27
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_28
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_29
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_30
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		ENG={country_event=britain_1789_1812.13}
+								random_owned_controlled_state = {
+						limit={
+						is_core_of=ENG
+						}
+                        add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+						}
+				}
+		}
+	}
+		focus = {
+		id = britain_1789_1815_first_100_focus_37
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 14
+		y = 4
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_21
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_22
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_23
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_24
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_25
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_26
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_27
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_28
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_29
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_30
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = britain_1789_1815_first_100_focus_38
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 16
+		y = 4
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_21
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_22
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_23
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_24
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_25
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_26
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_27
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_28
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_29
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_30
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		add_political_power=-50
+		700={
+		add_extra_state_shared_building_slots = 1
+		add_building_construction = {
+		type = industrial_complex
+		level = 1
+		instant_build = yes
+		}
+		}
+		}
+	}
+		focus = {
+		id = britain_1789_1815_first_100_focus_39
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 18
+		y = 4
+		will_lead_to_war_with = AUS
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_21
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_22
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_23
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_24
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_25
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_26
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_27
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_28
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_29
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_30
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = britain_1789_1815_first_100_focus_40
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 20
+		y = 4
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_21
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_22
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_23
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_24
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_25
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_26
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_27
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_28
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_29
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_30
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = britain_1789_1815_first_100_focus_41
+		icon = GFX_focus_attack_canada
+
+		x = 2
+		y = 5
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_31
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_32
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_33
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_34
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_35
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_36
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_37
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_38
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_39
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_40
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+			add_state_claim = 385
+			add_state_claim = 386
+			add_state_claim = 473
+			add_state_claim = 941
+			add_state_claim = 911
+			add_state_claim = 912
+			add_state_claim = 913
+			add_state_claim = 387
+			add_state_claim = 941
+			add_state_claim = 942
+			add_political_power=-25
+		hidden_effect={ENG={country_event=britain_1789_1812.15}}
+		}
+	}
+		focus = {
+		id = britain_1789_1815_first_100_focus_42
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 4
+		y = 5
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_31
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_32
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_33
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_34
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_35
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_36
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_37
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_38
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_39
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_40
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = britain_1789_1815_first_100_focus_43
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 6
+		y = 5
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_31
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_32
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_33
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_34
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_35
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_36
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_37
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_38
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_39
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_40
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = britain_1789_1815_first_100_focus_44
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 8
+		y = 5
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_31
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_32
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_33
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_34
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_35
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_36
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_37
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_38
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_39
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_40
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = britain_1789_1815_first_100_focus_45
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 10
+		y = 5
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_31
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_32
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_33
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_34
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_35
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_36
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_37
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_38
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_39
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_40
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {	
+		}
+	}
+		focus = {
+		id = britain_1789_1815_first_100_focus_46
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 12
+		y = 5
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_31
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_32
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_33
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_34
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_35
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_36
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_37
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_38
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_39
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_40
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = britain_1789_1815_first_100_focus_47
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 14
+		y = 5
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_31
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_32
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_33
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_34
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_35
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_36
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_37
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_38
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_39
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_40
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		ENG={country_event=britain_1789_1812.23}
+		}
+	}
+		focus = {
+		id = britain_1789_1815_first_100_focus_48
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 16
+		y = 5
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_31
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_32
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_33
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_34
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_35
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_36
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_37
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_38
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_39
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_40
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = britain_1789_1815_first_100_focus_49
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 18
+		y = 5
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_31
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_32
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_33
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_34
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_35
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_36
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_37
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_38
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_39
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_40
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = britain_1789_1815_first_100_focus_50
+		icon = GFX_focus_generic_home_defense
+
+		x = 20
+		y = 5
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_31
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_32
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_33
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_34
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_35
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_36
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_37
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_38
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_39
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_40
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		ENG={country_event=britain_1789_1812.12}
+		}
+	}
+focus = {
+		id = britain_1789_1815_first_100_focus_51
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 2
+		y = 6
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_41
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_42
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_43
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_44
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_45
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_46
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_47
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_48
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_49
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_50
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = britain_1789_1815_first_100_focus_52
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 4
+		y = 6
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_41
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_42
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_43
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_44
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_45
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_46
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_47
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_48
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_49
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_50
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		ENG={country_event=britain_1789_1812.16}
+		hidden_effect={ENG={country_event=britain_1789_1812.26}}
+		}
+	}
+		focus = {
+		id = britain_1789_1815_first_100_focus_53
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 6
+		y = 6
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_41
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_42
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_43
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_44
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_45
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_46
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_47
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_48
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_49
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_50
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+								CHI = {
+						random_owned_controlled_state={
+						limit={
+						is_core_of=CHI
+						}
+                        add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+						}
+						}
+				}
+											ENG = {
+						random_owned_controlled_state={
+						limit={
+						is_core_of=ENG
+						}
+                        add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+						}
+						}
+				}
+		}
+	}
+		focus = {
+		id = britain_1789_1815_first_100_focus_54
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 8
+		y = 6
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_41
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_42
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_43
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_44
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_45
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_46
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_47
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_48
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_49
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_50
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = britain_1789_1815_first_100_focus_55
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 10
+		y = 6
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_41
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_42
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_43
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_44
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_45
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_46
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_47
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_48
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_49
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_50
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {	
+		}
+	}
+		focus = {
+		id = britain_1789_1815_first_100_focus_56
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 12
+		y = 6
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_41
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_42
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_43
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_44
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_45
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_46
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_47
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_48
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_49
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_50
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = britain_1789_1815_first_100_focus_57
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 14
+		y = 6
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_41
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_42
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_43
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_44
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_45
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_46
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_47
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_48
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_49
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_50
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = britain_1789_1815_first_100_focus_58
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 16
+		y = 6
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_41
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_42
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_43
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_44
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_45
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_46
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_47
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_48
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_49
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_50
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = britain_1789_1815_first_100_focus_59
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 18
+		y = 6
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_41
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_42
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_43
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_44
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_45
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_46
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_47
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_48
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_49
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_50
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = britain_1789_1815_first_100_focus_60
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 20
+		y = 6
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_41
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_42
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_43
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_44
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_45
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_46
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_47
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_48
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_49
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_50
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+focus = {
+		id = britain_1789_1815_first_100_focus_61
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 2
+		y = 7
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_51
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_52
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_53
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_54
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_55
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_56
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_57
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_58
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_59
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_60
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = britain_1789_1815_first_100_focus_62
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 4
+		y = 7
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_51
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_52
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_53
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_54
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_55
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_56
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_57
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_58
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_59
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_60
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = britain_1789_1815_first_100_focus_63
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 6
+		y = 7
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_51
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_52
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_53
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_54
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_55
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_56
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_57
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_58
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_59
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_60
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = britain_1789_1815_first_100_focus_64
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 8
+		y = 7
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_51
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_52
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_53
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_54
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_55
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_56
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_57
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_58
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_59
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_60
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		ENG={country_event=britain_1789_1812.17}
+		}
+	}
+		focus = {
+		id = britain_1789_1815_first_100_focus_65
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+
+		x = 10
+		y = 7
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_51
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_52
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_53
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_54
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_55
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_56
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_57
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_58
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_59
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_60
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		has_war_with=FRA
+					any_country={
+	or={
+	is_ally_with = ENG
+	is_subject_of = ENG
+	original_tag=ENG
+	}
+	controls_state = 1
+	}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {	
+		ENG={country_event=britain_1789_1812.10}
+		}
+	}
+		focus = {
+		id = britain_1789_1815_first_100_focus_66
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 12
+		y = 7
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_51
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_52
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_53
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_54
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_55
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_56
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_57
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_58
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_59
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_60
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = britain_1789_1815_first_100_focus_67
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 14
+		y = 7
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_51
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_52
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_53
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_54
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_55
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_56
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_57
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_58
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_59
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_60
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = britain_1789_1815_first_100_focus_68
+		icon = GFX_focus_attack_germany
+
+		x = 16
+		y = 7
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_51
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_52
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_53
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_54
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_55
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_56
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_57
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_58
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_59
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_60
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		
+		completion_reward = {
+		RUS={country_event=britain_1789_1812.24}
+		AUS={country_event=britain_1789_1812.25}
+		}
+	}
+		focus = {
+		id = britain_1789_1815_first_100_focus_69
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 18
+		y = 7
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_51
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_52
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_53
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_54
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_55
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_56
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_57
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_58
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_59
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_60
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = britain_1789_1815_first_100_focus_70
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 20
+		y = 7
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_51
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_52
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_53
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_54
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_55
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_56
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_57
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_58
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_59
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_60
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+focus = {
+		id = britain_1789_1815_first_100_focus_71
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 2
+		y = 8
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_61
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_62
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_63
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_64
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_65
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_66
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_67
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_68
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_69
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_70
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = britain_1789_1815_first_100_focus_72
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 4
+		y = 8
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_61
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_62
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_63
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_64
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_65
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_66
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_67
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_68
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_69
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_70
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		add_war_support=0.05
+		HOL={add_war_support=-0.05}
+		FRA={add_war_support=-0.05}
+											ENG = {
+						126={
+                        add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+						}
+						}
+				}
+		}
+	}
+		focus = {
+		id = britain_1789_1815_first_100_focus_73
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 6
+		y = 8
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_61
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_62
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_63
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_64
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_65
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_66
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_67
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_68
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_69
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_70
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+											122 = {
+                        add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+				}
+				add_resource = {
+				type = steel
+				amount = 5
+				state = 122
+			}
+		}
+	}
+		focus = {
+		id = britain_1789_1815_first_100_focus_74
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+
+		x = 8
+		y = 8
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_61
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_62
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_63
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_64
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_65
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_66
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_67
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_68
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_69
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_70
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = britain_1789_1815_first_100_focus_75
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 10
+		y = 8
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_61
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_62
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_63
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_64
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_65
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_66
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_67
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_68
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_69
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_70
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {	
+		}
+	}
+		focus = {
+		id = britain_1789_1815_first_100_focus_76
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 12
+		y = 8
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_61
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_62
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_63
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_64
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_65
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_66
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_67
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_68
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_69
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_70
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = britain_1789_1815_first_100_focus_77
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 14
+		y = 8
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_61
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_62
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_63
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_64
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_65
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_66
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_67
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_68
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_69
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_70
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = britain_1789_1815_first_100_focus_78
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 16
+		y = 8
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_61
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_62
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_63
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_64
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_65
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_66
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_67
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_68
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_69
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_70
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = britain_1789_1815_first_100_focus_79
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 18
+		y = 8
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_61
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_62
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_63
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_64
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_65
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_66
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_67
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_68
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_69
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_70
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = britain_1789_1815_first_100_focus_80
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 20
+		y = 8
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_61
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_62
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_63
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_64
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_65
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_66
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_67
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_68
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_69
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_70
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+focus = {
+		id = britain_1789_1815_first_100_focus_81
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 2
+		y = 9
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_71
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_72
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_73
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_74
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_75
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_76
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_77
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_78
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_79
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_80
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = britain_1789_1815_first_100_focus_82
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 4
+		y = 9
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_71
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_72
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_73
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_74
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_75
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_76
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_77
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_78
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_79
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_80
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = britain_1789_1815_first_100_focus_83
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 6
+		y = 9
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_71
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_72
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_73
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_74
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_75
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_76
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_77
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_78
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_79
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_80
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = britain_1789_1815_first_100_focus_84
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 8
+		y = 9
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_71
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_72
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_73
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_74
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_75
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_76
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_77
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_78
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_79
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_80
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = britain_1789_1815_first_100_focus_85
+		icon = GFX_focus_attack_germany
+
+		x = 10
+		y = 9
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_71
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_72
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_73
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_74
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_75
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_76
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_77
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_78
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_79
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_80
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		transfer_state=422	
+		}
+	}
+		focus = {
+		id = britain_1789_1815_first_100_focus_86
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 12
+		y = 9
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_71
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_72
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_73
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_74
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_75
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_76
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_77
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_78
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_79
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_80
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = britain_1789_1815_first_100_focus_87
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 14
+		y = 9
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_71
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_72
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_73
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_74
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_75
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_76
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_77
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_78
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_79
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_80
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = britain_1789_1815_first_100_focus_88
+		icon = GFX_focus_attack_germany
+
+		x = 16
+		y = 9
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_71
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_72
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_73
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_74
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_75
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_76
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_77
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_78
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_79
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_80
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		
+		completion_reward = {
+		ENG={country_event=britain_1789_1812.9}
+		}
+	}
+		focus = {
+		id = britain_1789_1815_first_100_focus_89
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 18
+		y = 9
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_71
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_72
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_73
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_74
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_75
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_76
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_77
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_78
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_79
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_80
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = britain_1789_1815_first_100_focus_90
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 20
+		y = 9
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_71
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_72
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_73
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_74
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_75
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_76
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_77
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_78
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_79
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_80
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+focus = {
+		id = britain_1789_1815_first_100_focus_91
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 2
+		y = 10
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_81
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_82
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_83
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_84
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_85
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_86
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_87
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_88
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_89
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_90
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = britain_1789_1815_first_100_focus_92
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 4
+		y = 10
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_81
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_82
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_83
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_84
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_85
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_86
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_87
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_88
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_89
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_90
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = britain_1789_1815_first_100_focus_93
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 6
+		y = 10
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_81
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_82
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_83
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_84
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_85
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_86
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_87
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_88
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_89
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_90
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = britain_1789_1815_first_100_focus_94
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 8
+		y = 10
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_81
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_82
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_83
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_84
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_85
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_86
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_87
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_88
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_89
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_90
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = britain_1789_1815_first_100_focus_95
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 10
+		y = 10
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_81
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_82
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_83
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_84
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_85
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_86
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_87
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_88
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_89
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_90
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {	
+		}
+	}
+		focus = {
+		id = britain_1789_1815_first_100_focus_96
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 12
+		y = 10
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_81
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_82
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_83
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_84
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_85
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_86
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_87
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_88
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_89
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_90
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = britain_1789_1815_first_100_focus_97
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 14
+		y = 10
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_81
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_82
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_83
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_84
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_85
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_86
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_87
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_88
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_89
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_90
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = britain_1789_1815_first_100_focus_98
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 16
+		y = 10
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_81
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_82
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_83
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_84
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_85
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_86
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_87
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_88
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_89
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_90
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = britain_1789_1815_first_100_focus_99
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 18
+		y = 10
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_81
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_82
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_83
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_84
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_85
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_86
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_87
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_88
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_89
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_90
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = britain_1789_1815_first_100_focus_100
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 20
+		y = 10
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_81
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_82
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_83
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_84
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_85
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_86
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_87
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_88
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_89
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_90
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+		focus = {
+		id = britain_1793_1836_focus_1
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 2
+		y = 11
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_91
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_92
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_93
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_94
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_95
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_96
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_97
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_98
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_99
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_100
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+			focus = {
+		id = britain_1793_1836_focus_2
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 4
+		y = 11
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_91
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_92
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_93
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_94
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_95
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_96
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_97
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_98
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_99
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_100
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+			focus = {
+		id = britain_1793_1836_focus_3
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 6
+		y = 11
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_91
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_92
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_93
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_94
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_95
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_96
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_97
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_98
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_99
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_100
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+			focus = {
+		id = britain_1793_1836_focus_4
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 8
+		y = 11
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_91
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_92
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_93
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_94
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_95
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_96
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_97
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_98
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_99
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_100
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+			focus = {
+		id = britain_1793_1836_focus_5
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 10
+		y = 11
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_91
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_92
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_93
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_94
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_95
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_96
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_97
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_98
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_99
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_100
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+			focus = {
+		id = britain_1793_1836_focus_6
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 12
+		y = 11
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_91
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_92
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_93
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_94
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_95
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_96
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_97
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_98
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_99
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_100
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+			focus = {
+		id = britain_1793_1836_focus_7
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 14
+		y = 11
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_91
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_92
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_93
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_94
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_95
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_96
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_97
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_98
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_99
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_100
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		not={
+        any_other_country={
+		and={
+		or={
+		is_major=yes
+		num_of_factories > 50
+		}
+		has_war_with=FRA
+		}
+		}
+		}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+			focus = {
+		id = britain_1793_1836_focus_8
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 16
+		y = 11
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_91
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_92
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_93
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_94
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_95
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_96
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_97
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_98
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_99
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_100
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		add_stability=0.1
+		add_political_power=100
+		}
+	}
+			focus = {
+		id = britain_1793_1836_focus_9
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 18
+		y = 11
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_91
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_92
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_93
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_94
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_95
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_96
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_97
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_98
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_99
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_100
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+			focus = {
+		id = britain_1793_1836_focus_10
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 20
+		y = 11
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_91
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_92
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_93
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_94
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_95
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_96
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_97
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_98
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_99
+		}
+		prerequisite = {
+		focus =	britain_1789_1815_first_100_focus_100
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = britain_1793_1836_focus_11
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 2
+		y = 12
+		prerequisite = {
+		focus =	britain_1793_1836_focus_1
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_2
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_3
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_4
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_5
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_6
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_7
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_8
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_9
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_10
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+			focus = {
+		id = britain_1793_1836_focus_12
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 4
+		y = 12
+		prerequisite = {
+		focus =	britain_1793_1836_focus_1
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_2
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_3
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_4
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_5
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_6
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_7
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_8
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_9
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_10
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+			focus = {
+		id = britain_1793_1836_focus_13
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 6
+		y = 12
+		prerequisite = {
+		focus =	britain_1793_1836_focus_1
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_2
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_3
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_4
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_5
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_6
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_7
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_8
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_9
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_10
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+			focus = {
+		id = britain_1793_1836_focus_14
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 8
+		y = 12
+		prerequisite = {
+		focus =	britain_1793_1836_focus_1
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_2
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_3
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_4
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_5
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_6
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_7
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_8
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_9
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_10
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+			focus = {
+		id = britain_1793_1836_focus_15
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 10
+		y = 12
+		prerequisite = {
+		focus =	britain_1793_1836_focus_1
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_2
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_3
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_4
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_5
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_6
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_7
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_8
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_9
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_10
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+			focus = {
+		id = britain_1793_1836_focus_16
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 12
+		y = 12
+		prerequisite = {
+		focus =	britain_1793_1836_focus_1
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_2
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_3
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_4
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_5
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_6
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_7
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_8
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_9
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_10
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+			focus = {
+		id = britain_1793_1836_focus_17
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 14
+		y = 12
+		prerequisite = {
+		focus =	britain_1793_1836_focus_1
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_2
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_3
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_4
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_5
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_6
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_7
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_8
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_9
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_10
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+			focus = {
+		id = britain_1793_1836_focus_18
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 16
+		y = 12
+		prerequisite = {
+		focus =	britain_1793_1836_focus_1
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_2
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_3
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_4
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_5
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_6
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_7
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_8
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_9
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_10
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+			focus = {
+		id = britain_1793_1836_focus_19
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 18
+		y = 12
+		prerequisite = {
+		focus =	britain_1793_1836_focus_1
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_2
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_3
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_4
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_5
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_6
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_7
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_8
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_9
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_10
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+			focus = {
+		id = britain_1793_1836_focus_20
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 20
+		y = 12
+		prerequisite = {
+		focus =	britain_1793_1836_focus_1
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_2
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_3
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_4
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_5
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_6
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_7
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_8
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_9
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_10
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+focus = {
+		id = britain_1793_1836_focus_21
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 2
+		y = 13
+		prerequisite = {
+		focus =	britain_1793_1836_focus_11
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_12
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_13
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_14
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_15
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_16
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_17
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_18
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_19
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_20
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+			focus = {
+		id = britain_1793_1836_focus_22
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 4
+		y = 13
+		prerequisite = {
+		focus =	britain_1793_1836_focus_11
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_12
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_13
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_14
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_15
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_16
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_17
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_18
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_19
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_20
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+			focus = {
+		id = britain_1793_1836_focus_23
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 6
+		y = 13
+		prerequisite = {
+		focus =	britain_1793_1836_focus_11
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_12
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_13
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_14
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_15
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_16
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_17
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_18
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_19
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_20
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+			focus = {
+		id = britain_1793_1836_focus_24
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 8
+		y = 13
+		prerequisite = {
+		focus =	britain_1793_1836_focus_11
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_12
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_13
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_14
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_15
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_16
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_17
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_18
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_19
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_20
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+			focus = {
+		id = britain_1793_1836_focus_25
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 10
+		y = 13
+		prerequisite = {
+		focus =	britain_1793_1836_focus_11
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_12
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_13
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_14
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_15
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_16
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_17
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_18
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_19
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_20
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+			focus = {
+		id = britain_1793_1836_focus_26
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 12
+		y = 13
+		prerequisite = {
+		focus =	britain_1793_1836_focus_11
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_12
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_13
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_14
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_15
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_16
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_17
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_18
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_19
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_20
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+			focus = {
+		id = britain_1793_1836_focus_27
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 14
+		y = 13
+		prerequisite = {
+		focus =	britain_1793_1836_focus_11
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_12
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_13
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_14
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_15
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_16
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_17
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_18
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_19
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_20
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+			focus = {
+		id = britain_1793_1836_focus_28
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 16
+		y = 13
+		prerequisite = {
+		focus =	britain_1793_1836_focus_11
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_12
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_13
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_14
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_15
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_16
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_17
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_18
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_19
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_20
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+			focus = {
+		id = britain_1793_1836_focus_29
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 18
+		y = 13
+		prerequisite = {
+		focus =	britain_1793_1836_focus_11
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_12
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_13
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_14
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_15
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_16
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_17
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_18
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_19
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_20
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+			focus = {
+		id = britain_1793_1836_focus_30
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 20
+		y = 13
+		prerequisite = {
+		focus =	britain_1793_1836_focus_11
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_12
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_13
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_14
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_15
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_16
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_17
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_18
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_19
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_20
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+				focus = {
+		id = britain_1793_1836_focus_31
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 2
+		y = 14
+		prerequisite = {
+		focus =	britain_1793_1836_focus_21
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_22
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_23
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_24
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_25
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_26
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_27
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_28
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_29
+		}
+		prerequisite = {
+		focus =	britain_1793_1836_focus_30
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+				focus = {
+		id = britain_1793_1836_focus_32
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 2
+		y = 15
+		prerequisite = {
+		focus =	britain_1793_1836_focus_31
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		}
+	}
+				focus = {
+		id = britain_1793_1836_focus_33
+		icon = GFX_goal_generic_neutrality_focus
+
+		x = 2
+		y = 16
+		prerequisite = {
+		focus =	britain_1793_1836_focus_32
+		}
+		cost = 4.28571428571428571428
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		
+		completion_reward = {
+		if={
+		limit={
+		has_war_with=FRA
+		}
+		add_war_support=0.1
+		}
+		}
+	}
+}

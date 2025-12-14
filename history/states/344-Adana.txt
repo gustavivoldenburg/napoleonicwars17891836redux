@@ -2,7 +2,9 @@
 state={
 	id=344
 	name="STATE_344"
-
+	resources={
+                coal = 2 #initial distribution
+	}
 	history={
 		owner = RAM
 		victory_points = {

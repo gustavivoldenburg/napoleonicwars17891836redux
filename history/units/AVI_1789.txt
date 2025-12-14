@@ -28,8 +28,8 @@ units = {
 units = {
 	#Avignonnais Army
 	division = {
-		name = "Avignonnais Division"
-		location = 11713
+		name = "Avignonese Division"
+		location = 958
 		division_template = "Avignonnais Division"
 		start_experience_factor = 0.3
 	}

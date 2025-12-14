@@ -21,7 +21,7 @@ continuous_focus_position = { x = 7000 y = 0000 }
         mutually_exclusive = { focus =russianempirerework_althistory_2 focus = russianempirerework_1789_1815_first_100_focus_55  }
 		x = -13
 		y = 7
-		cost = 4.3
+		cost = 4.28571428571428571428
 		prerequisite = {
 		focus =	russianempirerework_1789_1815_first_100_focus_34
 		}
@@ -58,7 +58,7 @@ continuous_focus_position = { x = 7000 y = 0000 }
         mutually_exclusive = { focus =russianempirerework_althistory_1 focus = russianempirerework_1789_1815_first_100_focus_55 }
 		x = -15
 		y = 7
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 0
@@ -98,7 +98,7 @@ continuous_focus_position = { x = 7000 y = 0000 }
 		icon = GFX_focus_generic_attack_romania
 		x = -14
 		y = 8
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -107,7 +107,7 @@ continuous_focus_position = { x = 7000 y = 0000 }
 		focus =russianempirerework_althistory_1 focus =russianempirerework_althistory_2
 		}
 		available = {
-		WAL={is_subject_of=RUS}
+		ROM={is_subject_of=RUS}
 		MOL={is_subject_of=RUS}
 		}
 
@@ -131,7 +131,7 @@ continuous_focus_position = { x = 7000 y = 0000 }
 		icon = GFX_focus_chi_collaboration_with_the_japanese
 		x = 17
 		y = 2
-		cost = 4.3
+		cost = 4.28571428571428571428
 mutually_exclusive = {  focus = russianempirerework_1789_1815_first_100_focus_66  }
 		ai_will_do = {
 			factor = 0
@@ -163,7 +163,7 @@ mutually_exclusive = {  focus = russianempirerework_1789_1815_first_100_focus_66
 		icon = GFX_focus_generic_treaty
 		x = 19
 		y = 2
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 0
@@ -195,7 +195,7 @@ mutually_exclusive = {  focus = russianempirerework_1789_1815_first_100_focus_66
 		icon = GFX_focus_generic_treaty
 		x = 0
 		y = 6
-		cost = 4.3
+		cost = 4.28571428571428571428
 mutually_exclusive = {focus = russianempirerework_1789_1815_first_100_focus_47  }
 		ai_will_do = {
 			factor = 0
@@ -225,7 +225,7 @@ mutually_exclusive = {focus = russianempirerework_1789_1815_first_100_focus_47  
 		icon = GFX_goal_utah_deseret_russia_flag
 		x = 18
 		y = 3
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 0
@@ -257,7 +257,7 @@ mutually_exclusive = {focus = russianempirerework_1789_1815_first_100_focus_47  
 		icon = GFX_goal_utah_deseret_russia_flag
 		x = 20
 		y = 3
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 0
@@ -289,7 +289,7 @@ mutually_exclusive = {focus = russianempirerework_1789_1815_first_100_focus_47  
 		icon = GFX_focus_generic_attack_iran
 		x = 13
 		y = 7
-		cost = 4.3
+		cost = 4.28571428571428571428
 mutually_exclusive = {  focus = russianempirerework_1789_1815_first_100_focus_88  }
 		ai_will_do = {
 			factor = 0
@@ -320,7 +320,7 @@ mutually_exclusive = {  focus = russianempirerework_1789_1815_first_100_focus_88
 		icon = GFX_focus_generic_attack_romania
 		x = 7
 		y = 11
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 0
 		}
@@ -355,7 +355,7 @@ mutually_exclusive = {  focus = russianempirerework_1789_1815_first_100_focus_88
 		icon = GFX_goal_utah_deseret_russia_flag
 		x = 14
 		y = 3
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 0
 		}
@@ -385,7 +385,7 @@ mutually_exclusive = {  focus = russianempirerework_1789_1815_first_100_focus_88
 		icon = GFX_goal_utah_deseret_russia_flag
 		x = 14
 		y = 4
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 0
 		}
@@ -414,7 +414,7 @@ mutually_exclusive = {  focus = russianempirerework_1789_1815_first_100_focus_88
 		icon = GFX_focus_chi_collaboration_with_the_japanese
 		x = 16
 		y = 3
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 0
 		}
@@ -444,7 +444,7 @@ mutually_exclusive = {  focus = russianempirerework_1789_1815_first_100_focus_88
 		icon = GFX_focus_chi_collaboration_with_the_japanese
 		x = 16
 		y = 4
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 0
 		}
@@ -474,7 +474,7 @@ mutually_exclusive = {  focus = russianempirerework_1789_1815_first_100_focus_88
 		icon = GFX_focus_chi_collaboration_with_the_japanese
 		x = 17
 		y = 5
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 0
 		}
@@ -503,7 +503,7 @@ mutually_exclusive = {  focus = russianempirerework_1789_1815_first_100_focus_88
 		icon = GFX_focus_generic_attack_romania
 		x = 6
 		y = 12
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 0
 		}
@@ -513,7 +513,6 @@ mutually_exclusive = {  focus = russianempirerework_1789_1815_first_100_focus_88
 		available = {
 		or={
 		MOL={is_subject_of=RUS}
-		WAL={is_subject_of=RUS}
 		ROM={is_subject_of=RUS}
 		owns_state=78
 		owns_state=869
@@ -539,7 +538,7 @@ mutually_exclusive = {  focus = russianempirerework_1789_1815_first_100_focus_88
 		icon = GFX_focus_generic_befriend_saudi_arabia
 		x = 20
 		y = 6
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 0
 		}
@@ -568,7 +567,7 @@ mutually_exclusive = {  focus = russianempirerework_1789_1815_first_100_focus_88
 		icon = GFX_goal_utah_deseret_russia_flag
 		x = 16
 		y = 10
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 0
 		}
@@ -597,7 +596,7 @@ mutually_exclusive = {  focus = russianempirerework_1789_1815_first_100_focus_88
 		icon = GFX_focus_ger_break_anglo_french_colonial_hegemony
 		x = 6
 		y = 6
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 0
 		}
@@ -627,7 +626,7 @@ mutually_exclusive = {  focus = russianempirerework_1789_1815_first_100_focus_88
 		icon = GFX_goal_utah_deseret_russia_flag
 		x = 16
 		y = 12
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 0
 		}
@@ -656,7 +655,7 @@ mutually_exclusive = {  focus = russianempirerework_1789_1815_first_100_focus_88
 		icon = GFX_focus_generic_attack_iran
 		x = 20
 		y = 7
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 0
 		}
@@ -689,7 +688,7 @@ mutually_exclusive = {  focus = russianempirerework_1789_1815_first_100_focus_88
 		icon = GFX_goal_utah_deseret_russia_flag
 		x = 16
 		y = 14
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 0
 		}
@@ -718,7 +717,7 @@ mutually_exclusive = {  focus = russianempirerework_1789_1815_first_100_focus_88
 		icon = GFX_goal_utah_deseret_russia_flag
 		x = 16
 		y = 15
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 0
 		}
@@ -747,7 +746,7 @@ mutually_exclusive = {  focus = russianempirerework_1789_1815_first_100_focus_88
 		icon = GFX_goal_utah_deseret_russia_flag
 		x = 16
 		y = 16
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 0
 		}
@@ -776,7 +775,7 @@ mutually_exclusive = {  focus = russianempirerework_1789_1815_first_100_focus_88
 		icon = GFX_goal_utah_deseret_russia_flag
 		x = 16
 		y = 17
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 0
 		}
@@ -805,7 +804,7 @@ mutually_exclusive = {  focus = russianempirerework_1789_1815_first_100_focus_88
 		icon = GFX_goal_utah_deseret_russia_flag
 		x = 16
 		y = 18
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 0
 		}
@@ -834,7 +833,7 @@ mutually_exclusive = {  focus = russianempirerework_1789_1815_first_100_focus_88
 		icon = GFX_focus_generic_attack_romania
 		x = 5
 		y = 13
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 0
 		}
@@ -863,7 +862,7 @@ mutually_exclusive = {  focus = russianempirerework_1789_1815_first_100_focus_88
 		icon = GFX_goal_utah_deseret_russia_flag
 		x = 16
 		y = 20
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 0
 		}
@@ -892,7 +891,7 @@ mutually_exclusive = {  focus = russianempirerework_1789_1815_first_100_focus_88
 		icon = GFX_goal_utah_deseret_russia_flag
 		x = 16
 		y = 21
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 0
 		}
@@ -921,7 +920,7 @@ mutually_exclusive = {  focus = russianempirerework_1789_1815_first_100_focus_88
 		icon = GFX_goal_utah_deseret_russia_flag
 		x = 16
 		y = 22
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 0
 		}
@@ -950,7 +949,7 @@ mutually_exclusive = {  focus = russianempirerework_1789_1815_first_100_focus_88
 		icon = GFX_goal_utah_deseret_russia_flag
 		x = 16
 		y = 23
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 0
 		}
@@ -979,7 +978,7 @@ mutually_exclusive = {  focus = russianempirerework_1789_1815_first_100_focus_88
 		icon = GFX_goal_utah_deseret_russia_flag
 		x = 16
 		y = 24
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 0
 		}
@@ -1010,7 +1009,7 @@ mutually_exclusive = {  focus = russianempirerework_1789_1815_first_100_focus_88
 		y = 1
 		allow_branch = { has_country_flag=napoleonrussia
     has_start_date < 1821.1.1 }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 0
 		}
@@ -1038,7 +1037,7 @@ RUS={country_event = russianempire_1789_1812.136}
 		icon = GFX_goal_utah_deseret_russia_flag
 		x = 16
 		y = 26
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 0
 		}
@@ -1067,7 +1066,7 @@ RUS={country_event = russianempire_1789_1812.136}
 		icon = GFX_goal_utah_deseret_russia_flag
 		x = 16
 		y = 27
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 0
 		}
@@ -1096,7 +1095,7 @@ RUS={country_event = russianempire_1789_1812.136}
 		icon = GFX_focus_generic_treaty
 		x = 7
 		y = 5
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 0
 		}
@@ -1126,7 +1125,7 @@ RUS={country_event = russianempire_1789_1812.136}
 mutually_exclusive = {  focus = russianempirerework_1789_1815_first_100_focus_26  }
 		x = 3
 		y = 3
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 0
 		}
@@ -1156,7 +1155,7 @@ mutually_exclusive = {  focus = russianempirerework_1789_1815_first_100_focus_26
 mutually_exclusive = {  focus = russianempirerework_1789_1815_first_100_focus_33  }
 		x = 6
 		y = 4
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 0
 		}
@@ -1189,7 +1188,7 @@ mutually_exclusive = {  focus = russianempirerework_1789_1815_first_100_focus_33
 		y = -1
 allow_branch = { NOT={has_country_flag=napoleonrussia} has_start_date > 1789.1.1 has_start_date < 1800.1.1}
 
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -1222,7 +1221,7 @@ allow_branch = { NOT={has_country_flag=napoleonrussia} has_start_date > 1789.1.1
 		prerequisite = {
 		focus =	russianempirerework_1789_1815_first_100_focus_1
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -1256,7 +1255,7 @@ allow_branch = { NOT={has_country_flag=napoleonrussia} has_start_date > 1789.1.1
 		prerequisite = {
 		focus =	russianempirerework_1789_1815_first_100_focus_2
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -1293,7 +1292,7 @@ allow_branch = { NOT={has_country_flag=napoleonrussia} has_start_date > 1789.1.1
 		prerequisite = {
 		focus =	russianempirerework_1789_1815_first_100_focus_2
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -1327,7 +1326,7 @@ allow_branch = { NOT={has_country_flag=napoleonrussia} has_start_date > 1789.1.1
 		prerequisite = {
 		focus =	russianempirerework_1789_1815_first_100_focus_2 
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -1357,7 +1356,7 @@ allow_branch = { NOT={has_country_flag=napoleonrussia} has_start_date > 1789.1.1
 
 		x = -18
 		y = 1
-		cost = 4.3
+		cost = 4.28571428571428571428
 		prerequisite = {
 		focus =	russianempirerework_1789_1815_first_100_focus_2
 		}
@@ -1393,7 +1392,7 @@ allow_branch = { NOT={has_country_flag=napoleonrussia} has_start_date > 1789.1.1
 		prerequisite = {
 		focus =	russianempirerework_1789_1815_first_100_focus_2
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -1471,7 +1470,7 @@ allow_branch = { NOT={has_country_flag=napoleonrussia} has_start_date > 1789.1.1
 		prerequisite = {
 		focus =	russianempirerework_1789_1815_first_100_focus_7
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -1551,7 +1550,7 @@ allow_branch = { NOT={has_country_flag=napoleonrussia} has_start_date > 1789.1.1
 		prerequisite = {
 		focus =	russianempirerework_1789_1815_first_100_focus_2
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -1592,7 +1591,7 @@ allow_branch = { NOT={has_country_flag=napoleonrussia} has_start_date > 1789.1.1
 		prerequisite = {
 		focus =	russianempirerework_1789_1815_first_100_focus_9
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -1633,7 +1632,7 @@ allow_branch = { NOT={has_country_flag=napoleonrussia} has_start_date > 1789.1.1
 		prerequisite = {
 		focus =	russianempirerework_1789_1815_first_100_focus_3
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -1656,12 +1655,13 @@ allow_branch = { NOT={has_country_flag=napoleonrussia} has_start_date > 1789.1.1
 		
 		completion_reward = {
 				add_war_support=0.1
+		RUS={
 		if={
 		limit={
-		has_war_with = WAL
-		has_war_with = MOL
+        NOT={has_country_flag=russia_has_peace_wal_mol_before_war}
 		}
-		RUS={country_event = russianempire_1789_1812.18}
+		country_event = russianempire_1789_1812.18
+		}
 		}
 		}
 	}
@@ -1675,7 +1675,7 @@ allow_branch = { NOT={has_country_flag=napoleonrussia} has_start_date > 1789.1.1
 		prerequisite = {
 		focus =	russianempirerework_1789_1815_first_100_focus_11
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -1711,14 +1711,13 @@ allow_branch = { NOT={has_country_flag=napoleonrussia} has_start_date > 1789.1.1
 		prerequisite = {
 		focus =	russianempirerework_1789_1815_first_100_focus_11
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
 		}
 
 		available = {
-        has_war_with=KBK
 		}
 
 		bypass = {
@@ -1750,7 +1749,7 @@ allow_branch = { NOT={has_country_flag=napoleonrussia} has_start_date > 1789.1.1
 				prerequisite = {
 		focus =	russianempirerework_1789_1815_first_100_focus_9
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -1801,7 +1800,7 @@ allow_branch = { NOT={has_country_flag=napoleonrussia} has_start_date > 1789.1.1
 		prerequisite = {
 		focus =	russianempirerework_1789_1815_first_100_focus_7
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -1880,7 +1879,7 @@ allow_branch = { NOT={has_country_flag=napoleonrussia} has_start_date > 1789.1.1
 		prerequisite = {
 		focus =	russianempirerework_1789_1815_first_100_focus_9
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -1922,7 +1921,7 @@ allow_branch = { NOT={has_country_flag=napoleonrussia} has_start_date > 1789.1.1
 		prerequisite = {
 		focus =	russianempirerework_1789_1815_first_100_focus_6
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -1957,7 +1956,7 @@ allow_branch = { NOT={has_country_flag=napoleonrussia} has_start_date > 1789.1.1
 		prerequisite = {
 		focus =	russianempirerework_1789_1815_first_100_focus_14
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -1997,7 +1996,7 @@ allow_branch = { NOT={has_country_flag=napoleonrussia} has_start_date > 1789.1.1
 		prerequisite = {
 		focus =	russianempirerework_1789_1815_first_100_focus_2
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -2033,7 +2032,7 @@ allow_branch = { NOT={has_country_flag=napoleonrussia} has_start_date > 1789.1.1
 		prerequisite = {
 		focus =	russianempirerework_1789_1815_first_100_focus_11
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -2068,7 +2067,7 @@ allow_branch = { NOT={has_country_flag=napoleonrussia} has_start_date > 1789.1.1
 		prerequisite = {
 		focus =	russianempirerework_1789_1815_first_100_focus_19
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -2103,7 +2102,7 @@ allow_branch = { NOT={has_country_flag=napoleonrussia} has_start_date > 1789.1.1
 		prerequisite = {
 		focus =	russianempirerework_1789_1815_first_100_focus_2
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -2140,7 +2139,7 @@ allow_branch = { NOT={has_country_flag=napoleonrussia} has_start_date > 1789.1.1
 		prerequisite = {
 		focus =	russianempirerework_1789_1815_first_100_focus_2
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -2175,7 +2174,7 @@ allow_branch = { NOT={has_country_flag=napoleonrussia} has_start_date > 1789.1.1
 		prerequisite = {
 		focus =	russianempirerework_1789_1815_first_100_focus_6
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -2210,7 +2209,7 @@ allow_branch = { NOT={has_country_flag=napoleonrussia} has_start_date > 1789.1.1
 		prerequisite = {
 		focus =	russianempirerework_1789_1815_first_100_focus_22
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -2250,7 +2249,7 @@ mutually_exclusive = {  focus = russianempirerework_althistory_37  }
 		prerequisite = {
 		focus =	russianempirerework_1789_1815_first_100_focus_25
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -2285,7 +2284,7 @@ mutually_exclusive = {  focus = russianempirerework_althistory_37  }
 		prerequisite = {
 		focus =	russianempirerework_1789_1815_first_100_focus_7
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -2368,7 +2367,7 @@ mutually_exclusive = {  focus = russianempirerework_althistory_37  }
 				prerequisite = {
 		focus =	russianempirerework_1789_1815_first_100_focus_16
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -2402,14 +2401,13 @@ mutually_exclusive = {  focus = russianempirerework_althistory_37  }
 		prerequisite = {
 		focus =	russianempirerework_1789_1815_first_100_focus_13
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
 		}
 
 		available = {
-has_army_manpower = { size > 299999}
         NOT={RUS={has_country_flag=KBK_RUS_peace_flag}}
 		}
 
@@ -2438,7 +2436,7 @@ has_army_manpower = { size > 299999}
 		prerequisite = {
 		focus =	russianempirerework_1789_1815_first_100_focus_2
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -2475,7 +2473,7 @@ has_army_manpower = { size > 299999}
 		prerequisite = {
 		focus =	russianempirerework_1789_1815_first_100_focus_24
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -2512,7 +2510,7 @@ has_army_manpower = { size > 299999}
 		prerequisite = {
 		focus =	russianempirerework_1789_1815_first_100_focus_24
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -2545,7 +2543,7 @@ mutually_exclusive = {  focus = russianempirerework_althistory_38  }
 		prerequisite = {
 		focus =	russianempirerework_1789_1815_first_100_focus_26 focus = russianempirerework_althistory_37
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -2579,7 +2577,7 @@ mutually_exclusive = {  focus = russianempirerework_althistory_38  }
 		prerequisite = {
 		focus =	russianempirerework_1789_1815_first_100_focus_20
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -2615,7 +2613,7 @@ mutually_exclusive = {  focus = russianempirerework_althistory_38  }
 		prerequisite = {
 		focus =	russianempirerework_1789_1815_first_100_focus_20
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -2651,7 +2649,7 @@ mutually_exclusive = {  focus = russianempirerework_althistory_38  }
 		prerequisite = {
 		focus =	russianempirerework_1789_1815_first_100_focus_23
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -2684,7 +2682,7 @@ mutually_exclusive = {  focus = russianempirerework_althistory_38  }
 		prerequisite = {
 		focus =	russianempirerework_1789_1815_first_100_focus_23
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -2721,7 +2719,7 @@ mutually_exclusive = {  focus = russianempirerework_althistory_38  }
 				prerequisite = {
 		focus =	russianempirerework_1789_1815_first_100_focus_37
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -2758,7 +2756,7 @@ mutually_exclusive = {  focus = russianempirerework_althistory_38  }
 		prerequisite = {
 		focus =	russianempirerework_1789_1815_first_100_focus_26 focus = russianempirerework_althistory_37
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -2796,7 +2794,7 @@ mutually_exclusive = {  focus = russianempirerework_althistory_38  }
 		prerequisite = {
 		focus =	russianempirerework_1789_1815_first_100_focus_39
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -2831,7 +2829,7 @@ mutually_exclusive = {  focus = russianempirerework_althistory_38  }
 		prerequisite = {
 		focus =	russianempirerework_1789_1815_first_100_focus_33 focus = russianempirerework_althistory_38
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -2867,7 +2865,7 @@ mutually_exclusive = {  focus = russianempirerework_althistory_38  }
 		focus =	russianempirerework_1789_1815_first_100_focus_38
 		}
 
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -2905,7 +2903,7 @@ mutually_exclusive = {  focus = russianempirerework_althistory_38  }
 				prerequisite = {
 		focus =	russianempirerework_1789_1815_first_100_focus_16
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -2936,7 +2934,7 @@ mutually_exclusive = {  focus = russianempirerework_althistory_38  }
 		y = 2
 
 
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -2995,7 +2993,7 @@ mutually_exclusive = {  focus = russianempirerework_althistory_38  }
 		y = 2
 
 
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -3075,7 +3073,7 @@ mutually_exclusive = {  focus = russianempirerework_althistory_38  }
 		focus =	russianempirerework_1789_1815_first_100_focus_2
 		}
 
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -3110,7 +3108,7 @@ mutually_exclusive = { focus =russianempirerework_althistory_6  }
 		focus =	russianempirerework_1789_1815_first_100_focus_40
 		}
 
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -3143,7 +3141,7 @@ mutually_exclusive = { focus =russianempirerework_althistory_6  }
 		focus =	russianempirerework_1789_1815_first_100_focus_47
 		}
 
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -3169,6 +3167,8 @@ mutually_exclusive = { focus =russianempirerework_althistory_6  }
 		
 		
 		completion_reward = {
+		PRE={remove_ideas=pre_customs_war}
+		POL={remove_ideas=pol_customs_war}
 								if={
 		limit={
         NOT={has_country_flag=RUS_PRE_angry_second_partion}
@@ -3209,7 +3209,7 @@ mutually_exclusive = { focus =russianempirerework_althistory_6  }
 		focus =	russianempirerework_1789_1815_first_100_focus_48
 		}
 
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -3254,7 +3254,7 @@ mutually_exclusive = { focus =russianempirerework_althistory_6  }
 		prerequisite = {
 		focus =	russianempirerework_1789_1815_first_100_focus_49
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -3296,7 +3296,7 @@ focus = {
 		prerequisite = {
 		focus =	russianempirerework_1789_1815_first_100_focus_49
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -3337,7 +3337,7 @@ focus = {
 		}
 		x = -2
 		y = 9
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -3409,7 +3409,7 @@ has_country_flag=treaty_secondpartion_flag
 		prerequisite = {
 		focus =	russianempirerework_1789_1815_first_100_focus_41
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -3441,7 +3441,7 @@ has_country_flag=treaty_secondpartion_flag
 		prerequisite = {
 		focus =	russianempirerework_1789_1815_first_100_focus_37
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -3477,7 +3477,7 @@ has_country_flag=treaty_secondpartion_flag
 		prerequisite = {
 		focus =	russianempirerework_1789_1815_first_100_focus_35
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -3523,7 +3523,7 @@ has_country_flag=treaty_secondpartion_flag
 		prerequisite = {
 		focus =	russianempirerework_1789_1815_first_100_focus_45
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -3577,7 +3577,7 @@ has_country_flag=treaty_secondpartion_flag
 		prerequisite = {
 		focus =	russianempirerework_1789_1815_first_100_focus_45
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -3630,7 +3630,7 @@ has_country_flag=treaty_secondpartion_flag
 		prerequisite = {
 		focus =	russianempirerework_1789_1815_first_100_focus_45
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -3684,7 +3684,7 @@ has_country_flag=treaty_secondpartion_flag
 		prerequisite = {
 		focus =	russianempirerework_1789_1815_first_100_focus_45
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -3734,7 +3734,7 @@ has_country_flag=treaty_secondpartion_flag
 		prerequisite = {
 		focus =	russianempirerework_1789_1815_first_100_focus_59
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -3828,7 +3828,7 @@ focus = {
 		}
 
 
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -3922,7 +3922,7 @@ focus = {
 		}
 
 
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -4013,7 +4013,7 @@ focus = {
 		}
 
 
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -4051,7 +4051,7 @@ focus = {
 		}
 
 
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -4080,7 +4080,7 @@ focus = {
 
 		x = -2
 		y = 10
-		cost = 4.3
+		cost = 4.28571428571428571428
 		prerequisite = {
 		focus =	russianempirerework_1789_1815_first_100_focus_50
 		}
@@ -4122,7 +4122,7 @@ mutually_exclusive = { focus =russianempirerework_althistory_4  }
 		}
 
 
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -4187,7 +4187,7 @@ mutually_exclusive = { focus =russianempirerework_althistory_4  }
 		}
 
 
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -4232,7 +4232,7 @@ mutually_exclusive = { focus =russianempirerework_althistory_4  }
 		}
 
 
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -4312,7 +4312,7 @@ mutually_exclusive = { focus =russianempirerework_althistory_4  }
 		}
 
 
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -4371,7 +4371,7 @@ mutually_exclusive = { focus =russianempirerework_althistory_4  }
 		focus =	russianempirerework_1789_1815_first_100_focus_59
 		}
 
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -4461,7 +4461,7 @@ focus = {
 		focus =	russianempirerework_1789_1815_first_100_focus_70
 		}
 
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -4557,7 +4557,7 @@ focus = {
 		prerequisite = {
 		focus =	russianempirerework_1789_1815_first_100_focus_70
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -4647,7 +4647,7 @@ focus = {
 		focus =	russianempirerework_1789_1815_first_100_focus_70
 		}
 
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -4737,7 +4737,7 @@ focus = {
 		focus =	russianempirerework_1789_1815_first_100_focus_70
 		}
 
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -4815,7 +4815,7 @@ focus = {
 		focus =russianempirerework_1789_1815_first_100_focus_30
 		}
 
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -4848,7 +4848,7 @@ focus = {
 		focus =	russianempirerework_1789_1815_first_100_focus_65
 		}
 
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -4888,7 +4888,7 @@ focus = {
 		focus =	russianempirerework_1789_1815_first_100_focus_64
 		}
 
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -4921,7 +4921,7 @@ focus = {
 		focus =	russianempirerework_1789_1815_first_100_focus_76
 		}
 
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -4961,7 +4961,7 @@ focus = {
 		focus =	russianempirerework_1789_1815_first_100_focus_64
 		}
 
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -4994,7 +4994,7 @@ focus = {
 		focus =	russianempirerework_1789_1815_first_100_focus_53
 		}
 
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -5035,7 +5035,7 @@ focus = {
 		focus =	russianempirerework_1789_1815_first_100_focus_53
 		}
 
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -5093,7 +5093,7 @@ HOL={has_war_with=FRA}
 		focus =	russianempirerework_1789_1815_first_100_focus_63
 		}
 
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -5166,7 +5166,7 @@ has_country_flag=treaty_thirdpartion_flag
 		focus =	russianempirerework_1789_1815_first_100_focus_82
 		}
 
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -5187,7 +5187,7 @@ has_country_flag=treaty_thirdpartion_flag
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		
 		completion_reward = {
-		COU={country_event = russianempire_1789_1812.11} 
+		LAT={country_event = russianempire_1789_1812.11} 
 		}
 	}
 		focus = {
@@ -5200,7 +5200,7 @@ has_country_flag=treaty_thirdpartion_flag
 		focus =	russianempirerework_1789_1815_first_100_focus_82
 		}
 
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -5262,7 +5262,7 @@ has_country_flag=treaty_thirdpartion_flag
 		y = 13
 
 
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -5313,7 +5313,7 @@ has_country_flag=treaty_thirdpartion_flag
 		focus =	russianempirerework_1789_1815_first_100_focus_54
 		}
 
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -5355,7 +5355,7 @@ has_country_flag=treaty_thirdpartion_flag
 		focus =	russianempirerework_1789_1815_first_100_focus_86
 		}
 
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -5389,7 +5389,7 @@ has_country_flag=treaty_thirdpartion_flag
 		focus =	russianempirerework_1789_1815_first_100_focus_87
 		}
 mutually_exclusive = { focus =russianempirerework_althistory_9  }
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -5432,7 +5432,7 @@ mutually_exclusive = { focus =russianempirerework_althistory_9  }
 		focus =	russianempirerework_1789_1815_first_100_focus_74
 		}
 
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -5553,7 +5553,7 @@ mutually_exclusive = { focus =russianempirerework_althistory_9  }
 		focus =	russianempirerework_1789_1815_first_100_focus_64
 		}
 
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -5582,7 +5582,7 @@ focus = {
 
 		x = -2
 		y = 4
-		cost = 4.3
+		cost = 4.28571428571428571428
 		prerequisite = {
 		focus =	russianempirerework_1789_1815_first_100_focus_28
 		}
@@ -5631,7 +5631,7 @@ focus = {
 								prerequisite = {
 		focus =	russianempirerework_1789_1815_first_100_focus_91
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -5671,7 +5671,7 @@ focus = {
 								prerequisite = {
 		focus =	russianempirerework_1789_1815_first_100_focus_91
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -5712,7 +5712,7 @@ focus = {
 		prerequisite = {
 		focus =	russianempirerework_1789_1815_first_100_focus_74
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -5789,7 +5789,7 @@ focus = {
 				prerequisite = {
 		focus =	russianempirerework_1789_1815_first_100_focus_76
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -5821,7 +5821,7 @@ focus = {
 		prerequisite = {
 		focus =	russianempirerework_1789_1815_first_100_focus_2
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -5855,7 +5855,7 @@ has_country_leader = { character = RUS_pauli }
 		prerequisite = {
 		focus =	russianempirerework_1789_1815_first_100_focus_96
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -5887,7 +5887,7 @@ has_country_leader = { character = RUS_pauli }
 		prerequisite = {
 		focus =	russianempirerework_1789_1815_first_100_focus_96
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -5920,7 +5920,7 @@ has_country_leader = { character = RUS_pauli }
 		prerequisite = {
 		focus =	russianempirerework_1789_1815_first_100_focus_98
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -5952,7 +5952,7 @@ has_country_leader = { character = RUS_pauli }
 		prerequisite = {
 		focus =	russianempirerework_1789_1815_first_100_focus_97
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -5984,7 +5984,7 @@ focus = {
 		prerequisite = {
 		focus =	russianempirerework_1789_1815_first_100_focus_100
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -6017,7 +6017,7 @@ focus = {
 		prerequisite = {
 		focus =	russianempirerework_1789_1815_first_100_focus_100
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -6049,7 +6049,7 @@ focus = {
 		prerequisite = {
 		focus =	russianempirerework_1793_1836_focus_2
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -6081,7 +6081,7 @@ focus = {
 		prerequisite = {
 		focus =	russianempirerework_1789_1815_first_100_focus_100
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -6114,7 +6114,7 @@ focus = {
 		prerequisite = {
 		focus =	russianempirerework_1793_1836_focus_1
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -6143,7 +6143,7 @@ focus = {
 
 		x = -19
 		y = 12
-		cost = 4.3
+		cost = 4.28571428571428571428
 		prerequisite = {
 		focus =	russianempirerework_1789_1815_first_100_focus_98
 		}
@@ -6177,7 +6177,7 @@ focus = {
 		prerequisite = {
 		focus =	russianempirerework_1789_1815_first_100_focus_54
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -6212,7 +6212,7 @@ focus = {
 		prerequisite = {
 		focus =	russianempirerework_1789_1815_first_100_focus_98 focus =	russianempirerework_1789_1815_first_100_focus_99 focus = russianempirerework_1793_1836_focus_6
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -6244,7 +6244,7 @@ focus = {
 		prerequisite = {
 		focus =	russianempirerework_1793_1836_focus_5
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -6277,7 +6277,7 @@ focus = {
 		prerequisite = {
 		focus =	russianempirerework_1793_1836_focus_5
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -6307,7 +6307,7 @@ focus = {
 		x = -25
 		y = 15
 
-		cost = 4.3
+		cost = 4.28571428571428571428
 		prerequisite = {
 		focus =	russianempirerework_1793_1836_focus_5
 		}
@@ -6342,7 +6342,7 @@ focus = {
 		prerequisite = {
 		focus =	russianempirerework_1789_1815_first_100_focus_98 focus =	russianempirerework_1789_1815_first_100_focus_99 focus = russianempirerework_1793_1836_focus_6
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -6374,7 +6374,7 @@ focus = {
 		prerequisite = {
 		focus =	russianempirerework_1789_1815_first_100_focus_2
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -6407,7 +6407,7 @@ focus = {
 		prerequisite = {
 		focus =	russianempirerework_1793_1836_focus_13
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -6440,7 +6440,7 @@ focus = {
 		prerequisite = {
 		focus =	russianempirerework_1793_1836_focus_7
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -6475,7 +6475,7 @@ focus = {
 				prerequisite = {
 		focus =	russianempirerework_1789_1815_first_100_focus_81
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -6509,7 +6509,7 @@ FRA={has_country_flag=treaty_of_campo_formio_has_happened}
 		prerequisite = {
 		focus =	russianempirerework_1793_1836_focus_14
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -6545,7 +6545,7 @@ FRA={has_country_flag=treaty_of_campo_formio_has_happened}
 		x = -5
 		y = 13
 
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -6577,7 +6577,7 @@ has_country_leader = { character = RUS_pauli }
 		prerequisite = {
 		focus =	russianempirerework_1793_1836_focus_16
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -6610,7 +6610,7 @@ has_country_leader = { character = RUS_pauli }
 		prerequisite = {
 		focus =	russianempirerework_1793_1836_focus_16
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -6644,7 +6644,7 @@ has_country_leader = { character = RUS_pauli }
 		prerequisite = {
 		focus =	russianempirerework_1789_1815_first_100_focus_96
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -6675,7 +6675,7 @@ has_country_leader = { character = RUS_pauli }
 		x = -21
 		y = 15
 
-		cost = 4.3
+		cost = 4.28571428571428571428
 		prerequisite = {
 		focus =	russianempirerework_1793_1836_focus_4
 		}
@@ -6710,7 +6710,7 @@ has_country_leader = { character = RUS_pauli }
 		prerequisite = {
 		focus =	russianempirerework_1793_1836_focus_16
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -6745,7 +6745,7 @@ has_country_leader = { character = RUS_pauli }
 		prerequisite = {
 		focus =	russianempirerework_1789_1815_first_100_focus_94
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -6789,7 +6789,7 @@ has_country_leader = { character = RUS_pauli }
 		prerequisite = {
 		focus =	russianempirerework_1789_1815_first_100_focus_94
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -6832,7 +6832,7 @@ has_country_leader = { character = RUS_pauli }
 		prerequisite = {
 		focus =	russianempirerework_1789_1815_first_100_focus_94
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -6872,7 +6872,7 @@ has_country_leader = { character = RUS_pauli }
 		prerequisite = {
 		focus =russianempirerework_1789_1815_first_100_focus_75
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -6905,7 +6905,7 @@ has_country_leader = { character = RUS_pauli }
 		x = 14
 		y = 8
 
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -6963,14 +6963,13 @@ give_military_access = RUS
 		x = 14
 		y = 9
 
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
 		}
 
 		available = {
-        NOT={RUS={has_war=yes}}
 		NOT={GEO={is_subject_of=RUS}}
 		country_exists=GEO
 		}
@@ -7004,7 +7003,7 @@ give_military_access = RUS
 		prerequisite = {
 		focus =	russianempirerework_1793_1836_focus_23
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -7036,7 +7035,7 @@ give_military_access = RUS
 		prerequisite = {
 		focus =	russianempirerework_1793_1836_focus_16
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -7070,7 +7069,7 @@ give_military_access = RUS
 		prerequisite = {
 		focus =	russianempirerework_1793_1836_focus_16
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -7112,7 +7111,7 @@ give_military_access = RUS
 		prerequisite = {
 		focus =	russianempirerework_1789_1815_first_100_focus_2
 		}
-		cost = 4.3
+		cost = 4.28571428571428571428
 
 		ai_will_do = {
 			factor = 1
@@ -7146,7 +7145,7 @@ give_military_access = RUS
 		y = 1
 		allow_branch = { has_country_flag=napoleonrussia
     has_start_date < 1821.1.1 }
-		cost = 4.3
+		cost = 4.28571428571428571428
 mutually_exclusive = {  focus = russianempirerework_althistory_33  }
 		ai_will_do = {
 			factor = 1
@@ -7176,7 +7175,7 @@ mutually_exclusive = {  focus = russianempirerework_althistory_33  }
 		icon = GFX_goal_generic_neutrality_focus
 		x = 8
 		y = 2
-		cost = 4.3
+		cost = 4.28571428571428571428
 		prerequisite = {
 		focus =	russianempirerework_1793_1836_focus_34 focus = russianempirerework_althistory_33
 		}
@@ -7248,7 +7247,7 @@ RUS={country_event = russianempire_1789_1812.137}
 		icon = GFX_goal_generic_neutrality_focus
 		x = 10
 		y = 2
-		cost = 4.3
+		cost = 4.28571428571428571428
 		prerequisite = {
 		focus =	russianempirerework_1793_1836_focus_34 focus = russianempirerework_althistory_33
 		}
@@ -7280,7 +7279,7 @@ RUS={country_event = russianempire_1789_1812.156}
 		icon = GFX_goal_generic_neutrality_focus
 		x = 12
 		y = 2
-		cost = 4.3
+		cost = 4.28571428571428571428
 		prerequisite = {
 		focus =	russianempirerework_1793_1836_focus_34 focus = russianempirerework_althistory_33
 		}
@@ -7312,7 +7311,7 @@ RUS={country_event = russianempire_1789_1812.156}
 		icon = GFX_goal_generic_neutrality_focus
 		x = 14
 		y = 2
-		cost = 4.3
+		cost = 4.28571428571428571428
 		prerequisite = {
 		focus =	russianempirerework_1793_1836_focus_34 focus = russianempirerework_althistory_33
 		}
@@ -7344,7 +7343,7 @@ RUS={country_event = russianempire_1789_1812.156}
 		icon = GFX_goal_generic_neutrality_focus
 		x = 16
 		y = 2
-		cost = 4.3
+		cost = 4.28571428571428571428
 		prerequisite = {
 		focus =	russianempirerework_1793_1836_focus_34 focus = russianempirerework_althistory_33
 		}
@@ -7376,7 +7375,7 @@ RUS={country_event = russianempire_1789_1812.156}
 		icon = GFX_goal_generic_neutrality_focus
 		x = 18
 		y = 2
-		cost = 4.3
+		cost = 4.28571428571428571428
 		prerequisite = {
 		focus =	russianempirerework_1793_1836_focus_34 focus = russianempirerework_althistory_33
 		}
@@ -7408,7 +7407,7 @@ RUS={country_event = russianempire_1789_1812.156}
 		icon = GFX_goal_generic_neutrality_focus
 		x = 20
 		y = 2
-		cost = 4.3
+		cost = 4.28571428571428571428
 		prerequisite = {
 		focus =	russianempirerework_1793_1836_focus_34 focus = russianempirerework_althistory_33
 		}
@@ -7440,7 +7439,7 @@ RUS={country_event = russianempire_1789_1812.156}
 		icon = GFX_goal_generic_neutrality_focus
 		x = 22
 		y = 2
-		cost = 4.3
+		cost = 4.28571428571428571428
 		prerequisite = {
 		focus =	russianempirerework_1793_1836_focus_34 focus = russianempirerework_althistory_33
 		}
@@ -7472,7 +7471,7 @@ RUS={country_event = russianempire_1789_1812.156}
 		icon = GFX_goal_generic_neutrality_focus
 		x = 24
 		y = 2
-		cost = 4.3
+		cost = 4.28571428571428571428
 		prerequisite = {
 		focus =	russianempirerework_1793_1836_focus_34 focus = russianempirerework_althistory_33
 		}
@@ -7504,7 +7503,7 @@ RUS={country_event = russianempire_1789_1812.156}
 		icon = GFX_SOV_patriarch_of_all_russia_ccp_2d_sov_compatibility
 		x = 26
 		y = 2
-		cost = 4.3
+		cost = 4.28571428571428571428
 		prerequisite = {
 		focus =	russianempirerework_1793_1836_focus_34 focus = russianempirerework_althistory_33
 		}
@@ -7566,7 +7565,7 @@ GEO={country_event = russianempire_1789_1812.1}
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_44
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -7625,7 +7624,7 @@ GEO={country_event = russianempire_1789_1812.1}
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_44
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -7684,7 +7683,7 @@ GEO={country_event = russianempire_1789_1812.1}
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_44
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -7743,7 +7742,7 @@ GEO={country_event = russianempire_1789_1812.1}
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_44
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -7802,7 +7801,7 @@ GEO={country_event = russianempire_1789_1812.1}
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_44
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -7861,7 +7860,7 @@ GEO={country_event = russianempire_1789_1812.1}
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_44
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -7920,7 +7919,7 @@ GEO={country_event = russianempire_1789_1812.1}
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_44
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -7979,7 +7978,7 @@ GEO={country_event = russianempire_1789_1812.1}
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_44
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -8038,7 +8037,7 @@ GEO={country_event = russianempire_1789_1812.1}
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_44
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -8097,7 +8096,7 @@ GEO={country_event = russianempire_1789_1812.1}
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_44
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -8154,7 +8153,7 @@ GEO={country_event = russianempire_1789_1812.1}
 		icon = GFX_SOV_patriarch_of_all_russia_ccp_2d_sov_compatibility
 		x = 8
 		y = 4
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -8243,7 +8242,7 @@ RUS={country_event = russianempire_1789_1812.148}
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_54
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -8272,7 +8271,7 @@ RUS={country_event = russianempire_1789_1812.148}
 		icon = GFX_goal_generic_neutrality_focus
 		x = 12
 		y = 4
-		cost = 4.3
+		cost = 4.28571428571428571428
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_45
         }
@@ -8361,7 +8360,7 @@ RUS={country_event = russianempire_1789_1812.148}
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_54
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -8420,7 +8419,7 @@ RUS={country_event = russianempire_1789_1812.148}
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_54
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -8479,7 +8478,7 @@ RUS={country_event = russianempire_1789_1812.148}
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_54
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -8538,7 +8537,7 @@ RUS={country_event = russianempire_1789_1812.148}
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_54
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -8597,7 +8596,7 @@ RUS={country_event = russianempire_1789_1812.148}
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_54
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -8656,7 +8655,7 @@ RUS={country_event = russianempire_1789_1812.148}
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_54
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -8715,7 +8714,7 @@ RUS={country_event = russianempire_1789_1812.148}
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_54
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -8806,7 +8805,7 @@ focus = {
 		icon = GFX_goal_generic_neutrality_focus
 		x = 8
 		y = 5
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -8894,7 +8893,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_64
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -8923,7 +8922,7 @@ focus = {
 		icon = GFX_goal_generic_neutrality_focus
 		x = 12
 		y = 5
-		cost = 4.3
+		cost = 4.28571428571428571428
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_55
         }
@@ -9012,7 +9011,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_64
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -9071,7 +9070,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_64
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -9130,7 +9129,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_64
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -9189,7 +9188,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_64
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -9248,7 +9247,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_64
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -9307,7 +9306,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_64
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -9366,7 +9365,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_64
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -9395,7 +9394,7 @@ focus = {
 		icon = GFX_goal_generic_neutrality_focus
 		x = 8
 		y = 6
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -9483,7 +9482,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_74
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -9512,7 +9511,7 @@ focus = {
 		icon = GFX_goal_generic_neutrality_focus
 		x = 12
 		y = 6
-		cost = 4.3
+		cost = 4.28571428571428571428
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_65
         }
@@ -9601,7 +9600,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_74
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -9660,7 +9659,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_74
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -9719,7 +9718,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_74
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -9778,7 +9777,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_74
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -9837,7 +9836,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_74
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -9896,7 +9895,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_74
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -9955,7 +9954,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_74
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -10019,7 +10018,7 @@ focus = {
 		icon = GFX_goal_generic_neutrality_focus
 		x = 8
 		y = 7
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -10107,7 +10106,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_84
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -10136,7 +10135,7 @@ focus = {
 		icon = GFX_goal_generic_neutrality_focus
 		x = 12
 		y = 7
-		cost = 4.3
+		cost = 4.28571428571428571428
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_75
         }
@@ -10225,7 +10224,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_84
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -10284,7 +10283,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_84
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -10343,7 +10342,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_84
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -10402,7 +10401,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_84
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -10461,7 +10460,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_84
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -10520,7 +10519,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_84
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -10579,7 +10578,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_84
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -10615,7 +10614,7 @@ focus = {
 		icon = GFX_goal_generic_neutrality_focus
 		x = 8
 		y = 8
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -10703,7 +10702,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_94
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -10732,7 +10731,7 @@ focus = {
 		icon = GFX_goal_generic_neutrality_focus
 		x = 12
 		y = 8
-		cost = 4.3
+		cost = 4.28571428571428571428
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_85
         }
@@ -10821,7 +10820,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_94
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -10880,7 +10879,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_94
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -10939,7 +10938,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_94
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -10998,7 +10997,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_94
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -11057,7 +11056,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_94
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -11116,7 +11115,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_94
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -11175,7 +11174,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_94
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -11209,7 +11208,7 @@ focus = {
 		icon = GFX_goal_generic_neutrality_focus
 		x = 8
 		y = 9
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -11297,7 +11296,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_94
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -11326,7 +11325,7 @@ focus = {
 		icon = GFX_goal_generic_neutrality_focus
 		x = 12
 		y = 9
-		cost = 4.3
+		cost = 4.28571428571428571428
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_85
         }
@@ -11415,7 +11414,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_94
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -11474,7 +11473,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_94
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -11533,7 +11532,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_94
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -11592,7 +11591,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_94
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -11651,7 +11650,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_94
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -11710,7 +11709,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_94
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -11769,7 +11768,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_94
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -11799,7 +11798,7 @@ focus = {
 		icon = GFX_goal_generic_neutrality_focus
 		x = 8
 		y = 10
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -11887,7 +11886,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_94
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -11916,7 +11915,7 @@ focus = {
 		icon = GFX_goal_generic_neutrality_focus
 		x = 12
 		y = 10
-		cost = 4.3
+		cost = 4.28571428571428571428
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_85
         }
@@ -12005,7 +12004,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_94
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -12064,7 +12063,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_94
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -12123,7 +12122,7 @@ RUS={country_event = russianempire_1789_1812.159}
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_94
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -12182,7 +12181,7 @@ RUS={country_event = russianempire_1789_1812.159}
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_94
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -12241,7 +12240,7 @@ RUS={country_event = russianempire_1789_1812.159}
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_94
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -12300,7 +12299,7 @@ RUS={country_event = russianempire_1789_1812.159}
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_94
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -12359,7 +12358,7 @@ RUS={country_event = russianempire_1789_1812.159}
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_94
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -12390,7 +12389,7 @@ focus = {
 		icon = GFX_goal_generic_neutrality_focus
 		x = 8
 		y = 11
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -12478,7 +12477,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_124
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -12507,7 +12506,7 @@ focus = {
 		icon = GFX_goal_generic_neutrality_focus
 		x = 12
 		y = 11
-		cost = 4.3
+		cost = 4.28571428571428571428
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_115
         }
@@ -12596,7 +12595,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_124
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -12655,7 +12654,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_124
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -12714,7 +12713,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_124
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -12773,7 +12772,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_124
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -12832,7 +12831,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_124
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -12891,7 +12890,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_124
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -12950,7 +12949,7 @@ RUS={country_event = russianempire_1789_1812.157}
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_124
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -13004,7 +13003,7 @@ focus = {
 		icon = GFX_goal_generic_neutrality_focus
 		x = 8
 		y = 12
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -13092,7 +13091,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_134
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -13121,7 +13120,7 @@ focus = {
 		icon = GFX_goal_generic_neutrality_focus
 		x = 12
 		y = 12
-		cost = 4.3
+		cost = 4.28571428571428571428
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_125
         }
@@ -13210,7 +13209,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_134
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -13269,7 +13268,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_134
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -13328,7 +13327,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_134
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -13387,7 +13386,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_134
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -13446,7 +13445,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_134
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -13505,7 +13504,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_134
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -13564,7 +13563,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_134
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -13593,7 +13592,7 @@ focus = {
 		icon = GFX_goal_generic_neutrality_focus
 		x = 8
 		y = 13
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -13681,7 +13680,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_144
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -13710,7 +13709,7 @@ focus = {
 		icon = GFX_goal_generic_neutrality_focus
 		x = 12
 		y = 13
-		cost = 4.3
+		cost = 4.28571428571428571428
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_135
         }
@@ -13799,7 +13798,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_144
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -13858,7 +13857,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_144
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -13917,7 +13916,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_144
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -13976,7 +13975,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_144
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -14035,7 +14034,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_144
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -14094,7 +14093,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_144
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -14153,7 +14152,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_144
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -14182,7 +14181,7 @@ focus = {
 		icon = GFX_goal_generic_neutrality_focus
 		x = 8
 		y = 14
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -14270,7 +14269,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_154
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -14299,7 +14298,7 @@ focus = {
 		icon = GFX_goal_generic_neutrality_focus
 		x = 12
 		y = 14
-		cost = 4.3
+		cost = 4.28571428571428571428
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_145
         }
@@ -14388,7 +14387,7 @@ RUS={country_event = russianempire_1789_1812.149}
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_154
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -14447,7 +14446,7 @@ RUS={country_event = russianempire_1789_1812.149}
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_154
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -14506,7 +14505,7 @@ RUS={country_event = russianempire_1789_1812.149}
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_154
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -14565,7 +14564,7 @@ RUS={country_event = russianempire_1789_1812.149}
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_154
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -14624,7 +14623,7 @@ RUS={country_event = russianempire_1789_1812.149}
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_154
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -14683,7 +14682,7 @@ RUS={country_event = russianempire_1789_1812.149}
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_154
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -14742,7 +14741,7 @@ RUS={country_event = russianempire_1789_1812.149}
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_154
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -14771,7 +14770,7 @@ RUS={country_event = russianempire_1789_1812.149}
 		icon = GFX_goal_generic_neutrality_focus
 		x = 8
 		y = 15
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -14859,7 +14858,7 @@ RUS={country_event = russianempire_1789_1812.149}
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_164
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -14888,7 +14887,7 @@ RUS={country_event = russianempire_1789_1812.149}
 		icon = GFX_goal_generic_neutrality_focus
 		x = 12
 		y = 15
-		cost = 4.3
+		cost = 4.28571428571428571428
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_155
         }
@@ -14977,7 +14976,7 @@ RUS={country_event = russianempire_1789_1812.149}
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_164
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -15036,7 +15035,7 @@ RUS={country_event = russianempire_1789_1812.149}
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_164
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -15095,7 +15094,7 @@ RUS={country_event = russianempire_1789_1812.149}
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_164
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -15154,7 +15153,7 @@ RUS={country_event = russianempire_1789_1812.149}
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_164
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -15213,7 +15212,7 @@ RUS={country_event = russianempire_1789_1812.149}
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_164
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -15272,7 +15271,7 @@ RUS={country_event = russianempire_1789_1812.149}
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_164
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -15331,7 +15330,7 @@ RUS={country_event = russianempire_1789_1812.149}
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_164
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -15360,7 +15359,7 @@ RUS={country_event = russianempire_1789_1812.149}
 		icon = GFX_goal_generic_neutrality_focus
 		x = 8
 		y = 16
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -15448,7 +15447,7 @@ RUS={country_event = russianempire_1789_1812.149}
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_174
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -15477,7 +15476,7 @@ RUS={country_event = russianempire_1789_1812.149}
 		icon = GFX_goal_generic_neutrality_focus
 		x = 12
 		y = 16
-		cost = 4.3
+		cost = 4.28571428571428571428
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_165
         }
@@ -15566,7 +15565,7 @@ RUS={country_event = russianempire_1789_1812.149}
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_174
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -15625,7 +15624,7 @@ RUS={country_event = russianempire_1789_1812.149}
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_174
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -15684,7 +15683,7 @@ RUS={country_event = russianempire_1789_1812.149}
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_174
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -15743,7 +15742,7 @@ RUS={country_event = russianempire_1789_1812.149}
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_174
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -15802,7 +15801,7 @@ RUS={country_event = russianempire_1789_1812.149}
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_174
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -15861,7 +15860,7 @@ RUS={country_event = russianempire_1789_1812.149}
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_174
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -15920,7 +15919,7 @@ RUS={country_event = russianempire_1789_1812.149}
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_174
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -15949,7 +15948,7 @@ RUS={country_event = russianempire_1789_1812.149}
 		icon = GFX_goal_generic_neutrality_focus
 		x = 8
 		y = 17
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -16037,7 +16036,7 @@ RUS={country_event = russianempire_1789_1812.149}
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_184
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -16066,7 +16065,7 @@ RUS={country_event = russianempire_1789_1812.149}
 		icon = GFX_goal_generic_neutrality_focus
 		x = 12
 		y = 17
-		cost = 4.3
+		cost = 4.28571428571428571428
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_175
         }
@@ -16155,7 +16154,7 @@ RUS={country_event = russianempire_1789_1812.149}
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_184
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -16181,7 +16180,7 @@ RUS={country_event = russianempire_1789_1812.149}
 	}
 				focus = {
 		id = russianempirerework_1793_1836_focus_189
-		icon = GFX_goal_generic_neutrality_focus
+		icon = GFX_goal_polandwarrussia
 		x = 16
 		y = 17
 		prerequisite = {
@@ -16214,13 +16213,15 @@ RUS={country_event = russianempire_1789_1812.149}
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_184
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
 
 		available = {
-
+		country_exists=LIT
+		country_exists=LAT
+RUS={has_country_flag=fra_has_invaded_russia}
 		}
 
 		bypass = {
@@ -16235,7 +16236,30 @@ RUS={country_event = russianempire_1789_1812.149}
 		
 		
 		completion_reward = {
-
+hidden_effect={
+				RUS={
+								set_autonomy = {
+				target = BLR
+                autonomous_state = autonomy_dominion
+                freedom_level = 0.35
+	            }
+				}
+BLR={set_cosmetic_tag=BLR_partisans
+add_popularity = { ideology = neutrality popularity = 0.025}
+}
+every_state={
+limit={
+or={
+state=11
+state=95
+state=784
+}
+}
+transfer_state_to=BLR
+add_core_of=BLR
+}
+}
+RUS={country_event = russianempire_1789_1812.167}
 		}
 	}
 				focus = {
@@ -16273,7 +16297,7 @@ RUS={country_event = russianempire_1789_1812.149}
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_184
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -16332,7 +16356,7 @@ RUS={country_event = russianempire_1789_1812.149}
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_184
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -16391,7 +16415,7 @@ RUS={country_event = russianempire_1789_1812.149}
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_184
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -16450,7 +16474,7 @@ RUS={country_event = russianempire_1789_1812.149}
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_184
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -16476,7 +16500,7 @@ RUS={country_event = russianempire_1789_1812.149}
 	}
 				focus = {
 		id = russianempirerework_1793_1836_focus_194
-		icon = GFX_goal_generic_neutrality_focus
+		icon = GFX_focus_generic_befriend_sweden
 		x = 26
 		y = 17
 		prerequisite = {
@@ -16509,7 +16533,7 @@ RUS={country_event = russianempire_1789_1812.149}
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_184
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -16530,15 +16554,15 @@ RUS={country_event = russianempire_1789_1812.149}
 		
 		
 		completion_reward = {
-
+ENG={country_event = fra_1789_event.342}
 		}
 	}
 	focus = {
 		id = russianempirerework_1793_1836_focus_195
-		icon = GFX_goal_generic_neutrality_focus
+		icon = GFX_goal_polandwarrussia
 		x = 8
 		y = 18
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -16573,7 +16597,17 @@ RUS={country_event = russianempire_1789_1812.149}
         focus =russianempirerework_1793_1836_focus_194
         }
 		available = {
-
+		or={
+		and={
+		NOT={LIT={is_ally_with=FRA}}
+		NOT={LAT={is_ally_with=FRA}}
+		}
+		and={
+		LIT={has_capitulated=yes}
+		LAT={has_capitulated=yes}
+		}
+		}
+RUS={has_country_flag=fra_has_invaded_russia}
 		}
 
 		bypass = {
@@ -16588,12 +16622,14 @@ RUS={country_event = russianempire_1789_1812.149}
 		
 		
 		completion_reward = {
-
+        RUS={country_event = russianempire_1789_1812.168}
+		RUS={country_event = russianempire_1789_1812.169}
+		RUS={country_event = russianempire_1789_1812.171}
 		}
 	}
 				focus = {
 		id = russianempirerework_1793_1836_focus_196
-		icon = GFX_goal_generic_neutrality_focus
+		icon = GFX_goal_polandwarrussia
 		x = 10
 		y = 18
 		prerequisite = {
@@ -16626,13 +16662,17 @@ RUS={country_event = russianempire_1789_1812.149}
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_194
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
 
 		available = {
-
+		or={
+		NOT={POL={is_ally_with=FRA}}
+		POL={has_capitulated=yes}
+		}
+RUS={has_country_flag=fra_has_invaded_russia}
 		}
 
 		bypass = {
@@ -16647,7 +16687,7 @@ RUS={country_event = russianempire_1789_1812.149}
 		
 		
 		completion_reward = {
-
+        RUS={country_event = russianempire_1789_1812.170}
 		}
 	}
 				focus = {
@@ -16655,7 +16695,7 @@ RUS={country_event = russianempire_1789_1812.149}
 		icon = GFX_goal_generic_neutrality_focus
 		x = 12
 		y = 18
-		cost = 4.3
+		cost = 4.28571428571428571428
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_185
         }
@@ -16744,7 +16784,7 @@ RUS={country_event = russianempire_1789_1812.149}
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_194
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -16803,7 +16843,7 @@ RUS={country_event = russianempire_1789_1812.149}
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_194
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -16862,7 +16902,7 @@ RUS={country_event = russianempire_1789_1812.149}
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_194
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -16921,7 +16961,7 @@ RUS={country_event = russianempire_1789_1812.149}
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_194
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -16980,7 +17020,7 @@ RUS={country_event = russianempire_1789_1812.149}
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_194
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -17039,7 +17079,7 @@ RUS={country_event = russianempire_1789_1812.149}
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_194
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -17098,7 +17138,7 @@ RUS={country_event = russianempire_1789_1812.149}
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_194
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -17127,7 +17167,7 @@ RUS={country_event = russianempire_1789_1812.149}
 		icon = GFX_goal_generic_neutrality_focus
 		x = 8
 		y = 19
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -17215,7 +17255,7 @@ RUS={country_event = russianempire_1789_1812.149}
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_204
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -17244,7 +17284,7 @@ RUS={country_event = russianempire_1789_1812.149}
 		icon = GFX_goal_generic_neutrality_focus
 		x = 12
 		y = 19
-		cost = 4.3
+		cost = 4.28571428571428571428
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_195
         }
@@ -17333,7 +17373,7 @@ RUS={country_event = russianempire_1789_1812.149}
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_204
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -17392,7 +17432,7 @@ RUS={country_event = russianempire_1789_1812.149}
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_204
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -17451,7 +17491,7 @@ RUS={country_event = russianempire_1789_1812.149}
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_204
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -17510,7 +17550,7 @@ RUS={country_event = russianempire_1789_1812.149}
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_204
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -17569,7 +17609,7 @@ RUS={country_event = russianempire_1789_1812.149}
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_204
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -17628,7 +17668,7 @@ RUS={country_event = russianempire_1789_1812.149}
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_204
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -17687,7 +17727,7 @@ RUS={country_event = russianempire_1789_1812.149}
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_204
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -17716,7 +17756,7 @@ RUS={country_event = russianempire_1789_1812.149}
 		icon = GFX_goal_generic_neutrality_focus
 		x = 8
 		y = 20
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -17804,7 +17844,7 @@ RUS={country_event = russianempire_1789_1812.149}
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_214
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -17833,7 +17873,7 @@ RUS={country_event = russianempire_1789_1812.149}
 		icon = GFX_goal_generic_neutrality_focus
 		x = 12
 		y = 20
-		cost = 4.3
+		cost = 4.28571428571428571428
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_205
         }
@@ -17922,7 +17962,7 @@ RUS={country_event = russianempire_1789_1812.149}
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_214
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -17981,7 +18021,7 @@ RUS={country_event = russianempire_1789_1812.149}
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_214
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -18040,7 +18080,7 @@ RUS={country_event = russianempire_1789_1812.149}
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_214
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -18099,7 +18139,7 @@ RUS={country_event = russianempire_1789_1812.149}
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_214
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -18158,7 +18198,7 @@ RUS={country_event = russianempire_1789_1812.149}
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_214
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -18217,7 +18257,7 @@ RUS={country_event = russianempire_1789_1812.149}
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_214
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -18276,7 +18316,7 @@ RUS={country_event = russianempire_1789_1812.149}
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_214
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -18305,7 +18345,7 @@ RUS={country_event = russianempire_1789_1812.149}
 		icon = GFX_goal_generic_neutrality_focus
 		x = 8
 		y = 21
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -18393,7 +18433,7 @@ RUS={country_event = russianempire_1789_1812.149}
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_224
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -18422,7 +18462,7 @@ RUS={country_event = russianempire_1789_1812.149}
 		icon = GFX_goal_generic_neutrality_focus
 		x = 12
 		y = 21
-		cost = 4.3
+		cost = 4.28571428571428571428
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_215
         }
@@ -18511,7 +18551,7 @@ RUS={country_event = russianempire_1789_1812.149}
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_224
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -18570,7 +18610,7 @@ RUS={country_event = russianempire_1789_1812.149}
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_224
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -18629,7 +18669,7 @@ RUS={country_event = russianempire_1789_1812.149}
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_224
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -18688,7 +18728,7 @@ RUS={country_event = russianempire_1789_1812.149}
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_224
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -18747,7 +18787,7 @@ RUS={country_event = russianempire_1789_1812.149}
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_224
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -18806,7 +18846,7 @@ RUS={country_event = russianempire_1789_1812.149}
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_224
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -18865,7 +18905,7 @@ RUS={country_event = russianempire_1789_1812.149}
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_224
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -18913,7 +18953,7 @@ focus = {
 		icon = GFX_goal_generic_neutrality_focus
 		x = 8
 		y = 22
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -19001,7 +19041,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_234
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -19030,7 +19070,7 @@ focus = {
 		icon = GFX_goal_generic_neutrality_focus
 		x = 12
 		y = 22
-		cost = 4.3
+		cost = 4.28571428571428571428
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_225
         }
@@ -19119,7 +19159,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_234
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -19178,7 +19218,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_234
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -19237,7 +19277,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_234
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -19296,7 +19336,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_234
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -19355,7 +19395,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_234
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -19414,7 +19454,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_234
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -19473,7 +19513,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_234
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -19502,7 +19542,7 @@ focus = {
 		icon = GFX_goal_generic_neutrality_focus
 		x = 8
 		y = 23
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -19590,7 +19630,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_244
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -19619,7 +19659,7 @@ focus = {
 		icon = GFX_goal_generic_neutrality_focus
 		x = 12
 		y = 23
-		cost = 4.3
+		cost = 4.28571428571428571428
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_235
         }
@@ -19708,7 +19748,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_244
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -19767,7 +19807,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_244
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -19826,7 +19866,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_244
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -19885,7 +19925,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_244
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -19944,7 +19984,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_244
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -20003,7 +20043,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_244
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -20062,7 +20102,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_244
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -20091,7 +20131,7 @@ focus = {
 		icon = GFX_goal_generic_neutrality_focus
 		x = 8
 		y = 24
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -20179,7 +20219,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_254
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -20208,7 +20248,7 @@ focus = {
 		icon = GFX_goal_generic_neutrality_focus
 		x = 12
 		y = 24
-		cost = 4.3
+		cost = 4.28571428571428571428
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_245
         }
@@ -20297,7 +20337,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_254
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -20356,7 +20396,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_254
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -20415,7 +20455,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_254
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -20474,7 +20514,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_254
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -20533,7 +20573,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_254
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -20592,7 +20632,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_254
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -20651,7 +20691,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_254
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -20680,7 +20720,7 @@ focus = {
 		icon = GFX_goal_generic_neutrality_focus
 		x = 8
 		y = 25
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -20768,7 +20808,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_264
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -20797,7 +20837,7 @@ focus = {
 		icon = GFX_goal_generic_neutrality_focus
 		x = 12
 		y = 25
-		cost = 4.3
+		cost = 4.28571428571428571428
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_255
         }
@@ -20886,7 +20926,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_264
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -20945,7 +20985,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_264
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -21004,7 +21044,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_264
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -21063,7 +21103,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_264
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -21122,7 +21162,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_264
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -21181,7 +21221,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_264
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -21240,7 +21280,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_264
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -21269,7 +21309,7 @@ focus = {
 		icon = GFX_goal_generic_neutrality_focus
 		x = 8
 		y = 26
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -21357,7 +21397,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_274
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -21386,7 +21426,7 @@ focus = {
 		icon = GFX_goal_generic_neutrality_focus
 		x = 12
 		y = 26
-		cost = 4.3
+		cost = 4.28571428571428571428
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_265
         }
@@ -21475,7 +21515,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_274
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -21534,7 +21574,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_274
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -21593,7 +21633,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_274
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -21652,7 +21692,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_274
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -21711,7 +21751,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_274
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -21770,7 +21810,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_274
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -21829,7 +21869,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_274
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -21858,7 +21898,7 @@ focus = {
 		icon = GFX_goal_generic_neutrality_focus
 		x = 8
 		y = 27
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -21946,7 +21986,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_284
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -21975,7 +22015,7 @@ focus = {
 		icon = GFX_goal_generic_neutrality_focus
 		x = 12
 		y = 27
-		cost = 4.3
+		cost = 4.28571428571428571428
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_275
         }
@@ -22064,7 +22104,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_284
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -22123,7 +22163,7 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_284
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
@@ -22182,13 +22222,13 @@ focus = {
 				prerequisite = {
         focus =russianempirerework_1793_1836_focus_284
         }
-		cost = 4.3
+		cost = 4.28571428571428571428
 		ai_will_do = {
 			factor = 1
 		}
 
 		available = {
-date > 1820.9.1
+date > 1820.1.1
 		}
 
 		bypass = {

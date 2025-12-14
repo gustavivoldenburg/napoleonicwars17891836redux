@@ -30,6 +30,37 @@ characters={
 			}
 		}
 	}
+						SPR_azara={
+		name=SPR_CHARACTER_AZARA
+		portraits={
+                        army={
+				small="GFX_idea_spr_azara_small"
+			}
+			civilian = {
+				large = GFX_portrait_spr_azara_large
+			}
+		}
+		advisor={
+                        can_be_fired = no
+			slot = political_advisor
+			idea_token = SPR_azara
+			allowed  = {
+				original_tag  = SPR
+			}
+			available  = {
+		        }
+			traits  = {
+				basel_diplomat
+			}
+			on_add  = {
+			}
+			do_effect  = {
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+	}
 	SPR_manuel_azana = {
 		instance = {
 			allowed = {
@@ -77,7 +108,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=absolute_monarchy
+			ideology=despotism
 			traits={Bourbon-Anjou}
 			desc = SPR_CHARLESIV_DESC
 			expire="1797.1.1"

@@ -55,27 +55,6 @@ industrial_capacity_factory = -0.59
 
 			}
 		}
-				eighteenth_century = {
-			picture = century
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-			removal_cost = -1
-			
-			modifier = {
-research_speed_factor = -1
-			surrender_limit = 1
-			production_speed_buildings_factor = -0.49
-industrial_capacity_factory = -0.49
-  guarantee_cost =100
-guarantee_tension = 100
-			}
-		}
 				twentieth_century = {
 			picture = century
 			

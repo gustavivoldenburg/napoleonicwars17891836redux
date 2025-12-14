@@ -146,7 +146,7 @@ units = {
 	#French Army
 	division = {
 		name = "French Division"
-		location = 743
+		location = 3838
 		division_template = "French Division"
 		start_experience_factor = 0.3
 	}
@@ -155,7 +155,7 @@ units = {
 	#French Army
 	division = {
 		name = "French Division"
-		location = 6966
+		location = 9764
 		division_template = "French Division"
 		start_experience_factor = 0.3
 	}
@@ -164,7 +164,7 @@ units = {
 	#French Army
 	division = {
 		name = "French Division"
-		location = 6836
+		location = 9764
 		division_template = "French Division"
 		start_experience_factor = 0.3
 	}
@@ -173,7 +173,7 @@ units = {
 	#French Army
 	division = {
 		name = "French Division"
-		location = 872
+		location = 9764
 		division_template = "French Division"
 		start_experience_factor = 0.3
 	}
@@ -182,7 +182,7 @@ units = {
 	#French Army
 	division = {
 		name = "French Division"
-		location = 897
+		location = 6865
 		division_template = "French Division"
 		start_experience_factor = 0.3
 	}
@@ -191,7 +191,7 @@ units = {
 	#French Army
 	division = {
 		name = "French Division"
-		location = 3899
+		location = 14091
 		division_template = "French Division"
 		start_experience_factor = 0.3
 	}
@@ -330,7 +330,7 @@ units = {
 	#French Army
 	division = {
 		name = "French Division"
-		location = 9638
+		location = 678
 		division_template = "French Division"
 		start_experience_factor = 0.3
 	}
@@ -339,7 +339,7 @@ units = {
 	#French Army
 	division = {
 		name = "French Division"
-		location = 3679
+		location = 9622
 		division_template = "French Division"
 		start_experience_factor = 0.3
 	}
@@ -348,7 +348,7 @@ units = {
 	#French Army
 	division = {
 		name = "French Division"
-		location = 11623
+		location = 6666
 		division_template = "French Division"
 		start_experience_factor = 0.3
 	}
@@ -357,7 +357,7 @@ units = {
 	#French Army
 	division = {
 		name = "French Division"
-		location = 663
+		location = 14585
 		division_template = "French Division"
 		start_experience_factor = 0.3
 	}

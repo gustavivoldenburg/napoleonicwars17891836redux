@@ -1,0 +1,12 @@
+on_actions = {
+    on_startup = {
+    effect = {
+        if = {
+		every_country={
+            limit = { is_ai = no }       # Only trigger for human players
+            country_event = fra_1789_event.257 # Event ID from above
+		}
+        }
+    }
+}
+}

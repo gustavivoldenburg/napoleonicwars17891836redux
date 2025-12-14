@@ -8,14 +8,14 @@ state={
 
 	history={
 		owner = POR
+				1808.1.1 = {
+	    owner=FRA
+		}
+		1809.1.1 = {
+	    owner=POR
+		}
 		victory_points = {
 			11805 30 
-		}
-		victory_points = {
-			3798 1 
-		}
-		victory_points = {
-			6924 1 
 		}
 		1936.1.1 = {
 					buildings = {
@@ -47,9 +47,9 @@ state={
 	}
 
 	provinces={
-		799 3798 3861 6924 11805 13292 13296 
+	11805 
 	}
-	manpower=2000000
+	manpower=1000000
 	buildings_max_level_factor=1.000
 	state_category=city
 	local_supplies=12.000

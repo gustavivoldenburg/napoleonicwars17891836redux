@@ -1,5 +1,6 @@
 ﻿l_english:
  autonomy_protectorate:0 "Protectorate"
+ autonomy_confederationoftherhine:0 "Member of the Confederation of the Rhine"
  autonomy_dominion:0 "Dominion"
  autonomy_supervised_state:0 "Supervised State"
  autonomy_colony:0 "Colony"
@@ -34,6 +35,7 @@
  CONTINUOUS_AUTONOMY_EFFECT:0 "$REASON$: £autonomy_texticon $VAL|+=2$"
  EVENT_AUTONOMY_EFFECT:0 "$REASON$: £autonomy_texticon $VAL|+=2$"
  LL_TO_OVERLORD_FREEDOM_EFFECT:0 "Subject lend leasing to overlord"
+ SUBJECT_OF_NAME: "Subject of:\n$VALUE|H$"
  LL_TO_PUPPET_FREEDOM_EFFECT:0 "Overlord lend leasing to subject"
  MONTHLY_LL_FREEDOM_TO_PUPPET:0 "$FLAG$ $VALUE|-2$"
  MONTHLY_LL_FREEDOM_TO_MASTER:0 "$VALUE|+2$"
@@ -72,6 +74,10 @@
  autonomy_austro_hungarian_subject: "Austro-Hungarian Vassal"
  autonomy_volkskommissariat: "Volkskommissariat"
  autonomy_eu_member: "EU Member State"
+ AUTONOMY_NOT_ENOUGH_TIME: "§RAutonomy level can only be changed every §Y$DURATION$ days§! (§Y$REMAINDER$ days left§!)§!"
+ autonomy_sea_warlord_subject: "Warlord Subject"
+ autonomy_sea_integrated_warlord_subject: "Integrated Warlord Subject"
+
 
 
  autonomy_hre_subject:0 "Member of the Holy Roman Empire"

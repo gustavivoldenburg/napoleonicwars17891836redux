@@ -1,0 +1,12 @@
+on_actions = {
+    on_startup = {
+    effect = {
+        if = {
+		every_country={
+            limit = { is_ai = no }       # Only trigger for human players
+            add_ideas = {this_is_hidden_idea_minus_army_strength} # Event ID from above
+		}
+        }
+    }
+}
+}

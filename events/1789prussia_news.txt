@@ -8,7 +8,7 @@ add_namespace = pre_1789_news
 	id = pre_1789_news.1
 	title = "The Formation of the Austrian Empire"
 	desc = pre_1789_news.1.d
-	picture = GFX_idi_amin_uganda
+	picture = GFX_news_event_france_empire_1
 	
 	major = yes
 

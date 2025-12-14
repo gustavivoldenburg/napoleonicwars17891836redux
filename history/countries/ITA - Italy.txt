@@ -1,25 +1,87 @@
-﻿capital = 2
+﻿capital = 927
 1789.1.1 = {
 		if = {
+		limit = { has_start_date < 1799.1.1 }
+		set_capital = {
+  state = 927
+  remember_old_capital = no
+}
+}
+}
+1796.1.1 = {
+		if = {
+		limit = { has_start_date < 1815.1.1 }
+		set_capital = {
+  state = 159
+  remember_old_capital = no
+}
+}
+}
+1815.1.1 = {
+		if = {
 		limit = { has_start_date < 1837.1.1 }
+		set_capital = {
+  state = 927
+  remember_old_capital = no
+}
+}
+}
+1789.1.1 = {
+		if = {
+		limit = { has_start_date < 1790.1.1 }
 set_oob = "ITA_1789"
 }
 }
-1774.1.1 = {
+1790.1.1 = {
+		if = {
+		limit = { has_start_date < 1837.1.1 }
+set_oob = "ITA_1790"
+}
+}
+1789.1.1 = {
+recruit_character=ITA_karl
+}
+1807.1.1 = {
+retire_character=ITA_karl
+}
+1789.1.1 = {
+recruit_character=ITA_maria
+}
+1824.1.1 = {
+retire_character=ITA_maria
+}
+1789.1.1 = {
+recruit_character=ITA_ercole
+promote_character=ITA_ercole
+recruit_character=ITA_francisiv
+}
+1804.1.1 = {
+retire_character=ITA_ercole
+promote_character=ITA_napoleoni
+}
+1815.1.1 = {
+promote_character=ITA_francisiv
+}
+1847.1.1 = {
+retire_character=ITA_francisiv
+}
+1789.1.1 = {
 recruit_character=ITA_napoleon
 recruit_character=ITA_napoleoni
 promote_character=ITA_napoleon
-promote_character=ITA_napoleoni
 }
 1836.1.1 = {
 retire_character=ITA_napoleon
 retire_character=ITA_napoleoni
 }
 1789.1.1 = {
+set_party_name = { ideology = neutrality long_name = ITA_ETE_neutrality_party_long name = ITA_ETE_neutrality_party }
+}
+1805.1.1 = {
 ITA={set_party_name = { ideology = neutrality long_name = ITA_BON_neutrality_party_long name = ITA_BON_neutrality_party}}
 }
 1815.1.1 = {
-ITA={set_party_name = { ideology = neutrality long_name = ITA_neutrality_party_long name = ITA_neutrality_party}}
+set_party_name = { ideology = neutrality long_name = ITA_LOR_neutrality_party_long name = ITA_LOR_neutrality_party }
 }
 1812.1.1 = {
 set_politics = {
@@ -29,6 +91,9 @@ set_politics = {
 	elections_allowed = no
 }
 }
+1789.1.1 = {
+set_cosmetic_tag = MOD # 
+}
 1800.1.1 = {
 set_cosmetic_tag = ITA_FRA_two # Kingdom of Italy Napoleonic
 }
@@ -36,7 +101,10 @@ set_cosmetic_tag = ITA_FRA_two # Kingdom of Italy Napoleonic
 set_cosmetic_tag = ITA_FRA_four # Kingdom of Italy Napoleonic
 }
 1815.1.1 = {
-set_cosmetic_tag = ITA # 
+set_cosmetic_tag = MOD # 
+}
+1830.1.1 = {
+set_cosmetic_tag = MOD_AUS # 
 }
 1936.1.1 = {
 if = {
@@ -722,7 +790,7 @@ if = {
 			basic_submarine = 1
 			basic_destroyer = 1
 			improved_destroyer = 1
-			basic_light_cruiser = 1
+			
 			basic_battleship = 1
 			improved_battleship = 1
 		}

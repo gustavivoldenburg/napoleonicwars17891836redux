@@ -20,7 +20,7 @@ state={
                 add_core_of = PRE
                 remove_core_of = AUS
                 remove_core_of = CZE
-                remove_core_of = BOH
+                remove_core_of = CZE
                 remove_core_of = SIL
 		}
 		1871.1.1 = {
@@ -77,9 +77,9 @@ state={
 	}
 
 	provinces={
-		552 3283 3438 3485 3510 3545 6462 6534 9470 9570 13398 13402 13406 14323 14324 14325 14326 14327 
+		552 3283 3438 3485 3510 3545 6462 6512 6534 6595 9457 9470 9570 13398 13408 13406 14323 14324 14325 14326 14327 
 	}
-	manpower=3000000
+	manpower=3302591
 	buildings_max_level_factor=1.000
 	state_category=city
 	local_supplies=10.000

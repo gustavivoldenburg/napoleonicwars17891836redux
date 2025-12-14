@@ -8,7 +8,7 @@ add_namespace = sweden_1789_1812_news
 	id = sweden_1789_1812_news.1
 	title = "Government of India Act 1935"
 	desc = sweden_1789_1812_news.1.d
-	picture = GFX_idi_amin_uganda
+	picture = GFX_news_event_france_empire_1
 	
 	major = yes
 
@@ -23,7 +23,7 @@ add_namespace = sweden_1789_1812_news
 	id = sweden_1789_1812_news.9
 	title = "Gustav III Proclaims the House of Vasa"
 	desc = sweden_1789_1812_news.9.d
-	picture = GFX_idi_amin_uganda
+	picture = GFX_news_event_france_empire_1
 	
 	major = yes
 
@@ -38,7 +38,7 @@ add_namespace = sweden_1789_1812_news
 	id = sweden_1789_1812_news.10
 	title = "Gustav III of Sweden visits the Duchy of Oldenburg"
 	desc = sweden_1789_1812_news.10.d
-	picture = GFX_idi_amin_uganda
+	picture = GFX_news_event_france_empire_1
 	
 	major = yes
 
@@ -53,7 +53,7 @@ add_namespace = sweden_1789_1812_news
 	id = sweden_1789_1812_news.11
 	title = "The House of Holstein-Gottorp-Vasa"
 	desc = sweden_1789_1812_news.11.d
-	picture = GFX_idi_amin_uganda
+	picture = GFX_news_event_france_empire_1
 	
 	major = yes
 
@@ -68,7 +68,7 @@ add_namespace = sweden_1789_1812_news
 	id = sweden_1789_1812_news.12
 	title = "The Assassination of Gustav III"
 	desc = sweden_1789_1812_news.12.d
-	picture = GFX_idi_amin_uganda
+	picture = GFX_news_event_france_empire_1
 	
 	major = yes
 
@@ -84,7 +84,7 @@ add_namespace = sweden_1789_1812_news
 	id = sweden_1789_1812_news.14
 	title = "Sweden Proclaims the return of the Kalmar Union"
 	desc = sweden_1789_1812_news.14.d
-	picture = GFX_idi_amin_uganda
+	picture = GFX_news_event_france_empire_1
 	
 	major = yes
 

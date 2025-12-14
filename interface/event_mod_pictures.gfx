@@ -186,11 +186,6 @@ spriteTypes = {
 		name = "GFX_idea_rus_wylie_small"
 		texturefile = "gfx/interface/ideas/idea_wylie_small.dds"
 	}
-	
-	spriteType = {
-		name = "GFX_idea_woman_warrior"
-		texturefile = "gfx/interface/ideas/VND/woman_warrior.dds"
-	}
 
 
 
@@ -1043,41 +1038,41 @@ spriteTypes = {
 		texturefile = "gfx/leaders/HUN/portrait_mikhail_large.dds"
 	}
         spriteType = {
-		name = "GFX_portrait_wal_nicholas_large"
-		texturefile = "gfx/leaders/WAL/portrait_nicholas_large.dds"
+		name = "GFX_portrait_rom_nicholas_large"
+		texturefile = "gfx/leaders/ROM/portrait_nicholas_large.dds"
 	}
         spriteType = {
-		name = "GFX_portrait_wal_alexander_large"
-		texturefile = "gfx/leaders/WAL/portrait_alexander_large.dds"
+		name = "GFX_portrait_rom_alexander_large"
+		texturefile = "gfx/leaders/ROM/portrait_alexander_large.dds"
 	}
         spriteType = {
-		name = "GFX_portrait_wal_michael_large"
-		texturefile = "gfx/leaders/WAL/portrait_michael_large.dds"
+		name = "GFX_portrait_rom_michael_large"
+		texturefile = "gfx/leaders/ROM/portrait_michael_large.dds"
 	}
         spriteType = {
-		name = "GFX_portrait_wal_constantinehangerli_large"
-		texturefile = "gfx/leaders/WAL/portrait_constantinehangerli_large.dds"
+		name = "GFX_portrait_rom_constantinehangerli_large"
+		texturefile = "gfx/leaders/ROM/portrait_constantinehangerli_large.dds"
 	}
         spriteType = {
-		name = "GFX_portrait_wal_constantine_large"
-		texturefile = "gfx/leaders/WAL/portrait_constantine_large.dds"
+		name = "GFX_portrait_rom_constantine_large"
+		texturefile = "gfx/leaders/ROM/portrait_constantine_large.dds"
 	}
 
         spriteType = {
-		name = "GFX_portrait_wal_alexandros_large"
-		texturefile = "gfx/leaders/WAL/portrait_alexandros_large.dds"
+		name = "GFX_portrait_rom_alexandros_large"
+		texturefile = "gfx/leaders/ROM/portrait_alexandros_large.dds"
 	}
         spriteType = {
-		name = "GFX_portrait_wal_scarlat_large"
-		texturefile = "gfx/leaders/WAL/portrait_scarlat_large.dds"
+		name = "GFX_portrait_rom_scarlat_large"
+		texturefile = "gfx/leaders/ROM/portrait_scarlat_large.dds"
 	}
         spriteType = {
-		name = "GFX_portrait_wal_john_large"
-		texturefile = "gfx/leaders/WAL/portrait_john_large.dds"
+		name = "GFX_portrait_rom_john_large"
+		texturefile = "gfx/leaders/ROM/portrait_john_large.dds"
 	}
         spriteType = {
-		name = "GFX_portrait_wal_grigore_large"
-		texturefile = "gfx/leaders/WAL/portrait_grigore_large.dds"
+		name = "GFX_portrait_rom_grigore_large"
+		texturefile = "gfx/leaders/ROM/portrait_grigore_large.dds"
 	}
 
 
@@ -1121,25 +1116,25 @@ spriteTypes = {
 		texturefile = "gfx/leaders/UTH/portrait_josephsmithsr_large.dds"
 	}
 			spriteType = {
-		name = "GFX_portrait_wal_grigory_potemkin_large"
-		texturefile = "gfx/leaders/WAL/portrait_grigory_potemkin_large.dds"
+		name = "GFX_portrait_rom_grigory_potemkin_large"
+		texturefile = "gfx/leaders/ROM/portrait_grigory_potemkin_large.dds"
 	}
         spriteType = {
-		name = "GFX_portrait_wal_ypsilantis_large"
-		texturefile = "gfx/leaders/WAL/portrait_ypsilantis_large.dds"
+		name = "GFX_portrait_rom_ypsilantis_large"
+		texturefile = "gfx/leaders/ROM/portrait_ypsilantis_large.dds"
 	}
 
         spriteType = {
-		name = "GFX_portrait_wal_tudor_large"
-		texturefile = "gfx/leaders/WAL/portrait_tudor_large.dds"
+		name = "GFX_portrait_rom_tudor_large"
+		texturefile = "gfx/leaders/ROM/portrait_tudor_large.dds"
 	}
         spriteType = {
-		name = "GFX_portrait_wal_ghica_large"
-		texturefile = "gfx/leaders/WAL/portrait_ghica_large.dds"
+		name = "GFX_portrait_rom_ghica_large"
+		texturefile = "gfx/leaders/ROM/portrait_ghica_large.dds"
 	}
         spriteType = {
-		name = "GFX_portrait_wal_alexandru_large"
-		texturefile = "gfx/leaders/WAL/portrait_alexandru_large.dds"
+		name = "GFX_portrait_rom_alexandru_large"
+		texturefile = "gfx/leaders/ROM/portrait_alexandru_large.dds"
 	}
 
 
@@ -1532,12 +1527,12 @@ spriteTypes = {
 		texturefile = "gfx/leaders/ANH/portrait_leopoldiiii_large.dds"
 	}
         spriteType = {
-		name = "GFX_portrait_mod_ercole_large"
-		texturefile = "gfx/leaders/MOD/portrait_ercole_large.dds"
+		name = "GFX_portrait_ita_ercole_large"
+		texturefile = "gfx/leaders/ITA/portrait_ercole_large.dds"
 	}
         spriteType = {
-		name = "GFX_portrait_mod_francisiv_large"
-		texturefile = "gfx/leaders/MOD/portrait_francisiv_large.dds"
+		name = "GFX_portrait_ita_francisiv_large"
+		texturefile = "gfx/leaders/ITA/portrait_francisiv_large.dds"
 	}
         spriteType = {
 		name = "GFX_portrait_luc_ferdinandi_large"
@@ -1732,6 +1727,47 @@ spriteTypes = {
 		name = "GFX_portrait_nap_joachimmurat_large"
 		texturefile = "gfx/leaders/NAP/portrait_joachimmurat_large.dds"
 	}
+	        spriteType = {
+		name = "GFX_portrait_nap_ciaia_large"
+		texturefile = "gfx/leaders/NAP/portrait_ciaia_large.dds"
+	}
+	        spriteType = {
+		name = "GFX_portrait_nap_lauberg_large"
+		texturefile = "gfx/leaders/NAP/portrait_lauberg_large.dds"
+	}
+
+
+        spriteType = {
+		name = "GFX_portrait_tts_vito_large"
+		texturefile = "gfx/leaders/TTS/portrait_vito_large.dds"
+	}
+	        spriteType = {
+		name = "GFX_portrait_tts_carracosa_large"
+		texturefile = "gfx/leaders/TTS/portrait_carracosa_large.dds"
+	}
+	        spriteType = {
+		name = "GFX_portrait_tts_pepe_large"
+		texturefile = "gfx/leaders/TTS/portrait_pepe_large.dds"
+	}
+	        spriteType = {
+		name = "GFX_portrait_tts_colletta_large"
+		texturefile = "gfx/leaders/TTS/portrait_colletta_large.dds"
+	}
+	        spriteType = {
+		name = "GFX_portrait_tts_poz_large"
+		texturefile = "gfx/leaders/TTS/portrait_poz_large.dds"
+	}
+	        spriteType = {
+		name = "GFX_portrait_tts_diavolo_large"
+		texturefile = "gfx/leaders/TTS/portrait_diavolo_large.dds"
+	}
+
+
+
+
+
+
+
         spriteType = {
 		name = "GFX_portrait_tts_ferdinandi_large"
 		texturefile = "gfx/leaders/TTS/portrait_ferdinandi_large.dds"
@@ -1801,9 +1837,21 @@ spriteTypes = {
 		name = "GFX_portrait_tos_louisi_large"
 		texturefile = "gfx/leaders/TOS/portrait_louisi_large.dds"
 	}
+	        spriteType = {
+		name = "GFX_portrait_por_lucienbonaparte_large"
+		texturefile = "gfx/leaders/POR/portrait_lucienbonaparte_large.dds"
+	}
         spriteType = {
 		name = "GFX_portrait_tos_charlesii_large"
 		texturefile = "gfx/leaders/TOS/portrait_charlesii_large.dds"
+	}
+	        spriteType = {
+		name = "GFX_portrait_lst_charlesii_large"
+		texturefile = "gfx/leaders/LST/portrait_charlesii_large.dds"
+	}
+	        spriteType = {
+		name = "GFX_portrait_age_godoy_large"
+		texturefile = "gfx/leaders/AGE/portrait_godoy_large.dds"
 	}
         spriteType = {
 		name = "GFX_portrait_tos_ferdinandiii_large"
@@ -1940,16 +1988,157 @@ spriteTypes = {
 	}
 
 
-
+        spriteType = {
+		name = "GFX_portrait_por_napier_large"
+		texturefile = "gfx/leaders/POR/portrait_napier_large.dds"
+	}
+	        spriteType = {
+		name = "GFX_portrait_por_guedes_large"
+		texturefile = "gfx/leaders/POR/portrait_guedes_large.dds"
+	}
+	        spriteType = {
+		name = "GFX_portrait_por_sampaio_large"
+		texturefile = "gfx/leaders/POR/portrait_sampaio_large.dds"
+	}
+	        spriteType = {
+		name = "GFX_portrait_por_povoas_large"
+		texturefile = "gfx/leaders/POR/portrait_povoas_large.dds"
+	}
 
 
         spriteType = {
 		name = "GFX_portrait_lie_remy_large"
 		texturefile = "gfx/leaders/LIE/portrait_remy_large.dds"
 	}
+
+
+
+
+        spriteType = {
+		name = "GFX_idea_tts_marzio_small"
+		texturefile = "gfx/interface/ideas/idea_marzio_small.dds"
+	}
+	        spriteType = {
+		name = "GFX_idea_tts_cadoudal_small"
+		texturefile = "gfx/interface/ideas/idea_cadoudal_small.dds"
+	}
+	        spriteType = {
+		name = "GFX_idea_tts_pichegru_small"
+		texturefile = "gfx/interface/ideas/idea_pichegru_small.dds"
+	}
+	        spriteType = {
+		name = "GFX_idea_eng_cornwallis_small"
+		texturefile = "gfx/interface/ideas/idea_cornwallis_small.dds"
+	}
+	        spriteType = {
+		name = "GFX_idea_spr_azara_small"
+		texturefile = "gfx/interface/ideas/idea_azara_small.dds"
+	}
+		        spriteType = {
+		name = "GFX_idea_hol_philips_small"
+		texturefile = "gfx/interface/ideas/idea_philips_small.dds"
+	}
+
+        spriteType = {
+		name = "GFX_idea_pre_marx_small"
+		texturefile = "gfx/interface/ideas/idea_marx_small.dds"
+	}
+	        spriteType = {
+		name = "GFX_idea_fra_josephdavidsinzheim_small"
+		texturefile = "gfx/interface/ideas/idea_josephdavidsinzheim_small.dds"
+	}
+	        spriteType = {
+		name = "GFX_idea_por_noronha_small"
+		texturefile = "gfx/interface/ideas/idea_noronha_small.dds"
+	}
+
+        spriteType = {
+		name = "GFX_idea_por_joseseseabradasilva_small"
+		texturefile = "gfx/interface/ideas/idea_joseseseabradasilva_small.dds"
+	}
+
+	        spriteType = {
+		name = "GFX_idea_por_rodrigocoutinho_small"
+		texturefile = "gfx/interface/ideas/idea_rodrigocoutinho_small.dds"
+	}
+
+	        spriteType = {
+		name = "GFX_idea_por_domingocoutinho_small"
+		texturefile = "gfx/interface/ideas/idea_domingocoutinho_small.dds"
+	}
+
+	        spriteType = {
+		name = "GFX_idea_por_luiscoutinho_small"
+		texturefile = "gfx/interface/ideas/idea_luiscoutinho_small.dds"
+	}
+
+	        spriteType = {
+		name = "GFX_idea_por_braganca_small"
+		texturefile = "gfx/interface/ideas/idea_braganca_small.dds"
+	}
+
+	        spriteType = {
+		name = "GFX_idea_por_forjaz_small"
+		texturefile = "gfx/interface/ideas/idea_forjaz_small.dds"
+	}
+
+	        spriteType = {
+		name = "GFX_idea_por_beresford_small"
+		texturefile = "gfx/interface/ideas/idea_beresford_small.dds"
+	}
+
+	        spriteType = {
+		name = "GFX_idea_por_franciscodedasilveira_small"
+		texturefile = "gfx/interface/ideas/idea_franciscodedasilveira_small.dds"
+	}
+
+	        spriteType = {
+		name = "GFX_idea_por_gama_small"
+		texturefile = "gfx/interface/ideas/idea_gama_small.dds"
+	}
+
+	        spriteType = {
+		name = "GFX_idea_por_lorena_small"
+		texturefile = "gfx/interface/ideas/idea_lorena_small.dds"
+	}
+
+	        spriteType = {
+		name = "GFX_idea_por_azevedo_small"
+		texturefile = "gfx/interface/ideas/idea_azevedo_small.dds"
+	}
+
+	        spriteType = {
+		name = "GFX_idea_por_stockler_small"
+		texturefile = "gfx/interface/ideas/idea_stockler_small.dds"
+	}
+
+	        spriteType = {
+		name = "GFX_idea_por_taborda_small"
+		texturefile = "gfx/interface/ideas/idea_taborda_small.dds"
+	}
+
+	        spriteType = {
+		name = "GFX_idea_por_freire_small"
+		texturefile = "gfx/interface/ideas/idea_freire_small.dds"
+	}
+
+
+
+
+
+
+
+
+
+
+
         spriteType = {
 		name = "GFX_idea_han_georgfriedrichvonmartens_small"
 		texturefile = "gfx/interface/ideas/idea_georgfriedrichvonmartens_small.dds"
+	}
+	        spriteType = {
+		name = "GFX_idea_fra_lucienbonaparte_small"
+		texturefile = "gfx/interface/ideas/idea_lucienbonaparte_small.dds"
 	}
 	        spriteType = {
 		name = "GFX_idea_spm_josephdemaistre_small"
@@ -1971,14 +2160,103 @@ spriteTypes = {
 		name = "GFX_idea_fra_barthelemy_small"
 		texturefile = "gfx/interface/ideas/idea_barthelemy_small.dds"
 	}
+		        spriteType = {
+		name = "GFX_idea_rus_igelstrom_small"
+		texturefile = "gfx/interface/ideas/idea_igelstrom_small.dds"
+	}
+			        spriteType = {
+		name = "GFX_idea_rus_potocki_small"
+		texturefile = "gfx/interface/ideas/idea_potocki_small.dds"
+	}
 
 
+			spriteType = {
+		name = "GFX_idea_fra_nicolas_small"
+		texturefile = "gfx/interface/ideas/idea_nicolas_small.dds"
+	}
+			spriteType = {
+		name = "GFX_idea_fra_louis_small"
+		texturefile = "gfx/interface/ideas/idea_louis_small.dds"
+	}
+				spriteType = {
+		name = "GFX_idea_fra_napoleon_cheif_small"
+		texturefile = "gfx/interface/ideas/idea_napoleon_cheif_small.dds"
+	}
+					spriteType = {
+		name = "GFX_idea_fra_napoleon_command_small"
+		texturefile = "gfx/interface/ideas/idea_napoleon_command_small.dds"
+	}
 
-
+		    spriteType = {
+		name = "GFX_portrait_tts_antonio_large"
+		texturefile = "gfx/leaders/TTS/portrait_antonio_large.dds"
+	}
+			    spriteType = {
+		name = "GFX_idea_tts_antonio_small"
+		texturefile = "gfx/interface/ideas/idea_antonio_small.dds"
+	}
+				    spriteType = {
+		name = "GFX_portrait_tts_gaetano_large"
+		texturefile = "gfx/leaders/TTS/portrait_gaetano_large.dds"
+	}
+			    spriteType = {
+		name = "GFX_idea_tts_gaetano_small"
+		texturefile = "gfx/interface/ideas/idea_gaetano_small.dds"
+	}
+				    spriteType = {
+		name = "GFX_portrait_tts_maria2_large"
+		texturefile = "gfx/leaders/TTS/portrait_maria2_large.dds"
+	}
+			    spriteType = {
+		name = "GFX_idea_tts_maria2_small"
+		texturefile = "gfx/interface/ideas/idea_maria2_small.dds"
+	}
 
         spriteType = {
 		name = "GFX_idea_tts_luigidemedici_small"
 		texturefile = "gfx/interface/ideas/idea_luigidemedici_small.dds"
+	}
+
+
+	        spriteType = {
+		name = "GFX_idea_tts_damas_small"
+		texturefile = "gfx/interface/ideas/idea_damas_small.dds"
+	}
+	        spriteType = {
+		name = "GFX_idea_tts_leopoldsalerno_small"
+		texturefile = "gfx/interface/ideas/idea_leopoldsalerno_small.dds"
+	}
+	        spriteType = {
+		name = "GFX_idea_tts_chetta_small"
+		texturefile = "gfx/interface/ideas/idea_chetta_small.dds"
+	}
+	        spriteType = {
+		name = "GFX_idea_tts_paoli_small"
+		texturefile = "gfx/interface/ideas/idea_paoli_small.dds"
+	}
+	        spriteType = {
+		name = "GFX_idea_tts_bentinck_small"
+		texturefile = "gfx/interface/ideas/idea_bentinck_small.dds"
+	}
+	        spriteType = {
+		name = "GFX_idea_tts_raffo_small"
+		texturefile = "gfx/interface/ideas/idea_raffo_small.dds"
+	}
+	        spriteType = {
+		name = "GFX_idea_tts_ruffo_small"
+		texturefile = "gfx/interface/ideas/idea_ruffo_small.dds"
+	}
+	        spriteType = {
+		name = "GFX_idea_tts_rossi_small"
+		texturefile = "gfx/interface/ideas/idea_rossi_small.dds"
+	}
+	        spriteType = {
+		name = "GFX_idea_tts_rusca_small"
+		texturefile = "gfx/interface/ideas/idea_rusca_small.dds"
+	}
+	        spriteType = {
+		name = "GFX_idea_tts_rinaldi_small"
+		texturefile = "gfx/interface/ideas/idea_rinaldi_small.dds"
 	}
 	        spriteType = {
 		name = "GFX_idea_aus_aloysvon_small"
@@ -2185,6 +2463,14 @@ spriteTypes = {
 		name = "GFX_idea_bay_montgelas_small"
 		texturefile = "gfx/interface/ideas/idea_montgelas_small.dds"
 	}
+						        spriteType = {
+		name = "GFX_idea_bay_drumpfi_small"
+		texturefile = "gfx/interface/ideas/idea_drumpfi_small.dds"
+	}
+						        spriteType = {
+		name = "GFX_idea_bay_drumpfii_small"
+		texturefile = "gfx/interface/ideas/idea_drumpfii_small.dds"
+	}
 
 
 						        spriteType = {
@@ -2247,12 +2533,12 @@ spriteTypes = {
 		texturefile = "gfx/leaders/SWE/portrait_johann_large.dds"
 	}
 	        spriteType = {
-		name = "GFX_portrait_mod_karl_large"
-		texturefile = "gfx/leaders/MOD/portrait_karl_large.dds"
+		name = "GFX_portrait_ita_karl_large"
+		texturefile = "gfx/leaders/ITA/portrait_karl_large.dds"
 	}
 	        spriteType = {
-		name = "GFX_portrait_mod_maria_large"
-		texturefile = "gfx/leaders/MOD/portrait_maria_large.dds"
+		name = "GFX_portrait_ita_maria_large"
+		texturefile = "gfx/leaders/ITA/portrait_maria_large.dds"
 	}
 	        spriteType = {
 		name = "GFX_portrait_aus_jozsef_large"
@@ -2486,8 +2772,8 @@ spriteTypes = {
 		texturefile = "gfx/leaders/USA/portrait_andrewjackson_large.dds"
 	}
         spriteType = {
-		name = "GFX_portrait_cou_petervonbiron_large"
-		texturefile = "gfx/leaders/COU/portrait_petervonbiron_large.dds"
+		name = "GFX_portrait_lat_petervonbiron_large"
+		texturefile = "gfx/leaders/LAT/portrait_petervonbiron_large.dds"
 	}
 	        spriteType = {
 		name = "GFX_portrait_swe_adler_large"
@@ -2837,20 +3123,20 @@ spriteTypes = {
 		texturefile = "gfx/leaders/HUN/portrait_ferdinandihun_large.dds"
 	}
         spriteType = {
-		name = "GFX_portrait_boh_josephiiboh_large"
-		texturefile = "gfx/leaders/BOH/portrait_josephiiboh_large.dds"
+		name = "GFX_portrait_cze_josephiicze_large"
+		texturefile = "gfx/leaders/CZE/portrait_josephiicze_large.dds"
 	}
         spriteType = {
-		name = "GFX_portrait_boh_leopoldiiboh_large"
-		texturefile = "gfx/leaders/BOH/portrait_leopoldiiboh_large.dds"
+		name = "GFX_portrait_cze_leopoldiicze_large"
+		texturefile = "gfx/leaders/CZE/portrait_leopoldiicze_large.dds"
 	}
         spriteType = {
-		name = "GFX_portrait_boh_francisiiboh_large"
-		texturefile = "gfx/leaders/BOH/portrait_francisiiboh_large.dds"
+		name = "GFX_portrait_cze_francisiicze_large"
+		texturefile = "gfx/leaders/CZE/portrait_francisiicze_large.dds"
 	}
         spriteType = {
-		name = "GFX_portrait_boh_ferdinandiboh_large"
-		texturefile = "gfx/leaders/BOH/portrait_ferdinandiboh_large.dds"
+		name = "GFX_portrait_cze_ferdinandicze_large"
+		texturefile = "gfx/leaders/CZE/portrait_ferdinandicze_large.dds"
 	}
         spriteType = {
 		name = "GFX_portrait_mtu_josephiimtu_large"
@@ -2973,6 +3259,15 @@ spriteTypes = {
 
 
 
+
+	spriteType = {
+		name = "GFX_news_event_france_empire_1"
+		texturefile = "gfx/event_pictures/news_event_france_empire_1.dds"
+	}
+	spriteType = {
+		name = "GFX_napoleonpfp"
+		texturefile = "gfx/event_pictures/napoleonpfp.dds"
+	}
 
 
 	spriteType = {
@@ -3274,8 +3569,8 @@ spriteTypes = {
 		texturefile = "gfx/leaders/POL/portrait_frederickaugustusipol_large.dds"
 	}
         spriteType = {
-		name = "GFX_portrait_cou_frederickaugustusi_large"
-		texturefile = "gfx/leaders/COU/portrait_frederickaugustusi_large.dds"
+		name = "GFX_portrait_lat_frederickaugustusi_large"
+		texturefile = "gfx/leaders/LAT/portrait_frederickaugustusi_large.dds"
 	}
         spriteType = {
 		name = "GFX_portrait_lit_frederickaugustusi_large"
@@ -3395,10 +3690,6 @@ spriteTypes = {
 		texturefile = "gfx/leaders/RUS/portrait_putin_large.dds"
 	}
 	spriteType = {
-		name = "GFX_idi_amin"
-		texturefile = "gfx/event_pictures/idi_amin_uganda.dds"
-	}
-	spriteType = {
 		name = "GFX_idea_russian_flag_paris"
 		texturefile = "gfx/interface/ideas/russian_flag_paris.dds"
 	}
@@ -3406,15 +3697,7 @@ spriteTypes = {
 		name = "GFX_idea_france_metric_system"
 		texturefile = "gfx/interface/ideas/france_metric_system.dds"
 	}
-	spriteType = {
-		name = "GFX_idea_louis_xvii"
-		texturefile = "gfx/interface/ideas/VND/louis_xvii.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_brazil_portugal_trade"
-		texturefile = "gfx/interface/ideas/brazil_portugal_trade.dds"
-	}
-	spriteType = {
+		spriteType = {
 		name = "GFX_idea_louisxvi"
 		texturefile = "gfx/interface/ideas/louisxvi.dds"
 	}
@@ -3565,109 +3848,5 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_HUN_portrait_gyorgy_banffy"
 		texturefile = "gfx/leaders/HUN/portrait_gyorgy_banffy.dds"
-	}
-	spriteType = {
-		name = "GFX_lafayette_event_image"
-		texturefile = "gfx/event_pictures/report_event_lafayette.dds"
-	}
-	spriteType = {
-		name = "GFX_return_palace_event_image"
-		texturefile = "gfx/event_pictures/report_event_return_vendee.dds"
-	}
-	spriteType = {
-		name = "GFX_louis_truma_event_image"
-		texturefile = "gfx/event_pictures/report_event_louis_truma.dds"
-	}
-	spriteType = {
-		name = "GFX_federalist_revolt_event_image"
-		texturefile = "gfx/event_pictures/report_event_federalist_revolt.dds"
-	}
-	spriteType = {
-		name = "GFX_regent_event_image"
-		texturefile = "gfx/event_pictures/report_event_regent.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_army_destoryed"
-		texturefile = "gfx/interface/ideas/VND/army_destoryed.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_economy_dead"
-		texturefile = "gfx/interface/ideas/VND/economy_dead.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_political_unstable"
-		texturefile = "gfx/interface/ideas/VND/political_unstable.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_louis_xvii"
-		texturefile = "gfx/interface/ideas/VND/louis_xvii.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_louis_xvii_absolute"
-		texturefile = "gfx/interface/ideas/VND/louis_xvii_absolute.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_french_eco"
-		texturefile = "gfx/interface/ideas/VND/french_eco.dds"
-	}
-	spriteType = {
-		name = "GFX_lafayette_regent_event_image"
-		texturefile = "gfx/event_pictures/report_event_lafayette_regent.dds"
-	}
-	spriteType = {
-		name = "GFX_lafayette_oath_event_image"
-		texturefile = "gfx/event_pictures/report_event_lafayette_oath.dds"
-	}
-	spriteType = {
-		name = "GFX_vnd_department_event_image"
-		texturefile = "gfx/event_pictures/report_event_vnd_department.dds"
-	}
-	spriteType = {
-		name = "GFX_salt_tax_event_image"
-		texturefile = "gfx/event_pictures/report_event_salt_tax.dds"
-	}
-	spriteType = {
-		name = "GFX_to_arm_event_image"
-		texturefile = "gfx/event_pictures/report_event_to_arm.dds"
-	}
-	spriteType = {
-		name = "GFX_noble_argue_event_image"
-		texturefile = "gfx/event_pictures/report_event_noble_argue.dds"
-	}
-	spriteType = {
-		name = "GFX_lafayette_liberal_event_image"
-		texturefile = "gfx/event_pictures/report_event_lafayette_liberal.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_emperor_kokaku"
-		texturefile = "gfx/interface/ideas/JAP/emperor_kokaku.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_outside_europe"
-		texturefile = "gfx/interface/ideas/ENG/force_outside_europe.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_america_patriot"
-		texturefile = "gfx/interface/ideas/USA/america_patriot.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_america_revolution"
-		texturefile = "gfx/interface/ideas/USA/america_1776.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_counter_revolution"
-		texturefile = "gfx/interface/ideas/VND/GFX_counter_revolution.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_poland_bad_army"
-		texturefile = "gfx/interface/ideas/POL/GFX_poland_bad_army.dds"
-	}
-	spriteType = {
-		name = "GFX_news_coalition_first_win"
-		texturefile = "gfx/event_pictures/news_event_coalition_first_win.dds"
-	}
-	spriteType = {
-		name = "GFX_lafayette_speech_event_image"
-		texturefile = "gfx/event_pictures/report_event_lafayette_speech.dds"
 	}
 }

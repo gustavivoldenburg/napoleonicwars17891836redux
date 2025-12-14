@@ -1,4 +1,532 @@
 characters={
+						TTS_marzio={
+		name=TTS_CHARACTER_MARZIO
+		portraits={
+                        army={
+				small="GFX_idea_tts_marzio_small"
+			}
+			civilian = {
+				large = GFX_portrait_tts_marzio_large
+			}
+		}
+		advisor={
+                        can_be_fired = no
+			slot = political_advisor
+			idea_token = TTS_marzio
+			allowed  = {
+				original_tag  = TTS
+			}
+			available  = {
+		        }
+			traits  = {
+				rothschild_banker
+			}
+			on_add  = {
+			}
+			do_effect  = {
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+	}
+							TTS_cadoudal={
+		name=TTS_CHARACTER_CADOUDAL
+		portraits={
+                        army={
+				small="GFX_idea_tts_cadoudal_small"
+			}
+			civilian = {
+				large = GFX_portrait_tts_cadoudal_large
+			}
+		}
+		advisor={
+                        can_be_fired = no
+			slot = political_advisor
+			idea_token = TTS_cadoudal
+			allowed  = {
+				original_tag  = TTS
+			}
+			available  = {
+		        }
+			traits  = {
+				rothschild_banker
+			}
+			on_add  = {
+			}
+			do_effect  = {
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+	}
+							TTS_pichegru={
+		name=TTS_CHARACTER_PICHEGRU
+		portraits={
+                        army={
+				small="GFX_idea_tts_pichegru_small"
+			}
+			civilian = {
+				large = GFX_portrait_tts_pichegru_large
+			}
+		}
+		advisor={
+                        can_be_fired = no
+			slot = political_advisor
+			idea_token = TTS_pichegru
+			allowed  = {
+				original_tag  = TTS
+			}
+			available  = {
+		        }
+			traits  = {
+				rothschild_banker
+			}
+			on_add  = {
+			}
+			do_effect  = {
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+	}
+						TTS_damas={
+		name=TTS_CHARACTER_DAMAS
+		portraits={
+                        army={
+				small="GFX_idea_tts_damas_small"
+			}
+			civilian = {
+				large = GFX_portrait_tts_damas_large
+			}
+		}
+		advisor={
+                        can_be_fired = no
+			slot = political_advisor
+			idea_token = TTS_damas
+			allowed  = {
+				original_tag  = TTS
+			}
+			available  = {
+		        }
+			traits  = {
+				rothschild_banker
+			}
+			on_add  = {
+			}
+			do_effect  = {
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+	}
+							TTS_leopoldsalerno={
+		name=TTS_CHARACTER_LEOPOLDSALERNO
+		portraits={
+                        army={
+				small="GFX_idea_tts_leopoldsalerno_small"
+			}
+			civilian = {
+				large = GFX_portrait_tts_leopoldsalerno_large
+			}
+		}
+		advisor={
+                        can_be_fired = no
+			slot = political_advisor
+			idea_token = TTS_leopoldsalerno
+			allowed  = {
+				original_tag  = TTS
+			}
+			available  = {
+		        }
+			traits  = {
+				rothschild_banker
+			}
+			on_add  = {
+			}
+			do_effect  = {
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+	}
+							TTS_chetta={
+		name=TTS_CHARACTER_CHETTA
+		portraits={
+                        army={
+				small="GFX_idea_tts_chetta_small"
+			}
+			civilian = {
+				large = GFX_portrait_tts_chetta_large
+			}
+		}
+		advisor={
+                        can_be_fired = no
+			slot = political_advisor
+			idea_token = TTS_chetta
+			allowed  = {
+				original_tag  = TTS
+			}
+			available  = {
+		        }
+			traits  = {
+				rothschild_banker
+			}
+			on_add  = {
+			}
+			do_effect  = {
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+	}
+							TTS_paoli={
+		name=TTS_CHARACTER_PAOLI
+		portraits={
+                        army={
+				small="GFX_idea_tts_paoli_small"
+			}
+			civilian = {
+				large = GFX_portrait_tts_paoli_large
+			}
+		}
+		advisor={
+                        can_be_fired = no
+			slot = political_advisor
+			idea_token = TTS_paoli
+			allowed  = {
+				original_tag  = TTS
+			}
+			available  = {
+		        }
+			traits  = {
+				rothschild_banker
+			}
+			on_add  = {
+			}
+			do_effect  = {
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+	}
+							TTS_bentinck={
+		name=TTS_CHARACTER_BENTINCK
+		portraits={
+                        army={
+				small="GFX_idea_tts_bentinck_small"
+			}
+			civilian = {
+				large = GFX_portrait_tts_bentinck_large
+			}
+		}
+		advisor={
+                        can_be_fired = no
+			slot = political_advisor
+			idea_token = TTS_bentinck
+			allowed  = {
+				original_tag  = TTS
+			}
+			available  = {
+		        }
+			traits  = {
+				rothschild_banker
+			}
+			on_add  = {
+			}
+			do_effect  = {
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+	}
+							TTS_raffo={
+		name=TTS_CHARACTER_RAFFO
+		portraits={
+                        army={
+				small="GFX_idea_tts_raffo_small"
+			}
+			civilian = {
+				large = GFX_portrait_tts_raffo_large
+			}
+		}
+		advisor={
+                        can_be_fired = no
+			slot = political_advisor
+			idea_token = TTS_raffo
+			allowed  = {
+				original_tag  = TTS
+			}
+			available  = {
+		        }
+			traits  = {
+				rothschild_banker
+			}
+			on_add  = {
+			}
+			do_effect  = {
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+	}
+							TTS_ruffo={
+		name=TTS_CHARACTER_RUFFO
+		portraits={
+                        army={
+				small="GFX_idea_tts_ruffo_small"
+			}
+			civilian = {
+				large = GFX_portrait_tts_ruffo_large
+			}
+		}
+		advisor={
+                        can_be_fired = no
+			slot = political_advisor
+			idea_token = TTS_ruffo
+			allowed  = {
+				original_tag  = TTS
+			}
+			available  = {
+		        }
+			traits  = {
+				rothschild_banker
+			}
+			on_add  = {
+			}
+			do_effect  = {
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+	}
+							TTS_rossi={
+		name=TTS_CHARACTER_ROSSI
+		portraits={
+                        army={
+				small="GFX_idea_tts_rossi_small"
+			}
+			civilian = {
+				large = GFX_portrait_tts_rossi_large
+			}
+		}
+		advisor={
+                        can_be_fired = no
+			slot = political_advisor
+			idea_token = TTS_rossi
+			allowed  = {
+				original_tag  = TTS
+			}
+			available  = {
+		        }
+			traits  = {
+				rothschild_banker
+			}
+			on_add  = {
+			}
+			do_effect  = {
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+	}
+							TTS_rusca={
+		name=TTS_CHARACTER_RUSCA
+		portraits={
+                        army={
+				small="GFX_idea_tts_rusca_small"
+			}
+			civilian = {
+				large = GFX_portrait_tts_rusca_large
+			}
+		}
+		advisor={
+                        can_be_fired = no
+			slot = political_advisor
+			idea_token = TTS_rusca
+			allowed  = {
+				original_tag  = TTS
+			}
+			available  = {
+		        }
+			traits  = {
+				rothschild_banker
+			}
+			on_add  = {
+			}
+			do_effect  = {
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+	}
+							TTS_rinaldi={
+		name=TTS_CHARACTER_RINALDI
+		portraits={
+                        army={
+				small="GFX_idea_tts_rinaldi_small"
+			}
+			civilian = {
+				large = GFX_portrait_tts_rinaldi_large
+			}
+		}
+		advisor={
+                        can_be_fired = no
+			slot = political_advisor
+			idea_token = TTS_rinaldi
+			allowed  = {
+				original_tag  = TTS
+			}
+			available  = {
+		        }
+			traits  = {
+				rothschild_banker
+			}
+			on_add  = {
+			}
+			do_effect  = {
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+		TTS_vito={
+		name=TTS_CHARACTER_VITO
+		portraits={
+			army={
+				large=GFX_portrait_tts_vito_large
+				small=GFX_portrait_tts_vito_small
+			}
+		}
+		corps_commander={
+                visible={}
+			skill=3
+			attack_skill=1
+			defense_skill=5
+			planning_skill=2
+			logistics_skill=4
+			legacy_id=0
+		}
+	}
+			TTS_diavolo={
+		name=TTS_CHARACTER_DIAVOLO
+		portraits={
+			army={
+				large=GFX_portrait_tts_diavolo_large
+				small=GFX_portrait_tts_diavolo_small
+			}
+		}
+		corps_commander={
+                visible={}
+			skill=3
+			attack_skill=1
+			defense_skill=5
+			planning_skill=2
+			logistics_skill=4
+			legacy_id=0
+		}
+	}
+			TTS_poz={
+		name=TTS_CHARACTER_POZ
+		portraits={
+			army={
+				large=GFX_portrait_tts_poz_large
+				small=GFX_portrait_tts_poz_small
+			}
+		}
+		corps_commander={
+                visible={TTS={has_country_flag=naples_has_annexed_corsica}}
+			skill=3
+			attack_skill=1
+			defense_skill=5
+			planning_skill=2
+			logistics_skill=4
+			legacy_id=0
+		}
+	}
+			TTS_carracosa={
+		name=TTS_CHARACTER_CARRACOSA
+		portraits={
+			army={
+				large=GFX_portrait_tts_carracosa_large
+				small=GFX_portrait_tts_carracosa_small
+			}
+		}
+		corps_commander={
+                visible={NOT={TTS={has_country_flag=liberals_naples_treason}}}
+			skill=4
+			attack_skill=2
+			defense_skill=1
+			planning_skill=5
+			logistics_skill=3
+			legacy_id=0
+		}
+	}
+			TTS_pepe={
+		name=TTS_CHARACTER_PEPE
+		portraits={
+			army={
+				large=GFX_portrait_tts_pepe_large
+				small=GFX_portrait_tts_pepe_small
+			}
+		}
+		corps_commander={
+                visible={NOT={TTS={has_country_flag=liberals_naples_treason}}}
+			skill=2
+			attack_skill=5
+			defense_skill=4
+			planning_skill=1
+			logistics_skill=3
+			legacy_id=0
+		}
+	}
+			TTS_colletta={
+		name=TTS_CHARACTER_COLLETTA
+		portraits={
+			army={
+				large=GFX_portrait_tts_colletta_large
+				small=GFX_portrait_tts_colletta_small
+			}
+		}
+		corps_commander={
+                visible={NOT={TTS={has_country_flag=liberals_naples_treason}}}
+			skill=5
+			attack_skill=2
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+
+
+
+
+
+
 						TTS_rothschildiiii={
 		name=TTS_CHARACTER_ROTHSCHILDIIII
 		portraits={
@@ -68,7 +596,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=absolute_monarchy
+			ideology=despotism
 			traits={Bourbon-Two-Sicilies}
 			desc = TTS_FERDINANDI_DESC
 			expire="1797.1.1"
@@ -102,5 +630,104 @@ characters={
 			expire="1797.1.1"
 		}
 }
+TTS_antonio={
+		name=TTS_CHARACTER_ANTONIO
+		portraits={
+                        army={
+				small="GFX_idea_tts_antonio_small"
+			}
+			civilian = {
+				large = GFX_portrait_tts_antonio_large
+			}
+		}
+		advisor={
+                        can_be_fired = no
+			slot = political_advisor
+			idea_token = TTS_antonio
+			allowed  = {
+				original_tag  = TTS
+			}
+			available  = {
+		        }
+			traits  = {
+				economic_philosopher
+			}
+			on_add  = {
+			}
+			do_effect  = {
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+			}
+		}
+	
+
+
+TTS_gaetano={
+		name=TTS_CHARACTER_GAETANO
+		portraits={
+                        army={
+				small="GFX_idea_tts_gaetano_small"
+			}
+			civilian = {
+				large = GFX_portrait_tts_gaetano_large
+			}
+		}
+		advisor={
+                        can_be_fired = no
+			slot = political_advisor
+			idea_token = TTS_geatano
+			allowed  = {
+				original_tag  = TTS
+			}
+			available  = {
+		        }
+			traits  = {
+				italian_philosopher
+			}
+			on_add  = {
+			}
+			do_effect  = {
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+			}
+		}
+	
+	
+
+	TTS_maria2={
+		name=TTS_CHARACTER_MARIA2
+		portraits={
+                        army={
+				small="GFX_idea_tts_maria2_small"
+			}
+			civilian = {
+				large = GFX_portrait_tts_maria2_large
+			}
+		}
+		advisor={
+                        can_be_fired = no
+			slot = political_advisor
+			idea_token = TTS_maria2
+			allowed  = {
+				original_tag  = TTS
+			}
+			available  = {
+		        }
+			traits  = {
+				queen_maria
+			}
+			on_add  = {
+			}
+			do_effect  = {
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+			}
+		}
 }
 

@@ -39,7 +39,7 @@ has_soviet_tribute = {
 }
 
 is_state_japan_wants = {
-	 OR = {
+	OR = {
 		state = 743 # Qingdao
 		state = 608 # Beijing
 		state = 326 # Hong Kong
@@ -48,5 +48,6 @@ is_state_japan_wants = {
 		state = 591 # Hainan
 		state = 597 # Shandong
 		state = 614 # Hebei
+		state = 1038 # Jinan
 	}
 }

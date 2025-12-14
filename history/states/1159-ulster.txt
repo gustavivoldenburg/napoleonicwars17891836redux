@@ -24,7 +24,7 @@ state={
 			add_core_of = SAX
 			remove_core_of = AUS
 			remove_core_of = CZE
-			remove_core_of = BOH
+			remove_core_of = CZE
 			remove_core_of = ULU
 
 		}
@@ -65,7 +65,7 @@ state={
 	}
 
 	provinces={
-		478 11415 13366 13399 13880 14332 14335 
+		478 11415 13366 13386 13399 13880  
 	}
 	manpower=600000
 	buildings_max_level_factor=1.000

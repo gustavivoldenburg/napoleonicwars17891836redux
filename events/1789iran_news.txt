@@ -8,7 +8,7 @@ add_namespace = per_1789_news
 	id = per_1789_news.1
 	title = "The extinction of the Afsharid dynasty"
 	desc = per_1789_news.1.d
-	picture = GFX_idi_amin_uganda
+	picture = GFX_news_event_france_empire_1
 	
 	major = yes
 
@@ -26,7 +26,7 @@ add_namespace = per_1789_news
 	id = per_1789_news.2
 	title = "The extinction of the Zand dynasty"
 	desc = per_1789_news.2.d
-	picture = GFX_idi_amin_uganda
+	picture = GFX_news_event_france_empire_1
 	
 	major = yes
 

@@ -1,4 +1,54 @@
 capital = 9
+set_technology = {
+	infantry_weapons = 1
+	transport = 1
+	early_submarine = 1
+        gw_artillery = 1 basic_train = 1
+}
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1789.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 50
+	neutrality = 50
+}
+1600.1.1 = {
+set_cosmetic_tag = BOH_AUS #austrian puppet
+}
+1805.1.1 = {
+set_cosmetic_tag = BOH #independent
+}
+1789.1.1 = {
+recruit_character=CZE_josephiicze
+recruit_character=CZE_leopoldiicze
+recruit_character=CZE_francisiicze
+recruit_character=CZE_ferdinandicze
+promote_character=CZE_josephiicze
+}
+1800.1.1 = {
+promote_character=CZE_francisiicze
+retire_character=CZE_leopoldiicze
+retire_character=CZE_josephiicze
+}
+1836.1.1 = {
+promote_character=CZE_ferdinandicze
+retire_character=CZE_francisiicze
+}
+1849.1.1 = {
+retire_character=CZE_ferdinandicze
+}
+1789.1.1 = {
+		if = {
+		limit = { has_start_date < 1801.1.1 }
+CZE={add_manpower=-100000}
+}
+}
+CZE={set_cosmetic_tag=BOH}
+set_party_name = { ideology = neutrality long_name = HUN_legitimists_party_long name = HUN_legitimists_party }
 1936.1.1 = {
 if = {
 	limit = {
@@ -46,11 +96,6 @@ set_technology = {
 	interwar_antiair = 1
 	fuel_silos = 1
 	basic_train = 1
-}
-}
-set_technology = {
-	infantry_weapons = 1
-
 }
 recruit_character = CZE_karl_albrecht
 recruit_character = CZE_edvard_benesh
@@ -116,34 +161,6 @@ set_popularities = {
 	neutrality = 20
 	fascism = 5
 	communism = 10
-}
-1950.1.1 = {
-set_politics = {
-	ruling_party = communism
-	last_election = "1935.9.8"
-	election_frequency = 48
-	elections_allowed = no
-}
-set_popularities = {
-	democratic = 41
-	fascism = 6
-	communism = 45
-	neutrality = 8
-}
-}
-1993.1.1 = {
-set_politics = {
-	ruling_party = democratic
-	last_election = "1993.9.8"
-	election_frequency = 48
-	elections_allowed = no
-}
-set_popularities = {
-	democratic = 79
-	fascism = 7
-	communism = 7
-	neutrality = 7
-}
 }
 if = {
 	limit = {
@@ -257,4 +274,4 @@ if = {
 		CZE_fortification_focus
 	}
 }
-
+}

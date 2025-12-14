@@ -18,7 +18,7 @@ state={
                 add_core_of = PRE
                 remove_core_of = AUS
                 remove_core_of = CZE
-                remove_core_of = BOH
+                remove_core_of = CZE
                 remove_core_of = SIL
 		}
 												1945.1.1 = {
@@ -64,6 +64,6 @@ state={
 	}
 	manpower=900000
 	buildings_max_level_factor=1.000
-	state_category=rural
+	state_category=city
 	local_supplies=0.000
 }

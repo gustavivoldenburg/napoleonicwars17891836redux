@@ -1,4 +1,30 @@
 characters={
+	NAP_ciaia={
+		name=NAP_CHARACTER_CIAIA
+		portraits={
+			civilian={
+				large="GFX_portrait_nap_ciaia_large"
+			}
+		}
+		country_leader={
+			ideology=liberalism
+			desc = NAP_CIAIA_DESC
+			expire="1797.1.1"
+		}
+}
+	NAP_lauberg={
+		name=NAP_CHARACTER_LAUBERG
+		portraits={
+			civilian={
+				large="GFX_portrait_nap_lauberg_large"
+			}
+		}
+		country_leader={
+			ideology=liberalism
+			desc = NAP_LAUBERG_DESC
+			expire="1797.1.1"
+		}
+}
 	NAP_josephbonaparte={
 		name=NAP_CHARACTER_JOSEPHBONAPARTE
 		portraits={

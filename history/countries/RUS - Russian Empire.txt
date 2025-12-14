@@ -46,7 +46,7 @@ GAN={
 		type = puppet_wargoal_focus
 	}
 }
-BAK={
+AZR={
 		declare_war_on = {
 		target = RUS
 		type = puppet_wargoal_focus
@@ -58,7 +58,7 @@ BAK={
 			if = {
 		limit = { has_start_date < 1809.1.1 }
     set_autonomy = {
-        target = WAL
+        target = ROM
         autonomous_state = autonomy_dominion
         freedom_level = 0.35
 	}
@@ -67,7 +67,7 @@ BAK={
         autonomous_state = autonomy_dominion
         freedom_level = 0.35
 	}
-WAL={set_cosmetic_tag=WAL_RUS
+ROM={set_cosmetic_tag=WAL_RUS
 }
 MOL={set_cosmetic_tag=MOL_RUS
 }
@@ -77,7 +77,7 @@ MOL={set_cosmetic_tag=MOL_RUS
 			if = {
 		limit = { has_start_date < 1856.1.1 }
     set_autonomy = {
-        target = WAL
+        target = ROM
         autonomous_state = autonomy_dominion
         freedom_level = 0.35
 	}
@@ -86,7 +86,7 @@ MOL={set_cosmetic_tag=MOL_RUS
         autonomous_state = autonomy_dominion
         freedom_level = 0.35
 	}
-WAL={set_cosmetic_tag=WAL_RUS
+ROM={set_cosmetic_tag=WAL_RUS
 }
 MOL={set_cosmetic_tag=MOL_RUS
 }
@@ -172,7 +172,7 @@ TUR={
 1789.1.1 = {
 		if = {
 		limit = { has_start_date < 1790.1.1 }
-WAL={
+ROM={
 	declare_war_on = {
 		target = RUS
 		type = annex_everything
@@ -430,6 +430,18 @@ recruit_character=RUS_bagration
 retire_character=RUS_bagration
 }
 1789.1.1 = {
+recruit_character=RUS_igelstrom
+}
+1823.1.1 = {
+retire_character=RUS_igelstrom
+}
+1789.1.1 = {
+recruit_character=RUS_potocki
+}
+1806.1.1 = {
+retire_character=RUS_potocki
+}
+1789.1.1 = {
 recruit_character=RUS_suvorov
 }
 1801.1.1 = {
@@ -642,9 +654,49 @@ set_popularities = {
 	}
 }
 }
+1803.1.1 = {
+		if = {
+		limit = { has_start_date < 1837.1.1 }
+    set_autonomy = {
+        target = MIG
+        autonomous_state = autonomy_protectorate
+        freedom_level = 0.35
+	}
+}
+}
+1811.1.1 = {
+		if = {
+		limit = { has_start_date < 1837.1.1 }
+    set_autonomy = {
+        target = ABK
+        autonomous_state = autonomy_protectorate
+        freedom_level = 0.35
+	}
+}
+}
+1810.1.1 = {
+		if = {
+		limit = { has_start_date < 1826.1.1 }
+    set_autonomy = {
+        target = GUR
+        autonomous_state = autonomy_protectorate
+        freedom_level = 0.35
+	}
+}
+}
+1804.1.1 = {
+		if = {
+		limit = { has_start_date < 1837.1.1 }
+    set_autonomy = {
+        target = IME
+        autonomous_state = autonomy_protectorate
+        freedom_level = 0.35
+	}
+}
+}
 1789.1.1 = {
 			if = {
-		limit = {has_start_date > 1788.1.1 has_start_date < 1800.1.1 }
+		limit = {has_start_date < 1800.1.1 }
 add_ideas = {
 	russian_jewry alleged_backwardness
 }
@@ -652,10 +704,16 @@ add_ideas = {
 }
 1815.1.1 = {
 			if = {
-		limit = {has_start_date > 1814.1.1 has_start_date < 1919.01.01 }
+		limit = {has_start_date < 1837.1.1 }
 add_ideas = {
 	russians_in_paris
 }
+}
+}
+1812.1.1 = {
+			if = {
+		limit = {has_start_date < 1837.1.1 }
+RUS={set_country_flag=rus_has_completed_great_patriotic_army_reform}
 }
 }
 

@@ -2,9 +2,17 @@
 state={
 	id=180
 	name="STATE_180"
-
+	resources = {
+		coal = 2 #initial distribution
+	}
 	history={
 		owner = POR
+				1808.1.1 = {
+	    owner=FRA
+		}
+		1809.1.1 = {
+	    owner=POR
+		}
 		victory_points = {
 			9817 20 
 		}
@@ -13,12 +21,6 @@ state={
 		}
 		victory_points = {
 			13300 2 
-		}
-		victory_points = {
-			724 3 
-		}
-		victory_points = {
-			13299 2 
 		}
 		buildings = {
 			infrastructure = 3
@@ -35,9 +37,9 @@ state={
 	}
 
 	provinces={
-		724 877 3892 6921 6941 9817 11673 13297 13298 13299 13300 
+	6921 9817 11673 13300
 	}
-	manpower=2000000
+	manpower=1000000
 	buildings_max_level_factor=1.000
 	state_category=city
 	local_supplies=0.000

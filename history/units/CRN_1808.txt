@@ -1,0 +1,34 @@
+﻿division_template = {
+	name = "Carniolan Division"
+
+	division_names_group = CRN_Inf_01
+
+regiments = {
+        infantry = { x = 0 y = 0 }
+        infantry = { x = 1 y = 0 }
+        infantry = { x = 2 y = 0 }
+        infantry = { x = 0 y = 1 }
+    }
+	priority = 2
+}
+units = {
+	#Carniolan Army
+	division = {
+		name = "Carniolan Division"
+		location = 13843
+		division_template = "Carniolan Division"
+		start_experience_factor = 0.3
+	}
+}
+### Starting Equipment ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "CRN"
+		}
+		requested_factories = 1
+		progress = 0.28
+		efficiency = 100
+	}
+}

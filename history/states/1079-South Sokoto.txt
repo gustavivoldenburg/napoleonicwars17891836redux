@@ -2,34 +2,39 @@ state={
 	id=1079
 	name="STATE_1079"
 	history={
-                owner = ZZZ
-		1899.1.1 = {
+                owner = POR
+		add_core_of=POR
 		victory_points = {
-			2025 1 
+			13275 1
 		}
+		1801.1.1 = {
+		owner = SPR
+		add_core_of = SPR
+		remove_core_of=POR
                 }
-		1900.1.1 = {
-		owner = SOK
-		add_core_of = SOK
-                }
-		1903.1.1 = {
-			owner = ENG
-			controller = ENG
-            add_core_of = NGA
+								1808.1.1 = {
+	    owner=CAT
+		add_core_of=CAT
 		}
-												1961.1.1 = {
-                owner = NGA
-		add_core_of = NGA
-                }
+						1809.1.1 = {
+			controller = SPR
+		}
+		1814.1.1 = {
+		owner=SPR
+		remove_core_of=CAT
+		}
+						buildings = {
+		13275 = {bunker = 2}
+        }
 		buildings = {
-			infrastructure = 0
+			infrastructure = 1
 		}
 	}
 
 	provinces={
-		1932 1992 2025 4889 8021 10820 
+		13275
 	}
-	manpower=5000000
+	manpower=5000
 	buildings_max_level_factor=1.000
 	state_category=pastoral
 	local_supplies=0.000

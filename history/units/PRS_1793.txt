@@ -83,6 +83,15 @@ units = {
 		start_experience_factor = 0.3
 	}
 }
+units = {
+	#Counter Revolutionary Army
+	division = {
+		name = "Counter Revolutionary Division"
+		location = 9642
+		division_template = "Counter Revolutionary Division"
+		start_experience_factor = 0.3
+	}
+}
 ### Starting Equipment ###
 instant_effect = {
 	add_equipment_production = {

@@ -43,15 +43,6 @@ units = {
 		start_experience_factor = 0.3
 	}
 }
-units = {
-	#Swiss Army
-	division = {
-		name = "Swiss Division"
-		location = 663
-		division_template = "Swiss Division"
-		start_experience_factor = 0.3
-	}
-}
 ### Starting Equipment ###
 instant_effect = {
 	add_equipment_production = {

@@ -114,6 +114,15 @@ bookmarks = {
                         america_1789_1815_first_100_focus_92
 			}
 		}
+				POL = {
+                        minor = yes
+			history = OTHER_BLITZKRIEG_DESC
+			ideology = neutrality
+			ideas={
+			}
+			focuses = {
+			}
+		}
 		SPM = {
                         minor = yes
 			history = OTHER_BLITZKRIEG_DESC
@@ -157,6 +166,15 @@ bookmarks = {
 			}
 		}
 		BEL = {
+                        minor = yes
+			history = OTHER_BLITZKRIEG_DESC
+			ideology = neutrality
+			ideas={
+			}
+			focuses = {
+			}
+		}
+		LUX = {
                         minor = yes
 			history = OTHER_BLITZKRIEG_DESC
 			ideology = neutrality

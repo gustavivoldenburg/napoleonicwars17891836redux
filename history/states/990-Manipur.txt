@@ -36,7 +36,7 @@ state={
 			remove_core_of = LBV
 			remove_core_of = VNT
 			remove_core_of = PRM
-			remove_core_of = MOD
+			
 			remove_core_of = MAS
 			remove_core_of = LUC
 

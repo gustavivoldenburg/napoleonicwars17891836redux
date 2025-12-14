@@ -9,11 +9,11 @@ country_event = {
 	id = viennacongress_event.1
 	title = "The Treaty of Fontainebleau"
 	desc = viennacongress_event.1.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {
 original_tag=FRA	
-date > 1814.1.1 date < 1815.1.1
+date > 1814.4.11 date < 1820.1.1
 FRA={owns_state=16}
 or={
 FRA = {surrender_progress > 0.5 }
@@ -25,6 +25,13 @@ fire_only_once = yes
 		name = "Sign the Treaty"
 		ai_chance = { factor = 100 } 
 		news_event = viennacongress_news.1
+FRA={set_country_flag=fontainebleau_has_happened}
+POR={
+country_event = viennacongress_event.20
+}
+SPR={
+country_event = viennacongress_event.21
+}
 		ENG={
 country_event = viennacongress_event.19
 		}
@@ -49,6 +56,7 @@ country_event = viennacongress_event.12
 		SWI={
 country_event = viennacongress_event.13
 country_event = viennacongress_event.17
+country_event = viennacongress_event.25
 		}
 		SPM={
 country_event = viennacongress_event.14
@@ -57,6 +65,10 @@ country_event = viennacongress_event.14
 country_event = viennacongress_event.15
 country_event = viennacongress_event.16
 country_event = viennacongress_event.18
+country_event = viennacongress_event.24
+		}
+		PRE={
+country_event = viennacongress_event.23
 		}
 		every_country = {
   limit = {
@@ -89,6 +101,9 @@ every_state = { #vichy north africa
 FRA={set_country_flag = fontainebleau_flag}
 FRA={set_cosmetic_tag = FRA_ELB}
 FRA={delete_unit = {}}
+VND={
+country_event = viennacongress_event.22
+}
 	}
 }
 
@@ -96,7 +111,7 @@ country_event = {
 	id = viennacongress_event.2
 	title = "The Congress of Vienna"
 	desc = viennacongress_event.2.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -111,7 +126,7 @@ country_event = {
 	id = viennacongress_event.3
 	title = "The Frankfurts Proposals"
 	desc = viennacongress_event.3.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -166,38 +181,35 @@ country_event = {
 	id = viennacongress_event.4
 	title = "The Treaty of Paris (1815)"
 	desc = viennacongress_event.4.d
-	picture = GFX_idi_amin_india
-	is_triggered_only = yes
+	picture = GFX_news_event_france_empire_1
+	#is_triggered_only = yes
+trigger = {
+original_tag=AUS	
+date > 1815.6.18 date < 1820.1.1
+NOT={FRA={controls_province = 13493}}
+FRA={has_country_flag=fontainebleau_has_happened}
+}
 fire_only_once = yes
 	option = { # 
 		name = "The Treaty of Paris (1815)"
 		ai_chance = { factor = 100 } 
     add_political_power=150
 		news_event = viennacongress_news.4
-			every_state = {
-  limit = {
-  PRE={has_war_with=FRA}
-  }
+	SWI={transfer_state = 864}
+		864={add_core_of=SWI}
+		864={remove_core_of=FRA}
 	PRE={
 	transfer_state = 15
 	transfer_state = 24
 	transfer_state = 30
+	transfer_state = 873
+	transfer_state = 988
+	transfer_state = 1112
+		transfer_state = 18
 	}
-			}
-			every_state = {
-  limit = {
-  RUS={has_war_with=FRA}
-  }
 	RUS={
 	transfer_state = 16
-	transfer_state = 18
-	transfer_state = 988
 	}
-			}
-			every_state = {
-  limit = {
-  ENG={has_war_with=FRA}
-  }
 	ENG={
 	transfer_state = 29
 	transfer_state = 785
@@ -206,25 +218,34 @@ fire_only_once = yes
 	transfer_state = 1104
 	transfer_state = 1176
 	}
-			}
-				every_state = {
-  limit = {
-  AUS={has_war_with=FRA}
-  }
     AUS={
 	transfer_state = 20
 	transfer_state = 21
-	transfer_state = 32
 	transfer_state = 1193
 	transfer_state = 1103
-	transfer_state = 17
 	transfer_state = 27
+
+	}
+    BAD={
 	transfer_state = 28
-	transfer_state = 1112
 	transfer_state = 1234
 	}
-				}
-	VND={annex_country = { target = FRA transfer_troops = no }}
+    SWI={
+	transfer_state = 17
+	}
+    SPM={
+	transfer_state = 32
+	}
+	VND={
+	annex_country = { target = FRA transfer_troops = no }
+	annex_country = { target = BRI transfer_troops = no }
+	}
+	every_state={
+	limit={
+	is_core_of=BRI
+	}
+	add_core_of=BRI
+	}
 	}
 }
 
@@ -233,7 +254,7 @@ country_event = {
 	id = viennacongress_event.5
 	title = "End of the Kingdom of Italy"
 	desc = viennacongress_event.5.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -256,6 +277,13 @@ set_party_name = { ideology = neutrality long_name = VNT_LOR_neutrality_party_lo
 add_popularity = { ideology = neutrality popularity = 0.25 }
 set_politics = { ruling_party = neutrality elections_allowed = no}
 set_cosmetic_tag=VNT
+}
+ITA={
+set_party_name = { ideology = neutrality long_name = MOD_LOR_neutrality_party_long name = MOD_LOR_neutrality_party }
+add_popularity = { ideology = neutrality popularity = 0.25 }
+set_politics = { ruling_party = neutrality elections_allowed = no}
+set_cosmetic_tag=MOD
+promote_character=ITA_francisiv
 }
 		every_state={
         limit={
@@ -298,8 +326,8 @@ set_cosmetic_tag=VNT
         state=927
         }
         }
-        add_core_of=MOD
-        transfer_state_to=MOD
+        add_core_of=ITA
+        transfer_state_to=ITA
         }
 				every_state={
         limit={
@@ -340,6 +368,7 @@ set_cosmetic_tag=VNT
         }
 		every_state={
         limit={
+		NOT={state=927}
 		or={
         is_core_of=ITA
 		}
@@ -351,7 +380,32 @@ set_cosmetic_tag=VNT
 		name = "Maybe we can keep some elements of it?"
 		ai_chance = { factor = 0 }
 		AUS={set_country_flag=AUS_ambition_kingdom_of_italy_lombardy_venetia} 
-			every_state={
+MTU={
+set_party_name = { ideology = neutrality long_name = MTU_LOR_neutrality_party_long name = MTU_LOR_neutrality_party }
+add_popularity = { ideology = neutrality popularity = 0.25 }
+set_politics = { ruling_party = neutrality elections_allowed = no}
+set_cosmetic_tag=MTU
+}
+LBV={
+set_party_name = { ideology = neutrality long_name = LBV_LOR_neutrality_party_long name = LBV_LOR_neutrality_party }
+add_popularity = { ideology = neutrality popularity = 0.25 }
+set_politics = { ruling_party = neutrality elections_allowed = no}
+set_cosmetic_tag=LBV
+}
+VNT={
+set_party_name = { ideology = neutrality long_name = VNT_LOR_neutrality_party_long name = VNT_LOR_neutrality_party }
+add_popularity = { ideology = neutrality popularity = 0.25 }
+set_politics = { ruling_party = neutrality elections_allowed = no}
+set_cosmetic_tag=VNT
+}
+ITA={
+set_party_name = { ideology = neutrality long_name = MOD_LOR_neutrality_party_long name = MOD_LOR_neutrality_party }
+add_popularity = { ideology = neutrality popularity = 0.25 }
+set_politics = { ruling_party = neutrality elections_allowed = no}
+set_cosmetic_tag=MOD
+promote_character=ITA_francisiv
+}
+		every_state={
         limit={
         or={
         state=161
@@ -369,6 +423,7 @@ set_cosmetic_tag=VNT
 		state=1111
 		state=977
         state=160
+		state=1060
 		state=931
 		state=856
         }
@@ -391,8 +446,8 @@ set_cosmetic_tag=VNT
         state=927
         }
         }
-        add_core_of=MOD
-        transfer_state_to=MOD
+        add_core_of=ITA
+        transfer_state_to=ITA
         }
 				every_state={
         limit={
@@ -435,6 +490,7 @@ set_cosmetic_tag=VNT
         limit={
 		or={
         is_core_of=ITA
+		NOT={state=927}
 		}
         }
 		remove_core_of=ITA
@@ -450,7 +506,7 @@ country_event = {
 	id = viennacongress_event.6
 	title = "The Status of the Illyrian Coast"
 	desc = viennacongress_event.6.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -489,7 +545,7 @@ country_event = {
 	id = viennacongress_event.7
 	title = "The Liberation of Tuscany"
 	desc = viennacongress_event.7.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -532,7 +588,7 @@ country_event = {
 	id = viennacongress_event.8
 	title = "The Liberation of the Papal States"
 	desc = viennacongress_event.8.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -559,7 +615,7 @@ country_event = {
 	id = viennacongress_event.9
 	title = "The Return of Catalonia to Spanish Control"
 	desc = viennacongress_event.9.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -648,7 +704,7 @@ country_event = {
 	id = viennacongress_event.10
 	title = "The Reconquest of Piedmont"
 	desc = viennacongress_event.10.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -683,7 +739,7 @@ country_event = {
 	id = viennacongress_event.11
 	title = "The Return of the Republic of Genoa"
 	desc = viennacongress_event.11.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -709,7 +765,7 @@ country_event = {
 	id = viennacongress_event.12
 	title = "The House of Bourbon-Parma returns to Parma"
 	desc = viennacongress_event.12.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -735,7 +791,7 @@ country_event = {
 	id = viennacongress_event.13
 	title = "The return of Valais"
 	desc = viennacongress_event.13.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -769,7 +825,7 @@ country_event = {
 	id = viennacongress_event.14
 	title = "The return of Savoy and Nice"
 	desc = viennacongress_event.14.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -797,7 +853,7 @@ country_event = {
 	id = viennacongress_event.15
 	title = "The Trade is brought back to Hamburg"
 	desc = viennacongress_event.15.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -823,7 +879,7 @@ country_event = {
 	id = viennacongress_event.16
 	title = "The Government of Belgium and the Rhine"
 	desc = viennacongress_event.16.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -922,21 +978,21 @@ fire_only_once = yes
 	AUS={
 			set_autonomy = {
         target = LUX
-        autonomous_state = autonomy_protectorate
+        autonomous_state = autonomy_dominion
         freedom_level = 0.4
 	}
 	}
 		AUS={
 			set_autonomy = {
         target = BEL
-        autonomous_state = autonomy_protectorate
+        autonomous_state = autonomy_dominion
         freedom_level = 0.4
 	}
 	}
 		AUS={
 			set_autonomy = {
         target = CLG
-        autonomous_state = autonomy_protectorate
+        autonomous_state = autonomy_dominion
         freedom_level = 0.4
 	}
 	}
@@ -946,7 +1002,7 @@ country_event = {
 	id = viennacongress_event.17
 	title = "The return of Geneva"
 	desc = viennacongress_event.17.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -972,7 +1028,7 @@ country_event = {
 	id = viennacongress_event.18
 	title = "The return of Tyrol"
 	desc = viennacongress_event.18.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -1004,7 +1060,7 @@ country_event = {
 	id = viennacongress_event.19
 	title = "The British Ionian Islands"
 	desc = viennacongress_event.19.d
-	picture = GFX_idi_amin_india
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -1018,5 +1074,148 @@ SEP={set_cosmetic_tag=SEP_ENG}
         freedom_level = 0.4
 	}
 	}
+	}
+}
+country_event = {
+	id = viennacongress_event.20
+	title = "Aftermath of the Peninsular war in Portugal"
+	desc = viennacongress_event.20.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "Hopefully everyone agrees to this"
+		ai_chance = { factor = 100 } 
+POR={
+add_stability=0.01
+add_war_support=0.01
+}
+every_state={
+limit={
+is_core_of=POR
+or={
+is_owned_by=FRA
+is_owned_by=VND
+}
+}
+transfer_state_to=POR
+}
+	}
+}
+country_event = {
+	id = viennacongress_event.21
+	title = "Aftermath of the Peninsular war in Spain"
+	desc = viennacongress_event.21.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "Hopefully everyone agrees to this"
+		ai_chance = { factor = 100 } 
+SPR={
+add_stability=0.01
+add_war_support=0.01
+set_country_flag=can_annex_cat_nap_spain_fra
+}
+	}
+}
+country_event = {
+	id = viennacongress_event.22
+	title = "The Bourbon Restoration in France"
+	desc = viennacongress_event.22.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "Hopefully everyone agrees to this"
+		ai_chance = { factor = 100 } 
+VND={
+add_stability=0.01
+add_war_support=0.01
+}
+	}
+}
+country_event = {
+	id = viennacongress_event.23
+	title = "The Annexation of the German Coast"
+	desc = viennacongress_event.23.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "Hopefully everyone agrees to this"
+		ai_chance = { factor = 100 } 
+every_state={
+limit={
+or={
+is_owned_by=FRA
+is_owned_by=VND
+is_owned_by=HOL
+}
+or={
+state=978
+state=872
+state=1165
+state=1155
+state=836
+state=847
+state=1189
+state=879
+state=1244
+state=1245
+state=875
+state=1173
+state=1178
+state=1175
+state=1186
+state=1179
+}
+}
+transfer_state_to=PRE
+add_core_of=PRE
+}
+	}
+}
+country_event = {
+	id = viennacongress_event.24
+	title = "The Vassalization of Milan Mantua & Venice"
+	desc = viennacongress_event.24.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "The Venetians better not become unruly"
+		ai_chance = { factor = 100 } 
+		AUS={
+			set_autonomy = {
+        target = VNT
+        autonomous_state = autonomy_dominion
+        freedom_level = 0.4
+	}
+				set_autonomy = {
+        target = LBV
+        autonomous_state = autonomy_dominion
+        freedom_level = 0.4
+	}
+				set_autonomy = {
+        target = MTU
+        autonomous_state = autonomy_dominion
+        freedom_level = 0.4
+	}
+	}
+	}
+}
+country_event = {
+	id = viennacongress_event.25
+	title = "Switzerland Joins the Coalition"
+	desc = viennacongress_event.25.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "The Venetians better not become unruly"
+		ai_chance = { factor = 100 } 
+3={transfer_state_to=SWI}
+ENG={add_to_faction=SWI}
 	}
 }

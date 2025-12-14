@@ -70,60 +70,6 @@ units = {
 		start_experience_factor = 0.3
 	}
 }
-units = {
-	#Neapolitan Army
-	division = {
-		name = "Neapolitan Division"
-		location = 13707
-		division_template = "Neapolitan Division"
-		start_experience_factor = 0.3
-	}
-}
-units = {
-	#Neapolitan Army
-	division = {
-		name = "Neapolitan Division"
-		location = 13707
-		division_template = "Neapolitan Division"
-		start_experience_factor = 0.3
-	}
-}
-units = {
-	#Neapolitan Army
-	division = {
-		name = "Neapolitan Division"
-		location = 13707
-		division_template = "Neapolitan Division"
-		start_experience_factor = 0.3
-	}
-}
-units = {
-	#Neapolitan Army
-	division = {
-		name = "Neapolitan Division"
-		location = 3923
-		division_template = "Neapolitan Division"
-		start_experience_factor = 0.3
-	}
-}
-units = {
-	#Neapolitan Army
-	division = {
-		name = "Neapolitan Division"
-		location = 9826
-		division_template = "Neapolitan Division"
-		start_experience_factor = 0.3
-	}
-}
-units = {
-	#Neapolitan Army
-	division = {
-		name = "Neapolitan Division"
-		location = 819
-		division_template = "Neapolitan Division"
-		start_experience_factor = 0.3
-	}
-}
 ### Starting Equipment ###
 instant_effect = {
 	add_equipment_production = {

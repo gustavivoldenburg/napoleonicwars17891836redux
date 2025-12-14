@@ -1,4 +1,36 @@
 characters={
+		HOL_philips={
+		name=HOL_CHARACTER_PHILIPS
+		portraits={
+                        army={
+				small="GFX_idea_hol_philips_small"
+			}
+			civilian = {
+				large = GFX_portrait_hol_philips_large
+			}
+		}
+		advisor={
+                        can_be_fired = no
+			slot = political_advisor
+			idea_token = HOL_philips
+			allowed  = {
+				original_tag  = HOL
+			}
+			available  = {
+			HOL={has_country_flag=phil_company_has_happened}
+		        }
+			traits  = {
+				tobacco_company_owner
+			}
+			on_add  = {
+			}
+			do_effect  = {
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+			}
+		}
 	HOL_rutger={
 		name=HOL_CHARACTER_RUTGER
 		portraits={

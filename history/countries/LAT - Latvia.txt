@@ -1,10 +1,32 @@
-﻿capital = 808
-1919.1.1 = {
-		if = {
-		limit = { has_start_date < 1920.1.1 }
-set_oob = "LAT_1919"
+﻿capital = 809
+set_technology = {
+	infantry_weapons = 1
+	transport = 1
+	early_submarine = 1
+        gw_artillery = 1 basic_train = 1
 }
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1789.1.1"
+	election_frequency = 48
+	elections_allowed = no
 }
+set_popularities = {
+	democratic = 50
+	neutrality = 50
+}
+1770.1.1 = {
+recruit_character=LAT_petervonbiron
+promote_character=LAT_petervonbiron
+recruit_character=LAT_frederickaugustusi
+}
+1801.1.1 = {
+retire_character=LAT_petervonbiron
+}
+1836.1.1 = {
+retire_character=LAT_frederickaugustusi
+}
+LAT={set_cosmetic_tag=COU}
 1936.1.1 = {
 oob = "LAT_1936"
 if = {
@@ -39,7 +61,6 @@ IF = {
 		LAT_perkonkrust_idea
 		democratic_opposition
 	}
-}
 }
 recruit_character = LAT_gustavs_celminsh
 recruit_character = LAT_augusts_kirhensteins
@@ -81,7 +102,6 @@ set_technology = {
 	early_submarine = 1
         gw_artillery = 1 basic_train = 1
 }
-1936.1.1 = {
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
@@ -104,11 +124,10 @@ if = {
 		early_ship_hull_submarine = 1
 	}
 }
-}
 set_research_slots = 0
 
 set_convoys = 10
-
+}
 1939.1.1 = {
 
 	add_political_power = 1198

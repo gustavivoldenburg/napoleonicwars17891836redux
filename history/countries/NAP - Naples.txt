@@ -13,13 +13,23 @@ set_politics = {
 1765.1.1 = {
 NAP={set_party_name = { ideology = neutrality long_name = NAP_BON_neutrality_party_long name = NAP_BON_neutrality_party}}
 recruit_character=NAP_josephbonaparte
+promote_character=NAP_josephbonaparte
 recruit_character=NAP_joachimmurat
+recruit_character=NAP_lauberg
+promote_character=NAP_lauberg
+recruit_character=NAP_ciaia
+}
+1800.1.1 = {
+retire_character=NAP_ciaia
 }
 1809.1.1 = {
 promote_character=NAP_joachimmurat
 }
 1816.1.1 = {
 retire_character=NAP_joachimmurat
+}
+1836.1.1 = {
+recruit_character=NAP_lauberg
 }
 1844.1.1 = {
 retire_character=NAP_josephbonaparte

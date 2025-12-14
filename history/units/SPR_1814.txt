@@ -56,7 +56,7 @@ units = {
 	#Spanish Army
 	division = {
 		name = "Spanish Division"
-		location = 3873
+		location = 6756
 		division_template = "Spanish Division"
 		start_experience_factor = 0.3
 	}
@@ -65,7 +65,7 @@ units = {
 	#Spanish Army
 	division = {
 		name = "Spanish Division"
-		location = 13223
+		location = 6756
 		division_template = "Spanish Division"
 		start_experience_factor = 0.3
 	}
@@ -74,7 +74,7 @@ units = {
 	#Spanish Army
 	division = {
 		name = "Spanish Division"
-		location = 3954
+		location = 6812
 		division_template = "Spanish Division"
 		start_experience_factor = 0.3
 	}
@@ -83,7 +83,7 @@ units = {
 	#Spanish Army
 	division = {
 		name = "Spanish Division"
-		location = 13225
+		location = 14093
 		division_template = "Spanish Division"
 		start_experience_factor = 0.3
 	}
@@ -92,7 +92,7 @@ units = {
 	#Spanish Army
 	division = {
 		name = "Spanish Division"
-		location = 11819
+		location = 14095
 		division_template = "Spanish Division"
 		start_experience_factor = 0.3
 	}
@@ -101,7 +101,7 @@ units = {
 	#Spanish Army
 	division = {
 		name = "Spanish Division"
-		location = 899
+		location = 9797
 		division_template = "Spanish Division"
 		start_experience_factor = 0.3
 	}

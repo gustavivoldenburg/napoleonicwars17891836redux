@@ -8,7 +8,7 @@ add_namespace = ger_1789_news
 	id = ger_1789_news.1
 	title = "The United Kingdom of Portugal, Brazil and the Algarves"
 	desc = ger_1789_news.1.d
-	picture = GFX_idi_amin_uganda
+	picture = GFX_news_event_france_empire_1
 	
 	major = yes
 
@@ -26,7 +26,7 @@ add_namespace = ger_1789_news
 	id = ger_1789_news.17
 	title = "The extinction of the House of Este"
 	desc = ger_1789_news.17.d
-	picture = GFX_idi_amin_uganda
+	picture = GFX_news_event_france_empire_1
 	
 	major = yes
 
