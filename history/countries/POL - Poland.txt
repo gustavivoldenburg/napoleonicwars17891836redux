@@ -187,12 +187,15 @@ promote_character=POL_konstantinpavlovich
 promote_character=POL_zajac
 retire_character=POL_ponia
 }
-1836.1.1 = {
+1828.1.1 = {
 retire_character=POL_frederickaugustusipol
 retire_character=POL_zajac
+promote_character=POL_ivan
+}
+1836.1.1 = {
 retire_character=POL_konstantinpavlovich
 }
-1859.1.1 = {
+1857.1.1 = {
 retire_character=POL_ivan
 }
 1926.1.1 = {

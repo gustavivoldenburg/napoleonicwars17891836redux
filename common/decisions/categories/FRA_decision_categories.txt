@@ -27,12 +27,12 @@ FRA_naturalborder = {
 	}
 }
 division_limit_system = {
-	icon = power_struggle
+	icon = recruit_divisons_dec
 	allowed = {
 	}
 }
 performance = {
-	icon = power_struggle
+	icon = recruit_divisons_dec
 	allowed = {
 	}
 }

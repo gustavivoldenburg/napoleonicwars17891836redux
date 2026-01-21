@@ -124,10 +124,10 @@ fire_only_once = yes
         state=837
         }
         }
-        add_core_of=HES
+        add_core_of=FKF
         remove_core_of=WTZ
         }
-	HES={annex_country = { target = WTZ transfer_troops = yes }}
+	FKF={annex_country = { target = WTZ transfer_troops = yes }}
 	}
 }
 country_event = {
@@ -341,6 +341,7 @@ fire_only_once = yes
 	option = { # 
 		name = "It Belong to us!"
 		ai_chance = { factor = 100 } 
+PRE={country_event = pre_1789_event.139}
 		PRE={
 	add_popularity = { ideology = democratic popularity = -0.01}
 				    every_state={
@@ -954,26 +955,24 @@ fire_only_once = yes
 	limit={
 	is_ally_with=FRA
 	or={
-	original_tag=MEK
 	original_tag=ANH
 	original_tag=BAD
 	original_tag=WUR
 	original_tag=HOH
-
-	original_tag=STR
 	original_tag=LIP
+
 	original_tag=WLD
 	original_tag=COB
     original_tag=THU
-
 	original_tag=WRZ
 	original_tag=NAS
+
 	original_tag=HES
 	original_tag=LCT
 	original_tag=WEI
-
 	original_tag=GTH
 	original_tag=SCH
+	
 	original_tag=ERF
 	original_tag=FKF
 	}
@@ -2299,7 +2298,6 @@ fire_only_once = yes
         limit={
         or={
         state=704
-		state=837
         }
         }
         add_core_of=PRE
@@ -3195,8 +3193,9 @@ country_event = {
 	is_triggered_only = yes
 fire_only_once = no
 	option = { # 
-		name = "The fought with us during the 4th Coalition"
+		name = "The Napoleonic Vassal is no more"
 		ai_chance = { factor = 100 } 
+		PRE={annex_country = { target = ERF transfer_troops = yes }}
 			every_state={
         limit={
         or={
@@ -3206,5 +3205,550 @@ fire_only_once = no
         add_core_of=PRE
 		remove_core_of=ERF
         }
+	}
+}
+country_event = {
+	id = pre_1789_event.134
+	title = "The Secularization of Erfurt"
+	desc = pre_1789_event.134.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "Annex Everything"
+		ai_chance = { factor = 100 } 
+	every_state={
+        limit={
+        or={
+        state=1281
+        }
+        }
+        add_core_of=PRE
+        remove_core_of=ERF
+        }
+	PRE={annex_country = { target = ERF transfer_troops = yes }}
+	}
+}
+country_event = {
+	id = pre_1789_event.135
+	title = "Hanover gains De-facto Independence"
+	desc = pre_1789_event.135.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "This is good for us"
+		ai_chance = { factor = 100 } 
+ENG={country_event = pre_1789_event.140}
+		every_state={
+        limit={
+        or={
+		state=1158
+		state=59
+		state=1160
+		state=1173
+		state=1178
+		state=879
+		state=1244
+		state=1245
+        }
+        }
+        add_core_of=HAN
+        remove_core_of=PRE
+		remove_core_of=MUN
+		remove_core_of=HOL
+		transfer_state_to=HAN
+        }
+		every_state={
+        limit={
+        or={
+		state=1186
+        }
+        }
+        add_core_of=SXL
+        remove_core_of=PRE
+		remove_core_of=MUN
+		remove_core_of=HOL
+		transfer_state_to=SXL
+        }
+	}
+}
+country_event = {
+	id = pre_1789_event.136
+	title = "Abolishment of the Grand Duchy of Frankfurt"
+	desc = pre_1789_event.136.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "This is good for us"
+		ai_chance = { factor = 100 } 
+FKF={set_cosmetic_tag=FKF}
+FKF={country_event = pre_1789_event.137}
+FKF={country_event = pre_1789_event.138}
+	}
+}
+country_event = {
+	id = pre_1789_event.137
+	title = "Prussia Annexes Wetzlar"
+	desc = pre_1789_event.137.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "This is good for us"
+		ai_chance = { factor = 100 } 
+		every_state={
+        limit={
+        or={
+        state=837
+        }
+        }
+        add_core_of=PRE
+		transfer_state_to=PRE
+        remove_core_of=FKF
+		remove_core_of=WTZ
+        }
+	}
+}
+country_event = {
+	id = pre_1789_event.138
+	title = "Kassel Annexes Fulda"
+	desc = pre_1789_event.138.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "This is good for us"
+		ai_chance = { factor = 100 } 
+		every_state={
+        limit={
+        or={
+        state=1236
+        }
+        }
+        add_core_of=HSE
+		transfer_state_to=HSE
+        remove_core_of=FUL
+		remove_core_of=FKF
+		remove_core_of=NAS
+        }
+	}
+}
+country_event = {
+	id = pre_1789_event.139
+	title = "The Annexation of the German Coast"
+	desc = pre_1789_event.139.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "Hopefully everyone agrees to this"
+		ai_chance = { factor = 100 } 
+PRE={country_event = pre_1789_event.135}
+PRE={country_event = pre_1789_event.142}
+every_state={
+limit={
+or={
+is_owned_by=FRA
+is_owned_by=VND
+is_owned_by=HOL
+}
+or={
+state=978
+state=872
+state=1165
+state=1155
+state=836
+state=847
+state=1189
+state=879
+state=1244
+state=1245
+state=875
+state=1173
+state=1178
+state=1175
+state=1186
+state=1179
+}
+}
+transfer_state_to=PRE
+add_core_of=PRE
+}
+	}
+}
+country_event = {
+	id = pre_1789_event.140
+	title = "Hanover Returns to Britain"
+	desc = pre_1789_event.140.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "We better see something in return"
+		ai_chance = { factor = 100 } 
+HAN={set_cosmetic_tag=HAN}
+SXL={set_cosmetic_tag=SXL}
+ENG={
+    set_autonomy = {
+        target = SXL
+        autonomous_state = autonomy_personal_union
+        freedom_level = 0.35
+	}
+	    set_autonomy = {
+        target = HAN
+        autonomous_state = autonomy_personal_union
+        freedom_level = 0.35
+	}
+}
+	}
+}
+country_event = {
+	id = pre_1789_event.141
+	title = "The Berlin Police"
+	desc = pre_1789_event.141.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "We better see something in return"
+		ai_chance = { factor = 100 } 
+PRE={
+add_war_support=0.05
+add_stability=0.05
+							64 = {
+                        add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+				}
+											64 = {
+                        add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+				}
+}
+	}
+}
+country_event = {
+	id = pre_1789_event.142
+	title = "Lubeck & Bremen Regain their Freedom"
+	desc = pre_1789_event.142.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "Hopefully everyone agrees to this"
+		ai_chance = { factor = 100 } 
+every_state={
+limit={
+state=875
+}
+transfer_state_to=BRN
+add_core_of=BRN
+remove_core_of=PRE
+}
+every_state={
+limit={
+state=1175
+}
+transfer_state_to=LBK
+add_core_of=LBK
+remove_core_of=PRE
+}
+	}
+}
+
+country_event = {
+	id = pre_1789_event.143
+	title = "Prussia Demands Poznan"
+	desc = pre_1789_event.143.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "Hopefully everyone agrees to this"
+		ai_chance = { factor = 100 } 
+PRE={country_event = pre_1789_event.46}
+	}
+	option = { # 
+		name = "All of Poland is ours!"
+		ai_chance = { factor = 0 } 
+	}
+}
+country_event = {
+	id = pre_1789_event.144
+	title = "Austria & Prussia Demand Krakow"
+	desc = pre_1789_event.144.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "Hopefully everyone agrees to this"
+		ai_chance = { factor = 100 } 
+AUS={country_event = pre_1789_event.146}
+PRE={country_event = pre_1789_event.147}
+	}
+	option = { # 
+		name = "All of Poland is ours!"
+		ai_chance = { factor = 0 } 
+	}
+}
+country_event = {
+	id = pre_1789_event.145
+	title = "Austria Demands Tarnopol"
+	desc = pre_1789_event.145.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "Hopefully everyone agrees to this"
+		ai_chance = { factor = 100 } 
+AUS={country_event = pre_1789_event.148}
+	}
+	option = { # 
+		name = "All of Poland is ours!"
+		ai_chance = { factor = 0 } 
+	}
+}
+country_event = {
+	id = pre_1789_event.146
+	title = "The Establishment of the Free City of Cracow"
+	desc = pre_1789_event.146.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "Hopefully everyone agrees to this"
+		ai_chance = { factor = 100 } 
+every_state={
+limit={
+state=88
+}
+add_core_of=KRA
+transfer_state_to=KRA
+}
+KRA={
+give_military_access = AUS
+give_military_access = PRE
+give_military_access = RUS
+}
+							AUS={
+								set_autonomy = {
+				target = KRA
+                autonomous_state = autonomy_protectorate
+                freedom_level = 0.35
+	            }
+				}
+	}
+}
+country_event = {
+	id = pre_1789_event.147
+	title = "The Establishment of the Free City of Cracow"
+	desc = pre_1789_event.147.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "Hopefully everyone agrees to this"
+		ai_chance = { factor = 100 } 
+every_state={
+limit={
+state=88
+}
+add_core_of=KRA
+transfer_state_to=KRA
+}
+KRA={
+give_military_access = AUS
+give_military_access = PRE
+give_military_access = RUS
+}
+							AUS={
+								set_autonomy = {
+				target = KRA
+                autonomous_state = autonomy_protectorate
+                freedom_level = 0.35
+	            }
+				}
+	}
+}
+country_event = {
+	id = pre_1789_event.148
+	title = "Tarnopol becomes Austrian"
+	desc = pre_1789_event.148.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "Hopefully everyone agrees to this"
+		ai_chance = { factor = 100 } 
+every_state={
+limit={
+state=869
+}
+add_core_of=POL
+add_core_of=GLL
+transfer_state_to=AUS
+remove_core_of=RUS
+}
+	}
+}
+country_event = {
+	id = pre_1789_event.149
+	title = "The Secularization of Nordhausen"
+	desc = pre_1789_event.149.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "Annex Everything"
+		ai_chance = { factor = 100 } 
+	every_state={
+        limit={
+        or={
+        state=849
+        }
+        }
+        add_core_of=PRE
+        remove_core_of=NDH
+        }
+	PRE={annex_country = { target = NDH transfer_troops = yes }}
+	}
+}
+country_event = {
+	id = pre_1789_event.150
+	title = "Saxe Lauenburg becomes Danish"
+	desc = pre_1789_event.150.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "We want Western Pomerania too!"
+		ai_chance = { factor = 100 } 
+DEN={
+	    set_autonomy = {
+        target = SXL
+        autonomous_state = autonomy_personal_union
+        freedom_level = 0.2
+	}
+}
+SXL={
+promote_character=SXL_frederickvi
+set_party_name = { ideology = neutrality long_name = SXL_OLD_neutrality_party_long name = SXL_OLD_neutrality_party }
+}
+	}
+}
+country_event = {
+	id = pre_1789_event.151
+	title = "The Creation of Lichtenberg"
+	desc = pre_1789_event.151.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "They can keep this"
+		ai_chance = { factor = 100 } 
+	every_state={
+        limit={
+        or={
+        state=1237
+        }
+        }
+        add_core_of=LIC
+        transfer_state_to=LIC
+        }
+	}
+}
+country_event = {
+	id = pre_1789_event.152
+	title = "Bavaria Annexes the Palatinate"
+	desc = pre_1789_event.152.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "We need Julich & Berg too"
+		ai_chance = { factor = 100 } 
+	every_state={
+        limit={
+        or={
+        state=1239
+		state=880
+        }
+        }
+        add_core_of=BAY
+        transfer_state_to=BAY
+		remove_core_of=PFZ
+		remove_core_of=ZWE
+        }
+	}
+}
+country_event = {
+	id = pre_1789_event.153
+	title = "The United Kingdom of the Netherlands"
+	desc = pre_1789_event.153.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "Belgium is ours"
+		ai_chance = { factor = 100 } 
+HOL={
+set_cosmetic_tag = HOL_united_kingdom
+promote_character=HOL_williami
+set_party_name = { ideology = neutrality long_name = LUX_NAS_neutrality_party_long name = LUX_NAS_neutrality_party }
+}
+		every_state={
+        limit={
+        or={
+        state=979
+		state=980
+		state=984
+		state=985
+		state=973
+		state=6
+		state=34
+		state=1171
+		state=1243
+        }
+        }
+        add_core_of=HOL
+		transfer_state_to=HOL
+        remove_core_of=BEL
+		remove_core_of=LUX
+		remove_core_of=LIE
+		remove_core_of=FLA
+        }
+	}
+}
+country_event = {
+	id = pre_1789_event.154
+	title = "The Grand Duchy of Luxemburg"
+	desc = pre_1789_event.154.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "We got everything we wanted"
+		ai_chance = { factor = 100 } 
+HOL={
+    set_autonomy = {
+        target = LUX
+        autonomous_state = autonomy_protectorate
+        freedom_level = 0.35
+	}
+}
+LUX={
+set_cosmetic_tag = LUX_HOL
+promote_character=LUX_williami
+set_party_name = { ideology = neutrality long_name = LUX_NAS_neutrality_party_long name = LUX_NAS_neutrality_party }
+}
 	}
 }

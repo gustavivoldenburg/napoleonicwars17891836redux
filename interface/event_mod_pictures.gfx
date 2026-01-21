@@ -3500,6 +3500,14 @@ spriteTypes = {
 		name = "GFX_portrait_fkf_karl_large"
 		texturefile = "gfx/leaders/FKF/portrait_karl_large.dds"
 	}
+	        spriteType = {
+		name = "GFX_portrait_wtz_karl_large"
+		texturefile = "gfx/leaders/WTZ/portrait_karl_large.dds"
+	}
+		        spriteType = {
+		name = "GFX_portrait_kra_wodzicki_large"
+		texturefile = "gfx/leaders/KRA/portrait_wodzicki_large.dds"
+	}
         spriteType = {
 		name = "GFX_portrait_mnz_karl_large"
 		texturefile = "gfx/leaders/MNZ/portrait_karl_large.dds"
@@ -3713,6 +3721,20 @@ spriteTypes = {
 		name = "GFX_idea_khiva_slavetrade"
 		texturefile = "gfx/interface/ideas/khiva_slavetrade.dds"
 	}
+		spriteType = {
+		name = "GFX_idea_fra_liberte_egalite_solidarite"
+		texturefile = "gfx/interface/ideas/fra_liberte_egalite_solidarite.dds"
+	}
+
+
+
+
+
+
+
+
+
+
 	spriteType = {
 		name = "GFX_portrait_ABK_kelesh_ahmed_bey_sharvashidzes"
 		texturefile = "gfx/leaders/ABK/portrait_ABK_kelesh_ahmed_bey_sharvashidzes.dds"

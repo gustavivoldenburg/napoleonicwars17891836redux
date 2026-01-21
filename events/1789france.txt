@@ -3930,14 +3930,12 @@ set_party_name = { ideology = neutrality long_name = LIT_WET_neutrality_party_lo
 	    LIT={transfer_state=11}
 		LIT={transfer_state=189}
 		LIT={transfer_state=815}
-		LIT={transfer_state=94}
 		LIT={transfer_state=95}
 		LIT={transfer_state=96}
 		LIT={transfer_state=1119}
 		LIT={transfer_state=784}
 		LIT={transfer_state=97}
 		LIT={transfer_state=204}
-		LIT={transfer_state=194}
 		LIT={transfer_state=206}
 		LIT={transfer_state=1225}
 		every_state={
@@ -7331,7 +7329,6 @@ is_owned_by=FRA
 remove_core_of=ITA
 }
 }
-FRA={add_to_faction=AUS}
 	}
 }
 country_event = {
@@ -7357,6 +7354,7 @@ fire_only_once = yes
 	option = { # 
 		name = "We lost Salzburg and Northern Galicia"
 		ai_chance = { factor = 100 }
+AUS={country_event = fra_1789_event.405}
 	}
 }
 country_event = {
@@ -7555,7 +7553,7 @@ fire_only_once = yes
 		ai_chance = { factor = 100 }
 	}
 	option = { # 
-		name = "Let's Switch to France 1789-1799/1814-1815 (100% finished) 1800-1813(50% finished)"
+		name = "Let's Switch to France 1789-1806/1814-1815 (100% finished) 1807-1813(50% finished)"
 		ai_chance = { factor = 0 }
 				FRA = {
     change_tag_from = ROOT
@@ -9916,6 +9914,7 @@ fire_only_once = yes
 	option = { # 
 		name = "We need to take back France"
 		ai_chance = { factor = 100 }
+news_event = fra_1789_news.364
 FRA={set_cosmetic_tag=FRA_empire}
 FRA={
 		set_capital = {
@@ -9966,5 +9965,307 @@ fire_only_once = yes
 		name = "They will invade us by 1816"
 		ai_chance = { factor = 100 }
 FRA={add_ideas=fear_of_the_coalition}
+	}
+}
+
+
+
+
+country_event = {
+	id = fra_1789_event.387
+	title = "Formation of the Murat Kingdom of Italy"
+	desc = fra_1789_event.387.d
+	picture = GFX_news_event_france_empire_1
+	#is_triggered_only = yes
+trigger={
+tag=NAP
+NAP={
+owns_state=161
+owns_state=1109
+owns_state=920
+TOS={has_capitulated=yes}
+MTU={has_capitulated=yes}
+LBV={has_capitulated=yes}
+VNT={has_capitulated=yes}
+}
+}
+fire_only_once = yes
+	option = { # 
+		name = "We need to take back Italy"
+		ai_chance = { factor = 100 }
+NAP={
+set_country_flag=ita_has_formed_nap_murat_italy
+set_cosmetic_tag=ITA_murat
+annex_country = { target = TOS transfer_troops = no }
+annex_country = { target = LBV transfer_troops = no }
+annex_country = { target = MTU transfer_troops = no }
+annex_country = { target = VNT transfer_troops = no }
+}
+every_state={
+limit={
+or={
+is_core_of=TOS
+is_core_of=LBV
+is_core_of=MTU
+is_core_of=VNT
+state=161
+state=1109
+state=920
+}
+}
+add_core_of=NAP
+}
+	}
+}
+country_event = {
+	id = fra_1789_event.388
+	title = "The Murat Kingdom of Italy Annexes Sicily"
+	desc = fra_1789_event.388.d
+	picture = GFX_news_event_france_empire_1
+	#is_triggered_only = yes
+trigger={
+tag=NAP
+NAP={
+has_country_flag=ita_has_formed_nap_murat_italy
+TTS={has_capitulated=yes}
+SIC={has_capitulated=yes}
+}
+}
+fire_only_once = yes
+	option = { # 
+		name = "We need to take over Sicily"
+		ai_chance = { factor = 100 }
+NAP={
+annex_country = { target = TTS transfer_troops = no }
+annex_country = { target = SIC transfer_troops = no }
+}
+every_state={
+limit={
+or={
+is_core_of=TTS
+is_core_of=SIC
+}
+}
+add_core_of=NAP
+}
+	}
+}
+country_event = {
+	id = fra_1789_event.389
+	title = "Britain Intervenes in Iberia"
+	desc = fra_1789_event.389.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "We need to defeat France in Iberia"
+		ai_chance = { factor = 100 }
+ENG={
+remove_ideas=ENG_focus_outside_of_europe
+add_manpower=10000
+}
+	}
+}
+country_event = {
+	id = fra_1789_event.390
+	title = "Portugal Revolts"
+	desc = fra_1789_event.390.d
+	picture = GFX_news_event_france_empire_1
+	#is_triggered_only = yes
+trigger = {
+tag = POR
+    date > 1808.6.9 date < 1809.1.1
+or={
+and={
+has_start_date < 1810.1.1 
+has_start_date > 1808.1.1 
+}
+FRA={has_country_flag=peninsular_was_happened_spr}
+}
+}
+fire_only_once = yes
+	option = { # 
+		name = "Portugal will be ours again"
+		ai_chance = { factor = 100 }
+112={set_demilitarized_zone = no}
+180={set_demilitarized_zone = no}
+every_state={
+limit={
+state=112
+state=180
+}
+set_state_controller_to = POR
+}
+POR={
+add_ideas={guerrillaspain}
+add_manpower = 40000 
+load_oob = "POR_1809"
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 40000
+					producer = POR
+				}
+}
+	}
+}
+country_event = {
+	id = fra_1789_event.391
+	title = "Portugal Revolts"
+	desc = fra_1789_event.391.d
+	picture = GFX_news_event_france_empire_1
+	#is_triggered_only = yes
+trigger = {
+tag = FRA
+    date > 1808.6.1 date < 1809.1.1
+or={
+and={
+has_start_date < 1810.1.1 
+has_start_date > 1808.1.1 
+}
+FRA={has_country_flag=peninsular_was_happened_spr}
+}
+}
+fire_only_once = yes
+	option = { # 
+		name = "We can't let the Counter-Revolution win"
+		ai_chance = { factor = 100 }
+112={set_demilitarized_zone = yes}
+180={set_demilitarized_zone = yes}
+FRA={
+add_manpower=-1500
+add_stability=-0.1
+}
+
+	}
+}
+country_event = {
+	id = fra_1789_event.392
+	title = "The Congress of Aix-la-Chapelle"
+	desc = fra_1789_event.392.d
+	picture = GFX_news_event_france_empire_1
+	#is_triggered_only = yes
+trigger = {
+tag = VND
+    date > 1818.10.1 date < 1821.1.1
+FRA={has_country_flag=the_treaty_of_paris_one_eigt_one_five}
+}
+fire_only_once = yes
+	option = { # 
+		name = "The King is back we are free"
+		ai_chance = { factor = 100 }
+every_state={
+limit={is_core_of=FRA}
+transfer_state_to=VND
+}
+
+	}
+}
+country_event = {
+	id = fra_1789_event.393
+	title = "The Invasion of Naples"
+	desc = fra_1789_event.393.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "They are conspiring with the British"
+		ai_chance = { factor = 100 }
+		FRA={
+			declare_war_on = {
+		target = TTS
+		type = annex_everything
+	}
+	}
+	}
+}
+country_event = {
+	id = fra_1789_event.394
+	title = "Naples requests to join the Coalition"
+	desc = fra_1789_event.394.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "Naples is crucial"
+		ai_chance = { factor = 100 }
+TTS={country_event = fra_1789_event.395}
+	}
+	option = { # 
+		name = "Naples is irrelevant"
+		ai_chance = { factor = 0 }
+	}
+}
+country_event = {
+	id = fra_1789_event.395
+	title = "Naples joins the Coaliton"
+	desc = fra_1789_event.395.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "We need the money right now"
+		ai_chance = { factor = 100 }
+ENG={add_to_faction=TTS}
+	}
+}
+
+country_event = {
+	id = fra_1789_event.404
+	title = "50 Years since Charles VI's Death"
+	desc = fra_1789_event.404.d
+	picture = GFX_news_event_france_empire_1
+	#is_triggered_only = yes
+trigger = {
+tag = AUS
+    date > 1790.10.20 date < 1791.1.1
+}
+fire_only_once = yes
+	option = { # 
+		name = "The House of Habsburg-Lorraine isn't going anywhere"
+		ai_chance = { factor = 100 }
+AUS={
+add_stability=0.1
+remove_ideas={
+aus_extinction_of_the_house_of_habsburg
+aus_vulnerable_position
+}
+}
+	}
+}
+country_event = {
+	id = fra_1789_event.405
+	title = "Austrian Neutrality after Schönbrunn"
+	desc = fra_1789_event.405.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "We wont partake"
+		ai_chance = { factor = 100 }
+AUS={
+add_stability=0.1
+add_ideas={
+aus_neutrality_patriotic_war_invasion_of_russia_has_not_happened
+}
+}
+FRA={add_to_faction=AUS}
+	}
+}
+country_event = {
+	id = fra_1789_event.406
+	title = "The Invasion of Russia"
+	desc = fra_1789_event.406.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "We will partake"
+		ai_chance = { factor = 100 }
+AUS={
+add_stability=0.1
+remove_ideas={
+aus_neutrality_patriotic_war_invasion_of_russia_has_not_happened
+}
+}
 	}
 }

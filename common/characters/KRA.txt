@@ -1,0 +1,16 @@
+characters={	
+	KRA_wodzicki={
+		name=KRA_CHARACTER_WODZICKI
+		portraits={
+			civilian={
+				large="GFX_portrait_kra_wodzicki_large"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			desc = KRA_WODZICKI_DESC
+			expire="1797.1.1"
+		}
+}
+}
+

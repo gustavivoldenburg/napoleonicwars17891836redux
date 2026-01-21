@@ -238,7 +238,7 @@ set_country_flag = napoleondead
     		aus_vulnerable_position
 	}
 }
-1792.1.1 = {
+1791.1.1 = {
 remove_ideas = {
     aus_extinction_of_the_house_of_habsburg
     aus_vulnerable_position
@@ -257,6 +257,21 @@ remove_ideas = {
         autonomous_state = autonomy_protectorate
         freedom_level = 0.4
 	}
+	set_autonomy = {
+        target = TOS
+        autonomous_state = autonomy_personal_union
+        freedom_level = 0.4
+	}
+	set_autonomy = {
+        target = LBV
+        autonomous_state = autonomy_personal_union
+        freedom_level = 0.4
+	}
+}
+}
+1796.1.1 = {
+			if = {
+		limit = { has_start_date < 1797.1.1 }
 	set_autonomy = {
         target = TOS
         autonomous_state = autonomy_personal_union

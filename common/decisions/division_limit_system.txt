@@ -1,7 +1,7 @@
 division_limit_system = {
 	division_limit_system_one = {
 cost = 100
-		icon = ger_reichskommissariats
+		icon = division_limit_system
 				
 		available = {
 
@@ -130,7 +130,7 @@ date > 1789.1.1 date < 1836.1.1
 division_limit_system = {
 	division_limit_system_two = {
 cost = 100
-		icon = ger_reichskommissariats
+		icon = division_limit_system
 				
 		available = {
 
@@ -269,7 +269,7 @@ date > 1789.1.1 date < 1836.1.1
 division_limit_system = {
 	division_limit_system_three = {
 cost = 100
-		icon = ger_reichskommissariats
+		icon = division_limit_system
 				
 		available = {
 
@@ -416,7 +416,7 @@ date > 1789.1.1 date < 1836.1.1
 division_limit_system = {
 	division_limit_system_four = {
 cost = 100
-		icon = ger_reichskommissariats
+		icon = division_limit_system
 				
 		available = {
 
@@ -568,7 +568,7 @@ date > 1789.1.1 date < 1836.1.1
 division_limit_system = {
 	division_limit_system_five = {
 cost = 100
-		icon = ger_reichskommissariats
+		icon = division_limit_system
 				
 		available = {
 
@@ -709,7 +709,7 @@ date > 1789.1.1 date < 1836.1.1
 division_limit_system = {
 	division_limit_system_six = {
 cost = 100
-		icon = ger_reichskommissariats
+		icon = division_limit_system
 				
 		available = {
 
@@ -850,7 +850,7 @@ date > 1789.1.1 date < 1836.1.1
 division_limit_system = {
 	division_limit_system_seven = {
 cost = 100
-		icon = ger_reichskommissariats
+		icon = division_limit_system
 				
 		available = {
 
@@ -997,7 +997,7 @@ date > 1789.1.1 date < 1836.1.1
 division_limit_system = {
 	division_limit_system_eight = {
 cost = 100
-		icon = ger_reichskommissariats
+		icon = division_limit_system
 				
 		available = {
 
@@ -1144,7 +1144,7 @@ date > 1789.1.1 date < 1836.1.1
 division_limit_system = {
 	division_limit_system_nine = {
 cost = 100
-		icon = ger_reichskommissariats
+		icon = division_limit_system
 				
 		available = {
 
@@ -1289,7 +1289,7 @@ date > 1789.1.1 date < 1836.1.1
 division_limit_system = {
 	division_limit_system_ten = {
 cost = 100
-		icon = ger_reichskommissariats
+		icon = division_limit_system
 				
 		available = {
 
@@ -1429,6 +1429,36 @@ date > 1789.1.1 date < 1836.1.1
 }
 		add_manpower=-100000
 		}
+		}
+	}
+}
+division_limit_system = {
+performance_divisionlimitsystem = {
+		icon = division_limit_system
+				
+		available = {
+		
+		date > 1789.1.1 date < 1837.1.1
+			}
+		cost = 0
+		ai_will_do = {
+			factor = -6000000
+			modifier = {
+				add = -6000000
+			}
+		}
+
+		visible = {
+		
+        date > 1789.1.1 date < 1836.1.1
+      is_ai = no
+		}
+
+		complete_effect = {
+		every_possible_country = {
+country_lock_all_division_template = no
+set_global_flag = no_scripted_napoleonic_division_flag
+}
 		}
 	}
 }

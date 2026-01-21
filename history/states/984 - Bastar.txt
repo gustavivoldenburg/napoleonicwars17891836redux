@@ -15,7 +15,7 @@ state={
 		remove_core_of = GEL
 		remove_core_of = UTR
 		}
-		1800.1.1 = {
+		1796.1.1 = {
 		owner=FRA
 		add_core_of = FRA
 		remove_core_of = HOL

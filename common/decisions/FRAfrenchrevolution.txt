@@ -42,7 +42,7 @@ FRA_frenchrevolution = {
 		available = {
 			has_completed_focus = france_1793_1799_focus_3
 		date > 1793.10.24
-		has_start_date < 1800.1.1
+		date < 1796.4.1
 		}
 
 		cost = 0
@@ -55,7 +55,7 @@ FRA_frenchrevolution = {
 
 		visible = {
 			original_tag=FRA
-		has_start_date < 1800.1.1
+		date < 1796.4.1
 			NOT = { has_global_flag = decree_italian_gambit_lef_flag }
 		}
 
@@ -620,7 +620,7 @@ FRA_frenchrevolution = {
 		icon = ger_reichskommissariats
 
 		available = {
-                date > 1794.2.15 date < 1800.1.1 
+                date > 1794.2.15 date < 1796.4.1 
 		}
 
 		cost = 0
@@ -632,7 +632,7 @@ FRA_frenchrevolution = {
 		}
 
 		visible = {
-			date > 1789.1.1 date < 1800.1.1 
+			date > 1789.1.1 date < 1796.4.1 
 			
 			NOT = { has_global_flag = italian_gambit_bluewhitered_flag }
 		}
@@ -724,7 +724,7 @@ FRA_italiangambit = {
 		available = {
 			FRA={has_country_flag=italian_gambit_i_supposed}
 			
-			date > 1796.5.1 date < 1800.1.1 
+			date > 1796.4.1 date < 1800.1.1 
 		}
 
 		cost = 0

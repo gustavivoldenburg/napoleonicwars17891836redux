@@ -11,9 +11,14 @@ state={
 		1776.1.1 = {
 			owner = PRE
 		}
+		1796.1.1 = {
+			owner = PRE
+                        add_core_of = PRE
+		}
 		1808.1.1 = {
 			owner = POL
 			add_core_of = POL
+                remove_core_of = PRE
 		}
 		1815.1.1 = {
 			owner = POS
@@ -47,8 +52,15 @@ state={
 			remove_core_of = PRE
 		}
 		victory_points = {
-			279 1 
+			279 5 
 		}
+		victory_points = {
+			3381 3 
+		}
+		victory_points = {
+			13423 1 
+		}
+
 		buildings = {
 			infrastructure = 2
 			arms_factory = 1
@@ -61,7 +73,7 @@ state={
 		}
 	}
 	provinces={
-		279 11232 13427 13434 
+		17 279 388 3381 9252 11232 13423 13427 13431 13434 
 	}
 	manpower=500000
 	buildings_max_level_factor=1.000

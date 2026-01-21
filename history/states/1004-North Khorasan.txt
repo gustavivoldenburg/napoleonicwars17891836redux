@@ -30,7 +30,7 @@ state={
 		remove_core_of = RUS
 		remove_core_of = PER
 		}
-		1836.1.1 = {
+		1828.1.1 = {
 			owner = RUS
 			add_core_of = RUS
         remove_core_of = NAK

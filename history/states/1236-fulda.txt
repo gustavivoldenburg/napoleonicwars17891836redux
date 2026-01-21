@@ -17,9 +17,16 @@ state={
 			remove_core_of = WGR
 
 		}
-		1808.1.1 = {
+		1803.1.1 = {
+			add_core_of = NAS
+			owner = NAS
+                        remove_core_of=FUL
+
+		}
+		1810.1.1 = {
 			add_core_of = FKF
 			owner = FKF
+                        remove_core_of=NAS
 
 		}
 		1816.1.1 = {

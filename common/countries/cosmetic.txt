@@ -2,6 +2,15 @@ MAL_UK = {
     color = rgb { 201 56 93 }
     color_ui = rgb { 255 73 121 }
 }
+ITA_murat = {
+	color = rgb { 67 127 63 }
+	color_ui = rgb { 87 165 82 }
+}
+form_roman_empire_spqr= {
+	color = rgb { 121 0 0 }
+	color_ui = rgb { 121 0 0 }
+}
+
 ENG_jacobite = {
 	color = rgb { 66 48 102 }
 	color_ui = rgb { 66 48 102 }
@@ -14,7 +23,14 @@ IRE_jacobite = {
 	color = rgb { 66 48 102 }
 	color_ui = rgb { 66 48 102 }
 }
-
+FRA_empire = {
+	color = rgb { 0 45 164 }
+	color_ui = rgb { 0 45 164 }
+}
+SAX_POL_LIT = {
+	color = rgb { 165 30 45 }
+	color_ui = rgb { 165 30 45 }
+}
 ERV = {
 	color = rgb { 49 142 54 }
 	color_ui = rgb { 49 142 54 }
@@ -441,8 +457,8 @@ USA_ENG = {
 	color_ui = rgb { 150 0 0 }
 }
 PAP_FRA_napoleon = {
-	color = rgb { 0 85 164 }
-	color_ui = rgb { 74 147 255 }
+	color = rgb { 0 45 164 }
+	color_ui = rgb { 0 45 164 }
 }
 NEU_FRA = {
 	color = rgb { 0 85 164 }
@@ -501,8 +517,8 @@ MNZ_FRA = {
 	color_ui = rgb { 74 147 255 }
 }
 HOL_FRA_annex = {
-	color = rgb { 0 85 164 }
-	color_ui = rgb { 74 147 255 }
+	color = rgb { 0 45 164 }
+	color_ui = rgb { 0 45 164 }
 }
 SYR_FRA = {
 	color = rgb { 0 85 164 }

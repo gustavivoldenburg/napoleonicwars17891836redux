@@ -71,7 +71,14 @@ tag = QAJ
 country_exists=QAJ
 country_exists=PER
 	or = {
-	PER = {surrender_progress > 0.5 }
+	AND={
+	PER = {surrender_progress > 0.7 }
+	date > 1789.1.1 has_start_date < 1794.1.1
+	}
+	AND={
+	PER = {surrender_progress > 0.3 }
+	date > 1794.1.1 has_start_date < 1799.1.1
+	}
 	not={has_war_with=PER}
 	and={
 	416={is_core_of=PER}

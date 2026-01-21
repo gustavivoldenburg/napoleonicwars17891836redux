@@ -65,7 +65,7 @@ recruit_character=SWE_gustafadolfreuterholm
 recruit_character=SWE_vonfersen
 promote_character=SWE_gustaviii
 }
-1800.1.1 = {
+1793.1.1 = {
 promote_character=SWE_gustavivadolf
 retire_character=SWE_gustaviii
 }

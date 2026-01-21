@@ -127,9 +127,9 @@ SER={set_cosmetic_tag = SER_TUR}
 	}
 }
 }
-1799.1.1 = {
+1796.1.1 = {
 			if = {
-		limit = { has_start_date < 1801.1.1 }
+		limit = { has_start_date < 1804.1.1 }
 SER={set_cosmetic_tag = SER_TUR}
 	set_autonomy = {
         target = SER

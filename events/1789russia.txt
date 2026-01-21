@@ -1466,16 +1466,16 @@ declare_war_on = {
 	#is_triggered_only = yes
 trigger = {
 tag = PRE
-date < 1806.11.3
-date > 1807.1.1
+date > 1806.11.3
+date < 1807.1.1
 NOT={country_exists=POL}
 }
 fire_only_once = yes
 	option = { # 
 		name = "Poland did not just do that..."
 		ai_chance = { factor = 100 } 
-POL={transfer_state=86}
-POL={country_event = russianempire_1789_1812.42}
+POL={transfer_state=86
+country_event = russianempire_1789_1812.42}
 PRE={
 declare_war_on = {
         target = POL
@@ -1494,7 +1494,7 @@ fire_only_once = yes
 	option = { # 
 		name = "Greater Poland uprising of 1806"
 		ai_chance = { factor = 100 } 
-PRE={set_cosmetic_tag=greater_poland_uprising_has_happened}
+PRE={set_country_flag=greater_poland_uprising_has_happened}
 POL={add_manpower = 30000 load_oob = "POL_1805"
 	add_equipment_to_stockpile = {
                     type = infantry_equipment
@@ -1506,22 +1506,8 @@ POL={add_manpower = 30000 load_oob = "POL_1805"
 				days = 270
 			}
 }
-PRE={
-set_province_controller = 388
-set_province_controller = 9252
-set_province_controller = 13431
-set_province_controller = 3381
-set_province_controller = 17
-set_province_controller = 13422
-set_province_controller = 13423
-set_province_controller = 13408
-set_province_controller = 9532
-set_province_controller = 11558
 }
 }
-}
-
-
 			country_event = {
 	id = russianempire_1789_1812.43
 	title = "The Anapa Campaign"
@@ -3666,6 +3652,13 @@ fire_only_once = yes
 	option = { # 
 		name = "The Treaty of Kiel"
 		ai_chance = { factor = 100 }
+every_state={
+limit={
+is_core_of=NOR
+}
+transfer_state_to=NOR
+remove_core_of=DEN
+}
 NOR={leave_faction=yes}
 DEN={leave_faction=yes}
 	DEN={
@@ -5396,7 +5389,7 @@ country_event = {
 	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {
-PRE={has_cosmetic_tag=greater_poland_uprising_has_happened}
+PRE={has_country_flag=greater_poland_uprising_has_happened}
 tag = POL
 FRA={has_war_with=PRE}
 has_war_with = PRE
@@ -5753,7 +5746,7 @@ POL={add_stability=0.05}
 	id = russianempire_1789_1812.176
 	title = "Stanisław Szczęsny Potocki Enters Russian Service"
 	desc = russianempire_1789_1812.176.d
-	picture = GFX_news_event_france_empire_1re_1
+	picture = GFX_news_event_france_empire_1
 	#is_triggered_only = yes
 trigger = {
 tag = RUS
@@ -5771,7 +5764,7 @@ RUS={set_country_flag=potocki_has_been_hired}
 	id = russianempire_1789_1812.177
 	title = "The Dawn of the Second League of Armed Neutrality"
 	desc = russianempire_1789_1812.177.d
-	picture = GFX_news_event_france_empire_1re_1
+	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
@@ -5780,5 +5773,238 @@ fire_only_once = yes
 	RUS={
 create_faction = RUS_form_faction_iykyk
 	}
+	}
+	}
+			country_event = {
+	id = russianempire_1789_1812.178
+	title = "The Formation of the Kingdom of Saxony-Poland-Lithuania"
+	desc = russianempire_1789_1812.178.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "We are a Great Power once again"
+		ai_chance = { factor = 100 } 
+every_state={
+limit={
+or={
+is_core_of=SAX
+is_core_of=LIT
+is_core_of=LAT
+is_core_of=DNZ
+}
+}
+add_core_of=POL
+}
+POL={
+set_cosmetic_tag=SAX_POL_LIT
+annex_country = { target = SAX transfer_troops = yes }
+annex_country = { target = LIT transfer_troops = yes }
+annex_country = { target = LAT transfer_troops = yes }
+annex_country = { target = DNZ transfer_troops = yes }
+}
+	}
+	}
+			country_event = {
+	id = russianempire_1789_1812.179
+	title = "The Return of the Kalmar Union"
+	desc = russianempire_1789_1812.179.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "1521 Won't happen again!"
+		ai_chance = { factor = 100 } 
+every_state={
+limit={
+or={
+is_core_of=SWE
+is_core_of=DEN
+is_core_of=HLS
+is_core_of=SHL
+is_core_of=OLD
+}
+}
+add_core_of=RUS
+}
+RUS={
+set_cosmetic_tag=SCA_kalmar_union
+annex_country = { target = SWE transfer_troops = yes }
+annex_country = { target = DEN transfer_troops = yes }
+annex_country = { target = HLS transfer_troops = yes }
+annex_country = { target = SHL transfer_troops = yes }
+annex_country = { target = OLD transfer_troops = yes }
+}
+	}
+	}
+			country_event = {
+	id = russianempire_1789_1812.180
+	title = "Formation of the European Union"
+	desc = russianempire_1789_1812.180.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "We need European Unity"
+		ai_chance = { factor = 100 } 
+	IRE={
+create_faction = fuck_the_european_union
+add_to_faction=RUS
+add_to_faction=AUS
+add_to_faction=PRE
+add_to_faction=FRA
+	}
+	}
+	}
+				country_event = {
+	id = russianempire_1789_1812.181
+	title = "Formation of the European Union"
+	desc = russianempire_1789_1812.181.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "We need European Unity"
+		ai_chance = { factor = 100 } 
+	FRA={
+create_faction = fuck_the_european_union
+	}
+	}
+	}
+				country_event = {
+	id = russianempire_1789_1812.182
+	title = "Formation of the European Union"
+	desc = russianempire_1789_1812.182.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "We need European Unity"
+		ai_chance = { factor = 100 } 
+	RUS={
+create_faction = fuck_the_european_union
+add_to_faction=SWE
+add_to_faction=DEN
+add_to_faction=OLD
+	}
+	}
+	}
+				country_event = {
+	id = russianempire_1789_1812.183
+	title = "Formation of the European Union"
+	desc = russianempire_1789_1812.183.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "We need European Unity"
+		ai_chance = { factor = 100 } 
+	AUS={
+create_faction = fuck_the_european_union
+add_to_faction=WUR
+add_to_faction=BAD
+add_to_faction=BAY
+add_to_faction=HES
+	}
+	}
+	}
+				country_event = {
+	id = russianempire_1789_1812.184
+	title = "Formation of the Roman Empire"
+	desc = russianempire_1789_1812.184.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "We are the Roman Empire"
+		ai_chance = { factor = 100 } 
+ROOT={set_cosmetic_tag=form_roman_empire_spqr}
+	}
+	}
+				country_event = {
+	id = russianempire_1789_1812.185
+	title = "Formation of the Danish Kingdom of Germany"
+	desc = russianempire_1789_1812.185.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "We are the Roman Empire"
+		ai_chance = { factor = 100 } 
+DEN={set_cosmetic_tag=DEN_germany}
+	}
+	}
+				country_event = {
+	id = russianempire_1789_1812.186
+	title = "Formation of the Hanseatic League"
+	desc = russianempire_1789_1812.186.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "We need European Unity"
+		ai_chance = { factor = 100 } 
+	DEN={
+create_faction = fuck_the_european_union_elbe_den
+	    set_autonomy = {
+        target = MEK
+        autonomous_state = autonomy_personal_union
+        freedom_level = 0.2
+	}
+		    set_autonomy = {
+        target = STR
+        autonomous_state = autonomy_personal_union
+        freedom_level = 0.2
+	}
+		    set_autonomy = {
+        target = LBK
+        autonomous_state = autonomy_personal_union
+        freedom_level = 0.2
+	}
+		    set_autonomy = {
+        target = HBG
+        autonomous_state = autonomy_personal_union
+        freedom_level = 0.2
+	}
+		    set_autonomy = {
+        target = BRN
+        autonomous_state = autonomy_personal_union
+        freedom_level = 0.2
+	}
+	}
+	}
+	}
+				country_event = {
+	id = russianempire_1789_1812.187
+	title = "The Partion of Hanover"
+	desc = russianempire_1789_1812.187.d
+	picture = GFX_news_event_france_empire_1
+	is_triggered_only = yes
+fire_only_once = yes
+	option = { # 
+		name = "We need European Unity"
+		ai_chance = { factor = 100 } 
+DEN={
+	    set_autonomy = {
+        target = SXL
+        autonomous_state = autonomy_personal_union
+        freedom_level = 0.2
+	}
+}
+1189={transfer_state_to=OLD}
+879={transfer_state_to=OLD}
+1244={transfer_state_to=OLD}
+1245={transfer_state_to=OLD}
+
+1173={transfer_state_to=SWE}
+1178={transfer_state_to=SWE}
+
+1158={transfer_state_to=PRE}
+1160={transfer_state_to=PRE}
+59={transfer_state_to=PRE}
+SXL={
+promote_character=SXL_christianvii
+set_party_name = { ideology = neutrality long_name = SXL_OLD_neutrality_party_long name = SXL_OLD_neutrality_party }
+}
 	}
 	}

@@ -27,12 +27,16 @@ state={
 
 		}
 		1814.1.1 = {
-			owner = HAN
-			add_core_of = HAN
-			remove_core_of = WTF
-			remove_core_of = GOS
-
-		}
+                add_core_of = PRE
+                owner = PRE
+		remove_core_of = GOS
+		remove_core_of = WTF
+                }
+		1815.1.1 = {
+                add_core_of = HAN
+                owner = HAN
+		remove_core_of = PRE
+                }
 		1871.1.1 = {
 			add_core_of = GER
 			owner = GER

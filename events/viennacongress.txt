@@ -56,7 +56,7 @@ country_event = viennacongress_event.12
 		SWI={
 country_event = viennacongress_event.13
 country_event = viennacongress_event.17
-country_event = viennacongress_event.25
+country_event = viennacongress_event.23
 		}
 		SPM={
 country_event = viennacongress_event.14
@@ -66,9 +66,6 @@ country_event = viennacongress_event.15
 country_event = viennacongress_event.16
 country_event = viennacongress_event.18
 country_event = viennacongress_event.24
-		}
-		PRE={
-country_event = viennacongress_event.23
 		}
 		every_country = {
   limit = {
@@ -192,6 +189,7 @@ FRA={has_country_flag=fontainebleau_has_happened}
 fire_only_once = yes
 	option = { # 
 		name = "The Treaty of Paris (1815)"
+FRA={set_country_flag=the_treaty_of_paris_one_eigt_one_five}
 		ai_chance = { factor = 100 } 
     add_political_power=150
 		news_event = viennacongress_news.4
@@ -1137,43 +1135,16 @@ add_war_support=0.01
 }
 country_event = {
 	id = viennacongress_event.23
-	title = "The Annexation of the German Coast"
+	title = "Switzerland Joins the Coalition"
 	desc = viennacongress_event.23.d
 	picture = GFX_news_event_france_empire_1
 	is_triggered_only = yes
 fire_only_once = yes
 	option = { # 
-		name = "Hopefully everyone agrees to this"
+		name = "The Venetians better not become unruly"
 		ai_chance = { factor = 100 } 
-every_state={
-limit={
-or={
-is_owned_by=FRA
-is_owned_by=VND
-is_owned_by=HOL
-}
-or={
-state=978
-state=872
-state=1165
-state=1155
-state=836
-state=847
-state=1189
-state=879
-state=1244
-state=1245
-state=875
-state=1173
-state=1178
-state=1175
-state=1186
-state=1179
-}
-}
-transfer_state_to=PRE
-add_core_of=PRE
-}
+3={transfer_state_to=SWI}
+ENG={add_to_faction=SWI}
 	}
 }
 country_event = {
@@ -1203,19 +1174,5 @@ fire_only_once = yes
         freedom_level = 0.4
 	}
 	}
-	}
-}
-country_event = {
-	id = viennacongress_event.25
-	title = "Switzerland Joins the Coalition"
-	desc = viennacongress_event.25.d
-	picture = GFX_news_event_france_empire_1
-	is_triggered_only = yes
-fire_only_once = yes
-	option = { # 
-		name = "The Venetians better not become unruly"
-		ai_chance = { factor = 100 } 
-3={transfer_state_to=SWI}
-ENG={add_to_faction=SWI}
 	}
 }

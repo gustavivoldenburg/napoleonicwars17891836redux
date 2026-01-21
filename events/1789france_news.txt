@@ -289,7 +289,7 @@ add_namespace = fra_1789_news
 		}
 				news_event = {
 	id = fra_1789_news.337
-	title = "French Hegemony in Belgium the & Rhine"
+	title = "French Hegemony in Belgium & the Rhine"
 	desc = fra_1789_news.337.d
 	picture = GFX_news_event_france_empire_1
 	
@@ -303,5 +303,23 @@ add_namespace = fra_1789_news
 			}
 		option = {
 		name = "The Flemish aren't to keen on this"
+			}
+		}
+			news_event = {
+	id = fra_1789_news.364
+	title = "The Formation of the French Empire"
+	desc = fra_1789_news.364.d
+	picture = GFX_news_event_france_empire_1
+	
+	major = yes
+
+	fire_for_sender = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = "Austria agreed to this?"
+			}
+		option = {
+		name = "Napoleon want's to be King?"
 			}
 		}

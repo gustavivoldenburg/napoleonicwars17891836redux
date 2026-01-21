@@ -6,17 +6,17 @@ add_namespace = sweden_1789_1812_news
 
 		news_event = {
 	id = sweden_1789_1812_news.1
-	title = "Government of India Act 1935"
+	title = "The Dey declares war against the Swedish Crown!"
 	desc = sweden_1789_1812_news.1.d
 	picture = GFX_news_event_france_empire_1
 	
 	major = yes
 
-	fire_for_sender = no
+	fire_for_sender = yes
 	is_triggered_only = yes
 	
 	option = {
-		name = "Rest In Peace..."
+		name = "The What War?"
 			}
 		}
 		news_event = {

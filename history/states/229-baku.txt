@@ -13,6 +13,9 @@ state={
 			owner = RUS
 			add_core_of = RUS
 		}
+		1828.1.1 = {
+			remove_core_of=AZR
+		}
 		victory_points = {
 			7661 10 
 		}

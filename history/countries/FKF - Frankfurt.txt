@@ -361,10 +361,10 @@ set_convoys = 20
 		dispersed_industry2 = 1
 	}
 }
-1807.1.1 = {
+1810.1.1 = {
 set_cosmetic_tag = FKF_grandduchy # Grand Duchy
 }
-1814.1.1 = {
+1815.1.1 = {
 set_cosmetic_tag = FKF # Free City
 }
 set_politics = {

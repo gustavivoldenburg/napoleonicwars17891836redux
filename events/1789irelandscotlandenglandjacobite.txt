@@ -106,5 +106,11 @@ IRE={
         freedom_level = 0.4
 	}
 }
+	IRE={
+create_faction = the_jacobite_alliance
+	}
+	HOL={
+create_faction = the_hanoverian_dutch_alliance
+	}
 	}
 }

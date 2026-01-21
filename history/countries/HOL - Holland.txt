@@ -7,9 +7,9 @@ wonthegamble
 	}
 }
 }
-1821.1.1 = {
+1815.1.1 = {
 			if = {
-		limit = { has_start_date < 1822.1.1 }
+		limit = { has_start_date < 1830.1.1 }
 	set_autonomy = {
         target = LUX
         autonomous_state = autonomy_protectorate
@@ -53,7 +53,7 @@ recruit_character=HOL_rutger
 promote_character=HOL_rutger
 recruit_character=HOL_carel
 }
-1808.1.1 = {
+1806.1.1 = {
 promote_character=HOL_louisbonaparte
 }
 1812.1.1 = {
@@ -98,6 +98,9 @@ set_cosmetic_tag = HOL_principality # Netherlands East Indies
 set_cosmetic_tag = HOL_FRA_annex # Netherlands East Indies
 }
 1815.1.1 = {
+set_cosmetic_tag = HOL_united_kingdom # Netherlands East Indies
+}
+1830.1.1 = {
 set_cosmetic_tag = HOL # Netherlands East Indies
 }
 1789.1.1 = {

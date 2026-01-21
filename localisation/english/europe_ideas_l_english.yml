@@ -121,7 +121,17 @@ RUS_sweden_restoration_oldenburg:0 "Russian Restoration of the Oldenburg Dynasty
 
 aus_extinction_of_the_house_of_habsburg:0 "The Extinction of the House of Habsburg" 
 
+fuck_the_european_union_elbe_den:0 "The Hanseatic League"
+
+aus_neutrality_patriotic_war_invasion_of_russia_has_not_happened:0 "Austrian Neutrality"
+
 aus_vulnerable_position:0 "Habsburg-Lorraine Empire in a Vulnerable Position" 
+
+
+the_jacobite_alliance:0 "The Stuart Alliance"
+
+the_hanoverian_dutch_alliance:0 "The Dutch-Hanoverian Alliance"
+
 
 russian_jewry:0 "Russian Jewry"
 
@@ -462,6 +472,7 @@ heal_financial_crisis:0 "Healing the Financial Crisis"
 BAY_trump_has_turned_one_eight:0 "Drumpf has Turned 18"
 BAY_winemaker:0 "Pfalz Winemaker"
 RUS_form_faction_iykyk:0 "The Second League of Armed Neutrality"
+fuck_the_european_union:0 "The European Union"
 
 proto_communism_has_happened:0 "Proto Communism has been created"
 proto_communist_marx:0 "Proto Communist"

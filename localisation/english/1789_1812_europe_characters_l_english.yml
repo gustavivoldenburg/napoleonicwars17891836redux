@@ -491,6 +491,8 @@ POL_CHARACTER_ZAJACGENERAL:0 "Józef Zajączek"
 POL_CHARACTER_ZAJAC:0 "Józef Zajączek"
 POL_CHARACTER_JOANNGENERAL:0 "Joanna Żubr"
 
+KRA_CHARACTER_WODZICKI:0 "Stanisław Wodzicki"
+
 
 
 
@@ -628,6 +630,9 @@ KON_KARL_DESC:0 "Karl Theodor Anton Maria von Dalberg was a Catholic German bish
 
 FKF_CHARACTER_KARL:0 "Karl Theodor Anton Maria von Dalberg"
 FKF_KARL_DESC:0 "Karl Theodor Anton Maria von Dalberg was a Catholic German bishop and statesman. In various capacities, he served as Prince-Archbishop of Regensburg, Arch-Chancellor of the Holy Roman Empire, Bishop of Constance and Worms, Prince-Primate of the Confederation of the Rhine and Grand Duke of Frankfurt. Dalberg was the last Archbishop-Elector of Mainz."
+
+WTZ_CHARACTER_KARL:0 "Karl Theodor Anton Maria von Dalberg"
+WTZ_KARL_DESC:0 "Karl Theodor Anton Maria von Dalberg was a Catholic German bishop and statesman. In various capacities, he served as Prince-Archbishop of Regensburg, Arch-Chancellor of the Holy Roman Empire, Bishop of Constance and Worms, Prince-Primate of the Confederation of the Rhine and Grand Duke of Frankfurt. Dalberg was the last Archbishop-Elector of Mainz."
 
 MNZ_CHARACTER_KARL:0 "Karl Theodor Anton Maria von Dalberg"
 MNZ_KARL_DESC:0 "Karl Theodor Anton Maria von Dalberg was a Catholic German bishop and statesman. In various capacities, he served as Prince-Archbishop of Regensburg, Arch-Chancellor of the Holy Roman Empire, Bishop of Constance and Worms, Prince-Primate of the Confederation of the Rhine and Grand Duke of Frankfurt. Dalberg was the last Archbishop-Elector of Mainz."

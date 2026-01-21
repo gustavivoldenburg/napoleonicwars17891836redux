@@ -13,7 +13,7 @@ state={
 			owner = POL
                 add_core_of = UKR
 		}
-		1800.1.1 = {
+		1796.1.1 = {
 			owner = RUS
 			add_core_of = RUS
 			remove_core_of = POL

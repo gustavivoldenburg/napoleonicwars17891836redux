@@ -17,11 +17,18 @@ state={
 		remove_core_of = DDR
 		remove_core_of = WGR
 		}
+		1806.1.1 = {
+		owner = NAS
+		add_core_of = NAS
+		remove_core_of = DOR
+		remove_core_of=PRE
+		}
 		1808.1.1 = {
 		owner = BRG
 		add_core_of = BRG
 		remove_core_of = DOR
 		remove_core_of=PRE
+                remove_core_of=NAS
 		}
 		1816.1.1 = {
 		owner = PRE

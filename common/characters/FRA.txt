@@ -21,7 +21,6 @@ characters={
 		}
 		country_leader={
 			ideology=liberalism
-			traits={Bonaparte}
 			desc = FRA_LAZARECARNOT_DESC
 			expire="1797.1.1"
 		}
@@ -35,7 +34,6 @@ characters={
 		}
 		country_leader={
 			ideology=liberalism
-			traits={Bonaparte}
 			desc = FRA_NEUFCHATEAU_DESC
 			expire="1797.1.1"
 		}
@@ -49,7 +47,6 @@ characters={
 		}
 		country_leader={
 			ideology=liberalism
-			traits={Bonaparte}
 			desc = FRA_DOUAI_DESC
 			expire="1797.1.1"
 		}

@@ -27,12 +27,19 @@ state={
 			owner = PRE
 
 		}
+		1796.1.1 = {
+			owner = PRE
+                        add_core_of = PRE
+		}
 		1808.1.1 = {
 			owner = POL
-
+			add_core_of = POL
+                remove_core_of = PRE
 		}
 		1815.1.1 = {
 			owner = PRE
+                add_core_of=PRE
+                remove_core_of=POL
 
 		}
 		1871.1.1 = {

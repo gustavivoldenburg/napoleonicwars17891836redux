@@ -1,5 +1,10 @@
 ﻿capital = 88
-
+1745.1.1 = {
+recruit_character=KRA_wodzicki
+}
+1844.1.1 = {
+retire_character=KRA_wodzicki
+}
 # Starting tech
 set_technology = {
 	infantry_weapons = 1

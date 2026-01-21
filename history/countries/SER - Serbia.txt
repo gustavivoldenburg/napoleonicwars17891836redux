@@ -99,7 +99,7 @@ retire_character=SER_ferdinandiser
 1789.1.1 = {
 recruit_character=SER_hadji
 }
-1800.1.1 = {
+1796.1.1 = {
 promote_character=SER_hadji
 }
 1802.1.1 = {
@@ -135,7 +135,7 @@ retire_character=SER_milosobrenovici
 1789.1.1 = {
 set_cosmetic_tag = SER_uprising # 1789-1791 austrian ottoman war
 }
-1800.1.1 = {
+1796.1.1 = {
 set_cosmetic_tag = SER_TUR # Serbian Sanjak Smederevo
 }
 1804.1.1 = {

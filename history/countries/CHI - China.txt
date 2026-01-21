@@ -16,6 +16,9 @@ retire_character=CHI_jiaqing
 1851.1.1 = {
 retire_character=CHI_daoguang
 }
+	set_popularities = {
+		neutrality = 100
+	}
 1936.1.1 = {
 IF = {
 	limit = {

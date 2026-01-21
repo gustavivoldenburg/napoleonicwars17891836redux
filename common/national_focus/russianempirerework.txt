@@ -604,7 +604,6 @@ mutually_exclusive = {  focus = russianempirerework_1789_1815_first_100_focus_88
 		focus =russianempirerework_althistory_38
 		}
 		available = {
-		RUS={has_country_flag=RUS_has_ties_with_pre}
 		}
 
 		bypass = {
@@ -619,6 +618,7 @@ mutually_exclusive = {  focus = russianempirerework_1789_1815_first_100_focus_88
 		search_filters = { FOCUS_FILTER_ALTHISTORY }
 		
 		completion_reward = {  
+		RUS={country_event = russianempire_1789_1812.187}
 		}
 	}
 								focus = {
@@ -2408,7 +2408,6 @@ mutually_exclusive = {  focus = russianempirerework_althistory_37  }
 		}
 
 		available = {
-        NOT={RUS={has_country_flag=KBK_RUS_peace_flag}}
 		}
 
 		bypass = {

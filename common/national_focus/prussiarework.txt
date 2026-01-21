@@ -395,6 +395,7 @@ focus = {
 		search_filters = { FOCUS_FILTER_ALTHISTORY }
 		completion_reward = {
 		PRE={country_event = pre_1789_event.89}
+		PRE={country_event = pre_1789_event.151}
 		}
 	}
 		focus = {
@@ -431,6 +432,7 @@ focus = {
 		search_filters = { FOCUS_FILTER_ALTHISTORY }
 		completion_reward = {
 		PRE={country_event = pre_1789_event.101}
+		PRE={country_event = pre_1789_event.151}
 		}
 	}
 			focus = {
@@ -3486,6 +3488,13 @@ focus = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		
 		completion_reward = {
+		FKF={country_event = pre_1789_event.5}
+		HES={country_event = pre_1789_event.6}
+		HAN={country_event = pre_1789_event.7}
+		NAS={country_event = pre_1789_event.8}
+		NAS={country_event = pre_1789_event.9}
+		NAS={country_event = pre_1789_event.10}
+		hidden_effect={PRE={country_event = pre_1789_event.76}}
 		PRE={country_event = pre_1789_event.52}
 		}
 	}
@@ -3628,13 +3637,8 @@ focus = {
 		
 		
 		completion_reward = {
-		HES={country_event = pre_1789_event.5}
-		HES={country_event = pre_1789_event.6}
-		HAN={country_event = pre_1789_event.7}
-		NAS={country_event = pre_1789_event.8}
-		NAS={country_event = pre_1789_event.9}
-		NAS={country_event = pre_1789_event.10}
-		hidden_effect={PRE={country_event = pre_1789_event.76}}
+		PRE={country_event = pre_1789_event.134}
+		PRE={country_event = pre_1789_event.149}
 		}
 	}
 		focus = {
@@ -4667,6 +4671,7 @@ focus = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		
 		completion_reward = {
+		PRE={country_event = pre_1789_event.141}
 		}
 	}
 		focus = {
@@ -6137,7 +6142,8 @@ PRE={has_country_flag=PRE_louse_has_died}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		
 		completion_reward = {
-		PRE={country_event = pre_1789_event.86}
+				PRE={country_event = pre_1789_event.87}
+		FKF={country_event = pre_1789_event.136}
 		}
 	}
 		focus = {
@@ -6171,6 +6177,7 @@ PRE={has_country_flag=PRE_louse_has_died}
 		
 		completion_reward = {
 		PRE={country_event = pre_1789_event.102}
+		BAY={country_event = pre_1789_event.152}
 		}
 	}
 		focus = {
@@ -6438,6 +6445,7 @@ focus = {
 		
 		completion_reward = {
 		PRE={country_event = pre_1789_event.82}
+        PRE={country_event = pre_1789_event.151}
 		}
 	}
 		focus = {
@@ -6493,13 +6501,8 @@ focus = {
 		}
 
 		available = {
-		or={
-		PRE={owns_state=86}
-		and={
 		POL={owns_state=86}
 		POL={is_subject_of=RUS}
-		}
-		}
 		}
 
 		bypass = {
@@ -6513,22 +6516,19 @@ focus = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		
 		completion_reward = {
-		if={
-		limit={
-		PRE={owns_state=86}
-		}
-		PRE={country_event = pre_1789_event.46}
-		}
+        RUS={country_event = pre_1789_event.143}
+		RUS={country_event = pre_1789_event.144}
+		RUS={country_event = pre_1789_event.145}
 		}
 	}
 		focus = {
 		id = prussianrework_1793_1836_focus_55
-		icon = GFX_goal_generic_neutrality_focus
+		icon = GFX_focus_GER_around_maginot
         relative_position_id = prussianrework_1793_1836_focus_24
-		x = 16
-		y = 8
+		x = 12
+		y = 9
 		prerequisite = {
-		focus =	prussianrework_1793_1836_focus_45
+		focus =	prussianrework_1793_1836_focus_46 focus =	prussianrework_1793_1836_focus_47 focus =	prussianrework_1793_1836_focus_48
 		}
 		cost = 4.28571428571428571428
 
@@ -6551,7 +6551,9 @@ focus = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		
 		completion_reward = {
-			PRE={country_event = pre_1789_event.87}
+		PRE={country_event = pre_1789_event.86}
+		HOL={country_event = pre_1789_event.153}
+		HOL={country_event = pre_1789_event.154}
 		}
 	}
 		focus = {
@@ -6618,6 +6620,7 @@ focus = {
 		
 		completion_reward = {
 		SWE={country_event = pre_1789_event.40}
+		DEN={country_event = pre_1789_event.150}
 		}
 	}
 		focus = {

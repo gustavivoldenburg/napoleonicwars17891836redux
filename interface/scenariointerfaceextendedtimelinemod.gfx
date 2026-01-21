@@ -27,13 +27,28 @@ spriteTypes = {
 		name = "GFX_american_revolution_1776"
 		texturefile = "gfx/interface/american_revolution_1776.dds"
 	}
+
+
+
+
+
+
+
 		spriteType = {
 		name = "GFX_french_revolution_1789"
 		texturefile = "gfx/interface/french_revolution_1789.dds"
 	}
+			spriteType = {
+		name = "GFX_italian_campaign_1796"
+		texturefile = "gfx/interface/italian_campaign_1796.dds"
+	}
 		spriteType = {
 		name = "GFX_napoleonic_wars_1800"
 		texturefile = "gfx/interface/napoleonic_wars_1800.dds"
+	}
+			spriteType = {
+		name = "GFX_the_fourth_coalition_1806"
+		texturefile = "gfx/interface/the_fourth_coalition_1806.dds"
 	}
 		spriteType = {
 		name = "GFX_the_invasion_of_spain_1808"
@@ -51,10 +66,26 @@ spriteTypes = {
 		name = "GFX_the_greek_war_of_independence_1821"
 		texturefile = "gfx/interface/the_greek_war_of_independence_1821.dds"
 	}
+			spriteType = {
+		name = "GFX_portugal_1828"
+		texturefile = "gfx/interface/portugal_1828.dds"
+	}
 		spriteType = {
 		name = "GFX_victoria_1836"
 		texturefile = "gfx/interface/victoria_1836.dds"
 	}
+
+
+
+
+
+
+
+
+
+
+
+
 		spriteType = {
 		name = "GFX_revolutions_1848"
 		texturefile = "gfx/interface/revolutions_1848.dds"

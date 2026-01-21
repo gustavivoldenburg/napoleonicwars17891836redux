@@ -15,7 +15,7 @@ units = {
 	#Polish Army
 	division = {
 		name = "Polish Division"
-		location = 3460
+		location = 6558
 		division_template = "Polish Division"
 		start_experience_factor = 0.3
 	}
@@ -42,7 +42,7 @@ units = {
 	#Polish Army
 	division = {
 		name = "Polish Division"
-		location = 13417
+		location = 9532
 		division_template = "Polish Division"
 		start_experience_factor = 0.3
 	}
@@ -78,7 +78,7 @@ units = {
 	#Polish Army
 	division = {
 		name = "Polish Division"
-		location = 13417
+		location = 13418
 		division_template = "Polish Division"
 		start_experience_factor = 0.3
 	}

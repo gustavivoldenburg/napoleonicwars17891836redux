@@ -13,7 +13,7 @@ state={
 			remove_core_of = PCK
 
 		}
-		1800.1.1 = {
+		1796.1.1 = {
 			owner = PRE
 
 		}
@@ -52,7 +52,7 @@ state={
 	}
 
 	provinces={
-		3482 3544 6511 9400 11385 11492 13410 
+		3544 6511 11492 13410 
 	}
 	manpower=3500000
 	buildings_max_level_factor=1.000

@@ -47,10 +47,13 @@ retire_character=SPM_carlo
 retire_character=SPM_charlesemmanueliv
 retire_character=SPM_giuseppe
 }
+1828.1.1 = {
+promote_character=SPM_charlesfelix
+retire_character=SPM_victoremmanueli
+}
 1836.1.1 = {
 promote_character=SPM_charlesalbert
 retire_character=SPM_charlesfelix
-retire_character=SPM_victoremmanueli
 retire_character=SPM_ferdinandi
 retire_character=SPM_savoia
 retire_character=SPM_anselmo

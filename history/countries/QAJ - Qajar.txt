@@ -84,7 +84,7 @@ BAL={set_cosmetic_tag=BAL_QAJ}
 }
 1814.1.1 = {
 			if = {
-		limit = { has_start_date < 1830.1.1 }
+		limit = { has_start_date < 1827.1.1 }
 	TAL={set_cosmetic_tag=TAL_QAJ}
 	ARM={set_cosmetic_tag=ERV_QAJ}
 	NAK={set_cosmetic_tag=NAK_QAJ}

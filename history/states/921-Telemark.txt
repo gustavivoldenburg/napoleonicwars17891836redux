@@ -6,7 +6,7 @@ state={
 	history={
 		owner = GOA
 		add_core_of = GOA
-		1808.1.1 = {
+		1806.1.1 = {
 			owner = FRA
 
 		}

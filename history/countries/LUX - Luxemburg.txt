@@ -11,7 +11,7 @@ recruit_character=LUX_blasius
 1800.1.1 = {
 retire_character=LUX_blasius
 }
-1813.1.1 = {
+1815.1.1 = {
 set_cosmetic_tag = LUX_HOL # 
 }
 1836.1.1 = {

@@ -9,12 +9,12 @@ state={
 	history={
 		owner = POL
 		add_core_of = POL
-		1800.1.1 = {
+		1796.1.1 = {
 			owner = GLL
 			add_core_of = GLL
 
 		}
-						1808.1.1 = {
+						1806.1.1 = {
 			owner = AUS
 		}
 		1810.1.1 = {
@@ -30,6 +30,9 @@ state={
 		}
 		victory_points = {
 			3458 5 
+		}
+				victory_points = {
+			3497 5 
 		}
 		1936.1.1 = {
 			buildings = {

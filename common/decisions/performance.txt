@@ -1,6 +1,6 @@
 performance = {
 performance_canadaaustralia = {
-		icon = ger_reichskommissariats
+		icon = rise_performence_decicion
 				
 		available = {
 		
@@ -30,7 +30,7 @@ performance_canadaaustralia = {
 }
 performance = {
 performance_america = {
-		icon = ger_reichskommissariats
+		icon = rise_performence_decicion
 				
 		available = {
 		
@@ -68,7 +68,7 @@ performance_america = {
 }
 performance = {
 performance_cascadialouisiana = {
-		icon = ger_reichskommissariats
+		icon = rise_performence_decicion
 				
 		available = {
 		
@@ -98,7 +98,7 @@ performance_cascadialouisiana = {
 }
 performance = {
 performance_imereti = {
-		icon = ger_reichskommissariats
+		icon = rise_performence_decicion
 				
 		available = {
 		
@@ -125,36 +125,6 @@ performance_imereti = {
 		annex_country = { target = SVA transfer_troops = no }
 		annex_country = { target = ABK transfer_troops = no }
 	    } 
-		}
-	}
-}
-performance = {
-performance_divisionlimitsystem = {
-		icon = ger_reichskommissariats
-				
-		available = {
-		
-		date > 1789.1.1 date < 1837.1.1
-			}
-		cost = 0
-		ai_will_do = {
-			factor = -6000000
-			modifier = {
-				add = -6000000
-			}
-		}
-
-		visible = {
-		
-        date > 1789.1.1 date < 1836.1.1
-      is_ai = no
-		}
-
-		complete_effect = {
-		every_possible_country = {
-country_lock_all_division_template = no
-set_global_flag = no_scripted_napoleonic_division_flag
-}
 		}
 	}
 }

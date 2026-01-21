@@ -18,14 +18,14 @@ state={
 		remove_core_of = WGR
 		}
 				1801.1.1 = {
-                add_core_of = HES
-                owner = HES
+                add_core_of = FKF
+                owner = FKF
 				remove_core_of = WTZ
                 }
 				1816.1.1 = {
                 add_core_of = PRE
                 owner = PRE
-				remove_core_of = HES
+				remove_core_of = FKF
                 }
 		1871.1.1 = {
                 add_core_of = GER

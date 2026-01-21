@@ -19,10 +19,18 @@ state={
 		remove_core_of = OSN
         }
 		1814.1.1 = {
-        owner = HAN
-        add_core_of = HAN
+                add_core_of = PRE
+                owner = PRE
 		remove_core_of = OSN
-        }
+		remove_core_of = MUN
+                remove_core_of = WTF
+                remove_core_of = HAN
+                }
+		1815.1.1 = {
+                add_core_of = HAN
+                owner = HAN
+		remove_core_of = PRE
+                }
 								1950.1.1 = {
 		owner = WGR
 		add_core_of = WGR

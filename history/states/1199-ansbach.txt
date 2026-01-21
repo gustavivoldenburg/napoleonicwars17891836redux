@@ -19,7 +19,7 @@ state={
 			remove_core_of = WGR
 
 		}
-		1800.1.1 = {
+		1796.1.1 = {
 			add_core_of = PRE
 			owner = PRE
 			remove_core_of = BAY
@@ -61,7 +61,7 @@ state={
 	}
 
 	provinces={
-		561 14669 14677 14681 14673
+		561 14669 14677 14673
 	}
 	manpower=490000
 	buildings_max_level_factor=1.000

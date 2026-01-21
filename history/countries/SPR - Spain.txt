@@ -64,7 +64,7 @@ guerrillaspain
 }
 1788.1.1 = {
 			if = {
-		limit = { has_start_date < 1790.01.02 }
+		limit = { has_start_date < 1797.01.02 }
 	set_autonomy = {
         target = MEX
         autonomous_state = autonomy_protectorate
@@ -99,7 +99,7 @@ guerrillaspain
 }
 1799.1.1 = {
 			if = {
-		limit = { has_start_date < 1801.01.02 }
+		limit = { has_start_date < 1807.01.02 }
 	set_autonomy = {
         target = MEX
         autonomous_state = autonomy_protectorate
@@ -218,7 +218,7 @@ promote_character=SPR_charlesiv
 recruit_character=SPR_ferdinandvii
 recruit_character=SPR_isabellaii
 }
-1809.1.1 = {
+1808.1.1 = {
 promote_character=SPR_ferdinandvii
 }
 1821.1.1 = {

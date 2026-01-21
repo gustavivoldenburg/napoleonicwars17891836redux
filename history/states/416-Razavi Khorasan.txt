@@ -22,7 +22,7 @@ remove_dynamic_modifier = { modifier = khiva_slavetrade_russia }
 		remove_core_of = PER
 		owner = AFS
 		}
-					    1800.1.1 = {
+					    1796.1.1 = {
 		add_core_of = QAJ
 		remove_core_of = AFS
 		owner = QAJ

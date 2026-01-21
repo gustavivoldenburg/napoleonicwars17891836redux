@@ -36,8 +36,194 @@ spriteTypes = {
 		name = "GFX_muslim_sicily"
 		texturefile = "gfx/interface/goals/muslim_sicily.dds"
 	}
+			        spriteType = {
+		name = "GFX_parma_french"
+		texturefile = "gfx/interface/goals/parma_french.dds"
+	}
+			        spriteType = {
+		name = "GFX_french_papal"
+		texturefile = "gfx/interface/goals/french_papal.dds"
+	}
+			        spriteType = {
+		name = "GFX_abolishfeudalisme"
+		texturefile = "gfx/interface/goals/abolishfeudalisme.dds"
+	}
 
 
+			        spriteType = {
+		name = "GFX_spread_rev_to_prussia"
+		texturefile = "gfx/interface/goals/spread_rev_to_prussia.dds"
+	}
+				        spriteType = {
+		name = "GFX_formationofassembly"
+		texturefile = "gfx/interface/goals/formationofassembly.dds"
+	}
+				        spriteType = {
+		name = "GFX_dissolve_the_assembly"
+		texturefile = "gfx/interface/goals/dissolve_the_assembly.dds"
+	}
+
+
+
+				        spriteType = {
+		name = "GFX_deadlouis16"
+		texturefile = "gfx/interface/goals/deadlouis16.dds"
+	}
+				        spriteType = {
+		name = "GFX_declarationdesdroitetdescitoyens"
+		texturefile = "gfx/interface/goals/declarationdesdroitetdescitoyens.dds"
+	}
+				        spriteType = {
+		name = "GFX_emigrationengland"
+		texturefile = "gfx/interface/goals/emigrationengland.dds"
+	}
+				        spriteType = {
+		name = "GFX_formationofassembly"
+		texturefile = "gfx/interface/goals/formationofassembly.dds"
+	}
+				        spriteType = {
+		name = "GFX_francewarprepartion"
+		texturefile = "gfx/interface/goals/francewarprepartion.dds"
+	}
+				        spriteType = {
+		name = "GFX_lowerdebt"
+		texturefile = "gfx/interface/goals/lowerdebt.dds"
+	}
+				        spriteType = {
+		name = "GFX_propertygrab"
+		texturefile = "gfx/interface/goals/propertygrab.dds"
+	}
+				        spriteType = {
+		name = "GFX_reorganisearmynational"
+		texturefile = "gfx/interface/goals/reorganisearmynational.dds"
+	}
+				        spriteType = {
+		name = "GFX_reuptionoffrenchrevolution"
+		texturefile = "gfx/interface/goals/reuptionoffrenchrevolution.dds"
+	}
+				        spriteType = {
+		name = "GFX_revoltcityfrance"
+		texturefile = "gfx/interface/goals/revoltcityfrance.dds"
+	}
+				        spriteType = {
+		name = "GFX_traillouiscapet"
+		texturefile = "gfx/interface/goals/traillouiscapet.dds"
+	}
+				        spriteType = {
+		name = "GFX_volontauryforce"
+		texturefile = "gfx/interface/goals/volontauryforce.dds"
+	}
+					        spriteType = {
+		name = "GFX_womenversailleattack"
+		texturefile = "gfx/interface/goals/womenversailleattack.dds"
+	}
+
+						        spriteType = {
+		name = "GFX_decision_rise_performence_decicion"
+		texturefile = "gfx/interface/goals/rise_performence_decicion.dds"
+	}
+						        spriteType = {
+		name = "GFX_decision_recruit_divisons_dec"
+		texturefile = "gfx/interface/goals/recruit_divisons_dec.dds"
+	}
+						        spriteType = {
+		name = "GFX_decision_division_limit_system"
+		texturefile = "gfx/interface/goals/division_limit_system.dds"
+	}
+
+
+
+
+
+
+					        spriteType = {
+		name = "GFX_eruption_of_rev"
+		texturefile = "gfx/interface/goals/eruption_of_rev.dds"
+	}
+						        spriteType = {
+		name = "GFX_side_whit_rep"
+		texturefile = "gfx/interface/goals/side_whit_rep.dds"
+	}
+						        spriteType = {
+		name = "GFX_side_whit_the_king"
+		texturefile = "gfx/interface/goals/side_whit_the_king.dds"
+	}
+						        spriteType = {
+		name = "GFX_arrest_jack_necker"
+		texturefile = "gfx/interface/goals/arrest_jack_necker.dds"
+	}
+						        spriteType = {
+		name = "GFX_no_more_costly_war"
+		texturefile = "gfx/interface/goals/no_more_costly_war.dds"
+	}
+
+
+
+
+
+
+
+		spriteType = {
+		name = "GFX_idea_Ffeudalisme"
+		texturefile = "gfx/interface/ideas/Ffeudalisme.dds"
+	}
+		spriteType = {
+		name = "GFX_idea_imperialfrencharmy"
+		texturefile = "gfx/interface/ideas/imperialfrencharmy.dds"
+	}
+		spriteType = {
+		name = "GFX_idea_unpraperdfrencharmy"
+		texturefile = "gfx/interface/ideas/unpraperdfrencharmy.dds"
+	}
+		spriteType = {
+		name = "GFX_idea_Aristocracynationalspirit"
+		texturefile = "gfx/interface/ideas/Aristocracynationalspirit.dds"
+	}
+
+		spriteType = {
+		name = "GFX_idea_adopt_metric_system"
+		texturefile = "gfx/interface/ideas/adopt_metric_system.dds"
+	}
+			spriteType = {
+		name = "GFX_idea_counter_revolution_minor"
+		texturefile = "gfx/interface/ideas/counter_revolution_minor.dds"
+	}
+			spriteType = {
+		name = "GFX_idea_father_land_ind_danger"
+		texturefile = "gfx/interface/ideas/father_land_ind_danger.dds"
+	}
+			spriteType = {
+		name = "GFX_idea_french_volonteer_army"
+		texturefile = "gfx/interface/ideas/french_volonteer_army.dds"
+	}
+			spriteType = {
+		name = "GFX_idea_ideas_for_liberté_egalité_fraternité"
+		texturefile = "gfx/interface/ideas/ideas_for_liberté_egalité_fraternité.dds"
+	}
+			spriteType = {
+		name = "GFX_idea_LUxemborg_stronghold"
+		texturefile = "gfx/interface/ideas/LUxemborg_stronghold.dds"
+	}
+			spriteType = {
+		name = "GFX_idea_seizing_emigre_property"
+		texturefile = "gfx/interface/ideas/seizing_emigre_property.dds"
+	}
+			spriteType = {
+		name = "GFX_idea_the_french_revolution_idea"
+		texturefile = "gfx/interface/ideas/the_french_revolution_idea.dds"
+	}
+			spriteType = {
+		name = "GFX_idea_the_nancy_affair_idea"
+		texturefile = "gfx/interface/ideas/the_nancy_affair_idea.dds"
+	}
+			spriteType = {
+		name = "GFX_idea_the_national_guard"
+		texturefile = "gfx/interface/ideas/the_national_guard.dds"
+	}
+			spriteType = {
+		name = "GFX_idea_volonteer_army"
+		texturefile = "gfx/interface/ideas/volonteer_army.dds"
+	}
 
 
 
